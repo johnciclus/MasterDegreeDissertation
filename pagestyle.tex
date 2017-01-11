@@ -1,0 +1,139 @@
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{tikz, blindtext}
+\usetikzlibrary{shapes.multipart}
+\usepackage{calc,soul,fourier}
+\usepackage{color, colortbl}
+\usepackage{graphicx}
+%\usepackage[brazil]{babel}
+\usepackage[brazilian,hyperpageref]{backref}
+\setlength{\parindent}{48pt}
+\usepackage[alf]{abntex2cite}
+%\usepackage{lmodern}
+\usepackage{hyperref}
+\hypersetup{%
+pdfborder = {0 0 0},
+colorlinks ,
+citecolor=blue,
+filecolor=blue,
+linkcolor=blue,
+urlcolor=blue
+}
+
+
+%================================================================================
+%======================================
+%estilo do section, subsection e subsubsection
+%======================================
+ 
+\titleformat{\section}
+{\normalfont\fontsize{16pt}{18pt}\selectfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\fontsize{14pt}{16pt}\selectfont\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\fontsize{12pt}{14pt}\selectfont\bfseries}{\thesubsubsection}{1em}{}
+
+
+%================================================================================
+%======================================
+%Pacotesdecitações
+%======================================
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{
+\ifcase #1 (No citado.)
+\or (Citado na página~#2.)
+\else (Citado nas páginas #2.)
+\fi%
+}
+\renewcommand*{\backrefsep}{, }
+\renewcommand*{\backreftwosep}{e~}
+\renewcommand*{\backreflastsep}{e~}
+%================================================================================
+% Configuração dos Estilo dos Capítulo
+%================================================================================
+
+\makechapterstyle{box}{
+
+\renewcommand{\chapterheadstart}{}
+% Secao secundaria (Section) Caixa baixa, Negrito
+\renewcommand*{\cftsectionfont}{\bfseries}
+% Secao terciaria (Subsection) Caixa baixa, Negrito, italico
+\renewcommand*{\cftsubsectionfont}{\itshape\bfseries}
+% Secao quaternaria (Subsubsection) Caixa baixa, italico
+\renewcommand*{\cftsubsubsectionfont}{\itshape}
+% Secao quinquenária (Subsubsubsection) Caixa baixa
+\renewcommand*{\cftparagraphfont}{\normalsize}
+
+% tamanhos de fontes de chapter e part
+\ifthenelse{\equal{\ABNTEXisarticle}{true}}{%
+\setlength\beforechapskip{\baselineskip}
+\renewcommand{\chaptitlefont}{\ABNTEXsectionfont\ABNTEXsectionfontsize}
+}{%else
+\setlength{\beforechapskip}{0pt}
+\renewcommand{\ABNTEXchapterfontsize}{\LARGE}
+%\renewcommand{\ABNTEXchapterfont}{\sffamily\bfseries}
+%alteração da fonte dos capítulos, seções e subseções
+\renewcommand{\chaptitlefont}{\ABNTEXchapterfont\bfseries\ABNTEXchapterfontsize}
+}
+%\renewcommand{\chapter}{\chaptertitlename\ \thechapter}{0pt}{\Large\uppercase}
+\renewcommand{\chapnumfont}{\chaptitlefont}
+\renewcommand{\parttitlefont}{\ABNTEXpartfont\ABNTEXpartfontsize}
+\renewcommand{\partnumfont}{\ABNTEXpartfont\ABNTEXpartfontsize}
+\renewcommand{\partnamefont}{\ABNTEXpartfont\ABNTEXpartfontsize}
+
+\renewcommand*{\printchaptername}{}
+\renewcommand*{\chapnumfont}{\normalfont\sffamily\huge\bfseries}
+\renewcommand*{\printchapternum}{
+\hrulefill{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|}
+\rowcolor{black}\color{white}\normalsize\ABNTEXchapterfont\MakeTextUppercase{\chaptername}\\
+\vspace{-1.5ex}\\
+\resizebox{!}{1.1cm}{\ABNTEXchapterfont\thechapter}
+\\[2.5ex]
+\hline
+\end{tabular}
+}
+}
+
+\renewcommand*{\chaptitlefont}{\normalfont\sffamily\Huge\bfseries}
+\renewcommand*{\printchaptertitle}[1]{
+\flushright\chaptitlefont##1
+\vskip -0.6ex\hfill\rule{.8\textwidth}{0.5pt} \\
+\vskip -2.8ex\hfill\rule{.8\textwidth}{2pt}\\
+\vskip 1.5ex
+}
+
+}
+
+\chapterstyle{box}
+
+%=================================
+%Configurações do estilo da pagina
+%==================================
+
+%\makepagestyle{ruled}
+%\makeoddfoot{ruled}{}{}{}
+%\makeevenfoot{ruled}{}{}{}
+%\makeheadrule{ruled}{\textwidth}{\normalrulethickness}
+%\makeevenhead{ruled}{\thepage}{}{\small\itshape\leftmark}
+%\makeoddhead{ruled}{\small\itshape\rightmark}{}{\thepage}
+%\makeatletter % because of \@chapapp
+%\makepsmarks  {ruled}{
+%\nouppercaseheads
+%\createmark	{chapter} 	{both} {shownumber}{\@chapapp\ }{. \ }
+%\createmark	{section} 	{right} {shownumber}{}		  {. \ }
+%\createplainmark {toc}		{both}{\contentsname}
+%\createplainmark {bib}		{both}{\bibname}
+%}
+%\makeatother
+%\pagestyle{ruled}
+
+%================================================================================
+% Configuração das legendas nas figuras e tabelas
+%================================================================================
+
+\newcommand{\fautor}{\legend{Fonte: Elaborada pelo autor.}}
+\newcommand{\fadaptada}[2][]{\legend{Fonte: Adaptada de \citeonline[#1]{#2}.}}
+\newcommand{\fdireta}[2][]{\legend{Fonte: \citeonline[#1]{#2}.}}
+\newcommand{\fdadospesquisa}{\legend{Fonte: Dados da pesquisa.}}

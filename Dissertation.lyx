@@ -4,23 +4,17 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass scrbook
+\textclass abntex2
 \begin_preamble
-%\renewcommand\nomname{Lista de Abreviaturas e Siglas}
-%\KOMAoptions{BCOR=3cm}\recalctypearea
-\let\tmp\oddsidemargin
-\let\oddsidemargin\evensidemargin
-\let\evensidemargin\tmp
-\reversemarginpar
-\KOMAoptions{parskip=half}
-
-%\usepackage{scrhack}
-%\KOMAoptions{listings=false}
-%\KOMAoptions{float=false}
-
-% Chapter style with nice style
-% needs fancychap.sty file
-%\usepackage{fancychap}
+\input{pagestyle.tex}
+%\usepackage{lmodern}
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+\setcounter{secnumdepth}{4}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -49,7 +43,7 @@ eqs-within-sections
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref true
+\use_hyperref false
 \pdf_title "SustenAgro, sistema especialista baseado em web semântica para avaliação da sustentabilidade em sistemas de produção agrícola"
 \pdf_author "Garavito Suárez, John"
 \pdf_subject "Dissertação de Mestrado"
@@ -106,15 +100,6 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Standard
-Tecnologias da Web Semântica na Geração de Interfaces Gráficas para Sistemas
- de Apoio á Decisão, caso SustenAgro.
-\end_layout
-
-\begin_layout Standard
-John Freddy Garavito Suárez
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -126,7 +111,8 @@ Introdução
 \end_layout
 
 \begin_layout Standard
-Os sistemas de apoio á decisão 
+Os sistemas de apoio à decisão são sistemas especialistas que permitem processar
+ dados ou informação para gerar resultados de valor para o usuário, 
 \end_layout
 
 \begin_layout Chapter
