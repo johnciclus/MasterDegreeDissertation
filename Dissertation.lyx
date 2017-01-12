@@ -115,6 +115,391 @@ Os sistemas de apoio à decisão são sistemas especialistas que permitem proces
  dados ou informação para gerar resultados de valor para o usuário, 
 \end_layout
 
+\begin_layout Standard
+Os sistemas de produção agrícola, como a cana\SpecialChar nobreakdash
+de\SpecialChar nobreakdash
+açúcar, são extremamente
+ importantes para a economia dos paises produtores como Brasil
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Referência
+\end_layout
+
+\end_inset
+
+.
+ Eles são sistemas complexos que integram fenômenos de natureza diversa
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "simon1991architecture"
+
+\end_inset
+
+, integrando três subsistemas: (i) o subsistema ambiental que fornece as
+ condições físicas, químicas e biológicas que suportam o desenvolvimento
+ das culturas, (ii) o subsistema social que integra organizações e pessoas
+ que realizam a produção, relacionando-se internamente e externamente com
+ os sistemas produtivos e (iii) o subsistema econômico que estabelece as
+ condiciones de oferta e demanda dos produtos e subprodutos do sistema de
+ produção agrícola; das interações entre estes subsistemas, emerge um comportame
+nto complexo que requer uma abordagem holística e inter-relacionada para
+ suportar a tomada de decisões que garantam a sustentabilidade do sistema
+ em analise.
+\end_layout
+
+\begin_layout Standard
+Dada a complexidade dos sistemas de produção agrícola, surgiu a necessidade
+ de determinar um método de avaliar a sustentabilidade de maneira integral,
+ por esta razão pesquisadores da Embrapa Meio Ambiente desenvolveram um
+ método de avaliação de sustentabilidade que aborda a avaliação em termos
+ de indicadores, medindo assim aspectos críticos em cada subsistema, para
+ determinar se é ou não é sustentável e assim tomar medidas corretivas,
+ ditos sistemas também são chamados dimensões da sustentabilidade, segundo
+ a literatura estas dimensões são: ambiental, econômica e social 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "AlkanOlsson:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A partir do método de avaliação, foi desenvolvida uma ferramenta de avaliação
+ da sustentabilidade intitulada software SustenAgro que implementa o método
+ SustenAgro por meio de um sistema web e que consigue adaptar-se às mudanças
+ do domínio, a qual está baseada em ontologias que permitem representar
+ e estruturar o conhecimento, gerando uma representação mais próxima da
+ realidade do que outros modelos de dados, este tipo de sistema é classificado
+ como um sistema de apoio a decisão que contém o conhecimento do domínio
+ de avaliação da sustentabilidade em agricultura em formato de ontologias
+ da web semântica, sobre o qual é possível fazer inferências e assim gerar
+ informações para suportar a decisão.
+\end_layout
+
+\begin_layout Standard
+O software SustenAgro baseou-se em indicadores da sustentabilidade nas tres
+ dimensões, os quais foram propostos por um grupo de especialistas de diversas
+ áreas da produção agrícola e sustentabilidade 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oliveira:2013"
+
+\end_inset
+
+, esta base conceitual foi padronizada por meio de ontologias para representar
+ e organizar dito conhecimento, conseguindo assim uma representação compreensíve
+l pelos humanos e computadores 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allemang2011semantic"
+
+\end_inset
+
+, além de fornecer suporte com outras tecnologias da web semântica e assim
+ realizar consultas complexas que permitam responder perguntas de interesse
+ para os usuários do sistema software.
+\end_layout
+
+\begin_layout Standard
+A ontologia do conhecimento do domínio foi complementada com outra ontologia
+ de representação das interfaces gráficas, permitindo um mapeamento entre
+ conceitos do domínio dos especialistas e as interfaces gráficas, concedendo
+ flexibilidade ao sistema para adaptar-se às mudanças dos conceitos do domínio
+ como são os indicadores, o método de avaliação e os índices.
+\end_layout
+
+\begin_layout Standard
+Nesta pesquisa e projeto de mestrado foram gerados os seguintes resultados:
+ ontologia de avaliação da sustentabilidade, ontologia de interfaces de
+ usuário, um 
+\emph on
+Domain Specific Language
+\emph default
+ (DSL) para definição de interfaces de usuário, um protótipo de gerador
+ de sistemas de avaliação intitulado Decisioner e o software SustenAgro
+ que faz uso dos anteriores elementos.
+\end_layout
+
+\begin_layout Standard
+O método SustenAgro, liderado pela Embrapa
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Embrapa"
+description "Empresa Brasileira de Pesquisa Agropecuária"
+
+\end_inset
+
+ Meio Ambiente tem a finalidade de fornecer os fundamentos teoricos para
+ suportar avaliações que possibilitem o embasamento de politicas públicas
+ que incentivem a sustentabilidade no setor produtivo da cultura de cana-de-açúc
+ar no centro-sul do Brasil.
+\end_layout
+
+\begin_layout Section
+Motivação
+\end_layout
+
+\begin_layout Standard
+O conhecimento da avaliação da sustentabilidade da cultura de cana-de-açúcar
+ está em continua mudança 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oliveira:2013"
+
+\end_inset
+
+, porém é necessário uma representação desse conhecimento que adapte-se
+ às mudanças e que facilite a comunicação entre os especialistas do domínio
+ e os desenvolvedores de software, neste sentido as ontologias da web semântica
+ satisfazem este requisito porque separam o conhecimento do domínio da lógica
+ da computação, permitindo abordar cada desenvolvimento de uma maneira independe
+nte, por isso primeiro foram desenvolvidas as ontologias e posteriormente
+ o sistema SustenAgro.
+\end_layout
+
+\begin_layout Standard
+O conhecimento sobre sustentabilidade no sistema de produção de cana-de-açúcar
+ foi representado por meio de entidades, classes, relações semânticas e
+ axiomas.
+ Ditos elementos constituíram a ontologia, representado formalmente os conceitos
+ do domínio, os quais foram integrados em cada uma das funcionalidades do
+ sistema permitindo a personalização e vinculação da informação para satisfazer
+ os requisitos dos usuários do sistema SustenAgro.
+\end_layout
+
+\begin_layout Standard
+A ontologia SustenAgro é complementada e gerenciada por uma DSL que permite
+ aos administradores do sistema, vincular conceitos da ontologia com aspectos
+ da interface gráfica do usuário, para assim fornecer flexibilidade na definição
+ da interface gráfica durante runtime.
+\end_layout
+
+\begin_layout Standard
+Uma caraterística importante de SustenAgro é a recuperação da informação
+ com significado semântico, permitindo que o sistema dê respostas às consultas
+ complexas de interesse para os especialistas.
+\end_layout
+
+\begin_layout Standard
+Finalmente, a princiapal contribuição desta pesquisa foi o design e a implementa
+ção de um prototipo de sistema gerador de SADs 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SAD"
+description "Sistema de apoio à decisão"
+
+\end_inset
+
+(Sistemas de apoio à decisão), intitulado Decisioner, o qual na fase incial
+ é uma abstração do sistema SustenAgro.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Desenvolver um sistema web que permita realizar a avaliação da sustentabilidade
+ nos sistemas produtivos de cana-de-açúcar no centro-sul do Brasil fazendo
+ uso das tecnologias da web semântica para representar o conhecimento dos
+ especialistas e flexibilizar a geração da interface gráfica de usuário.
+\end_layout
+
+\begin_layout Subsection*
+Objetivos específicos
+\end_layout
+
+\begin_layout Itemize
+Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
+ produtivos de cana-de-açúcar do centro sul do Brasil, como base conceitual
+ e tecnológica do sistema SustenAgro.
+\end_layout
+
+\begin_layout Itemize
+Desenvolver uma ontologia sobre controles visuais de interfaces gráficas
+ para suportar a definição dos indicadores do sistema SustenAgro.
+\end_layout
+
+\begin_layout Itemize
+Desenvolver uma DSL que gerencie as ontologias e que flexibilize a definição
+ da interface de usuário por parte dos administradores do sistema.
+\end_layout
+
+\begin_layout Itemize
+Demonstrar que um sistema de apoio na tomada de decisões baseado nas tecnologias
+ da web semântica, permite a realização de consultas complexas que requerem
+ conhecimento semântico, facilitando o processo de análises da informação
+ por parte dos usuários.
+\end_layout
+
+\begin_layout Itemize
+Definir uma arquitetura para sistemas de avaliação baseados em conhecimento
+ de domínios específicos.
+\end_layout
+
+\begin_layout Section
+Organização
+\end_layout
+
+\begin_layout Standard
+Esta monografia de dissertação está organizada da seguinte forma: primeiramente
+ é apresentado o capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Introduction"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ que dá uma visão global do projeto e os objetivos que serão desenvolvidos.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:state_of_art"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ são apresentados os conceitos relacionados a esse tipo sistema.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Semantic_Web"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ é apresentada a fundamentação teórica da web semântica que suportará o
+ desenvolvimento do sistema SustenAgro.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Related_Work"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ são apresentadas as pesquisas relacionadas com avaliação da sustentabilidade
+ nos sistemas produtivos de cana-de-açúcar e com a web semântica.
+ No capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Problem"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ é apresentada uma descrição detalhada da proposta do trabalho.
+ Desta proposta já realizaram-se avanços que serão apresentados no capítulo
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Results"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Finalmente no capítulo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Dsl_Ontologies"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ são apresentados a metodologia, os resultados esperados e o cronograma
+ para condução das próximas etapas desta pesquisa.
+ Em termos de anexos, são apresentados uma descrição do projeto SustenAgro
+ no apêndice 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Projeto-SustenAgro"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ e os principais conceitos estudados na literatura científica que estão
+ relacionados à área de avaliação da sustentabilidade no apêndice intitulado
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Sustainability_Assessment"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 Estado da arte
 \end_layout
