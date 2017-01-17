@@ -809,6 +809,651 @@ das para SADs e as ontologias usadas nesses sistemas.
 Ontologias
 \end_layout
 
+\begin_layout Standard
+A web foi criada para possibilitar o acesso, intercâmbio e recuperação de
+ informações de maneira rápida e simples, seu crescimento exponencial e
+ caótico fez com que a mesma se tornasse hoje um gigantesco repositório
+ de documentos, o que dificulta a recuperação de informações.
+ Até o momento, não existe nenhuma estratégia abrangente e satisfatória
+ para a indexação de documentos por meio de “motores de busca” que seja
+ coerente com uma estrutura linguística.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Souza:2004"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com o intuito de preencher esse gargalo semântico na busca por informações,
+ surge a web semântica.
+ Ela tem como objetivo incorporar significado às informações presentes na
+ web, criando um ambiente onde agentes de software e usuários possam trabalhar
+ de forma cooperativa e entender o significado (sentido) presente nos dados.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brandao2002introduccao"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um exemplo da deficiência da web atual pode ser identificada na busca realizada
+ pelos sistemas de recuperação de informação, que usam palavras-chave nas
+ buscas, onde apenas a similaridade e o número de ocorrências de certas
+ palavras no conteúdo de documentos são levados em consideração e não a
+ semântica presente naquela informação.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Souza:2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Segundo a definição feita do W3C
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.w3.org/2001/sw/
+\end_layout
+
+\end_inset
+
+, a web semântica é um 
+\emph on
+framework
+\emph default
+ que permite compartir e reutilizar dados através das fronteiras das aplicações,
+ empresas e comunidades.
+ Ela tem duas funcionalidades principais: a) ser um conjunto de formatos
+ para a integração e combinação de dados extraídos de diversas fontes e
+ b) estabelecer uma linguagem para registrar como esses dados se referem
+ a objetos do mundo real.
+\end_layout
+
+\begin_layout Standard
+A web semântica é formada por um conjunto de padrões propostos pelo World
+ Wide Web Consortium (W3C
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "W3C"
+description "World Wide Web Consortium"
+
+\end_inset
+
+).
+ Eles evoluíram de padrões focados na representação de dados para a de conhecime
+nto.
+ Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Semantic_Web_History"
+
+\end_inset
+
+ podem ser observados os padrões que constituem a Web Semântica e sua relação
+ com os padrões XML 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "XML"
+description "Extensible Markup Language"
+
+\end_inset
+
+.
+ Eles promovem formatos de dados comuns na WWW e também a inclusão de conteúdo
+ Semântico na web, usando o padrão Resource Description Framework (RDF
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RDF"
+description "Resource Description Framework"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Dissertation Document/figures/Semantic Web History.png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+História da Web Semântica 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Semantic_Web_History"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Resource Description Framework
+\lang brazilian
+ (RDF)
+\end_layout
+
+\begin_layout Standard
+O 
+\lang english
+Resource Description Framework
+\lang brazilian
+ (RDF) é uma família de especificações da W3C, que foi disponibilizada em
+ 1999 como parte do W3C's 
+\lang english
+Semantic Web Effort
+\lang brazilian
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gruber1995toward"
+
+\end_inset
+
+.
+ Ele foi originalmente projetado como um modelo de meta-dados e também chegou
+ a ser usado como um método de descrições conceituais, principalmente para
+ descrever recursos web.
+ 
+\end_layout
+
+\begin_layout Standard
+O RDF é usado em várias áreas de aplicação, como 
+\emph on
+\lang english
+resource discovery
+\emph default
+\lang brazilian
+ para melhorar as capacidades dos motores de busca, 
+\emph on
+\lang english
+cataloging
+\emph default
+\lang brazilian
+ para descrever o conteúdo e as relações de conteúdo disponibilizados em
+ um sistema web particular, e descrição de 
+\emph on
+\lang english
+intellectual property rights
+\emph default
+\lang brazilian
+ de páginas web.
+\end_layout
+
+\begin_layout Standard
+O modelo básico de dados consiste em um padrão de três tipos de objetos:
+\end_layout
+
+\begin_layout Itemize
+Sujeito: representa os recursos e são identificados por meio de URIs, sem
+ importar o tamanho deles, por exemplo, uma pagina web ou um elemento HTML
+ podem ser recursos.
+\end_layout
+
+\begin_layout Itemize
+Predicado: são aspectos, características, atributos ou relações especificas
+ que describem o sujeito, cada preditcado têm um significado especifico
+ e relaciona um sujeito com um objeto.
+\end_layout
+
+\begin_layout Itemize
+Objeto: um recurso especifico ou valor da propriedade que representa uma
+ características do objeto 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.w3.org/TR/PR-rdf-syntax/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com RDF é possível explicitar relações entre dois objetos (usando-se uma
+ Tripla RDF), mas não muito mais que isso.
+ Para se descrever o que um objeto representa e suas relações com outros
+ objetos, são necessárias ontologias.
+ 
+\end_layout
+
+\begin_layout Section
+Ontologias
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Smart-data-continuum"
+
+\end_inset
+
+ mostra os níveis de representação de dados na forma de conhecimento processável
+ por máquinas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Dissertation Document/figures/smart data.png
+	lyxscale 50
+	width 80col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Smart data continuum
+\lang brazilian
+: níveis de representação de dados na forma de conhecimento processável
+ por máquinas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Smart-data-continuum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O nível mais baixo de representação começa com os dados sem nenhum significado
+ semântico, dependentes do contexto da aplicação.
+ O segundo nível envolve a definição de esquemas XML para conseguir independênci
+a dos dados da aplicação, os dados fluem entre aplicações em um único domínio
+ mas não podem ser compartilhados fora do domínio.
+ No terceiro nível, os dados podem ser combinados a partir de diferentes
+ domínios, sendo suficientemente independentes para serem recuperados e
+ combinados com outras fontes de dados.
+ Finalmente no quarto nível, é possível inferir novos dados a partir dos
+ existentes e compartilha-los entre aplicações sem requerer interferência
+ humana 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sugumaran2011"
+
+\end_inset
+
+, isso é possível graças as ontologias que descrevem esses dados.
+\end_layout
+
+\begin_layout Standard
+Uma ontologia é um sistema de organização e representação do conhecimento,
+ em inglês
+\emph on
+ Knowledge Organization System
+\emph default
+ (
+\emph on
+KOS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "KOS"
+description "Knowledge Organization System"
+
+\end_inset
+
+
+\emph default
+), que é uma estrutura conceitual e computacional que permite representar
+ o conhecimento, de qualquer domínio, por meio de entidades, classificações,
+ relações semânticas, regras e axiomas.
+\end_layout
+
+\begin_layout Standard
+Contudo, não existe um consenso sobre uma exata definição para ontologias.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gruber1995toward"
+
+\end_inset
+
+, uma ontologia é 
+\begin_inset Quotes sld
+\end_inset
+
+uma especificação explícita de uma conceitualização que representa o entendiment
+o comum e a terminologia relevante de um domínio
+\begin_inset Quotes srd
+\end_inset
+
+.
+ Nesse contexto, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "noy2001ontology"
+
+\end_inset
+
+ relatam que as ontologias surgiram para compartilhar, organizar e especificar
+ conhecimentos de um determinado domínio.
+ 
+\end_layout
+
+\begin_layout Standard
+Uma ontologia é especificada por meio de componentes básicos que são as
+ classes, relações, axiomas e instâncias.
+ As 
+\series bold
+classes
+\series default
+, o foco da maioria das ontologias, são utilizadas para descrever os conceitos
+ de um domínio, possibilitando a organização das classes em um sistema lógico
+ e hierárquico contendo subclasses que representam conceitos mais específicos
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "noy2001ontology"
+
+\end_inset
+
+.
+ As 
+\series bold
+relações
+\series default
+ representam o tipo de interação entre os conceitos de um domínio e as proprieda
+des presentes nas classes e indivíduos.
+ Elas podem ter características próprias, como serem transitivas, simétricas,
+ ou terem uma cardinalidade definida.
+ Os 
+\series bold
+axiomas
+\series default
+ são utilizados para modelar regras assumidas como verdadeiras no domínio
+ em questão, de modo que seja possível associar o relacionamento entre os
+ indivíduos, além de fornecer características descritivas e lógicas para
+ os conceitos.
+ Para 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "uschold1996ontologies"
+
+\end_inset
+
+ os axiomas são especificados para definir a semântica e significado dos
+ termos (classes e propriedades) e sugerem que a fase de definição dos axiomas
+ (especificação da ontologia) é a mais difícil na construção de ontologias.
+ Por fim, os 
+\series bold
+indivíduos
+\series default
+, ou instâncias das classes, são utilizados para representar elementos específic
+os, ou seja, os próprios dados, que, juntamente com a definição de uma ontologia
+, constituem a base de conhecimento 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "noy2001ontology"
+
+\end_inset
+
+.
+ Os indivíduos representam objetos do domínio de interesse 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "horridge2011owl"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Na web semântica, ontologias são representadas na linguagem Web Ontology
+ Language (OWL), a qual será apresentado a continuação.
+\end_layout
+
+\begin_layout Subsection
+Web Ontology Language
+\end_layout
+
+\begin_layout Standard
+A Web Ontology Language (OWL) foi recomendada pelo W3C em 2004 para representar
+ e compartilhar ontologias na Web.
+ Essa linguagem foi projetada para aplicações que necessitam processar o
+ conteúdo da informação em vez de apenas apresentar informações em nós 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcguinness2004owl"
+
+\end_inset
+
+.
+ OWL é uma linguagem que permite que semântica seja explicitamente associada
+ ao conteúdo dos dados na web e formalmente especificada através de ontologias,
+ compartilhadas na Internet.
+ 
+\end_layout
+
+\begin_layout Standard
+A OWL 2, de abril de 2008, é a versão mais recente da linguagem 2.
+ De acordo com as especificações do W3C
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.w3.org/TR/owl2-overview/
+\end_layout
+
+\end_inset
+
+, a OWL 2 adicionou três novos perfis (sub-linguagens) aos perfis DL e Full
+ já existentes: OWL 2 EL, OWL 2 QL e OWL RL (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OWL2-Profiles."
+
+\end_inset
+
+).
+ Cada um desses perfis oferece um poder de expressividade diferente para
+ diversos cenários de aplicação:
+\end_layout
+
+\begin_layout Description
+Full O perfil OWL Full é direcionado para usuários que querem a máxima expressiv
+idade e a liberdade sintática do RDF sem nenhuma garantia computacional.
+ É improvável que qualquer software de raciocínio seja capaz de suportar
+ completamente cada recurso da OWL Full 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcguinness2004owl"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+DL O perfil OLW DL (Description Logic) é para aplicações que necessitam
+ de máxima expressividade, enquanto mantém a computabilidade (todas as conclusõe
+s são garantidos para ser computáveis) e decidibilidade (todas as computações
+ terminarão em tempo finito) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcguinness2004owl"
+
+\end_inset
+
+.
+ OWL DL inclui todas as construções da linguagem OWL, mas elas podem ser
+ usadas somente sob certas restrições.
+ 
+\end_layout
+
+\begin_layout Description
+EL O perfil OWL 2 EL é baseado na família EL++ de lógica descritiva (Description
+ Logic), esse perfil é particularmente útil em aplicações utilizando ontologias
+ que contêm um grande número de propriedades e/ou classes.
+ Além disso, o OWL 2 EL utiliza um padrão comum utilizado em ontologias
+ para conceitos e planejamento, ou seja, a combinação de conjunção e qualidades
+ existenciais.
+\end_layout
+
+\begin_layout Description
+QL O perfil OWL 2 QL é baseado na família DL-Lite de lógica descritiva.
+ Esse perfil foi criado para permitir o raciocínio (reasoning) eficiente
+ com grandes quantidades de dados estruturados de acordo com esquemas relativame
+nte simples.
+ Ele fornece a maioria dos recursos necessários para capturar modelos conceituai
+s, tais como diagramas de classe UML, diagramas de Entidade de Relacionamento,
+ e esquemas de banco de dados.
+ 
+\end_layout
+
+\begin_layout Description
+RL O perfil OWL 2 RL é voltado para aplicações que exigem raciocínio escalável
+ em troca de alguma restrição de poder expressivo.
+ Ele define um subconjunto sintático de OWL 2 que favorece a implementação
+ utilizando tecnologias baseadas em regras.
+ Esse perfil pode ser utilizado na maioria das construções OWL 2, porém,
+ para permitir implementações baseadas em regras de raciocínio, a forma
+ como essas construções podem ser usadas em axiomas foi restringida.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Dissertation Document/figures/owl2-profiles.png
+	lyxscale 50
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+OWL2 Profiles.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OWL2-Profiles."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em um Sistema de Apoio a Decisão (SAD), ontologias podem ser usadas para
+ modelar o domínio de aplicação deste sistema.
+ Termos dessas ontologias vão descrever os tipos de dados usados e modos
+ de apresentação dos mesmos (por exemplo, tipos de gráficos de apresentação).
+ A partir dessas descrições, widgets podem ser geradas automaticamente para
+ ler ou mostrar esses dados numa Interface de Usuário (UI).
+\end_layout
+
+\begin_layout Subsection
+Definir SubClass, Data property, etc
+\end_layout
+
+\begin_layout Section
+Considerações finais
+\end_layout
+
+\begin_layout Standard
+Neste capitulo foram apresentadas as tecnologias ligadas a Web Semântica
+ que serão usadas neste projeto.
+ Em especial, as ontologias terão um papel chave.
+ Através dos conceitos definidos nelas, será possível associar tipos aos
+ dados de entrada e saída de um SAD.
+ Além disso, será possível definir tipos de widgets de interfaces e associar
+ tipos de dados que podem ser lidos ou mostrados por essas widgets numa
+ UI.
+ Com essas informações, é possível a geração automática (ou semi\SpecialChar nobreakdash
+automática)
+ de interfaces.
+\end_layout
+
 \begin_layout Chapter
 DSL
 \end_layout
