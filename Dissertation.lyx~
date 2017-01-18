@@ -1458,6 +1458,453 @@ automática)
 DSL
 \end_layout
 
+\begin_layout Standard
+Em desenvolvimento de software e engenharia de domínio uma linguagem de
+ domínio específico, em inglês 
+\emph on
+\lang english
+Domain-Specific Language
+\lang brazilian
+ (DSL)
+\emph default
+, é um tipo de linguagem de programação ou linguagem de especificação, dedicada
+ a um domínio particular de problema, uma técnica de representação de problema
+ particular e/ou uma técnica de solução particular.
+\end_layout
+
+\begin_layout Standard
+O conceito não é novo, linguagens de programação de propósito especifico
+ sempre existiram, mas o termo se tornou padrão devido à ascensão da modelagem
+ de domínio específico.
+\end_layout
+
+\begin_layout Standard
+Um usuário, relacionado com um domínio específico, pode usar uma DSL sem
+ ter experiência em desenvolvimento de software pois a DSL está relacionada
+ com seu domínio de trabalho.
+ O autor 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fowler2010domain"
+
+\end_inset
+
+ diz que programadores instruem o computador no que ele deve fazer, pois
+ já entendem a maneira dele trabalhar, mas com DSLs é feito o inverso: o
+ computador começa a entender o que o programador (usuário) escreve.
+\end_layout
+
+\begin_layout Standard
+Com DSLs, usuários que não estejam familiarizados com computação podem ter
+ uma maior facilidade no aprendizado de programação.
+ No caso de uma arquitetura baseada em componentes para SADs, DSLs podem
+ ser criadas para domínios específicos de aplicação.
+ Elas utilizariam termos específicos do domínio e, assim, familiares a especiali
+stas desse domínio.
+ 
+\end_layout
+
+\begin_layout Standard
+Utilizando uma DSL como essa, seria possível a especialistas especificar
+ SADs com um grau de detalhamento grande o suficiente para permitir a criação
+ automática desses SADs, sem a necessidade da intervenção de programadores.
+ Os especialistas poderiam se tornar, na prática, programadores de seus
+ próprios SADs.
+\end_layout
+
+\begin_layout Section
+SAD Domain Specific Language
+\end_layout
+
+\begin_layout Standard
+O sistema SustenAgro define as funcionalidades dele por meio de uma DSL
+ baseada nas ontologias de avaliação de sustentabilidade e de geração de
+ SADs, a qual permite gerenciar a representação visual do conhecimento modelado,
+ por meio das seguintes funcionalidades para flexibilizar a geração de interface
+s gráficas de usuário.
+\end_layout
+
+\begin_layout Subsection
+Definição de Evaluation Object: 
+\end_layout
+
+\begin_layout Standard
+O comando 
+\shape italic
+evaluationObject 
+\shape default
+define a estrutura do objeto de avaliação y vincula os controles visuais
+ correspondentes, o comando requer a URI da classe dos elementos que vão
+ ser avaliados e cada umas das propriedades relacionadas.
+ No código 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:DSL-para-definição"
+
+\end_inset
+
+ apresenta-se uma parte da DSL que define a classe do objeto de avaliação
+ 
+\shape italic
+ProductionUnit
+\shape default
+ e as propriedades por meio dos comandos 
+\shape italic
+instance 
+\shape default
+e
+\shape italic
+ type.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+evaluationObject ":ProductionUnit", {     
+\end_layout
+
+\begin_layout Plain Layout
+
+ instance "ui:hasName', label: ["en": "Name", "pt": "Nome"]
+\end_layout
+
+\begin_layout Plain Layout
+
+ instance ":hasAgriculturalProductionSystem"
+\end_layout
+
+\begin_layout Plain Layout
+
+ type label: ["en": "Type", "pt": "Tipo"]
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição de Evaluation Object 
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:DSL-para-definição"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O comando 
+\shape italic
+instance
+\shape default
+ vincula uma propriedade por meio da URI dela e pode estar complementada
+ por parâmetros que customizam a representação visual da propriedade.
+ O comando type vincula as subclasses da classe principal, para ser atribuida
+ nas intancias de Evaluation Object, no caso do Sistema SustenAgro, dito
+ comando identifica que as instancias de
+\shape italic
+ ProductonUnit
+\shape default
+ também podem ser um 
+\shape italic
+Provider
+\shape default
+ ou uma 
+\shape italic
+Plant
+\shape default
+.
+ Os parâmetros que podem complementar os anteriores comandos são:
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+label
+\shape default
+: define um texto associado
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+placeholder:
+\shape default
+ define um texto de ajuda
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+required
+\shape default
+: define uma propriedade obrigatória
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+widget
+\shape default
+: define um controle gráfico de usuário
+\end_layout
+
+\begin_layout Subsection
+Definição de Feature: 
+\end_layout
+
+\begin_layout Standard
+o comando 
+\shape italic
+Feature
+\shape default
+ define as características que serão apresentadas durante a avaliação para
+ serem instanciadas como parte da Analysis, ele tem como argumento uma URI
+ que permite vincular as subclasses da classe referenciada, as instancias
+ destas classes serão quantificadas mediante o processo da avaliação no
+ qual é realizado o preenchimento da propriedade 
+\shape italic
+has value 
+\shape default
+que vincula cada Feature com um Value para quantificá-lo.
+ No sistema SustenAgro foram estabelecidas as Features por meio das URIs
+ das classes: EnvironmentalIndicator, EconomicIndicator, SocialIndicator,
+ ProductionEfficiencyFeature e TechnologicalEfficiencyFeature.
+ Alem disso é possivel acrescentar a inserção de features novas na interface
+ grafica de usuário por meio do parametro extraFeatures.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+feature ':EnvironmentalIndicator', 'extraFeatures': true
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição de Features
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definição da logica de avaliação: 
+\end_layout
+
+\begin_layout Standard
+o comando report define o tratamento quantitativo que vai ser efetuado às
+ Features, com a finalidade de obter valores gerais ou padrões como resultado
+ do processo de avaliação, supportando a definição de operações logicas
+ e aritmeticas existentes tanto das linguagens Java e Groovy, para ser apresenta
+dos diretamente ou por meio de widgets que facilitem a representação e compreens
+ão da avaliação do sistema.
+ No código seguinte apresenta-se a implementação da formula do Sistema SustenAgr
+o, criando variáveis resultado de operações aritméticas para gerar resultados
+ gerais, no caso do SustenAgro o código gera a variável sustainability que
+ representa o índice de sustentabilidade.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+report {     
+\end_layout
+
+\begin_layout Plain Layout
+
+ environment = weightedSum(data.':EnvironmentalIndicator')
+\end_layout
+
+\begin_layout Plain Layout
+
+ economic = weightedSum(data.':EconomicIndicator')
+\end_layout
+
+\begin_layout Plain Layout
+
+ social = weightedSum(data.':SocialIndicator')
+\end_layout
+
+\begin_layout Plain Layout
+
+ sustainability = (environment + social + economic)/3
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição da logica de avaliação.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definição da apresentação do report: 
+\end_layout
+
+\begin_layout Standard
+O comando report também define as widgets que conformam a parte visual do
+ report, o qual pode usar as variáveis de resultado da logica de avaliação
+ como entrada das widgets para melhorar a representação e facilitar a compreensã
+o dos resultados.
+ No código seguinte apresenta-se um exemplo de uso desta funcionalidade
+ no sistema SustenAgro, no qual são definidos comandos que geram as interfaces
+ graficas, como 
+\shape italic
+sustainabilityMatrix
+\shape default
+ que usa as variaveis como argumentos.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+report {
+\end_layout
+
+\begin_layout Plain Layout
+
+ evaluationObjectInfo()
+\end_layout
+
+\begin_layout Plain Layout
+
+ sustainabilityMatrix x: sustainability, y: efficiency
+\end_layout
+
+\begin_layout Plain Layout
+
+ text 'en': 'Microregion map', 'pt': 'Mapa da microregião'
+\end_layout
+
+\begin_layout Plain Layout
+
+ map data.'Microregion'
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição dos controles visuais do report 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Por meio dessas configurações da DSL defini-se as intefaces graficas de
+ usuario do sistema para suportar o processo de avaliação, gerando a representaç
+ão visual dos Evaluation Objects, das Features, da logica da avaliação e
+ da interface gráfica do report.
+\end_layout
+
+\begin_layout Standard
+Esta DSL permitirá que a interface gráfica seja definida em uma linguagem
+ de alto nível.
+ Ela será baseada nas duas ontologias base e permitirá definir e administrar
+ os seguintes elementos conceituais:
+\end_layout
+
+\begin_layout Itemize
+Indicadores 
+\end_layout
+
+\begin_layout Itemize
+Componentes dos indicadores
+\end_layout
+
+\begin_layout Itemize
+Limiares
+\end_layout
+
+\begin_layout Itemize
+Métodos
+\end_layout
+
+\begin_layout Itemize
+Avaliações
+\end_layout
+
+\begin_layout Itemize
+Índices
+\end_layout
+
+\begin_layout Standard
+Cada um dos elementos da DSL terão controles gráficos predefinidos e será
+ possível parametrizar as características dos controles gráficos.
+ Por exemplo, um controle 
+\lang english
+default
+\lang brazilian
+ para entrada de valores reais pode estar ligado a um indicador contínuo.
+ Caso o usuário não goste desse controle, ele pode modificar essa ligação
+ para outro tipo de controle gráfico (também para valores de entrada reais).
+\end_layout
+
+\begin_layout Standard
+Mudanças puramente de design, serão feitas através da linguagem CSS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CSS"
+description "Cascading Style Sheets"
+
+\end_inset
+
+3.
+\end_layout
+
 \begin_layout Chapter
 Decisioner: Sistema gerador de SADs
 \end_layout
