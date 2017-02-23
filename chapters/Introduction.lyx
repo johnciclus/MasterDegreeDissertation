@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../abntex2
+\textclass abntex2
 \begin_preamble
 
 \end_preamble
@@ -85,7 +85,7 @@ description "Sistemas de Apoio à Decisão"
 
  processam e organizam os dados e informações para gerar resultados de valor
  que suportam o processo de decisão, estes sistemas tem evoluído junto com
- a Web
+ a Web 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Shim2002"
@@ -327,8 +327,7 @@ Resultados Principais
 \end_layout
 
 \begin_layout Standard
-Os principais resultados Nesta pesquisa e projeto de mestrado foram gerados
- os seguintes resultados:
+Os principais resultados desta pesquisa e projeto de mestrado são:
 \end_layout
 
 \begin_layout Itemize
@@ -340,7 +339,11 @@ s do presente projeto.
 
 \begin_layout Itemize
 Ontologia sobre interfaces gráficas que permite representar os tipos de
- dados e widgets necessários para a geração dos Sistemas de Apoio na Decisão.
+ dados e 
+\lang english
+widgets
+\lang brazilian
+ necessários para a geração dos Sistemas de Apoio na Decisão.
 \end_layout
 
 \begin_layout Itemize
@@ -349,13 +352,13 @@ DSL: linguagem de domínio especifico que permite gerenciar ontologias para
 \end_layout
 
 \begin_layout Itemize
-SustenAgro: Sistema de Apoio a Decisão para avaliar a sustentabilidade em
- cana-de-açúcar, implementado o método SustenAgro e tecnologias da web semântica.
+Decisioner: Sistema gerador de SADs, que suporta a integração de ontologias,
+ DSL e tecnologias da web semântica.
 \end_layout
 
 \begin_layout Itemize
-Decisioner: Sistema gerador de SADs, que suporta a integração de ontologias,
- DSL e tecnologias da web semântica.
+SustenAgro: Sistema de Apoio a Decisão para avaliar a sustentabilidade em
+ cana-de-açúcar, implementado o método SustenAgro e tecnologias da web semântica.
 \end_layout
 
 \begin_layout Section

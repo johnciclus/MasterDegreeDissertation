@@ -1,0 +1,61 @@
+%================================================================================
+% Configuração da fonte utilizada na capa exigida pelo ICMC
+%================================================================================
+
+\newcommand{\@icmcFont}[2][]{\fontsize{#2}{#2}\ifthenelse{\isempty{#1}}{}{\fontspec[Mapping = tex-text, Path = packages/fonts/]{#1}}}
+
+\ifxetex % Configuração da fonte para a compilação por XETEX
+\RequirePackage{fontspec}
+\RequirePackage{xltxtra}
+\newfontfamily{\arial}[
+Ligatures=TeX, % recommended
+Mapping         = tex-text,
+Path            = packages/fonts/,
+BoldFont        = *bd,
+ItalicFont      = *i,
+BoldItalicFont  = *bi]{arial}
+
+\newcommand\@icmcTitulo{\@icmcFont{18}\arial}
+\newcommand\@icmcAutorCapa{\@icmcFont{13}\arial\bfseries\itshape}
+\newcommand\@icmcAutorFolhaRosto{\@icmcFont{13}\arial\bfseries}
+\newcommand\@icmcTituloFolhaRosto{\@icmcFont{17}\arial}
+\newcommand\@icmcOrientador{\@icmcFont{10}\arial}
+\newcommand\@icmcPreambulo{\@icmcFont{10}\arial}
+\newcommand\@icmcLocalData{\@icmcFont{11}\arial\bfseries}
+\newcommand\@icmcCarimbo{\@icmcFont{11}\arial}
+\newcommand\@icmcSVPG{\@icmcFont{8}\arial}
+\else
+\ifluatex % Configuração da fonte para a compilação por LUATEX
+\RequirePackage{fontspec}
+\newfontfamily{\arial}[
+Ligatures=TeX, % recommended
+Mapping         = tex-text,
+Path            = packages/fonts/,
+BoldFont        = *bd,
+ItalicFont      = *i,
+BoldItalicFont  = *bi]{arial}
+
+\newcommand\@icmcTitulo{\@icmcFont{18}\arial}
+\newcommand\@icmcAutorCapa{\@icmcFont{13}\arial\bfseries\itshape}
+\newcommand\@icmcAutorFolhaRosto{\@icmcFont{13}\arial\bfseries}
+\newcommand\@icmcTituloFolhaRosto{\@icmcFont{17}\arial}
+\newcommand\@icmcOrientador{\@icmcFont{10}\arial}
+\newcommand\@icmcPreambulo{\@icmcFont{10}\arial}
+\newcommand\@icmcLocalData{\@icmcFont{11}\arial\bfseries}
+\newcommand\@icmcCarimbo{\@icmcFont{11}\arial}
+\newcommand\@icmcSVPG{\@icmcFont{8}\arial}
+
+\else % Configuração da fonte para a compilação por PDFLATEX
+\RequirePackage[T1]{fontenc}	    	% Selecao de codigos de fonte.
+\RequirePackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\newcommand\@icmcTitulo{\fontsize{18pt}{1em}\selectfont\usefont{T1}{phv}{m}{n}}
+\newcommand\@icmcAutorCapa{\fontsize{13pt}{1em}\selectfont\usefont{T1}{phv}{b}{it}}
+\newcommand\@icmcAutorFolhaRosto{\fontsize{13pt}{1em}\selectfont\usefont{T1}{phv}{b}{n}}
+\newcommand\@icmcTituloFolhaRosto{\fontsize{17pt}{1em}\selectfont\usefont{T1}{phv}{m}{n}}
+\newcommand\@icmcOrientador{\fontsize{10pt}{1em}\selectfont\usefont{T1}{phv}{m}{n}}
+\newcommand\@icmcPreambulo{\fontsize{10pt}{1em}\selectfont\usefont{T1}{phv}{m}{n}}
+\newcommand\@icmcLocalData{\fontsize{11pt}{1em}\selectfont\usefont{T1}{phv}{b}{n}}
+\newcommand\@icmcCarimbo{\fontsize{11pt}{1em}\selectfont\usefont{T1}{phv}{m}{n}}
+\newcommand\@icmcSVPG{\fontsize{8pt}{1em}\selectfont\usefont{T1}{phv}{m}{n}}
+\fi
+\fi

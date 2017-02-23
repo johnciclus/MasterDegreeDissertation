@@ -1,1 +1,4 @@
-# masters-degree-dissertation
+Dissertação de mestado USP
+=====
+
+Quali

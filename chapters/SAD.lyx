@@ -4,12 +4,15 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../abntex2
-\use_default_options false
+\textclass abntex2
+\begin_preamble
+
+\end_preamble
+\use_default_options true
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -27,9 +30,9 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing onehalf
+\spacing single
 \use_hyperref false
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
@@ -56,12 +59,12 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip smallskip
+\paragraph_separation indent
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 1
-\paperpagestyle default
+\papersides 2
+\paperpagestyle plain
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -85,8 +88,8 @@ description "Sistemas de Apoio a Decisão"
 
  são sistemas que possuem meios que auxiliam a comparação, analise e apoio
  para escolha de alternativas num processo de decisão.
- Isso é realizado usando metodologias feitas por especialistas da área em
- questão 
+ Sendo necessária a integração de metodologias feitas por especialistas
+ da área em questão 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "heinzle2010semantica"
@@ -101,7 +104,7 @@ SADs auxiliam tomadores de decisão dando-lhes um maior entendimento do domínio
  Eles combinam as habilidades dos especialistas (humanos) à capacidade dos
  computadores de acessar dados, estruturar eles em modelos, interpretar,
  formular e avaliar alternativas e cenários distintos onde podem haver possíveis
- soluções para os problemas que se quer solucionar 
+ soluções para os problemas que se querem solucionar 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "lu2006application"
@@ -119,7 +122,7 @@ key "junior2006sistemas"
 
 \end_inset
 
- cita algumas vantagens de SADs:
+ cita algumas vantagens dos SADs:
 \end_layout
 
 \begin_layout Itemize
@@ -163,9 +166,9 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /media/john/Data/Master Degree/Dissertation Document/figures/SAD.jpeg
+	filename /home/john/Desktop/masters-degree-dissertation/figures/SAD.jpeg
 	lyxscale 90
-	width 100col%
+	width 80col%
 	clip
 
 \end_inset
@@ -214,9 +217,9 @@ reference "fig:Componentes-SAD"
 
  mostra os componentes genéricos de um SAD.
  Eles podem ser divididos em dados, banco de modelos, base de conhecimento
- e interface de usuário; o banco de dados armazena os dados crudos, é importante
- que dito bancos sejam mantidos atualizados para um resultado confiável,
- o banco de modelos armazena vários modelos que auxiliam a criação de cenários
+ e interface de usuário; o banco de dados armazena os dados não tratados,
+ é importante que dito banco seja mantido atualizado para um resultado confiável
+, o banco de modelos armazena vários modelos que auxiliam a criação de cenários
  para a tomada de decisões, o banco de conhecimento é produzido a partir
  do entendimento profundo do domínio de conhecimento no qual são abstraídas
  as regras do sistema e a interface de usuário representa cada camada do
@@ -232,7 +235,7 @@ A arquitetura de um software define a organização em termos de seus componente
  suas interconexões, suas interações e também suas principais propriedades
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "de1997software"
 
 \end_inset
@@ -243,7 +246,7 @@ key "de1997software"
  implementações internas desses elementos não são considerados arquiteturais
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "sei2006architecture"
 
 \end_inset
@@ -257,8 +260,10 @@ SADs são criados por especialistas nas áreas de domínio nas quais eles serão
  Esse pode ser um processo lento e custoso, já que os dois grupos de profissiona
 is têm 
 \emph on
+\lang english
 backgrounds
 \emph default
+\lang brazilian
  diferentes e vão ter problemas de comunicação durante o processo de criação
  e testes de um SAD.
  Esses profissionais podem ser até de organizações diferentes, o que dificulta
@@ -286,7 +291,7 @@ Para encontrar e configurar componentes de software de uma arquitetura,
  termos dessa ontologia para encontrar os componentes corretos para uma
  aplicação 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "Linhalis2010"
 
 \end_inset
@@ -303,7 +308,7 @@ description "Web Ontology Language"
 
 ), para melhor portabilidade 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "Pahl2007"
 
 \end_inset
@@ -327,8 +332,11 @@ Ontologias, que descrevam componentes de software para serem usados num
 \begin_layout Standard
 Como especialistas de domínio não têm um conhecimento muito detalhado sobre
  linguagens de especificação de sistemas, é necessário o desenvolvimento
- de uma Domain Specific Language (DSL) adequada ao nível de conhecimento
- de computação dos especialistas.
+ de uma 
+\lang english
+Domain Specific Languag
+\lang brazilian
+e (DSL) adequada ao nível de conhecimento de computação dos especialistas.
  Essa linguagem também deve conter termos familiares ao domínio desses especiali
 stas.
  
@@ -339,16 +347,16 @@ Considerações Finais
 \end_layout
 
 \begin_layout Standard
-Este capítulo apresentou os conceitos principais de SADs, incluindo arquiteturas
- de software e DSLs.
+Este capítulo apresentou os conceitos principais de SADs, incluindo a definição
+ geral e a arquitetura de software.
  Ele também apontou para a necessidade da geração automática (ou semi\SpecialChar nobreakdash
 automática)
- de interfaces para SADs para que seja possível o desenvolvimento de DSLs
- que permitam a especialistas criar suas próprias SADs.
- Um sistema ou componente de software que implemente essa geração automática
- (ou semi\SpecialChar nobreakdash
-automática) deverá ser capaz de fazer interface com as DSLs, desenvolvi
-das para SADs e as ontologias usadas nesses sistemas.
+ de interfaces gráficas de usuários SADs.
+ Uma abordagem para conseguir a geração automática (ou semi\SpecialChar nobreakdash
+automática) de
+ GUIs consiste na integração com DSLs, onde sejam definidas as características
+ gerais do sistema e integrado com os conceitos do domínio de conhecimento
+ a través das ontologias usadas nesses sistemas.
 \end_layout
 
 \end_body

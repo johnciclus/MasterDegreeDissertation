@@ -1,0 +1,591 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abntex2
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Em desenvolvimento de software e engenharia de domínio uma linguagem de
+ domínio específico, em inglês 
+\emph on
+\lang english
+Domain-Specific Language
+\lang brazilian
+ (DSL)
+\emph default
+, é um tipo de linguagem de programação ou linguagem de especificação, dedicada
+ a um domínio particular de problema.
+\end_layout
+
+\begin_layout Standard
+O conceito não é novo, linguagens de programação de propósito especifico
+ existiram desde o começo das linguagens de programação, mas o termo tornou-se
+ padrão devido à ascensão da modelagem de domínio específico.
+\end_layout
+
+\begin_layout Standard
+Um usuário, relacionado com um domínio específico, pode usar uma DSL sem
+ ter experiência em desenvolvimento de software pois a DSL está relacionada
+ com seu domínio de trabalho.
+ O autor 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fowler2010domain"
+
+\end_inset
+
+ diz que programadores instruem o computador no que ele deve fazer, pois
+ já entendem a maneira dele trabalhar, mas com DSLs é feito o inverso: o
+ computador começa a entender o que o programador (usuário) escreve.
+\end_layout
+
+\begin_layout Standard
+No caso de uma arquitetura baseada em componentes para SADs, DSLs podem
+ ser criadas para domínios específicos de aplicação.
+ Elas utilizariam termos específicos do domínio e, assim, familiares a especiali
+stas desse domínio, com o qual seria possível a especialistas especificar
+ SADs com um grau de detalhamento grande o suficiente para permitir a criação
+ automática desses SADs, sem a necessidade da intervenção de programadores.
+ Os especialistas poderiam se tornar, na prática, programadores de seus
+ próprios SADs.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mernik:2005:DDL:1118890.1118892"
+
+\end_inset
+
+ as vantagens das DSL em comparação com as linguagens de proposito geral
+ são a expressividade, facilidade de uso e a integração com o domínio da
+ aplicação
+\end_layout
+
+\begin_layout Section
+Decisioner DSL
+\end_layout
+
+\begin_layout Standard
+No desenvolvimento da presente pesquisa foi necessário definir uma DSL que
+ permitisse representar as principais características do SAD que precisávamos
+ desenvolver, dito SAD foi desenhado para avaliar a sustentabilidade em
+ agricultura, pelo qual foram integrados conceitos do domínio de conhecimento
+ na definição dos componentes do SAD, fornecendo uma linguagem para especialista
+s onde é suportada a de definição dos SAD, as características da DSL são:
+\end_layout
+
+\begin_layout Subsection
+Evaluation Object
+\end_layout
+
+\begin_layout Standard
+Os SAD focados na avaliação, é necessário definir um objeto de avaliação
+ que permita representar as entidades a avaliar, este objeto pelo geral
+ tem propriedades que vão representar cada uns dos indivíduos a avaliar,
+ pelo qual foi definido o comando 
+\shape italic
+evaluationObject, 
+\shape default
+que define a estrutura do objeto de avalização e vincula os controles visuais,
+ o comando tem como argumentos a URI da classe dos elementos que vão ser
+ avaliados e cada uma das propriedades relacionadas.
+ No código 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:DSL-para-definição"
+
+\end_inset
+
+ apresenta-se uma parte da DSL que define a classe do objeto de avaliação
+ 
+\shape italic
+ProductionUnit
+\shape default
+ e as propriedades por meio dos comandos 
+\shape italic
+\lang english
+instance
+\lang brazilian
+ 
+\shape default
+e
+\shape italic
+ 
+\lang english
+type
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+evaluationObject ":ProductionUnit", {     
+\end_layout
+
+\begin_layout Plain Layout
+
+ instance "ui:hasName', label: ["en": "Name", "pt": "Nome"]
+\end_layout
+
+\begin_layout Plain Layout
+
+ instance ":hasAgriculturalProductionSystem"
+\end_layout
+
+\begin_layout Plain Layout
+
+ type label: ["en": "Type", "pt": "Tipo"]
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição de Evaluation Object 
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:DSL-para-definição"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O comando 
+\lang english
+instance
+\lang brazilian
+ vincula uma propriedade definida na ontologia através da URI a qual pode
+ estar complementada por parâmetros que customizam a representação visual
+ da propriedade.
+\end_layout
+
+\begin_layout Standard
+O comando type vincula as subclasses da classe principal, para ser atribuida
+ nas intancias de Evaluation Object, no caso do Sistema SustenAgro, dito
+ comando identifica que as instancias de
+\shape italic
+ ProductonUnit
+\shape default
+ também podem ser um 
+\shape italic
+Provider
+\shape default
+ ou uma 
+\shape italic
+Plant
+\shape default
+.
+ Os parâmetros que podem complementar os anteriores comandos são:
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+label
+\shape default
+: define um texto associado
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+placeholder:
+\shape default
+ define um texto de ajuda
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+required
+\shape default
+: define uma propriedade obrigatória
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+widget
+\shape default
+: define um controle gráfico de usuário
+\end_layout
+
+\begin_layout Subsection
+Feature: 
+\end_layout
+
+\begin_layout Standard
+O comando 
+\shape italic
+Feature
+\shape default
+ define as características que serão apresentadas durante a avaliação para
+ serem instanciadas como parte da Analysis, ele tem como argumento uma URI
+ que permite vincular as subclasses da classe referenciada, as instancias
+ destas classes serão quantificadas mediante o processo da avaliação no
+ qual é realizado o preenchimento da propriedade 
+\shape italic
+has value 
+\shape default
+que vincula cada Feature com um Value para quantificá-lo.
+ No sistema SustenAgro foram estabelecidas as Features por meio das URIs
+ das classes: EnvironmentalIndicator, EconomicIndicator, SocialIndicator,
+ ProductionEfficiencyFeature e TechnologicalEfficiencyFeature.
+ Além disso é possível acrescentar a inserção de 
+\shape italic
+\lang english
+features
+\shape default
+\lang brazilian
+ novas na interface gráfica de usuário a través do parâmetro 
+\shape italic
+\lang english
+extraFeatures
+\shape default
+\lang brazilian
+.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+feature ':EnvironmentalIndicator', 'extraFeatures': true
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição de Features
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Logica de avaliação: 
+\end_layout
+
+\begin_layout Standard
+O comando 
+\shape italic
+Report
+\shape default
+ define o tratamento quantitativo que vai ser efetuado às 
+\shape italic
+\lang english
+Features
+\shape default
+\lang brazilian
+, com a finalidade de obter valores gerais ou padrões como resultado do
+ processo de avaliação, suportando a definição de operações logicas e aritmética
+s existentes tanto das linguagens Java e Groovy, fornecendo assim uma linguagem
+ para edição do metodo de avaliação, permitindo atualizar o metodo dinámicamente
+ e em tempo de execução, ditos valores gerais são apresentados diretamente
+ ou por meio de 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ que facilitem a representação e compreensão da avaliação do sistema.
+ No código seguinte apresenta-se a implementação da formula do Sistema SustenAgr
+o, criando variáveis resultado de operações aritméticas para gerar resultados
+ gerais, no caso do SustenAgro o código gera a variável 
+\shape italic
+\lang english
+sustainability
+\shape default
+\lang brazilian
+ que representa o índice de sustentabilidade, más pode ser definido qualquer
+ método computável.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+report {     
+\end_layout
+
+\begin_layout Plain Layout
+
+ environment = weightedSum(data.':EnvironmentalIndicator')
+\end_layout
+
+\begin_layout Plain Layout
+
+ economic = weightedSum(data.':EconomicIndicator')
+\end_layout
+
+\begin_layout Plain Layout
+
+ social = weightedSum(data.':SocialIndicator')
+\end_layout
+
+\begin_layout Plain Layout
+
+ sustainability = (environment + social + economic)/3
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição da logica de avaliação.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O comando 
+\shape italic
+\lang english
+report
+\shape default
+\lang brazilian
+ também define as 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ que conformam a parte visual do 
+\shape italic
+\lang english
+report
+\shape default
+\lang brazilian
+, o qual pode usar as variáveis de resultado da logica de avaliação como
+ entrada das 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ para melhorar a representação e facilitar a compreensão dos resultados.
+ No código seguinte apresenta-se um exemplo de uso desta funcionalidade
+ no sistema SustenAgro, no qual são definidos comandos que geram as interfaces
+ gráficas, como 
+\shape italic
+sustainabilityMatrix
+\shape default
+ que usa as variáveis geradas anteriormente como argumentos.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+report {
+\end_layout
+
+\begin_layout Plain Layout
+
+ evaluationObjectInfo()
+\end_layout
+
+\begin_layout Plain Layout
+
+ sustainabilityMatrix x: sustainability, y: efficiency
+\end_layout
+
+\begin_layout Plain Layout
+
+ text 'en': 'Microregion map', 'pt': 'Mapa da microregião'
+\end_layout
+
+\begin_layout Plain Layout
+
+ map data.'Microregion'
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL: definição dos controles visuais do report
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Por meio dessas configurações da DSL definiu-se as interfaces gráficas
+ de usuário do sistema para suportar o processo de avaliação, gerando a
+ representação visual dos Evaluation Objects, das Features, da logica da
+ avaliação e da interface gráfica do report.
+\end_layout
+
+\begin_layout Standard
+Esta DSL permitirá que a interface gráfica seja definida em uma linguagem
+ de alto nível.
+ Ela está baseada nas duas ontologias base e permite definir e administrar
+ os seguintes elementos conceituais:
+\end_layout
+
+\begin_layout Itemize
+Indicadores
+\end_layout
+
+\begin_layout Itemize
+Componentes dos indicadores
+\end_layout
+
+\begin_layout Itemize
+Limiares
+\end_layout
+
+\begin_layout Itemize
+Métodos
+\end_layout
+
+\begin_layout Itemize
+Avaliações
+\end_layout
+
+\begin_layout Itemize
+Índices
+\end_layout
+
+\begin_layout Standard
+Os elementos que compõem a DSL tem controles gráficos predefinidos e será
+ possível parametrizar as características destes controles gráficos visuais.
+ Por exemplo para as propriedades de tipo numérico contínuo tem uma 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+ que representa os valores reais que posem ser atribuídos em aquela propriedade,
+ dita 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+ pode ser mudada a outra de acordo com as preferencias dos usuários.
+ No caso das mudanças no design são feitas através da edição do CSS3.
+\end_layout
+
+\end_body
+\end_document

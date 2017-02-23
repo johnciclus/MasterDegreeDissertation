@@ -1,0 +1,193 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abntex2
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Os resultados obtidos são: 
+\end_layout
+
+\begin_layout Enumerate
+Ontologia em formatos da web semântica (RDF/OWL) da avaliação da sustentabilidad
+e no sistema de cana-de-açúcar.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Protótipo de ontologia de interfaces gráficas em formatos da web semântica
+ (RDF/OWL) 
+\end_layout
+
+\begin_layout Enumerate
+Linguagem de domínio especifico DSL, Decisioner, para definir e permitir
+ administrar os parâmetros e processos do sistema SustenAgro 
+\end_layout
+
+\begin_layout Enumerate
+Protótipo de sistema de geração de interfaces suportado nas tecnologias
+ da web semântica 
+\end_layout
+
+\begin_layout Enumerate
+Formulários para recolha de dados sobre sustentabilidade em cana-de-açúcar,
+ e o processo de colheita dos dados de algumas usinas do estado de São Paulo
+ 
+\end_layout
+
+\begin_layout Enumerate
+Protótipo do sistema web Sustenagro que integra as ontologias e a DSL, fornecend
+o um comportamento configurável em tempo de execução dos parâmetros, processos
+ e das interfaces gráficas de usuário
+\end_layout
+
+\begin_layout Standard
+Uma das finalidades deste projeto é construir um gerador de sistemas de
+ apoio a decisão que consiga suportar outros domínios de conhecimento, propondo
+ para a comunidade uma metodologia de desenvolvimento e manutenção que fique
+ simples para os usuários finais e assim permitir que os especialistas no
+ domínio façam as mudanças sem precisas dos especialistas de T.I.
+\end_layout
+
+\begin_layout Section
+Trabalhos Futuros
+\end_layout
+
+\begin_layout Standard
+Este capítulo apresenta os resultados estão uma versão da ontologia de domínio
+ do SustenAgro e artefatos para o desenvolvimento da interface visual do
+ sistema: User Stories, Scenarios, Story Boards, Mockups e um protótipo
+ para a interface do SustenAgro.
+\end_layout
+
+\begin_layout Standard
+Os resultados obtidos são: 
+\end_layout
+
+\begin_layout Enumerate
+Ontologia em formatos da web semântica (RDF/OWL) da avaliação da sustentabilidad
+e no sistema de cana-de-açúcar.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Protótipo de ontologia de interfaces gráficas em formatos da web semântica
+ (RDF/OWL) 
+\end_layout
+
+\begin_layout Enumerate
+Linguagem de domínio especifico DSL, Decisioner, para definir e permitir
+ administrar os parâmetros e processos do sistema SustenAgro 
+\end_layout
+
+\begin_layout Enumerate
+Protótipo de sistema de geração de interfaces suportado nas tecnologias
+ da web semântica 
+\end_layout
+
+\begin_layout Enumerate
+Formulários para recolha de dados sobre sustentabilidade em cana-de-açúcar,
+ e o processo de colheita dos dados de algumas usinas do estado de São Paulo
+ 
+\end_layout
+
+\begin_layout Enumerate
+Protótipo do sistema web Sustenagro que integra as ontologias e a DSL, fornecend
+o um comportamento configurável em tempo de execução dos parâmetros, processos
+ e das interfaces gráficas de usuário
+\end_layout
+
+\begin_layout Standard
+Uma das finalidades deste projeto é construir um gerador de sistemas de
+ apoio a decisão que consiga suportar outros domínios de conhecimento, propondo
+ para a comunidade uma metodologia de desenvolvimento e manutenção que fique
+ simples para os usuários finais e assim permitir que os especialistas no
+ domínio façam as mudanças sem precisas dos especialistas de T.I.
+\end_layout
+
+\begin_layout Section
+Dificuldades e Limitações
+\end_layout
+
+\begin_layout Standard
+Até o presente momento, foi evidenciado como dificuldade para desenvolvimento
+ do projeto as escassas fontes de informação que forneçam uma conexão entre
+ sistemas de produção agrícola e sustentabilidade.
+ Só foi possível encontrar fontes de informação especializada em cada área
+ do conhecimento de maneira separada.
+ Outro problema é a falta de dados resultantes da aplicação dos indicadores
+ de sustentabilidade fornecidos pela Embrapa.
+\end_layout
+
+\end_body
+\end_document

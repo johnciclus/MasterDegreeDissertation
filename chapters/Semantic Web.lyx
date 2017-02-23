@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../abntex2
+\textclass abntex2
 \begin_preamble
 
 \end_preamble
@@ -150,7 +150,7 @@ e com a compreensão humana.
 
 \begin_layout Standard
 Uma das contribuições da Web Semântica foi a formalização das ontologias,
- as quais vão se definir neste capitulo, Nas ontologias desenvolvidas foram
+ as quais vão se definir neste capitulo, nas ontologias desenvolvidas foram
  modelados os conceitos envolvidos no processo de avaliação da sustentabilidade
  em agricultura, definindo, classificando e relacionando cada um dos conceitos
  para assim permitir o uso em outros sistemas e conseguir fazer inferência
@@ -195,7 +195,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../Dissertation Document/figures/Semantic Web History.png
+	filename /home/john/Desktop/masters-degree-dissertation/figures/Semantic Web History.png
 	lyxscale 20
 	width 100col%
 
@@ -271,10 +271,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -292,7 +288,7 @@ name "fig:Web-Semantic-Architecture"
 
 
 \begin_inset Graphics
-	filename ../Images/Semantic Web Architecture.png
+	filename /home/john/Desktop/masters-degree-dissertation/figures/Semantic Web Architecture.png
 
 \end_inset
 
@@ -346,12 +342,12 @@ description "eXtensible Markup Language"
 
 \end_inset
 
- representa a os dados de maneira sintática, através a definição de 
+ representa os dados de maneira sintática, através a definição de 
 \lang english
 markups
 \lang brazilian
  os quais codificam os documentos dando formato preestabelecido e permitindo
- que as informações sejam legível tanto por humanos como por computadores,
+ que as informações sejam legíveis tanto por humanos como por computadores,
  suportando as camadas superiores na arquitetura da Web Semântica.
 \end_layout
 
@@ -378,7 +374,7 @@ A camada
 \lang english
 Ontology
 \lang brazilian
- estende a camada de descrição, fornecendo um mais expressividade na definição
+ estende a camada de descrição, fornecendo mais expressividade na definição
  de conceitos, relações semânticas dos conceitos.
 \end_layout
 
@@ -418,7 +414,7 @@ Digital Signature
 \end_layout
 
 \begin_layout Standard
-O presente trabalho vai fazer das camadas inferiores até o OWL, permitindo
+O presente trabalho incluiou desde as camadas inferiores até o OWL, permitindo
  definir ontologias que representem os domínios de conhecimento.
 \end_layout
 
@@ -511,9 +507,9 @@ Uma ontologia é especificada por meio de componentes básicos que são as
 classes
 \series default
 , o foco da maioria das ontologias, são utilizadas para descrever os conceitos
- de um domínio, possibilitando a organização das classes em um sistema lógico
- e hierárquico contendo subclasses que representam conceitos mais específicos
- 
+ de um domínio, possibilitando a organização e classificação dos individuos
+ em um sistema lógico e hierárquico contendo subclasses que representam
+ conceitos específicos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "noy2001ontology"
@@ -542,8 +538,8 @@ axiomas
 indivíduos
 \series default
 , ou instâncias das classes, são utilizados para representar elementos específic
-os, ou seja, os próprios dados, que, juntamente com a definição de uma ontologia
-, constituem a base de conhecimento 
+os, ou seja, os próprios dados, que juntamente com a definição de uma ontologia,
+ constituem a base de conhecimento 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "noy2001ontology"
@@ -571,7 +567,6 @@ reference "fig:Smart-data-continuum"
 
  mostra os níveis de representação de dados na forma de conhecimento processável
  por máquinas.
- 
 \end_layout
 
 \begin_layout Standard
@@ -584,7 +579,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../Dissertation Document/figures/smart data.png
+	filename /home/john/Desktop/masters-degree-dissertation/figures/smart data.png
 	lyxscale 50
 	width 80col%
 
@@ -751,9 +746,10 @@ http://www.w3.org/TR/PR-rdf-syntax/
 
 \begin_layout Standard
 Com RDF é possível explicitar relações entre dois objetos (usando-se uma
- Tripla RDF), mas não muito mais que isso.
+ Tripla RDF), mas não consegue fazer modelagens especificas nem integrar
+ inferência.
  Para se descrever o que um objeto representa e suas relações com outros
- objetos, são necessárias as ontologias.
+ objetos, são necessárias ontologias.
  
 \end_layout
 
@@ -799,7 +795,7 @@ http://www.w3.org/TR/owl2-overview/
  já existentes: OWL 2 EL, OWL 2 QL e OWL RL (Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:OWL2-Profiles."
+reference "fig:OWL2-Profiles"
 
 \end_inset
 
@@ -823,7 +819,7 @@ key "mcguinness2004owl"
 \end_layout
 
 \begin_layout Description
-DL O perfil OLW DL (
+DL O perfil OWL DL (
 \lang english
 Description Logic
 \lang brazilian
@@ -843,8 +839,15 @@ key "mcguinness2004owl"
 \end_layout
 
 \begin_layout Description
-EL O perfil OWL 2 EL é baseado na família EL++ de lógica descritiva (Description
- Logic), esse perfil é particularmente útil em aplicações utilizando ontologias
+EL O perfil OWL 2 EL é baseado na família EL++ de lógica descritiva (
+\lang english
+Description
+\lang brazilian
+ 
+\lang english
+Logic
+\lang brazilian
+), esse perfil é particularmente útil em aplicações utilizando ontologias
  que contêm um grande número de propriedades e/ou classes.
  Além disso, o OWL 2 EL utiliza um padrão comum utilizado em ontologias
  para conceitos e planejamento, ou seja, a combinação de conjunção e qualidades
@@ -853,9 +856,12 @@ EL O perfil OWL 2 EL é baseado na família EL++ de lógica descritiva (Descript
 
 \begin_layout Description
 QL O perfil OWL 2 QL é baseado na família DL-Lite de lógica descritiva.
- Esse perfil foi criado para permitir o raciocínio (reasoning) eficiente
- com grandes quantidades de dados estruturados de acordo com esquemas relativame
-nte simples.
+ Esse perfil foi criado para permitir o raciocínio (
+\lang english
+reasoning
+\lang brazilian
+) eficiente com grandes quantidades de dados estruturados de acordo com
+ esquemas relativamente simples.
  Ele fornece a maioria dos recursos necessários para capturar modelos conceituai
 s, tais como diagramas de classe UML, diagramas de Entidade de Relacionamento,
  e esquemas de banco de dados.
@@ -881,10 +887,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename ../../Dissertation Document/figures/owl2-profiles.png
-	lyxscale 50
+	filename /home/john/Desktop/masters-degree-dissertation/figures/owl2Profiles.png
 	width 80col%
 
 \end_inset
@@ -899,7 +903,7 @@ status open
 OWL2 Profiles.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:OWL2-Profiles."
+name "fig:OWL2-Profiles"
 
 \end_inset
 
@@ -922,18 +926,19 @@ Considerações finais
 
 \begin_layout Standard
 Os conceitos apresentados anteriormente foram necessários para o desenvolvimento
- do sistema gerador de SADs, confirmando que a web semântica fornece o suporte
+ do sistema gerador de SADs, demostrando que a web semântica fornece o suporte
  tecnológico e teórico suficiente para abordar o desenvolvimento de sistemas
- baseados em conhecimento, particularmente as ontologias permitem uma representa
-ção semântica do domínio de conhecimento.
- Termos dessas ontologias vão descrever os tipos de dados usados e modos
- de apresentação dos mesmos (por exemplo, tipos de gráficos de apresentação).
- A partir dessas descrições, 
+ baseados em conhecimento, particularmente as ontologias suportaram vários
+ aspectos cruciais no desenvolvimento deste projeto, pelo qual elas foram
+ o foco central da presente pesquisa.
+ Através dos conceitos definidos nelas, será possível associar tipos aos
+ dados e modos de apresentação dos mesmos (por exemplo, tipos de gráficos
+ de apresentação), a partir dessas descrições, 
 \lang english
 widgets
 \lang brazilian
- podem ser geradas automaticamente para ler ou mostrar esses dados numa
- Interface de Usuário (UI).
+ podem ser geradas de maneira automática e assim suportar a geração de SADs
+ de maneira semiautomática.
 \end_layout
 
 \end_body

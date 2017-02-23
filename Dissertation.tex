@@ -1,0 +1,142 @@
+%% LyX 2.2.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,a4paper,english,brazil,oldfontcommands]{abntex2}
+\renewcommand{\sfdefault}{lmss}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{nomencl}
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+\OnehalfSpacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\special{papersize=\the\paperwidth,\the\paperheight}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+% adaptação do suporte ao natbib do LyX para uso do abntex2cite
+\AtBeginDocument{%                % garante que este código será carregado após
+% \usepackage[alf]{abntex2cite} ou
+% \usepackage[num]{abntex2cite}
+% no preâmbulo latex.
+\RequirePackage{abntex2cite}   % previne o não carregamento do abntex2cite,
+% mas não define se as citações serão do
+% tipo 'alf' ou 'num'.
+\renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
+\def\citep{\cite}
+\newcommand{\citeyearpar}[1]{(\citeyear{#1})}
+\ifx\AbntCitetype\AbntCitetypeALF
+\def\citet{\citeonline} % alf
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeyear{#1}}
+\newcommand{\citealp}[1]{\citeauthoronline{#1},~\citeyear{#1}}
+\else
+\def\citet{\@ifnextchar[{\citet@with}{\citet@without}} % num
+\def\citet@with[#1]#2{\citeauthoronline{#2}~\cite[#1]{#2}}
+\def\citet@without#1{\citeauthoronline{#1}~\cite{#1}}
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeonline{#1}}
+\def\citealp{\citeonline}
+\fi
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{pagestyle.tex}
+%\usepackage{lmodern}
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+\setcounter{secnumdepth}{4}
+
+\makeatother
+
+\usepackage{babel}
+\usepackage{listings}
+\addto\captionsbrazil{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}}
+\addto\captionsenglish{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listing}}
+\renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}
+
+\begin{document}
+%Configurações do estilo da pagina %==================================
+\makepagestyle{ruled} 
+\makeoddfoot{ruled}{}{}{}   
+\makeevenfoot{ruled}{}{}{}   
+\makeheadrule{ruled}{\textwidth}{\normalrulethickness}   
+\makeevenhead{ruled}{\thepage}{}{\small\itshape\leftmark}   
+\makeoddhead{ruled}{\small\itshape\rightmark}{}{\thepage} 
+\makeatletter % because of \@chapapp      
+\makepsmarks  {ruled}{  
+\nouppercaseheads 
+\createmark	{chapter} 	{both} {shownumber}{\@chapapp\ }{. \ } 
+\createmark	{section} 	{right} {shownumber}{}		  {. \ } 
+\createplainmark {toc}		{both}{\contentsname} 
+\createplainmark {bib}		{both}{\bibname}}
+\makeatother 
+\pagestyle{ruled}
+
+\cleardoublepage{}
+
+\cleardoublepage{}
+
+\cleardoublepage{}
+
+\cleardoublepage{}
+
+\cleardoublepage{}
+
+\cleardoublepage{}
+
+\newpage{}
+
+\clearpage{}
+
+\renewcommand{\nomname}{Lista De Abreviaturas e Siglas}
+
+\clearpage{}
+
+\chapter{Introdução}
+
+\input{chapters/Introduction.tex}
+
+\chapter{Web semântica}
+
+\input{\string"chapters/Semantic Web.tex\string"}
+
+\chapter{SAD}
+
+\input{chapters/SAD.tex}
+
+\chapter{DSL}
+
+\input{chapters/DSL.tex}
+
+\chapter{Trabalhos Relacionados}
+
+\chapter{Metodologia}
+
+\input{chapters/Methodology.tex}
+
+\chapter{Avaliação}
+
+\input{chapters/Evaluation.tex}
+
+\chapter{Conclusão}
+
+\input{chapters/Conclution.tex}
+
+\bibliographystyle{abntex2-alf}
+\bibliography{references/references}
+
+\end{document}
