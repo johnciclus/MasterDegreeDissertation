@@ -195,7 +195,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/masters-degree-dissertation/figures/Semantic Web History.png
+	filename ../figures/Semantic Web History.png
 	lyxscale 20
 	width 100col%
 
@@ -288,7 +288,7 @@ name "fig:Web-Semantic-Architecture"
 
 
 \begin_inset Graphics
-	filename /home/john/Desktop/masters-degree-dissertation/figures/Semantic Web Architecture.png
+	filename ../figures/Semantic Web Architecture.png
 
 \end_inset
 
@@ -579,7 +579,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/masters-degree-dissertation/figures/smart data.png
+	filename ../figures/smart data.png
 	lyxscale 50
 	width 80col%
 
@@ -888,7 +888,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/john/Desktop/masters-degree-dissertation/figures/owl2Profiles.png
+	filename ../figures/owl2Profiles.png
 	width 80col%
 
 \end_inset

@@ -94,7 +94,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/john/Desktop/masters-degree-dissertation/figures/SustenAgro-scenario.png
+	filename ../figures/SustenAgro-scenario.png
 	scale 50
 
 \end_inset
@@ -137,7 +137,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/john/Desktop/masters-degree-dissertation/figures/SustenAgro-results.png
+	filename ../figures/SustenAgro-results.png
 
 \end_inset
 

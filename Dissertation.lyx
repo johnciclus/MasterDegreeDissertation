@@ -283,41 +283,13 @@ pagestyle{ruled}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage cleardoublepage
+\begin_inset External
+	template PDFPages
+	filename pages/Half Title Page.pdf
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -361,10 +333,23 @@ nomname}{Lista De Abreviaturas e Siglas}
 \end_inset
 
 
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Introdução"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -378,21 +363,14 @@ filename "chapters/Introduction.lyx"
 \end_layout
 
 \begin_layout Chapter
-Web semântica
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "chapters/Semantic Web.lyx"
+SAD
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:SAD"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Chapter
-SAD
 \end_layout
 
 \begin_layout Standard
@@ -406,7 +384,35 @@ filename "chapters/SAD.lyx"
 \end_layout
 
 \begin_layout Chapter
+Web semântica
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Web-semântica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Semantic Web.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
 DSL
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:DSL"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -420,17 +426,41 @@ filename "chapters/DSL.lyx"
 \end_layout
 
 \begin_layout Chapter
-Trabalhos Relacionados
-\end_layout
+Decisioner
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Decisioner"
 
-\begin_layout Chapter
-Metodologia
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "chapters/Methodology.lyx"
+filename "chapters/Decisioner.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Ontologias
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Ontologias"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Ontologies.lyx"
 
 \end_inset
 
@@ -439,6 +469,13 @@ filename "chapters/Methodology.lyx"
 
 \begin_layout Chapter
 Avaliação
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Avaliação"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -452,7 +489,14 @@ filename "chapters/Evaluation.lyx"
 \end_layout
 
 \begin_layout Chapter
-Conclusão
+Concluções
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Conclusão"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
