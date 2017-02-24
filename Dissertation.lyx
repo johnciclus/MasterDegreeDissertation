@@ -489,7 +489,7 @@ filename "chapters/Evaluation.lyx"
 \end_layout
 
 \begin_layout Chapter
-Concluções
+Conclusões
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Conclusão"
