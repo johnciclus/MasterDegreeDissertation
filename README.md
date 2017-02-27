@@ -1,4 +1,4 @@
 Dissertação de mestado USP
 =====
 
-Quali
+Dissertação

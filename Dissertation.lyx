@@ -384,7 +384,7 @@ filename "chapters/SAD.lyx"
 \end_layout
 
 \begin_layout Chapter
-Web semântica
+Web semântica e DSL
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Web-semântica"
@@ -398,17 +398,6 @@ name "chap:Web-semântica"
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/Semantic Web.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-DSL
-\begin_inset CommandInset label
-LatexCommand label
-name "chap:DSL"
 
 \end_inset
 
@@ -447,10 +436,10 @@ filename "chapters/Decisioner.lyx"
 \end_layout
 
 \begin_layout Chapter
-Ontologias
+Sustenagro
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Ontologias"
+name "chap:SustenAgro"
 
 \end_inset
 
@@ -460,7 +449,7 @@ name "chap:Ontologias"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "chapters/Ontologies.lyx"
+filename "chapters/SustenAgro.lyx"
 
 \end_inset
 
@@ -489,7 +478,7 @@ filename "chapters/Evaluation.lyx"
 \end_layout
 
 \begin_layout Chapter
-Concluções
+Conclusões
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Conclusão"

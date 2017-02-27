@@ -370,28 +370,26 @@ Este trabalho de dissertação está estruturado da seguinte forma:
 \end_layout
 
 \begin_layout Standard
-Capítulo 2: Apresenta a fundamentação teórica sobre a Web Semântica com
- a finalidade de descrever as principais tecnologias e a teoria necessária
+Capítulo 2: Apresenta os trabalhos relacionados sobre geração automática
+ de Sistemas de Apoio à Decisão e os Sistemas de Avaliação da Sustentabilidade
+ para representar o estado da arte da presente pesquisa.
+\end_layout
+
+\begin_layout Standard
+Capítulo 3: Apresenta a fundamentação teórica sobre a Web Semântica e DSL
+ com a finalidade de descrever as principais tecnologias e a teoria necessária
  para desenvolver o presente trabalho.
 \end_layout
 
 \begin_layout Standard
-Capítulo 3: Apresenta a fundamentação sobre DSL e como pode ser usada em
- associação com a Web Semântica para gerar novos tipos de sistemas de apoio
- à decisão.
-\end_layout
-
-\begin_layout Standard
-Capítulo 4: Apresenta os trabalhos relacionados sobre geração automática
- de Sistemas de Apoio à Decisão e os Sistemas de avaliação da Sustentabilidade
- para representar o estado da arte da presente pesquisa.
+Capítulo 4: Apresenta o sistema Decisioner que permite suportar a geração
+ de Sistemas de Apoio à Decisão.
  
 \end_layout
 
 \begin_layout Standard
-Capítulo 5: Apresenta a abordagem da metodologia e o desenvolvimento de
- cada um dos produtos software resultantes do presente trabalho.
- 
+Capítulo 5: Apresenta SustenAgro, o primeiro caso de uso do sistema Decisioner
+ que demostra a funcionalidade do sistema desenvolvido
 \end_layout
 
 \begin_layout Standard
@@ -399,11 +397,7 @@ Capítulo 6: Apresenta a avaliação realizada pelos especialistas.
 \end_layout
 
 \begin_layout Standard
-Capítulo 7: Apresenta os resultados obtidos
-\end_layout
-
-\begin_layout Standard
-Capítulo 8: Apresenta as conclusões do presente trabalho, uma discussão
+Capítulo 7: Apresenta as conclusões do presente trabalho, uma discussão
  e possíveis trabalhos futuros.
 \end_layout
 
