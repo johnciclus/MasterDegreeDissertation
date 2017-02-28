@@ -352,13 +352,21 @@ DSL: linguagem de domínio especifico que permite gerenciar ontologias para
 \end_layout
 
 \begin_layout Itemize
-Decisioner: Sistema gerador de SADs, que suporta a integração de ontologias,
- DSL e tecnologias da web semântica.
+
+\lang english
+Decisioner
+\lang brazilian
+: Sistema gerador de SADs, que suporta a integração de ontologias, DSL e
+ tecnologias da web semântica.
 \end_layout
 
 \begin_layout Itemize
-SustenAgro: Sistema de Apoio a Decisão para avaliar a sustentabilidade em
- cana-de-açúcar, implementado o método SustenAgro e tecnologias da web semântica.
+
+\lang english
+SustenAgro
+\lang brazilian
+: Sistema de Apoio a Decisão para avaliar a sustentabilidade em cana-de-açúcar,
+ implementado o método SustenAgro e tecnologias da web semântica.
 \end_layout
 
 \begin_layout Section

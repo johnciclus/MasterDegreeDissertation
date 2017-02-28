@@ -220,7 +220,7 @@ evaluationObject ":ProductionUnit", {
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DSL: definição de Evaluation Object 
+Definição de Evaluation Object 
 \begin_inset CommandInset label
 LatexCommand label
 name "lis:DSL-para-definição"
@@ -349,7 +349,7 @@ feature ':EnvironmentalIndicator', 'extraFeatures': true
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DSL: definição de Features
+Definição de Features
 \end_layout
 
 \end_inset
@@ -438,7 +438,7 @@ report {
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DSL: definição da logica de avaliação.
+Definição da logica de avaliação.
 \end_layout
 
 \end_inset
@@ -520,7 +520,7 @@ report {
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DSL: definição dos controles visuais do report
+Definição dos controles visuais do report
 \end_layout
 
 \end_inset

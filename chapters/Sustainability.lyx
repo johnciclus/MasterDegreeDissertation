@@ -1,0 +1,1264 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abntex2
+\begin_preamble
+\input{pagestyle.tex}
+%\usepackage{lmodern}
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+\setcounter{secnumdepth}{4}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Provides natbib 1
+Preamble
+% adaptação do suporte ao natbib do LyX para uso do abntex2cite
+\AtBeginDocument{%                % garante que este código será carregado após
+% \usepackage[alf]{abntex2cite} ou
+% \usepackage[num]{abntex2cite}
+% no preâmbulo latex.
+\RequirePackage{abntex2cite}   % previne o não carregamento do abntex2cite,
+% mas não define se as citações serão do
+% tipo 'alf' ou 'num'.
+\renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
+\def\citep{\cite}
+\newcommand{\citeyearpar}[1]{(\citeyear{#1})}
+\ifx\AbntCitetype\AbntCitetypeALF
+\def\citet{\citeonline} % alf
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeyear{#1}}
+\newcommand{\citealp}[1]{\citeauthoronline{#1},~\citeyear{#1}}
+\else
+\def\citet{\@ifnextchar[{\citet@with}{\citet@without}} % num
+\def\citet@with[#1]#2{\citeauthoronline{#2}~\cite[#1]{#2}}
+\def\citet@without#1{\citeauthoronline{#1}~\cite{#1}}
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeonline{#1}}
+\def\citealp{\citeonline}
+\fi
+}
+EndPreamble
+\end_local_layout
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "lmss" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style abnt
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+A duplicação da demanda global de alimentos projetadas para os próximos
+ 50 anos, impõe enormes desafios para a produção mundial de alimentos, por
+ isso são necessários novos incentivos e políticas para garantir a sustentabilid
+ade em agricultura, serão cruciais para atender as demandas de melhoramento
+ da produtividade sem comprometer a integridade do ambiente ou a saúde pública
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "tilman2002agricultural"
+
+\end_inset
+
+, por esta razão é importante gerar estratégias que permitam conhecer o
+ estado dos sistemas produtivos e melhorar segundo as necessidades identificadas.
+\end_layout
+
+\begin_layout Standard
+Na pesquisa de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ewert2009546"
+
+\end_inset
+
+ apresenta varias estrategias para abordar a complexidade nos sistemas agrícolas
+, começa relacionando a agricultura com os sistemas socioeconômicos e naturais,
+ e enfrenta o problema de gerir suas múltiplas funções de uma maneira sustentáve
+l, o metodo 
+\emph on
+Integrated Assessment and Modelling (IAM)
+\emph default
+ pode fornecer uma visão sobre os possíveis impactos das mudanças políticas,
+ existem múltiplos modelos 
+\emph on
+Integrated Assessment (IA)
+\emph default
+ mas a maioria são monolíticos resolvendo problemas específicos, os enfoques
+ flexíveis são escassos, o 
+\emph on
+framework
+\emph default
+ proposto (SEAMLESS-IF) integra relações e processos através de 
+\emph on
+
+\begin_inset Quotes sld
+\end_inset
+
+disciplinas e escalas
+\begin_inset Quotes srd
+\end_inset
+
+
+\emph default
+ e combina análises quantitativos com apreciações qualitativas e experiências,
+ permitindo um acoplamento entre modelos e ferramentas, este 
+\emph on
+framework
+\emph default
+ permite um avanço significativo em flexibilidade de IAM o que permite melhorar
+ o modelagem integrado para avaliação do impacto em agricultura.
+\end_layout
+
+\begin_layout Standard
+A pesquisa apresenta exemplos da natureza complexa do sistema agrícola.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "van2008integrated"
+
+\end_inset
+
+ Os sistemas agrícolas evoluem continuamente e são forçados a mudar como
+ resultado de uma gama de forças globais e locais.
+ As tecnologias em agricultura e as políticas agrícolas, ambiental e de
+ desenvolvimento estão crescentemente designadas para contribuir à sustentabilid
+ade da agricultura.
+\end_layout
+
+\begin_layout Standard
+Uma estrategia são os métodos e metodologias de avaliação, as quais utilizam
+ indicadores, um exemplo deste enfoque é a pesquisa 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AlkanOlsson:2009"
+
+\end_inset
+
+ onde desenvolveram um 
+\emph on
+framework
+\emph default
+ de indicadores que relaciona de uma maneira consistente as dimensões ambiental,
+ econômica e social do desenvolvimento sustentável, seu principal benefício
+ é uma relativa simplicidade na apresentação da informação e a possibilidade
+ de vincular os indicadores com objetivos políticos de cada dimensão da
+ sustentabilidade e assim facilitar a comparação dos impactos das novas
+ políticas em cada dimensão.
+\end_layout
+
+\begin_layout Standard
+Na pesquisa realizada por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wilson2007299"
+
+\end_inset
+
+ analisam o melhor abordagem para o desenho e uso de modelos 
+\emph on
+SDI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SDI"
+description "Sustainable Development Indicator"
+
+\end_inset
+
+ Sustainable Development Indicator
+\emph default
+, esta pesquisa direciona um aspecto desta pergunta explorando se as métricas
+ globais SDI estão enviando uma mensagem clara para guiar o desenvolvimento
+ sustentável.
+ 
+\end_layout
+
+\begin_layout Standard
+Seis métricas globais SDI são comparadas e os resultados ilustram que as
+ diferentes métricas variam à interpretação sobre a sustentabilidade das
+ nações, o grau de variabilidade entre as métricas é analisado por meio
+ de análises de correlação, ao final se conclui que não existe consenso
+ sobre o melhor abordagem.
+\end_layout
+
+\begin_layout Standard
+Existem pesquisas que abordam a sustentabilidade desde ferramentas tecnológicas,
+ as quais podem servir de referencia ao sistema SustenAgro, uma delas foi
+ desenvolvida por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brilhante:2006"
+
+\end_inset
+
+ e consiste em um 
+\emph on
+framework
+\emph default
+ (MOeMA-IS) para análise sustentável do estado do Amazonas, faz uso de uma
+ ontologia para descrição de Indicadores de sustentabilidade (ISD-Economics
+ Ontology), onde são usados os indicadores humano (Social), suporte (Econômico)
+ e natural (Ambiental), os quais foram subdivididos em sete indicadores,
+ seu desenvolvimento foi feito de uma maneira genérica de forma que ela
+ suporta a inclusão de novos indicadores de forma simples, esta ontologia
+ foi feita em dois níveis de hierarquia.
+ As medidas de sustentabilidade estão explicitas na ontologia.
+ O 
+\emph on
+framework
+\emph default
+ trabalha de forma onde a base dele é a ontologia e ele emprega os indicadores
+ de bases de dados (não foi descrito se são 
+\emph on
+triplestores
+\emph default
+) e as medidas e valores padrões de outra base e assim o 
+\emph on
+framework
+\emph default
+ calcula as medidas dos indicadores e dá um resultado relevante ao tipo
+ de necessidade.
+ Para o desenvolvimento da ontologia foi utilizada a ferramenta 
+\emph on
+Protégé
+\emph default
+ utilizando o plugin de OWL e alguns indicadores foram feitos utilizando
+ a classe do SUMO do OWL.
+\end_layout
+
+\begin_layout Standard
+Outra ferramenta foi desenvolvida por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kraines2011system"
+
+\end_inset
+
+ com a visão de criar um 
+\emph on
+Knowledge Sharing System for Sustainability Science
+\emph default
+ por meio do processo 
+\emph on
+Semantic Data Modeling
+\emph default
+, uma ontologia fundamentada na lógica descritiva foi desenvolvida por meio
+ do ISO 15926 Data Model para descrever três tipos de conceitualizações
+ de ciência sustentável: 
+\emph on
+situational knowledge
+\emph default
+, 
+\emph on
+analytic methods
+\emph default
+ e 
+\emph on
+scenario frameworks
+\emph default
+.
+ Os conhecimentos dos especialistas podem ser descritos por meio de 
+\emph on
+semantic statements
+\emph default
+ utilizando esta ontologia o 
+\emph on
+semantic matching based on logic
+\emph default
+ e 
+\emph on
+rule-based inferences
+\emph default
+ foram usados para quantificar o 
+\emph on
+conceptual overlap of semantic statements
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Sobre as ontologias na interface gráfica encontramos: no artigo de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ruiz2006using"
+
+\end_inset
+
+ é analisado o uso de ontologias na engenharia de software, identificando
+ 50 tipos de uso entre as quais foram identificados dois usos no suporte
+ de interfaces gráficas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "paulheim2012ontology"
+
+\end_inset
+
+ propõem a seguinte definição, uma ontology-enhanced user interface é uma
+ interface cujas capacidades de visualização, possibilidades de interação,
+ ou processo de desenvolvimento estão habilitados ou (pelo menos) melhorado
+ pelo emprego de uma ou mais ontologias, na pesquisa foram identificados
+ três propósitos para os quais são usadas as ontologias no melhoramento
+ das interfaces gráficas, e são os seguintes:
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as capacidades de visualização;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as possibilidades de interação;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar o processo de desenvolvimento;
+\end_layout
+
+\begin_layout Standard
+são apressentados os usos mais comuns de ontologias que suporten interfaces
+ gráficas (ontology-enhanced user interface), eles
+\end_layout
+
+\begin_layout Standard
+Alem disso na literatura existem pesquisas relacionadas com o vocabulário
+ 
+\emph on
+AGROVOC Agricultural Vocabulary
+\emph default
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://aims.fao.org/agrovoc
+\end_layout
+
+\end_inset
+
+ que é um 
+\emph on
+theasaurus
+\emph default
+ que fornece termos padronizados sobre alimentação, nutrição, agricultura,
+ pesca, floresta e meio ambiente criados de maneira colaborativa e coordenados
+ pela 
+\emph on
+FAO Food and Agriculture Organization
+\emph default
+, estes termos podem ser reutilizados nas ontologias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DCMIPro841"
+
+\end_inset
+
+, permitindo uma padronização com os identificadores dos conceitos, reutilizando
+ informações e integrando os conceitos com outros dados da LOD Linked Open
+ Data, esta reutilização foi feita através da vinculação de AGROVOC ao sistema
+ 
+\emph on
+AOS/CS Agricultural Ontology Service Concept Server
+\emph default
+, a FAO desenvolveu um modelo base para esse novo sistema utilizando o 
+\emph on
+OWL Web Ontology Language.
+\end_layout
+
+\begin_layout Standard
+Cada uma destas pesquisas fornece um exemplo do uso das tecnologias da internet
+ e da web semântica na criação de soluções baseadas em conhecimento, isto
+ é confirmado por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "roussey2010ontologies"
+
+\end_inset
+
+ por meio da descrição de como as ontologias têm sido usadas para múltiplas
+ tarefas, uma das quais é conseguir interoperabilidade entre sistemas de
+ informação heterogêneos e como as seguintes gerações de sistemas de informação
+ utilizariam uma base do conhecimento do domínio, dadas as afirmações destas
+ pesquisas pode-se deduzir que uma ontologia proporciona o suporte conceitual
+ para cumprir os requisitos do sistema SustenAgro.
+\end_layout
+
+\begin_layout Standard
+A pesquisa feita por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "boseley2009development"
+
+\end_inset
+
+, apresenta um exemplo de como unificar termos de plantas e organizá-los
+ em uma maneira sistemática é fundamental para mais eficiência nas pesquisas
+ e descobertas, para este fim, a 
+\emph on
+Plant Ontology
+\emph default
+ foi criada como uma iniciativa do 
+\emph on
+Plant Ontology Consortium
+\emph default
+, esta ontologia é um vocabulário controlado de termos usados para dados
+ de atributos (por exemplo, genótipo e fenótipo) para uma estrutura especifica
+ da planta ou um estagio de desenvolvimento.
+\end_layout
+
+\begin_layout Section
+Dados fornecidos pela unidade de Embrapa Meio Ambiente
+\end_layout
+
+\begin_layout Standard
+A principal fonte de dados para este projeto foi fornecida pela pesquisa
+ de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "oliveira:2013"
+
+\end_inset
+
+, onde inicialmente foram identificados 62 indicadores de sustentabilidade
+ no sistema de cana-de-açúcar, dos quais foram aceitos 39 indicadores como
+ os mais relevantes tendo uma validação com porcentagem maior ou igual a
+ 60% feita por uma comunidade de especialistas em sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+A seguintes tabelas mostram os indicadores resultantes, os quais foram classific
+ados nas três dimensões da sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+Os indicadores da tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Indicadores-de-sustentabilidade-ambiental"
+
+\end_inset
+
+ representam os valores críticos da dimensão ambiental integrando fenômenos
+ do solo, dos recursos hídricos e climáticos, os quais permitem caracterizar,
+ quantificar e comparar o estado da dimensão ambiental de uma unidade produtiva
+ com outras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="14cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores da dimensão ambiental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quantificação da erosão potencial segundo a Equação Universal de Perda de
+ Solo (USLE – Universal Soil Loss Equation)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compactação do solo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ocorrência de queimada de palha no campo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Emissão e suspensão de microparticulas (fuligem)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Localização geográfica da cultura em relação à aptidão agroclimática
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Localização geográfica da cultura em relação à aptidão edáfica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Localização geográfica da cultura em relação à aptidão edafoclimática
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Áreas de Preservação Permanente (APP) recuperadas/conservadas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comprovação de averbação da área de Reserva Legal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cumprimento com os Termos de Compromisso de Recuperação Ambiental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão ambiental 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-ambiental"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os indicadores da tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Indicadores-de-sustentabilidade-social"
+
+\end_inset
+
+ representam os valores críticos da dimensão social integrando fenômenos
+ de emprego, saúde e treinamento, os quais permitem caracterizar, quantificar
+ e comparar o estado da dimensão social de uma unidade produtiva com outras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="14cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores da dimensão social
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poder de compra do trabalhador
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Taxa de formalidade do emprego
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Índice Parcial de Educação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Índice de internações decorrentes de problemas respiratórios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Registro de treinamentos, capacitação ou requalificação de trabalhadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão social 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-social"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os indicadores da tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Indicadores-de-sustentabilidade-economica"
+
+\end_inset
+
+ representam os valores críticos da dimensão econômica integrando fenômenos
+ de emprego, saúde e treinamento, os quais permitem caracterizar, quantificar
+ e comparar o estado da dimensão social de uma unidade produtiva com outras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="31" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="14cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores da dimensão econômica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Agrícola/Industrial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implantação de biorrefinarias
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rotação de cultura (soja)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Área planta/Área colhida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atender à Norma Regulamentadora (NR-31)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Longevidade da cana
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Distância usina/produção de cana
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Controle de pragas favorecidas pela não-queima
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cana queimada manual
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adoção do plantio direto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Predominância da conversão de pastagem em cana-de-açúcar, do que outras
+ culturas/florestas em cana-de-açúcar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ocorrência de reutilização de recursos hídricos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Condições favoráveis à mecanização
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Otimização do transporte da cana
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consumo de diesel
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variedades melhoradas para condições eco-regionais mais específicas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Produtos/Subprodutos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Relação preço gasolina/etanol
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inclusão do Etanol como Commodity
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adoção da tecnologia flex-fuel por outros países
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regulação de comércio de distribuição
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Número de contrato para fornecer bioeletricidade
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Infraestrutura para a produção de biocombustíveis de 2ª.
+ e 3ª.
+ gerações
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Tecnológicos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desenvolvimento de leveduras mais resistentes a concentrações elevadas de
+ álcool (Fermentação Extrativa)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Políticos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iniciativas do poder público com a proteção ao ambiente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão econômica
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-economica"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cada um dos anteriores indicadores foram definidos com um conjunto de pelo
+ menos um componente de indicador, estes componentes permitem quantificar
+ por meio de uma variável medível o estado do indicador, estes componentes
+ de indicador estão definidos com unidades do domínio que são de fácil interpret
+ação pelas pessoas relacionadas com sustentabilidade em agricultura.
+\end_layout
+
+\begin_layout Standard
+Também foram fornecidos dados econômicos das principais usinas do estado
+ de São Paulo, estes dados vão ser analisados para tentar definir a dimensão
+ econômica das unidades produtivas.
+\end_layout
+
+\begin_layout Section
+Considerações finais
+\end_layout
+
+\begin_layout Standard
+A abordagem que será utilizada no desenvolvimento de SustenAgro é a definição
+ de um sistema de avaliação da sustentabilidade baseado em ontologias que
+ representam o conhecimento do sistema produtivo de cana-de-açúcar no centro-sul
+ do Brasil, essa ontologia vai tomar a informação da pesquisa de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "oliveira:2013"
+
+\end_inset
+
+ e dará suporte na indexação, recuperação e organização dos dados, o objetivo
+ da ontologia é suportar o processo de avaliação da sustentabilidade pelo
+ que terá conceitos do domínio do sistema produtivo de cana-de-açúcar e
+ conceitos de sustentabilidade, esta ontologia suportará as funcionalidades
+ do software que fazem possível o processo de avaliação e também será integrada
+ com outra ontologia de interface gráfica para suportar uma DSL que permitirá
+ definir interfaces gráficas customizadas para os usuários do sistema, estas
+ tecnologias suportaram o processo de avaliação de sustentabilidade.
+\end_layout
+
+\end_body
+\end_document

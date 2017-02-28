@@ -190,6 +190,16 @@ Ontologia do domínio
 \end_layout
 
 \begin_layout Standard
+O conhecimento do domínio envolvido no sistema Sustenagro está em contínua
+ construção.
+ Por isso, é necessário um enfoque que permita realizar mudanças na estrutura
+ e no conteúdo usados no sistema durante seu desenvolvimento.
+ As ontologias permitem representar o conhecimento de um domínio por meio
+ de formatos, como a linguagem OWL, permitindo separar o conhecimento das
+ outras partes do sistema.
+\end_layout
+
+\begin_layout Standard
 A ontologia do domínio foi desenvolvida baseada nas definições feitas pelos
  especialistas, que foram generalizadas a través das seguintes classes represent
 adas na Figura 
@@ -251,15 +261,205 @@ A classe
 Analysis
 \shape default
 \lang brazilian
- representa as avaliações de sustentabilidade onde cada individuo dela 
-\end_layout
-
-\begin_layout Section
-Sistemas de apóio à decisão
+ representa o conceito de avaliação de sustentabilidade onde cada individuo
+ dela representa uma avaliação cadastrada no sistema.
+ 
 \end_layout
 
 \begin_layout Standard
-Os sistemas de apóio à decisão (SAD) ajudam no entendimento de processos
+A classe 
+\shape italic
+\lang english
+EvaluationObject
+\lang brazilian
+ 
+\shape default
+representa os objetos que serão avaliados pelo SAD, os quais tem indicadores
+ que permitem suportar o processo de avaliação.
+\end_layout
+
+\begin_layout Standard
+A classe 
+\shape italic
+\lang english
+Feature
+\shape default
+\lang brazilian
+ representa cada uma das características dos objetos de avaliação, principalment
+e indicadores que são usados durante o processo de avaliação
+\end_layout
+
+\begin_layout Standard
+A classe 
+\shape italic
+\lang english
+Indicator
+\shape default
+\lang brazilian
+ representa o conceito de indicador que representa cada conceito a avaliar
+\end_layout
+
+\begin_layout Standard
+A classe 
+\shape italic
+\lang english
+Weighted
+\shape default
+\lang brazilian
+ representa o conceito de indicador vinculado com um peso que permite atribuir
+ uma 
+\end_layout
+
+\begin_layout Subsection
+Ontologia de controles de gráficos
+\end_layout
+
+\begin_layout Standard
+Ontologia de controles de gráficos: a finalidade dessa ontologia é dar suporte
+ a composição de controles gráficos relacionados com os indicadores.
+ Esse é um requisito funcional do software, uma vez que os indicadores podem
+ ter diversos tipos de unidades e para cada tipo existe um tipo de controle
+ gráfico mais apropriado para sua representação.
+ Por exemplo, para representar um indicador de sustentabilidade do tipo
+ numérico é recomendável usar um controle visual tipo spinner.
+\end_layout
+
+\begin_layout Section
+Ontologias
+\end_layout
+
+\begin_layout Standard
+Sobre as ontologias sobre interfaces gráficas, no artigo de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ruiz2006using"
+
+\end_inset
+
+ é analisado o uso de ontologias na engenharia de software, identificando
+ 50 tipos de uso entre os quais foram identificados dois usos no suporte
+ de interfaces gráficas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "paulheim2012ontology"
+
+\end_inset
+
+ propõem a seguinte definição, uma 
+\emph on
+ontology-enhanced user interface
+\emph default
+ é uma interface cujas capacidades de visualização, possibilidades de interação,
+ ou processo de desenvolvimento estão habilitados ou, pelo menos, melhorados
+ pelo emprego de uma ou mais ontologias.
+ Na pesquisa foram identificados três propósitos para os quais são usadas
+ as ontologias no melhoramento das interfaces gráficas:
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as capacidades de visualização;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as possibilidades de interação;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar o processo de desenvolvimento;
+\end_layout
+
+\begin_layout Standard
+Foram apresentados também os usos mais comuns de ontologias que suportam
+ interfaces gráficas (ontology-enhanced user interface).
+\end_layout
+
+\begin_layout Standard
+Além disso, na literatura, existem pesquisas relacionadas com o vocabulário
+ 
+\emph on
+AGROVOC Agricultural Vocabulary
+\emph default
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://aims.fao.org/agrovoc
+\end_layout
+
+\end_inset
+
+ que é um 
+\emph on
+\lang english
+thesaurus
+\emph default
+\lang brazilian
+ que fornece termos padronizados sobre alimentação, nutrição, agricultura,
+ pesca, floresta e meio ambiente criados de maneira colaborativa e coordenados
+ pela
+\emph on
+ 
+\emph default
+\lang english
+Food and Agriculture Organization
+\lang brazilian
+ (FAO
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FAO"
+description "Food and Agriculture Organization"
+
+\end_inset
+
+).
+ Esses termos podem ser reutilizados nas ontologias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DCMIPro841"
+
+\end_inset
+
+, permitindo uma padronização dos identificadores dos conceitos, reutilizando
+ informações e integrando os conceitos com outros dados.
+ Essa reutilização foi feita através da vinculação da AGROVOC ao sistema
+ 
+\emph on
+AOS/CS Agricultural Ontology Service Concept Server
+\emph default
+, a FAO desenvolveu um modelo base para esse novo sistema utilizando o 
+\emph on
+OWL Web Ontology Language.
+\end_layout
+
+\begin_layout Standard
+Cada uma destas pesquisas fornece um exemplo do uso das tecnologias da web
+ semântica na criação de soluções baseadas em conhecimento.
+ Isso é confirmado por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "roussey2010ontologies"
+
+\end_inset
+
+ por meio da descrição de (i) como as ontologias têm sido usadas para múltiplas
+ tarefas, uma das quais é conseguir interoperabilidade entre sistemas de
+ informação heterogêneos; e de (ii) como as seguintes gerações de sistemas
+ de informação utilizariam uma base do conhecimento do domínio.
+ Dadas as afirmações dessas pesquisas, pode-se deduzir que uma ontologia
+ pode proporcionar o suporte conceitual para cumprir os requisitos de sistema
+ SAD, como o SustenAgro.
+\end_layout
+
+\begin_layout Section
+Sistemas de apoio à decisão
+\end_layout
+
+\begin_layout Standard
+Os sistemas de apoio à decisão (SAD) ajudam no entendimento de processos
  complexos, auxiliam na comparação dos fenômenos envolvidos e suportam a
  análise e escolha de alternativas no processo de decisão 
 \begin_inset CommandInset citation

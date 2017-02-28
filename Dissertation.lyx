@@ -311,6 +311,45 @@ pagestyle{ruled}
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -329,13 +368,17 @@ nomname}{Lista De Abreviaturas e Siglas}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
 \end_inset
 
 
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\end_layout
 
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -415,7 +458,11 @@ filename "chapters/DSL.lyx"
 \end_layout
 
 \begin_layout Chapter
+
+\lang english
 Decisioner
+\lang brazilian
+
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Decisioner"
@@ -492,6 +539,112 @@ name "chap:Conclusão"
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/Conclution.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\start_of_appendix
+Sustentabilidade
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Sustainability"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Sustainability.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Indicadores e variáveis de Sustentabilidade
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:SustainabilityIndicators"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Sustainability_indicators.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Método SustenAgro de Avaliação de Sustentabilidade
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Sustainability_Assessment"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Sustainability_assessment.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+SustenAgro Brochure
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:SustenAgroProject"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/SustenAgro.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Instalação do sistema SustenAgro
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Instalation"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Instalation.lyx"
 
 \end_inset
 

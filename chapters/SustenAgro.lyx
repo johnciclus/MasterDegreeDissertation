@@ -30,9 +30,9 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
+\spacing onehalf
 \use_hyperref false
-\papersize a4paper
+\papersize default
 \use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
@@ -59,8 +59,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip smallskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -224,7 +224,7 @@ O desenvolvimento SustenAgro foi realizado com a finalidade de generalizar
 O desenvolvimento do SustenAgro será feito usando-se uma DSL baseada na
  linguagem Groovy 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "koenig2007groovy"
 
 \end_inset
@@ -252,7 +252,7 @@ description "Integrated Development Environment"
  Uma outra vantagem de Groovy é a disponibilidade do Grails Framework para
  a criação de aplicações Web 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "judd2008beginning"
 
 \end_inset
@@ -295,7 +295,7 @@ O desenvolvimento do sistema SustenAgro será realizado por meio de metodologias
  ágeis de desenvolvimento de software, principalmente serão utilizadas algumas
  práticas da metodologia SCRUM 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "schwaber2002gile"
 
 \end_inset
@@ -1528,7 +1528,7 @@ O sistema SustenAgro será baseado nas tecnologias da web semântica, entre
  as tecnologias existentes encontra-se a Triplestore que é um banco de dados
  para o armazenamento e recuperação de triplas 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "rusher2003triple"
 
 \end_inset
@@ -1555,6 +1555,63 @@ description "SPARQL Protocol and RDF Query Language"
  e SPARQL/Update e implementa o SPARQL Protocol Endpoint.
  Esse último, padroniza o armazenamento e recuperação da informação; e a
  compatibilidade com os sistemas web por meio do Endpoint.
+\end_layout
+
+\begin_layout Section
+Sistemas de apóio à decisão
+\end_layout
+
+\begin_layout Standard
+Os sistemas de apóio à decisão (SAD) ajudam no entendimento de processos
+ complexos, auxiliam na comparação dos fenômenos envolvidos e suportam a
+ análise e escolha de alternativas no processo de decisão 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "heinzle2010semantica"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O sistema SustenAgro é um SAD e será desenvolvido com o apoio da equipe
+ do projeto SustenAgro (Anexo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Projeto-SustenAgro"
+
+\end_inset
+
+) da Embrapa Meio Ambiente, a qual está desenvolvendo uma proposta metodológica
+ para avaliar a sustentabilidade de sistemas de produção de cana-de-açúcar
+ no Centro Sul do Brasil para equacionar as principais questões referentes
+ a esses sistemas produtivos e possibilitar a utilização racional dos recursos
+ naturais para suprir as necessidades presentes e garantir o suprimento
+ das gerações futuras.
+\end_layout
+
+\begin_layout Standard
+A equipe de TI do SustenAgro determinou que o tipo de sistema mais conveniente
+ para o desenvolvimento seria um Sistema de Apóio à Decisão (SAD).
+ Com a finalidade de definir a arquitetura e a interface gráfica desse sistema
+ realizaram-se duas perguntas de pesquisa que orientaram esse projeto:
+\end_layout
+
+\begin_layout Itemize
+Como integrar o conhecimento dos especialistas em um sistema de apoio na
+ tomada de decisões permitindo a continua mudança do modelo do domínio?
+\end_layout
+
+\begin_layout Itemize
+Como gerar interfaces gráficas a partir de definições simples do domínio
+ do conhecimento?
+\end_layout
+
+\begin_layout Standard
+Tendo em conta os requisitos do software, como o suporte a contínua mudança
+ do modelo de dados e a geração dinâmica de interfaces, se propõe a arquitetura
+ a seguir.
 \end_layout
 
 \begin_layout Section
@@ -2979,6 +3036,97 @@ name "fig:Indicators"
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Características do sistema
+\end_layout
+
+\begin_layout Standard
+Uma vez cadastrada a unidade produtiva/fazenda disponibiliza-se a opção
+ de criar nova avaliação, ação que vai gerar a tela da figura 9 que permite
+ visualizar as variaveis de eficiencia e os indicadores para que os usuários
+ preencham cada uma segundo a realidade da unidade produtiva em avaliação,
+ cada indicador ou variavel de eficiencia tem varias opções que estão ligadas
+ a valores que quantificam a sustentabilidade, esses valores estão definidos
+ na ontologia da sustentabilidade e serao os valores de ingreso para a formula
+ que vai gerar os indices da sustentabilidade.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/john/Data/Master Degree/Dissertation Document/figures/SustenAgro-scenario.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cadastro das variaveis/indicadores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir desses desses dados cadastrados são gerados os resultados do sistema
+ que consistem na planilha de ediciência e custo, na planilha da sustentabilidad
+e e o relatorio do sistema, as planilhas permitem a visualizar os atributos
+ das variaveis de eficiência e dos indicadores e a tela de relatorio que
+ apresenta a matrix de avaliação onde são relaciondas as variaveis de eficiência
+ e de sustentabilidade, o relatio é apresentado na figura 10.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/john/Data/Master Degree/Dissertation Document/figures/SustenAgro-results.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Formato das planilhas de resultado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

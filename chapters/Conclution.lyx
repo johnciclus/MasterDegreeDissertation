@@ -128,55 +128,136 @@ Trabalhos Futuros
 \end_layout
 
 \begin_layout Standard
-Este capítulo apresenta os resultados estão uma versão da ontologia de domínio
- do SustenAgro e artefatos para o desenvolvimento da interface visual do
- sistema: User Stories, Scenarios, Story Boards, Mockups e um protótipo
- para a interface do SustenAgro.
+Analisando os componentes e o desenvolvimento do Sistema SustenAgro, surgem
+ ideias que permitem expandir o trabalho atual e propor projetos de investigação
+ e desenvolvimento tecnológico, entre as possibilidades identificadas estão:
+\end_layout
+
+\begin_layout Subsection
+Editor de ontologias web focado no usuário especialista
 \end_layout
 
 \begin_layout Standard
-Os resultados obtidos são: 
-\end_layout
-
-\begin_layout Enumerate
-Ontologia em formatos da web semântica (RDF/OWL) da avaliação da sustentabilidad
-e no sistema de cana-de-açúcar.
- 
-\end_layout
-
-\begin_layout Enumerate
-Protótipo de ontologia de interfaces gráficas em formatos da web semântica
- (RDF/OWL) 
-\end_layout
-
-\begin_layout Enumerate
-Linguagem de domínio especifico DSL, Decisioner, para definir e permitir
- administrar os parâmetros e processos do sistema SustenAgro 
-\end_layout
-
-\begin_layout Enumerate
-Protótipo de sistema de geração de interfaces suportado nas tecnologias
- da web semântica 
-\end_layout
-
-\begin_layout Enumerate
-Formulários para recolha de dados sobre sustentabilidade em cana-de-açúcar,
- e o processo de colheita dos dados de algumas usinas do estado de São Paulo
- 
-\end_layout
-
-\begin_layout Enumerate
-Protótipo do sistema web Sustenagro que integra as ontologias e a DSL, fornecend
-o um comportamento configurável em tempo de execução dos parâmetros, processos
- e das interfaces gráficas de usuário
+No sistema SustenAgro foi integrado um editor de ontologias que é baseado
+ no formato YAML de fácil legibilidade, com a finalidade de fornecer uma
+ ferramenta web de fácil uso e acesso para que os usuários especialistas
+ possam editar a ontologia do domínio, no caso de SustenAgro a ontologia
+ de avaliação de sustentabilidade.
 \end_layout
 
 \begin_layout Standard
-Uma das finalidades deste projeto é construir um gerador de sistemas de
- apoio a decisão que consiga suportar outros domínios de conhecimento, propondo
- para a comunidade uma metodologia de desenvolvimento e manutenção que fique
- simples para os usuários finais e assim permitir que os especialistas no
- domínio façam as mudanças sem precisas dos especialistas de T.I.
+A partir de esta ferramenta é possível propor um editor online focado em
+ especialistas do domínio, com a finalidade de facilitar a definição e edição
+ de ontologias, o qual poderia estar composto pelas seguintes funcionalidades:
+\end_layout
+
+\begin_layout Enumerate
+Editor textual do conhecimento do domínio do especialista
+\end_layout
+
+\begin_layout Enumerate
+Editor de mapas conceituais que reuse informações do texto
+\end_layout
+
+\begin_layout Enumerate
+Editor visual da ontologia que reuse os mapas conceituais e permita gerar
+ o modelo hierárquico RDFS
+\end_layout
+
+\begin_layout Enumerate
+Editor de regras e OWL
+\end_layout
+
+\begin_layout Enumerate
+Editor de indivíduos
+\end_layout
+
+\begin_layout Enumerate
+Publicação da ontologia em um repositório permanente
+\end_layout
+
+\begin_layout Subsection
+Linguagem de definição de SAD: Decisioner
+\end_layout
+
+\begin_layout Standard
+No sistema SustenAgro, foi desenvolvida uma DSL que permite definir o comportame
+nto de um SAD, no caso realizado foi o desenvolvimento de um sistema de
+ avaliação de sustentabilide, os conceitos foram abstraidos por meio da
+ ontologia de SAD que permite identificar e modelar os conceitos gerais
+ dos sistemas software de avaliação usados pela Embrapa Meio Ambiente, o
+ que resultou em uma linguagem de proposito especifico para o sistema SustenAgro
+ e similares.
+\end_layout
+
+\begin_layout Standard
+Esta linguagem pode ser validada, melhorada e expandida por meio da definição
+ e desenvolmiento de outros SAD com propositos similares, desenvolvimento
+ continuado pelo sistema NanoTec Ram que permite a valiação do risco.
+\end_layout
+
+\begin_layout Subsection
+Linguagem de edição de VIEWs
+\end_layout
+
+\begin_layout Standard
+Na geração de interfaces gráficas é necessário o gerenciamento e organização
+ do conteúdo e das widgets (elementos de uma GUI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GUI"
+description "Graphical User Interface"
+
+\end_inset
+
+) com a finalidade de fornecer uma representação visual que consiga informar
+ um determinado assunto.
+\end_layout
+
+\begin_layout Standard
+Atualmente na geração de VIEWs nos sistemas web, são usadas tecnologias
+ feitas para os desenvolvedores web front-end que permitem a manipulação
+ da estrutura do documento atraves de HTML, do estilo do documento atraves
+ de CSS e do comportamento JS.
+ Mas estes elementos estão focados na representação computacional dessas
+ carateristicas, porem é possivel propor outra maneira de representação
+ em mais alto nivel.
+\end_layout
+
+\begin_layout Standard
+A proposta é de uma linguagem para ediação de VIEWs, onde os elementos estejam
+ modularizados perminto abstraer a View em uma hierarquia de componentes
+ relacionando-os semanticamente por meio de uma linguagem de alto nivel
+ de usuário não especialista em web development.
+\end_layout
+
+\begin_layout Subsection
+Organização de widgets por meio de Polymer
+\end_layout
+
+\begin_layout Standard
+No desenvolvimento do Sistema SustenAgro, foram definidas 60 widgets que
+ foram reusadas na definição de cada uma das vistas de SustenAgro, essas
+ widgets estão definidas no formato de templates do framework Grails
+\end_layout
+
+\begin_layout Subsection
+Georeferenção nos SAD
+\end_layout
+
+\begin_layout Standard
+Tendo em conta d
+\end_layout
+
+\begin_layout Subsection
+Desenvolver um framework para geração das interfaces usuário-computador
+ geral para SAD.
+ 
+\end_layout
+
+\begin_layout Subsection
+Fornecer um sistema de classificação e busca de controles de interfaces
+ usuário-computador
 \end_layout
 
 \begin_layout Section
