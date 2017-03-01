@@ -6,7 +6,7 @@
 \origin unavailable
 \textclass abntex2
 \begin_preamble
-\input{pagestyle.tex}
+\input{../pagestyle.tex}
 %\usepackage{lmodern}
 \newcommand{\blankpage}{
 \newpage
@@ -131,7 +131,7 @@ EndPreamble
 A duplicação da demanda global de alimentos projetadas para os próximos
  50 anos, impõe enormes desafios para a produção mundial de alimentos, por
  isso são necessários novos incentivos e políticas para garantir a sustentabilid
-ade em agricultura, serão cruciais para atender as demandas de melhoramento
+ade em agricultura, que serão cruciais para atender as demandas de melhoramento
  da produtividade sem comprometer a integridade do ambiente ou a saúde pública
  
 \begin_inset CommandInset citation
@@ -145,80 +145,36 @@ key "tilman2002agricultural"
 \end_layout
 
 \begin_layout Standard
-Na pesquisa de 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Ewert2009546"
-
-\end_inset
-
- apresenta varias estrategias para abordar a complexidade nos sistemas agrícolas
-, começa relacionando a agricultura com os sistemas socioeconômicos e naturais,
- e enfrenta o problema de gerir suas múltiplas funções de uma maneira sustentáve
-l, o metodo 
-\emph on
-Integrated Assessment and Modelling (IAM)
-\emph default
- pode fornecer uma visão sobre os possíveis impactos das mudanças políticas,
- existem múltiplos modelos 
-\emph on
-Integrated Assessment (IA)
-\emph default
- mas a maioria são monolíticos resolvendo problemas específicos, os enfoques
- flexíveis são escassos, o 
-\emph on
-framework
-\emph default
- proposto (SEAMLESS-IF) integra relações e processos através de 
-\emph on
-
-\begin_inset Quotes sld
-\end_inset
-
-disciplinas e escalas
-\begin_inset Quotes srd
-\end_inset
-
-
-\emph default
- e combina análises quantitativos com apreciações qualitativas e experiências,
- permitindo um acoplamento entre modelos e ferramentas, este 
-\emph on
-framework
-\emph default
- permite um avanço significativo em flexibilidade de IAM o que permite melhorar
- o modelagem integrado para avaliação do impacto em agricultura.
-\end_layout
-
-\begin_layout Standard
-A pesquisa apresenta exemplos da natureza complexa do sistema agrícola.
- 
+Segundo 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "van2008integrated"
 
 \end_inset
 
- Os sistemas agrícolas evoluem continuamente e são forçados a mudar como
- resultado de uma gama de forças globais e locais.
- As tecnologias em agricultura e as políticas agrícolas, ambiental e de
- desenvolvimento estão crescentemente designadas para contribuir à sustentabilid
-ade da agricultura.
+ os sistemas agrícolas evoluem continuamente e são afetados por uma gama
+ de forças globais e locais, os aspectos que mais influenciam na sustentabilidad
+e da agricultura são os tecnológicos e políticos, permitindo identificar
+ e melhorar diversos aspectos da produção agrícola.
+ 
 \end_layout
 
 \begin_layout Standard
-Uma estrategia são os métodos e metodologias de avaliação, as quais utilizam
- indicadores, um exemplo deste enfoque é a pesquisa 
+Uma estrategia para quantificar a sustentabilidade são a definição métodos
+ e metodologias de avaliação, as quais utilizam indicadores, um exemplo
+ deste enfoque é exposto por 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "AlkanOlsson:2009"
 
 \end_inset
 
- onde desenvolveram um 
+ que desenvolveu um 
 \emph on
+\lang english
 framework
 \emph default
+\lang brazilian
  de indicadores que relaciona de uma maneira consistente as dimensões ambiental,
  econômica e social do desenvolvimento sustentável, seu principal benefício
  é uma relativa simplicidade na apresentação da informação e a possibilidade
@@ -228,43 +184,9 @@ framework
 \end_layout
 
 \begin_layout Standard
-Na pesquisa realizada por 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Wilson2007299"
-
-\end_inset
-
- analisam o melhor abordagem para o desenho e uso de modelos 
-\emph on
-SDI
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SDI"
-description "Sustainable Development Indicator"
-
-\end_inset
-
- Sustainable Development Indicator
-\emph default
-, esta pesquisa direciona um aspecto desta pergunta explorando se as métricas
- globais SDI estão enviando uma mensagem clara para guiar o desenvolvimento
- sustentável.
- 
-\end_layout
-
-\begin_layout Standard
-Seis métricas globais SDI são comparadas e os resultados ilustram que as
- diferentes métricas variam à interpretação sobre a sustentabilidade das
- nações, o grau de variabilidade entre as métricas é analisado por meio
- de análises de correlação, ao final se conclui que não existe consenso
- sobre o melhor abordagem.
-\end_layout
-
-\begin_layout Standard
-Existem pesquisas que abordam a sustentabilidade desde ferramentas tecnológicas,
- as quais podem servir de referencia ao sistema SustenAgro, uma delas foi
- desenvolvida por 
+Existem pesquisas que abordam a sustentabilidade a través de ferramentas
+ tecnológicas, as quais podem servir de referencia ao sistema SustenAgro,
+ uma delas foi desenvolvida por 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "brilhante:2006"
@@ -275,138 +197,53 @@ key "brilhante:2006"
 \emph on
 framework
 \emph default
- (MOeMA-IS) para análise sustentável do estado do Amazonas, faz uso de uma
- ontologia para descrição de Indicadores de sustentabilidade (ISD-Economics
- Ontology), onde são usados os indicadores humano (Social), suporte (Econômico)
- e natural (Ambiental), os quais foram subdivididos em sete indicadores,
- seu desenvolvimento foi feito de uma maneira genérica de forma que ela
- suporta a inclusão de novos indicadores de forma simples, esta ontologia
- foi feita em dois níveis de hierarquia.
- As medidas de sustentabilidade estão explicitas na ontologia.
- O 
+ (MOeMA-IS) para análise sustentável do estado do Amazonas, que usa uma
+ ontologia para descrição de indicadores de sustentabilidade (ISD-
+\lang english
+Economics Ontology
+\lang brazilian
+), onde são usados os indicadores humano (Social), suporte (Econômico) e
+ natural (Ambiental), os quais foram subdivididos em sete indicadores, seu
+ desenvolvimento foi feito de uma maneira genérica de forma que ela suporta
+ a inclusão de novos indicadores de forma simples, esta ontologia foi feita
+ em dois níveis de hierarquia, o 
 \emph on
-framework
+framework 
 \emph default
- trabalha de forma onde a base dele é a ontologia e ele emprega os indicadores
+trabalha de forma onde a base dele é a ontologia e ele emprega os indicadores
  de bases de dados (não foi descrito se são 
 \emph on
-triplestores
+\lang english
+triple-stores
 \emph default
+\lang brazilian
 ) e as medidas e valores padrões de outra base e assim o 
 \emph on
 framework
 \emph default
- calcula as medidas dos indicadores e dá um resultado relevante ao tipo
- de necessidade.
+ calcula as medias dos indicadores e dá um resultado relevante ao tipo de
+ necessidade.
  Para o desenvolvimento da ontologia foi utilizada a ferramenta 
 \emph on
 Protégé
 \emph default
- utilizando o plugin de OWL e alguns indicadores foram feitos utilizando
- a classe do SUMO do OWL.
+ utilizando o 
+\lang english
+plug-in
+\lang brazilian
+ de OWL e alguns indicadores foram feitos utilizando a classe do SUMO do
+ OWL.
 \end_layout
 
 \begin_layout Standard
-Outra ferramenta foi desenvolvida por 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "kraines2011system"
-
-\end_inset
-
- com a visão de criar um 
-\emph on
-Knowledge Sharing System for Sustainability Science
-\emph default
- por meio do processo 
-\emph on
-Semantic Data Modeling
-\emph default
-, uma ontologia fundamentada na lógica descritiva foi desenvolvida por meio
- do ISO 15926 Data Model para descrever três tipos de conceitualizações
- de ciência sustentável: 
-\emph on
-situational knowledge
-\emph default
-, 
-\emph on
-analytic methods
-\emph default
- e 
-\emph on
-scenario frameworks
-\emph default
-.
- Os conhecimentos dos especialistas podem ser descritos por meio de 
-\emph on
-semantic statements
-\emph default
- utilizando esta ontologia o 
-\emph on
-semantic matching based on logic
-\emph default
- e 
-\emph on
-rule-based inferences
-\emph default
- foram usados para quantificar o 
-\emph on
-conceptual overlap of semantic statements
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-Sobre as ontologias na interface gráfica encontramos: no artigo de 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ruiz2006using"
-
-\end_inset
-
- é analisado o uso de ontologias na engenharia de software, identificando
- 50 tipos de uso entre as quais foram identificados dois usos no suporte
- de interfaces gráficas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "paulheim2012ontology"
-
-\end_inset
-
- propõem a seguinte definição, uma ontology-enhanced user interface é uma
- interface cujas capacidades de visualização, possibilidades de interação,
- ou processo de desenvolvimento estão habilitados ou (pelo menos) melhorado
- pelo emprego de uma ou mais ontologias, na pesquisa foram identificados
- três propósitos para os quais são usadas as ontologias no melhoramento
- das interfaces gráficas, e são os seguintes:
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as capacidades de visualização;
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as possibilidades de interação;
-\end_layout
-
-\begin_layout Enumerate
-Melhorar o processo de desenvolvimento;
-\end_layout
-
-\begin_layout Standard
-são apressentados os usos mais comuns de ontologias que suporten interfaces
- gráficas (ontology-enhanced user interface), eles
-\end_layout
-
-\begin_layout Standard
-Alem disso na literatura existem pesquisas relacionadas com o vocabulário
+Além disso na literatura existem pesquisas relacionadas com o vocabulário
  
 \emph on
-AGROVOC Agricultural Vocabulary
+AGROVOC 
+\lang english
+Agricultural Vocabulary
 \emph default
+\lang brazilian
  
 \begin_inset Foot
 status open
@@ -419,14 +256,19 @@ http://aims.fao.org/agrovoc
 
  que é um 
 \emph on
+\lang english
 theasaurus
 \emph default
+\lang brazilian
  que fornece termos padronizados sobre alimentação, nutrição, agricultura,
  pesca, floresta e meio ambiente criados de maneira colaborativa e coordenados
  pela 
 \emph on
-FAO Food and Agriculture Organization
+FAO 
+\lang english
+Food and Agriculture Organization
 \emph default
+\lang brazilian
 , estes termos podem ser reutilizados nas ontologias 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -435,15 +277,25 @@ key "DCMIPro841"
 \end_inset
 
 , permitindo uma padronização com os identificadores dos conceitos, reutilizando
- informações e integrando os conceitos com outros dados da LOD Linked Open
- Data, esta reutilização foi feita através da vinculação de AGROVOC ao sistema
+ informações e integrando os conceitos com outros dados da LOD 
+\lang english
+Linked Open Data
+\lang brazilian
+, esta reutilização foi feita através da vinculação de AGROVOC ao sistema
  
 \emph on
-AOS/CS Agricultural Ontology Service Concept Server
+AOS/CS 
+\lang english
+Agricultural Ontology Service Concept Server
 \emph default
+\lang brazilian
 , a FAO desenvolveu um modelo base para esse novo sistema utilizando o 
 \emph on
-OWL Web Ontology Language.
+OWL 
+\lang english
+Web Ontology Language
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -476,19 +328,23 @@ key "boseley2009development"
  em uma maneira sistemática é fundamental para mais eficiência nas pesquisas
  e descobertas, para este fim, a 
 \emph on
+\lang english
 Plant Ontology
 \emph default
+\lang brazilian
  foi criada como uma iniciativa do 
 \emph on
+\lang english
 Plant Ontology Consortium
 \emph default
+\lang brazilian
 , esta ontologia é um vocabulário controlado de termos usados para dados
  de atributos (por exemplo, genótipo e fenótipo) para uma estrutura especifica
  da planta ou um estagio de desenvolvimento.
 \end_layout
 
 \begin_layout Section
-Dados fornecidos pela unidade de Embrapa Meio Ambiente
+Dados fornecidos pela Unidade de Meio Ambiente da Embrapa 
 \end_layout
 
 \begin_layout Standard
@@ -555,7 +411,11 @@ Indicadores da dimensão ambiental
 
 \begin_layout Plain Layout
 Quantificação da erosão potencial segundo a Equação Universal de Perda de
- Solo (USLE – Universal Soil Loss Equation)
+ Solo (USLE – 
+\lang english
+Universal Soil Loss Equation
+\lang brazilian
+)
 \end_layout
 
 \end_inset
@@ -588,7 +448,7 @@ Ocorrência de queimada de palha no campo
 \begin_inset Text
 
 \begin_layout Plain Layout
-Emissão e suspensão de microparticulas (fuligem)
+Emissão e suspensão de micropartículas (fuligem)
 \end_layout
 
 \end_inset
@@ -1021,7 +881,7 @@ Consumo de diesel
 \begin_inset Text
 
 \begin_layout Plain Layout
-Variedades melhoradas para condições eco-regionais mais específicas
+Variedades melhoradas para condições eco regionais mais específicas
 \end_layout
 
 \end_inset

@@ -353,6 +353,144 @@ Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
 \end_layout
 
 \begin_layout Section
+Trabalhos relacionados
+\end_layout
+
+\begin_layout Standard
+Na pesquisa realizada por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wilson2007299"
+
+\end_inset
+
+, analisaram e melhoraram a abordagem para o desenho e uso de modelos
+\emph on
+ 
+\lang english
+Sustainable Development Indicator
+\emph default
+\lang brazilian
+ 
+\emph on
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SDI"
+description "Sustainable Development Indicator"
+
+\end_inset
+
+
+\emph default
+, permitindo avaliar se as métricas globais SDI estão enviando uma mensagem
+ clara para guiar o desenvolvimento sustentável.
+ 
+\end_layout
+
+\begin_layout Standard
+Seis métricas globais SDI são comparadas e os resultados ilustram que as
+ diferentes métricas variam à interpretação sobre a sustentabilidade das
+ nações, o grau de variabilidade entre as métricas é analisado por meio
+ de análises de correlação, ao final conclui-se que não existe consenso
+ sobre o melhor abordagem para definir métricas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kraines2011system"
+
+\end_inset
+
+ desenvolveu uma ferramenta com a visão de criar um 
+\emph on
+Knowledge Sharing System for Sustainability Science
+\emph default
+ por meio do processo 
+\emph on
+Semantic Data Modeling
+\emph default
+, uma ontologia fundamentada na lógica descritiva foi desenvolvida por meio
+ do ISO 15926 Data Model para descrever três tipos de conceitualizações
+ de ciência sustentável: 
+\emph on
+situational knowledge
+\emph default
+, 
+\emph on
+analytic methods
+\emph default
+ e 
+\emph on
+scenario frameworks
+\emph default
+.
+ Os conhecimentos dos especialistas podem ser descritos por meio de 
+\emph on
+semantic statements
+\emph default
+ utilizando esta ontologia o 
+\emph on
+semantic matching based on logic
+\emph default
+ e 
+\emph on
+rule-based inferences
+\emph default
+ foram usados para quantificar o 
+\emph on
+conceptual overlap of semantic statements
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Sobre as ontologias na interface gráfica encontramos: no artigo de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ruiz2006using"
+
+\end_inset
+
+ é analisado o uso de ontologias na engenharia de software, identificando
+ 50 tipos de uso entre as quais foram identificados dois usos no suporte
+ de interfaces gráficas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "paulheim2012ontology"
+
+\end_inset
+
+ propõem a seguinte definição, uma ontology-enhanced user interface é uma
+ interface cujas capacidades de visualização, possibilidades de interação,
+ ou processo de desenvolvimento estão habilitados ou (pelo menos) melhorado
+ pelo emprego de uma ou mais ontologias, na pesquisa foram identificados
+ três propósitos para os quais são usadas as ontologias no melhoramento
+ das interfaces gráficas, e são os seguintes:
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as capacidades de visualização;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as possibilidades de interação;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar o processo de desenvolvimento;
+\end_layout
+
+\begin_layout Standard
+são apressentados os usos mais comuns de ontologias que suporten interfaces
+ gráficas (ontology-enhanced user interface), eles
+\end_layout
+
+\begin_layout Section
 Frameworks
 \end_layout
 
@@ -474,6 +612,53 @@ rule-based inferences
 conceptual overlap of semantic statements
 \emph default
 .
+\end_layout
+
+\begin_layout Standard
+Na pesquisa de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ewert2009546"
+
+\end_inset
+
+ apresenta varias estrategias para abordar a complexidade nos sistemas agrícolas
+, começa relacionando a agricultura com os sistemas socioeconômicos e naturais,
+ e enfrenta o problema de gerir suas múltiplas funções de uma maneira sustentáve
+l, o metodo 
+\emph on
+Integrated Assessment and Modelling (IAM)
+\emph default
+ pode fornecer uma visão sobre os possíveis impactos das mudanças políticas,
+ existem múltiplos modelos 
+\emph on
+Integrated Assessment (IA)
+\emph default
+ mas a maioria são monolíticos resolvendo problemas específicos, os enfoques
+ flexíveis são escassos, o 
+\emph on
+framework
+\emph default
+ proposto (SEAMLESS-IF) integra relações e processos através de 
+\emph on
+
+\begin_inset Quotes sld
+\end_inset
+
+disciplinas e escalas
+\begin_inset Quotes srd
+\end_inset
+
+
+\emph default
+ e combina análises quantitativos com apreciações qualitativas e experiências,
+ permitindo um acoplamento entre modelos e ferramentas, este 
+\emph on
+framework
+\emph default
+ permite um avanço significativo em flexibilidade de IAM o que permite melhorar
+ a modelagem integrado para avaliação do impacto em agricultura.
+ A pesquisa apresenta exemplos da natureza complexa do sistema agrícola.
 \end_layout
 
 \begin_layout Section

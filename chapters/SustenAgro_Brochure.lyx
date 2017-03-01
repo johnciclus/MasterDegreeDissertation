@@ -170,7 +170,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/john/Data/Master Degree/Dissertation Document/figures/folderEmbrapa1.png
+	filename ../figures/folderEmbrapa1.png
 	width 100col%
 	rotateAngle 90
 
@@ -213,7 +213,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/john/Data/Master Degree/Dissertation Document/figures/folderEmbrapa2.png
+	filename ../figures/folderEmbrapa2.png
 	width 100col%
 	rotateAngle 90
 

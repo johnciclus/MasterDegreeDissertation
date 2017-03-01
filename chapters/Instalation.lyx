@@ -128,6 +128,393 @@ EndPreamble
 \begin_body
 
 \begin_layout Standard
+A instalação de SustenAgro divide-se em dois processos, a configuração do
+ servidor web e o deploy do arquivo WAR
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "WAR"
+description "Web Application Archive"
+
+\end_inset
+
+, a continuação são descritos ambos processos:
+\end_layout
+
+\begin_layout Section
+Configuração do servidor.
+\end_layout
+
+\begin_layout Standard
+Esta fase do processo consiste em instalar as tecnologias Java, Apache Tomcat,
+ WkHtmltoPdf e a triplestore Blazegraph, em um servidor baseado em linux,
+ atualmente o sistema foi configurado e testado em uma maquina virtual com
+ Ubuntu 14.04, Java OpenJDK 8, Apache Tomcat, WkHtmltoPdf 0.12.3 e a triplestore
+ Blazegraph 2.1.0, a instalação destas tecnologias segue uma orientação padrão
+ que sera descrita a continuação:
+\end_layout
+
+\begin_layout Subsection
+Instalação do Java:
+\end_layout
+
+\begin_layout Standard
+Segundo a documentação de Java OpenJDK, a instalação é realizada por meio
+ do comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo apt-get update
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt-get install openjdk-8-jre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Instalação do Apache Tomcat
+\end_layout
+
+\begin_layout Standard
+A instalação do Apache Tomcat depende da instalação do Java 8, e o Tomcat
+ deve na versão 7 para suportar a compatibilidade do War gerado, isto é
+ documentado no site
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+https://grails.org/wiki/Deployment
+\end_layout
+
+\end_inset
+
+ do framework Grails, que exige uma versão 7 de Apache Tomcat para suportar
+ o deploy dos war.
+\end_layout
+
+\begin_layout Standard
+O processo de instalação consiste em fazer download dos arquivos binários,
+ extrair eles em /opt/tomcat/, exportar as variáveis de entorno e executar
+ o web server, o código é mostrado a continuação:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wget http://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.70/bin/
+\end_layout
+
+\begin_layout Plain Layout
+
+apache-tomcat-7.0.70.tar.gz
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+tar xvzf apache-tomcat-7.0.70.tar.gz -C /opt/tomcat
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo /opt/tomcat/bin/startup.sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Configurar users de Tomcat em: /opt/tomcat/conf/tomcat-users.xml e acrescentar
+ os rol e user
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<role rolename="manager-gui"/> 
+\end_layout
+
+\begin_layout Plain Layout
+
+<user username="admin" password="s3cr3t" roles="manager-gui"/>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois disso, é registrado no final do arquivo ~/.bashrc os próximos dois
+ comandos que definem as variáveis de entorno
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64 
+\end_layout
+
+\begin_layout Plain Layout
+
+export CATALINA_HOME=/opt/tomcat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalemente executar o comando 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo /opt/tomcat/bin/startup.sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e verificar a execução do programa na url /manager do domain do servidor
+\end_layout
+
+\begin_layout Subsection
+Instalação do WkHtmltoPdf
+\end_layout
+
+\begin_layout Standard
+A tecnologia WkHtmltoPdf permite converter paginas web em formato Html a
+ Pdf, esta ferramenta suporta a funcionalidade de gerar os reportes em formato
+ Pdf, a instalação consistem em fazer download dos arquivos binarios e a
+ configuração de um X server virual para suportar o renderizado, os comandos
+ são mostrados a continuação:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wget http://download.gna.org/wkhtmltopdf/0.12/0.12.3/
+\end_layout
+
+\begin_layout Plain Layout
+
+wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+tar xf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+cp wkhtmltox/bin/wkhtmltopdf /usr/local/bin/wkhtmltopdf
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo chmod a+x /usr/local/bin/wkhtmltopdf
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt-get install openssl build-essential xorg libssl-dev
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois disto é criado um script wkhtmltopdf.sh em /usr/local/bin/ e contem
+ o seguinte comando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+xvfb-run -a -s "-screen 0 640x480x16" wkhtmltopdf "$@"
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com o comando wkhtmltopdf.sh é possivel converter a pdf desde um sistema
+ sem X11
+\end_layout
+
+\begin_layout Subsubsection*
+Instalação da triplestore Blazegraph
+\end_layout
+
+\begin_layout Standard
+A instalação do Blazegraph consiste em fazer download do arquivo binario
+ e executar com o arquivo de configuração RWStore2.properties o serviço de
+ triplestore.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wget https://sourceforge.net/projects/bigdata/files/bigdata/
+\end_layout
+
+\begin_layout Plain Layout
+
+2.1.1/blazegraph.jar
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+wget https://dl.dropboxusercontent.com/u/24827919/
+\end_layout
+
+\begin_layout Plain Layout
+
+SustenAgro/RWStore2.properties
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties 
+\end_layout
+
+\begin_layout Plain Layout
+
+-jar blazegraph.jar
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Deploy do arquivo war
+\end_layout
+
+\begin_layout Standard
+O deploy do sistema consiste em executar os serviços do Tomcat 7 e Triplestore,
+ e fazer upload do arquivo SustenAgro-1.0.war ao servidor Apache Tomcat para
+ fazer o deploy no Path 
+\begin_inset Quotes eld
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+, e finalmente reiniciar o Tomcat.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wget https://dl.dropboxusercontent.com/u/24827919/
+\end_layout
+
+\begin_layout Plain Layout
+
+SustenAgro/sustenagro-1.0.war
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

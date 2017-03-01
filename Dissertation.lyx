@@ -427,10 +427,10 @@ filename "chapters/SAD.lyx"
 \end_layout
 
 \begin_layout Chapter
-Web semântica e DSL
+Contexto: Web semântica e DSL
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Web-semântica"
+name "chap:Context"
 
 \end_inset
 
@@ -440,17 +440,7 @@ name "chap:Web-semântica"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "chapters/Semantic Web.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "chapters/DSL.lyx"
+filename "chapters/Context.lyx"
 
 \end_inset
 
@@ -458,11 +448,7 @@ filename "chapters/DSL.lyx"
 \end_layout
 
 \begin_layout Chapter
-
-\lang english
 Decisioner
-\lang brazilian
-
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Decisioner"
@@ -568,20 +554,20 @@ filename "chapters/Sustainability.lyx"
 \end_layout
 
 \begin_layout Chapter
-Indicadores e variáveis de Sustentabilidade
+SustenAgro Brochure
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:SustainabilityIndicators"
+name "chap:SustenAgroProject"
 
 \end_inset
 
 
 \begin_inset CommandInset include
 LatexCommand input
-filename "chapters/Sustainability_indicators.lyx"
+filename "chapters/SustenAgro_Brochure.lyx"
 
 \end_inset
 
@@ -610,20 +596,20 @@ filename "chapters/Sustainability_assessment.lyx"
 \end_layout
 
 \begin_layout Chapter
-SustenAgro Brochure
+Indicadores de Sustentabilidade
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:SustenAgroProject"
+name "chap:SustainabilityIndicators"
 
 \end_inset
 
 
 \begin_inset CommandInset include
 LatexCommand input
-filename "chapters/SustenAgro.lyx"
+filename "chapters/Sustainability_indicators.lyx"
 
 \end_inset
 

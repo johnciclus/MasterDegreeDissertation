@@ -127,8 +127,371 @@ EndPreamble
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Section
+Indicadores de Sustentabilidade
+\end_layout
 
+\begin_layout Standard
+Os indicadores são instrumentos usados para avaliar uma determinada realidade
+ levando em conta variáveis pertinentes para sua composição.
+ Além da avaliação, o uso de indicadores permite medir e monitorar aspectos
+ da realidade.
+ Ele agrega, quantifica e simplifica informações sobre fenômenos complexos
+ de modo que as tendências ficam mais significativas e aparentes, a fim
+ de melhorar o processo de entendimento e comunicação
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bossel1999indicators,van2005indicadores"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De acordo com 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gallopin1996environmental"
+
+\end_inset
+
+ os melhores indicadores são aqueles que simplificam as informações relevantes,
+ tornando os fenômenos mais claros.
+ Como um indicador é utilizado para atingir diversos objetivos, é necessário
+ definir um requisito geral para selecionar indicadores e validar a escolha.A
+ finalidade de um indicador de sustentabilidade é refletir as alterações
+ nas propriedades fundamentais de um sistema 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "CaminoAndMuller1993"
+
+\end_inset
+
+ e advertir sobre eventuais perturbações potenciais.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferraz2003"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normalmente um indicador é utilizado como um pré-tratamento aos dados originais
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "SicheAgostinho2007"
+
+\end_inset
+
+.
+ Indicadores são parâmetros que podem ser utilizados como medida do cumprimento
+ dos critérios 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "moret2006criterios"
+
+\end_inset
+
+.
+ Deve-se observar que não é possível o desenvolvimento de um indicador global,
+ por isso é necessário buscar no tempo a evolução da sustentabilidade dos
+ sistemas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "CaminoAndMuller1993"
+
+\end_inset
+
+.
+ Não há indicadores universais, pois estes podem variar segundo o problema
+ ou objetivo da análise.
+\end_layout
+
+\begin_layout Standard
+Características desejáveis para um bom indicador: A seleção dos indicadores
+ começa na definição da fonte dos dados base para o levantamento, possibilidade
+ de intercalibração, possibilidade de comparação com critérios legais ou
+ outros padrões/metas existentes, facilidade e rapidez de determinação e
+ interpretação, grau de importância e validação científica, sensibilidade
+ do público-alvo, custo de implementação e possibilidade de ser rapidamente
+ atualizado.
+ Nessa mesma linha, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zampieri2003metodo"
+
+\end_inset
+
+ baseado em vários autores, cita como requisitos para a seleção de indicadores
+ de avaliação de sustentabilidade: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+roman{enumi}.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+serem mensuráveis quantitativa e qualitativamente, além de terem pertinência
+ ao objeto e à natureza do processo avaliado; 
+\end_layout
+
+\begin_layout Enumerate
+poder coletar as informações por baixo custo, ser de fácil execução e apresentar
+ dados cientificamente válidos; 
+\end_layout
+
+\begin_layout Enumerate
+serem concebidos para que o agricultor participe das medições, adaptados
+ às necessidades dos usuários da informação e estarem embasados em linguagem
+ clara; 
+\end_layout
+
+\begin_layout Enumerate
+serem sensíveis às mudanças do sistema ao detectar a magnitude dos desvios
+ e tendências, oferecendo prognósticos e perspectivas para planejar e tomar
+ decisões; 
+\end_layout
+
+\begin_layout Enumerate
+fornecerem indicação clara a respeito da sustentabilidade do sistema estudado
+ e refletirem os impactos estudados sob o enfoque integrado; 
+\end_layout
+
+\begin_layout Enumerate
+representarem padrões ecológicos, sociais, econômicos e espaciais, que tenham
+ correspondência e sensibilidade com o nível de agregação do sistema considerado
+; 
+\end_layout
+
+\begin_layout Enumerate
+conter um nível de agregação que permita comparações individuais, intertemporais
+ e o cruzamento com outros indicadores; 
+\end_layout
+
+\begin_layout Enumerate
+fornecerem informações para avaliar os trade-offs entre as dimensões da
+ sustentabilidade e correlações com os processos dos ecossistemas; 
+\end_layout
+
+\begin_layout Enumerate
+poder ter repetibilidade, de modo que as medições possam ser realizadas
+ por diferentes pessoas e que os resultados sejam comparáveis e 
+\end_layout
+
+\begin_layout Enumerate
+a construção do indicador deve observar parâmetros politicamente corretos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+alph{enumi}.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A OECD (1993) estabelece três requisitos para selecionar indicadores: relevância
+ política e utilidade para usuários, solidez analítica e mensurabilidade.
+ Alguns exemplos de indicadores levantados no projeto: 
+\end_layout
+
+\begin_layout Enumerate
+Risco climático; 
+\end_layout
+
+\begin_layout Enumerate
+Diversidade de culturas anuais; 
+\end_layout
+
+\begin_layout Enumerate
+Tipo de solo; 
+\end_layout
+
+\begin_layout Enumerate
+Risco de déficit hídrico; 
+\end_layout
+
+\begin_layout Enumerate
+Produtividade da terra; 
+\end_layout
+
+\begin_layout Enumerate
+Renovabilidade energética nos sistemas de produção; 
+\end_layout
+
+\begin_layout Enumerate
+Balanço de nutrientes (nitrogênio e fósforo); 
+\end_layout
+
+\begin_layout Enumerate
+Área de cultivo/áreas preservadas.
+\end_layout
+
+\begin_layout Standard
+Os indicadores do presente projeto são uma representação dos fatores críticos
+ que existem no sistema de produção de cana-de-açúcar no centro-sul do Brasil
+ em cada dimensão da sustentabilidade, pelo qual a metodologia e o sistema
+ SustenAgro será aplicável nesse contexto, no caso de quer aplicar o sistema
+ de avaliação da sustentabilidade em outro contexto é necessário mudar os
+ indicadores de cada contexto especifico.
+ 
+\end_layout
+
+\begin_layout Section
+Limiares de Sustentabilidade
+\end_layout
+
+\begin_layout Standard
+Os limiares são os pontos mínimo e máximo aceitáveis na amplitude da sustentabil
+idade para cada indicador.
+\end_layout
+
+\begin_layout Standard
+Considerando que a sustentabilidade permanece sempre no futuro 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gliessman2001agroecologia"
+
+\end_inset
+
+, dado o compromisso que os sistemas têm de garantir as necessidades das
+ gerações futuras, a sustentabilidade será considerada como algo relativo
+ no espaço e no tempo, ou seja, um sistema pode ser mais ou menos sustentável
+ que outro.
+\end_layout
+
+\begin_layout Standard
+Esta representação será realizada pelos limiares de sustentabilidade que
+ poderão variar de acordo com o sistema de produção considerado e, principalment
+e, deve variar de modo a representar com propriedade das especificidades
+ regionais e microrregionais.
+\end_layout
+
+\begin_layout Standard
+Dentro de uma escala, devem ser estabelecidos limiares críticos, ou seja,
+ aqueles em que concordamos que determinada situação (característica, produto,
+ serviço) apesar de não ser totalmente sustentável possui níveis de sustentabili
+dade aceitáveis para que a sustentabilidade seja efetiva (verdadeira), apesar
+ de não ser a ideal.
+ O limiar é um ponto que estabelece um limite, geralmente é o princípio,
+ mas no nosso caso, são os limites que apontam que determinada característica,
+ produto, ou serviço, está dentro do que for considerado sustentabilidade,
+ serão os pontos mínimo e máximo aceitáveis na amplitude da sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+Dentro desta escala, estabelecemos limiares críticos, ou seja, aqueles em
+ que concordamos que determinada situação (característica, produto, serviço)
+ apesar de não ser totalmente sustentável (nota máxima), possui níveis de
+ sustentabilidade aceitáveis para que a sustentabilidade seja efetiva (verdadeir
+a), apesar de não ser a ideal.
+ Neste caso, o limiar mínimo de sustentabilidade assumiria um valor variável.
+\end_layout
+
+\begin_layout Standard
+Exemplo de limiar da sustentabilidade que poderão ser empregados pela equipe
+ do projeto:
+\end_layout
+
+\begin_layout Itemize
+Nome do Indicador: Distância Usina / Área de Produção de cana
+\end_layout
+
+\begin_layout Itemize
+Descrição do indicador: usualmente, em tradicionais regiões produtoras de
+ cana utiliza-se de uma distância econômica padrão da produção até a indústria,
+ de 50 quilômetros.
+ Esta distância é determinada pelos altos custos de transporte da cana até
+ a unidade industrial, sendo um dos fatores decisivos na rentabilidade da
+ lavoura (CNA/SENAR, 2007).
+\end_layout
+
+\begin_layout Itemize
+Limiares de sustentabilidade, teria dois estados possíveis 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Distância de até 50 km: Mais sustentável (+1)
+\end_layout
+
+\begin_layout Itemize
+Distância de mais de 50 km: Menos sustentável (-1)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Baseando-se nesse conceito sobre limiares é possível desenhar metodologias
+ de avaliação onde sejam usados os valores numéricos de cada limiar para
+ fazer comparações, o que permite definir se determinado sistema produtivo
+ e/ou contexto é mais sustentável do que outro sistema produtivo e/ou contexto.
+\end_layout
+
+\begin_layout Section
+Índice de Sustentabilidade
+\end_layout
+
+\begin_layout Standard
+Revela o estado de um sistema ou fenômeno, é uma síntese das características
+ ou variáveis analisadas.
+ Um índice pode ser construído para analisar dados através da junção de
+ um jogo de elementos com relacionamentos estabelecidos.
+ Entende-se o termo índice como um valor numérico que representa a correta
+ interpretação da realidade de um sistema simples ou complexo (natural,
+ econômico ou social), utilizando, em seu cálculo, bases científicas e métodos
+ adequados.
+ O índice pode servir como um instrumento de tomada de decisão e previsão,
+ e é considerado um nível superior da junção de um jogo de indicadores ou
+ variáveis 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SicheAgostinho2007"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No projeto SustenAgro os índices serão dados numéricos que representam a
+ soma do estado de cada indicador em cada dimensão e atributo norteador,
+ cada indicador pode o valor de mais um ou menos um (+1 -1), que permitira
+ quantificar a sustentabilidade em cada aspecto do sistema produtivo e fazer
+ comparações com outros sistemas produtivos compatíveis.
 \end_layout
 
 \end_body

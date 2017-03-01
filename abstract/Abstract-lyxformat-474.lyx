@@ -1,0 +1,169 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+\KOMAoptions{parskip=half}
+\end_preamble
+\options a4paper,titlepage
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+
+\series bold
+\noun on
+Resumo
+\end_layout
+
+\begin_layout Standard
+A cana-de-açúcar tem sido uma cultura tradicional do Brasil, atualmente
+ é uma das mais importantes pela relevância na economia e por ter a terceira
+ posição em superfície ocupada no território nacional, essa cultura também
+ pode ser entendida como um sistema de produção agrícola pelos diversos
+ fatores e fenômenos que integra, envolvendo fatores ambientais, sociais
+ e econômicos, o que dificulta a compreensão e conservação a longo prazo
+ deles, para diminuir a incerteza é necessário ter uma base conceitual dos
+ aspectos críticos para tomar decisões que garantam a sustentabilidade desses
+ tipos de sistemas produtivos.
+\end_layout
+
+\begin_layout Standard
+O problema que é abordado na presente pesquisa é como desenvolver um sistema
+ de apoio à decisão, por meio das tecnologias da web semântica, para manter
+ uma base conceitual adaptável as mudanças do domínio, que dê suporte ao
+ armazenamento e à recuperação de informação e que permita uma interface
+ gráfica flexivel aos conceitos envolvidos, para realizar o processo de
+ avaliação da sustentabilidade dos sistemas produtivos de cana-de-açúcar
+ no centro-sul do Brasil.
+ 
+\end_layout
+
+\begin_layout Standard
+Para sistematizar o processo de avaliação da sustentabilidade é necessário
+ representar o domínio de conhecimento por meio da definição de uma ontologia
+ que represente os conceitos dos especialistas e a metodologia de avaliação
+ da sustentabilidade desenvolvida pela Embrapa Meio Ambiente, constituindo
+ assim a base conceitual do sistema web SustenAgro que integrará tecnologias
+ da web semântica como ontologias, armazenamento em 
+\shape italic
+triplestore
+\shape default
+, consultas semânticas e as 
+\emph on
+Domain Specific Language (DSL) 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSL"
+description "Domain Specific Language"
+
+\end_inset
+
+
+\emph default
+, satisfazendo vários requisitos de 
+\emph on
+Flexibility
+\emph default
+ e 
+\emph on
+Usability
+\emph default
+ do Sistema Web.
+\end_layout
+
+\begin_layout Standard
+Além dessa ontologia será desenvolvida uma ontologia que represente a interface
+ gráfica, a qual será usada por uma DSL que permitirá definir interfaces
+ gráficas baseadas nos conceitos do domínio, permitindo desta maneira o
+ desenvolvimento de sistemas de apoio a decisão flexíveis ao domínio do
+ conhecimento.
+\end_layout
+
+\begin_layout Standard
+Os principais aportes do projeto são: as duas ontologias para representação
+ do domínio e as 
+\emph on
+DSL
+\emph default
+ que têm a finalidade de facilitar a modificação dos conceitos do domínio
+ e da interface gráfica por parte dos especialistas, fornecendo desta maneira
+ a flexibilidade do sistema na adaptação às mudanças.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Palabras chave:
+\series default
+ Sistema web, Sistemas de apoio a decisão, Metodologia de avaliação da sustentab
+ilidade, Sistema agrícola, Sistemas produtivos de cana-de-açúcar.
+\end_layout
+
+\end_body
+\end_document
