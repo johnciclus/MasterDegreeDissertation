@@ -128,20 +128,88 @@ EndPreamble
 \begin_body
 
 \begin_layout Standard
-A duplicação da demanda global de alimentos projetadas para os próximos
- 50 anos, impõe enormes desafios para a produção mundial de alimentos, por
- isso são necessários novos incentivos e políticas para garantir a sustentabilid
-ade em agricultura, que serão cruciais para atender as demandas de melhoramento
- da produtividade sem comprometer a integridade do ambiente ou a saúde pública
+Não existe um consenso sobre a definição de sustentabilidade, mas uma definição
+ orientadora para os fins do presente projeto é a seguinte:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+O desenvolvimento sustentável prevê o atendimento das necessidades do presente
+ sem comprometer a habilidade das gerações futuras de suprir suas próprias
+ necessidades, 
+\lang english
+Brundtland Commission
+\lang brazilian
+
+\begin_inset Quotes erd
+\end_inset
+
  
 \begin_inset CommandInset citation
 LatexCommand citet
-key "tilman2002agricultural"
+key "Burton:1987,brundtland1987our"
 
 \end_inset
 
-, por esta razão é importante gerar estratégias que permitam conhecer o
- estado dos sistemas produtivos e melhorar segundo as necessidades identificadas.
+
+\end_layout
+
+\begin_layout Standard
+Este conceito foi ratificado pela Conferência das Nações Unidas sobre o
+ Meio Ambiente e Desenvolvimento, a Rio-92 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ehlers1996agricultura"
+
+\end_inset
+
+ a Rio+20 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ONU2012"
+
+\end_inset
+
+, após do relatório 
+\lang english
+Brundtland
+\lang brazilian
+ a ênfase do conceito desloca-se da integridade ambiental para o elemento
+ humano, gerando um equilíbrio entre as dimensões econômica, social e ambiental
+\begin_inset CommandInset citation
+LatexCommand citet
+key "van2005indicadores"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gliessman2001agroecologia"
+
+\end_inset
+
+ teoriza que não há como encontrar a sustentabilidade e, portanto, o seu
+ conceito mais representativo, pois a mesma permanece sempre no futuro,
+ dado o compromisso que os sistemas têm de garantir as necessidades das
+ gerações futuras.
+ Assim, a sustentabilidade é algo relativo ao tempo, ou seja, um sistema
+ pode ser mais ou menos sustentável que outro dependendo do tempo em que
+ for avaliado e do entendimento da sustentabilidade neste contexto.
+\end_layout
+
+\begin_layout Standard
+A duplicação da demanda global de alimentos projetadas para os próximos
+ 50 anos, impõe enormes desafios para a produção mundial de alimentos, por
+ isso são necessários novos incentivos e políticas para garantir a sustentabilid
+ade em agricultura, a través da geração de estratégias que permitam conhecer
+ o estado dos sistemas produtivos e melhorar segundo as necessidades identificad
+as.
 \end_layout
 
 \begin_layout Standard
@@ -1084,15 +1152,9 @@ name "tab:Indicadores-de-sustentabilidade-economica"
 \begin_layout Standard
 Cada um dos anteriores indicadores foram definidos com um conjunto de pelo
  menos um componente de indicador, estes componentes permitem quantificar
- por meio de uma variável medível o estado do indicador, estes componentes
- de indicador estão definidos com unidades do domínio que são de fácil interpret
-ação pelas pessoas relacionadas com sustentabilidade em agricultura.
-\end_layout
-
-\begin_layout Standard
-Também foram fornecidos dados econômicos das principais usinas do estado
- de São Paulo, estes dados vão ser analisados para tentar definir a dimensão
- econômica das unidades produtivas.
+ por meio de uma variável quantitativa o estado do indicador, os quais estão
+ definidos em termos do domínio que são de fácil interpretação pelas pessoas
+ relacionadas com sustentabilidade em agricultura.
 \end_layout
 
 \begin_layout Section
@@ -1100,24 +1162,26 @@ Considerações finais
 \end_layout
 
 \begin_layout Standard
-A abordagem que será utilizada no desenvolvimento de SustenAgro é a definição
- de um sistema de avaliação da sustentabilidade baseado em ontologias que
- representam o conhecimento do sistema produtivo de cana-de-açúcar no centro-sul
- do Brasil, essa ontologia vai tomar a informação da pesquisa de 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "oliveira:2013"
+Os dados e especificações fornecidos pela Embrapa Meio Ambiente e pela APTA
+ conseguiram explicar o conceito de avaliação de sustentabilidade segundo
+ a visão da Embrapa Meio Ambiente, más a complexidade envolvida requereu
+ identificar um tipo de 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "KOS"
+description "Knowledge Organization Systems"
 
 \end_inset
 
- e dará suporte na indexação, recuperação e organização dos dados, o objetivo
- da ontologia é suportar o processo de avaliação da sustentabilidade pelo
- que terá conceitos do domínio do sistema produtivo de cana-de-açúcar e
- conceitos de sustentabilidade, esta ontologia suportará as funcionalidades
- do software que fazem possível o processo de avaliação e também será integrada
- com outra ontologia de interface gráfica para suportar uma DSL que permitirá
- definir interfaces gráficas customizadas para os usuários do sistema, estas
- tecnologias suportaram o processo de avaliação de sustentabilidade.
+ que permita representar cada uns dos conceitos necessários que compõem
+ o processo de avaliação da sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+Dito KOS precisa ser flexível e de fácil uso para conseguir se adaptar às
+ mudanças do domínio, devido a que durante o processo de modelagem avalia
+ a coerência dos dados, permitindo assim melhorar as especificações de dito
+ domínio.
 \end_layout
 
 \end_body

@@ -554,7 +554,9 @@ filename "chapters/Sustainability.lyx"
 \end_layout
 
 \begin_layout Chapter
-SustenAgro Brochure
+SustenAgro 
+\lang english
+Brochure
 \end_layout
 
 \begin_layout Standard

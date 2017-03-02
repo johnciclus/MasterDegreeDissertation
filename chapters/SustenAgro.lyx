@@ -2028,6 +2028,20 @@ Atributo custo: indicadores que avaliam os aspectos dos custos da produção.
 \end_layout
 
 \begin_layout Standard
+A 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "APTA"
+description "Agência Paulista de Tecnologia dos Agronegócios"
+
+\end_inset
+
+ forneceu dados econômicos das principais usinas do estado de São Paulo,
+ que permitiram definir a dimensão econômica das unidades produtivas na
+ ontologia do domínio.
+\end_layout
+
+\begin_layout Standard
 Cada uma das três dimensões devem ser avaliadas equitativamente para gerar
  um resultado coerente com a teoria da sustentabilidade agrícola.
 \end_layout
@@ -3158,6 +3172,27 @@ Além de satisfazer uma necessidade institucional, o SustenAgro se consolida
 Após o desenvolvimento do Sistema SustenAgro, poder-se-a analisar as característ
 icas fundamentais desse tipo de SAD e tentar reusar a arquitetura em outros
  SADs da própria Embrapa.
+\end_layout
+
+\begin_layout Standard
+A abordagem utilizada no desenvolvimento de SustenAgro é a definição de
+ um sistema de avaliação da sustentabilidade baseado em ontologias que represent
+am o conhecimento do sistema produtivo de cana-de-açúcar no centro-sul do
+ Brasil, essa ontologia vai tomar a informação da pesquisa de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "oliveira:2013"
+
+\end_inset
+
+ e dará suporte na indexação, recuperação e organização dos dados, o objetivo
+ da ontologia é suportar o processo de avaliação da sustentabilidade pelo
+ que terá conceitos do domínio do sistema produtivo de cana-de-açúcar e
+ conceitos de sustentabilidade, esta ontologia suportará as funcionalidades
+ do software que fazem possível o processo de avaliação e também será integrada
+ com outra ontologia de interface gráfica para suportar uma DSL que permitirá
+ definir interfaces gráficas customizadas para os usuários do sistema, estas
+ tecnologias suportaram o processo de avaliação de sustentabilidade.
 \end_layout
 
 \end_body

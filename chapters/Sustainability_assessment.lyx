@@ -6,7 +6,7 @@
 \origin unavailable
 \textclass abntex2
 \begin_preamble
-\input{pagestyle.tex}
+%\input{pagestyle.tex}
 %\usepackage{lmodern}
 \newcommand{\blankpage}{
 \newpage
@@ -141,114 +141,46 @@ key "oliveira:2013"
 \end_layout
 
 \begin_layout Standard
-Não existe um consenso sobre a definição de sustentabilidade, mas uma definição
- orientadora para o projeto SustenAgro é a seguinte:
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Quotes eld
-\end_inset
-
-O desenvolvimento sustentável prevê o atendimento das necessidades do presente
- sem comprometer a habilidade das gerações futuras de suprir suas próprias
- necessidades, Brundtland Commission
-\begin_inset Quotes erd
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Burton:1987,brundtland1987our"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Este conceito foi ratificado pela Conferência das Nações Unidas sobre o
- Meio Ambiente e Desenvolvimento, a Rio-92 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ehlers1996agricultura"
-
-\end_inset
-
- a Rio+20 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ONU2012"
-
-\end_inset
-
-, após do relatório Brundtland a ênfase do conceito desloca-se da integridade
- ambiental para o elemento humano, gerando um equilíbrio entre as dimensões
- econômica, social e ambiental
-\begin_inset CommandInset citation
-LatexCommand citet
-key "van2005indicadores"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "gliessman2001agroecologia"
-
-\end_inset
-
- teoriza que não há como encontrar a sustentabilidade e, portanto, o seu
- conceito mais representativo, pois a mesma permanece sempre no futuro,
- dado o compromisso que os sistemas têm de garantir as necessidades das
- gerações futuras.
- Assim, a sustentabilidade é algo relativo ao tempo, ou seja, um sistema
- pode ser mais ou menos sustentável que outro dependendo do tempo em que
- for avaliado e do entendimento da sustentabilidade neste contexto.
-\end_layout
-
-\begin_layout Standard
-Dada a importância da sustentabilidade, especialemente nos sistemas de produção
+Dada a importância da sustentabilidade, especialmente nos sistemas de produção
  agrícola, têm sido desenvolvidas varias metodologias para avaliar o estado
  desses sistemas, existindo varias tendências segundo o sistema produtivo
  e o contexto deles, no desenvolvimento do sistema SustenAgro será abrangido
  o caso especifico do sistema produtivo de cana-de-açúcar no contexto do
- no centro-sul do Brasil, onde tem sido desenvolvidas pesquisas lideradas
- pela Embrapa que definiram elementos e metodologias de avaliação da sustentabil
-idade em agricultura 
+ centro-sul do Brasil, onde foram desenvolvidas pesquisas lideradas pela
+ Embrapa que definiram elementos e metodologias de avaliação da sustentabilidade
+ em agricultura 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
 
 \end_inset
 
-, os quais vão ser apresentados a continuação.
+, os quais são apresentados a continuação.
 \end_layout
 
 \begin_layout Section
-Critérios de Sustentabilidade
+Critérios de sustentabilidade
 \end_layout
 
 \begin_layout Standard
-São variáveis transversais quantitativas e qualitativas, as quais são monitorada
-s regularmente para determinar os efeitos das atividades de intervenção
- ou não-intervenção do sistema em avaliação 
+São variáveis transversais quantitativas e qualitativas, que são monitoradas
+ regularmente para determinar os efeitos das atividades de intervenção ou
+ não-intervenção do sistema em avaliação 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "deusdara2001criterios"
 
 \end_inset
 
-, que estabelecerão os preceitos de orientação para que os indicadores sejam
+, que estabelecem os preceitos de orientação para que os indicadores sejam
  representativos para a sustentabilidade.
 \end_layout
 
 \begin_layout Standard
 Cada indicador deverá atender pelo menos um dos critérios de sustentabilidade
  para ser considerado um bom indicador de sustentabilidade.
- Os critérios de sustentabilidade escolhidos são:
+ Os critérios de sustentabilidade escolhidos pela equipe de especialistas
+ são:
 \end_layout
 
 \begin_layout Itemize
@@ -285,8 +217,8 @@ key "moura2002indicadores"
 \end_layout
 
 \begin_layout Itemize
-Equidade: Distribução dos produtos do agroecossistema entre produtores e
- consumidores (Dias Junior, 2000) 
+Equidade: Distribuição dos produtos do agroecossistema entre produtores
+ e consumidores (Dias Junior, 2000) 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "Apud"
@@ -362,7 +294,7 @@ key "oliveira:2013"
 \end_layout
 
 \begin_layout Standard
-No caso do sistema SustenAgro se determinou pela equipe de especialistas
+No caso do sistema SustenAgro determinou-se pela equipe de especialistas
  em sustentabilidade fazer uma divisão segundo a proposta do Relatório Brundtlan
 d 
 \begin_inset CommandInset citation
@@ -377,16 +309,6 @@ key "brundtland1987our"
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:sustainability_spheres"
-
-\end_inset
-
-
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Tomada de: http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
-\end_layout
 
 \end_inset
 
@@ -435,6 +357,15 @@ name "fig:sustainability_spheres"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Tomada de: http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
+\end_layout
+
+\end_inset
+
 Essas dimensões serão usadas como contendedores gerais dos conceitos de
  sustentabilidade em agricultura permitindo agrupar conceitos relacionados.
 \end_layout
