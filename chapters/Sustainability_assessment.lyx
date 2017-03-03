@@ -21,34 +21,6 @@
 customHeadersFooters
 \end_modules
 \maintain_unincluded_children false
-\begin_local_layout
-Provides natbib 1
-Preamble
-% adaptação do suporte ao natbib do LyX para uso do abntex2cite
-\AtBeginDocument{%                % garante que este código será carregado após
-% \usepackage[alf]{abntex2cite} ou
-% \usepackage[num]{abntex2cite}
-% no preâmbulo latex.
-\RequirePackage{abntex2cite}   % previne o não carregamento do abntex2cite,
-% mas não define se as citações serão do
-% tipo 'alf' ou 'num'.
-\renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
-\def\citep{\cite}
-\newcommand{\citeyearpar}[1]{(\citeyear{#1})}
-\ifx\AbntCitetype\AbntCitetypeALF
-\def\citet{\citeonline} % alf
-\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeyear{#1}}
-\newcommand{\citealp}[1]{\citeauthoronline{#1},~\citeyear{#1}}
-\else
-\def\citet{\@ifnextchar[{\citet@with}{\citet@without}} % num
-\def\citet@with[#1]#2{\citeauthoronline{#2}~\cite[#1]{#2}}
-\def\citet@without#1{\citeauthoronline{#1}~\cite{#1}}
-\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeonline{#1}}
-\def\citealp{\citeonline}
-\fi
-}
-EndPreamble
-\end_local_layout
 \language brazilian
 \language_package default
 \inputencoding utf8
@@ -130,32 +102,140 @@ EndPreamble
 \begin_layout Standard
 Este anexo apresenta os principais conceitos da avaliação da sustentabilidade
  segundo o levantamento de conceitos e de indicadores que foi realizado
- com antecedência nas etapas iniciais do projeto Sustenagro 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "oliveira:2013"
-
-\end_inset
-
-.
+ com antecedência ao desenvolvimento do projeto Sustenagro.
 \end_layout
 
 \begin_layout Standard
 Dada a importância da sustentabilidade, especialmente nos sistemas de produção
  agrícola, têm sido desenvolvidas varias metodologias para avaliar o estado
  desses sistemas, existindo varias tendências segundo o sistema produtivo
- e o contexto deles, no desenvolvimento do sistema SustenAgro será abrangido
- o caso especifico do sistema produtivo de cana-de-açúcar no contexto do
- centro-sul do Brasil, onde foram desenvolvidas pesquisas lideradas pela
- Embrapa que definiram elementos e metodologias de avaliação da sustentabilidade
- em agricultura 
+ e o contexto deles.
+\end_layout
+
+\begin_layout Standard
+O projeto SustenAgro foi planejado e liderado pela Embrapa Meio Ambiente,
+ as características dele são descritas nas figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SustenAgro_Description"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SustenAgro_Details"
+
+\end_inset
+
+, o desenvolvimento abordou o caso especifico do sistema produtivo de cana-de-aç
+úcar no contexto do centro-sul do Brasil que envolve elementos e metodologias
+ de avaliação da sustentabilidade em agricultura 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
 
 \end_inset
 
-, os quais são apresentados a continuação.
+, que são apresentados a continuação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/folderEmbrapa1.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descrição do projeto SustenAgro 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SustenAgro_Description"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/folderEmbrapa2.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descrição do projeto SustenAgro 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SustenAgro_Details"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -178,9 +258,8 @@ key "deusdara2001criterios"
 
 \begin_layout Standard
 Cada indicador deverá atender pelo menos um dos critérios de sustentabilidade
- para ser considerado um bom indicador de sustentabilidade.
- Os critérios de sustentabilidade escolhidos pela equipe de especialistas
- são:
+ para ser considerado um bom indicador de sustentabilidade, os critérios
+ de sustentabilidade escolhidos pela equipe de especialistas são:
 \end_layout
 
 \begin_layout Itemize
@@ -267,10 +346,10 @@ key "moura2002indicadores"
 \end_layout
 
 \begin_layout Standard
-Esses critérios guiam o desenvolvimento do elemento mais relevante das metodolog
-ias de avaliação de sustentabilidade, os indicadores, os quais permitem
- diferenciar a relevância deles, e assim determinar instrumentos de medição
- que representem os aspectos críticos do sistema em termos de sustentabilidade.
+Esses critérios guiam o desenvolvimento dos conceitos mais relevantes das
+ metodologias de avaliação de sustentabilidade, os indicadores, e assim
+ determinar instrumentos de medição que representem os aspectos críticos
+ do sistema em termos de sustentabilidade.
 \end_layout
 
 \begin_layout Section
@@ -377,9 +456,9 @@ Atributos Norteadores
 \begin_layout Standard
 Embora a orientação para a elaboração de todas as variáveis relacionadas
  a projetos de sustentabilidade devam atender pelo menos a três pilares:
- ambiental, econômico, social, os atributos norteadores serão formulados
- para garantir que as diretrizes para o levantamento e validação dos indicadores
- reflitam os sistemas de produção agrícola.
+ ambiental, econômico, social, os atributos norteadores são formulados para
+ garantir as diretrizes no levantamento e validação dos indicadores, e assim
+ ter um modelo da sustentabilidade dos sistemas de produção agrícola.
 \end_layout
 
 \begin_layout Standard
@@ -387,7 +466,7 @@ Após a agregação dos dados será possível visualizar as informações dispon
  e eventuais lacunas para a sistematização dos componentes dos sistemas
  produtivos em termos dos requisitos de sustentabilidade.
  Em uma primeira instância, devem ser levantados dados referentes ao solo,
- clima, água, ar, produção agroindustrial, divisas geradas, mão-de-obra
+ clima, água, ar, produção agroindustrial, divisas geradas, mão de obra
  envolvida, empregos gerados, doações/benefícios indiretos à sociedade,
  biodiversidade, etc.
 \end_layout
@@ -409,10 +488,10 @@ Dimensão Econômica: industrial, agrícola, produtividade, custo, entre outros
 \end_layout
 
 \begin_layout Standard
-Os atributos norteadores serão aplicados no sistema SustenAgro como contendedore
-s de indicadores os quais classificaram e relacionam os indicadores em subgrupos
- das três dimensões da sustentabilidade, permitindo desta maneira a organização
- e agrupamento do conhecimento do domínio.
+Os atributos norteadores foram aplicados nos modelos do sistema SustenAgro
+ como contentores de indicadores os quais classificaram e relacionam os
+ indicadores em subgrupos das três dimensões da sustentabilidade, permitindo
+ desta maneira a organização e agrupamento do conhecimento do domínio.
 \end_layout
 
 \end_body

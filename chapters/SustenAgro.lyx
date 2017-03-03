@@ -75,47 +75,21 @@
 \begin_body
 
 \begin_layout Standard
-Um outro resultado gerado a partir do Decisioner, foi o SAD SustenAgro que
- permite suportar a avaliação da sustentabilidade em cana-de-açúcar, o qual
- faz uso de uma ontologia de domínio em avaliação da sustentabilidade, de
- uma ontologia de GUIs e da DSL para descrever o sistema, os resultados
- gerados durante a implementação do SAD SustenAgro são: User Stories, Scenarios,
- Story Boards, Mockups e o SAD SustenAgro.
+O SAD SustenAgro suporta a avaliação da sustentabilidade em cana-de-açúcar
+ e é um conjunto de definições em formato de Ontologias e DSL que permitem
+ gerar dito sistema a través do Decisioner, o principal componente é a ontologia
+ do domínio em avaliação da sustentabilidade, dita ontologia é compatível
+ com as tecnologias web, permitindo o uso e integração por outros sistemas
+ dado que está em um formato padronizado.
 \end_layout
 
 \begin_layout Standard
-As ontologias suportam a representação e organização do conhecimento, permitindo
- a integração de conceitos, inclusive quando pertencem a domínios sem relação
- aparente.
- No sistema SustenAgro foi necessário inter-relacionar conhecimento de sustentab
-ilidade com conhecimento de interfaces gráficas de usuário, para suportar
- a geração de SAD para avaliação da sustentabilidade, o conhecimento modelado
- foi dividido em duas ontologias, avaliação de sustentabilidade e do SAD.
-\end_layout
-
-\begin_layout Standard
-Neste projeto serão desenvolvidas as seguintes ontologias:
-\end_layout
-
-\begin_layout Itemize
-Ontologia de avaliação de sustentabilidade do sistema produtivo da cana\SpecialChar nobreakdash
-de\SpecialChar nobreakdash
-açúcar:
- essa ontologia vai representar o conhecimento sobre sustentabilidade na
- cultura de cana\SpecialChar nobreakdash
-de\SpecialChar nobreakdash
-açúcar e o conhecimento sobre as metodologias de avaliação
- de sustentabilidade, fornecendo um modelo de dados ao sistema SustenAgro.
-\end_layout
-
-\begin_layout Itemize
-Ontologia de controles de gráficos: a finalidade dessa ontologia é dar suporte
- a composição de controles gráficos relacionados com os indicadores.
- Esse é um requisito funcional do software, uma vez que os indicadores podem
- ter diversos tipos de unidades e para cada tipo existe um tipo de controle
- gráfico mais apropriado para sua representação.
- Por exemplo, para representar um indicador de sustentabilidade do tipo
- numérico é recomendável usar um controle visual tipo spinner.
+O desenvolvimento de SustenAgro permitiu definir os componentes principais
+ do sistema Decisioner, pelo que os dois sistemas estão muito relacionados
+ mas correspondem a sistemas independentes.foi inicialmente desenvolvido
+ como uma aplicação web baseada no framework Grails e a linguagem Groovy,
+ dita decisão foi feita pela compatibilidade com as tecnologias relacionadas
+ com a Web Semântica e DSL.
 \end_layout
 
 \begin_layout Section
@@ -123,9 +97,9 @@ Arquitetura do SustenAgro
 \end_layout
 
 \begin_layout Standard
-Este caso de uso permitiu desenhar e modelar os componentes do Decisioner,
- a partir dos componentes de SustenAgro por meio dos seguintes elementos
- representados na arquitetura da figura 
+O SAD SustenAgro permitiu desenhar e modelar os componentes que fazem parte
+ do Decisioner, devido a que foi o primeiro caso de uso, a continuação são
+ apresentados os componentes da arquitetura por meio da figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Architecture"
@@ -181,402 +155,83 @@ name "fig:Architecture"
 
 \begin_layout Enumerate
 Ontologia do domínio: ontologia que representa os conceitos do domínio:
- avaliação da sustentabilidade do sistema produtivo de cana-de-açúcar.
- Ela é a base fundamental para o sistema SustenAgro porque permite estabelecer
- os conceitos fundamentais são utilizados pelo sistema, entre eles: indicadores,
- componentes de indicadores, índices, dimensões da sustentabilidade, recomendaçõ
-es e o método de avaliação.
+ avaliação da sustentabilidade do sistema produtivo de cana-de-açúcar, ela
+ é a base fundamental para o sistema SustenAgro porque permite estabelecer
+ os conceitos fundamentais que são utilizados pelo sistema, entre eles:
+ indicadores, componentes de indicadores, índices, dimensões da sustentabilidade
+, recomendações e o método de avaliação.
 \end_layout
 
 \begin_layout Enumerate
-Ontologia de controles gráficos: ontologia que representará os controles
- de usuários e os tipos de dados, fazendo um mapeamento entre os dois.
+Ontologia de interfaces gráficas: ontologia que representa as interfaces
+ gráficas de usuários e os tipos de dados, fazendo um mapeamento entre os
+ dois.
 \end_layout
 
 \begin_layout Enumerate
-TripleStore: sistema de recuperação da informação que padroniza as informações
- em formato de triplas, permitindo a compatibilidade e o reúso das informações
- entre fontes de dados externas.
+TripleStore: sistema de armazenamento e recuperação da informação que padroniza
+ as informações em formato de triplas, permitindo a compatibilidade e o
+ reúso das informações entre fontes de dados externas.
 \end_layout
 
 \begin_layout Enumerate
-DSL: linguagem especifica do domínio dos elementos visuais que serão usados
- pelo SustenAgro.
- Ela permitirá uma definição flexível das interfaces, baseada nos conceitos
- definidos na ontologia de domínio e de controles gráficos.
- Ela permitirá a definição das características visuais e dos tipos de controles
- especializados para cada conceito da ontologia de domínio.
+DSL: linguagem especifica do domínio para gerenciar os conceitos das ontologias
+ permitindo vincular os conceitos do domínio de avaliação da sustentabilidade
+ com os elementos visuais que serão usados no sistema SustenAgro, fornecendo
+ uma linguagem especifica para definir SADs por parte dos especialistas
+ do domínio.
 \end_layout
 
 \begin_layout Enumerate
-Sistema gerador de interfaces gráficas: Sistema gerador de GUIs para sistemas
- Web, que é definido na DSL e na ontologia de controles gráficos.
+Sistema gerador de interfaces gráficas: Sistema que usa a ontologia de interface
+s gráficas e as definições feitas na DSL para gerar as interfaces gráficas
+ Web, que compõem os SADs gerados pelo Decisioner.
+\end_layout
+
+\begin_layout Section
+Metodologia.
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento SustenAgro foi realizado com a finalidade de generalizar
- os componentes e assim definir o Decisioner para gerar outros SADs que
- trabalhem em domínios similares ao SustenAgro.
- 
-\end_layout
-
-\begin_layout Standard
-O desenvolvimento do SustenAgro será feito usando-se uma DSL baseada na
- linguagem Groovy 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "koenig2007groovy"
-
-\end_inset
-
-.
- Ou seja, essa DSL será uma extensão da linguagem Groovy.
- Groovy é uma linguagem que tem suporte ao desenvolvimento de DSLs.
- Isso inclui suporte a DSL Descriptors, arquivos Groovy que descrevem extensões
- 
-\emph on
-domain-specific
-\emph default
- para o motor de inferência e assistente de conteúdo do plugin Groovy\SpecialChar nobreakdash
-Eclipse.
- Isso permite que a DSL criada tenha todo o mesmo suporte que o IDE
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "IDE"
-description "Integrated Development Environment"
-
-\end_inset
-
- Eclipse dá a linguagens como Java ou Groovy, como code completion, debugging,
- etc.
- Uma outra vantagem de Groovy é a disponibilidade do Grails Framework para
- a criação de aplicações Web 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "judd2008beginning"
-
-\end_inset
-
-.
- O desenvolvimento dessa DSL será feito em outro trabalho de mestrado.
- Mas este trabalho irá contribuir com a parte da DSL que tem haver com interface
-s, além da ontologia de Controles Gráficos.
-\end_layout
-
-\begin_layout Standard
-O uso da DSL por especialistas em sustentabilidade deve diminuir o esforço
- necessário para se desenvolver um SAD nesse domínio.
- Mas mesmo assim, ainda será necessário aplicar alguma metodologia de desenvolvi
-mento de software.
- 
-\end_layout
-
-\begin_layout Standard
-Existem múltiplos métodos e metodologias que permitem um desenvolvimento
- ágil de software.
- Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos
- e geração de protótipos facilmente adaptáveis às mudanças.
- Exemplos de métodos ágeis são: “Mockups”, “User Stories”, “Scenarios”,
- “Storyboards” e “Use Cases”, exemplos de metodologias ágeis são: “SCRUM”
- ou “XP eXtreme Programming”.
-\end_layout
-
-\begin_layout Standard
-Uma das etapas mais importantes dos desenvolvimentos ágeis é o levantamento
- de requisitos.
- Essa etapa tem como objetivo definir as características do software e pode
- ser realizada múltiplas vezes.
- Isso ocorre pois as metodologias ágeis são cíclicas e os protótipos mudam
- em cada ciclo para cumprir os requisitos.
-\end_layout
-
-\begin_layout Standard
-O desenvolvimento do sistema SustenAgro será realizado por meio de metodologias
- ágeis de desenvolvimento de software, principalmente serão utilizadas algumas
- práticas da metodologia SCRUM 
+A metodologia que direcionou o desenvolvimento foi SCRUM 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "schwaber2002gile"
 
 \end_inset
 
-.
- Também será usado o enfoque User-Centered Design.
- Nesse sentido, está sendo desenvolvido primeiramente um 
-\emph on
-mockup
-\emph default
- da interface gráfica do sistema, o qual será o meio de comunicação com
- os parceiros do SustenAgro para determinar as funcionalidades básicas do
- sistema.
- Quando o 
-\emph on
-mockup
-\emph default
- for validado, será iniciado o desenvolvimento de um protótipo da interface
- gráfica que permitirá determinar os requisitos funcionais.
+ e o design foi realizado por meio do enfoque 
+\lang english
+User Centered Design
+\lang brazilian
+, permitindo integrar praticas ágeis no desenvolvimento do software.
+ Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos
+ e geração de protótipos facilmente adaptáveis às mudanças, e fez uso de
+ ferramentas de analise como: “Mockups”, “User Stories”, “Scenarios”, “Storyboar
+ds” e “Use Cases”.
 \end_layout
 
 \begin_layout Standard
-Baseando-se na DSL, pode-se suportar um sistema gerador de interfaces gráficas
- para conceder usabilidade e flexibilidade ao sistema.
- Essa última característica constitui uma nova proposta de desenvolvimento
- de SADs que permite a adaptação automática (ou semi\SpecialChar nobreakdash
-automática) da interface
- às mudanças dos conceitos do domínio.
-\end_layout
-
-\begin_layout Standard
-Cada vez que sejam desenvolvidos cada componente de SustenAgro se realizarão
- diversos testes para validar as funcionalidades do sistema, esse processo
- será realizado com os especialistas para refinar as funcionalidades do
- sistema de acordo com os requisitos manifestados.
- Espera-se que, usando a DSL, os próprios especialistas vão ser capazes
- de fazer parte do desenvolvimento e validação.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Enumerate
-
-\series bold
-!!Ainda falta mexer com esta parte!!
-\series default
- 
+A metodologia implementada incluiu as seguintes etapas:
 \end_layout
 
 \begin_layout Enumerate
-Recuperação dos dados dos repositórios FAO Linked Data
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "FAO Linked Data"
-description "Food and Agriculture Organization of the United Nations (FAO) Linked Data"
-
-\end_inset
-
- e AGRIS referente aos locais que foram realizadas coletas de espécimes
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Análise dos dados de baixa qualidade, ou seja, dados que não tem informações
- importantes, por exemplo, localidade e município
+Levantamento de requisitos: esta etapa tem como objetivo definir as característi
+cas do software e pode ser realizada múltiplas vezes.
+ Isso ocorre pois as metodologias ágeis são cíclicas e os protótipos mudam
+ em cada ciclo para cumprir os requisitos.
 \end_layout
 
 \begin_layout Enumerate
-Verificação do número de dados imprecisos e exibição dos mesmos em um mapa
-\end_layout
-
-\begin_layout Enumerate
-Verificação do número de dados que contém informações sobre local, latitude,
- longitude
-\end_layout
-
-\begin_layout Enumerate
-Verificação da quantidade de dados que possuem informações de latitude e
- longitude antes e depois do uso de GPS por biólogos em coletas
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Utilização de dados de fontes externas como Geonames, Wikimapia, DBpedia
-\end_layout
-
-\begin_layout Enumerate
-Implementação de um método para agrupar todos os dados dos repositórios
- SpeciesLink e GBIF e realizar a resolução de topônimos utilizando técnicas
- de Recuperação de Informação Geográfica e ontologias
-\end_layout
-
-\begin_layout Enumerate
-Aprimoramento das informações geográficas ausentes nos dados do SpeciesLink
- e GBIF
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Utilização dos dados referente aos repositórios externos para melhorar os
- registros das localidades dos repositórios SpeciesLink e GBIF
-\end_layout
-
-\begin_layout Enumerate
-Criação um método para sumarizar as coordenadas geográficas de acordo com
- a abordagem da Lei de Linus
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Verificação da quantidade de dados que tiveram suas informações aprimoradas
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Contagem dos dados que não contém informações sobre latitude, longitude
- e foram recuperados
-\end_layout
-
-\begin_layout Enumerate
-Contagem dos dados que possui informações geográficas recuperadas e eram
- muito velhos, ou seja, antes do uso de GPS por biólogos em coletas
-\end_layout
-
-\begin_layout Enumerate
-Análise dos resultados dos passos a) e b) anteriores utilizando o teste
- t de Student, para verificar o quão boa foi a abordagem utilizada
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Mapeamento dos dados para uma 
-\shape italic
-triplestore
-\shape default
- utilizando ontologias 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Definição das triplas em RDF, que deveram possuir um sujeito, predicado
- e objeto para cada localidade.
- 
-\end_layout
-
-\begin_layout Enumerate
-Mapeamento de coordenadas geográficas para GeoSPARQL 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Construção de uma base de teste com informações sobre qual consulta representa
- uma localidade
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Construção de consultas semânticas e verificação de resultados utilizando
- as medidas de precisão, revocação e F1 
-\end_layout
-
-\begin_layout Enumerate
-Realização da mesma abordagem do passo a) para os repositórios DBpedia e
- Geonames, com intuito de verificar a viabilidade para expansão de consultas
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Desenvolvimento de uma interface que permita aos biólogos inserir dados
- no 
-\shape italic
-Gazetteer 
-\shape default
-por meio de mapas
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Desenvolvimento de um método que permita aos biólogos inserir lugares usando
- GeoTAGS
-\end_layout
-
-\begin_layout Enumerate
-Agrupamento dos dados inseridos e aprimoramento dos dados referentes a localidad
-es que são similares.
-\end_layout
-
-\begin_layout Enumerate
-Desenvolvimento de um método que permita aos biólogos inserirem links do
- DBpedia, quando os mesmos existirem, para auxiliar no crescimento da 
-\shape italic
-Web of Data
-\shape default
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-Desenvolvimento de um método que permita aos biólogos verificarem a acurácia
- dos links sobre a DBpedia inseridos no 
-\shape italic
-Gazetteer
-\shape default
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Verificação do número de lugares inseridos pelos usuários e qualidade dos
- dados 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Verificação da média de usuários que concordam com as coordenadas geográficas
-\end_layout
-
-\begin_layout Enumerate
-Verificação da média de usuários que concordam com as informações de 
+Desenvolvimento do 
 \emph on
-Linked Open Data
+\lang english
+Mockup
 \emph default
- presentes no 
-\shape italic
-Gazetteer
-\shape default
- 
-\end_layout
-
-\begin_layout Enumerate
-Verificação da quantidade de dados que tiveram suas informações aprimoradas
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-o que foi listada na etapa 5?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Metodologia das ontologias
+\lang brazilian
+ da interface gráfica do sistema, que foi analisado pelos especialistas
+ da Embrapa, para determinar se incluía as funcionalidades básicas do sistema
+ descrito no levantamento dos requisitos.
 \end_layout
 
 \begin_layout Standard
@@ -654,6 +309,17 @@ name "fig:Methodology"
 
 \end_layout
 
+\begin_layout Standard
+Os resultados gerados durante a implementação do SAD SustenAgro são: User
+ Stories, Scenarios, Story Boards, Mockups e o SAD SustenAgro.
+\end_layout
+
+\begin_layout Standard
+Cada uma das anteriores etapas de desenvolvimento foram testadas com os
+ especialistas para avaliar se corresponde com funcionalidades do sistema
+ que satisfaçam os requisitos manifestados
+\end_layout
+
 \begin_layout Section
 Ontologia SustenAgro: avaliação da sustentabilidade
 \end_layout
@@ -720,6 +386,17 @@ Availability of assessment results: relaciona o tipo de disponibilização
 
 \begin_layout Itemize
 Sugarcane source: relaciona a origem da cana
+\end_layout
+
+\begin_layout Standard
+Ontologia de avaliação de sustentabilidade do sistema produtivo da cana\SpecialChar nobreakdash
+de\SpecialChar nobreakdash
+açúcar:
+ essa ontologia vai representar o conhecimento sobre sustentabilidade na
+ cultura de cana\SpecialChar nobreakdash
+de\SpecialChar nobreakdash
+açúcar e o conhecimento sobre as metodologias de avaliação
+ de sustentabilidade, fornecendo um modelo de dados ao sistema SustenAgro.
 \end_layout
 
 \begin_layout Standard

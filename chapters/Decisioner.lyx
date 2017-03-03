@@ -214,6 +214,15 @@ reference "fig:StructureOfDomainOntology"
 \end_layout
 
 \begin_layout Standard
+Também permite a integração de conceitos, inclusive quando pertencem a domínios
+ sem relação aparente.
+ Um exemplo disso é a inter-relação do conhecimento de sustentabilidade
+ com conhecimento de interfaces gráficas de usuário, que suporta a geração
+ de SAD para avaliação da sustentabilidade, o conhecimento modelado foi
+ dividido em duas ontologias, avaliação de sustentabilidade e do SAD.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -324,6 +333,15 @@ Ontologia de controles de gráficos: a finalidade dessa ontologia é dar suporte
  numérico é recomendável usar um controle visual tipo spinner.
 \end_layout
 
+\begin_layout Standard
+O sistema gerador de interfaces gráficas permite suportar aspectos de usabilidad
+e e flexibilidade ao sistema.
+ Essa última característica constitui uma nova proposta de desenvolvimento
+ de SADs que permite a adaptação automática (ou semi\SpecialChar nobreakdash
+automática) da interface
+ às mudanças dos conceitos do domínio.
+\end_layout
+
 \begin_layout Section
 Decisioner DSL
 \end_layout
@@ -335,6 +353,49 @@ No desenvolvimento da presente pesquisa foi necessário definir uma DSL que
  agricultura, pelo qual foram integrados conceitos do domínio de conhecimento
  na definição dos componentes do SAD, fornecendo uma linguagem para especialista
 s onde é suportada a de definição dos SAD, as características da DSL são:
+\end_layout
+
+\begin_layout Standard
+A DSL foi baseada na linguagem Groovy 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "koenig2007groovy"
+
+\end_inset
+
+, sendo uma extensão da linguagem Groovy, devido a que esta linguagem suporta
+ o desenvolvimento de DSLs.
+ Isso inclui suporte a DSL Descriptors, arquivos Groovy que descrevem extensões
+ 
+\emph on
+domain-specific
+\emph default
+ para o motor de inferência e assistente de conteúdo do plugin Groovy\SpecialChar nobreakdash
+Eclipse.
+ 
+\end_layout
+
+\begin_layout Standard
+Uma outra vantagem de Groovy é a disponibilidade do Grails Framework para
+ a criação de aplicações Web 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "judd2008beginning"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+O uso da DSL por especialistas em sustentabilidade deve diminuir o esforço
+ necessário para se desenvolver um SAD nesse domínio.
+\end_layout
+
+\begin_layout Standard
+Espera-se que, usando a DSL, os próprios especialistas vão ser capazes de
+ fazer parte do desenvolvimento e validação.
 \end_layout
 
 \begin_layout Subsection

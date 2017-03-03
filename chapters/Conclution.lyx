@@ -226,7 +226,7 @@ Atualmente na geração de VIEWs nos sistemas web, são usadas tecnologias
 
 \begin_layout Standard
 A proposta é de uma linguagem para ediação de VIEWs, onde os elementos estejam
- modularizados perminto abstraer a View em uma hierarquia de componentes
+ modularizados permitindo abstrair a View em uma hierarquia de componentes
  relacionando-os semanticamente por meio de uma linguagem de alto nivel
  de usuário não especialista em web development.
 \end_layout
@@ -245,10 +245,219 @@ No desenvolvimento do Sistema SustenAgro, foram definidas 60 widgets que
 Georeferenção nos SAD
 \end_layout
 
-\begin_layout Standard
-Tendo em conta d
+\begin_layout Enumerate
+Recuperação dos dados dos repositórios FAO Linked Data
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FAO Linked Data"
+description "Food and Agriculture Organization of the United Nations (FAO) Linked Data"
+
+\end_inset
+
+ e AGRIS referente aos locais que foram realizadas coletas de espécimes
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Análise dos dados de baixa qualidade, ou seja, dados que não tem informações
+ importantes, por exemplo, localidade e município
+\end_layout
+
+\begin_layout Enumerate
+Verificação do número de dados imprecisos e exibição dos mesmos em um mapa
+\end_layout
+
+\begin_layout Enumerate
+Verificação do número de dados que contém informações sobre local, latitude,
+ longitude
+\end_layout
+
+\begin_layout Enumerate
+Verificação da quantidade de dados que possuem informações de latitude e
+ longitude antes e depois do uso de GPS por biólogos em coletas
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Utilização de dados de fontes externas como Geonames, Wikimapia, DBpedia
+\end_layout
+
+\begin_layout Enumerate
+Implementação de um método para agrupar todos os dados dos repositórios
+ SpeciesLink e GBIF e realizar a resolução de topônimos utilizando técnicas
+ de Recuperação de Informação Geográfica e ontologias
+\end_layout
+
+\begin_layout Enumerate
+Aprimoramento das informações geográficas ausentes nos dados do SpeciesLink
+ e GBIF
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Utilização dos dados referente aos repositórios externos para melhorar os
+ registros das localidades dos repositórios SpeciesLink e GBIF
+\end_layout
+
+\begin_layout Enumerate
+Criação um método para sumarizar as coordenadas geográficas de acordo com
+ a abordagem da Lei de Linus
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Verificação da quantidade de dados que tiveram suas informações aprimoradas
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Contagem dos dados que não contém informações sobre latitude, longitude
+ e foram recuperados
+\end_layout
+
+\begin_layout Enumerate
+Contagem dos dados que possui informações geográficas recuperadas e eram
+ muito velhos, ou seja, antes do uso de GPS por biólogos em coletas
+\end_layout
+
+\begin_layout Enumerate
+Análise dos resultados dos passos a) e b) anteriores utilizando o teste
+ t de Student, para verificar o quão boa foi a abordagem utilizada
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mapeamento dos dados para uma 
+\shape italic
+triplestore
+\shape default
+ utilizando ontologias 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Definição das triplas em RDF, que deveram possuir um sujeito, predicado
+ e objeto para cada localidade.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mapeamento de coordenadas geográficas para GeoSPARQL 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Construção de uma base de teste com informações sobre qual consulta representa
+ uma localidade
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Construção de consultas semânticas e verificação de resultados utilizando
+ as medidas de precisão, revocação e F1 
+\end_layout
+
+\begin_layout Enumerate
+Realização da mesma abordagem do passo a) para os repositórios DBpedia e
+ Geonames, com intuito de verificar a viabilidade para expansão de consultas
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Desenvolvimento de uma interface que permita aos biólogos inserir dados
+ no 
+\shape italic
+Gazetteer 
+\shape default
+por meio de mapas
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Desenvolvimento de um método que permita aos biólogos inserir lugares usando
+ GeoTAGS
+\end_layout
+
+\begin_layout Enumerate
+Agrupamento dos dados inseridos e aprimoramento dos dados referentes a localidad
+es que são similares.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de um método que permita aos biólogos inserirem links do
+ DBpedia, quando os mesmos existirem, para auxiliar no crescimento da 
+\shape italic
+Web of Data
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de um método que permita aos biólogos verificarem a acurácia
+ dos links sobre a DBpedia inseridos no 
+\shape italic
+Gazetteer
+\shape default
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Verificação do número de lugares inseridos pelos usuários e qualidade dos
+ dados 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Verificação da média de usuários que concordam com as coordenadas geográficas
+\end_layout
+
+\begin_layout Enumerate
+Verificação da média de usuários que concordam com as informações de 
+\emph on
+Linked Open Data
+\emph default
+ presentes no 
+\shape italic
+Gazetteer
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Verificação da quantidade de dados que tiveram suas informações aprimoradas
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Desenvolver um framework para geração das interfaces usuário-computador
  geral para SAD.

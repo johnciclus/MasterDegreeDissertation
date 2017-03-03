@@ -128,8 +128,8 @@ EndPreamble
 \begin_body
 
 \begin_layout Standard
-A instalação de SustenAgro divide-se em dois processos, a configuração do
- servidor web e o deploy do arquivo WAR
+A instalação dos Sistemas Decisioner e SustenAgro divide-se em dois processos,
+ a configuração do servidor web e o deploy do arquivo WAR
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "WAR"
@@ -188,8 +188,8 @@ Instalação do Apache Tomcat
 
 \begin_layout Standard
 A instalação do Apache Tomcat depende da instalação do Java 8, e o Tomcat
- deve na versão 7 para suportar a compatibilidade do War gerado, isto é
- documentado no site
+ versão 7 para suportar a compatibilidade do War gerado, isto é documentado
+ no site
 \begin_inset Foot
 status open
 
@@ -200,13 +200,13 @@ https://grails.org/wiki/Deployment
 \end_inset
 
  do framework Grails, que exige uma versão 7 de Apache Tomcat para suportar
- o deploy dos war.
+ o deploy dos arquivos war.
 \end_layout
 
 \begin_layout Standard
 O processo de instalação consiste em fazer download dos arquivos binários,
  extrair eles em /opt/tomcat/, exportar as variáveis de entorno e executar
- o web server, o código é mostrado a continuação:
+ o Web Server, o código é mostrado a continuação:
 \end_layout
 
 \begin_layout Standard
@@ -249,7 +249,7 @@ sudo /opt/tomcat/bin/startup.sh
 
 \begin_layout Standard
 Configurar users de Tomcat em: /opt/tomcat/conf/tomcat-users.xml e acrescentar
- os rol e user
+ os Rol e User
 \end_layout
 
 \begin_layout Standard
@@ -298,7 +298,7 @@ export CATALINA_HOME=/opt/tomcat
 \end_layout
 
 \begin_layout Standard
-Finalemente executar o comando 
+Finalmente executar o comando 
 \end_layout
 
 \begin_layout Standard
@@ -317,7 +317,7 @@ sudo /opt/tomcat/bin/startup.sh
 \end_layout
 
 \begin_layout Standard
-e verificar a execução do programa na url /manager do domain do servidor
+e verificar a execução do programa na url /manager do domínio do servidor
 \end_layout
 
 \begin_layout Subsection
@@ -327,8 +327,8 @@ Instalação do WkHtmltoPdf
 \begin_layout Standard
 A tecnologia WkHtmltoPdf permite converter paginas web em formato Html a
  Pdf, esta ferramenta suporta a funcionalidade de gerar os reportes em formato
- Pdf, a instalação consistem em fazer download dos arquivos binarios e a
- configuração de um X server virual para suportar o renderizado, os comandos
+ Pdf, a instalação consistem em fazer download dos arquivos binários e a
+ configuração de um X Server Virual para suportar o renderizado, os comandos
  são mostrados a continuação:
 \end_layout
 
@@ -414,16 +414,16 @@ sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh
 \end_layout
 
 \begin_layout Standard
-Com o comando wkhtmltopdf.sh é possivel converter a pdf desde um sistema
+Com o comando wkhtmltopdf.sh é possível converter a pdf desde um sistema
  sem X11
 \end_layout
 
 \begin_layout Subsubsection*
-Instalação da triplestore Blazegraph
+Instalação da Triplestore Blazegraph
 \end_layout
 
 \begin_layout Standard
-A instalação do Blazegraph consiste em fazer download do arquivo binario
+A instalação do Blazegraph consiste em fazer download do arquivo binário
  e executar com o arquivo de configuração RWStore2.properties o serviço de
  triplestore.
 \end_layout
@@ -480,7 +480,7 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Deploy do arquivo war
 \end_layout
 
