@@ -75,21 +75,17 @@
 \begin_body
 
 \begin_layout Standard
-O SAD SustenAgro suporta a avaliação da sustentabilidade em cana-de-açúcar
- e é um conjunto de definições em formato de Ontologias e DSL que permitem
- gerar dito sistema a través do Decisioner, o principal componente é a ontologia
- do domínio em avaliação da sustentabilidade, dita ontologia é compatível
- com as tecnologias web, permitindo o uso e integração por outros sistemas
- dado que está em um formato padronizado.
+O SAD SustenAgro é um sistema web que suporta a avaliação da sustentabilidade
+ em cana-de-açúcar, especificamente está composto por um conjunto de definições
+ em formato de Ontologias e DSL que permitem gerar dito sistema a través
+ do Decisioner, o principal componente dele é a ontologia do domínio em
+ avaliação da sustentabilidade.
 \end_layout
 
 \begin_layout Standard
 O desenvolvimento de SustenAgro permitiu definir os componentes principais
- do sistema Decisioner, pelo que os dois sistemas estão muito relacionados
- mas correspondem a sistemas independentes.foi inicialmente desenvolvido
- como uma aplicação web baseada no framework Grails e a linguagem Groovy,
- dita decisão foi feita pela compatibilidade com as tecnologias relacionadas
- com a Web Semântica e DSL.
+ do sistema Decisioner, pelo qual os dois sistemas estão muito relacionados
+ mas correspondem a sistemas independentes.
 \end_layout
 
 \begin_layout Section
@@ -97,9 +93,9 @@ Arquitetura do SustenAgro
 \end_layout
 
 \begin_layout Standard
-O SAD SustenAgro permitiu desenhar e modelar os componentes que fazem parte
- do Decisioner, devido a que foi o primeiro caso de uso, a continuação são
- apresentados os componentes da arquitetura por meio da figura 
+O SAD SustenAgro permitiu modelar e desenvolver os componentes que fazem
+ parte do Decisioner, devido a que foi o primeiro caso de uso, a continuação
+ são apresentados os componentes da arquitetura por meio da figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Architecture"
@@ -119,9 +115,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../figures/arquitectura.png
-	lyxscale 50
-	width 90col%
+	filename /home/john/Desktop/Dissertation/figures/SustenAgro Arquitecture final.png
+	width 80col%
 
 \end_inset
 
@@ -163,15 +158,9 @@ Ontologia do domínio: ontologia que representa os conceitos do domínio:
 \end_layout
 
 \begin_layout Enumerate
-Ontologia de interfaces gráficas: ontologia que representa as interfaces
- gráficas de usuários e os tipos de dados, fazendo um mapeamento entre os
- dois.
-\end_layout
-
-\begin_layout Enumerate
-TripleStore: sistema de armazenamento e recuperação da informação que padroniza
- as informações em formato de triplas, permitindo a compatibilidade e o
- reúso das informações entre fontes de dados externas.
+Web components: são um padrão para definição e gerenciamento de widgets
+ reusaveis na web, fornecendo um modelo de componentes que permite encapsulação
+ e interoperabilidade.
 \end_layout
 
 \begin_layout Enumerate
@@ -180,12 +169,6 @@ DSL: linguagem especifica do domínio para gerenciar os conceitos das ontologias
  com os elementos visuais que serão usados no sistema SustenAgro, fornecendo
  uma linguagem especifica para definir SADs por parte dos especialistas
  do domínio.
-\end_layout
-
-\begin_layout Enumerate
-Sistema gerador de interfaces gráficas: Sistema que usa a ontologia de interface
-s gráficas e as definições feitas na DSL para gerar as interfaces gráficas
- Web, que compõem os SADs gerados pelo Decisioner.
 \end_layout
 
 \begin_layout Section

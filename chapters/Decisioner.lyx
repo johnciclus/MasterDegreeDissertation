@@ -134,8 +134,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../figures/interfaces.png
-	scale 50
+	filename /home/john/Desktop/Dissertation/figures/Decisioner Arquitecture.png
+	width 80col%
 
 \end_inset
 
@@ -143,7 +143,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modelo da geração de SAD
+Arquitetura do Decisioner
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Interfaces"
@@ -161,6 +161,24 @@ name "fig:Interfaces"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Ontologia de interfaces gráficas: ontologia que representa as interfaces
+ gráficas de usuários e os tipos de dados, fazendo um mapeamento entre os
+ dois.
+\end_layout
+
+\begin_layout Enumerate
+TripleStore: sistema de armazenamento e recuperação da informação que padroniza
+ as informações em formato de triplas, permitindo a compatibilidade e o
+ reúso das informações entre fontes de dados externas.
+\end_layout
+
+\begin_layout Enumerate
+Sistema gerador de interfaces gráficas: Sistema que usa a ontologia de interface
+s gráficas e as definições feitas na DSL para gerar as interfaces gráficas
+ Web, que compõem os SADs gerados pelo Decisioner.
 \end_layout
 
 \begin_layout Section
@@ -220,6 +238,11 @@ Também permite a integração de conceitos, inclusive quando pertencem a domín
  com conhecimento de interfaces gráficas de usuário, que suporta a geração
  de SAD para avaliação da sustentabilidade, o conhecimento modelado foi
  dividido em duas ontologias, avaliação de sustentabilidade e do SAD.
+\end_layout
+
+\begin_layout Standard
+As ontologias da web semantica são compatíveis com as tecnologias web, permitind
+o o uso e integração por outros sistemas dado que está em um formato padronizado.
 \end_layout
 
 \begin_layout Standard
