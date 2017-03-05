@@ -149,18 +149,18 @@ name "fig:Architecture"
 \end_layout
 
 \begin_layout Enumerate
-Ontologia do domínio: ontologia que representa os conceitos do domínio:
+Ontologia do domínio: ontologia que representa os conceitos do domínio,
  avaliação da sustentabilidade do sistema produtivo de cana-de-açúcar, ela
- é a base fundamental para o sistema SustenAgro porque permite estabelecer
- os conceitos fundamentais que são utilizados pelo sistema, entre eles:
- indicadores, componentes de indicadores, índices, dimensões da sustentabilidade
-, recomendações e o método de avaliação.
+ é a base para o sistema SustenAgro porque permite estabelecer os conceitos
+ fundamentais que são utilizados pelo sistema, entre eles: indicadores,
+ componentes de indicadores, índices, dimensões da sustentabilidade, recomendaçõ
+es e o método de avaliação.
 \end_layout
 
 \begin_layout Enumerate
 Web components: são um padrão para definição e gerenciamento de widgets
- reusaveis na web, fornecendo um modelo de componentes que permite encapsulação
- e interoperabilidade.
+ reusaveis na web, fornecendo um modelo que permite encapsulamento e interoperab
+ilidade dos componentes.
 \end_layout
 
 \begin_layout Enumerate
@@ -1177,101 +1177,6 @@ recomendações
 \end_inset
 
  como resultado do processo de avaliação.
-\end_layout
-
-\begin_layout Section
-TripleStore
-\end_layout
-
-\begin_layout Standard
-O sistema SustenAgro será baseado nas tecnologias da web semântica, entre
- as tecnologias existentes encontra-se a Triplestore que é um banco de dados
- para o armazenamento e recuperação de triplas 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "rusher2003triple"
-
-\end_inset
-
-.
- Para o presente projeto foi selecionada a Triplestore Parliament 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-http://parliament.semwebcentral.org/
-\end_layout
-
-\end_inset
-
- porque fornece as características: suporte nativo a SPARQL
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SPARQL"
-description "SPARQL Protocol and RDF Query Language"
-
-\end_inset
-
- e SPARQL/Update e implementa o SPARQL Protocol Endpoint.
- Esse último, padroniza o armazenamento e recuperação da informação; e a
- compatibilidade com os sistemas web por meio do Endpoint.
-\end_layout
-
-\begin_layout Section
-Sistemas de apóio à decisão
-\end_layout
-
-\begin_layout Standard
-Os sistemas de apóio à decisão (SAD) ajudam no entendimento de processos
- complexos, auxiliam na comparação dos fenômenos envolvidos e suportam a
- análise e escolha de alternativas no processo de decisão 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "heinzle2010semantica"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-O sistema SustenAgro é um SAD e será desenvolvido com o apoio da equipe
- do projeto SustenAgro (Anexo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Projeto-SustenAgro"
-
-\end_inset
-
-) da Embrapa Meio Ambiente, a qual está desenvolvendo uma proposta metodológica
- para avaliar a sustentabilidade de sistemas de produção de cana-de-açúcar
- no Centro Sul do Brasil para equacionar as principais questões referentes
- a esses sistemas produtivos e possibilitar a utilização racional dos recursos
- naturais para suprir as necessidades presentes e garantir o suprimento
- das gerações futuras.
-\end_layout
-
-\begin_layout Standard
-A equipe de TI do SustenAgro determinou que o tipo de sistema mais conveniente
- para o desenvolvimento seria um Sistema de Apóio à Decisão (SAD).
- Com a finalidade de definir a arquitetura e a interface gráfica desse sistema
- realizaram-se duas perguntas de pesquisa que orientaram esse projeto:
-\end_layout
-
-\begin_layout Itemize
-Como integrar o conhecimento dos especialistas em um sistema de apoio na
- tomada de decisões permitindo a continua mudança do modelo do domínio?
-\end_layout
-
-\begin_layout Itemize
-Como gerar interfaces gráficas a partir de definições simples do domínio
- do conhecimento?
-\end_layout
-
-\begin_layout Standard
-Tendo em conta os requisitos do software, como o suporte a contínua mudança
- do modelo de dados e a geração dinâmica de interfaces, se propõe a arquitetura
- a seguir.
 \end_layout
 
 \begin_layout Section
