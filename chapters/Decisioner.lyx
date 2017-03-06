@@ -193,14 +193,57 @@ stas em sustentabilidade da Embrapa Meio Ambiente.
 \end_layout
 
 \begin_layout Standard
-Os componentes da arquitetura do SustenAgro não são exclusivos do SustenAgro,
- podendo ser reusados em outros SADs, os quais foram generalizados para
- suportar a geração de outros tipos de sistema.
+O desenvolvimento dos componentes do Decisioner foram realizados da seguinte
+ maneira:
+\end_layout
+
+\begin_layout Enumerate
+Seleção da 
+\lang english
+Triplestore
+\lang brazilian
+: foi realizado um processo de avaliação das 
+\lang english
+triplestores
+\lang brazilian
+ existentes com a finalidade de definir uma que adapta-se nos requisitos
+ do sistema Decisioner.
+\end_layout
+
+\begin_layout Enumerate
+Seleção da linguagem de programação e framework web: foi realizado uma verificaç
+ão das tecnologias de desenvolvimento de sistema web compatíveis com as
+ tecnologias da web semântica e com as DSLs.
+\end_layout
+
+\begin_layout Enumerate
+Design da DSL:
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento do interprete DSL:
+\end_layout
+
+\begin_layout Enumerate
+Integração com tencologias de Web Components:
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de modulo de geração de GUIs.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento do DSL editor:
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento do Ontology Editor:
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento dos componentes do Decisioner foram realizados da seguinte
- maneira:
+Os componentes da arquitetura do SustenAgro não são exclusivos do SustenAgro,
+ podendo ser reusados em outros SADs, os quais foram generalizados para
+ suportar a geração de outros tipos de sistema.
 \end_layout
 
 \begin_layout Subsection

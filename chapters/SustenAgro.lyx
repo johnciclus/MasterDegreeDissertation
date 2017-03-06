@@ -135,7 +135,7 @@ name "fig:Architecture"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \end_inset
@@ -182,8 +182,8 @@ Metodologia.
 O conhecimento do domínio envolvido no sistema SustenAgro está em contínua
  evolução, por isso, foi necessário uma metodologia que suporte mudanças
  na estrutura e no conteúdo, durante cada uma das fases do desenvolvimento.
- As ontologias foram o formato que permite suportar dito requerimento, permitind
-o separar o conhecimento dos outros componentes do sistema.
+ As ontologias requereram um formato que suporte dito requerimento, permitindo
+ separar o conhecimento dos outros componentes do sistema.
 \end_layout
 
 \begin_layout Standard
@@ -206,6 +206,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
 	filename ../figures/fluxograma.png
@@ -241,7 +242,7 @@ name "fig:Methodology"
 \end_layout
 
 \begin_layout Standard
-A metodologia que direcionou o desenvolvimento foi SCRUM 
+A metodologia que direcionou o desenvolvimento do SAD foi SCRUM 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "schwaber2002gile"
@@ -258,115 +259,140 @@ User Centered Design
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento dos Web Components esteve complemente ligado no desenvolviment
-o das Webviews, que permitiram integrar e avaliar cada um dos componentes
- para satisfazer as os requisitos identificados, a metodologia usada abrangeu
- as seguintes etapas:
-\end_layout
-
-\begin_layout Standard
-A metodologia dos 
-\lang english
-web components
-\lang brazilian
- incluiu as seguintes etapas:
+O desenvolvimento dos Web components foi vinculado no desenvolvimento das
+ Webviews, que permitiram integrar e avaliar cada um dos componentes para
+ satisfazer os requisitos identificados, a metodologia de desenvolvimento
+ das Webviews e dos web components incluiu as seguintes etapas que correspondem
+ ao levantamento de requisitos, cujo objetivo foi definir as características
+ do software, cada uma das etapas foi realizada varias vezes devido a que
+ foi necessário redesenhar os componentes, isso ocorre pois as metodologias
+ ágeis são cíclicas e os protótipos mudam em cada ciclo para cumprir os
+ novos requisitos.
 \end_layout
 
 \begin_layout Enumerate
-Levantamento de requisitos: esta etapa tem como objetivo definir as característi
-cas do software e pode ser realizada múltiplas vezes.
- Isso ocorre pois as metodologias ágeis são cíclicas e os protótipos mudam
- em cada ciclo para cumprir os novos requisitos.
-\end_layout
-
-\begin_layout Enumerate
-Desenvolvimento de 
+Descrição de 
 \lang english
 User Stories:
 \lang brazilian
- é uma ferramenta de desenvolvimento ágil que permite descrever características
- de software desde a perspectiva do usuário, fornecendo uma identificação
- dos usuários, das funcionalidades e explicando o porque é necessária dita
- funcionalidade.
+ técnica de desenvolvimento ágil que permite descrever características de
+ software desde a perspectiva do usuário, fornecendo uma identificação dos
+ usuários, das funcionalidades e explicando o porque é necessária dita funcional
+idade.
  
 \end_layout
 
 \begin_layout Enumerate
-Desenvolvimento de 
+Descrição de 
 \lang english
 Scenarios:
 \lang brazilian
- é uma ferramenta de desenvolvimento ágil que permite a descrição detalhada
- das características do sistema.
+ técnica de desenvolvimento ágil que permite descrever detalhadamente as
+ características do sistema.
 \end_layout
 
 \begin_layout Enumerate
-Desenvolvimento dos 
+Descrição de 
+\lang english
+Storyboard
+\emph on
+:
+\emph default
+\lang brazilian
+ descrevem cada uma das interações do usuário com o sistema em uma determinada
+ tarefa, visualizando a interação como uma história de quadrinhos.
+\end_layout
+
+\begin_layout Enumerate
+Descrição de 
 \emph on
 \lang english
 Mockups:
 \emph default
 \lang brazilian
  design do esboço de interface gráfica do sistema, que foi analisado pelos
- especialistas da Embrapa, para avaliar se cumpria as funcionalidades básicas
- do sistema descrito no levantamento dos requisitos.
+ especialistas da Embrapa, para avaliar se corresponde às funcionalidades
+ básicas descritas no levantamento dos requisitos.
 \end_layout
 
 \begin_layout Enumerate
-
+Desenvolvimento de protótipo visual: A partir da validação dos 
 \lang english
-Storyboards
-\emph on
-:
-\emph default
+Mockups
 \lang brazilian
- design
-\end_layout
-
-\begin_layout Enumerate
-Use Cases
+ foi desenvolvido um protótipo da interface gráfica, com a finalidade de
+ que os especialistas do domínio avaliassem se cumpre com os requisitos.
 \end_layout
 
 \begin_layout Standard
 Cada uma das anteriores etapas de desenvolvimento foram testadas com os
- especialistas para avaliar se corresponde com funcionalidades do sistema
- que satisfaçam os requisitos manifestados
+ especialistas do domínio, para realizar o correto levantamento de requisitos,
+ devido a que não existia uma definição especifica do que os especialistas
+ precisavam.
 \end_layout
 
 \begin_layout Section
-Ontologia SustenAgro: avaliação da sustentabilidade
+Ontologia do domínio avaliação da sustentabilidade do sistema produtivo
+ de cana-de-açúcar
 \end_layout
 
 \begin_layout Standard
-A ontologia SustenAgro representa o conhecimento base para realizar uma
- avaliação de sustentabilidade, está composta de várias classes fundamentais
- como 
-\shape italic
-Production Unit, Indicator, Variable, Value, Microregion
-\shape default
-, etc.
- As quais são integradas e relacionadas para representar o domínio de avaliação
- de sustentabilidade em cana-de-açúcar, a continuação são apresentados as
- principais classes desta ontologia
+A ontologia SustenAgro representa o conhecimento necessário para suportar
+ avaliação de sustentabilidade no sistema produtivo de cana-de-açúcar, esta
+ composta de vários conceitos, classificações e relacionamentos dos conceitos,
+ os quais organizam os dados que representam a realidade modelada.
 \end_layout
 
 \begin_layout Standard
-Os modelos OWL permitem a compilação do conhecimento em sistemas de armazenament
-o e recuperação de informação, chamados 
+Para conseguir que dita ontologia seja computável, foi necessário definir
+ o conhecimento no formato 
+\lang english
+OWL
+\lang brazilian
+, que permite a compatibilidade com sistemas 
 \lang english
 triple-stores
 \lang brazilian
-, que são bancos de dados e que adicionam significado semântico aos seus
- dados.
+, que são bancos de dados com significado semântico.
 \end_layout
 
 \begin_layout Standard
-A classe 
+Exemplos dos conceitos modelados são: 
 \shape italic
+\lang english
 Production Unit
+\lang brazilian
+, 
+\lang english
+Indicator
+\lang brazilian
+, 
+\lang english
+Variable
+\lang brazilian
+, 
+\lang english
+Value
+\lang brazilian
+, 
+\lang english
+Microregion
 \shape default
-, representa as organizações que podem ser avaliadas pelo sistema SustenAgro
- para obter uma medida da sustentabilidade, atualmente podem ser 
+\lang brazilian
+; conhecimento sobre as metodologias de avaliação de sustentabilidade, fornecend
+o um modelo de dados ao sistema SustenAgro.
+ a continuação serão apresentados as principais classes desta ontologia.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Production Unit
+\end_layout
+
+\begin_layout Standard
+Representa as organizações que podem ser avaliadas pelo sistema SustenAgro
+ para obter uma avaliações da sustentabilidade, atualmente podem ser 
 \shape italic
 Fornecedores de cana-de-açúcar
 \shape default
@@ -375,51 +401,33 @@ Fornecedores de cana-de-açúcar
 Usinas processadoras de cana-de-açúcar
 \shape default
 , cada processo de avaliação requer dados que definem as unidades produtivas
- através das propriedades que os conformam, existe um conjunto de propriedades
- obrigatórias como: 
+ através das propriedades que os conformam, existem propriedades obrigatórias
+ como:
 \end_layout
 
 \begin_layout Itemize
-Name: define o nome da unidade produtiva
+
+\lang english
+hasAgriculturalProductionSystem
+\lang brazilian
+: relaciona o sistema de produção agrícola em avaliação.
 \end_layout
 
 \begin_layout Itemize
-Harvest year: define o ano da safra.
-\end_layout
-
-\begin_layout Itemize
-Agricultural production system: relaciona o sistema de produção agrícola
- em avaliação.
- 
-\end_layout
-
-\begin_layout Itemize
-Has microregion: relaciona a microrregião da unidade produtiva 
-\end_layout
-
-\begin_layout Itemize
-Has state: relaciona o estado Brasileiro 
-\end_layout
-
-\begin_layout Itemize
-Availability of assessment results: relaciona o tipo de disponibilização
+hasAvailabilityOfEvaluationResults: relaciona o tipo de disponibilização
  dos resultados.
- 
 \end_layout
 
 \begin_layout Itemize
-Sugarcane source: relaciona a origem da cana
+hasSugarcaneSource: relaciona a origem da cana com o sistema em definição
 \end_layout
 
-\begin_layout Standard
-Ontologia de avaliação de sustentabilidade do sistema produtivo da cana\SpecialChar nobreakdash
-de\SpecialChar nobreakdash
-açúcar:
- essa ontologia vai representar o conhecimento sobre sustentabilidade na
- cultura de cana\SpecialChar nobreakdash
-de\SpecialChar nobreakdash
-açúcar e o conhecimento sobre as metodologias de avaliação
- de sustentabilidade, fornecendo um modelo de dados ao sistema SustenAgro.
+\begin_layout Itemize
+harvestYear: define o ano da safra.
+\end_layout
+
+\begin_layout Itemize
+canavialLongevity: define a longevidade do canavial 
 \end_layout
 
 \begin_layout Standard
@@ -430,7 +438,11 @@ reference "fig:Modelagem-unidade-produtiva"
 
 \end_inset
 
- apresenta-se a modelagem de Production Unit, feita na ferramenta Protégé.
+ apresenta-se a modelagem de 
+\lang english
+Production Unit
+\lang brazilian
+, feita na ferramenta Protégé.
  
 \begin_inset Float figure
 placement H
@@ -439,6 +451,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
 	filename ../figures/ProductionUnit.png
 	scale 50
@@ -472,16 +486,15 @@ name "fig:Modelagem-unidade-produtiva"
 
 \end_layout
 
-\begin_layout Standard
-As classes 
+\begin_layout Subsection*
+
 \shape italic
+\lang english
 Indicator
-\shape default
- e 
-\shape italic
-Variable
-\shape default
- representam as características das unidades produtivas que serão identificadas
+\end_layout
+
+\begin_layout Standard
+Representa as características das unidades produtivas que serão identificadas
  e quantificadas em cada processo de avaliação, eles tem um 
 \shape italic
 Value 
@@ -579,7 +592,7 @@ reference "fig:Modelagem-de-Varíavel"
 
 \end_inset
 
- apresenta a estrutura hierarquica das variáveis e a variavel Adequacy of
+ apresenta a estrutura hierárquica das variáveis e a variavel Adequacy of
  boilers que tem as duas propriedades descritas anteriormente.
 \end_layout
 
@@ -592,7 +605,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../figures/Variable.png
+	filename /home/john/Desktop/Dissertation/figures/IndicatorProtege.png
 	scale 50
 
 \end_inset
