@@ -248,6 +248,7 @@ description "Web Ontology Language"
 \begin_layout Standard
 O processo de modelagem da ontologia requiriu uma aprendizagem especifica
  guiada por especialistas e depois foi necessária a implementação de uma
+ 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DSL"
@@ -367,6 +368,34 @@ SustenAgro
 \lang brazilian
 : Sistema de Apoio a Decisão para avaliar a sustentabilidade em cana-de-açúcar,
  implementado o método SustenAgro e tecnologias da web semântica.
+\end_layout
+
+\begin_layout Itemize
+Artigo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Sustainability assessment of sugarcane production systems: SustenAgro Method
+\lang brazilian
+
+\begin_inset Quotes erd
+\end_inset
+
+ submetido no periódico acadêmico 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Energy for sustainable Development
+\lang brazilian
+
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

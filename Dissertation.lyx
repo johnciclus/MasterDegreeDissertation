@@ -531,6 +531,17 @@ filename "chapters/Conclution.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "references/references"
+options "abntex2-alf"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 \start_of_appendix
 Sustentabilidade
@@ -596,7 +607,7 @@ filename "chapters/Sustainability_indicators.lyx"
 \end_layout
 
 \begin_layout Chapter
-Instalação do sistema SustenAgro
+Instalação
 \end_layout
 
 \begin_layout Standard
@@ -610,17 +621,6 @@ name "chap:Instalation"
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/Instalation.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "references/references"
-options "abntex2-alf"
 
 \end_inset
 

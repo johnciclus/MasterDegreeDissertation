@@ -158,17 +158,20 @@ es e o método de avaliação.
 \end_layout
 
 \begin_layout Enumerate
-Web components: são um padrão para definição e gerenciamento de widgets
- reusaveis na web, fornecendo um modelo que permite encapsulamento e interoperab
-ilidade dos componentes.
+
+\lang english
+Web components
+\lang brazilian
+: são um padrão para definição e gerenciamento de widgets (elementos da
+ GUI) reusáveis na web, fornecendo um modelo que permite encapsulamento
+ e interoperabilidade dos componentes.
 \end_layout
 
 \begin_layout Enumerate
 DSL: linguagem especifica do domínio para gerenciar os conceitos das ontologias
- permitindo vincular os conceitos do domínio de avaliação da sustentabilidade
- com os elementos visuais que serão usados no sistema SustenAgro, fornecendo
- uma linguagem especifica para definir SADs por parte dos especialistas
- do domínio.
+ permitindo vincular com os componentes necessarios para gerar o SAD por
+ meio do sistema Decisioner, fornecendo uma linguagem especifica para definir
+ SADs por parte dos especialistas do domínio.
 \end_layout
 
 \begin_layout Section
@@ -176,65 +179,11 @@ Metodologia.
 \end_layout
 
 \begin_layout Standard
-A metodologia que direcionou o desenvolvimento foi SCRUM 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "schwaber2002gile"
-
-\end_inset
-
- e o design foi realizado por meio do enfoque 
-\lang english
-User Centered Design
-\lang brazilian
-, permitindo integrar praticas ágeis no desenvolvimento do software.
- Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos
- e geração de protótipos facilmente adaptáveis às mudanças, e fez uso de
- ferramentas de analise como: “Mockups”, “User Stories”, “Scenarios”, “Storyboar
-ds” e “Use Cases”.
-\end_layout
-
-\begin_layout Standard
-A metodologia implementada incluiu as seguintes etapas:
-\end_layout
-
-\begin_layout Enumerate
-Levantamento de requisitos: esta etapa tem como objetivo definir as característi
-cas do software e pode ser realizada múltiplas vezes.
- Isso ocorre pois as metodologias ágeis são cíclicas e os protótipos mudam
- em cada ciclo para cumprir os requisitos.
-\end_layout
-
-\begin_layout Enumerate
-Desenvolvimento do 
-\emph on
-\lang english
-Mockup
-\emph default
-\lang brazilian
- da interface gráfica do sistema, que foi analisado pelos especialistas
- da Embrapa, para determinar se incluía as funcionalidades básicas do sistema
- descrito no levantamento dos requisitos.
-\end_layout
-
-\begin_layout Standard
 O conhecimento do domínio envolvido no sistema SustenAgro está em contínua
- construção.
- Por isso, é necessário um enfoque que permita realizar mudanças na estrutura
- e no conteúdo usados no sistema durante seu desenvolvimento.
- As ontologias permitem representar o conhecimento de um domínio por meio
- de formatos, como a linguagem OWL, permitindo separar o conhecimento das
- outras partes do sistema.
-\end_layout
-
-\begin_layout Standard
-Os modelos OWL permitem a compilação do conhecimento em sistemas de armazenament
-o e recuperação de informação, chamados 
-\lang english
-triple-stores
-\lang brazilian
-, que são bancos de dados e que adicionam significado semântico aos seus
- dados.
+ evolução, por isso, foi necessário uma metodologia que suporte mudanças
+ na estrutura e no conteúdo, durante cada uma das fases do desenvolvimento.
+ As ontologias foram o formato que permite suportar dito requerimento, permitind
+o separar o conhecimento dos outros componentes do sistema.
 \end_layout
 
 \begin_layout Standard
@@ -245,9 +194,8 @@ reference "fig:Methodology"
 
 \end_inset
 
- é apresentada a proposta metodológica que guiará o desenvolvimento das
- ontologias.
- Ela tem natureza cíclica, gerando, em cada ciclo, um protótipo funcional.
+ é apresentada a metodologia das ontologias, na qual teve vários ciclos
+ de desenvolvimento nos quais foram integradas novas caraterísticas.
 \end_layout
 
 \begin_layout Standard
@@ -293,8 +241,90 @@ name "fig:Methodology"
 \end_layout
 
 \begin_layout Standard
-Os resultados gerados durante a implementação do SAD SustenAgro são: User
- Stories, Scenarios, Story Boards, Mockups e o SAD SustenAgro.
+A metodologia que direcionou o desenvolvimento foi SCRUM 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "schwaber2002gile"
+
+\end_inset
+
+ e o design foi realizado por meio do enfoque 
+\lang english
+User Centered Design
+\lang brazilian
+, permitindo integrar praticas ágeis no desenvolvimento do software.
+ Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos
+ e geração de protótipos facilmente adaptáveis às mudanças.
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento dos Web Components esteve complemente ligado no desenvolviment
+o das Webviews, que permitiram integrar e avaliar cada um dos componentes
+ para satisfazer as os requisitos identificados, a metodologia usada abrangeu
+ as seguintes etapas:
+\end_layout
+
+\begin_layout Standard
+A metodologia dos 
+\lang english
+web components
+\lang brazilian
+ incluiu as seguintes etapas:
+\end_layout
+
+\begin_layout Enumerate
+Levantamento de requisitos: esta etapa tem como objetivo definir as característi
+cas do software e pode ser realizada múltiplas vezes.
+ Isso ocorre pois as metodologias ágeis são cíclicas e os protótipos mudam
+ em cada ciclo para cumprir os novos requisitos.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de 
+\lang english
+User Stories:
+\lang brazilian
+ é uma ferramenta de desenvolvimento ágil que permite descrever características
+ de software desde a perspectiva do usuário, fornecendo uma identificação
+ dos usuários, das funcionalidades e explicando o porque é necessária dita
+ funcionalidade.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de 
+\lang english
+Scenarios:
+\lang brazilian
+ é uma ferramenta de desenvolvimento ágil que permite a descrição detalhada
+ das características do sistema.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento dos 
+\emph on
+\lang english
+Mockups:
+\emph default
+\lang brazilian
+ design do esboço de interface gráfica do sistema, que foi analisado pelos
+ especialistas da Embrapa, para avaliar se cumpria as funcionalidades básicas
+ do sistema descrito no levantamento dos requisitos.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Storyboards
+\emph on
+:
+\emph default
+\lang brazilian
+ design
+\end_layout
+
+\begin_layout Enumerate
+Use Cases
 \end_layout
 
 \begin_layout Standard
@@ -317,7 +347,17 @@ Production Unit, Indicator, Variable, Value, Microregion
 , etc.
  As quais são integradas e relacionadas para representar o domínio de avaliação
  de sustentabilidade em cana-de-açúcar, a continuação são apresentados as
- principais classes desta ontologia:
+ principais classes desta ontologia
+\end_layout
+
+\begin_layout Standard
+Os modelos OWL permitem a compilação do conhecimento em sistemas de armazenament
+o e recuperação de informação, chamados 
+\lang english
+triple-stores
+\lang brazilian
+, que são bancos de dados e que adicionam significado semântico aos seus
+ dados.
 \end_layout
 
 \begin_layout Standard

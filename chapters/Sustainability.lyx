@@ -137,7 +137,7 @@ Não existe um consenso sobre a definição de sustentabilidade, mas uma defini�
 \end_inset
 
 O desenvolvimento sustentável prevê o atendimento das necessidades do presente
- sem comprometer a habilidade das gerações futuras de suprir suas próprias
+ sem comprometer a capacidade das gerações futuras de suprir suas próprias
  necessidades, 
 \lang english
 Brundtland Commission
@@ -204,12 +204,22 @@ key "gliessman2001agroecologia"
 \end_layout
 
 \begin_layout Standard
-A duplicação da demanda global de alimentos projetadas para os próximos
- 50 anos, impõe enormes desafios para a produção mundial de alimentos, por
- isso são necessários novos incentivos e políticas para garantir a sustentabilid
-ade em agricultura, a través da geração de estratégias que permitam conhecer
- o estado dos sistemas produtivos e melhorar segundo as necessidades identificad
-as.
+A sustentabilidade esta vinculada a vários domínios de conhecimento, um
+ deles é a sustentabilidade em agricultura, que é de especial interesse
+ na segurança alimentar.
+ Em 2050 a população mundial atingirá 9.1 bilhões de pessoas 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FAO"
+description "Food and Agriculture Organization"
+
+\end_inset
+
+(2013), o qual imporá enormes desafios para garantir a sustentabilidade
+ em meio do aumento de alimentos, por isso são necessários incentivos e
+ políticas para garantir a sustentabilidade em agricultura, a través da
+ geração de estratégias que permitam conhecer o estado dos sistemas produtivos
+ e melhorar segundo as necessidades identificadas.
 \end_layout
 
 \begin_layout Standard
@@ -425,9 +435,16 @@ key "oliveira:2013"
 \end_inset
 
 , onde inicialmente foram identificados 62 indicadores de sustentabilidade
- no sistema de cana-de-açúcar, dos quais foram aceitos 39 indicadores como
- os mais relevantes tendo uma validação com porcentagem maior ou igual a
- 60% feita por uma comunidade de especialistas em sustentabilidade.
+ no sistema de cana-de-açúcar, os quais foram analisados e caracterizados,
+ gerando 39 indicadores como os mais relevantes 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "BRUMATTI:2015"
+
+\end_inset
+
+, por meio de uma validação com porcentagem maior ou igual a 60% feita por
+ uma comunidade de especialistas em sustentabilidade.
 \end_layout
 
 \begin_layout Standard
