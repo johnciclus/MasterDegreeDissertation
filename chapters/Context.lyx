@@ -271,6 +271,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Semantic Web Architecture.png
+	width 100col%
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -283,12 +291,6 @@ name "fig:Web-Semantic-Architecture"
 
 
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename ../figures/Semantic Web Architecture.png
 
 \end_inset
 
@@ -887,6 +889,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../figures/owl2Profiles.png
 	width 80col%

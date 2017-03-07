@@ -86,7 +86,7 @@ Neste capítulo é apresentado o sistema Decisioner, principal contribuição
 Os SADs segundo a descrição feita no capitulo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Web-semântica"
+reference "chap:Context"
 
 \end_inset
 
@@ -134,7 +134,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/Decisioner Arquitecture.png
+	filename ../figures/Decisioner Architecture.png
 	width 80col%
 
 \end_inset
@@ -247,7 +247,440 @@ Os componentes da arquitetura do SustenAgro não são exclusivos do SustenAgro,
 \end_layout
 
 \begin_layout Subsection
-Ontologia do domínio
+Ontologia Decisioner
+\end_layout
+
+\begin_layout Standard
+Sobre as ontologias sobre interfaces gráficas, no artigo de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ruiz2006using"
+
+\end_inset
+
+ é analisado o uso de ontologias na engenharia de software, identificando
+ 50 tipos de uso entre os quais foram identificados dois usos no suporte
+ de interfaces gráficas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "paulheim2012ontology"
+
+\end_inset
+
+ propõem a seguinte definição, uma 
+\emph on
+ontology-enhanced user interface
+\emph default
+ é uma interface cujas capacidades de visualização, possibilidades de interação,
+ ou processo de desenvolvimento estão habilitados ou, pelo menos, melhorados
+ pelo emprego de uma ou mais ontologias.
+ Na pesquisa foram identificados três propósitos para os quais são usadas
+ as ontologias no melhoramento das interfaces gráficas:
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as capacidades de visualização;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as possibilidades de interação;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar o processo de desenvolvimento;
+\end_layout
+
+\begin_layout Standard
+Foram apresentados também os usos mais comuns de ontologias que suportam
+ interfaces gráficas (ontology-enhanced user interface).
+\end_layout
+
+\begin_layout Standard
+Além disso, na literatura, existem pesquisas relacionadas com o vocabulário
+ 
+\emph on
+AGROVOC Agricultural Vocabulary
+\emph default
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://aims.fao.org/agrovoc
+\end_layout
+
+\end_inset
+
+ que é um 
+\emph on
+\lang english
+thesaurus
+\emph default
+\lang brazilian
+ que fornece termos padronizados sobre alimentação, nutrição, agricultura,
+ pesca, floresta e meio ambiente criados de maneira colaborativa e coordenados
+ pela
+\emph on
+ 
+\emph default
+\lang english
+Food and Agriculture Organization
+\lang brazilian
+ (FAO
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FAO"
+description "Food and Agriculture Organization"
+
+\end_inset
+
+).
+ Esses termos podem ser reutilizados nas ontologias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DCMIPro841"
+
+\end_inset
+
+, permitindo uma padronização dos identificadores dos conceitos, reutilizando
+ informações e integrando os conceitos com outros dados.
+ Essa reutilização foi feita através da vinculação da AGROVOC ao sistema
+ 
+\emph on
+AOS/CS Agricultural Ontology Service Concept Server
+\emph default
+, a FAO desenvolveu um modelo base para esse novo sistema utilizando o 
+\emph on
+OWL Web Ontology Language.
+\end_layout
+
+\begin_layout Standard
+Cada uma destas pesquisas fornece um exemplo do uso das tecnologias da web
+ semântica na criação de soluções baseadas em conhecimento.
+ Isso é confirmado por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "roussey2010ontologies"
+
+\end_inset
+
+ por meio da descrição de (i) como as ontologias têm sido usadas para múltiplas
+ tarefas, uma das quais é conseguir interoperabilidade entre sistemas de
+ informação heterogêneos; e de (ii) como as seguintes gerações de sistemas
+ de informação utilizariam uma base do conhecimento do domínio.
+ Dadas as afirmações dessas pesquisas, pode-se deduzir que uma ontologia
+ pode proporcionar o suporte conceitual para cumprir os requisitos de sistema
+ SAD, como o SustenAgro.
+\end_layout
+
+\begin_layout Standard
+A ontologia de Sistema Apoio à Decisão contem os elementos que foram abstraidos
+ a partir do analise dos sistemas SAD usados pela Embrapa Meio Ambiente
+ em seus processos de avaliação.
+\end_layout
+
+\begin_layout Standard
+Os sistemas software de avaliação que foram analisados foram:
+\end_layout
+
+\begin_layout Enumerate
+Sistema SustenAgro: avaliação da sustentabilidade agricola em cana-de-açúcar.
+\end_layout
+
+\begin_layout Enumerate
+Sistema Innova-Tec: avaliação do impacto da inovação tecnológica.
+\end_layout
+
+\begin_layout Enumerate
+Sistema Nano-Tec: avaliação do impacto das nanotecnologias.
+\end_layout
+
+\begin_layout Standard
+A partir desses sistemas foram identificados elementos comuns, que foram
+ abstraidos na ontologia SAD com o proposito de generalizar as classes da
+ ontologia sustenagro, para fornecer a geração de interfaces gráficas .
+\end_layout
+
+\begin_layout Standard
+As classes idenficadas e modeladas são:
+\end_layout
+
+\begin_layout Itemize
+Evaluation Object: classe que representa os objetos que serão analisados
+ em cada processo de avaliação, os quais vão ficar como indivíduos desta
+ classe ou de alguma subclasse dela, no caso do sistema SustenAgro a classe
+ 
+\shape italic
+Production Unit 
+\shape default
+é subclasse do Evaluation Object.
+\end_layout
+
+\begin_layout Itemize
+Feature: classe que representa as caraterísticas de um Evaluation Object
+ que serão quantificadas, analisadas e usadas no processo de geração de
+ resultados do processo de avaliação, pelo geral as Features tem uma propriedade
+ numérica que a quantifica.
+\end_layout
+
+\begin_layout Itemize
+Analysis: classe que vincula o resultado de uma avaliação, o nome e data
+ da avaliação, assim como o Evaluation Object, para representar uma avalição
+\end_layout
+
+\begin_layout Itemize
+Value: classe que representa os valores que são atribuídos a cada instancia
+ de Feature.
+\end_layout
+
+\begin_layout Itemize
+User: classe que representa os usuários do sistema.
+\end_layout
+
+\begin_layout Itemize
+Role: classe que representa os tipos de usuário do sistema, relacionando
+ as permissões de cada tipo, por padrao tem estão instanciados os perfis
+ User e Admin
+\end_layout
+
+\begin_layout Standard
+Na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-do-SAD"
+
+\end_inset
+
+ é apresentada a modelagem basica da estrutura de um SAD, com as classes
+ que foram obtidas a partir da abstração da ontologia SustenAgro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/DSS ontology.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem abstracto do SAD
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-do-SAD"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A classe 
+\shape italic
+Value 
+\shape default
+representa os valores que são relacionados com cada característica da unidade
+ produtiva, o qual esta subdividido nas classes 
+\shape italic
+Categorical 
+\shape default
+ou 
+\shape italic
+Real, 
+\shape default
+no caso de SustenAgro representa os possíveis valores que um 
+\shape italic
+Indicator
+\shape default
+ ou 
+\shape italic
+Variable
+\shape default
+ pode ter, os elementos discretos e definidos como os categóricos são modelados
+ como indivíduos da classe, permitindo assim, restringir as opções de escolha.
+\end_layout
+
+\begin_layout Standard
+Na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-de-Value"
+
+\end_inset
+
+ é apresentado a classe 
+\shape italic
+Value
+\shape default
+ e as subclasses modeladas, tanto 
+\shape italic
+Categorical
+\shape default
+ para conjunto finito de valores e 
+\shape italic
+Real
+\shape default
+ para valores numéricos, como exemplo está a classe 
+\shape italic
+Yes/No
+\shape default
+ que representa os valores de sim e não, os quais são modelados como indivíduos
+ de dita classe.
+\end_layout
+
+\begin_layout Standard
+Cada individuo da classe 
+\shape italic
+Value
+\shape default
+ tem a propriedade 
+\shape italic
+as number 
+\shape default
+que relaciona um valor numérico para definir um critério de comparação e
+ fornecer um formato para este tipo de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Value.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem de Value
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-de-Value"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estas classes são complementadas com propiedades como rdfs:range ou por
+ padrões dos dados que relacionam as widgets mais apropriadas na representação
+ de informações, e assim fornecer a geração de interfaces graficas de usuário.
+\end_layout
+
+\begin_layout Standard
+A partir do anterior formato a classe 
+\end_layout
+
+\begin_layout Standard
+Para definir a ontologia de domínio do SustenAgro, realizou-se uma pesquisa
+ das fontes de dados relacionadas com ontologias do domínio de avaliação
+ de sustentabilidade em sistemas produtivos de cana-de-açúcar.
+ Concluiu-se que não existem ontologias que suportem esse domínio, por isso
+ propõe-se desenvolver uma ontologia que utilize os conceitos de avaliação
+ de sustentabilidade e de sistemas agrícolas.
+ Ela deve fazer uso da pesquisa realizada por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "oliveira:2013"
+
+\end_inset
+
+ e de algumas tecnologias fornecidas pela FAO.
+ Essa ontologia terá a finalidade de fornecer uma base conceitual e tecnológica
+ para suportar o processo de avaliação de sustentabilidade no sistema produtivo
+ da cana\SpecialChar nobreakdash
+de\SpecialChar nobreakdash
+açúcar no estado de São Paulo.
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento dessa ontologia ocorrerá de forma ágil e modular, por
+ meio de técnicas de prototipação rápida, que serão de âmbito e complexidade
+ crescente, abrangendo grupos de conceitos relacionados entre si.
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento da ontologia depende essencialmente da comunicação entre
+ os especialistas e os modeladores.
+ Foram definidos meios de comunicação e de representação do conhecimento:
+ reuniões presenciais e virtuais, e o modelos conceituais que permitem uma
+ visualização direta do domínio.
+\end_layout
+
+\begin_layout Standard
+Inicialmente, o modelo conceitual vai ser representado por meio de um mapa
+ conceitual que permitirá a comunicação em um formato reconhecido por cada
+ um dos profissionais envolvidos no projeto.
+ Esse modelo será representado em OWL (pelos modeladores) e serão definidas
+ instâncias para cada uma das classes.
+ Depois disso, o especialista do domínio construirá perguntas de interesse,
+ com as quais os modeladores definirão consultas 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nao entendi?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+aqui se refere à técnica de validação
+\end_layout
+
+\end_inset
+
+que o sistema deverá responder segundo os resultados esperados, conseguindo
+ validar e ajustar até ter um protótipo confiável.
 \end_layout
 
 \begin_layout Standard
@@ -385,10 +818,6 @@ Weighted
  uma 
 \end_layout
 
-\begin_layout Subsection
-Ontologia de controles de gráficos
-\end_layout
-
 \begin_layout Standard
 Ontologia de controles de gráficos: a finalidade dessa ontologia é dar suporte
  a composição de controles gráficos relacionados com os indicadores.
@@ -406,6 +835,29 @@ e e flexibilidade ao sistema.
  de SADs que permite a adaptação automática (ou semi\SpecialChar nobreakdash
 automática) da interface
  às mudanças dos conceitos do domínio.
+\end_layout
+
+\begin_layout Standard
+Será desenvolvida uma ontologia para interfaces gráficas focada na definição
+ e modificação de controles de usuário.
+ Um exemplo do uso dessa ontologia é nos indicadores.
+ Eles armazenam um valor inserido pelo usuário, que pode ser de diversos
+ tipos como numérico continuo, numérico discreto, percentagem, booleano,
+ lista de termos ou alfanumérico.
+ Dada essa diversidade, é importante representar os diversos tipos de controles
+ gráficos em uma linguagem do domínio do especialista, para que possam ser
+ usados para 
+\lang english
+input
+\lang brazilian
+ da definição dos indicadores e que faça um mapeamento entre os indicadores
+ e os tipos de indicador que vai ser armazenado no sistema.
+\end_layout
+
+\begin_layout Standard
+Esta ontologia vai suportar a DSL fornecendo uma definição formal dos controles
+ gráficos que serão mapeados para cada tipo de indicador, a DSL será apresentada
+ a continuação.
 \end_layout
 
 \begin_layout Section
@@ -906,136 +1358,6 @@ widget
 \end_layout
 
 \begin_layout Section
-Ontologias
-\end_layout
-
-\begin_layout Standard
-Sobre as ontologias sobre interfaces gráficas, no artigo de 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ruiz2006using"
-
-\end_inset
-
- é analisado o uso de ontologias na engenharia de software, identificando
- 50 tipos de uso entre os quais foram identificados dois usos no suporte
- de interfaces gráficas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "paulheim2012ontology"
-
-\end_inset
-
- propõem a seguinte definição, uma 
-\emph on
-ontology-enhanced user interface
-\emph default
- é uma interface cujas capacidades de visualização, possibilidades de interação,
- ou processo de desenvolvimento estão habilitados ou, pelo menos, melhorados
- pelo emprego de uma ou mais ontologias.
- Na pesquisa foram identificados três propósitos para os quais são usadas
- as ontologias no melhoramento das interfaces gráficas:
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as capacidades de visualização;
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as possibilidades de interação;
-\end_layout
-
-\begin_layout Enumerate
-Melhorar o processo de desenvolvimento;
-\end_layout
-
-\begin_layout Standard
-Foram apresentados também os usos mais comuns de ontologias que suportam
- interfaces gráficas (ontology-enhanced user interface).
-\end_layout
-
-\begin_layout Standard
-Além disso, na literatura, existem pesquisas relacionadas com o vocabulário
- 
-\emph on
-AGROVOC Agricultural Vocabulary
-\emph default
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-http://aims.fao.org/agrovoc
-\end_layout
-
-\end_inset
-
- que é um 
-\emph on
-\lang english
-thesaurus
-\emph default
-\lang brazilian
- que fornece termos padronizados sobre alimentação, nutrição, agricultura,
- pesca, floresta e meio ambiente criados de maneira colaborativa e coordenados
- pela
-\emph on
- 
-\emph default
-\lang english
-Food and Agriculture Organization
-\lang brazilian
- (FAO
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "FAO"
-description "Food and Agriculture Organization"
-
-\end_inset
-
-).
- Esses termos podem ser reutilizados nas ontologias 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "DCMIPro841"
-
-\end_inset
-
-, permitindo uma padronização dos identificadores dos conceitos, reutilizando
- informações e integrando os conceitos com outros dados.
- Essa reutilização foi feita através da vinculação da AGROVOC ao sistema
- 
-\emph on
-AOS/CS Agricultural Ontology Service Concept Server
-\emph default
-, a FAO desenvolveu um modelo base para esse novo sistema utilizando o 
-\emph on
-OWL Web Ontology Language.
-\end_layout
-
-\begin_layout Standard
-Cada uma destas pesquisas fornece um exemplo do uso das tecnologias da web
- semântica na criação de soluções baseadas em conhecimento.
- Isso é confirmado por 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "roussey2010ontologies"
-
-\end_inset
-
- por meio da descrição de (i) como as ontologias têm sido usadas para múltiplas
- tarefas, uma das quais é conseguir interoperabilidade entre sistemas de
- informação heterogêneos; e de (ii) como as seguintes gerações de sistemas
- de informação utilizariam uma base do conhecimento do domínio.
- Dadas as afirmações dessas pesquisas, pode-se deduzir que uma ontologia
- pode proporcionar o suporte conceitual para cumprir os requisitos de sistema
- SAD, como o SustenAgro.
-\end_layout
-
-\begin_layout Section
 TripleStore
 \end_layout
 
@@ -1091,23 +1413,6 @@ key "heinzle2010semantica"
 \end_layout
 
 \begin_layout Standard
-O sistema SustenAgro é um SAD e será desenvolvido com o apoio da equipe
- do projeto SustenAgro (Anexo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Projeto-SustenAgro"
-
-\end_inset
-
-) da Embrapa Meio Ambiente, a qual está desenvolvendo uma proposta metodológica
- para avaliar a sustentabilidade de sistemas de produção de cana-de-açúcar
- no Centro Sul do Brasil para equacionar as principais questões referentes
- a esses sistemas produtivos e possibilitar a utilização racional dos recursos
- naturais para suprir as necessidades presentes e garantir o suprimento
- das gerações futuras.
-\end_layout
-
-\begin_layout Standard
 A equipe de TI do SustenAgro determinou que o tipo de sistema mais conveniente
  para o desenvolvimento seria um Sistema de Apóio à Decisão (SAD).
  Com a finalidade de definir a arquitetura e a interface gráfica desse sistema
@@ -1128,90 +1433,6 @@ Como gerar interfaces gráficas a partir de definições simples do domínio
 Tendo em conta os requisitos do software, como o suporte a contínua mudança
  do modelo de dados e a geração dinâmica de interfaces, se propõe a arquitetura
  a seguir.
-\end_layout
-
-\begin_layout Section
-Sistemas de apoio à decisão
-\end_layout
-
-\begin_layout Standard
-Os sistemas de apoio à decisão (SAD) ajudam no entendimento de processos
- complexos, auxiliam na comparação dos fenômenos envolvidos e suportam a
- análise e escolha de alternativas no processo de decisão 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "heinzle2010semantica"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-O sistema SustenAgro é um SAD e será desenvolvido com o apoio da equipe
- do projeto SustenAgro (Anexo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Projeto-SustenAgro"
-
-\end_inset
-
-) da Embrapa Meio Ambiente, a qual está desenvolvendo uma proposta metodológica
- para avaliar a sustentabilidade de sistemas de produção de cana-de-açúcar
- no Centro Sul do Brasil para equacionar as principais questões referentes
- a esses sistemas produtivos e possibilitar a utilização racional dos recursos
- naturais para suprir as necessidades presentes e garantir o suprimento
- das gerações futuras.
-\end_layout
-
-\begin_layout Standard
-A equipe de TI do SustenAgro determinou que o tipo de sistema mais conveniente
- para o desenvolvimento seria um Sistema de Apóio à Decisão (SAD).
- Com a finalidade de definir a arquitetura e a interface gráfica desse sistema
- realizaram-se duas perguntas de pesquisa que orientaram esse projeto:
-\end_layout
-
-\begin_layout Itemize
-Como integrar o conhecimento dos especialistas em um sistema de apoio na
- tomada de decisões permitindo a continua mudança do modelo do domínio?
-\end_layout
-
-\begin_layout Itemize
-Como gerar interfaces gráficas a partir de definições simples do domínio
- do conhecimento?
-\end_layout
-
-\begin_layout Standard
-Tendo em conta os requisitos do software, como o suporte a contínua mudança
- do modelo de dados e a geração dinâmica de interfaces, se propõe a arquitetura
- a seguir.
-\end_layout
-
-\begin_layout Section
-Ontologia de Controles Gráficos
-\end_layout
-
-\begin_layout Standard
-Será desenvolvida uma ontologia para interfaces gráficas focada na definição
- e modificação de controles de usuário.
- Um exemplo do uso dessa ontologia é nos indicadores.
- Eles armazenam um valor inserido pelo usuário, que pode ser de diversos
- tipos como numérico continuo, numérico discreto, percentagem, booleano,
- lista de termos ou alfanumérico.
- Dada essa diversidade, é importante representar os diversos tipos de controles
- gráficos em uma linguagem do domínio do especialista, para que possam ser
- usados para 
-\lang english
-input
-\lang brazilian
- da definição dos indicadores e que faça um mapeamento entre os indicadores
- e os tipos de indicador que vai ser armazenado no sistema.
-\end_layout
-
-\begin_layout Standard
-Esta ontologia vai suportar a DSL fornecendo uma definição formal dos controles
- gráficos que serão mapeados para cada tipo de indicador, a DSL será apresentada
- a continuação.
 \end_layout
 
 \end_body

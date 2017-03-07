@@ -100,63 +100,217 @@ customHeadersFooters
 \begin_body
 
 \begin_layout Standard
-Este anexo apresenta os principais conceitos da avaliação da sustentabilidade
- segundo o levantamento de conceitos e de indicadores que foi realizado
- com antecedência ao desenvolvimento do projeto Sustenagro.
+Este anexo apresenta os principais conceitos relacionados com a avaliação
+ da sustentabilidade segundo segundo os fines do projeto SustenAgro, e como
+ foram usados no processo de avaliação de sustentabilidade.
+\end_layout
+
+\begin_layout Section
+Sustentabilidade
 \end_layout
 
 \begin_layout Standard
-Dada a importância da sustentabilidade, especialmente nos sistemas de produção
- agrícola, têm sido desenvolvidas varias metodologias para avaliar o estado
- desses sistemas, existindo varias tendências segundo o sistema produtivo
- e o contexto deles.
+Não existe um consenso sobre a definição de sustentabilidade, mas uma definição
+ orientadora para os fins do presente projeto é a seguinte:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+O desenvolvimento sustentável prevê o atendimento das necessidades do presente
+ sem comprometer a capacidade das gerações futuras de suprir suas próprias
+ necessidades, 
+\lang english
+Brundtland Commission
+\lang brazilian
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Burton:1987,brundtland1987our"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-O projeto SustenAgro foi planejado e liderado pela Embrapa Meio Ambiente,
- as características dele são descritas nas figuras 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:SustenAgro_Description"
+Este conceito foi ratificado pela Conferência das Nações Unidas sobre o
+ Meio Ambiente e Desenvolvimento, a Rio-92 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ehlers1996agricultura"
 
 \end_inset
 
- e 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:SustenAgro_Details"
+ a Rio+20 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ONU2012"
 
 \end_inset
 
-, o desenvolvimento abordou o caso especifico do sistema produtivo de cana-de-aç
-úcar no contexto do centro-sul do Brasil que envolve elementos e metodologias
- de avaliação da sustentabilidade em agricultura 
+, após do relatório 
+\lang english
+Brundtland
+\lang brazilian
+ a ênfase do conceito desloca-se da integridade ambiental para o elemento
+ humano, gerando um equilíbrio entre as dimensões econômica, social e ambiental
+\begin_inset CommandInset citation
+LatexCommand citet
+key "van2005indicadores"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gliessman2001agroecologia"
+
+\end_inset
+
+ teoriza que não há como encontrar a sustentabilidade e, portanto, o seu
+ conceito mais representativo, pois a mesma permanece sempre no futuro,
+ dado o compromisso que os sistemas têm de garantir as necessidades das
+ gerações futuras.
+ Assim, a sustentabilidade é algo relativo ao tempo, ou seja, um sistema
+ pode ser mais ou menos sustentável que outro dependendo do tempo em que
+ for avaliado e do entendimento da sustentabilidade neste contexto.
+\end_layout
+
+\begin_layout Standard
+A sustentabilidade esta vinculada a vários domínios de conhecimento, um
+ deles é a sustentabilidade em agricultura, que é de especial interesse
+ na segurança alimentar.
+ Em 2050 a população mundial atingirá 9.1 bilhões de pessoas FAO (2013),
+ o qual imporá enormes desafios para garantir a sustentabilidade em meio
+ do aumento de alimentos, por isso são necessários incentivos e políticas
+ para garantir a sustentabilidade em agricultura, a través da geração de
+ estratégias que permitam conhecer o estado dos sistemas produtivos e melhorar
+ segundo as necessidades identificadas.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "van2008integrated"
+
+\end_inset
+
+ os sistemas agrícolas evoluem continuamente e são afetados por uma gama
+ de forças globais e locais, os aspectos que mais influenciam na sustentabilidad
+e da agricultura são os tecnológicos e políticos, permitindo identificar
+ e melhorar diversos aspectos da produção agrícola.
+ 
+\end_layout
+
+\begin_layout Standard
+Uma estrategia para quantificar a sustentabilidade são a definição métodos
+ e metodologias de avaliação, as quais utilizam indicadores, um exemplo
+ deste enfoque é exposto por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AlkanOlsson:2009"
+
+\end_inset
+
+ que desenvolveu um 
+\emph on
+\lang english
+framework
+\emph default
+\lang brazilian
+ de indicadores que relaciona de uma maneira consistente as dimensões ambiental,
+ econômica e social do desenvolvimento sustentável, seu principal benefício
+ é uma relativa simplicidade na apresentação da informação e a possibilidade
+ de vincular os indicadores com objetivos políticos de cada dimensão da
+ sustentabilidade e assim facilitar a comparação dos impactos das novas
+ políticas em cada dimensão.
+\end_layout
+
+\begin_layout Section
+Dimensões da Sustentabilidade
+\end_layout
+
+\begin_layout Standard
+As dimensões da sustentabilidade são classificações que permitem identificar
+ e agrupar conceitos de sustentabilidade
 \begin_inset CommandInset citation
 LatexCommand citep
+key "AlkanOlsson:2009"
+
+\end_inset
+
+., dependendo da teoria de sustentabilidade escolhida, existem diversas propostas
+ de dimensões que podem ser usadas segundo a finalidade da pesquisa, um
+ exemplo desta classificação é a assumida na pesquisa de 
+\begin_inset CommandInset citation
+LatexCommand citet
 key "oliveira:2013"
 
 \end_inset
 
-, que são apresentados a continuação.
+ onde são definidas seis dimensões da sustentabilidade: Ambiental, Social,
+ Agrícola/Industrial, Produtos/Subprodutos, Tecnológica e Política.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace vfill
+No caso do sistema SustenAgro determinou-se pela equipe de especialistas
+ em sustentabilidade fazer uma divisão segundo a proposta do Relatório Brundtlan
+d 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brundtland1987our"
+
 \end_inset
 
-
+, onde foram identificadas as três dimensões da sustentabilidade: ambiental,
+ social e econômica, as quais têm a mesma importância gerando um equilíbrio.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+Ditas dimensões são sistemas complexos que integram fenômenos de natureza
+ diversa 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "simon1991architecture"
+
 \end_inset
 
+, integrando três subsistemas: (i) o subsistema ambiental que fornece as
+ condições físicas, químicas e biológicas que suportam o desenvolvimento
+ das culturas, (ii) o subsistema social que integra organizações e pessoas
+ que realizam a produção, relacionando-se internamente e externamente com
+ os sistemas produtivos e (iii) o subsistema econômico que estabelece as
+ condiciones de oferta e demanda dos produtos e subprodutos do sistema de
+ produção agrícola; das interações entre estes subsistemas, emerge um comportame
+nto complexo que requer uma abordagem holística e inter-relacionada para
+ suportar a tomada de decisões que garantam a sustentabilidade do sistema
+ em analise.
+\end_layout
 
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sustainability_spheres"
+
+\end_inset
+
+ representa as três dimensões com a sustentabilidade como a interseção entre
+ elas.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -164,7 +318,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../figures/folderEmbrapa1.png
+	filename ../figures/sustainability_spheres.png
 	width 100col%
 
 \end_inset
@@ -176,10 +330,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Descrição do projeto SustenAgro 
+Dimensões da sustentabilidade 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:SustenAgro_Description"
+name "fig:sustainability_spheres"
 
 \end_inset
 
@@ -197,45 +351,17 @@ name "fig:SustenAgro_Description"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/folderEmbrapa2.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Descrição do projeto SustenAgro 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:SustenAgro_Details"
-
-\end_inset
-
-
+Tomada de: http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
+Essas dimensões serão usadas como contendedores gerais dos conceitos de
+ sustentabilidade em agricultura permitindo agrupar conceitos relacionados.
 \end_layout
 
 \begin_layout Section
@@ -287,7 +413,6 @@ description "Programa das Nações Unidas para o Meio Ambiente"
 , 1994) 
 \begin_inset CommandInset citation
 LatexCommand citet
-before "Apud"
 key "moura2002indicadores"
 
 \end_inset
@@ -299,8 +424,7 @@ key "moura2002indicadores"
 Equidade: Distribuição dos produtos do agroecossistema entre produtores
  e consumidores (Dias Junior, 2000) 
 \begin_inset CommandInset citation
-LatexCommand citep
-before "Apud"
+LatexCommand citet
 key "moura2002indicadores"
 
 \end_inset
@@ -313,7 +437,6 @@ Resiliência: Capacidade do ecossistema de retornar ao estado original após
  de uma perturbação (CEPAL/PNUMA, 1994) 
 \begin_inset CommandInset citation
 LatexCommand citep
-before "Apud"
 key "moura2002indicadores"
 
 \end_inset
@@ -327,7 +450,6 @@ Autonomia: Grau de integração entre as partes constituintes do agroecossistema
  1995) 
 \begin_inset CommandInset citation
 LatexCommand citep
-before "Apud"
 key "moura2002indicadores"
 
 \end_inset
@@ -337,7 +459,6 @@ Autonomia: Grau de integração do agroecossistema no fluxo de materiais,
  e o ambiente externo (Fernández, 1995) 
 \begin_inset CommandInset citation
 LatexCommand citep
-before "Apud"
 key "moura2002indicadores"
 
 \end_inset
@@ -350,103 +471,6 @@ Esses critérios guiam o desenvolvimento dos conceitos mais relevantes das
  metodologias de avaliação de sustentabilidade, os indicadores, e assim
  determinar instrumentos de medição que representem os aspectos críticos
  do sistema em termos de sustentabilidade.
-\end_layout
-
-\begin_layout Section
-Dimensões da Sustentabilidade
-\end_layout
-
-\begin_layout Standard
-As dimensões da sustentabilidade são classificações que permitem identificar
- e agrupar conceitos de sustentabilidade, dependendo da teoria de sustentabilida
-de escolhida, existem diversas propostas de dimensões que podem ser usadas
- segundo a finalidade da pesquisa, um exemplo desta classificação é a assumida
- na pesquisa de 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "oliveira:2013"
-
-\end_inset
-
- onde são definidas seis dimensões da sustentabilidade: Ambiental, Social,
- Agrícola/Industrial, Produtos/Subprodutos, Tecnológica e Política.
-\end_layout
-
-\begin_layout Standard
-No caso do sistema SustenAgro determinou-se pela equipe de especialistas
- em sustentabilidade fazer uma divisão segundo a proposta do Relatório Brundtlan
-d 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "brundtland1987our"
-
-\end_inset
-
-, onde foram identificadas as três dimensões da sustentabilidade: ambiental,
- social e econômica, as quais têm a mesma importância gerando um equilíbrio,
- a Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:sustainability_spheres"
-
-\end_inset
-
- representa as três dimensões com a sustentabilidade como a interseção entre
- elas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../figures/sustainability_spheres.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Dimensões da sustentabilidade 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:sustainability_spheres"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Tomada de: http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
-\end_layout
-
-\end_inset
-
-Essas dimensões serão usadas como contendedores gerais dos conceitos de
- sustentabilidade em agricultura permitindo agrupar conceitos relacionados.
 \end_layout
 
 \begin_layout Section
@@ -492,6 +516,357 @@ Os atributos norteadores foram aplicados nos modelos do sistema SustenAgro
  como contentores de indicadores os quais classificaram e relacionam os
  indicadores em subgrupos das três dimensões da sustentabilidade, permitindo
  desta maneira a organização e agrupamento do conhecimento do domínio.
+\end_layout
+
+\begin_layout Section
+Metodo SustenAgro
+\end_layout
+
+\begin_layout Standard
+Devido à importância da sustentabilidade, especialmente nos sistemas de
+ produção agrícola, foram desenvolvidas varias métodos para avaliar o estado
+ desses sistemas, existindo varias tendências segundo o tipo de sistema
+ produtivo e o contexto deles.
+\end_layout
+
+\begin_layout Standard
+A Embrapa Meio Ambiente coordenou e financiou o projeto SustenAgro com a
+ finalidade de definir um método de avaliação da sustentabilidade no sistema
+ produtivo de cana-de-açúcar no centro sul do Brasil, as características
+ dele são descritas nas figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SustenAgro_Description"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SustenAgro_Details"
+
+\end_inset
+
+, no qual foram originados os indicadores de sustentabilidade e o método
+ de avaliação 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oliveira:2013,BRUMATTI:2015"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/folderEmbrapa1.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descrição geral do projeto SustenAgro 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SustenAgro_Description"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/folderEmbrapa2.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descrição especifica do projeto SustenAgro 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SustenAgro_Details"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O método SustenAgro foi construído a partir de literatura cientifica e de
+ instituições de pesquisa como (IBGE
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+IBGE: Brazilian Institute of Geography and Statistics, http://www.ibge.gov.br/home/
+\end_layout
+
+\end_inset
+
+, CONAB 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+CONAB: National Supply Company, http://www.conab.gov.br/
+\end_layout
+
+\end_inset
+
+) e validados por meio da técnica Delphi de consultas aos especialistas.
+\end_layout
+
+\begin_layout Standard
+O método esta composto de dos índices da eficiência e índice da sustentabilidade
+, o índice da eficiência esta composto por dois fatores de eficiência tecnológic
+a no campo e na industria e o índice da sustentabilidade está composto pelas
+ dimensões ambientais, econômica e social.
+\end_layout
+
+\begin_layout Subsection*
+Índice de eficiência:
+\end_layout
+
+\begin_layout Standard
+As equações para calcular o índice da eficiência são:
+\end_layout
+
+\begin_layout Standard
+Formula de eficiência tecnologia no campo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $efficiency(field)=\sum(CharacteristicsInTheField*RelevanceForTheProductionEnvironment)*correctionFactor(0.8)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formula de eficiência tecnologia na industria:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $efficiency(industry)=\sum(CharacteristicsOfProcessing*SugarcaneProcessingOptimization)*correctionFactor(0.2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formula de eficiência produtiva e de costo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $efficiencyAndCost=\sum(SugarcanEquality+\sum(Logistic+MarketVariables+Policies+Productivity))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Índice de eficiência:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $EfficiencyIndex=\sum(efficiency(filed)+efficiency(industry))*efficiencyAndCost$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Índice de sustentabilidade
+\end_layout
+
+\begin_layout Standard
+As equações para calcular o índice de sustentabilidade são:
+\end_layout
+
+\begin_layout Standard
+Formula de eficiência tecnologia no campo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $EnvironmentalIndex=\sum(EnvironmentalIndicator*EnvironmentIndicatorWeight)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formula de eficiência tecnologia na industria:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $EconomicIndex=\sum(EconomicIndicator*EconomicIndicatorWeight)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formula de eficiência produtiva e de costo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $SocialIndex=\sum(SocialIndicator*SocialIndicatorWeight)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Índice de eficiência:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $SustainabilityIndex=\sum(EnvironmentalIndex+EconomicIndex+SocialIndex)/3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Matriz de sustentabilidade
+\end_layout
+
+\begin_layout Standard
+Os índices de eficiência e de sustentabilidade quantificam a sustentabilidade
+ de uma unidade produtiva, e são representados por meio de uma matriz que
+ tem como finalidade relacionar o resultado da avaliação com determinadas
+ classificações correspondentes a cada uns dos quadrantes da matriz, a figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Matriz-de-sustentabilidade"
+
+\end_inset
+
+ representa cada uma das classificações com os limiares correspondentes
+ a cada índice.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/SustaiabilityMatrixDesign.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matriz de sustentabilidade 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Matriz-de-sustentabilidade"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusões
+\end_layout
+
+\begin_layout Standard
+O método de avaliação de sustentabilidade foi validado pelos especialistas
+ e depois de varias iterações definiu-se uma versão estável, que foi usada
+ no desenvolvimento do Sistema SustenAgro, dito método é mantido e atualizado
+ pela Embrapa Meio Ambiente e os desenvolvedores de software garantem que
+ ele se aplique corretamente mas não tem responsabilidade nenhuma pelas
+ consequências do uso dele.
 \end_layout
 
 \end_body

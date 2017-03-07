@@ -167,9 +167,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SAD.jpeg
-	lyxscale 90
 	width 80col%
-	clip
 
 \end_inset
 
@@ -443,6 +441,171 @@ rule-based inferences
 conceptual overlap of semantic statements
 \emph default
 .
+\end_layout
+
+\begin_layout Standard
+Existem pesquisas que abordam a sustentabilidade a través de ferramentas
+ tecnológicas, as quais podem servir de referencia ao sistema SustenAgro,
+ uma delas foi desenvolvida por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brilhante:2006"
+
+\end_inset
+
+ e consiste em um 
+\emph on
+framework
+\emph default
+ (MOeMA-IS) para análise sustentável do estado do Amazonas, que usa uma
+ ontologia para descrição de indicadores de sustentabilidade (ISD-
+\lang english
+Economics Ontology
+\lang brazilian
+), onde são usados os indicadores humano (Social), suporte (Econômico) e
+ natural (Ambiental), os quais foram subdivididos em sete indicadores, seu
+ desenvolvimento foi feito de uma maneira genérica de forma que ela suporta
+ a inclusão de novos indicadores de forma simples, esta ontologia foi feita
+ em dois níveis de hierarquia, o 
+\emph on
+framework 
+\emph default
+trabalha de forma onde a base dele é a ontologia e ele emprega os indicadores
+ de bases de dados (não foi descrito se são 
+\emph on
+\lang english
+triple-stores
+\emph default
+\lang brazilian
+) e as medidas e valores padrões de outra base e assim o 
+\emph on
+framework
+\emph default
+ calcula as medias dos indicadores e dá um resultado relevante ao tipo de
+ necessidade.
+ Para o desenvolvimento da ontologia foi utilizada a ferramenta 
+\emph on
+Protégé
+\emph default
+ utilizando o 
+\lang english
+plug-in
+\lang brazilian
+ de 
+\lang english
+OWL
+\lang brazilian
+ e alguns indicadores foram feitos utilizando a classe do SUMO do OWL.
+\end_layout
+
+\begin_layout Standard
+Além disso na literatura existem pesquisas relacionadas com o vocabulário
+ 
+\emph on
+\lang english
+AGROVOC
+\lang brazilian
+ 
+\lang english
+Agricultural Vocabulary
+\emph default
+\lang brazilian
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://aims.fao.org/agrovoc
+\end_layout
+
+\end_inset
+
+ que é um 
+\emph on
+\lang english
+theasaurus
+\emph default
+\lang brazilian
+ que fornece termos padronizados sobre alimentação, nutrição, agricultura,
+ pesca, floresta e meio ambiente criados de maneira colaborativa e coordenados
+ pela 
+\emph on
+FAO
+\emph default
+, estes termos podem ser reutilizados nas ontologias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DCMIPro841"
+
+\end_inset
+
+, permitindo uma padronização com os identificadores dos conceitos, reutilizando
+ informações e integrando os conceitos com outros dados da LOD 
+\lang english
+Linked Open Data
+\lang brazilian
+, esta reutilização foi feita através da vinculação de 
+\lang english
+AGROVOC
+\lang brazilian
+ ao sistema 
+\emph on
+AOS/CS 
+\lang english
+Agricultural Ontology Service Concept Server
+\emph default
+\lang brazilian
+, a FAO desenvolveu um modelo base para esse novo sistema utilizando o 
+\emph on
+\lang english
+OWL
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Standard
+Cada uma destas pesquisas fornece um exemplo do uso das tecnologias da internet
+ e da web semântica na criação de soluções baseadas em conhecimento, isto
+ é confirmado por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "roussey2010ontologies"
+
+\end_inset
+
+ por meio da descrição de como as ontologias têm sido usadas para múltiplas
+ tarefas, uma das quais é conseguir interoperabilidade entre sistemas de
+ informação heterogêneos e como as seguintes gerações de sistemas de informação
+ utilizariam uma base do conhecimento do domínio, dadas as afirmações destas
+ pesquisas pode-se deduzir que uma ontologia proporciona o suporte conceitual
+ para cumprir os requisitos do sistema SustenAgro.
+\end_layout
+
+\begin_layout Standard
+A pesquisa feita por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "boseley2009development"
+
+\end_inset
+
+, apresenta um exemplo de como unificar termos de plantas e organizá-los
+ em uma maneira sistemática é fundamental para mais eficiência nas pesquisas
+ e descobertas, para este fim, a 
+\emph on
+\lang english
+Plant Ontology
+\emph default
+\lang brazilian
+ foi criada como uma iniciativa do 
+\emph on
+\lang english
+Plant Ontology Consortium
+\emph default
+\lang brazilian
+, esta ontologia é um vocabulário controlado de termos usados para dados
+ de atributos (por exemplo, genótipo e fenótipo) para uma estrutura especifica
+ da planta ou um estagio de desenvolvimento.
 \end_layout
 
 \begin_layout Standard

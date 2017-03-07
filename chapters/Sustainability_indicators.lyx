@@ -453,5 +453,777 @@ Os indicadores do presente projeto são uma representação dos fatores crítico
  
 \end_layout
 
+\begin_layout Section
+Dados fornecidos pela Unidade de Meio Ambiente da Embrapa 
+\end_layout
+
+\begin_layout Standard
+A principal fonte de dados para este projeto foi fornecida pela pesquisa
+ de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "oliveira:2013"
+
+\end_inset
+
+, onde inicialmente foram identificados 62 indicadores de sustentabilidade
+ no sistema de cana-de-açúcar, os quais foram analisados e caracterizados,
+ gerando 39 indicadores como os mais relevantes 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "BRUMATTI:2015"
+
+\end_inset
+
+, por meio de uma validação com porcentagem maior ou igual a 60% feita por
+ uma comunidade de especialistas em sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+A seguintes tabelas mostram os indicadores resultantes, os quais foram classific
+ados nas três dimensões da sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+Os indicadores da tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Indicadores-de-sustentabilidade-ambiental"
+
+\end_inset
+
+ representam os valores críticos da dimensão ambiental integrando fenômenos
+ do solo, dos recursos hídricos e climáticos, os quais permitem caracterizar,
+ quantificar e comparar o estado da dimensão ambiental de uma unidade produtiva
+ com outras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="14cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores da dimensão ambiental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quantificação da erosão potencial segundo a Equação Universal de Perda de
+ Solo (USLE – 
+\lang english
+Universal Soil Loss Equation
+\lang brazilian
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compactação do solo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ocorrência de queimada de palha no campo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Emissão e suspensão de micropartículas (fuligem)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Localização geográfica da cultura em relação à aptidão agroclimática
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Localização geográfica da cultura em relação à aptidão edáfica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Localização geográfica da cultura em relação à aptidão edafoclimática
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Áreas de Preservação Permanente (APP) recuperadas/conservadas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comprovação de averbação da área de Reserva Legal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cumprimento com os Termos de Compromisso de Recuperação Ambiental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão ambiental 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-ambiental"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os indicadores da tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Indicadores-de-sustentabilidade-social"
+
+\end_inset
+
+ representam os valores críticos da dimensão social integrando fenômenos
+ de emprego, saúde e treinamento, os quais permitem caracterizar, quantificar
+ e comparar o estado da dimensão social de uma unidade produtiva com outras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="14cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores da dimensão social
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poder de compra do trabalhador
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Taxa de formalidade do emprego
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Índice Parcial de Educação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Índice de internações decorrentes de problemas respiratórios
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Registro de treinamentos, capacitação ou requalificação de trabalhadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão social 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-social"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os indicadores da tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Indicadores-de-sustentabilidade-economica"
+
+\end_inset
+
+ representam os valores críticos da dimensão econômica integrando fenômenos
+ de emprego, saúde e treinamento, os quais permitem caracterizar, quantificar
+ e comparar o estado da dimensão social de uma unidade produtiva com outras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="31" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="14cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores da dimensão econômica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Agrícola/Industrial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implantação de biorrefinarias
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rotação de cultura (soja)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Área planta/Área colhida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atender à Norma Regulamentadora (NR-31)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Longevidade da cana
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Distância usina/produção de cana
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Controle de pragas favorecidas pela não-queima
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cana queimada manual
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adoção do plantio direto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Predominância da conversão de pastagem em cana-de-açúcar, do que outras
+ culturas/florestas em cana-de-açúcar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ocorrência de reutilização de recursos hídricos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Condições favoráveis à mecanização
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Otimização do transporte da cana
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consumo de diesel
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variedades melhoradas para condições eco regionais mais específicas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Produtos/Subprodutos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Relação preço gasolina/etanol
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inclusão do Etanol como Commodity
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adoção da tecnologia flex-fuel por outros países
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regulação de comércio de distribuição
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Número de contrato para fornecer bioeletricidade
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Infraestrutura para a produção de biocombustíveis de 2ª.
+ e 3ª.
+ gerações
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Tecnológicos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desenvolvimento de leveduras mais resistentes a concentrações elevadas de
+ álcool (Fermentação Extrativa)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Indicadores Políticos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iniciativas do poder público com a proteção ao ambiente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão econômica
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-economica"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cada um dos anteriores indicadores foram definidos com um conjunto de pelo
+ menos um componente de indicador, estes componentes permitem quantificar
+ por meio de uma variável quantitativa o estado do indicador, os quais estão
+ definidos em termos do domínio que são de fácil interpretação pelas pessoas
+ relacionadas com sustentabilidade em agricultura.
+\end_layout
+
+\begin_layout Section
+Considerações finais
+\end_layout
+
+\begin_layout Standard
+Os dados e especificações fornecidos pela Embrapa Meio Ambiente e pela APTA
+ conseguiram explicar o conceito de avaliação de sustentabilidade segundo
+ a visão da Embrapa Meio Ambiente, más a complexidade envolvida requereu
+ identificar um tipo de KOS que permita representar cada uns dos conceitos
+ necessários que compõem o processo de avaliação da sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+Dito KOS precisa ser flexível e de fácil uso para conseguir se adaptar às
+ mudanças do domínio, devido a que durante o processo de modelagem avalia
+ a coerência dos dados, permitindo assim melhorar as especificações de dito
+ domínio.
+\end_layout
+
 \end_body
 \end_document
