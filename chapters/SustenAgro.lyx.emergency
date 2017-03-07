@@ -1,0 +1,2348 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abntex2
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+O SAD SustenAgro é um sistema web que suporta a avaliação da sustentabilidade
+ em cana-de-açúcar
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A definição conceitual do processo de avaliação está no apêndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Sustainability_Assessment"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, especificamente está composto por um conjunto de definições em formato
+ de Ontologias e DSL que permitem gerar dito sistema a través do Decisioner,
+ o principal componente dele é a ontologia do domínio em avaliação da sustentabi
+lidade.
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento de SustenAgro permitiu definir os componentes principais
+ do sistema Decisioner, pelo qual os dois sistemas estão muito relacionados
+ mas correspondem a sistemas independentes.
+\end_layout
+
+\begin_layout Section
+Arquitetura do SustenAgro
+\end_layout
+
+\begin_layout Standard
+O SAD SustenAgro permitiu modelar e desenvolver os componentes que fazem
+ parte do Decisioner, devido a que foi o primeiro caso de uso, a continuação
+ são apresentados os componentes da arquitetura por meio da figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Architecture"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/SustenAgro Architecture final.png
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquitetura de SustenAgro 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Architecture"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ontologia do domínio: ontologia que representa os conceitos do domínio,
+ avaliação da sustentabilidade do sistema produtivo de cana-de-açúcar, ela
+ é a base para o sistema SustenAgro porque permite estabelecer os conceitos
+ fundamentais que são utilizados pelo sistema, entre eles: indicadores,
+ componentes de indicadores, índices, dimensões da sustentabilidade, recomendaçõ
+es e o método de avaliação.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Web components
+\lang brazilian
+: são um padrão para definição e gerenciamento de 
+\lang english
+widgets
+\lang brazilian
+ (elementos da 
+\lang english
+GUI
+\lang brazilian
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GUI"
+description "Graphical User Interface"
+
+\end_inset
+
+) reusáveis na web, fornecendo um modelo que permite encapsulamento e interopera
+bilidade dos componentes.
+\end_layout
+
+\begin_layout Enumerate
+DSL: linguagem especifica do domínio para gerenciar os conceitos das ontologias
+ permitindo vincular com os componentes necessários para gerar o SAD por
+ meio do sistema Decisioner, fornecendo uma linguagem especifica para definir
+ 
+\lang english
+SADs
+\lang brazilian
+ por parte dos especialistas do domínio.
+\end_layout
+
+\begin_layout Section
+Metodologia.
+\end_layout
+
+\begin_layout Standard
+O conhecimento do domínio envolvido no sistema SustenAgro está em contínua
+ evolução, por isso, foi necessário uma metodologia que suporte mudanças
+ na estrutura e no conteúdo, durante cada uma das fases do desenvolvimento.
+ As ontologias forneceram um formato que suporte dito requerimento, permitindo
+ separar o conhecimento dos outros componentes do sistema.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Methodology"
+
+\end_inset
+
+ é apresentada a metodologia para desenvolver as ontologias, na qual teve
+ vários ciclos de desenvolvimento nos quais foram integradas novas caraterística
+s.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/fluxograma.png
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia de definição das ontologias
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Methodology"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A metodologia que direcionou o desenvolvimento do SAD foi SCRUM 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "schwaber2002gile"
+
+\end_inset
+
+ e o design foi realizado por meio do enfoque 
+\lang english
+User Centered Design
+\lang brazilian
+, permitindo integrar praticas ágeis no desenvolvimento do software.
+ Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos
+ e geração de protótipos facilmente adaptáveis às mudanças.
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento dos Web components foi vinculado no desenvolvimento das
+ Webviews, que permitiram integrar e avaliar cada um dos componentes para
+ satisfazer os requisitos identificados, a metodologia de desenvolvimento
+ das Webviews e dos web components incluiu as seguintes etapas que correspondem
+ ao levantamento de requisitos, cujo objetivo foi definir as características
+ do software, cada uma das etapas foi realizada varias vezes devido a que
+ foi necessário redesenhar os componentes, isso ocorre pois as metodologias
+ ágeis são cíclicas e os protótipos mudam em cada ciclo para cumprir os
+ novos requisitos.
+\end_layout
+
+\begin_layout Enumerate
+Descrição de 
+\lang english
+User Stories:
+\lang brazilian
+ técnica de desenvolvimento ágil que permite descrever características de
+ software desde a perspectiva do usuário, fornecendo uma identificação dos
+ usuários, das funcionalidades e explicando o porque é necessária dita funcional
+idade.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Descrição de 
+\lang english
+Scenarios:
+\lang brazilian
+ técnica de desenvolvimento ágil que permite descrever detalhadamente as
+ características do sistema.
+\end_layout
+
+\begin_layout Enumerate
+Descrição de 
+\lang english
+Storyboard
+\emph on
+:
+\emph default
+\lang brazilian
+ descrevem cada uma das interações do usuário com o sistema em uma determinada
+ tarefa, visualizando a interação como uma história de quadrinhos.
+\end_layout
+
+\begin_layout Enumerate
+Descrição de 
+\emph on
+\lang english
+Mockups:
+\emph default
+\lang brazilian
+ design do esboço de interface gráfica do sistema, que foi analisado pelos
+ especialistas da Embrapa, para avaliar se corresponde às funcionalidades
+ básicas descritas no levantamento dos requisitos.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de protótipo visual: A partir da validação dos 
+\lang english
+Mockups
+\lang brazilian
+ foi desenvolvido um protótipo da interface gráfica, com a finalidade de
+ que os especialistas do domínio avaliassem se cumpre com os requisitos.
+\end_layout
+
+\begin_layout Standard
+Cada uma das anteriores etapas de desenvolvimento foram testadas com os
+ especialistas do domínio, para realizar o correto levantamento de requisitos,
+ devido a que não existia uma definição especifica do que os especialistas
+ precisavam.
+\end_layout
+
+\begin_layout Section
+Ontologia do domínio avaliação da sustentabilidade do sistema produtivo
+ de cana-de-açúcar
+\end_layout
+
+\begin_layout Standard
+A ontologia SustenAgro representa o conhecimento necessário para suportar
+ avaliação de sustentabilidade no sistema produtivo de cana-de-açúcar, represent
+ado os conceitos por meio de entidades, classes, relações semânticas e axiomas,
+ elementos que organizam e representam a realidade modelada.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ontology-conceptual-map"
+
+\end_inset
+
+ representa um mapa conceitual com os principais conceitos modelados e como
+ estão relacionados entre eles, dito mapa conceitual tem etiquetas em cada
+ relação dos conceitos.
+\end_layout
+
+\begin_layout Standard
+Para conseguir que dita ontologia seja computável, foi necessário definir
+ o conhecimento no formato 
+\lang english
+OW
+\lang brazilian
+L modelado na ferramenta Protégé
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Editor de ontologias 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://protege.stanford.edu/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, que permite a compatibilidade com sistemas 
+\lang english
+triple-stores
+\lang brazilian
+ (bancos de dados com significado semântico) e fornece uma representação
+ compreensível pelos humanos e computadores 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allemang2011semantic"
+
+\end_inset
+
+, suportando a realização de consultas complexas que permitam responder
+ perguntas de interesse para os usuários do sistema software.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/SustenAgro conceptual map.png
+	lyxscale 30
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa conceitual da ontologia
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ontology-conceptual-map"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Exemplos dos conceitos modelados são: 
+\shape italic
+\lang english
+Production Unit
+\lang brazilian
+, 
+\lang english
+Indicator
+\lang brazilian
+, 
+\lang english
+Microregion
+\shape default
+\lang brazilian
+; os quais são vinculados por meio do método de avaliação de sustentabilidade,
+ a continuação são apresentados as principais classes desta ontologia.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Production Unit
+\end_layout
+
+\begin_layout Standard
+Representa as organizações que podem ser avaliadas pelo sistema SustenAgro
+ para obter uma avaliações da sustentabilidade, atualmente podem ser 
+\shape italic
+Fornecedores de cana-de-açúcar
+\shape default
+ e / ou 
+\shape italic
+Usinas processadoras de cana-de-açúcar
+\shape default
+, cada processo de avaliação requer dados que definem as unidades produtivas
+ através das propriedades que os conformam, existem propriedades obrigatórias
+ como:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+hasAgriculturalProductionSystem
+\lang brazilian
+: relaciona o sistema de produção agrícola em avaliação.
+\end_layout
+
+\begin_layout Itemize
+hasAvailabilityOfEvaluationResults: relaciona o tipo de disponibilização
+ dos resultados.
+\end_layout
+
+\begin_layout Itemize
+hasSugarcaneSource: relaciona a origem da cana com o sistema em definição
+\end_layout
+
+\begin_layout Itemize
+harvestYear: define o ano da safra.
+\end_layout
+
+\begin_layout Itemize
+canavialLongevity: define a longevidade do canavial 
+\end_layout
+
+\begin_layout Standard
+Na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-unidade-produtiva"
+
+\end_inset
+
+ apresenta-se a modelagem de 
+\lang english
+Production Unit
+\lang brazilian
+, feita na ferramenta Protégé.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/ProductionUnit.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem unidade produtiva 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-unidade-produtiva"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\shape italic
+\lang english
+Indicator
+\end_layout
+
+\begin_layout Standard
+Os indicadores são o principal componente da ontologia, foram propostos
+ por um grupo de especialistas de diversas áreas da produção agrícola e
+ sustentabilidade 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oliveira:2013"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Representam as características das unidades produtivas que serão identificadas
+ e quantificadas em cada processo de avaliação, eles tem um 
+\shape italic
+\lang english
+Value
+\lang brazilian
+ 
+\shape default
+que os quantifica, esta propriedade junto com outras conformam um formato
+ que permite identificar e gerenciar tais elementos.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-de-Indicador"
+
+\end_inset
+
+ apresenta a hierarquia dos indicadores, que está subdividida em 
+\lang english
+Efficiency Indicator
+\lang brazilian
+ e 
+\lang english
+Sustainability Indicator
+\lang brazilian
+, os 
+\lang english
+Indicators
+\lang brazilian
+ tem a propriedade 
+\shape italic
+\lang english
+has value
+\lang brazilian
+ 
+\shape default
+que estabelece um valor
+\shape italic
+,
+\shape default
+ existe outra propriedade 
+\lang english
+has weight
+\lang brazilian
+ que é opcional e estabelece um peso, estas características representam
+ o formato de um 
+\shape italic
+\lang english
+Indicator.
+\end_layout
+
+\begin_layout Standard
+A figura também apresenta um indicador intitulado 
+\lang english
+Adequacy of boilers
+\lang brazilian
+ que tem como 
+\lang english
+has value
+\lang brazilian
+ uma lista composta por duas classes e como propriedade 
+\lang english
+has weight
+\lang brazilian
+ uma classe.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/Indicador.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem de indicador 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-de-Indicador"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\shape italic
+\lang english
+Microregion
+\lang brazilian
+ 
+\end_layout
+
+\begin_layout Standard
+Representam os locais onde são localizadas as unidades produtivas, permitindo
+ definir a microrregião para as fazendas e usinas do sistema produtivo de
+ cana-de-açúcar, atualmente a ontologia tem 7 estados pertencentes ao centro-sul
+ do Brasil e 243 microrregiões dentro dos estados registrados, estes dados
+ foram consultados semanticamente e integrados no sistema a partir de uma
+ consulta na DB-pedia.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-de-Microrregião"
+
+\end_inset
+
+ representa a modelagem das localizações geograficas usadas no sistema SustenAgr
+o, com algumas instancias de 
+\shape italic
+Microregion
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/Microregion.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem de microrregião
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-de-Microrregião"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir das anteriores classes foi possível desenvolver o modelo de dados
+ em formato de ontologias da web semântica 
+\lang english
+OWL
+\lang brazilian
+, as classes descritas foram relacionados por meio de 
+\shape italic
+\lang english
+Object Properties
+\shape default
+\lang brazilian
+ e 
+\shape italic
+\lang english
+Data Properties
+\shape default
+\lang brazilian
+ que permitem vincular semanticamente as classes associadas na avaliação
+ de sustentabilidade, os 
+\shape italic
+\lang english
+Data/Object Properties
+\shape default
+\lang brazilian
+ precisam ter definida a propriedade 
+\shape italic
+\lang english
+rdfs:range
+\lang brazilian
+ 
+\shape default
+para realizar a validação dos dados vinculados e ditas propriedades podem
+ ser 
+\lang english
+Functional
+\lang brazilian
+ para garantir uma relação de um a um.
+\end_layout
+
+\begin_layout Standard
+A principal contribuição da ontologia do domínio é ser uma representação
+ semântica do conhecimento de domínio tanto para os usuários como para o
+ sistema computacional, tornando-se um meio de comunicação entre os especialista
+s de domínio e os programadores.
+\end_layout
+
+\begin_layout Section
+
+\lang english
+GUIs e Web Components
+\end_layout
+
+\begin_layout Subsection
+User Stories
+\end_layout
+
+\begin_layout Standard
+Histórias de usuário são uma técnica para descrever, de uma forma curta
+ e simples, as características do sistema a partir da perspectiva do usuário
+ ou cliente do sistema, gerando uma definição de alto nível de um requisito.
+ Seu padrão é: Como um “tipo de usuário”, eu quero “algum objetivo” para
+ “alguma finalidade”.
+\end_layout
+
+\begin_layout Standard
+Na aplicação dessa técnica foram obtidos as seguintes histórias:
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá identificar e cadastrar a localização geográfica e a área
+ da sua lavoura (definir região geográfica do IBGE, latitude e longitude
+ - a partir do Google Maps).
+ 
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá identificar e cadastrar a microrregião a que pertence a
+ sua lavoura.
+ O sistema fará uma sugestão de cadastro a partir dos dados da localização
+ geográfica.
+\end_layout
+
+\begin_layout Enumerate
+O usuário deverá preencher o estado de cada indicador específico nas dimensões
+ ambiental, econômica e social.
+ Esses indicadores vão ser definidos pelo programa.
+ Eles devem se adaptar às condições das regiões e microrregiões do Brasil.
+ Da mesma forma as faixas de limiares de sustentabilidade são definidas.
+\end_layout
+
+\begin_layout Enumerate
+Permitir o emprego da metodologia para avaliação caso a caso: possibilitar
+ que o usuário selecione quais indicadores vai utilizar.
+ Dentro dos indicadores, ele pode recomendar limiares mais adequados para
+ a sua realidade.
+ Ele também pode inserir novos indicadores / limiares.
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá obter o resultado dos índices segundo a informação preenchida
+ e a formula de agregação dos indicadores.
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá armazenar a informação dos indicadores para futuras consultas.
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá acrescentar indicadores que considere importantes para
+ sua análise.
+ Devem-se estabelecer regras para essa funcionalidade de tal modo que os
+ novos indicadores (criados pelos usuários) sejam recuperáveis de um modo
+ separado dos indicadores cadastrados no sistema.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Cronograma de avaliação, melhor depois de cada safra.
+ 
+\end_layout
+
+\begin_layout Standard
+O usuário deverá ser informado da importância dos processos de avaliação,
+ exemplo: 
+\end_layout
+
+\begin_layout Itemize
+“A crescente demanda de países desenvolvidos por produtos com garantia de
+ origem tem induzido aumento das certificações nas usinas no Brasil (ALVES
+ et al., 2008).” 
+\end_layout
+
+\begin_layout Itemize
+A certificação tem sido uma importante forma de diferenciação de commodities
+ agrícolas, facilitando seu acesso aos mercados protegidos dos países desenvolvi
+dos.
+ 
+\end_layout
+
+\begin_layout Itemize
+A caracterização climática aliada aos detalhes de fertilidade e manejo do
+ solo (quantificação edafoclimática) são essenciais para a determinação
+ das regiões aptas ao cultivo de culturas de interesse comercial (CIIAGRO,
+ 2009).
+ 
+\end_layout
+
+\begin_layout Standard
+Depois do ingresso da informação sobre os indicadores, o usuário receberá
+ recomendações classificadas sobre práticas de sustentabilidade recomendadas
+ com sua argumentação, exemplo: 
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) “O sistema de plantio direto da cana-de-açúcar sobre leguminosas
+ proporciona maiores teores foliares de N e K na cana do que o plantio convencio
+nal (JÚNIOR; COELHO, 2008)”.
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) Segundo Leme (2005), haveria redução de 36% na emissão de gases
+ do efeito estufa (GEE) se a palha fosse queimada nas caldeiras das usinas
+ e destilarias, ao invés de ser queimada no campo.
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) A queima da cana aumenta a erosão do solo e a poluição do ar
+ e reduz a qualidade da matéria-prima (LINS; SAAVEDR, 2007).
+ 
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) Quando a cana não é queimada, proliferam, nos canaviais, roedores
+ silvestres originários de fragmentos florestais.
+ Esses roedores podem transmitir o Hantavírus através da urina e contaminar
+ cortadores de cana, causando uma síndrome respiratória e cardíaca, a pneumocito
+se, podendo levar à morte.
+ 
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) Quando não há queima da cana é comum, também, o aumento do ataque
+ de cigarrinhas, com perdas significativas de produção (ANDRADE; DINIZ,
+ 2007).
+ 
+\end_layout
+
+\begin_layout Itemize
+(Econômico) A utilização das colheitadeiras reverte-se em aumento da produtivida
+de e da qualidade da matéria-prima, bem como em diminuição dos custos da
+ produção agrícola, que representam entre 50% e 60% em relação ao custo
+ total (SCOPINHO, 1995).
+\end_layout
+
+\begin_layout Itemize
+(Econômico e Social) A utilização das colheitadeiras em cooperativa possibilita
+ a soma das áreas de produtores próximos possibilitando a mecanização em
+ propriedades com restrição para mecanização.
+\end_layout
+
+\begin_layout Itemize
+(Econômico) Restrições físicas da propriedade (menos de 500 ha de área com
+ declividade inferior a 12% e talhões menores que 800 metros) dificultam
+ a mecanização.
+ 
+\end_layout
+
+\begin_layout Subsection
+Scenarios
+\end_layout
+
+\begin_layout Standard
+É uma técnica que permite a descrição das funcionalidades do sistema da
+ perspectiva do usuário ou cliente com a descrição detalhada da interação
+ destes.
+ Em geral, é uma descrição detalhada de cada um dos passos dos usuários
+ no sistema para alcançar seu objetivo.
+ Abaixo, serão apresentadas as 8 histórias de usuários do projeto SustenAgro
+ com os cenários associados a elas:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #1:
+\series default
+ “O usuário poderá identificar e cadastrar a localização geográfica e a
+ área da sua lavoura (definir região geográfica do IBGE, latitude e longitude
+ - a partir do Google Maps).”
+\end_layout
+
+\begin_layout Enumerate
+O usuário ingressa na sua conta, através do sistema web SustenAgro em 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://sustenagro.embrapa.br
+\end_layout
+
+\end_inset
+
+, e o sistema apresenta a tela “Home” 
+\end_layout
+
+\begin_layout Enumerate
+O usuário seleciona a aba “lavouras” e dá um click em 
+\begin_inset Quotes eld
+\end_inset
+
+cadastrar lavoura
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O sistema apresenta a tela de cadastro de lavouras, onde tem um mapa do
+ Google Maps 
+\end_layout
+
+\begin_layout Enumerate
+O usuário seleciona no mapa um ponto que identificará a localização da lavoura.
+ Se ele quiser, também é possível marcar a área da lavoura para que o sistema
+ possa ter dados mais específicos para o processo de avaliação de sustentabilida
+de.
+ Uma vez terminado, o usuário dá um click no botão “seguinte” e o sistema
+ cadastra a informação preenchida.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #2
+\series default
+: “O usuário poderá identificar e cadastrar a microrregião a que pertence
+ a sua lavoura por meio de uma sugestão que o sistema faz com os dados da
+ localização geográfica.”
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá fazer a “Historia de usuário #1” ou entrar no sistema e
+ continuar com o cadastro da lavoura de onde ele tenha parado.
+ O sistema apresentará uma tela com sugestões de microrregiões.
+ 
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá escolher a microrregião onde esteja localizada a lavoura
+ e salvá-la no sistema por meio do botão 
+\begin_inset Quotes eld
+\end_inset
+
+seguinte
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #3:
+\series default
+ “O usuário deverá preencher o estado de cada indicador específico nas dimensões
+ ambiental, econômica e social.
+ Esses indicadores vão ser definidos pelo programa.
+ Eles devem se adaptar às condições das regiões e microrregiões do Brasil.
+ Da mesma forma as faixas de limiares de sustentabilidade são definidas.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá fazer a “História de usuário #2” ou entrar no sistema e
+ continuar com o cadastro dos indicadores de onde ele tenha parado.
+ O sistema apresentará uma tela com três abas que contém os controles que
+ permitiram fazer o cadastro dos indicadores nas dimensões ambiental, econômica
+ e social.
+ 
+\end_layout
+
+\begin_layout Enumerate
+O usuário dá um click na primeira aba e começa a preencher os dados dos
+ indicadores ambientais, principalmente os limiares que identificam o estado
+ do indicador.
+ A interface também permite eliminar ou acrescentar indicadores específicos
+ por parte dos usuários (funcionalidade que é explicada na “história de
+ usuário #4”).
+ 
+\end_layout
+
+\begin_layout Enumerate
+O usuário preenche os dados das outras duas dimensões e o sistema salva
+ as mudanças.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #4:
+\series default
+ “Permitir o emprego da metodologia para avaliação caso a caso: possibilitar
+ que o usuário selecione quais indicadores vai utilizar.
+ Dentro dos indicadores, ele pode recomendar limiares mais adequados para
+ a sua realidade.
+ Ele também pode inserir novos indicadores\SpecialChar breakableslash
+limiares.”
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá fazer a “Historia de usuário #3” ou entrar no sistema e
+ continuar na tela de cadastro de indicadores e, quando aconteça que o usuário
+ precise de um indicador que não seja oferecido pelo sistema, o usuário
+ poderá acrescentá-lo por meio do botão “acrescentar indicador” 
+\end_layout
+
+\begin_layout Enumerate
+O usuário da click no botão “acrescentar indicador” e lhe é apresentada
+ uma interface de entrada, onde ele deverá cadastrar o título, a descrição,
+ os limiares, a medida do manejo e a justificativa desse indicador.
+ Depois, preenche o estado do indicador e o sistema salva esses dados nessa
+ dimensão.
+ 
+\end_layout
+
+\begin_layout Enumerate
+O usuário também poderá eliminar alguns indicadores segundo seu critério.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #5:
+\series default
+ "O usuário poderá obter o resultado dos índices segundo a informação preenchida
+ e a formula de agregação dos indicadores."
+\end_layout
+
+\begin_layout Enumerate
+Depois de terminada a “História de usuário #4”, o sistema fará a aplicação
+ da metodologia de avaliação, que vai estar definida no sistema pelos administra
+dores.
+ 
+\end_layout
+
+\begin_layout Enumerate
+O resultado da avaliação vai ser cadastrado no sistema com informações sobre
+ a metodologia utilizada.
+\end_layout
+
+\begin_layout Enumerate
+A metodologia de avaliação pode ser atualizada pelos administradores para
+ ser utilizada em avaliações futuras.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #6:
+\series default
+ 
+\begin_inset Quotes eld
+\end_inset
+
+O usuário poderá armazenar a informação dos indicadores para futuras consultas.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+O usuário faz qualquer tipo de entrada de dados nos formulários do SustenAgro.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Esses dados vão ser salvos quando o usuário mudar de formulário ou quando
+ der um click no botão 
+\begin_inset Quotes eld
+\end_inset
+
+seguinte
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #7:
+\series default
+ 
+\begin_inset Quotes eld
+\end_inset
+
+O usuário poderá acrescentar indicadores que considere importantes para
+ sua análise.
+ Devem-se estabelecer regras para essa funcionalidade de tal modo que os
+ novos indicadores (criados pelos usuários) sejam recuperáveis de um modo
+ separado dos indicadores cadastrados no sistema.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Quando o usuário estiver preenchendo os indicadores gerados pelo sistema,
+ o sistema fornecerá um conjunto de controles que permitam a inclusão de
+ um novo indicador.
+ Esse novo indicador vai ser definido pelo próprio usuário baseado na sua
+ experiência na área.
+ 
+\end_layout
+
+\begin_layout Enumerate
+O sistema armazenará esse novo indicador com uma classificação especial
+ que permita sua identificação para avaliar sua relevância.
+ 
+\end_layout
+
+\begin_layout Enumerate
+O usuário poderá preencher os dados do novo indicador, para que sejam inclusos
+ na avaliação de sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+História de usuário #8:
+\series default
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Cronograma de avaliação, melhor depois de cada safra.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Depois de fazer o cadastro da fazenda e das culturas que são plantadas nela,
+ o sistema poderá identificar quando termina cada safra, gerando um alerta
+ para que u usuário faça o processo de avaliação nessa data.
+\end_layout
+
+\begin_layout Enumerate
+O usuário lerá o alerta e poderá fazer o processo de avaliação de sustentabilida
+de.
+ 
+\end_layout
+
+\begin_layout Subsection
+Storyboard
+\end_layout
+
+\begin_layout Standard
+Storyboards são similares aos cenários.
+ Elas ilustram a interação necessária para se atingir um objetivo sem utilizar
+ uma lista de passos, a interação é visualizada por meio de uma história
+ de quadrinhos.
+\end_layout
+
+\begin_layout Standard
+Esta representação permite se ter uma visão holística da interação do usuário,
+ com ênfase nos aspectos funcionais da interação e não nos aspectos da interface
+ de usuário.
+ A seguir, são apresentados os textos das storyboard dos processos identificados
+:
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+porque so o texto, cade as figuras?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Story_1.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size small
+\emph on
+StoryBoard 1.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Story_2.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+\size small
+StoryBoard 2.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Story_3.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+\size small
+StoryBoard 3.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Storyboards números 1–3.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Storyboard-numero-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Story_4.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+\size small
+StoryBoard 4.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Story_5.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+\size small
+StoryBoard 5.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Story_6.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+\size small
+StoryBoard 6.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Storyboards números 4–6.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Storyboard-numero-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mockups das Interfaces do SustenAgro
+\end_layout
+
+\begin_layout Standard
+Mockups permitem uma representação visual das interfaces do sistema para
+ ajudar no seu entendimento, fazer demonstrações, avaliações do design,
+ dentre outros propósitos.
+ As Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mockup_home"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mockup_indicators"
+
+\end_inset
+
+ mostram algumas telas com desenhos dos Mockups que foram avaliados e validados
+ pela equipe do projeto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Mockup Main.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mockup da tela da Home Page do SustenAgro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mockup_home"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Tool_environmental_indicators.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mockup da tela de indicadores do SustenAgro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mockup_indicators"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Protótipo da Interface Gráfica do SustenAgro
+\end_layout
+
+\begin_layout Standard
+O primeiro protótipo da interface gráfica do SustenAgro está publicado nos
+ servidores do laboratório Intermídia do ICMC\SpecialChar nobreakdash
+USP 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://biomac.icmc.usp.br:8080/sustenagro/
+\end_layout
+
+\end_inset
+
+, na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Home"
+
+\end_inset
+
+ é apresentada a página inicial do protótipo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/home.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Protótipo do SustenAgro – Home Page.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Home"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nessa tela pode-se observar o texto explicativo da ferramenta e as abas
+ de 
+\begin_inset Quotes eld
+\end_inset
+
+Início
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Ferramenta
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+Contato
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O menu da ferramenta permite iniciar o processo de avaliação de sustentabilidad
+e.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Indicators"
+
+\end_inset
+
+, é apresentada a página dos indicadores, onde se descreve o processo de
+ avaliação.
+ Ele começa com uma descrição base do processo, a localização geográfica
+ da unidade produtiva, a caracterização dela, os indicadores e as recomendações
+ que o sistema vai gerar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/indicators.jpg
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Protótipo do SustenAgro - Indicadores.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Indicators"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Características do sistema
+\end_layout
+
+\begin_layout Standard
+Uma vez cadastrada a unidade produtiva/fazenda disponibiliza-se a opção
+ de criar nova avaliação, ação que vai gerar a tela da figura 9 que permite
+ visualizar as variaveis de eficiencia e os indicadores para que os usuários
+ preencham cada uma segundo a realidade da unidade produtiva em avaliação,
+ cada indicador ou variavel de eficiencia tem varias opções que estão ligadas
+ a valores que quantificam a sustentabilidade, esses valores estão definidos
+ na ontologia da sustentabilidade e serao os valores de ingreso para a formula
+ que vai gerar os indices da sustentabilidade.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/SustenAgro-scenario.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cadastro das variaveis/indicadores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir desses desses dados cadastrados são gerados os resultados do sistema
+ que consistem na planilha de ediciência e custo, na planilha da sustentabilidad
+e e o relatorio do sistema, as planilhas permitem a visualizar os atributos
+ das variaveis de eficiência e dos indicadores e a tela de relatorio que
+ apresenta a matrix de avaliação onde são relaciondas as variaveis de eficiência
+ e de sustentabilidade, o relatio é apresentado na figura 10.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/SustenAgro-results.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Formato das planilhas de resultado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Foram desenvolvidos dois web components específicos 
+\end_layout
+
+\begin_layout Section
+
+\lang english
+DSL
+\end_layout
+
+\begin_layout Standard
+Os conceitos das ontologias e os 
+\lang english
+Web Components
+\lang brazilian
+ são vinculados por meio da DSL, na definição do comportamento
+\end_layout
+
+\begin_layout Section
+Conclusões
+\end_layout
+
+\begin_layout Standard
+As três dimensões da sustentabilidade têm uma participação equitativa no
+ método de avaliação 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kraines2011system"
+
+\end_inset
+
+.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:environment"
+
+\end_inset
+
+ representa a dimensão ambiental, modelo onde são definidos os seguintes
+ conceitos (
+\emph on
+containers
+\emph default
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/ambiental.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa conceitual - Ambiental
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:environment"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Atributo solo: indicadores que avaliam os aspectos referentes às características
+ do solo.
+\end_layout
+
+\begin_layout Itemize
+Atributo hídrico: indicadores que avaliam os aspectos referentes à disponibilida
+de e qualidade das fontes hídricas.
+\end_layout
+
+\begin_layout Itemize
+Atributo clima: indicadores que avaliam os aspectos climáticos.
+\end_layout
+
+\begin_layout Standard
+Nesta dimensão (ambiental), não foi possível identificar indicadores de
+ tipo hídrico porque não existe consenso entre os especialistas consultados
+ sobre quais são os aspectos mais relevantes destes para a avaliação da
+ sustentabilidade, mas é um aspecto fundamental para trabalhar nas próximas
+ etapas de pesquisa.
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:social"
+
+\end_inset
+
+, representa a dimensão social, onde são definidos os seguintes conceitos
+ (
+\emph on
+containers
+\emph default
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/social.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa conceitual - Social
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:social"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Atributo emprego e renda: indicadores que avaliam os aspectos referentes
+ à mão-de-obra.
+\end_layout
+
+\begin_layout Itemize
+Atributo saúde: indicadores que avaliam os aspectos de segurança dos trabalhador
+es.
+\end_layout
+
+\begin_layout Itemize
+Atributo treinamento: indicadores que avaliam os aspectos da capacitação
+ dos trabalhadores.
+\end_layout
+
+\begin_layout Standard
+Nesta dimensão (Social), é importante reconhecer que as unidades produtivas,
+ sejam do tipo fazendas ou usinas, são compostas por pessoas tanto internamente
+ como externamente.
+ Por isso, é importante refinar os indicadores para incluir a população
+ externa à unidade produtiva que é afetada pelas práticas produtivas.
+\end_layout
+
+\begin_layout Standard
+As Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Economic-1"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Economic-2"
+
+\end_inset
+
+ apresentam a dimensão econômica, onde foram definidos os seguintes conceitos
+ (
+\emph on
+containers
+\emph default
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/economica_1.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa conceitual - Dimensão Econômica primeira parte.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Economic-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/economica_2.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa conceitual - Dimensão Econômica segunda parte.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Economic-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Atributo industrial: indicadores que avaliam os aspectos industriais.
+ 
+\end_layout
+
+\begin_layout Itemize
+Atributo área recuperada: indicadores que avaliam os aspectos da área produtiva
+ e das técnicas produtivas.
+\end_layout
+
+\begin_layout Itemize
+Atributo produtividade: indicadores que avaliam os aspectos dos produtos
+ e dos processos produtivos.
+\end_layout
+
+\begin_layout Itemize
+Atributo custo: indicadores que avaliam os aspectos dos custos da produção.
+ 
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "APTA"
+description "Agência Paulista de Tecnologia dos Agronegócios"
+
+\end_inset
+
+ forneceu dados econômicos das principais usinas do estado de São Paulo,
+ que permitiram definir a dimensão econômica das unidades produtivas na
+ ontologia do domínio.
+\end_layout
+
+\begin_layout Standard
+Cada uma das três dimensões devem ser avaliadas equitativamente para gerar
+ um resultado coerente com a teoria da sustentabilidade agrícola.
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Method"
+
+\end_inset
+
+ mostra os conceitos que fazem a união das dimensões e do método de avaliação.
+ Cada um dos conceitos relacionados com o método de avaliação utilizam os
+ indicadores para realizar o processo de avaliação.
+ A intenção é representar o mais detalhadamente e claramente possível o
+ processo de avaliação para a sus correta execução.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/metodo.png
+	lyxscale 80
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa conceitual - Método
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Method"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Considerações Finais
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento do sistema Sustenagro satisfaz uma necessidade presente
+ na unidade da Embrapa Meio Ambiente: um sistema de avaliação de sustentabilidad
+e em sistemas produtivos de cana-de-açúcar.
+ Ele permitirá adquirir dados do estado atual de sustentabilidade nas fazendas
+ e usinas e assim embasar e formalizar políticas publicas para promover
+ práticas produtivas mais sustentáveis de acordo com critérios ambientais,
+ sociais e econômicos.
+\end_layout
+
+\begin_layout Standard
+Além de satisfazer uma necessidade institucional, o SustenAgro se consolida
+ como uma proposta de SAD baseado em conhecimento e vinculado às tecnologias
+ da web semântica, um processo que requer um trabalho de pesquisa e de inovação
+ tecnológica.
+ A pesquisa deste trabalho de mestrado, usará o SustenAgro como uma base
+ de testes realista para os conceitos e ferramentas desenvolvidos.
+ 
+\end_layout
+
+\begin_layout Standard
+Após o desenvolvimento do Sistema SustenAgro, poder-se-a analisar as característ
+icas fundamentais desse tipo de SAD e tentar reusar a arquitetura em outros
+ SADs da própria Embrapa.
+\end_layout
+
+\begin_layout Standard
+A abordagem utilizada no desenvolvimento de SustenAgro é a definição de
+ um sistema de avaliação da sustentabilidade baseado em ontologias que represent
+am o conhecimento do sistema produtivo de cana-de-açúcar no centro-sul do
+ Brasil, essa ontologia vai tomar a informação da pesquisa de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "oliveira:2013"
+
+\end_inset
+
+ e dará suporte na indexação, recuperação e organização dos dados, o objetivo
+ da ontologia é suportar o processo de avaliação da sustentabilidade pelo
+ que terá conceitos do domínio do sistema produtivo de cana-de-açúcar e
+ conceitos de sustentabilidade, esta ontologia suportará as funcionalidades
+ do software que fazem possível o processo de avaliação e também será integrada
+ com outra ontologia de interface gráfica para suportar uma DSL que permitirá
+ definir interfaces gráficas customizadas para os usuários do sistema, estas
+ tecnologias suportaram o processo de avaliação de sustentabilidade.
+\end_layout
+
+\end_body
+\end_document
