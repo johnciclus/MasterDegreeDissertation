@@ -417,6 +417,24 @@ name "chap:SAD"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Explicação do SAD
+\end_layout
+
+\begin_layout Plain Layout
+Explicação do SustenAgro com Tela, como é o SAD do SustenAgro o que estava
+ na cabeça do pessoal da Embrapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/SAD.lyx"
@@ -427,10 +445,24 @@ filename "chapters/SAD.lyx"
 \end_layout
 
 \begin_layout Chapter
-Contexto: Web semântica e DSL
+Contexto: Ontologias e DSL
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Context"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Voltar sobre o problema original e dos conceitos abrangidos, justicar porque
+ estamos falando de ontologias e de DSL, Groovy e Grails, Protege e OWL
+\end_layout
 
 \end_inset
 
@@ -480,6 +512,19 @@ name "chap:SustenAgro"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DESCREVER OS RESULTADOS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/SustenAgro.lyx"
@@ -494,6 +539,19 @@ Avaliação
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Avaliação"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O Workshop com os cargos da pessoas, e eles aprovaram a ferramenta
+\end_layout
 
 \end_inset
 

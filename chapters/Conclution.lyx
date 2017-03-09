@@ -197,6 +197,15 @@ Esta linguagem pode ser validada, melhorada e expandida por meio da definição
 \end_layout
 
 \begin_layout Subsection
+Reportes de consultas semanticas
+\end_layout
+
+\begin_layout Standard
+Gerar SADs que suportem consultas complexas que requerem conhecimento semântico,
+ facilitando o processo de análises da informação por parte dos usuários.
+\end_layout
+
+\begin_layout Subsection
 Linguagem de edição de VIEWs
 \end_layout
 
