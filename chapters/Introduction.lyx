@@ -75,7 +75,7 @@
 \begin_body
 
 \begin_layout Standard
-Os Sistemas de Apoio à Decisão 
+Os Sistemas de Apoio à Decisão (SAD 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SAD"
@@ -83,18 +83,18 @@ description "Sistemas de Apoio à Decisão"
 
 \end_inset
 
- organizam e processam os dados e informações para gerar resultados de valor
- que auxiliem o processo de decisão em um domínio especifico, ditos sistemas
- integram conhecimento desenvolvido pelos especialistas do domínio que fica
- implícito nos dados, informações e processos, dito conhecimento não é familiar
- para os desenvolvedores de software, o que leva a usar diversas técnicas
- de levantamento de requerimentos que envolvem o aprendizado de tópicos
- do domínio dos especialistas por parte dos desenvolvedores, este processo
- exige um esforço adicional por parte dos desenvolvedores do sistema e traz
- limitações no tempo e custo de desenvolvimento, devido a que o conhecimento
- precisa ser explicado por parte dos especialistas do domínio aos desenvolvedore
-s de software, para que eles consigam entender o conhecimento e assim implementa
-r o sistema software corretamente.
+) organizam e processam os dados e informações para gerar resultados de
+ valor que auxiliem o processo de decisão em um domínio especifico, ditos
+ sistemas integram conhecimento desenvolvido pelos especialistas do domínio
+ que fica implícito nos dados, informações e processos, dito conhecimento
+ não é familiar para os desenvolvedores de software, o que leva a usar diversas
+ técnicas de levantamento de requerimentos que envolvem o aprendizado de
+ tópicos do domínio dos especialistas por parte dos desenvolvedores, este
+ processo exige um esforço adicional por parte dos desenvolvedores do sistema
+ e traz limitações no tempo e custo de desenvolvimento, devido a que o conhecime
+nto precisa ser explicado por parte dos especialistas do domínio aos desenvolved
+ores de software, para que eles consigam entender o conhecimento e assim
+ implementar o sistema software corretamente.
 \end_layout
 
 \begin_layout Standard
@@ -123,7 +123,7 @@ reference "chap:Sustainability_Assessment"
  SAD para disponibilizar o uso do método à comunidade interessada em realizar
  avaliações de sustentabilidade em cana-de-açúcar, , no caso deles foi identific
 ado que tinham o conhecimento do domínio avaliação de sustentabilidade da
- cana-de-açúcar, mas não tinham o metodo e ferramenta software para definir
+ cana-de-açúcar, mas não tinham o método e ferramenta software para definir
  dito conhecimento de maneira computável em um SAD, pelo que dito problema
  e caso de uso foram abordados na presente pesquisa como projeto piloto.
 \end_layout
@@ -184,8 +184,12 @@ description "Knowledge Organization System"
  pelas siglas em inglês), um dos sistemas mais completos são as ontologias
  que permitem definir, classificar, relacionar e inferir conhecimento, e
  como deseja-se um meio que suporte vários aspectos do conhecimento, se
- definiu usar este tipo de KOS no processo de modelagem, fornecendo um caso
- real de aprendizagem e implementação de ontologias.
+ definiu usar este tipo de 
+\lang english
+KOS
+\lang brazilian
+ no processo de modelagem, fornecendo um caso real de aprendizagem e implementaç
+ão de ontologias.
 \end_layout
 
 \begin_layout Standard

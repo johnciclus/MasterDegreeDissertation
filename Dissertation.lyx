@@ -417,24 +417,6 @@ name "chap:SAD"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Explicação do SAD
-\end_layout
-
-\begin_layout Plain Layout
-Explicação do SustenAgro com Tela, como é o SAD do SustenAgro o que estava
- na cabeça do pessoal da Embrapa
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/SAD.lyx"
@@ -460,8 +442,7 @@ name "chap:Context"
 status open
 
 \begin_layout Plain Layout
-Voltar sobre o problema original e dos conceitos abrangidos, justicar porque
- estamos falando de ontologias e de DSL, Groovy e Grails, Protege e OWL
+Groovy e Grails, Protege e OWL
 \end_layout
 
 \end_inset

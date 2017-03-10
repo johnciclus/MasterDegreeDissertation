@@ -102,6 +102,97 @@ Arquitetura do Decisioner
 \end_layout
 
 \begin_layout Standard
+A arquitetura de um software define a organização em termos de seus componentes,
+ suas interconexões, suas interações e também suas principais propriedades
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "de1997software"
+
+\end_inset
+
+.
+ Ela fornece as informações de como os elementos envolvidos nela se relacionam.
+ Arquiteturas trabalham a parte externa das ligações entre seus elementos,
+ implementações internas desses elementos não são considerados arquiteturais
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "sei2006architecture"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para encontrar e configurar componentes de software de uma arquitetura,
+ uma opção é descrever esses componentes, usando uma ontologia, e usar os
+ termos dessa ontologia para encontrar os componentes corretos para uma
+ aplicação 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Linhalis2010"
+
+\end_inset
+
+.
+ Essas ontologias podem ser criadas utilizando linguagens padrões da Web
+ Semântica, como a Web Ontology Language (OWL), para melhor portabilidade
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pahl2007"
+
+\end_inset
+
+.
+ Ontologias e padrões da Web Semântica serão abordados com mais profundidade
+ no próximo capítulo.
+\end_layout
+
+\begin_layout Standard
+Devido ao fato de que os elementos básicos de todo o SAD (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Componentes-SAD"
+
+\end_inset
+
+) serem muito parecidos, é possível criar uma arquitetura que possa ser
+ re\SpecialChar nobreakdash
+usada em diferentes SADs (ou classes de SADs).
+ Esta arquitetura pode ser baseada em componentes de software re\SpecialChar nobreakdash
+usáveis.
+ Programadores podem usar essa arquitetura e re\SpecialChar nobreakdash
+usar os componentes de software,
+ já desenvolvidos para ela, para implementar SADs mais rapidamente.
+\end_layout
+
+\begin_layout Standard
+Como especialistas de domínio não têm um conhecimento muito detalhado sobre
+ linguagens de especificação de sistemas, é necessário o desenvolvimento
+ de uma 
+\lang english
+Domain Specific Languag
+\lang brazilian
+e (DSL) adequada ao nível de conhecimento de computação dos especialistas.
+ Essa linguagem também deve conter termos familiares ao domínio desses especiali
+stas.
+ 
+\end_layout
+
+\begin_layout Standard
+Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
+ propusessem a geração automática de interface para Sistemas de Apoio a
+ Decisão (SADs) com ou sem o uso de ontologias.
+ Os artigos encontrados mais próximos ao tema deste trabalho tratam do uso
+ de ontologias ou de frameworks em SADs para a área de sustentabilidade,
+ área que vai ser usada neste trabalho para teste dos sistemas desenvolvidos.
+ 
+\end_layout
+
+\begin_layout Standard
 O modelo geral desta solução é apresentado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -179,6 +270,58 @@ TripleStore: sistema de armazenamento e recuperação da informação que padron
 Sistema gerador de interfaces gráficas: Sistema que usa a ontologia de interface
 s gráficas e as definições feitas na DSL para gerar as interfaces gráficas
  Web, que compõem os SADs gerados pelo Decisioner.
+\end_layout
+
+\begin_layout Section
+Trabalhos relacionados
+\end_layout
+
+\begin_layout Standard
+Sobre as ontologias na interface gráfica encontramos: no artigo de 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ruiz2006using"
+
+\end_inset
+
+ é analisado o uso de ontologias na engenharia de software, identificando
+ 50 tipos de uso entre as quais foram identificados dois usos no suporte
+ de interfaces gráficas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "paulheim2012ontology"
+
+\end_inset
+
+ propõem a seguinte definição, uma 
+\lang english
+ontology-enhanced user
+\lang brazilian
+ interface é uma interface cujas capacidades de visualização, possibilidades
+ de interação, ou processo de desenvolvimento estão habilitados ou (pelo
+ menos) melhorado pelo emprego de uma ou mais ontologias, na pesquisa foram
+ identificados três propósitos para os quais são usadas as ontologias no
+ melhoramento das interfaces gráficas, e são os seguintes:
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as capacidades de visualização;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as possibilidades de interação;
+\end_layout
+
+\begin_layout Enumerate
+Melhorar o processo de desenvolvimento;
+\end_layout
+
+\begin_layout Standard
+são apresentados os usos mais comuns de ontologias que suportem interfaces
+ gráficas (ontology-enhanced user interface), eles
 \end_layout
 
 \begin_layout Section
@@ -860,6 +1003,13 @@ Esta ontologia vai suportar a DSL fornecendo uma definição formal dos controle
  a continuação.
 \end_layout
 
+\begin_layout Standard
+As ontologias desenvolvidas foram modelados os conceitos envolvidos no processo
+ de avaliação da sustentabilidade em agricultura, definindo, classificando
+ e relacionando cada um dos conceitos para assim permitir o uso em outros
+ sistemas e conseguir fazer inferência de novo conhecimento.
+\end_layout
+
 \begin_layout Section
 Decisioner DSL
 \end_layout
@@ -914,6 +1064,19 @@ O uso da DSL por especialistas em sustentabilidade deve diminuir o esforço
 \begin_layout Standard
 Espera-se que, usando a DSL, os próprios especialistas vão ser capazes de
  fazer parte do desenvolvimento e validação.
+\end_layout
+
+\begin_layout Standard
+A DSL e o interprete conformam uma ferramenta intitulada Decisioner, que
+ por meio de umas declarações permite a geração de 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SAD"
+description "Sistema de apoio à decisão"
+
+\end_inset
+
+, dita ferramenta foi a principal contribuição desta pesquisa.
 \end_layout
 
 \begin_layout Subsection
@@ -1437,6 +1600,39 @@ Tendo em conta os requisitos do software, como o suporte a contínua mudança
 
 \begin_layout Section
 Considerações finais
+\end_layout
+
+\begin_layout Standard
+Não foram encontrados trabalhos na área de geração automática de interfaces
+ para SADs.
+ Nem mesmo em áreas específicas de aplicação.
+ Também foi encontrado pouco material sobre ontologias para descrição de
+ interfaces gráficas.
+ 
+\end_layout
+
+\begin_layout Standard
+Este capítulo apresentou os conceitos principais de SADs, incluindo a definição
+ geral e a arquitetura de software.
+ Ele também apontou para a necessidade da geração automática (ou semi\SpecialChar nobreakdash
+automática)
+ de interfaces gráficas de usuários SADs.
+ Uma abordagem para conseguir a geração automática (ou semi\SpecialChar nobreakdash
+automática) de
+ GUIs consiste na integração com DSLs, onde sejam definidas as características
+ gerais do sistema e integrado com os conceitos do domínio de conhecimento
+ a través das ontologias usadas nesses sistemas.
+\end_layout
+
+\begin_layout Standard
+Através dos conceitos definidos nelas, será possível associar tipos aos
+ dados e modos de apresentação dos mesmos (por exemplo, tipos de gráficos
+ de apresentação), a partir dessas descrições, 
+\lang english
+widgets
+\lang brazilian
+ podem ser geradas de maneira automática e assim suportar a geração de SADs
+ de maneira semiautomática.
 \end_layout
 
 \end_body

@@ -2826,31 +2826,10 @@ DSL
 \end_layout
 
 \begin_layout Standard
-A implementação de uma 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "DSL"
-description "Domain Specific Language"
-
-\end_inset
-
- permite aos administradores da ferramenta definir como são usados e apresentado
-s os conceitos da ontologia por meio de elementos da interface gráfica do
- usuário, para assim fornecer um sistema adaptável às mudanças do domínio,
- em termos de interface gráfica durante runtime.
-\end_layout
-
-\begin_layout Standard
-A DSL e o interprete conformam uma ferramenta intitulada Decisioner, que
- por meio de umas declarações permite a geração de 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SAD"
-description "Sistema de apoio à decisão"
-
-\end_inset
-
-, dita ferramenta foi a principal contribuição desta pesquisa.
+A implementação de uma DSL permite aos administradores da ferramenta definir
+ como são usados e apresentados os conceitos da ontologia por meio de elementos
+ da interface gráfica do usuário, para assim fornecer um sistema adaptável
+ às mudanças do domínio, em termos de interface gráfica durante runtime.
 \end_layout
 
 \begin_layout Standard
@@ -2875,6 +2854,7 @@ reference "lis:DSL-SustenAgro"
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -2935,17 +2915,34 @@ status open
 \begin_layout Plain Layout
 
   instance ':finishOfPlantingDate', label: ['en': "Planting end date" ,'pt':
- "Data de término do plantio"], placeholder: "dd/mm/yyyy"       instance
- ':beginningOfHarvestDate', label: ['en': 'Harvest start date', 'pt': "Data
- de início da colheita"], placeholder: "dd/mm/yyyy"     instance ':finishOfHarve
-stDate', label: ['en': 'Planting end date', 'pt': "Data de término da colheita"]
-, placeholder: "dd/mm/yyyy"       instance ':canavialLongevity', label:
- ['en': "Canavial longevity (time in years and months)", 'pt': "Longevidade
- do canavial (tempo em anos e meses)"], placeholder: ['en': "One and a half
- year", 'pt': "Um ano e meio"]       instance ':innovationDevelopmentProjects',
- label: ['en': "Innovation/development projects (BNDES, Finep)", 'pt': "Projetos
- de inovação e/ou desenvolvimento (BNDES, Finep)"], placeholder: ['en':
- "Description", 'pt': "Descrição"], widget: 'textAreaForm'
+ "Data de término do plantio"], placeholder: "dd/mm/yyyy"      
+\end_layout
+
+\begin_layout Plain Layout
+
+  instance ':beginningOfHarvestDate', label: ['en': 'Harvest start date',
+ 'pt': "Data de início da colheita"], placeholder: "dd/mm/yyyy"
+\end_layout
+
+\begin_layout Plain Layout
+
+  instance ':finishOfHarvestDate', label: ['en': 'Planting end date', 'pt':
+ "Data de término da colheita"], placeholder: "dd/mm/yyyy"
+\end_layout
+
+\begin_layout Plain Layout
+
+  instance ':canavialLongevity', label: ['en': "Canavial longevity (time
+ in years and months)", 'pt': "Longevidade do canavial (tempo em anos e
+ meses)"], placeholder: ['en': "One and a half year", 'pt': "Um ano e meio"]
+\end_layout
+
+\begin_layout Plain Layout
+
+  instance ':innovationDevelopmentProjects', label: ['en': "Innovation/developme
+nt projects (BNDES, Finep)", 'pt': "Projetos de inovação e/ou desenvolvimento
+ (BNDES, Finep)"], placeholder: ['en': "Description", 'pt': "Descrição"],
+ widget: 'textAreaForm'
 \end_layout
 
 \begin_layout Plain Layout
@@ -2968,7 +2965,7 @@ on, institution type, public or private, cooperatives or associations)",
 
 \begin_layout Plain Layout
 
- instance ':hasAvailabilityOfEvaluationResults', label: ['en': "Availability
+  instance ':hasAvailabilityOfEvaluationResults', label: ['en': "Availability
  of evaluation results", 'pt': "Disponibilização dos resultados da avaliação"],
  header: ['en': "Options", 'pt': "Opções"]
 \end_layout
@@ -2980,14 +2977,65 @@ on, institution type, public or private, cooperatives or associations)",
 
 \begin_layout Plain Layout
 
-feature ':EnvironmentalIndicator', 'extraFeatures': true feature ':EconomicIndic
-ator', 'extraFeatures': true feature ':SocialIndicator', 'extraFeatures':
- true feature ':ProductionEfficiencyFeature' feature ':TechnologicalEfficiencyFe
-ature', {          conditional ":ProductionUnit", 'http://dbpedia.org/ontology/Pr
-ovider', {               include ':TechnologicalEfficiencyInTheField'  
-        }          conditional ":ProductionUnit", 'http://dbpedia.org/resource/Ph
-ysicalPlant', {               include ':TechnologicalEfficiencyInTheField',
- ':TechnologicalEfficiencyInTheIndustrial'          }  }
+feature ':EnvironmentalIndicator', 'extraFeatures': true 
+\end_layout
+
+\begin_layout Plain Layout
+
+feature ':EconomicIndicator', 'extraFeatures': true 
+\end_layout
+
+\begin_layout Plain Layout
+
+feature ':SocialIndicator', 'extraFeatures': true 
+\end_layout
+
+\begin_layout Plain Layout
+
+feature ':ProductionEfficiencyFeature' 
+\end_layout
+
+\begin_layout Plain Layout
+
+feature ':TechnologicalEfficiencyFeature', {          
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditional ":ProductionUnit", 'http://dbpedia.org/ontology/Provider',
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+    include ':TechnologicalEfficiencyInTheField'          
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+  conditional ":ProductionUnit", 'http://dbpedia.org/resource/PhysicalPlant',
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+    include ':TechnologicalEfficiencyInTheField', ':TechnologicalEfficiencyInThe
+Industrial'          
+\end_layout
+
+\begin_layout Plain Layout
+
+  }  
+\end_layout
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2997,42 +3045,144 @@ data 'data'
 
 \begin_layout Plain Layout
 
-report {       environment =   weightedSum(data.':EnvironmentalIndicator')
-                      economic    =   weightedSum(data.':EconomicIndicator')
-       social      =   weightedSum(data.':SocialIndicator')  sustainability
- = (environment + social + economic)/3    cost_production_efficiency = sum(data.'
-:ProductionEfficiencyFeature')  technologicalEfficiencyInTheField = 0.8*weightedS
-um(data.':TechnologicalEfficiencyInTheField')         technologicalEfficiencyInTh
-eIndustrial = 0.2*weightedSum(data.':TechnologicalEfficiencyInTheIndustrial')
+report {       
+\end_layout
+
+\begin_layout Plain Layout
+
+  environment =   weightedSum(data.':EnvironmentalIndicator')
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  economic    =   weightedSum(data.':EconomicIndicator')     
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+  social      =   weightedSum(data.':SocialIndicator')  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  sustainability = (environment + social + economic)/3
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  cost_production_efficiency = sum(data.':ProductionEfficiencyFeature')
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  technologicalEfficiencyInTheField = 0.8*weightedSum(data.':TechnologicalEfficien
+cyInTheField')
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  technologicalEfficiencyInTheIndustrial = 0.2*weightedSum(data.':TechnologicalEff
+iciencyInTheIndustrial')
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
   efficiency = Math.abs(cost_production_efficiency) * (technologicalEfficiencyInT
-heField+technologicalEfficiencyInTheIndustrial)       evaluationObjectInfo()
-    sustainabilityMatrix    x: sustainability, y: efficiency,  label_x:
- ['en': 'Sustainability Index', 'pt': 'Índice de Sustentabilidade'],   
-              label_y: ['en': 'Efficiency index', 'pt': 'Índice de Eficiência'],
+heField+technologicalEfficiencyInTheIndustrial)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  evaluationObjectInfo()   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  sustainabilityMatrix    x: sustainability, y: efficiency,  label_x: ['en':
+ 'Sustainability Index', 'pt': 'Índice de Sustentabilidade'],          
+       label_y: ['en': 'Efficiency index', 'pt': 'Índice de Eficiência'],
                range_x: [-43,43],                 range_y: [-160,800], 
-                quadrants: [4,3],
+                quadrants: [4,3], recomendations: ["Avaliação da eficiência:
+ balanço da eficiência tecnológica, produção, custo favorável para o sistema
+ cana, recomenda-se investimentos no sistema avaliado / Avaliação da sustentabil
+idade: com bom desempenho, sistema de produção de cana fortemente recomendado."]
 \end_layout
 
 \begin_layout Plain Layout
 
-recomendations: ["Avaliação da eficiência: balanço da eficiência tecnológica,
- produção, custo favorável para o sistema cana, recomenda-se investimentos
- no sistema avaliado / Avaliação da sustentabilidade: com bom desempenho,
- sistema de produção de cana fortemente recomendado."]
+   
 \end_layout
 
 \begin_layout Plain Layout
 
-   sustainabilitySemaphore value: sustainability,                  label:
+  sustainabilitySemaphore value: sustainability,                  label:
  ['en': 'Sustainability Level', 'pt': 'Índice da sustentabilidade geral'],
                   legend: [['en': 'Lower sustainability', 'pt': 'Menos sustentáv
 el'],                ['en': 'Negative changes', 'pt': 'Alterações negativas'],
                 ['en': 'Irrelevant changes', 'pt': 'Sem alteração'],   
              ['en': 'Positive changes', 'pt': 'Alterações positivas'], 
                                     ['en': 'Higher sustainability', 'pt':
- 'Mais sustentável']],                  range: [-60,60]    text    'en':
- 'Microregion map', 'pt': '**Mapa da microregião**'    map     data.'Microregion'
-   }     
+ 'Mais sustentável']],                  range: [-60,60]    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  text    'en': 'Microregion map', 'pt': '**Mapa da microregião**'    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  map     data.'Microregion'   
+\end_layout
+
+\begin_layout Plain Layout
+
+}     
 \end_layout
 
 \begin_layout Plain Layout

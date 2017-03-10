@@ -75,6 +75,21 @@
 \begin_body
 
 \begin_layout Standard
+A partir do problema identificado e da revisão da literatura foi encontrado
+ que o desenvolvimento de ontologias é um área de pesquisa abrangida pela
+ Web Semântica que permite desenvolver sistemas web baseados em conhecimento,
+ satisfazendo os requisitos de desenvolvimento do SAD SustenAgro explicados
+ no capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:SAD"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 A web foi criada para possibilitar o acesso, intercâmbio e recuperação de
  informações de maneira rápida e simples, seu crescimento exponencial e
  caótico fez com que a mesma se tornasse hoje um gigantesco repositório
@@ -93,7 +108,7 @@ key "Souza:2004"
 \end_layout
 
 \begin_layout Standard
-Um exemplo da deficiência da web atual pode ser identificada na busca realizada
+Um exemplo da deficiência da web atual, pode ser identificada na busca realizada
  pelos sistemas de recuperação de informação, que usam palavras-chave nas
  buscas, onde apenas a similaridade e o número de ocorrências de certas
  palavras no conteúdo de documentos são levados em consideração e não a
@@ -109,11 +124,75 @@ key "Souza:2004"
 \end_layout
 
 \begin_layout Standard
+Neste capítulo, vamos apresentar e discutir os conceitos usados da web semântica
+, exatamente: fundamentos da Web Semântica, Ontologias, o 
+\lang english
+Resource Description Framework (RDF)
+\lang brazilian
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RDF"
+description "Resource Description Framework"
+
+\end_inset
+
+, a 
+\lang english
+Web Ontology Language
+\lang brazilian
+ (
+\lang english
+OWL
+\lang brazilian
+)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OWL"
+description "Web Ontology Language"
+
+\end_inset
+
+ e finalmente as 
+\lang english
+DSLs
+\lang brazilian
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSL"
+description "Domain Specific Language"
+
+\end_inset
+
+ que são linguagens de proposito especifico que permitem definir um meio
+ de comunicação entre os especialistas e o sistema desenvolvido.
+ 
+\end_layout
+
+\begin_layout Section
+Web Semântica.
+\end_layout
+
+\begin_layout Standard
+A interpretação do significado é uma habilidade inata dos seres humanos,
+ através da associação dos conceitos que estão no cérebro por meio de estruturas
+ neurais, nas maquinas não existe esta habilidade, devido a que um dado
+ ou informação é um conjunto de caracteres sem associação a conceitos, a
+ Web Semântica procura determinar métodos para que as maquinas aproximem-se
+ nesta capacidade, atualmente é possível inferir e deduzir informações,
+ porem não deve confundir-se com a compreensão humana.
+\end_layout
+
+\begin_layout Standard
 A Web Semântica tem como finalidade estruturar os dados e informações disponívei
 s na Web para que tenham significado e que seja computável, gerando assim
  um ambiente onde agentes software e usuários possam trabalhar de maneira
- cooperativa, está formada por um conjunto de padrões propostos pelo World
- Wide Web Consortium 
+ cooperativa, está formada por um conjunto de padrões propostos pelo 
+\lang english
+World Wide Web Consortium
+\lang brazilian
+ (W3C) 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "W3C"
@@ -129,7 +208,11 @@ reference "fig:Semantic_Web_History"
 \end_inset
 
  podem ser observados os padrões que constituem a Web Semântica e sua relação
- com os padrões XML 
+ com os padrões 
+\lang english
+XML
+\lang brazilian
+ 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "XML"
@@ -138,56 +221,12 @@ description "Extensible Markup Language"
 \end_inset
 
 .
- A interpretação do significado é uma habilidade inata dos seres humanos,
- através da associação dos conceitos que estão no cérebro por meio de estruturas
- neurais.
- Nas maquinas não existe esta habilidade, devido a que um dado ou informação
- é um conjunto de caracteres sem associação a conceitos, a Web Semântica
- procura determinar métodos para que as maquinas se aproximem nesta capacidade,
- atualmente é possível inferir e deduzir informações, porem não deve confundir-s
-e com a compreensão humana.
-\end_layout
-
-\begin_layout Standard
-Uma das contribuições da Web Semântica foi a formalização das ontologias,
- as quais vão se definir neste capitulo, nas ontologias desenvolvidas foram
- modelados os conceitos envolvidos no processo de avaliação da sustentabilidade
- em agricultura, definindo, classificando e relacionando cada um dos conceitos
- para assim permitir o uso em outros sistemas e conseguir fazer inferência
- de novo conhecimento.
-\end_layout
-
-\begin_layout Standard
-Neste capítulo, vamos apresentar e discutir os conceitos usados da web semântica
-, exatamente: fundamentos da Web Semântica, Ontologias, o 
-\lang english
-Resource Description Framework
-\lang brazilian
  
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "RDF"
-description "Resource Description Framework"
-
-\end_inset
-
- e a 
-\lang english
-Web Ontology Language
-\lang brazilian
- 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "OWL"
-description "Web Ontology Language"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -228,10 +267,6 @@ name "fig:Semantic_Web_History"
 
 \end_layout
 
-\begin_layout Section
-Web Semântica.
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -248,9 +283,15 @@ key "bernerslee2001"
 \end_layout
 
 \begin_layout Standard
-A partir desta visão conceitual sobre a Web, Berners-Lee propôs uma arquitetura
- que organiza as representações do conhecimento por meio de camadas, dita
- arquitetura é conhecida como 
+A partir desta visão conceitual sobre a Web, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bernerslee2001"
+
+\end_inset
+
+ propôs uma arquitetura que organiza as representações do conhecimento por
+ meio de camadas, dita arquitetura é conhecida como 
 \lang english
 Semantic Web Cake
 \lang brazilian
@@ -274,7 +315,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Semantic Web Architecture.png
-	width 100col%
+	width 80col%
 
 \end_inset
 
@@ -307,11 +348,11 @@ A base da arquitetura é estabelecida pelos padrões
 \lang english
 Unicode
 \lang brazilian
- e URI, que padronizam a representação dos dados.
- 
+ e URI, que padronizam a representação dos dados por meio das seguintes
+ camadas: 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \lang english
 Unicode
@@ -320,7 +361,7 @@ Unicode
  para representação de texto com fines de processamento computacional.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 URI 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -335,16 +376,8 @@ description "Uniform Resource Identifier"
 String.
 \end_layout
 
-\begin_layout Standard
-A camada 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "XML"
-description "eXtensible Markup Language"
-
-\end_inset
-
- representa os dados de maneira sintática, através a definição de 
+\begin_layout Description
+XML representa os dados de maneira sintática, através a definição de 
 \lang english
 markups
 \lang brazilian
@@ -353,26 +386,19 @@ markups
  suportando as camadas superiores na arquitetura da Web Semântica.
 \end_layout
 
-\begin_layout Standard
-A camada de descrição está representada na especificação 
+\begin_layout Description
+
 \lang english
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "RDF"
-description "eXtensible Markup Language"
-
-\end_inset
-
-
+RDF
 \lang brazilian
- que é usada como um método geral para descrição conceitual o modelagem
+ A camada de descrição que permite especificar o domínio de conhecimento,
+ também é usada como um método geral para descrição conceitual o modelagem
  de informação por meio de recursos, usa notações sintáticas e formatos
  de serialização.
 \end_layout
 
-\begin_layout Standard
-A camada 
+\begin_layout Description
+
 \lang english
 Ontology
 \lang brazilian
@@ -380,8 +406,8 @@ Ontology
  de conceitos, relações semânticas dos conceitos.
 \end_layout
 
-\begin_layout Standard
-A camada 
+\begin_layout Description
+
 \lang english
 Logic
 \lang brazilian
@@ -389,8 +415,8 @@ Logic
  que conseguem mudar a estrutura da ontologia de maneira dinâmica.
 \end_layout
 
-\begin_layout Standard
-A camada 
+\begin_layout Description
+
 \lang english
 Proof
 \lang brazilian
@@ -398,26 +424,31 @@ Proof
  recursos e informações.
 \end_layout
 
-\begin_layout Standard
-A camada 
+\begin_layout Description
+
 \lang english
 Trust
 \lang brazilian
  representa o conhecimento validado e confiável.
 \end_layout
 
-\begin_layout Standard
-O componente 
+\begin_layout Description
+
 \lang english
-Digital Signature
+Digital-Signature
 \lang brazilian
  permite integrar métodos de segurança que garantam a confiabilidade da
  informação.
 \end_layout
 
 \begin_layout Standard
-O presente trabalho incluiu desde as camadas inferiores até o OWL, permitindo
- definir ontologias que representem os domínios de conhecimento.
+Uma das contribuições da Web Semântica foi a formalização das ontologias,
+ as quais são definidas a continuação, no desenvolvimento desta pesquisa
+ incluiu-se desde as camadas inferiores até o 
+\lang english
+OWL
+\lang brazilian
+, permitindo definir ontologias que representem os domínios de conhecimento.
 \end_layout
 
 \begin_layout Section
@@ -437,19 +468,6 @@ key "Smith2007"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "allemang2011semantic"
-
-\end_inset
-
- define as ontologias no contexto da Web Semântica como um esquema de representa
-ção que permite conceitualizar e estruturar conhecimento, permitindo a interpret
-ação dele através das computadoras, cujo principal objetivo é compartilhar
- conhecimento entre humanos e computadoras.
-\end_layout
-
-\begin_layout Standard
 Na ciências da computação e informação, a palavra 
 \begin_inset Quotes eld
 \end_inset
@@ -463,16 +481,16 @@ ontologia
 \end_layout
 
 \begin_layout Standard
-Segundo 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Patel-schneider05buildingthe"
+key "allemang2011semantic"
 
 \end_inset
 
- a representação de ontologia é realizada por meio de lógica de predicados
- e lógica descritiva, usando padrões adotados pela comunidade como RDF e
- OWL.
+ define as ontologias no contexto da Web Semântica como um esquema de representa
+ção que permite conceitualizar e estruturar conhecimento, permitindo a interpret
+ação dele através das computadoras, cujo principal objetivo é compartilhar
+ conhecimento entre humanos e computadoras.
 \end_layout
 
 \begin_layout Standard
@@ -486,16 +504,10 @@ Knowledge Organization System
 \lang brazilian
  (
 \emph on
+\lang english
 KOS
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "KOS"
-description "Knowledge Organization System"
-
-\end_inset
-
-
 \emph default
+\lang brazilian
 ), que é uma estrutura conceitual e computacional que permite representar
  o conhecimento, de qualquer domínio, por meio de entidades, classificações,
  relações semânticas, regras e axiomas.
@@ -548,14 +560,33 @@ key "noy2001ontology"
 
 \end_inset
 
-.
- Os indivíduos representam objetos do domínio de interesse 
+, os indivíduos representam objetos do domínio de interesse 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "horridge2011owl"
 
 \end_inset
 
+.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Patel-schneider05buildingthe"
+
+\end_inset
+
+ a representação de ontologia é realizada por meio de lógica de predicados
+ e lógica descritiva, usando padrões adotados pela comunidade como 
+\lang english
+RDF
+\lang brazilian
+ e 
+\lang english
+OWL
+\lang brazilian
 .
 \end_layout
 
@@ -619,15 +650,18 @@ name "fig:Smart-data-continuum"
 \begin_layout Standard
 O nível mais baixo de representação começa com os dados sem nenhum significado
  semântico, dependentes do contexto da aplicação.
- O segundo nível envolve a definição de esquemas XML para conseguir independênci
-a dos dados da aplicação, os dados fluem entre aplicações em um único domínio
- mas não podem ser compartilhados fora do domínio.
+ O segundo nível envolve a definição de esquemas 
+\lang english
+XML
+\lang brazilian
+ para conseguir independência dos dados da aplicação, os dados fluem entre
+ aplicações em um único domínio mas não podem ser compartilhados fora do
+ domínio.
  No terceiro nível, os dados podem ser combinados a partir de diferentes
  domínios, sendo suficientemente independentes para serem recuperados e
- combinados com outras fontes de dados.
- Finalmente no quarto nível, é possível inferir novos dados a partir dos
- existentes e compartilha-os entre aplicações sem requerer interferência
- humana 
+ combinados com outras fontes de dados, finalmente no quarto nível, é possível
+ inferir novos dados a partir dos existentes e compartilha-os entre aplicações
+ sem requerer interferência humana 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sugumaran2011"
@@ -642,21 +676,17 @@ key "sugumaran2011"
 \lang english
 Resource Description Framework
 \lang brazilian
- (RDF)
+ (
+\lang english
+RDF
+\lang brazilian
+)
 \end_layout
 
 \begin_layout Standard
 O 
 \lang english
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Resource Description Framework"
-description "RDF"
-
-\end_inset
-
-
+Resource Description Framework (RDF)
 \lang brazilian
  é uma família de especificações da W3C, que foi disponibilizada em 1999
  como parte do W3C's 
@@ -679,14 +709,18 @@ http://www.w3.org/2001/sw/
 \end_inset
 
 .
- Ele foi originalmente projetado como um modelo de meta-dados e também chegou
+ Ele foi originalmente projetado como um modelo de metadados e também chegou
  a ser usado como um método de descrições conceituais, principalmente para
  descrever recursos web.
  
 \end_layout
 
 \begin_layout Standard
-O RDF é usado em várias áreas de aplicação, como 
+O 
+\lang english
+RDF
+\lang brazilian
+ é usado em várias áreas de aplicação, como 
 \emph on
 \lang english
 resource discovery
@@ -713,8 +747,12 @@ O modelo básico de dados consiste em um padrão de três tipos de objetos:
 \end_layout
 
 \begin_layout Itemize
-Sujeito: representa os recursos e são identificados por meio de URIs, sem
- importar o tamanho deles, por exemplo, uma pagina web ou um elemento 
+Sujeito: representa os recursos e são identificados por meio de 
+\lang english
+URIs
+\lang brazilian
+, sem importar o tamanho deles, por exemplo, uma pagina web ou um elemento
+ 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HTML"
@@ -747,16 +785,35 @@ http://www.w3.org/TR/PR-rdf-syntax/
 \end_layout
 
 \begin_layout Standard
-Com RDF é possível explicitar relações entre dois objetos (usando-se uma
- Tripla RDF), mas não consegue fazer modelagens especificas nem integrar
- inferência.
- Para se descrever o que um objeto representa e suas relações com outros
- objetos, são necessárias ontologias.
+Com 
+\lang english
+RDF
+\lang brazilian
+ é possível explicitar relações entre dois objetos (usando-se uma Tripla
+ 
+\lang english
+RDF
+\lang brazilian
+), mas não consegue fazer modelagens especificas nem integrar inferência.
+ Para descrever detalhadamente o que um objeto representa e suas relações
+ com outros objetos, são necessárias ontologias descritas no padrão 
+\lang english
+OWL
+\lang brazilian
+ que será apresentado a continuação.
  
 \end_layout
 
 \begin_layout Section
-Web Ontology Language (OWL)
+
+\lang english
+Web Ontology Language
+\lang brazilian
+ (
+\lang english
+OWL
+\lang brazilian
+)
 \end_layout
 
 \begin_layout Standard
@@ -764,10 +821,14 @@ A
 \lang english
 Web Ontology Language
 \lang brazilian
- (OWL) foi recomendada pelo W3C em 2004 para representar e compartilhar
- ontologias na Web.
+ (
+\lang english
+OWL
+\lang brazilian
+) foi recomendada pelo W3C em 2004 para representar e compartilhar ontologias
+ na Web.
  Essa linguagem foi projetada para aplicações que necessitam processar o
- conteúdo da informação em vez de apenas apresentar informações em nós 
+ conteúdo da informação em vez de apenas organizar informações em nós 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "mcguinness2004owl"
@@ -775,14 +836,26 @@ key "mcguinness2004owl"
 \end_inset
 
 .
- OWL é uma linguagem que permite que a semântica seja explicitamente associada
+ 
+\lang english
+OWL
+\lang brazilian
+ é uma linguagem que permite que a semântica seja explicitamente associada
  ao conteúdo dos dados na web e formalmente especificada através de ontologias,
  compartilhadas na Internet.
  
 \end_layout
 
 \begin_layout Standard
-A versão OWL 2 é a versão mais recente da linguagem OWL.
+A versão 
+\lang english
+OWL
+\lang brazilian
+ 2 é a versão mais recente da linguagem 
+\lang english
+OWL
+\lang brazilian
+.
  De acordo com as especificações do W3C
 \begin_inset Foot
 status open
@@ -793,8 +866,31 @@ http://www.w3.org/TR/owl2-overview/
 
 \end_inset
 
-, a OWL 2 adicionou três novos perfis (sub-linguagens) aos perfis DL e Full
- já existentes: OWL 2 EL, OWL 2 QL e OWL RL (Figura 
+, a 
+\lang english
+OWL 2
+\lang brazilian
+ adicionou três novos perfis (
+\lang english
+sub-linguagens
+\lang brazilian
+) aos perfis DL e 
+\lang english
+Full
+\lang brazilian
+ já existentes: 
+\lang english
+OWL 2
+\lang brazilian
+ EL,
+\lang english
+ OWL 2 QL
+\lang brazilian
+ e 
+\lang english
+OWL RL
+\lang brazilian
+ (Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:OWL2-Profiles"
@@ -802,83 +898,8 @@ reference "fig:OWL2-Profiles"
 \end_inset
 
 ).
- Cada um desses perfis oferece um poder de expressividade diferente para
- diversos cenários de aplicação:
-\end_layout
-
-\begin_layout Description
-Full O perfil OWL Full é direcionado para usuários que querem a máxima expressiv
-idade e a liberdade sintática do RDF sem nenhuma garantia computacional.
- É improvável que qualquer software de raciocínio seja capaz de suportar
- completamente cada recurso da OWL Full 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mcguinness2004owl"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Description
-DL O perfil OWL DL (
-\lang english
-Description Logic
-\lang brazilian
-) é para aplicações que necessitam de máxima expressividade, enquanto mantém
- a computabilidade (todas as conclusões são garantidos para ser computáveis)
- e decidibilidade (todas as computações terminarão em tempo finito) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mcguinness2004owl"
-
-\end_inset
-
-.
- OWL DL inclui todas as construções da linguagem OWL, mas elas podem ser
- usadas somente sob certas restrições.
- 
-\end_layout
-
-\begin_layout Description
-EL O perfil OWL 2 EL é baseado na família EL++ de lógica descritiva (
-\lang english
-Description
-\lang brazilian
- 
-\lang english
-Logic
-\lang brazilian
-), esse perfil é particularmente útil em aplicações utilizando ontologias
- que contêm um grande número de propriedades e/ou classes.
- Além disso, o OWL 2 EL utiliza um padrão comum utilizado em ontologias
- para conceitos e planejamento, ou seja, a combinação de conjunção e qualidades
- existenciais.
-\end_layout
-
-\begin_layout Description
-QL O perfil OWL 2 QL é baseado na família DL-Lite de lógica descritiva.
- Esse perfil foi criado para permitir o raciocínio (
-\lang english
-reasoning
-\lang brazilian
-) eficiente com grandes quantidades de dados estruturados de acordo com
- esquemas relativamente simples.
- Ele fornece a maioria dos recursos necessários para capturar modelos conceituai
-s, tais como diagramas de classe UML, diagramas de Entidade de Relacionamento,
- e esquemas de banco de dados.
- 
-\end_layout
-
-\begin_layout Description
-RL O perfil OWL 2 RL é voltado para aplicações que exigem raciocínio escalável
- em troca de alguma restrição de poder expressivo.
- Ele define um subconjunto sintático de OWL 2 que favorece a implementação
- utilizando tecnologias baseadas em regras.
- Esse perfil pode ser utilizado na maioria das construções OWL 2, porém,
- para permitir implementações baseadas em regras de raciocínio, a forma
- como essas construções podem ser usadas em axiomas foi restringida.
- 
+ Cada um desses perfis fornece características de expressividade diferente
+ para diversos cenários de aplicação:
 \end_layout
 
 \begin_layout Standard
@@ -923,8 +944,157 @@ name "fig:OWL2-Profiles"
 
 \end_layout
 
+\begin_layout Description
+
+\lang english
+Full
+\lang brazilian
+ O perfil 
+\lang english
+OWL Full
+\lang brazilian
+ é direcionado para usuários que querem a máxima expressividade e a liberdade
+ sintática do 
+\lang english
+OWL
+\lang brazilian
+ sem garantia computacional.
+ É improvável que qualquer motor de raciocínio seja capaz de suportar completame
+nte cada recurso da 
+\lang english
+OWL Full
+\lang brazilian
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcguinness2004owl"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+DL O perfil 
+\lang english
+OWL DL
+\lang brazilian
+ (
+\lang english
+Description Logic
+\lang brazilian
+) é para aplicações que necessitam de máxima expressividade, enquanto mantém
+ a computabilidade (todas as conclusões são garantidos para ser computáveis)
+ e decidibilidade (todas as computações terminarão em tempo finito) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcguinness2004owl"
+
+\end_inset
+
+.
+ 
+\lang english
+OWL DL
+\lang brazilian
+ inclui as construções da linguagem 
+\lang english
+OWL
+\lang brazilian
+, mas elas podem ser usadas somente sob certas restrições.
+ 
+\end_layout
+
+\begin_layout Description
+EL O perfil 
+\lang english
+OWL
+\lang brazilian
+ 2 EL é baseado na família EL++ de lógica descritiva (
+\lang english
+Description
+\lang brazilian
+ 
+\lang english
+Logic
+\lang brazilian
+), esse perfil é particularmente útil em aplicações utilizando ontologias
+ que contêm um grande número de propriedades e/ou classes.
+ Além disso, o 
+\lang english
+OWL
+\lang brazilian
+ 2 EL utiliza um padrão comum utilizado em ontologias para conceitos e planejame
+nto, ou seja, a combinação de conjunção e qualidades existenciais.
+\end_layout
+
+\begin_layout Description
+
+\lang english
+QL
+\lang brazilian
+ O perfil 
+\lang english
+OWL 2 QL
+\lang brazilian
+ é baseado na família 
+\lang english
+DL-Lite
+\lang brazilian
+ de lógica descritiva, esse perfil foi criado para permitir o raciocínio
+ (
+\lang english
+reasoning
+\lang brazilian
+) eficiente com grandes quantidades de dados estruturados de acordo com
+ esquemas relativamente simples, ele fornece a maioria dos recursos necessários
+ para capturar modelos conceituais, tais como diagramas de classe UML, diagramas
+ de entidade/relacionamento, e esquemas de banco de dados.
+ 
+\end_layout
+
+\begin_layout Description
+RL O perfil 
+\lang english
+OWL 2 RL
+\lang brazilian
+ é voltado para aplicações que exigem raciocínio escalável em troca de alguma
+ restrição de poder expressivo.
+ Ele define um subconjunto sintático de 
+\lang english
+OWL 2
+\lang brazilian
+ que favorece a implementação utilizando tecnologias baseadas em regras,
+ esse perfil pode ser utilizado na maioria das construções 
+\lang english
+OWL 2
+\lang brazilian
+, porém, para permitir implementações baseadas em regras de raciocínio,
+ a forma como essas construções podem ser usadas em axiomas foi restringida.
+ 
+\end_layout
+
+\begin_layout Standard
+A ferramenta para definir ontologias da web semântica recomendada pela comunidad
+e e usada na presente pesquisa foi Protégé
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Ferramenta e framework Protégé http://protege.stanford.edu/
+\end_layout
+
+\end_inset
+
+, que permite um amplo suporte no processo de definição de ontologias.
+\end_layout
+
 \begin_layout Section
-DSL 
+
+\lang english
+Domain Specific Language (DSL)
+\lang brazilian
+ 
 \end_layout
 
 \begin_layout Standard
@@ -937,20 +1107,14 @@ Domain-Specific Language
  (DSL)
 \emph default
 , é um tipo de linguagem de programação ou linguagem de especificação, dedicada
- a um domínio particular de problema.
-\end_layout
-
-\begin_layout Standard
-O conceito não é novo, linguagens de programação de propósito especifico
- existiram desde o começo das linguagens de programação, mas o termo tornou-se
- padrão devido à ascensão da modelagem de domínio específico.
+ a um domínio particular de problema com expressões propiás dos especialistas
+ de aquele domínio.
 \end_layout
 
 \begin_layout Standard
 Um usuário, relacionado com um domínio específico, pode usar uma DSL sem
  ter experiência em desenvolvimento de software pois a DSL está relacionada
- com seu domínio de trabalho.
- O autor 
+ com seu domínio de trabalho, o autor 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "fowler2010domain"
@@ -958,19 +1122,12 @@ key "fowler2010domain"
 \end_inset
 
  diz que programadores instruem o computador no que ele deve fazer, pois
- já entendem a maneira dele trabalhar, mas com DSLs é feito o inverso: o
- computador começa a entender o que o programador (usuário) escreve.
-\end_layout
-
-\begin_layout Standard
-No caso de uma arquitetura baseada em componentes para SADs, DSLs podem
- ser criadas para domínios específicos de aplicação.
- Elas utilizariam termos específicos do domínio e, assim, familiares a especiali
-stas desse domínio, com o qual seria possível a especialistas especificar
- SADs com um grau de detalhamento grande o suficiente para permitir a criação
- automática desses SADs, sem a necessidade da intervenção de programadores.
- Os especialistas poderiam se tornar, na prática, programadores de seus
- próprios SADs.
+ já entendem a maneira dele trabalhar, mas com 
+\lang english
+DSLs
+\lang brazilian
+ é feito o inverso: o computador começa a entender o que o programador (usuário)
+ escreve.
 \end_layout
 
 \begin_layout Standard
@@ -983,7 +1140,136 @@ key "Mernik:2005:DDL:1118890.1118892"
 
  as vantagens das DSL em comparação com as linguagens de proposito geral
  são a expressividade, facilidade de uso e a integração com o domínio da
- aplicação
+ aplicação.
+ O conceito não é novo, linguagens de programação de propósito especifico
+ existiram desde o começo das linguagens de programação, mas o termo tornou-se
+ padrão devido à ascensão da modelagem de domínio específico, elas são classific
+adas em:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Domain-Specific Markup Languages
+\lang brazilian
+: são linguagens de um domínio particular com a particularidade de anotar
+ os dados para que eles sejam sintaticamente distinguíveis, um exemplo deles
+ é o 
+\lang english
+Hypertext Markup Language ((HTML 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HTML"
+description "HyperText Markup Language"
+
+\end_inset
+
+)
+\lang brazilian
+ que permite anotar dados no domínio das paginas web.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Domain-specific modeling languages:
+\lang brazilian
+ são linguagens que permitem expressar informação, conhecimento o sistemas
+ em uma estrutura consistente com um conjunto de regras que permitem interpretar
+ o significado dos componentes modelados, um deste tipo de linguagens é
+ 
+\lang english
+Unified Modeling Language
+\lang brazilian
+ (
+\lang english
+UML
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "UML"
+description "Unified Modeling Language "
+
+\end_inset
+
+
+\lang brazilian
+) que permite especificar sistemas software.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Domain-specific programming languages:
+\lang brazilian
+ são linguagens permitem a programação em alto nível aplicado a um domínio
+ especifico de conhecimento, um exemplo dele é a linguagem R que permite
+ a programação de conceitos estatísticos e geração de gráficos 
+\end_layout
+
+\begin_layout Standard
+No caso do SAD SustenAgro, foi analisado que as ontologias permitem uma
+ definição detalhada do conhecimento do domínio, más o formato das ontologias
+ requer que os especialistas em sustentabilidade aprendam os padrões da
+ Web Semântica descrita neste capitulo, o qual não é trivial, devido a que
+ precisa um conhecimento profundo de modelagem em formatos semânticos.
+\end_layout
+
+\begin_layout Standard
+Pelo qual a definição de uma DSL particular para os especialistas do domínio,
+ permitiria fornecer uma solução compatível com os termos específicos deles,
+ com o qual seria possível a especialistas especificar o SAD com um grau
+ de detalhamento suficiente para definir o conhecimento deles sem intervenção
+ dos desenvolvedores de software, os especialistas poderiam se tornar, na
+ prática, programadores de seus próprios SADs.
+\end_layout
+
+\begin_layout Standard
+A DSL fará uso e gerenciara a ontologia para organizar o conhecimento do
+ domínio em um formato compatível com as tecnologias web semântica e assim
+ definir o SAD SustenAgro, a DSL será uma interface entre o especialista
+ e a ontologia permitindo fornecer que os especialistas definam ontologias
+ da web semântica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/DSL Diagram.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Camada da DSL 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Camada-da-DSL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -992,19 +1278,18 @@ Considerações finais
 
 \begin_layout Standard
 Os conceitos apresentados anteriormente foram necessários para o desenvolvimento
- do sistema gerador de SADs, demostrando que a web semântica fornece o suporte
+ da presente pesquisa, demostrando que a web semântica fornece o suporte
  tecnológico e teórico suficiente para abordar o desenvolvimento de sistemas
  baseados em conhecimento, particularmente as ontologias suportaram vários
  aspectos cruciais no desenvolvimento deste projeto, pelo qual elas foram
  o foco central da presente pesquisa.
- Através dos conceitos definidos nelas, será possível associar tipos aos
- dados e modos de apresentação dos mesmos (por exemplo, tipos de gráficos
- de apresentação), a partir dessas descrições, 
-\lang english
-widgets
-\lang brazilian
- podem ser geradas de maneira automática e assim suportar a geração de SADs
- de maneira semiautomática.
+ 
+\end_layout
+
+\begin_layout Standard
+As DSL auxiliam a definição da ontologia, fornecendo uma linguagem especifica
+ para o especialista, conseguindo de esta maneira que os especialistas definam
+ o conhecimento deles no sistema SAD.
 \end_layout
 
 \end_body
