@@ -167,7 +167,6 @@ description "Domain Specific Language"
 
  que são linguagens de proposito especifico que permitem definir um meio
  de comunicação entre os especialistas e o sistema desenvolvido.
- 
 \end_layout
 
 \begin_layout Section
@@ -315,7 +314,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Semantic Web Architecture.png
-	width 80col%
+	width 70col%
 
 \end_inset
 
@@ -362,7 +361,11 @@ Unicode
 \end_layout
 
 \begin_layout Description
-URI 
+
+\lang english
+URI
+\lang brazilian
+ 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "URI"
@@ -377,7 +380,11 @@ String.
 \end_layout
 
 \begin_layout Description
-XML representa os dados de maneira sintática, através a definição de 
+
+\lang english
+XML
+\lang brazilian
+ representa os dados de maneira sintática, através a definição de 
 \lang english
 markups
 \lang brazilian
@@ -495,20 +502,11 @@ ação dele através das computadoras, cujo principal objetivo é compartilhar
 
 \begin_layout Standard
 Uma ontologia é um sistema de organização e representação do conhecimento,
- em inglês
-\emph on
- 
+ em inglês 
 \lang english
-Knowledge Organization System
-\emph default
+Knowledge Organization System (KOS)
 \lang brazilian
- (
-\emph on
-\lang english
-KOS
-\emph default
-\lang brazilian
-), que é uma estrutura conceitual e computacional que permite representar
+, que é uma estrutura conceitual e computacional que permite representar
  o conhecimento, de qualquer domínio, por meio de entidades, classificações,
  relações semânticas, regras e axiomas.
 \end_layout
@@ -614,7 +612,7 @@ status open
 \begin_inset Graphics
 	filename ../figures/smart data.png
 	lyxscale 50
-	width 80col%
+	width 60col%
 
 \end_inset
 
@@ -913,7 +911,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/owl2Profiles.png
-	width 80col%
+	width 60col%
 
 \end_inset
 
@@ -1081,7 +1079,18 @@ e e usada na presente pesquisa foi Protégé
 status open
 
 \begin_layout Plain Layout
-Ferramenta e framework Protégé http://protege.stanford.edu/
+Ferramenta e framework Protégé 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://protege.stanford.edu/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1156,15 +1165,7 @@ Domain-Specific Markup Languages
  os dados para que eles sejam sintaticamente distinguíveis, um exemplo deles
  é o 
 \lang english
-Hypertext Markup Language ((HTML 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "HTML"
-description "HyperText Markup Language"
-
-\end_inset
-
-)
+Hypertext Markup Language (HTML)
 \lang brazilian
  que permite anotar dados no domínio das paginas web.
 \end_layout
@@ -1207,20 +1208,33 @@ Domain-specific programming languages:
 \end_layout
 
 \begin_layout Standard
-No caso do SAD SustenAgro, foi analisado que as ontologias permitem uma
- definição detalhada do conhecimento do domínio, más o formato das ontologias
- requer que os especialistas em sustentabilidade aprendam os padrões da
- Web Semântica descrita neste capitulo, o qual não é trivial, devido a que
- precisa um conhecimento profundo de modelagem em formatos semânticos.
+No caso do SAD SustenAgro, foi analisado que os especialistas de domínio
+ não têm um conhecimento detalhado sobre modelagem de conhecimento em padrões
+ da web semântica descritos neste capitulo, o qual não é trivial, devido
+ a que precisa um conhecimento profundo de modelagem em formatos semânticos.
+ Também foi analisado que as ontologias permitem uma definição detalhada
+ do conhecimento do domínio, pelo que foi necessário definir uma camada
+ intermédia que facilitasse a definição do conhecimento por parte dos especialis
+tas, por isso foi identificado o requerimento de um 
+\lang english
+Domain Specific Languag
+\lang brazilian
+e (DSL) adequada ao nível de conhecimento de computação dos especialistas,
+ e que contenha os termos familiares ao domínio desses especialistas.
+ 
 \end_layout
 
 \begin_layout Standard
-Pelo qual a definição de uma DSL particular para os especialistas do domínio,
- permitiria fornecer uma solução compatível com os termos específicos deles,
- com o qual seria possível a especialistas especificar o SAD com um grau
- de detalhamento suficiente para definir o conhecimento deles sem intervenção
- dos desenvolvedores de software, os especialistas poderiam se tornar, na
- prática, programadores de seus próprios SADs.
+Pelo qual uma DSL de tipo 
+\lang english
+programming
+\lang brazilian
+ pode suportar a definição de conhecimento dos especialistas, fornecendo
+ uma solução compatível com os termos específicos deles, facilitando que
+ os especialistas especifiquem os SAD com um grau de detalhamento suficiente
+ para definir o conhecimento deles sem intervenção dos desenvolvedores de
+ software, os especialistas poderiam se tornar, na prática, programadores
+ de seus próprios SADs.
 \end_layout
 
 \begin_layout Standard
@@ -1228,7 +1242,14 @@ A DSL fará uso e gerenciara a ontologia para organizar o conhecimento do
  domínio em um formato compatível com as tecnologias web semântica e assim
  definir o SAD SustenAgro, a DSL será uma interface entre o especialista
  e a ontologia permitindo fornecer que os especialistas definam ontologias
- da web semântica.
+ da web semântica, como pode ser visualizado na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Componente-DSL"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1241,7 +1262,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/DSL Diagram.png
-	width 80col%
+	width 50col%
 
 \end_inset
 
@@ -1252,10 +1273,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Camada da DSL 
+Componente DSL 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Camada-da-DSL"
+name "fig:Componente-DSL"
 
 \end_inset
 
@@ -1270,6 +1291,77 @@ name "fig:Camada-da-DSL"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Com a finalidade de suportar as tecnologias da web semântica e a criação
+ das DSL foram pesquisados as linguagens de programação dão suporte a ambas
+ tecnologias, tendo em conta que a maioria das bibliotecas compatíveis com
+ a Web Semântica estão escritas em java, foi reduzido o escopo às linguagens
+ baseadas em java e dentro delas está a linguagem 
+\lang english
+Groovy
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Groovy website 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://groovy-lang.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\lang brazilian
+ que dá suporte à criação de DSL, pelo que foi escolhida a linguagem de
+ programação 
+\lang english
+Groovy
+\lang brazilian
+ e o framework 
+\lang english
+Grails
+\lang brazilian
+ 
+\lang english
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Grails Framework website 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://grails.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\lang brazilian
+ para suportar a criação de sistemas Web.
 \end_layout
 
 \begin_layout Section

@@ -75,26 +75,25 @@
 \begin_body
 
 \begin_layout Standard
-Neste capítulo é apresentado o sistema Decisioner, principal contribuição
- do projeto desenvolvido, ele gerá Sistemas de Apoio à Decisão e está composto
- por ontologias para representar o conhecimento e por uma DSL que permite
- gerenciar os conceitos e estabelecer as configurações gerais por parte
- de especialistas do domínio para gerar o SAD.
+A partir da descrição das características do SAD SustenAgro, do requisito
+ de modelar o conhecimento a través de ontologias da web semântica e de
+ definir uma DSL para facilitar a definição de conhecimento por parte dos
+ especialistas, foi modelado um sistema que cumpre ditos requisitos e que
+ fornecesse as condições para desenvolver um trabalho de pesquisa.
 \end_layout
 
 \begin_layout Standard
-Os SADs segundo a descrição feita no capitulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Context"
+Dito sistema foi intitulado Decisioner, e neste capítulo será apresentado
+ a arquitetura dele e um protótipo que permite definir e gerar sistemas
+ de Apoio à Decisão do tipo SustenAgro, conseguindo assim satisfazer os
+ objetivos de pesquisa e do sistema requerido pelos pesquisadores da Embrapa
+ meio Ambiente.
+\end_layout
 
-\end_inset
-
- estão compostos por banco de dados, base de modelos, base de conhecimento
- e a GUI como componentes principais, os quais foram organizados em componentes
- baseados na Web Semântica e nas DSL com a finalidade de desenhar um sistema
- gerador de SAD.
- 
+\begin_layout Standard
+Decisioner está composto por ontologias que representam o conhecimento e
+ por uma DSL que permite gerenciar os conceitos dos especialistas e estabelecer
+ as configurações gerais para gerar SAD.
 \end_layout
 
 \begin_layout Section
@@ -102,117 +101,137 @@ Arquitetura do Decisioner
 \end_layout
 
 \begin_layout Standard
-A arquitetura de um software define a organização em termos de seus componentes,
- suas interconexões, suas interações e também suas principais propriedades
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "de1997software"
-
-\end_inset
-
-.
- Ela fornece as informações de como os elementos envolvidos nela se relacionam.
- Arquiteturas trabalham a parte externa das ligações entre seus elementos,
- implementações internas desses elementos não são considerados arquiteturais
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "sei2006architecture"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Para encontrar e configurar componentes de software de uma arquitetura,
- uma opção é descrever esses componentes, usando uma ontologia, e usar os
- termos dessa ontologia para encontrar os componentes corretos para uma
- aplicação 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Linhalis2010"
-
-\end_inset
-
-.
- Essas ontologias podem ser criadas utilizando linguagens padrões da Web
- Semântica, como a Web Ontology Language (OWL), para melhor portabilidade
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Pahl2007"
-
-\end_inset
-
-.
- Ontologias e padrões da Web Semântica serão abordados com mais profundidade
- no próximo capítulo.
-\end_layout
-
-\begin_layout Standard
-Devido ao fato de que os elementos básicos de todo o SAD (Figura 
+Os SADs segundo a descrição feita no capitulo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Componentes-SAD"
+reference "chap:SAD"
 
 \end_inset
 
-) serem muito parecidos, é possível criar uma arquitetura que possa ser
- re\SpecialChar nobreakdash
-usada em diferentes SADs (ou classes de SADs).
- Esta arquitetura pode ser baseada em componentes de software re\SpecialChar nobreakdash
-usáveis.
- Programadores podem usar essa arquitetura e re\SpecialChar nobreakdash
-usar os componentes de software,
- já desenvolvidos para ela, para implementar SADs mais rapidamente.
-\end_layout
+ estão compostos por banco de dados, base de conhecimento, modulo de processamen
+to da informação e modulo gerador de resultados, em cada um destes módulos
+ está implícito o conhecimento dos especialistas, pelo qual a primeira caracterí
+stica definida foi a integração de ontologias da web semântica para permitir
+ a definição do conhecimento dos especialistas em um componente independente
+ o qual é complementado pela DSL que permite o uso e gerenciamento das ontologia
+s em termos dos especialistas, dita solução foi apresentada na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Componente-DSL"
 
-\begin_layout Standard
-Como especialistas de domínio não têm um conhecimento muito detalhado sobre
- linguagens de especificação de sistemas, é necessário o desenvolvimento
- de uma 
-\lang english
-Domain Specific Languag
-\lang brazilian
-e (DSL) adequada ao nível de conhecimento de computação dos especialistas.
- Essa linguagem também deve conter termos familiares ao domínio desses especiali
-stas.
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
- propusessem a geração automática de interface para Sistemas de Apoio a
- Decisão (SADs) com ou sem o uso de ontologias.
- Os artigos encontrados mais próximos ao tema deste trabalho tratam do uso
- de ontologias ou de frameworks em SADs para a área de sustentabilidade,
- área que vai ser usada neste trabalho para teste dos sistemas desenvolvidos.
+A partir deste diagrama foi analisado como generalizar os componentes dos
+ SAD, A com os quais é possível criar uma arquitetura que possa ser reusada
+ em diferentes SADs (ou classes de SADs), os programadores podem usar essa
+ arquitetura e reusar os componentes de software, já desenvolvidos para
+ ela, para implementar outros SADs similares mais rapidamente.
  
 \end_layout
 
 \begin_layout Standard
-O modelo geral desta solução é apresentado na Figura 
+Dito design do caso de uso SAD SustenAgro, permitiu definir os seguintes
+ componentes, representados na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Interfaces"
 
 \end_inset
 
-, na qual as ontologias representam o banco de dados, base de modelos e
- base de conhecimento, permitindo a integração e padronização desses componentes
-, ditas ontologias são gerenciadas pela DSL que permite definir o comportamento
- do SAD e finalmente é integrado o sistema de GUIs que permite visualizar
- o SAD por meio de uma interface Web, suportando assim o componente visual
- dos SAD.
+:
 \end_layout
 
-\begin_layout Standard
-O processo de definição dos SAD são controlados pela DSL, disponibilizando
- aos especialistas do domínio uma linguagem especializada e de fácil uso
- para definir e configurar os SAD segundo o critério deles, o conjunto destes
- três componentes foi intitulado Decisioner.
+\begin_layout Enumerate
+Ontologia do domínio: representa os conceitos específicos dos especialistas
+ que vão ser utilizado no SAD
+\end_layout
+
+\begin_layout Enumerate
+Ontologia de interfaces gráficas: representa as interfaces gráficas de usuários
+ e os tipos de dados, fazendo um mapeamento entre os dois.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+TripleStore
+\lang brazilian
+: sistema de armazenamento e recuperação da informação que padroniza as
+ informações em formato de triplas, permitindo o gerenciamento de ontologias
+ em formato 
+\lang english
+RDF
+\lang brazilian
+ e a compatibilidade e o reúso das informações entre fontes de dados externas.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Ontology Editor
+\lang brazilian
+: Um componente que permite editar as ontologias em um formato de fácil
+ uso para os especialistas.
+\end_layout
+
+\begin_layout Enumerate
+DSL: representa uma instancia da DSL com as definições particulares de cada
+ SAD.
+\end_layout
+
+\begin_layout Enumerate
+DSL Editor: Editor visual da DSL compatível com tecnologias web para permitira
+ a definição de 
+\lang english
+DSLs
+\lang brazilian
+ por parte dos especialistas do domínio.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+DSL Interpreter
+\lang brazilian
+: Intérprete da DSL para processar as definições do SAD e vincular todos
+ os componentes dos SAD gerados, entre eles as ontologias, as definições
+ nas 
+\lang english
+DSLs
+\lang brazilian
+ e os 
+\lang english
+web components
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Web components:
+\lang brazilian
+ conjunto de elementos visuais que podem ser reusados nos SADs, com a finalidade
+ de modularizar e simplificar a geração de GUIs.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Graphical User Interfaces
+\lang brazilian
+: Interfaces visuais geradas do 
+\lang english
+DSL Interpreter
+\lang brazilian
+ que utilizam os 
+\lang english
+Web Components
+\lang brazilian
+ para fornecer uma interface gráfica de interação com o SAD na Web.
 \end_layout
 
 \begin_layout Standard
@@ -254,22 +273,11 @@ name "fig:Interfaces"
 
 \end_layout
 
-\begin_layout Enumerate
-Ontologia de interfaces gráficas: ontologia que representa as interfaces
- gráficas de usuários e os tipos de dados, fazendo um mapeamento entre os
- dois.
-\end_layout
-
-\begin_layout Enumerate
-TripleStore: sistema de armazenamento e recuperação da informação que padroniza
- as informações em formato de triplas, permitindo a compatibilidade e o
- reúso das informações entre fontes de dados externas.
-\end_layout
-
-\begin_layout Enumerate
-Sistema gerador de interfaces gráficas: Sistema que usa a ontologia de interface
-s gráficas e as definições feitas na DSL para gerar as interfaces gráficas
- Web, que compõem os SADs gerados pelo Decisioner.
+\begin_layout Standard
+O processo de definição dos SAD são controlados pela DSL, disponibilizando
+ aos especialistas do domínio uma linguagem especializada e de fácil uso
+ para definir e configurar os SAD segundo o critério deles, o conjunto destes
+ componentes foi intitulado Decisioner.
 \end_layout
 
 \begin_layout Section
@@ -317,11 +325,6 @@ Melhorar as possibilidades de interação;
 
 \begin_layout Enumerate
 Melhorar o processo de desenvolvimento;
-\end_layout
-
-\begin_layout Standard
-são apresentados os usos mais comuns de ontologias que suportem interfaces
- gráficas (ontology-enhanced user interface), eles
 \end_layout
 
 \begin_layout Section
@@ -391,6 +394,20 @@ Os componentes da arquitetura do SustenAgro não são exclusivos do SustenAgro,
 
 \begin_layout Subsection
 Ontologia Decisioner
+\end_layout
+
+\begin_layout Standard
+Essas ontologias podem ser criadas utilizando linguagens padrões da Web
+ Semântica, como a Web Ontology Language (OWL), para melhor portabilidade
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pahl2007"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1008,6 +1025,26 @@ As ontologias desenvolvidas foram modelados os conceitos envolvidos no processo
  de avaliação da sustentabilidade em agricultura, definindo, classificando
  e relacionando cada um dos conceitos para assim permitir o uso em outros
  sistemas e conseguir fazer inferência de novo conhecimento.
+\end_layout
+
+\begin_layout Standard
+GUI como componentes principais, os quais foram organizados em ontologias
+ e nas DSL com a finalidade de desenhar um sistema gerador de SAD.
+\end_layout
+
+\begin_layout Standard
+Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
+ propusessem a geração automática de interface para Sistemas de Apoio a
+ Decisão (SADs) com ou sem o uso de ontologias.
+ Os artigos encontrados mais próximos ao tema deste trabalho tratam do uso
+ de ontologias ou de frameworks em SADs para a área de sustentabilidade,
+ área que vai ser usada neste trabalho para teste dos sistemas desenvolvidos.
+ 
+\end_layout
+
+\begin_layout Standard
+sistema de GUIs que permite visualizar o SAD por meio de uma interface Web,
+ suportando assim o componente visual dos SAD.
 \end_layout
 
 \begin_layout Section

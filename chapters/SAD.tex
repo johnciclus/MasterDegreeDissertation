@@ -1,108 +1,247 @@
 A construção de sistemas que sejam capazes de fornecer um suporte
 ao gestor em um processo de tomada de decisões vem sendo um desafio
-ao longo dos anos. Sistemas de Apoio a Decisão (SAD) \nomenclature{SAD}{Sistemas de Apoio a Decisão}
-são sistemas que possuem meios que auxiliam a comparação, analise
-e apoio para escolha de alternativas num processo de decisão. Sendo
-necessária a integração de metodologias feitas por especialistas da
-área em questão \citet{heinzle2010semantica}.
+ao longo dos anos, os SADs são sistemas software que visam melhorar
+a tomada de decisão individual ou grupal, combinando o conhecimento
+do tomador(es) de decisão com dados relevantes de fontes confiáveis,
+nos quais são aplicados métodos e modelos matemáticos para suportar
+o analise, comparação e escolha de alternativas no processo de decisão
+\citet{Tweedale2016} 
 
 SADs auxiliam tomadores de decisão dando-lhes um maior entendimento
-do domínio. Eles combinam as habilidades dos especialistas (humanos)
-à capacidade dos computadores de acessar dados, estruturar eles em
-modelos, interpretar, formular e avaliar alternativas e cenários distintos
-onde podem haver possíveis soluções para os problemas que se querem
-solucionar \citet{lu2006application}.
+do domínio, eles combinam as habilidades e as metodologias dos especialistas
+(humanos)\citet{heinzle2010semantica}, à capacidade dos computadores
+de acessar dados, estruturar eles em modelos, interpretar, formular
+e avaliar alternativas e cenários distintos onde podem haver possíveis
+soluções para os problemas que se querem solucionar \citet{lu2006application}.
 
-O autor \citet{junior2006sistemas} cita algumas vantagens dos SADs:
-\begin{itemize}
-\item Manuseio de extensos volumes de dados: estes sistemas permitem a utilização
-de grandes volumes de dados para analisar resultados;
-\item Captação de dados de várias fontes: SADs tem a capacidade de obter
-dados externos e integrá-los a dados já existentes;
-\item Flexibilidade na geração de relatórios: sistemas desse tipo podem
-exibir relatórios e/ou resultados do jeito mais usável pelo tomador
-de decisões;
-\item Solução de Problemas: tem-se a capacidade de encontrar soluções em
-problemas simples e encontrar soluções viáveis em problemas complexos;
-\item Execução de simulações: um SAD pode fazer modificações teóricas nos
-dados e observar os impactos que isso causa nos resultados;
-\item Suporte a todos os níveis de tomada de decisões: esse tipo de sistema
-pode auxiliar em todos os níveis de tomada de decisões dentro de uma
-organização.
-\end{itemize}
-\begin{figure}[H]
-\noindent \begin{centering}
-\includegraphics[clip,width=1\columnwidth,bb = 0 0 200 100, draft, type=eps]{/home/john/Desktop/Dissertation/figures/owl2-profiles.png}
-\par\end{centering}
-\caption{Componentes de um SAD \citet{junior2006sistemas}.\label{fig:Componentes-SAD}}
-\end{figure}
-
-A Figura \ref{fig:Componentes-SAD} mostra os componentes genéricos
-de um SAD. Eles podem ser divididos em dados, banco de modelos, base
-de conhecimento e interface de usuário; o banco de dados armazena
-os dados não tratados, é importante que dito banco seja mantido atualizado
-para um resultado confiável, o banco de modelos armazena vários modelos
-que auxiliam a criação de cenários para a tomada de decisões, o banco
-de conhecimento é produzido a partir do entendimento profundo do domínio
-de conhecimento no qual são abstraídas as regras do sistema e a interface
-de usuário representa cada camada do SADs para que o usuário interaja
-com ele.
+SADs são criados por especialistas nas áreas de domínio nas quais
+eles serão aplicados e implementados por programadores, esse pode
+ser um processo lento e custoso, já que os dois grupos de profissionais
+têm \foreignlanguage{english}{\emph{Backgrounds}} diferentes e vão
+ter problemas de comunicação durante o processo de criação e testes
+de um SAD. Esses profissionais podem ser até de organizações diferentes,
+o que dificulta ainda mais o processo.
 
 \section{Arquitetura para Sistemas de Apoio à Decisão}
 
-A arquitetura de um software define a organização em termos de seus
-componentes, suas interconexões, suas interações e também suas principais
-propriedades \citet{de1997software}. Ela fornece as informações de
-como os elementos envolvidos nela se relacionam. Arquiteturas trabalham
-a parte externa das ligações entre seus elementos, implementações
-internas desses elementos não são considerados arquiteturais \citet{sei2006architecture}.
+Durante a evolução dos SAD, tem acontecido varias melhoras na arquitetura
+deles, a tendencia é a integração com os métodos de inteligencia artificial
+para estender a aplicabilidade dos SAD a problemas complexos, gerando
+os \foreignlanguage{english}{Intelligent Decision Support System (IDSS)}
+que se caracterizam por ter agentes inteligentes, entre os métodos
+usados estão as bases de conhecimento que suportam a inferência, permitindo
+o desenvolvimento de \foreignlanguage{english}{Expert Systems} e \foreignlanguage{english}{Knowledge
+Based Systems} sistemas são classificados como \foreignlanguage{english}{Rule
+Based Systems}\citet{Tweedale2016}, este tipo de sistemas conformam
+o escopo da pesquisa apresentada neste documento.
 
-SADs são criados por especialistas nas áreas de domínio nas quais
-eles serão aplicados e implementados por programadores. Esse pode
-ser um processo lento e custoso, já que os dois grupos de profissionais
-têm \foreignlanguage{english}{\emph{backgrounds}} diferentes e vão
-ter problemas de comunicação durante o processo de criação e testes
-de um SAD. Esses profissionais podem ser até de organizações diferentes,
-o que dificulta ainda mais o processo. Devido ao fato de que os elementos
-básicos de todo o SAD (Figura \ref{fig:Componentes-SAD}) serem muito
-parecidos, é possível criar uma arquitetura que possa ser re\nobreakdash-usada
-em diferentes SADs (ou classes de SADs). Esta arquitetura pode ser
-baseada em componentes de software re\nobreakdash-usáveis. Programadores
-podem usar essa arquitetura e re\nobreakdash-usar os componentes
-de software, já desenvolvidos para ela, para implementar SADs mais
-rapidamente.
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[width=0.8\columnwidth]{\string"figures/Intelligent DSS\string".png}
+\par\end{centering}
+\caption{Componentes de um SAD .\label{fig:Componentes-SAD}}
+\end{figure}
 
-Para encontrar e configurar componentes de software de uma arquitetura,
-uma opção é descrever esses componentes, usando uma ontologia, e usar
-os termos dessa ontologia para encontrar os componentes corretos para
-uma aplicação \citet{Linhalis2010}. Essas ontologias podem ser criadas
-utilizando linguagens padrões da Web Semântica, como a Web Ontology
-Language (OWL\nomenclature{OWL}{Web Ontology Language}), para melhor
-portabilidade \citet{Pahl2007}. Ontologias e padrões da Web Semântica
-serão abordados com mais profundidade no próximo capítulo.
+A Figura \ref{fig:Componentes-SAD} mostra os componentes de um SAD\citet{Tweedale2016},
+que são descritos a continuação: 
+\begin{description}
+\item [{I\foreignlanguage{english}{nputs}}] Corresponde à entradas do sistema,
+que esta composta do conhecimento dos especialistas que pode estar
+representada em uma base de conhecimento, e dos dados que serão processados,
+que podem estar em um banco de dados, estes dois componentes devem
+ser o mais precisos e completos possíveis para garantir boas respostas
+do sistema.
+\selectlanguage{english}%
+\item [{Processing}] \foreignlanguage{brazil}{Está composta pelos modelos
+e métodos de organização e processamento dos dados, e restrições para
+avaliar as alternativas de resposta, este componente contem os métodos
+matemáticos que processam os dados, permitindo gerar os resultados
+do sistema.}
+\item [{Outputs}] \foreignlanguage{brazil}{São os resultados do processamento
+dos inputs e permite comparar as alternativas de decisão, como saídas
+comuns estão os relatórios, previsões e recomendações, os quais são
+apresentados por meio de uma interface de usuário para facilitar o
+entendimento e interação com o usuário}
+\end{description}
+Os SAD contem o conhecimento dos especialistas implícito nos componentes
+dele, uma das mudanças da arquitetura realizada no presente trabalho,
+foi que o conhecimento do especialista ficasse agrupado em uma ontologia
+que permite definir, classificar, relacionar e inferir conhecimento,
+com a finalidade de facilitar a definição e atualização de conceitos
+por parte dos especialistas, permitindo que eles mesmos descrevam
+o domínio sem precisar de desenvolvedores, e a partir dessa definição
+computável será gerado o SAD, os especialistas desse domínio terão
+familiaridade com os termos da ontologia e poderão especificar grande
+parte conhecimento envolvido no SAD. Idealmente, essa definição deve
+ser detalhada o suficiente para que os desenvolvedores possam desenvolver
+a parte computacional do SAD sem necessidade de \foreignlanguage{english}{feedback}
+dos especialistas.
 
-Ontologias, que descrevam componentes de software para serem usados
-num SAD de um determinado domínio, terão uma grande quantidade de
-termos derivados desse domínio. Especialistas desse domínio terão
-familiaridade com esses termos e poderão especificar grande parte
-do fluxo de trabalho do SAD usando esses termos. Idealmente, essa
-especificação deve ser detalhada o suficiente para que programadores
-possam desenvolver a parte computacional do SAD sem necessidade de
-mais feedback dos especialistas.
+\section{SAD SustenAgro}
 
-Como especialistas de domínio não têm um conhecimento muito detalhado
-sobre linguagens de especificação de sistemas, é necessário o desenvolvimento
-de uma \foreignlanguage{english}{Domain Specific Languag}e (DSL) adequada
-ao nível de conhecimento de computação dos especialistas. Essa linguagem
-também deve conter termos familiares ao domínio desses especialistas. 
+O SAD Sustenagro requerido pelos especialistas em sustentabilidade
+da Embrapa Meio Ambiente requiriu inicialmente as seguintes características:
+\begin{itemize}
+\item Sistema web com banco de dados que armazene e recupere as informações
+do sistema.
+\item Integração e implementação do método SustenAgro de avaliação da sustentabilidade
+descrito no apêndice \ref{chap:Sustainability_Assessment} 
+\item Suporte para adaptar o método SustenAgro a outras culturas.
+\item Integração com o sistemas de georreferenciação.
+\item Desenvolvimento de \foreignlanguage{english}{widgets} especificas
+\foreignlanguage{english}{Sustainability Matrix }e \foreignlanguage{english}{Sustainability
+Semaphore} 
+\item Geração de relatórios e de recomendações de sustentabilidade.
+\end{itemize}
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[width=0.6\columnwidth]{\string"figures/SustenAgro Initial Architecture\string".png}
+\par\end{centering}
+\caption{SustenAgro arquitetura inicial\label{fig:SustenAgro-arquitetura-inicial}}
+\end{figure}
 
-\section{Considerações Finais}
+A figura \ref{fig:SustenAgro-arquitetura-inicial} mostra a arquitetura
+inicial do SAD SustenAgro, a qual corresponde a um sistema de informação
+tradicional que requer da intervenção dos desenvolvedores de software
+para definir ou atualizar o conhecimento do domínio, exatamente o
+problema que abordamos nesta pesquisa, pelo qual se tomo como projeto
+piloto.
 
-Este capítulo apresentou os conceitos principais de SADs, incluindo
-a definição geral e a arquitetura de software. Ele também apontou
-para a necessidade da geração automática (ou semi\nobreakdash-automática)
-de interfaces gráficas de usuários SADs. Uma abordagem para conseguir
-a geração automática (ou semi\nobreakdash-automática) de GUIs consiste
-na integração com DSLs, onde sejam definidas as características gerais
-do sistema e integrado com os conceitos do domínio de conhecimento
-a través das ontologias usadas nesses sistemas.
+Um dos problemas identificados foi que os especialistas não tinham
+uma definição clara do SAD SustenAgro, pelo que foi necessário realizar
+um levantamento de requerimentos descrito no capitulo \ref{chap:SustenAgro}
+para definir os requisitos funcionais e não funcionais, além disso
+foi necessário reestruturar o desenvolvimento do SAD SustenAgro para
+que faça parte do processo pesquisa.
+
+\section{Trabalhos relacionados}
+
+Com a finalidade de relacionar pesquisas de referencia que forneçam
+ideias e exemplos para abordar o problema da seguinte pesquisa, realizou-se
+uma consulta sobre, definição de SADs por meio de ontologias do domínio
+dos especialistas, e SADs semelhantes ao SustenAgro, em diversas fontes
+de informação acadêmica.
+
+Sobre definição de SADs, encontrou-se que na literatura existem pesquisas
+relacionadas com o vocabulário \foreignlanguage{english}{\emph{AGROVOC\nomenclature{AGROVOC}{Agricultural vocabulary}}}\emph{
+}\foreignlanguage{english}{\emph{Agricultural Vocabulary}} \footnote{http://aims.fao.org/agrovoc}
+que é um \foreignlanguage{english}{\emph{theasaurus}} que fornece
+termos padronizados sobre alimentação, nutrição, agricultura, pesca,
+floresta e meio ambiente criados de maneira colaborativa e coordenados
+pela \emph{FAO}, estes termos podem ser reutilizados nas ontologias
+\citep{DCMIPro841}, permitindo uma padronização com os identificadores
+dos conceitos, reutilizando informações e integrando os conceitos
+com outros dados da \foreignlanguage{english}{Linked Open Data} (\foreignlanguage{english}{LOD}\nomenclature{LOD}{Linked Open Data}),
+esta reutilização foi feita através da vinculação de \foreignlanguage{english}{AGROVOC}
+ao sistema \emph{AOS/CS }\foreignlanguage{english}{\emph{Agricultural
+Ontology Service Concept Server}}, a FAO desenvolveu um modelo base
+para esse novo sistema utilizando o \foreignlanguage{english}{\emph{OWL}}\emph{.}
+
+\citet{kraines2011system} desenvolveu uma ferramenta com a visão
+de criar um \foreignlanguage{english}{\emph{Knowledge Sharing System}}\emph{
+for}\foreignlanguage{english}{\emph{ Sustainability Science}} por
+meio do processo \foreignlanguage{english}{\emph{Semantic Data Modeling}},
+uma ontologia fundamentada na lógica descritiva foi desenvolvida por
+meio do ISO 15926 \foreignlanguage{english}{Data Model} para descrever
+três tipos de conceitualizações de ciência sustentável: \foreignlanguage{english}{\emph{situational
+knowledge}}, \foreignlanguage{english}{\emph{analytic methods}} e
+\foreignlanguage{english}{\emph{scenario frameworks}}. Os conhecimentos
+dos especialistas podem ser descritos por meio de \foreignlanguage{english}{\emph{semantic
+statements}} utilizando dita ontologia o \foreignlanguage{english}{\emph{semantic
+matching based on logic}} e \foreignlanguage{english}{\emph{rule-based
+inferences}} foram usados para quantificar o \foreignlanguage{english}{\emph{conceptual
+overlap of semantic statements}}.
+
+Cada uma destas pesquisas fornece um exemplo do uso de ontologias
+na criação de soluções baseadas em conhecimento, isto é confirmado
+por \citet{roussey2010ontologies} por meio da descrição de como as
+ontologias têm sido usadas para múltiplas tarefas, uma das quais é
+conseguir interoperabilidade entre sistemas de informação heterogêneos
+e como as seguintes gerações de sistemas de informação utilizariam
+uma base do conhecimento do domínio, dadas as afirmações destas pesquisas
+pode-se deduzir que uma ontologia proporciona o suporte conceitual
+para cumprir os requisitos do sistema SustenAgro.
+
+Sobre SADs semelhantes ao SustenAgro, encontrou-se que \citet{Wilson2007299},
+analisaram e melhoraram a abordagem para o desenho e uso de modelos\emph{
+}\foreignlanguage{english}{\emph{Sustainable Development Indicator}}
+\emph{\nomenclature{SDI}{Sustainable Development Indicator}}, permitindo
+avaliar se as métricas globais SDI mostrando uma abordagem clara para
+definir métodos de avaliação o desenvolvimento sustentável. 
+
+Seis métricas globais SDI são comparadas e os resultados ilustram
+que as diferentes métricas variam à interpretação sobre a sustentabilidade
+das nações, o grau de variabilidade entre as métricas é analisado
+por meio de análises de correlação, ao final conclui-se que não existe
+consenso sobre a melhor abordagem para definir métricas.
+
+Uma estratégia para abordar a complexidade em SADs são métodos e metodologias
+de avaliação, que utilizam indicadores, um exemplo desse enfoque é
+a pesquisa de \citet{AlkanOlsson:2009}, nela foi desenvolvido um
+\foreignlanguage{english}{\emph{framework}} de indicadores que relaciona,
+de uma maneira consistente, as dimensões ambiental, econômica e social
+do desenvolvimento sustentável. Seu principal benefício é uma relativa
+simplicidade na apresentação da informação e a possibilidade de vincular
+os indicadores com objetivos políticos de cada dimensão da sustentabilidade
+e assim facilitar a comparação dos impactos das novas políticas em
+cada dimensão.
+
+Na pesquisa de \citet{Ewert2009546} apresenta varias estrategias
+para abordar a complexidade nos sistemas agrícolas, começa relacionando
+a agricultura com os sistemas socioeconômicos e naturais, e enfrenta
+o problema de gerir suas múltiplas funções de uma maneira sustentável,
+o método \foreignlanguage{english}{\emph{Integrated Assessment and
+Modeling}}\emph{ (IAM)} pode fornecer uma visão sobre os possíveis
+impactos das mudanças políticas, existem múltiplos modelos \foreignlanguage{english}{\emph{Integrated
+Assessment}}\emph{ (IA)} mas a maioria são monolíticos resolvendo
+problemas específicos, os enfoques flexíveis são escassos, o \emph{framework}
+proposto (SEAMLESS-IF) integra relações e processos através de \emph{''disciplinas
+e escalas''} e combina análises quantitativos com apreciações qualitativas
+e experiências, permitindo um acoplamento entre modelos e ferramentas,
+este \emph{framework} permite um avanço significativo em flexibilidade
+de IAM o que permite melhorar a modelagem integrado para avaliação
+do impacto em agricultura. A pesquisa apresenta exemplos da natureza
+complexa do sistema agrícola.
+
+A pesquisa feita por \citet{boseley2009development}, apresenta um
+exemplo de como unificar termos de plantas e organizá-los em uma maneira
+sistemática é fundamental para mais eficiência nas pesquisas e descobertas,
+para este fim, a \foreignlanguage{english}{\emph{Plant Ontology}}
+foi criada como uma iniciativa do \foreignlanguage{english}{\emph{Plant
+Ontology Consortium}}, esta ontologia é um vocabulário controlado
+de termos usados para dados de atributos (por exemplo, genótipo e
+fenótipo) para uma estrutura especifica da planta ou um estagio de
+desenvolvimento.
+
+Existem pesquisas que abordam a sustentabilidade a través de ferramentas
+tecnológicas, as quais podem servir de referencia ao sistema SustenAgro,
+uma delas foi desenvolvida por \citet{brilhante:2006} e consiste
+em um \emph{framework} (MOeMA-IS) para análise sustentável do estado
+do Amazonas, que usa uma ontologia para descrição de indicadores de
+sustentabilidade (\foreignlanguage{english}{ISD-Economics Ontology}),
+onde são usados os indicadores humano (Social), suporte (Econômico)
+e natural (Ambiental), os quais foram subdivididos em sete indicadores,
+seu desenvolvimento foi feito de uma maneira genérica de forma que
+ela suporta a inclusão de novos indicadores de forma simples, esta
+ontologia foi feita em dois níveis de hierarquia, o \emph{framework
+}trabalha de forma onde a base dele é a ontologia e ele emprega os
+indicadores de bases de dados (não foi descrito se são \foreignlanguage{english}{\emph{triple-stores}})
+e as medidas e valores padrões de outra base e assim o \emph{framework}
+calcula as medias dos indicadores e dá um resultado relevante ao tipo
+de necessidade. Para o desenvolvimento da ontologia foi utilizada
+a ferramenta \emph{Protégé} utilizando o \foreignlanguage{english}{plug-in}
+de \foreignlanguage{english}{OWL} e alguns indicadores foram feitos
+utilizando a classe do SUMO do \foreignlanguage{english}{OWL}.
+
+\section{Considerações finais}
+
+O desenvolvimento do SAD SustenAgro, não satisfaz os requisitos de
+desenvolvimento de um trabalho de mestrado, devido a que não envolve
+a utilização de métodos e técnicas de investigação cientifica, pelo
+qual será incluído dentro de um processo maior de pesquisa, onde seja
+possível incluir o desenvolvimento dele com a finalidade de desenvolver
+uma hipótese de pesquisa, a solução do problema do presente trabalho
+``A inexistência de uma representação de conhecimento para definir
+SADs, que tenha um formato computável, entendível e acessível pelos
+especialistas do domínio e desenvolvedores de software'' requiriu
+um direcionamento cientifico no desenvolvimento.

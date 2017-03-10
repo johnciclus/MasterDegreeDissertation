@@ -438,19 +438,6 @@ name "chap:Context"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Groovy e Grails, Protege e OWL
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/Context.lyx"

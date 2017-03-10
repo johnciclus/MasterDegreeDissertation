@@ -133,6 +133,30 @@ Arquitetura para Sistemas de Apoio à Decisão
 \end_layout
 
 \begin_layout Standard
+A arquitetura de um software define a organização em termos de seus componentes,
+ suas interconexões, suas interações e também suas principais propriedades
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "de1997software"
+
+\end_inset
+
+.
+ Ela fornece as informações de como os elementos envolvidos nela se relacionam.
+ Arquiteturas trabalham a parte externa das ligações entre seus elementos,
+ implementações internas desses elementos não são considerados arquiteturais
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "sei2006architecture"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Durante a evolução dos SAD, tem acontecido varias melhoras na arquitetura
  deles, a tendencia é a integração com os métodos de inteligencia artificial
  para estender a aplicabilidade dos SAD a problemas complexos, gerando os

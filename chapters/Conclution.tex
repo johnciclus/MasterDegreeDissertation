@@ -22,33 +22,112 @@ que fique simples para os usuários finais e assim permitir que os
 especialistas no domínio façam as mudanças sem precisas dos especialistas
 de T.I.
 
+\section{Discussão}
+
 \section{Trabalhos Futuros}
 
-Este capítulo apresenta os resultados estão uma versão da ontologia
-de domínio do SustenAgro e artefatos para o desenvolvimento da interface
-visual do sistema: User Stories, Scenarios, Story Boards, Mockups
-e um protótipo para a interface do SustenAgro.
+Analisando os componentes e o desenvolvimento do Sistema SustenAgro,
+surgem ideias que permitem expandir o trabalho atual e propor projetos
+de investigação e desenvolvimento tecnológico, entre as possibilidades
+identificadas estão:
 
-Os resultados obtidos são: 
+\subsection{Editor de ontologias web focado no usuário especialista}
+
+No sistema SustenAgro foi integrado um editor de ontologias que é
+baseado no formato YAML de fácil legibilidade, com a finalidade de
+fornecer uma ferramenta web de fácil uso e acesso para que os usuários
+especialistas possam editar a ontologia do domínio, no caso de SustenAgro
+a ontologia de avaliação de sustentabilidade.
+
+A partir de esta ferramenta é possível propor um editor online focado
+em especialistas do domínio, com a finalidade de facilitar a definição
+e edição de ontologias, o qual poderia estar composto pelas seguintes
+funcionalidades:
 \begin{enumerate}
-\item Ontologia em formatos da web semântica (RDF/OWL) da avaliação da sustentabilidade
-no sistema de cana-de-açúcar. 
-\item Protótipo de ontologia de interfaces gráficas em formatos da web semântica
-(RDF/OWL) 
-\item Linguagem de domínio especifico DSL, Decisioner, para definir e permitir
-administrar os parâmetros e processos do sistema SustenAgro 
-\item Protótipo de sistema de geração de interfaces suportado nas tecnologias
-da web semântica 
-\item Formulários para recolha de dados sobre sustentabilidade em cana-de-açúcar,
-e o processo de colheita dos dados de algumas usinas do estado de
-São Paulo 
-\item Protótipo do sistema web Sustenagro que integra as ontologias e a
-DSL, fornecendo um comportamento configurável em tempo de execução
-dos parâmetros, processos e das interfaces gráficas de usuário
+\item Editor textual do conhecimento do domínio do especialista
+\item Editor de mapas conceituais que reuse informações do texto
+\item Editor visual da ontologia que reuse os mapas conceituais e permita
+gerar o modelo hierárquico RDFS
+\item Editor de regras e OWL
+\item Editor de indivíduos
+\item Publicação da ontologia em um repositório permanente
 \end{enumerate}
-Uma das finalidades deste projeto é construir um gerador de sistemas
-de apoio a decisão que consiga suportar outros domínios de conhecimento,
-propondo para a comunidade uma metodologia de desenvolvimento e manutenção
-que fique simples para os usuários finais e assim permitir que os
-especialistas no domínio façam as mudanças sem precisas dos especialistas
-de T.I.
+
+\subsection{Linguagem de definição de SAD: Decisioner}
+
+No sistema SustenAgro, foi desenvolvida uma DSL que permite definir
+o comportamento de um SAD, no caso realizado foi o desenvolvimento
+de um sistema de avaliação de sustentabilide, os conceitos foram abstraidos
+por meio da ontologia de SAD que permite identificar e modelar os
+conceitos gerais dos sistemas software de avaliação usados pela Embrapa
+Meio Ambiente, o que resultou em uma linguagem de proposito especifico
+para o sistema SustenAgro e similares.
+
+Esta linguagem pode ser validada, melhorada e expandida por meio da
+definição e desenvolmiento de outros SAD com propositos similares,
+desenvolvimento continuado pelo sistema NanoTec Ram que permite a
+valiação do risco.
+
+\subsection{Reportes de consultas semanticas}
+
+Gerar SADs que suportem consultas complexas que requerem conhecimento
+semântico, facilitando o processo de análises da informação por parte
+dos usuários.
+
+\subsection{Linguagem de edição de VIEWs}
+
+Na geração de interfaces gráficas é necessário o gerenciamento e organização
+do conteúdo e das widgets (elementos de uma GUI) com a finalidade
+de fornecer uma representação visual que consiga informar um determinado
+assunto.
+
+Atualmente na geração de VIEWs nos sistemas web, são usadas tecnologias
+feitas para os desenvolvedores web front-end que permitem a manipulação
+da estrutura do documento atraves de HTML, do estilo do documento
+atraves de CSS e do comportamento JS. Mas estes elementos estão focados
+na representação computacional dessas carateristicas, porem é possivel
+propor outra maneira de representação em mais alto nivel.
+
+A proposta é de uma linguagem para ediação de VIEWs, onde os elementos
+estejam modularizados permitindo abstrair a View em uma hierarquia
+de componentes relacionando-os semanticamente por meio de uma linguagem
+de alto nivel de usuário não especialista em web development.
+
+\subsection{Organização de widgets por meio de Polymer}
+
+No desenvolvimento do Sistema SustenAgro, foram definidas 60 widgets
+que foram reusadas na definição de cada uma das vistas de SustenAgro,
+essas widgets estão definidas no formato de templates do framework
+Grails
+
+\subsection{Georeferenção nos SAD}
+\begin{enumerate}
+\item Recuperação dos dados dos repositórios FAO Linked Data 
+\item Utilização de dados de fontes externas como Geonames, Wikimapia, DBpedia
+\item Mapeamento dos dados para uma \textit{triplestore} utilizando coordenadas
+geográficas para GeoSPARQL 
+\end{enumerate}
+
+\subsection{Desenvolver um framework para geração das interfaces usuário-computador
+geral para SAD. }
+
+\subsection{Fornecer um sistema de classificação e busca de controles de interfaces
+usuário-computador}
+
+\section{Dificuldades e Limitações}
+
+Até o presente momento, foi evidenciado como dificuldade para desenvolvimento
+do projeto as escassas fontes de informação que forneçam uma conexão
+entre sistemas de produção agrícola e sustentabilidade. Só foi possível
+encontrar fontes de informação especializada em cada área do conhecimento
+de maneira separada. Outro problema é a falta de dados resultantes
+da aplicação dos indicadores de sustentabilidade fornecidos pela Embrapa.
+
+Organizacional pela equipe
+
+Interesse heterogêneos por parte da USP e da Embrapa
+
+Cada uma das anteriores etapas de desenvolvimento foram testadas com
+os especialistas do domínio, para conseguir realizar o correto levantamento
+de requisitos, devido a que não existia uma definição especifica do
+que os especialistas precisavam.
