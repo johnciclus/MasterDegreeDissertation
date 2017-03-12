@@ -78,22 +78,25 @@
 A partir da descrição das características do SAD SustenAgro, do requisito
  de modelar o conhecimento a través de ontologias da web semântica e de
  definir uma DSL para facilitar a definição de conhecimento por parte dos
- especialistas, foi modelado um sistema que cumpre ditos requisitos e que
- fornecesse as condições para desenvolver um trabalho de pesquisa.
-\end_layout
-
-\begin_layout Standard
-Dito sistema foi intitulado Decisioner, e neste capítulo será apresentado
- a arquitetura dele e um protótipo que permite definir e gerar sistemas
- de Apoio à Decisão do tipo SustenAgro, conseguindo assim satisfazer os
- objetivos de pesquisa e do sistema requerido pelos pesquisadores da Embrapa
- meio Ambiente.
+ especialistas, foi modelado e desenvolvido um protótipo de sistema intitulado
+ Decisioner, que permite definir e gerar SADs do tipo SustenAgro.
 \end_layout
 
 \begin_layout Standard
 Decisioner está composto por ontologias que representam o conhecimento e
  por uma DSL que permite gerenciar os conceitos dos especialistas e estabelecer
  as configurações gerais para gerar SAD.
+\end_layout
+
+\begin_layout Standard
+Satisfazendo os requisitos requeridos pelos pesquisadores da Embrapa meio
+ Ambiente e fornecendo as condições para desenvolver uma pesquisa com o
+ problema identificado.
+\end_layout
+
+\begin_layout Standard
+Neste capítulo será apresentado a arquitetura do protótipo Decisioner, cada
+ uns dos seus componentes e funcionalidades e as contribuições na pesquisa.
 \end_layout
 
 \begin_layout Section
@@ -109,12 +112,18 @@ reference "chap:SAD"
 \end_inset
 
  estão compostos por banco de dados, base de conhecimento, modulo de processamen
-to da informação e modulo gerador de resultados, em cada um destes módulos
- está implícito o conhecimento dos especialistas, pelo qual a primeira caracterí
-stica definida foi a integração de ontologias da web semântica para permitir
- a definição do conhecimento dos especialistas em um componente independente
- o qual é complementado pela DSL que permite o uso e gerenciamento das ontologia
-s em termos dos especialistas, dita solução foi apresentada na figura 
+to da informação e modulo gerador de resultados.
+ Em cada um destes módulos está implícito o conhecimento dos especialistas,
+ pelo qual a primeira característica definida do Decisioner foi a integração
+ de ontologias da web semântica.
+ 
+\end_layout
+
+\begin_layout Standard
+As ontologias permitem a definição do conhecimento dos especialistas em
+ um componente independente o qual é complementado pela DSL, que permite
+ suportar a definição delas por parte dos especialistas e definir as característ
+icas do SAD, dita solução foi apresentada na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Componente-DSL"
@@ -127,111 +136,21 @@ reference "fig:Componente-DSL"
 
 \begin_layout Standard
 A partir deste diagrama foi analisado como generalizar os componentes dos
- SAD, A com os quais é possível criar uma arquitetura que possa ser reusada
- em diferentes SADs (ou classes de SADs), os programadores podem usar essa
- arquitetura e reusar os componentes de software, já desenvolvidos para
- ela, para implementar outros SADs similares mais rapidamente.
- 
+ SAD, e por meio do desenvolvimento de experimentos foi definida uma arquitetura
+ que possa ser reusada em diferentes SADs (ou classes de SADs).
 \end_layout
 
 \begin_layout Standard
-Dito design do caso de uso SAD SustenAgro, permitiu definir os seguintes
- componentes, representados na figura 
+A arquitetura baseada no caso de uso SAD SustenAgro, permitiu definir os
+ seguintes componentes gerais de definição de SADs, que permitem o reuso
+ deles, a figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Interfaces"
 
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Enumerate
-Ontologia do domínio: representa os conceitos específicos dos especialistas
- que vão ser utilizado no SAD
-\end_layout
-
-\begin_layout Enumerate
-Ontologia de interfaces gráficas: representa as interfaces gráficas de usuários
- e os tipos de dados, fazendo um mapeamento entre os dois.
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-TripleStore
-\lang brazilian
-: sistema de armazenamento e recuperação da informação que padroniza as
- informações em formato de triplas, permitindo o gerenciamento de ontologias
- em formato 
-\lang english
-RDF
-\lang brazilian
- e a compatibilidade e o reúso das informações entre fontes de dados externas.
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Ontology Editor
-\lang brazilian
-: Um componente que permite editar as ontologias em um formato de fácil
- uso para os especialistas.
-\end_layout
-
-\begin_layout Enumerate
-DSL: representa uma instancia da DSL com as definições particulares de cada
- SAD.
-\end_layout
-
-\begin_layout Enumerate
-DSL Editor: Editor visual da DSL compatível com tecnologias web para permitira
- a definição de 
-\lang english
-DSLs
-\lang brazilian
- por parte dos especialistas do domínio.
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-DSL Interpreter
-\lang brazilian
-: Intérprete da DSL para processar as definições do SAD e vincular todos
- os componentes dos SAD gerados, entre eles as ontologias, as definições
- nas 
-\lang english
-DSLs
-\lang brazilian
- e os 
-\lang english
-web components
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Web components:
-\lang brazilian
- conjunto de elementos visuais que podem ser reusados nos SADs, com a finalidade
- de modularizar e simplificar a geração de GUIs.
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Graphical User Interfaces
-\lang brazilian
-: Interfaces visuais geradas do 
-\lang english
-DSL Interpreter
-\lang brazilian
- que utilizam os 
-\lang english
-Web Components
-\lang brazilian
- para fornecer uma interface gráfica de interação com o SAD na Web.
+ apresenta os componentes e a interação entre eles:
 \end_layout
 
 \begin_layout Standard
@@ -274,57 +193,134 @@ name "fig:Interfaces"
 \end_layout
 
 \begin_layout Standard
-O processo de definição dos SAD são controlados pela DSL, disponibilizando
+Os componentes da arquitetura são:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Domain ontology
+\lang brazilian
+: representa os conceitos específicos dos especialistas que serão utilizados
+ no SAD
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Decisioner ontology
+\lang brazilian
+: representa os 
+\lang english
+data-types
+\lang brazilian
+ e as interfaces gráficas de usuários e os tipos de dados, fazendo um mapeamento
+ entre os dois.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Ontology Editor
+\lang brazilian
+: Um componente que permite editar as ontologias em um formato de fácil
+ uso para os especialistas.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Triplestore
+\lang brazilian
+: sistema software de armazenamento e recuperação da informação que padroniza
+ as informações em formato de triplas, permitindo o gerenciamento de ontologias
+ em formato 
+\lang english
+RDF
+\lang brazilian
+ e suportando consultas na linguagem Sparql 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Sparql"
+description "SPARQL Protocol and RDF Query Language"
+
+\end_inset
+
+ e o reúso das informações entre fontes de dados externas.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+DSL code
+\lang brazilian
+: representa uma instancia da DSL com as definições particulares para cada
+ SAD.
+\end_layout
+
+\begin_layout Enumerate
+DSL Editor: Editor visual da DSL compatível com tecnologias web que permitira
+ a definição de 
+\lang english
+DSLs
+\lang brazilian
+ por parte dos especialistas do domínio.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Web components:
+\lang brazilian
+ conjunto de elementos visuais que podem ser reusados nos SADs, com a finalidade
+ de modularizar e simplificar a geração de GUIs.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Decisioner Core
+\lang brazilian
+: Intérprete da DSL para processar as definições do SAD e vincular todos
+ os componentes dos SAD gerados, entre eles as ontologias, as definições
+ nas 
+\lang english
+DSLs
+\lang brazilian
+ e os 
+\lang english
+web components
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Graphical User Interfaces
+\lang brazilian
+: Interfaces visuais geradas do 
+\lang english
+DSL Interpreter
+\lang brazilian
+ que utilizam os 
+\lang english
+Web Components
+\lang brazilian
+ para fornecer uma interface gráfica de interação com o SAD na Web.
+\end_layout
+
+\begin_layout Standard
+Dita arquitetura foi implementada em um protótipo intitulado Decisioner,
+ que contem um conjunto de componentes que podem ser reutilizados pelos
+ desenvolvedores, e assim implementar de maneira ágil outros SADs similares
+ ao SustenAgro.
+ 
+\end_layout
+
+\begin_layout Standard
+O processo de definição dos SAD, é suportado pela DSL, disponibilizando
  aos especialistas do domínio uma linguagem especializada e de fácil uso
  para definir e configurar os SAD segundo o critério deles, o conjunto destes
  componentes foi intitulado Decisioner.
-\end_layout
-
-\begin_layout Section
-Trabalhos relacionados
-\end_layout
-
-\begin_layout Standard
-Sobre as ontologias na interface gráfica encontramos: no artigo de 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ruiz2006using"
-
-\end_inset
-
- é analisado o uso de ontologias na engenharia de software, identificando
- 50 tipos de uso entre as quais foram identificados dois usos no suporte
- de interfaces gráficas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "paulheim2012ontology"
-
-\end_inset
-
- propõem a seguinte definição, uma 
-\lang english
-ontology-enhanced user
-\lang brazilian
- interface é uma interface cujas capacidades de visualização, possibilidades
- de interação, ou processo de desenvolvimento estão habilitados ou (pelo
- menos) melhorado pelo emprego de uma ou mais ontologias, na pesquisa foram
- identificados três propósitos para os quais são usadas as ontologias no
- melhoramento das interfaces gráficas, e são os seguintes:
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as capacidades de visualização;
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as possibilidades de interação;
-\end_layout
-
-\begin_layout Enumerate
-Melhorar o processo de desenvolvimento;
 \end_layout
 
 \begin_layout Section
@@ -332,15 +328,11 @@ Metodologia
 \end_layout
 
 \begin_layout Standard
-Com a finalidade de desenvolver o modelo de geração de SAD anteriormente
- dito, foi escolhido um caso de uso que corresponde a um SAD para avaliação
- da sustentabilidade intitulado SustenAgro, o qual foi requerido pelos especiali
-stas em sustentabilidade da Embrapa Meio Ambiente.
-\end_layout
-
-\begin_layout Standard
-O desenvolvimento dos componentes do Decisioner foram realizados da seguinte
- maneira:
+Com a finalidade de desenvolver o sistema Decisioner que foi definido pela
+ arquitetura anterior, escolheu-se um caso de uso que corresponde ao SAD
+ SustenAgro, que permitiu definir uma metodologia de desenvolvimento de
+ cada uns dos componentes, permitindo generalizar, a metodologia abordada
+ durante este processo, incluiu as seguintes etapas:
 \end_layout
 
 \begin_layout Enumerate
@@ -348,262 +340,261 @@ Seleção da
 \lang english
 Triplestore
 \lang brazilian
-: foi realizado um processo de avaliação das 
+: foram avaliadas as 
 \lang english
 triplestores
 \lang brazilian
- existentes com a finalidade de definir uma que adapta-se nos requisitos
- do sistema Decisioner.
+ existentes com a finalidade de definir uma que adapta-se aos requisitos
+ do SAD SustenAgro e do sistema Decisioner.
 \end_layout
 
 \begin_layout Enumerate
 Seleção da linguagem de programação e framework web: foi realizado uma verificaç
-ão das tecnologias de desenvolvimento de sistema web compatíveis com as
- tecnologias da web semântica e com as DSLs.
+ão das tecnologias de desenvolvimento de sistemas web compatíveis com as
+ tecnologias da web semântica e com as 
+\lang english
+DSLs
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Enumerate
-Design da DSL:
+Design da DSL: Durante o processo de desenvolvimento do SAD SustenAgro,
+ foram generalizados os componentes dele, permitindo definir cada uma das
+ características da DSL, o processo foi iterativo, permitindo refinar a
+ expressividade dela.
 \end_layout
 
 \begin_layout Enumerate
-Desenvolvimento do interprete DSL:
+Desenvolvimento do 
+\lang english
+DSL editor
+\lang brazilian
+: implementação de uma 
+\lang english
+webview
+\lang brazilian
+ que permite definir e atualizar a DSL em formato textual, fornecendo aos
+ especialistas dita funcionalidade no processo de definir os SADs.
 \end_layout
 
 \begin_layout Enumerate
-Integração com tencologias de Web Components:
+Desenvolvimento do 
+\lang english
+Ontology Editor
+\lang brazilian
+: implementação de uma 
+\lang english
+webview
+\lang brazilian
+ com componentes específicos para suportar a edição das ontologias por parte
+ dos especialistas em um formato textual.
 \end_layout
 
 \begin_layout Enumerate
-Desenvolvimento de modulo de geração de GUIs.
+Desenvolvimento do Decisioner core: na implementação do Decisioner, foi
+ necessário desenvolver um interprete da DSL, que gerencia-se a informação
+ da ontologia e que vincula-se os componentes visuais das interfaces gráficas.
 \end_layout
 
 \begin_layout Enumerate
-Desenvolvimento do DSL editor:
-\end_layout
-
-\begin_layout Enumerate
-Desenvolvimento do Ontology Editor:
+Integração com 
+\lang english
+web views e web components
+\lang brazilian
+: o desenvolvimento do SAD SustenAgro, requiriu o desenvolvimento de duas
+ 
+\lang english
+widgets
+\lang brazilian
+ que foram incluídas em uma biblioteca para possibilitar o reuso delas,
+ e de suportar a geração das GUIs para os usuários.
 \end_layout
 
 \begin_layout Standard
-Os componentes da arquitetura do SustenAgro não são exclusivos do SustenAgro,
- podendo ser reusados em outros SADs, os quais foram generalizados para
- suportar a geração de outros tipos de sistema.
+A metodologia de desenvolvimento foi guiada pelo desenvolvimento do SAD
+ SustenAgro, onde primeiramente foi desenvolvidas as ontologias, continuando
+ com o desenvolvimento do Decisioner Core e depois com a integração dos
+ 
+\lang english
+web views
+\lang brazilian
+ e 
+\lang english
+web components
+\lang brazilian
+, realizando vários ciclos de desenvolvimento para refinar as funcionalidades,
+ a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Metodologia-do-Decisioner"
+
+\end_inset
+
+ representa a metodologia realizada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Decisioner Methodology.png
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia de desenvolvimento do Decisioner
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Metodologia-do-Decisioner"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Ontologia Decisioner
+Metodologia da ontologia Decisioner
 \end_layout
 
 \begin_layout Standard
-Essas ontologias podem ser criadas utilizando linguagens padrões da Web
- Semântica, como a Web Ontology Language (OWL), para melhor portabilidade
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Pahl2007"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Sobre as ontologias sobre interfaces gráficas, no artigo de 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ruiz2006using"
-
-\end_inset
-
- é analisado o uso de ontologias na engenharia de software, identificando
- 50 tipos de uso entre os quais foram identificados dois usos no suporte
- de interfaces gráficas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "paulheim2012ontology"
-
-\end_inset
-
- propõem a seguinte definição, uma 
-\emph on
-ontology-enhanced user interface
-\emph default
- é uma interface cujas capacidades de visualização, possibilidades de interação,
- ou processo de desenvolvimento estão habilitados ou, pelo menos, melhorados
- pelo emprego de uma ou mais ontologias.
- Na pesquisa foram identificados três propósitos para os quais são usadas
- as ontologias no melhoramento das interfaces gráficas:
+Para desenvolver um protótipo de ontologia geral que abstraia os conceitos
+ dos SADs, foram analisados os seguintes sistemas SAD usados pela Embrapa
+ Meio Ambiente em seus processos de avaliação:
 \end_layout
 
 \begin_layout Enumerate
-Melhorar as capacidades de visualização;
+Sistema SustenAgro: avaliação da sustentabilidade agrícola em cana-de-açúcar.
 \end_layout
 
 \begin_layout Enumerate
-Melhorar as possibilidades de interação;
-\end_layout
-
-\begin_layout Enumerate
-Melhorar o processo de desenvolvimento;
-\end_layout
-
-\begin_layout Standard
-Foram apresentados também os usos mais comuns de ontologias que suportam
- interfaces gráficas (ontology-enhanced user interface).
-\end_layout
-
-\begin_layout Standard
-Além disso, na literatura, existem pesquisas relacionadas com o vocabulário
- 
-\emph on
-AGROVOC Agricultural Vocabulary
-\emph default
- 
+Sistema Innova-Tec: avaliação do impacto da inovação tecnológica
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-http://aims.fao.org/agrovoc
+Web site sobre Sistema Inova-Tec 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.cnpma.embrapa.br/forms/inova_tec.php3
 \end_layout
 
 \end_inset
 
- que é um 
-\emph on
-\lang english
-thesaurus
-\emph default
-\lang brazilian
- que fornece termos padronizados sobre alimentação, nutrição, agricultura,
- pesca, floresta e meio ambiente criados de maneira colaborativa e coordenados
- pela
-\emph on
- 
-\emph default
-\lang english
-Food and Agriculture Organization
-\lang brazilian
- (FAO
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "FAO"
-description "Food and Agriculture Organization"
+
+\end_layout
 
 \end_inset
 
-).
- Esses termos podem ser reutilizados nas ontologias 
+.
+\end_layout
+
+\begin_layout Enumerate
+Sistema Nano-Tec: avaliação do impacto das nanotecnologias
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Web site sobre o sistema Nano-Tec 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://ainfo.cnptia.embrapa.br/digital/bitstream/item/77537/1/2012AA80.pdf
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A ontologia do Decisioner foi inicialmente desenvolvida na ferramenta Protégé,
+ a través do formato 
+\lang english
+Web Ontology Language
+\lang brazilian
+ (
+\lang english
+OWL
+\lang brazilian
+), para melhor portabilidade 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "DCMIPro841"
+key "Pahl2007"
 
 \end_inset
 
-, permitindo uma padronização dos identificadores dos conceitos, reutilizando
- informações e integrando os conceitos com outros dados.
- Essa reutilização foi feita através da vinculação da AGROVOC ao sistema
+, depois carregadas na 
+\lang english
+triplestore
+\lang brazilian
+ do Decisioner e representadas no 
+\lang english
+Ontology Editor
+\lang brazilian
+ por meio do formato 
+\lang english
+YAML
+\lang brazilian
  
-\emph on
-AOS/CS Agricultural Ontology Service Concept Server
-\emph default
-, a FAO desenvolveu um modelo base para esse novo sistema utilizando o 
-\emph on
-OWL Web Ontology Language.
-\end_layout
+\lang english
 
-\begin_layout Standard
-Cada uma destas pesquisas fornece um exemplo do uso das tecnologias da web
- semântica na criação de soluções baseadas em conhecimento.
- Isso é confirmado por 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "roussey2010ontologies"
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "YAML"
+description "YAML Ain't Markup Language\\\\"
 
 \end_inset
 
- por meio da descrição de (i) como as ontologias têm sido usadas para múltiplas
- tarefas, uma das quais é conseguir interoperabilidade entre sistemas de
- informação heterogêneos; e de (ii) como as seguintes gerações de sistemas
- de informação utilizariam uma base do conhecimento do domínio.
- Dadas as afirmações dessas pesquisas, pode-se deduzir que uma ontologia
- pode proporcionar o suporte conceitual para cumprir os requisitos de sistema
- SAD, como o SustenAgro.
+
+\lang brazilian
+, que facilitou a definição delas por parte dos especialistas.
+\end_layout
+
+\begin_layout Section
+Ontologia Decisioner
 \end_layout
 
 \begin_layout Standard
-A ontologia de Sistema Apoio à Decisão contem os elementos que foram abstraidos
- a partir do analise dos sistemas SAD usados pela Embrapa Meio Ambiente
- em seus processos de avaliação.
-\end_layout
-
-\begin_layout Standard
-Os sistemas software de avaliação que foram analisados foram:
-\end_layout
-
-\begin_layout Enumerate
-Sistema SustenAgro: avaliação da sustentabilidade agricola em cana-de-açúcar.
-\end_layout
-
-\begin_layout Enumerate
-Sistema Innova-Tec: avaliação do impacto da inovação tecnológica.
-\end_layout
-
-\begin_layout Enumerate
-Sistema Nano-Tec: avaliação do impacto das nanotecnologias.
-\end_layout
-
-\begin_layout Standard
-A partir desses sistemas foram identificados elementos comuns, que foram
- abstraidos na ontologia SAD com o proposito de generalizar as classes da
- ontologia sustenagro, para fornecer a geração de interfaces gráficas .
-\end_layout
-
-\begin_layout Standard
-As classes idenficadas e modeladas são:
-\end_layout
-
-\begin_layout Itemize
-Evaluation Object: classe que representa os objetos que serão analisados
- em cada processo de avaliação, os quais vão ficar como indivíduos desta
- classe ou de alguma subclasse dela, no caso do sistema SustenAgro a classe
- 
-\shape italic
-Production Unit 
-\shape default
-é subclasse do Evaluation Object.
-\end_layout
-
-\begin_layout Itemize
-Feature: classe que representa as caraterísticas de um Evaluation Object
- que serão quantificadas, analisadas e usadas no processo de geração de
- resultados do processo de avaliação, pelo geral as Features tem uma propriedade
- numérica que a quantifica.
-\end_layout
-
-\begin_layout Itemize
-Analysis: classe que vincula o resultado de uma avaliação, o nome e data
- da avaliação, assim como o Evaluation Object, para representar uma avalição
-\end_layout
-
-\begin_layout Itemize
-Value: classe que representa os valores que são atribuídos a cada instancia
- de Feature.
-\end_layout
-
-\begin_layout Itemize
-User: classe que representa os usuários do sistema.
-\end_layout
-
-\begin_layout Itemize
-Role: classe que representa os tipos de usuário do sistema, relacionando
- as permissões de cada tipo, por padrao tem estão instanciados os perfis
- User e Admin
+A partir do análise dos SADs da Embrapa foram identificados e abstraídos
+ elementos comuns na ontologia Decisioner, com o proposito de fornecer a
+ uma ontologia geral que de suporte a outros SADs.
 \end_layout
 
 \begin_layout Standard
@@ -614,13 +605,121 @@ reference "fig:Modelagem-do-SAD"
 
 \end_inset
 
- é apresentada a modelagem basica da estrutura de um SAD, com as classes
- que foram obtidas a partir da abstração da ontologia SustenAgro.
+ é apresentada a hierarquia de classes resultante da modelagem do SAD.
+ Dita hierarquia estrutura está composta das classes :
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Evaluation Object
+\lang brazilian
+: classe que representa os objetos que serão analisados em cada processo
+ de avaliação, os quais serão indivíduos desta classe ou de alguma subclasse
+ dela.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Feature
+\lang brazilian
+: classe que representa as caraterísticas a avaliar de um 
+\lang english
+Evaluation Object
+\lang brazilian
+ que serão quantificadas, analisadas e usadas no processo de geração de
+ resultados do processo de avaliação, pelo geral as 
+\lang english
+Features
+\lang brazilian
+ tem associado um 
+\lang english
+Value
+\lang brazilian
+ que as quantifica, tem a subclasse 
+\shape italic
+\lang english
+Weighted
+\shape default
+\lang brazilian
+ que representa uma 
+\lang english
+Feature
+\lang brazilian
+ vinculada com um peso.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Place
+\lang brazilian
+: classe que representa a localização física dos objetos modelados, permitindo
+ referenciar geograficamente um 
+\lang english
+Evaluation Object.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Analysis
+\lang brazilian
+: classe que representa uma avaliação associada ao 
+\lang english
+Evaluation Object
+\lang brazilian
+, com as propriedades de nome e data da avaliação, cada individuo dela correspon
+de a uma avaliação cadastrada.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Value
+\lang brazilian
+: classe que representa os valores que são atribuídos a cada instancia de
+ 
+\lang english
+Feature,
+\lang brazilian
+ contem as subclasses 
+\lang english
+Real
+\lang brazilian
+ e 
+\lang english
+Categorical,
+\lang brazilian
+ e pode ser expandida com outros subclasses.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+User
+\lang brazilian
+: classe que representa os usuários do sistema.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Role
+\lang brazilian
+: classe que representa os tipos de usuário do sistema, relacionando as
+ permissões de cada tipo, por padrão tem estão instanciados os perfis 
+\lang english
+User
+\lang brazilian
+ e 
+\lang english
+Admin
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -629,7 +728,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/DSS ontology.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -637,7 +736,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modelagem abstracto do SAD
+Modelagem abstrato do SAD
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Modelagem-do-SAD"
@@ -658,73 +757,54 @@ name "fig:Modelagem-do-SAD"
 \end_layout
 
 \begin_layout Standard
-A classe 
-\shape italic
-Value 
-\shape default
-representa os valores que são relacionados com cada característica da unidade
- produtiva, o qual esta subdividido nas classes 
-\shape italic
-Categorical 
-\shape default
-ou 
-\shape italic
-Real, 
-\shape default
-no caso de SustenAgro representa os possíveis valores que um 
-\shape italic
-Indicator
-\shape default
- ou 
-\shape italic
-Variable
-\shape default
- pode ter, os elementos discretos e definidos como os categóricos são modelados
- como indivíduos da classe, permitindo assim, restringir as opções de escolha.
+A partir destas classes é possível organizar os conceitos específicos de
+ um SAD como subclasses, permitindo identificar e processar cada conceito
+ por parte do Decisioner Core, e assim gerar os SAD desde o sistema Decisioner.
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Ontology Editor
 \end_layout
 
 \begin_layout Standard
-Na figura 
+Para suportar a edição das ontologias do domínio por parte dos especialistas,
+ foi desenvolvida uma ferramenta web que permite editar a ontologia em formato
+ 
+\lang english
+YAML.
+
+\lang brazilian
+ Dita ferramenta é apresentada na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Modelagem-de-Value"
+reference "fig:Editor-de-ontologia"
 
 \end_inset
 
- é apresentado a classe 
-\shape italic
-Value
-\shape default
- e as subclasses modeladas, tanto 
-\shape italic
-Categorical
-\shape default
- para conjunto finito de valores e 
-\shape italic
-Real
-\shape default
- para valores numéricos, como exemplo está a classe 
-\shape italic
-Yes/No
-\shape default
- que representa os valores de sim e não, os quais são modelados como indivíduos
- de dita classe.
+ e está composta por um editor de textual da ontologia em formato 
+\lang english
+YAML
+\lang brazilian
+, um 
+\lang english
+side panel
+\lang brazilian
+ que apresenta as classes, propriedades e indivíduos hierarquicamente (permitind
+o a referenciação dos elementos no código), um 
+\lang english
+button restore
+\lang brazilian
+ para restituir a ultima versão da ontologia e um 
+\lang english
+button save
+\lang brazilian
+ para salvar e carregar no Decisioner a ontologia em edição.
 \end_layout
 
 \begin_layout Standard
-Cada individuo da classe 
-\shape italic
-Value
-\shape default
- tem a propriedade 
-\shape italic
-as number 
-\shape default
-que relaciona um valor numérico para definir um critério de comparação e
- fornecer um formato para este tipo de dados.
-\end_layout
-
-\begin_layout Standard
+\align left
 \begin_inset Float figure
 placement H
 wide false
@@ -734,8 +814,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../figures/Value.png
-	scale 50
+	filename ../figures/SustenAgro-ontology-editor.png
+	width 80col%
 
 \end_inset
 
@@ -746,10 +826,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modelagem de Value
+Editor de ontologia
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Modelagem-de-Value"
+name "fig:Editor-de-ontologia"
+
+\end_inset
+
+ 
+\end_layout
 
 \end_inset
 
@@ -761,290 +846,75 @@ name "fig:Modelagem-de-Value"
 
 \end_layout
 
-\end_inset
+\begin_layout Section
 
-
+\lang english
+Triplestore
 \end_layout
 
 \begin_layout Standard
-Estas classes são complementadas com propiedades como rdfs:range ou por
- padrões dos dados que relacionam as widgets mais apropriadas na representação
- de informações, e assim fornecer a geração de interfaces graficas de usuário.
-\end_layout
+O sistema SustenAgro está baseado nas tecnologias da web semântica, entre
+ elas estão as 
+\lang english
+triplestores
+\lang brazilian
+ que suportam o armazenamento e a recuperação de triplas no padrão 
+\lang english
+RDF
+\lang brazilian
 
-\begin_layout Standard
-A partir do anterior formato a classe 
-\end_layout
-
-\begin_layout Standard
-Para definir a ontologia de domínio do SustenAgro, realizou-se uma pesquisa
- das fontes de dados relacionadas com ontologias do domínio de avaliação
- de sustentabilidade em sistemas produtivos de cana-de-açúcar.
- Concluiu-se que não existem ontologias que suportem esse domínio, por isso
- propõe-se desenvolver uma ontologia que utilize os conceitos de avaliação
- de sustentabilidade e de sistemas agrícolas.
- Ela deve fazer uso da pesquisa realizada por 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "oliveira:2013"
+key "rusher2003triple"
 
 \end_inset
 
- e de algumas tecnologias fornecidas pela FAO.
- Essa ontologia terá a finalidade de fornecer uma base conceitual e tecnológica
- para suportar o processo de avaliação de sustentabilidade no sistema produtivo
- da cana\SpecialChar nobreakdash
-de\SpecialChar nobreakdash
-açúcar no estado de São Paulo.
+
+\lang english
+.
+
+\lang brazilian
+ 
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento dessa ontologia ocorrerá de forma ágil e modular, por
- meio de técnicas de prototipação rápida, que serão de âmbito e complexidade
- crescente, abrangendo grupos de conceitos relacionados entre si.
-\end_layout
-
-\begin_layout Standard
-O desenvolvimento da ontologia depende essencialmente da comunicação entre
- os especialistas e os modeladores.
- Foram definidos meios de comunicação e de representação do conhecimento:
- reuniões presenciais e virtuais, e o modelos conceituais que permitem uma
- visualização direta do domínio.
-\end_layout
-
-\begin_layout Standard
-Inicialmente, o modelo conceitual vai ser representado por meio de um mapa
- conceitual que permitirá a comunicação em um formato reconhecido por cada
- um dos profissionais envolvidos no projeto.
- Esse modelo será representado em OWL (pelos modeladores) e serão definidas
- instâncias para cada uma das classes.
- Depois disso, o especialista do domínio construirá perguntas de interesse,
- com as quais os modeladores definirão consultas 
-\begin_inset Note Note
+No presente trabalho foi escolhido o banco de dados baseado em grafos 
+\lang english
+Blazegraph
+\lang brazilian
+ 
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Nao entendi?
+https://www.blazegraph.com/
 \end_layout
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-aqui se refere à técnica de validação
-\end_layout
-
-\end_inset
-
-que o sistema deverá responder segundo os resultados esperados, conseguindo
- validar e ajustar até ter um protótipo confiável.
-\end_layout
-
-\begin_layout Standard
-O conhecimento do domínio envolvido no sistema Sustenagro está em contínua
- construção.
- Por isso, é necessário um enfoque que permita realizar mudanças na estrutura
- e no conteúdo usados no sistema durante seu desenvolvimento.
- As ontologias permitem representar o conhecimento de um domínio por meio
- de formatos, como a linguagem OWL, permitindo separar o conhecimento das
- outras partes do sistema.
-\end_layout
-
-\begin_layout Standard
-A ontologia do domínio foi desenvolvida baseada nas definições feitas pelos
- especialistas, que foram generalizadas a través das seguintes classes represent
-adas na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:StructureOfDomainOntology"
-
-\end_inset
-
-, cada uma delas permite representar os conceitos gerais dos sistemas de
- avaliação da sustentabilidade.
-\end_layout
-
-\begin_layout Standard
-Também permite a integração de conceitos, inclusive quando pertencem a domínios
- sem relação aparente.
- Um exemplo disso é a inter-relação do conhecimento de sustentabilidade
- com conhecimento de interfaces gráficas de usuário, que suporta a geração
- de SAD para avaliação da sustentabilidade, o conhecimento modelado foi
- dividido em duas ontologias, avaliação de sustentabilidade e do SAD.
-\end_layout
-
-\begin_layout Standard
-As ontologias da web semantica são compatíveis com as tecnologias web, permitind
-o o uso e integração por outros sistemas dado que está em um formato padronizado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/StructureOfDomainOntology.png
-	scale 150
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Estrutura Geral da Ontologia de Domínio
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:StructureOfDomainOntology"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A classe 
-\shape italic
+, que integra as características de uma 
 \lang english
-Analysis
-\shape default
+triplestore
 \lang brazilian
- representa o conceito de avaliação de sustentabilidade onde cada individuo
- dela representa uma avaliação cadastrada no sistema.
- 
-\end_layout
+, porque fornece suporte nativo a SPARQL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SPARQL"
+description "SPARQL Protocol and RDF Query Language"
 
-\begin_layout Standard
-A classe 
-\shape italic
+\end_inset
+
+ e implementa o 
 \lang english
-EvaluationObject
+SPARQL Protocol Endpoint
 \lang brazilian
- 
-\shape default
-representa os objetos que serão avaliados pelo SAD, os quais tem indicadores
- que permitem suportar o processo de avaliação.
-\end_layout
-
-\begin_layout Standard
-A classe 
-\shape italic
+.
+ Esse último, padroniza o armazenamento e recuperação da informação; e a
+ compatibilidade com os sistemas web por meio do 
 \lang english
-Feature
-\shape default
+Endpoint
 \lang brazilian
- representa cada uma das características dos objetos de avaliação, principalment
-e indicadores que são usados durante o processo de avaliação
-\end_layout
-
-\begin_layout Standard
-A classe 
-\shape italic
-\lang english
-Indicator
-\shape default
-\lang brazilian
- representa o conceito de indicador que representa cada conceito a avaliar
-\end_layout
-
-\begin_layout Standard
-A classe 
-\shape italic
-\lang english
-Weighted
-\shape default
-\lang brazilian
- representa o conceito de indicador vinculado com um peso que permite atribuir
- uma 
-\end_layout
-
-\begin_layout Standard
-Ontologia de controles de gráficos: a finalidade dessa ontologia é dar suporte
- a composição de controles gráficos relacionados com os indicadores.
- Esse é um requisito funcional do software, uma vez que os indicadores podem
- ter diversos tipos de unidades e para cada tipo existe um tipo de controle
- gráfico mais apropriado para sua representação.
- Por exemplo, para representar um indicador de sustentabilidade do tipo
- numérico é recomendável usar um controle visual tipo spinner.
-\end_layout
-
-\begin_layout Standard
-O sistema gerador de interfaces gráficas permite suportar aspectos de usabilidad
-e e flexibilidade ao sistema.
- Essa última característica constitui uma nova proposta de desenvolvimento
- de SADs que permite a adaptação automática (ou semi\SpecialChar nobreakdash
-automática) da interface
- às mudanças dos conceitos do domínio.
-\end_layout
-
-\begin_layout Standard
-Será desenvolvida uma ontologia para interfaces gráficas focada na definição
- e modificação de controles de usuário.
- Um exemplo do uso dessa ontologia é nos indicadores.
- Eles armazenam um valor inserido pelo usuário, que pode ser de diversos
- tipos como numérico continuo, numérico discreto, percentagem, booleano,
- lista de termos ou alfanumérico.
- Dada essa diversidade, é importante representar os diversos tipos de controles
- gráficos em uma linguagem do domínio do especialista, para que possam ser
- usados para 
-\lang english
-input
-\lang brazilian
- da definição dos indicadores e que faça um mapeamento entre os indicadores
- e os tipos de indicador que vai ser armazenado no sistema.
-\end_layout
-
-\begin_layout Standard
-Esta ontologia vai suportar a DSL fornecendo uma definição formal dos controles
- gráficos que serão mapeados para cada tipo de indicador, a DSL será apresentada
- a continuação.
-\end_layout
-
-\begin_layout Standard
-As ontologias desenvolvidas foram modelados os conceitos envolvidos no processo
- de avaliação da sustentabilidade em agricultura, definindo, classificando
- e relacionando cada um dos conceitos para assim permitir o uso em outros
- sistemas e conseguir fazer inferência de novo conhecimento.
-\end_layout
-
-\begin_layout Standard
-GUI como componentes principais, os quais foram organizados em ontologias
- e nas DSL com a finalidade de desenhar um sistema gerador de SAD.
-\end_layout
-
-\begin_layout Standard
-Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
- propusessem a geração automática de interface para Sistemas de Apoio a
- Decisão (SADs) com ou sem o uso de ontologias.
- Os artigos encontrados mais próximos ao tema deste trabalho tratam do uso
- de ontologias ou de frameworks em SADs para a área de sustentabilidade,
- área que vai ser usada neste trabalho para teste dos sistemas desenvolvidos.
- 
-\end_layout
-
-\begin_layout Standard
-sistema de GUIs que permite visualizar o SAD por meio de uma interface Web,
- suportando assim o componente visual dos SAD.
+.
 \end_layout
 
 \begin_layout Section
@@ -1052,85 +922,68 @@ Decisioner DSL
 \end_layout
 
 \begin_layout Standard
-No desenvolvimento da presente pesquisa foi necessário definir uma DSL que
- permitisse representar as principais características do SAD que precisávamos
- desenvolver, dito SAD foi desenhado para avaliar a sustentabilidade em
- agricultura, pelo qual foram integrados conceitos do domínio de conhecimento
- na definição dos componentes do SAD, fornecendo uma linguagem para especialista
-s onde é suportada a de definição dos SAD, as características da DSL são:
+Para facilitar que os especialistas definam o conhecimento deles no sistema
+ Decisioner, foi definida uma DSL que permite definir as principais característi
+cas de um SAD.
+ Dita DSL foi baseada na modelagem geral da arquitetura do 
+\lang english
+Decisioner
+\lang brazilian
+ e permite relacionar conceitos específicos dos especialistas, servindo
+ de interface entre a ontologia do Decisioner e a ontologia do Domínio.
 \end_layout
 
 \begin_layout Standard
-A DSL foi baseada na linguagem Groovy 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "koenig2007groovy"
-
-\end_inset
-
-, sendo uma extensão da linguagem Groovy, devido a que esta linguagem suporta
- o desenvolvimento de DSLs.
- Isso inclui suporte a DSL Descriptors, arquivos Groovy que descrevem extensões
- 
-\emph on
-domain-specific
-\emph default
- para o motor de inferência e assistente de conteúdo do plugin Groovy\SpecialChar nobreakdash
-Eclipse.
- 
+A DSL foi baseada na linguagem 
+\lang english
+Groovy
+\lang brazilian
+, porque dita linguagem suporta o desenvolvimento de 
+\lang english
+DSLs
+\lang brazilian
+ e permite integrar instruções 
+\lang english
+Groovy
+\lang brazilian
+ na DSL.
 \end_layout
 
 \begin_layout Standard
-Uma outra vantagem de Groovy é a disponibilidade do Grails Framework para
- a criação de aplicações Web 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "judd2008beginning"
-
-\end_inset
-
-.
- 
+O uso da DSL por parte especialistas deve diminuir o esforço necessário
+ no desenvolvimento de um SAD, principalmente na definição de conhecimento
+ do domínio, esperando-se que usando a DSL, os próprios especialistas serão
+ capazes de fazer parte do desenvolvimento e validação do SAD.
 \end_layout
 
 \begin_layout Standard
-O uso da DSL por especialistas em sustentabilidade deve diminuir o esforço
- necessário para se desenvolver um SAD nesse domínio.
-\end_layout
-
-\begin_layout Standard
-Espera-se que, usando a DSL, os próprios especialistas vão ser capazes de
- fazer parte do desenvolvimento e validação.
-\end_layout
-
-\begin_layout Standard
-A DSL e o interprete conformam uma ferramenta intitulada Decisioner, que
- por meio de umas declarações permite a geração de 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SAD"
-description "Sistema de apoio à decisão"
-
-\end_inset
-
-, dita ferramenta foi a principal contribuição desta pesquisa.
+As instruções definidas na DSL são:
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
 Evaluation Object
 \end_layout
 
 \begin_layout Standard
-Os SAD focados na avaliação, é necessário definir um objeto de avaliação
- que permita representar as entidades a avaliar, este objeto pelo geral
- tem propriedades que vão representar cada uns dos indivíduos a avaliar,
- pelo qual foi definido o comando 
+Nos SAD focados na avaliação, tem um objeto de avaliação que representa
+ as entidades a avaliar, este objeto esta constituído por propriedades que
+ especificam os elementos avaliados, pelo qual foi definido a instrução
+ 
 \shape italic
-evaluationObject, 
+\lang english
+evaluationObject
+\lang brazilian
+, 
 \shape default
-que define a estrutura do objeto de avalização e vincula os controles visuais,
- o comando tem como argumentos a URI da classe dos elementos que vão ser
- avaliados e cada uma das propriedades relacionadas.
+que define a estrutura do objeto de avalização por meio da definição de
+ propriedades.
+\end_layout
+
+\begin_layout Standard
+A instrução tem como argumentos a URI da classe da ontologia do domínio,
+ que será objeto de avaliação e cada uma das propriedades relacionadas.
  No código 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1138,12 +991,11 @@ reference "lis:DSL-para-definição"
 
 \end_inset
 
- apresenta-se uma parte da DSL que define a classe do objeto de avaliação
- 
+ apresenta-se um exemplo de uso desta instrução definindo a classe 
 \shape italic
 ProductionUnit
 \shape default
- e as propriedades por meio dos comandos 
+ e as propriedades dela por meio dos comandos 
 \shape italic
 \lang english
 instance
@@ -1212,45 +1064,59 @@ name "lis:DSL-para-definição"
 
 \begin_layout Standard
 O comando 
+\shape italic
 \lang english
 instance
+\shape default
 \lang brazilian
- vincula uma propriedade definida na ontologia através da URI a qual pode
+ vincula uma propriedade definida na ontologia através da URI à qual pode
  estar complementada por parâmetros que customizam a representação visual
  da propriedade.
 \end_layout
 
 \begin_layout Standard
-O comando type vincula as subclasses da classe principal, para ser atribuida
- nas intancias de Evaluation Object, no caso do Sistema SustenAgro, dito
- comando identifica que as instancias de
+O comando 
 \shape italic
- ProductonUnit
+\lang english
+type
 \shape default
- também podem ser um 
-\shape italic
-Provider
-\shape default
- ou uma 
-\shape italic
-Plant
-\shape default
+\lang brazilian
+ vincula as subclasses da classe principal, para ser atribuída nas instancias
+ de 
+\lang english
+EvaluationObject
+\lang brazilian
 .
- Os parâmetros que podem complementar os anteriores comandos são:
+ Os parâmetros que podem complementar as anteriores instruções são:
 \end_layout
 
 \begin_layout Enumerate
 
 \shape italic
+\lang english
+required
+\shape default
+\lang brazilian
+: define uma propriedade obrigatória
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+\lang english
 label
 \shape default
+\lang brazilian
 : define um texto associado
 \end_layout
 
 \begin_layout Enumerate
 
 \shape italic
-placeholder:
+\lang english
+placeholder
+\lang brazilian
+:
 \shape default
  define um texto de ajuda
 \end_layout
@@ -1258,53 +1124,69 @@ placeholder:
 \begin_layout Enumerate
 
 \shape italic
-required
-\shape default
-: define uma propriedade obrigatória
-\end_layout
-
-\begin_layout Enumerate
-
-\shape italic
+\lang english
 widget
 \shape default
+\lang brazilian
 : define um controle gráfico de usuário
 \end_layout
 
 \begin_layout Subsection
-Feature: 
+
+\lang english
+Feature
 \end_layout
 
 \begin_layout Standard
-O comando 
-\shape italic
-Feature
-\shape default
- define as características que serão apresentadas durante a avaliação para
- serem instanciadas como parte da Analysis, ele tem como argumento uma URI
- que permite vincular as subclasses da classe referenciada, as instancias
- destas classes serão quantificadas mediante o processo da avaliação no
- qual é realizado o preenchimento da propriedade 
-\shape italic
-has value 
-\shape default
-que vincula cada Feature com um Value para quantificá-lo.
- No sistema SustenAgro foram estabelecidas as Features por meio das URIs
- das classes: EnvironmentalIndicator, EconomicIndicator, SocialIndicator,
- ProductionEfficiencyFeature e TechnologicalEfficiencyFeature.
- Além disso é possível acrescentar a inserção de 
+A instrução 
 \shape italic
 \lang english
-features
+Feature
 \shape default
 \lang brazilian
- novas na interface gráfica de usuário a través do parâmetro 
+ define as características que serão apresentadas durante a avaliação e
+ serão vinculadas como parte da 
+\lang english
+Analysis
+\lang brazilian
+.
+ Tem como argumento uma URI que permite vincular as subclasses da classe
+ referenciada e tem como parâmetro 
 \shape italic
 \lang english
 extraFeatures
 \shape default
 \lang brazilian
-.
+ que permite ativar a inserção de novas
+\shape italic
+\lang english
+ features
+\shape default
+\lang brazilian
+ por parte do usuário do SAD.
+ 
+\end_layout
+
+\begin_layout Standard
+As instancias de 
+\shape italic
+\lang english
+Feature
+\shape default
+\lang brazilian
+ serão quantificadas a través do preenchimento da propriedade 
+\shape italic
+\lang english
+has value
+\lang brazilian
+ 
+\shape default
+que a vincula com um 
+\lang english
+Value
+\lang brazilian
+ para quantificá-lo.
+ 
 \begin_inset listings
 inline false
 status open
@@ -1333,15 +1215,21 @@ Definição de Features
 \end_layout
 
 \begin_layout Subsection
-Logica de avaliação: 
+
+\lang english
+Report
 \end_layout
 
 \begin_layout Standard
 O comando 
 \shape italic
+\lang english
 Report
 \shape default
- define o tratamento quantitativo que vai ser efetuado às 
+\lang brazilian
+ permite definir os métodos matemáticos realizados durante a avaliação e
+ a geração de relatórios de resultados.
+ o tratamento quantitativo que vai ser efetuado às 
 \shape italic
 \lang english
 Features
@@ -1558,45 +1446,247 @@ widget
 \end_layout
 
 \begin_layout Section
-TripleStore
+
+\lang english
+DSL Editor
 \end_layout
 
 \begin_layout Standard
-O sistema SustenAgro será baseado nas tecnologias da web semântica, entre
- as tecnologias existentes encontra-se a Triplestore que é um banco de dados
- para o armazenamento e recuperação de triplas 
+a
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/SustenAgro-dsl-editor-2.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Editor DSL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Web views e web components
+\end_layout
+
+\begin_layout Standard
+Ontologia de controles de gráficos: a finalidade dessa ontologia é dar suporte
+ a composição de controles gráficos relacionados com os indicadores.
+ Esse é um requisito funcional do software, uma vez que os indicadores podem
+ ter diversos tipos de unidades e para cada tipo existe um tipo de controle
+ gráfico mais apropriado para sua representação.
+ Por exemplo, para representar um indicador de sustentabilidade do tipo
+ numérico é recomendável usar um controle visual tipo 
+\lang english
+spinner
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Standard
+O sistema gerador de interfaces gráficas permite suportar aspectos de usabilidad
+e e flexibilidade ao sistema.
+ Essa última característica constitui uma nova proposta de desenvolvimento
+ de SADs que permite a adaptação automática (ou semiautomática) da interface
+ às mudanças dos conceitos do domínio.
+\end_layout
+
+\begin_layout Standard
+Será desenvolvida uma ontologia para interfaces gráficas focada na definição
+ e modificação de controles de usuário.
+ Um exemplo do uso dessa ontologia é nos indicadores.
+ Eles armazenam um valor inserido pelo usuário, que pode ser de diversos
+ tipos como numérico continuo, numérico discreto, percentagem, booleano,
+ lista de termos ou alfanumérico.
+ Dada essa diversidade, é importante representar os diversos tipos de controles
+ gráficos em uma linguagem do domínio do especialista, para que possam ser
+ usados para 
+\lang english
+input
+\lang brazilian
+ da definição dos indicadores e que faça um mapeamento entre os indicadores
+ e os tipos de indicador que vai ser armazenado no sistema.
+\end_layout
+
+\begin_layout Standard
+Esta ontologia vai suportar a DSL fornecendo uma definição formal dos controles
+ gráficos que serão mapeados para cada tipo de indicador, a DSL será apresentada
+ a continuação.
+\end_layout
+
+\begin_layout Standard
+As ontologias desenvolvidas foram modelados os conceitos envolvidos no processo
+ de avaliação da sustentabilidade em agricultura, definindo, classificando
+ e relacionando cada um dos conceitos para assim permitir o uso em outros
+ sistemas e conseguir fazer inferência de novo conhecimento.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+GUI
+\lang brazilian
+ como componentes principais, os quais foram organizados em ontologias e
+ nas DSL com a finalidade de desenhar um sistema gerador de SAD.
+\end_layout
+
+\begin_layout Standard
+Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
+ propusessem a geração automática de interface para Sistemas de Apoio a
+ Decisão (SADs) com ou sem o uso de ontologias.
+ Os artigos encontrados mais próximos ao tema deste trabalho tratam do uso
+ de ontologias ou de 
+\lang english
+frameworks
+\lang brazilian
+ em SADs para a área de sustentabilidade, área que vai ser usada neste trabalho
+ para teste dos sistemas desenvolvidos.
+ 
+\end_layout
+
+\begin_layout Standard
+sistema de 
+\lang english
+GUIs
+\lang brazilian
+ que permite visualizar o SAD por meio de uma interface Web, suportando
+ assim o componente visual dos SAD.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/SustenAgro-tool.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Web view com web components
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Decisioner Core
+\end_layout
+
+\begin_layout Standard
+Uma outra vantagem de Groovy é a disponibilidade do Grails Framework para
+ a criação de aplicações Web 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "rusher2003triple"
+key "judd2008beginning"
 
 \end_inset
 
 .
- Para o presente projeto foi selecionada a Triplestore Parliament 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-http://parliament.semwebcentral.org/
+ 
 \end_layout
 
-\end_inset
-
- porque fornece as características: suporte nativo a SPARQL
+\begin_layout Standard
+A DSL e o interprete conformam uma ferramenta intitulada Decisioner, que
+ por meio de umas declarações permite a geração de 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "SPARQL"
-description "SPARQL Protocol and RDF Query Language"
+symbol "SAD"
+description "Sistema de apoio à decisão"
 
 \end_inset
 
- e SPARQL/Update e implementa o SPARQL Protocol Endpoint.
- Esse último, padroniza o armazenamento e recuperação da informação; e a
- compatibilidade com os sistemas web por meio do Endpoint.
+, dita ferramenta foi a principal contribuição desta pesquisa.
 \end_layout
 
-\begin_layout Section
-Sistemas de apóio à decisão
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ruiz2006using"
+
+\end_inset
+
+ analisou e identificou 50 tipos de uso de ontologias na engenharia de software,
+ entre as quais foram identificados dois usos no suporte de interfaces gráficas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citep
+key "paulheim2012ontology"
+
+\end_inset
+
+ propõem a definição de uma 
+\lang english
+ontology-enhanced user
+\lang brazilian
+ interface, que são um tipo de GUIs cujas capacidades de visualização, possibili
+dades de interação, ou processo de desenvolvimento estão habilitados ou
+ (pelo menos) melhoradas pelo emprego de uma ou mais ontologias.
+ Nessa pesquisa foram identificados três propósitos para os quais são usadas
+ as ontologias no melhoramento das interfaces gráficas, e são os seguintes:
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as capacidades de visualização
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as possibilidades de interação
+\end_layout
+
+\begin_layout Enumerate
+Melhorar o processo de desenvolvimento
 \end_layout
 
 \begin_layout Standard

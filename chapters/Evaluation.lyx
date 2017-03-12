@@ -74,8 +74,73 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Section
+Avaliação do processo de 
+\lang english
+UCD
+\lang brazilian
+ das interfaces visuais.
+\end_layout
 
+\begin_layout Section
+Avaliação da ontologia
+\end_layout
+
+\begin_layout Section
+Avaliação do protótipo funcional com dados
+\end_layout
+
+\begin_layout Section
+Avaliação da DSL SustenAgro e do Editor de ontologias
+\end_layout
+
+\begin_layout Section
+Avaliação de desempenho do sistema nos servidores da Embrapa
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Workshop
+\lang brazilian
+: validação do software SustenAgro v1.0, Avaliação com equipe de especialistas
+ 
+\end_layout
+
+\begin_layout Standard
+O 
+\lang english
+workshop
+\lang brazilian
+ teve o objetivo de avaliar a qualidade e acuidade do Software SustenAgro
+ em termos da clareza da informação técnica apresentada nas interfaces,
+ com vistas a garantir o entendimento do usuário e possibilitar que a avaliação
+ da sustentabilidade do sistema de produção de cana-de-açúcar seja realizada
+ da melhor forma possível.
+\end_layout
+
+\begin_layout Description
+Data 14 de julho do 2016
+\end_layout
+
+\begin_layout Description
+Participantes Equipe do projeto SustenAgro
+\end_layout
+
+\begin_layout Description
+Local Embrapa Informática Agropecuária - Campinas
+\end_layout
+
+\begin_layout Description
+Técnica Delphi
+\end_layout
+
+\begin_layout Standard
+A avaliação consistiu em fazer um 
+\lang english
+workshop
+\lang brazilian
+ com especialistas de diversos perfis 
 \end_layout
 
 \end_body

@@ -77,13 +77,14 @@
 \begin_layout Standard
 A construção de sistemas que sejam capazes de fornecer um suporte ao gestor
  em um processo de tomada de decisões vem sendo um desafio ao longo dos
- anos, os SADs são sistemas software que visam melhorar a tomada de decisão
- individual ou grupal, combinando o conhecimento do tomador(es) de decisão
- com dados relevantes de fontes confiáveis, nos quais são aplicados métodos
- e modelos matemáticos para suportar o analise, comparação e escolha de
- alternativas no processo de decisão 
+ anos.
+ Os SADs são sistemas software que visam melhorar a tomada de decisão individual
+ ou grupal, combinando o conhecimento do tomador(es) de decisão com dados
+ relevantes de fontes confiáveis, nos quais são aplicados métodos e modelos
+ matemáticos para suportar o analise, comparação e escolha de alternativas
+ no processo de decisão 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Tweedale2016"
 
 \end_inset
@@ -95,7 +96,7 @@ key "Tweedale2016"
 SADs auxiliam tomadores de decisão dando-lhes um maior entendimento do domínio,
  eles combinam as habilidades e as metodologias dos especialistas (humanos)
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "heinzle2010semantica"
 
 \end_inset
@@ -105,7 +106,7 @@ key "heinzle2010semantica"
  podem haver possíveis soluções para os problemas que se querem solucionar
  
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "lu2006application"
 
 \end_inset
@@ -137,7 +138,7 @@ A arquitetura de um software define a organização em termos de seus componente
  suas interconexões, suas interações e também suas principais propriedades
  
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "de1997software"
 
 \end_inset
@@ -148,7 +149,7 @@ key "de1997software"
  implementações internas desses elementos não são considerados arquiteturais
  
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "sei2006architecture"
 
 \end_inset
@@ -159,28 +160,29 @@ key "sei2006architecture"
 \begin_layout Standard
 Durante a evolução dos SAD, tem acontecido varias melhoras na arquitetura
  deles, a tendencia é a integração com os métodos de inteligencia artificial
- para estender a aplicabilidade dos SAD a problemas complexos, gerando os
- 
+ para estender a aplicabilidade dos SAD a problemas complexos.
+ Gerando os 
 \lang english
 Intelligent Decision Support System (IDSS)
 \lang brazilian
- que se caracterizam por ter agentes inteligentes, entre os métodos usados
- estão as bases de conhecimento que suportam a inferência, permitindo o
- desenvolvimento de 
+ que caracterizam-se por integrar agentes inteligentes, entre os métodos
+ usados estão as bases de conhecimento que suportam a inferência, permitindo
+ o desenvolvimento de 
 \lang english
 Expert Systems
 \lang brazilian
  e 
 \lang english
-Knowledge Based Systems
+Knowledge Based Systems.
+
 \lang brazilian
- sistemas são classificados como 
+ Ditos sistemas são classificados como 
 \lang english
 Rule Based Systems
 \lang brazilian
-
+ 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Tweedale2016"
 
 \end_inset
@@ -212,7 +214,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Componentes de um SAD .
+Componentes de um SAD.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Componentes-SAD"
@@ -242,7 +245,7 @@ reference "fig:Componentes-SAD"
 
  mostra os componentes de um SAD
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Tweedale2016"
 
 \end_inset
@@ -256,9 +259,9 @@ I
 nputs
 \lang brazilian
  Corresponde à entradas do sistema, que esta composta do conhecimento dos
- especialistas que pode estar representada em uma base de conhecimento,
- e dos dados que serão processados, que podem estar em um banco de dados,
- estes dois componentes devem ser o mais precisos e completos possíveis
+ especialistas, que pode estar representada em uma base de conhecimento,
+ e dos dados que serão processados, que podem estar em um banco de dados.
+ Estes dois componentes devem ser o mais precisos e completos possíveis
  para garantir boas respostas do sistema.
 \end_layout
 
@@ -268,9 +271,9 @@ nputs
 Processing
 \lang brazilian
  Está composta pelos modelos e métodos de organização e processamento dos
- dados, e restrições para avaliar as alternativas de resposta, este componente
- contem os métodos matemáticos que processam os dados, permitindo gerar
- os resultados do sistema.
+ dados, e restrições para avaliar as alternativas de resposta.
+ Este componente contem os métodos matemáticos que processam os dados, permitind
+o gerar os resultados do sistema.
 \end_layout
 
 \begin_layout Description
@@ -279,8 +282,8 @@ Processing
 Outputs
 \lang brazilian
  São os resultados do processamento dos inputs e permite comparar as alternativa
-s de decisão, como saídas comuns estão os relatórios, previsões e recomendações,
- os quais são apresentados por meio de uma interface de usuário para facilitar
+s de decisão, como saídas comuns estão os relatórios, previsões e recomendações.
+ Os quais são apresentados por meio de uma interface de usuário para facilitar
  o entendimento e interação com o usuário
 \end_layout
 
@@ -288,13 +291,13 @@ s de decisão, como saídas comuns estão os relatórios, previsões e recomenda
 Os SAD contem o conhecimento dos especialistas implícito nos componentes
  dele, uma das mudanças da arquitetura realizada no presente trabalho, foi
  que o conhecimento do especialista ficasse agrupado em uma ontologia que
- permite definir, classificar, relacionar e inferir conhecimento, com a
- finalidade de facilitar a definição e atualização de conceitos por parte
- dos especialistas, permitindo que eles mesmos descrevam o domínio sem precisar
- de desenvolvedores, e a partir dessa definição computável será gerado o
- SAD, os especialistas desse domínio terão familiaridade com os termos da
- ontologia e poderão especificar grande parte conhecimento envolvido no
- SAD.
+ permite definir, classificar, relacionar e inferir conhecimento.
+ Com a finalidade de facilitar a definição e atualização de conceitos por
+ parte dos especialistas, permitindo que eles mesmos descrevam o domínio
+ sem precisar de desenvolvedores.
+ E a partir dessa definição computável será gerado o SAD, os especialistas
+ desse domínio terão familiaridade com os termos da ontologia e poderão
+ especificar grande parte conhecimento envolvido no SAD.
  Idealmente, essa definição deve ser detalhada o suficiente para que os
  desenvolvedores possam desenvolver a parte computacional do SAD sem necessidade
  de 
@@ -410,15 +413,16 @@ reference "fig:SustenAgro-arquitetura-inicial"
 
  mostra a arquitetura inicial do SAD SustenAgro, a qual corresponde a um
  sistema de informação tradicional que requer da intervenção dos desenvolvedores
- de software para definir ou atualizar o conhecimento do domínio, exatamente
- o problema que abordamos nesta pesquisa, pelo qual se tomo como projeto
- piloto.
+ de software para definir ou atualizar o conhecimento do domínio.
+ Exatamente o problema que abordamos nesta pesquisa, pelo qual se tomo como
+ projeto piloto.
 \end_layout
 
 \begin_layout Standard
 Um dos problemas identificados foi que os especialistas não tinham uma definição
- clara do SAD SustenAgro, pelo que foi necessário realizar um levantamento
- de requerimentos descrito no capitulo 
+ clara do SAD SustenAgro.
+ Pelo que foi necessário realizar um levantamento de requerimentos descrito
+ no capitulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SustenAgro"
@@ -436,10 +440,10 @@ Trabalhos relacionados
 
 \begin_layout Standard
 Com a finalidade de relacionar pesquisas de referencia que forneçam ideias
- e exemplos para abordar o problema da seguinte pesquisa, realizou-se uma
- consulta sobre, definição de SADs por meio de ontologias do domínio dos
- especialistas, e SADs semelhantes ao SustenAgro, em diversas fontes de
- informação acadêmica.
+ e exemplos para abordar o problema da seguinte pesquisa.
+ Realizou-se uma consulta sobre, definição de SADs por meio de ontologias
+ do domínio dos especialistas, e SADs semelhantes ao SustenAgro, em diversas
+ fontes de informação acadêmica.
 \end_layout
 
 \begin_layout Standard
@@ -484,7 +488,12 @@ theasaurus
 \emph on
 FAO
 \emph default
-, estes termos podem ser reutilizados nas ontologias 
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Ditos termos podem ser reutilizados nas ontologias 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "DCMIPro841"
@@ -508,7 +517,8 @@ description "Linked Open Data"
 
 \end_inset
 
-), esta reutilização foi feita através da vinculação de 
+).
+ Dita reutilização foi feita através da vinculação de 
 \lang english
 AGROVOC
 \lang brazilian
@@ -529,7 +539,7 @@ OWL
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "kraines2011system"
 
 \end_inset
@@ -550,7 +560,8 @@ Knowledge Sharing System
 Semantic Data Modeling
 \emph default
 \lang brazilian
-, uma ontologia fundamentada na lógica descritiva foi desenvolvida por meio
+.
+ Uma ontologia fundamentada na lógica descritiva foi desenvolvida por meio
  do ISO 15926 
 \lang english
 Data Model
@@ -606,23 +617,24 @@ conceptual overlap of semantic statements
 Cada uma destas pesquisas fornece um exemplo do uso de ontologias na criação
  de soluções baseadas em conhecimento, isto é confirmado por 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "roussey2010ontologies"
 
 \end_inset
 
  por meio da descrição de como as ontologias têm sido usadas para múltiplas
- tarefas, uma das quais é conseguir interoperabilidade entre sistemas de
- informação heterogêneos e como as seguintes gerações de sistemas de informação
- utilizariam uma base do conhecimento do domínio, dadas as afirmações destas
- pesquisas pode-se deduzir que uma ontologia proporciona o suporte conceitual
- para cumprir os requisitos do sistema SustenAgro.
+ tarefas.
+ Uma das quais é conseguir interoperabilidade entre sistemas de informação
+ heterogêneos e como as seguintes gerações de sistemas de informação utilizariam
+ uma base do conhecimento do domínio, dadas as afirmações destas pesquisas
+ pode-se deduzir que uma ontologia proporciona o suporte conceitual para
+ cumprir os requisitos do sistema SustenAgro.
 \end_layout
 
 \begin_layout Standard
 Sobre SADs semelhantes ao SustenAgro, encontrou-se que 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Wilson2007299"
 
 \end_inset
@@ -664,12 +676,13 @@ Uma estratégia para abordar a complexidade em SADs são métodos e metodologias
  de avaliação, que utilizam indicadores, um exemplo desse enfoque é a pesquisa
  de 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "AlkanOlsson:2009"
 
 \end_inset
 
-, nela foi desenvolvido um 
+.
+ Nela foi desenvolvido um 
 \emph on
 \lang english
 framework
@@ -686,7 +699,7 @@ framework
 \begin_layout Standard
 Na pesquisa de 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Ewert2009546"
 
 \end_inset
@@ -694,7 +707,8 @@ key "Ewert2009546"
  apresenta varias estrategias para abordar a complexidade nos sistemas agrícolas
 , começa relacionando a agricultura com os sistemas socioeconômicos e naturais,
  e enfrenta o problema de gerir suas múltiplas funções de uma maneira sustentáve
-l, o método 
+l.
+ O método 
 \emph on
 \lang english
 Integrated Assessment and Modeling
@@ -709,12 +723,16 @@ Integrated Assessment
 \lang brazilian
  (IA)
 \emph default
- mas a maioria são monolíticos resolvendo problemas específicos, os enfoques
- flexíveis são escassos, o 
+ mas a maioria são monolíticos resolvendo problemas específicos.
+ Os enfoques flexíveis são escassos, o 
 \emph on
 framework
 \emph default
- proposto (SEAMLESS-IF) integra relações e processos através de 
+ proposto (
+\lang english
+SEAMLESS-IF
+\lang brazilian
+) integra relações e processos através de 
 \emph on
 
 \begin_inset Quotes sld
@@ -739,7 +757,7 @@ framework
 \begin_layout Standard
 A pesquisa feita por 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "boseley2009development"
 
 \end_inset
@@ -765,10 +783,10 @@ Plant Ontology Consortium
 
 \begin_layout Standard
 Existem pesquisas que abordam a sustentabilidade a través de ferramentas
- tecnológicas, as quais podem servir de referencia ao sistema SustenAgro,
- uma delas foi desenvolvida por 
+ tecnológicas, as quais podem servir de referencia ao sistema SustenAgro.
+ Uma delas foi desenvolvida por 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "brilhante:2006"
 
 \end_inset
@@ -782,11 +800,12 @@ framework
 \lang english
 ISD-Economics Ontology
 \lang brazilian
-), onde são usados os indicadores humano (Social), suporte (Econômico) e
- natural (Ambiental), os quais foram subdivididos em sete indicadores, seu
- desenvolvimento foi feito de uma maneira genérica de forma que ela suporta
- a inclusão de novos indicadores de forma simples, esta ontologia foi feita
- em dois níveis de hierarquia, o 
+).
+ Onde são usados os indicadores humano (Social), suporte (Econômico) e natural
+ (Ambiental), os quais foram subdivididos em sete indicadores, seu desenvolvimen
+to foi feito de uma maneira genérica de forma que ela suporta a inclusão
+ de novos indicadores de forma simples.
+ Esta ontologia foi feita em dois níveis de hierarquia, o 
 \emph on
 framework 
 \emph default
@@ -829,10 +848,10 @@ Considerações finais
 \begin_layout Standard
 O desenvolvimento do SAD SustenAgro, não satisfaz os requisitos de desenvolvimen
 to de um trabalho de mestrado, devido a que não envolve a utilização de
- métodos e técnicas de investigação cientifica, pelo qual será incluído
- dentro de um processo maior de pesquisa, onde seja possível incluir o desenvolv
-imento dele com a finalidade de desenvolver uma hipótese de pesquisa, a
- solução do problema do presente trabalho 
+ métodos e técnicas de investigação cientifica.
+ Pelo qual será incluído dentro de um processo maior de pesquisa, onde seja
+ possível incluir o desenvolvimento dele dentro do de desenvolvimento de
+ uma hipótese de pesquisa, a solução do problema do presente trabalho 
 \begin_inset Quotes eld
 \end_inset
 
