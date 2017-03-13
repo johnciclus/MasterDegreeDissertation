@@ -94,7 +94,7 @@ key "Turban:2004:DSS:994103"
 
 .
  Os SADs integram conhecimento desenvolvido pelos especialistas do domínio
- que fica implícito nos dados, informações e processos 
+ que fica implícito nos dados, informações e processos usados 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "power2000web"
@@ -102,10 +102,11 @@ key "power2000web"
 \end_inset
 
 .
- Tal conhecimento não é familiar para os desenvolvedores de software, levando
- a usar técnicas de levantamento de requerimentos para entender o domínio
- dos especialistas por parte dos desenvolvedores, e assim implementar o
- sistema software corretamente
+ Tal conhecimento, específico de um domínio, não é familiar para desenvolvedores
+ de software.
+ Eles têm que usar técnicas diversas para o levantamento de requisitos para
+ entender o domínio dos especialistas e assim implementar o sistema software
+ corretamente 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "GavrilovaAndreeva2012"
@@ -113,17 +114,18 @@ key "GavrilovaAndreeva2012"
 \end_inset
 
 .
- Exigindo esforço adicional pelos desenvolvedores do sistema e trazendo
- limitações no tempo e custo de desenvolvimento.
+ Quanto mais especializado for o domínio dos especialistas, mais esforço
+ adicional será necessário aos desenvolvedores do sistema, o que leva a
+ ampliação do tempo e custo de desenvolvimento.
  
 \end_layout
 
 \begin_layout Standard
-Adicionalmente, os especialistas do domínio, em geral, não tem o suficiente
- conhecimento em matéria de desenvolvimento de sistemas software para realizar
- dito processo por eles mesmos.
- Além disso os dois domínios, tanto dos especialistas do domínio como do
- desenvolvimento de software são tão amplos que precisam perfis particulares
+Adicionalmente, os especialistas do domínio, em geral, não tem conhecimento
+ suficiente em matéria de desenvolvimento de sistemas de software para realizar
+ o dito processo por eles mesmos.
+ Além disso, os dois domínios, tanto dos especialistas de domínio como dos
+ desenvolvedores de software, são tão amplos que precisam perfis particulares
  para realizar os processos corretamente
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -132,13 +134,13 @@ key "roussey2010ontologies"
 \end_inset
 
 .
- Dentro deste contexto foi identificado o problema da inexistência de uma
+ Dentro deste contexto, foi identificado o problema da inexistência de uma
  representação de conhecimento para definir SADs, que tenha um formato computáve
 l, entendível e acessível pelos especialistas do domínio.
 \end_layout
 
 \begin_layout Standard
-Como exemplo do anterior problema, podermos expor o caso dos especialistas
+Como exemplo do anterior problema, podemos expor o caso dos especialistas
  em sustentabilidade da Embrapa Meio Ambiente, que desenvolveram o projeto
  SustenAgro (capitulo 
 \begin_inset CommandInset ref
@@ -148,8 +150,8 @@ reference "chap:Sustainability_Assessment"
 \end_inset
 
 ).
- Nesse projeto foi desenvolvido um método de avaliação de sustentabilidade
- no sistema produtivo de cana-de-açúcar 
+ Nesse projeto, foi desenvolvido um método de avaliação de sustentabilidade
+ no sistema produtivo da cana-de-açúcar do centro-sul do Brasil 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
@@ -160,15 +162,34 @@ key "oliveira:2013"
  Tais especialistas precisavam implementar um SAD para disponibilizar o
  método SustenAgro à comunidade interessada em realizar avaliações de sustentabi
 lidade em cana-de-açúcar.
- Neste caso foi identificado que possuíam o conhecimento do domínio avaliação
- de sustentabilidade da cana-de-açúcar, mas não tinham um meio para definir
- dito conhecimento de maneira computável em um SAD.
-\end_layout
+ Nesse caso, foi identificado que eles possuíam o conhecimento do domínio
+ de avaliação de sustentabilidade da cana-de-açúcar, mas não tinham um meio
+ para definir esse conhecimento de maneira computável em um SAD.
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Pela anterior razão, o SAD SustenAgro foi escolhido como projeto piloto
  para desenvolver a presente pesquisa, devido a que ele apresenta o problema
  identificado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DSLs?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -186,7 +207,7 @@ key "Tudhope2006"
 \end_inset
 
 .
- Especificamente nos SADs, pode fornecer meios de integração de conhecimento
+ Especificamente nos SADs, ela pode fornecer meios de integração de conhecimento
  que aumentam as funcionalidades e a eficiência desses sistemas, inclusive
  trazendo vantagens no processo de desenvolvimento dos SAD 
 \begin_inset CommandInset citation
@@ -199,7 +220,7 @@ key "Saxena"
 \end_layout
 
 \begin_layout Standard
-A analise do projeto SustenAgro, permitiu identificar varias motivações
+A analise do projeto SustenAgro permitiu identificar algumas motivações
  relacionadas com a integração de conhecimento dos especialistas.
 \end_layout
 
@@ -207,24 +228,24 @@ A analise do projeto SustenAgro, permitiu identificar varias motivações
 A primeira delas é a necessidade de um método e ferramenta para que os especiali
 stas do domínio definam o conhecimento nos SADs, principalmente as característic
 as particulares que requerem profundo conhecimento.
- Permitindo a participação deles como descritores de conhecimento especifico
- e fornecendo aos desenvolvedores de software tempo adicional para dedicar-se
- aos assuntos próprios da computação, e assim agilizar o processo de desenvolvim
-ento de SADs.
- Facilitando de esta maneira a definição de SADs com menos intervenção por
- parte dos não especialistas do domínio, fazendo que a definição do conhecimento
- fique em termos dos especialistas e gerenciadas por eles mesmos.
+ Isso permite a participação deles como descritores de conhecimento especifico
+ fornecendo, aos desenvolvedores de software, tempo adicional para dedicar-se
+ aos assuntos próprios da computação e assim agilizar o processo de desenvolvime
+nto de SADs.
+ Essa abordagem facilita a definição de SADs com menos intervenção por parte
+ dos não especialistas do domínio, fazendo que a definição do conhecimento
+ fique em termos conhecidos pelos especialistas e seja gerenciada por eles
+ mesmos.
  
 \end_layout
 
 \begin_layout Standard
 A segunda refere-se ao requisito de fornecer meios computáveis de representação
- desse conhecimento, que adaptem-se às mudanças do domínio e que facilite
- a comunicação entre os especialistas do domínio e os desenvolvedores de
- software.
- Devido a que os domínios de conhecimento estão em continua mudança, como
- foi o caso do domínio avaliação da sustentabilidade da cultura de cana-de-açúca
-r 
+ desse conhecimento, que facilitem a comunicação entre os especialistas
+ do domínio e os desenvolvedores de software e que adaptem-se às mudanças
+ do domínio.
+ Domínios de conhecimento estão em continua mudança, como é o caso do domínio
+ avaliação da sustentabilidade da cultura de cana-de-açúcar 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
@@ -236,17 +257,17 @@ key "oliveira:2013"
 \end_layout
 
 \begin_layout Standard
-A terceira é impacto que gerá o correto uso dos SAD
+A terceira é o impacto que gera o correto uso dos SAD
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lee2008349"
 
 \end_inset
 
-, motivando o desenvolvimento do SAD SustenAgro apoiado pela Embrapa Meio
- Ambiente, poderia gerar impacto positivo na produção agrícola, devido a
- que o Sistema SAD fornece a funcionalidade de avaliar a sustentabilidade
- na cana-de-açúcar.
+.
+ O desenvolvimento do SAD SustenAgro, em cooperação com a Embrapa Meio Ambiente,
+ poderia gerar impacto positivo na produção agrícola, já que ele fornece
+ a funcionalidade de avaliar a sustentabilidade na cana-de-açúcar.
  Este SAD em particular é uma contribuição inédita que também permite a
  aplicação em outros sistemas agrícolas, o que poderia suportar melhoras
  e correções na produção de alimentos e produtos agrícolas
@@ -263,9 +284,9 @@ key "Matthews2008149"
 \begin_layout Standard
 Com a finalidade de definir o meio de representação de conhecimento, foi
  analisada a teoria, onde foram analisados vários tipos de sistemas de organizaç
-ão de conhecimento 
+ão de conhecimento ou 
 \lang english
-Knowledge organization system
+Knowledge Organization System
 \lang brazilian
  (
 \lang english
@@ -291,9 +312,27 @@ Objetivo
 \end_layout
 
 \begin_layout Standard
-Desenvolver um método e ferramenta web baseados em ontologias que permita
- representar o conhecimento dos especialistas do domínio para suportar definição
- de SADs, e provar o funcionamento deles por meio da definição do SAD SustenAgro.
+Desenvolver um método e ferramenta web, baseados em ontologias, que permitam
+ representar o conhecimento de especialistas do domínio para suportar a
+ definição de SADs.
+ Essa ferramenta, chamada Decisioner, tem o formato de um framework para
+ SADs, onde uma ontologia, desenvolvida por especialistas de domínio, forma
+ a base de conhecimento do SAD e instruções, numa DSL, servem para customizar
+ seu comportamento.
+ 
+\end_layout
+
+\begin_layout Standard
+Numa parceria com a Embrapa Meio-ambiente, esse framework foi instanciado
+ para produzir o SAD SustenAgro.
+ A ontologia do SustenAgro foi desenvolvida pelos especialistas da Embrapa.
+ Ontologias são comuns na área de biologia e agricultura, assim eles não
+ tiveram dificuldade com o conceito.
+ Eles usaram a DSL para formatar as perguntas aos usuários e o relatório
+ de cada análise.
+ Eles apreciaram muito o fato de usar uma ontologia num SAD, foi a primeira
+ vez que fizeram isso, e de que, ao mudar essa ontologia, verem suas mudanças
+ imediatamente no software.
 \end_layout
 
 \begin_layout Subsection*
@@ -306,33 +345,30 @@ Para alcançar o objetivo proposto, foi necessário cumprir os seguintes objetiv
 \end_layout
 
 \begin_layout Itemize
-Estabelecer um método de definição de SAD por parte dos especialistas.
-\end_layout
-
-\begin_layout Itemize
-Definir uma arquitetura e ferramenta para gerar SADs baseados em conhecimento
- de domínios específicos.
+Definir a arquitetura e o código da ferramenta Decisioner para gerar SADs
+ baseados em conhecimento de domínios específicos.
+ Os SADs gerados usam uma ontologia, desenvolvida por especialistas do domínio
+ e uma DSL, para, automaticamente, gerar as interfaces e funcionalidades
+ do sistema.
 \end_layout
 
 \begin_layout Itemize
 Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
- produtivos de cana-de-açúcar do centro-sul do Brasil, que será a base de
- conhecimento do sistema SustenAgro.
+ produtivos de cana-de-açúcar do centro-sul do Brasil.
+ 
 \end_layout
 
 \begin_layout Itemize
-Desenvolver uma ontologia sobre controles visuais para suportar a geração
- da interface gráfica do SAD SustenAgro.
+Desenvolver uma DSL que permita a definição da interface de usuário, das
+ formulas do modelo, usado pelos especialistas, e do formato do relatório
+ final de cada análise.
 \end_layout
 
 \begin_layout Itemize
-Desenvolver uma DSL que gerencie as ontologias e que flexibilize a definição
- da interface de usuário por parte dos administradores do sistema.
-\end_layout
-
-\begin_layout Itemize
-Demonstrar que o método e ferramenta de definição de SADs por parte dos
- especialistas, permite a geração de sistemas funcionais.
+Demonstrar que o método e ferramenta Decisioner permitem a criação de SADs
+ funcionais que podem ser modificados por especialistas de domínio.
+ Esses especialistas podem definir a ontologia usada e modificar o comportamento
+ do sistema com pouca ou nenhuma intervenção de desenvolvedores.
 \end_layout
 
 \begin_layout Section
@@ -340,52 +376,42 @@ Resultados Principais
 \end_layout
 
 \begin_layout Standard
-Os principais contribuições desta pesquisa e projeto de mestrado são:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Como referir-se ao processo de desenvolvimento e pesquisa ao mesmo tempo
-\end_layout
-
-\end_inset
-
-
+Os principais contribuições deste mestrado são:
 \end_layout
 
 \begin_layout Itemize
-Método e ferramenta para definir SADs por parte dos especialistas do domínio.
+Método e framework Decisioner para definir SADs por parte dos especialistas
+ do domínio de sustentabilidade.
+ Incluindo a DSL que permite a definição da interface de usuário, das formulas
+ do modelo, usado pelos especialistas, e do formato do relatório final de
+ cada análise.
 \end_layout
 
 \begin_layout Itemize
-Ontologia sobre avaliação de sustentabilidade em cana-de-açúcar, representando
- os principais conceitos desse domínio: indicadores, os índices e o método
- de avaliação; permitindo assim suportar o desenvolvimento das outras tecnologia
-s do presente projeto.
+Protótipo do Decisioner usando a linguagem Groovy e o framework Grails.
 \end_layout
 
 \begin_layout Itemize
-Ontologia sobre interfaces gráficas que permite representar os tipos de
- dados e 
+Ontologia SustenAgro sobre avaliação de sustentabilidade em cana-de-açúcar,
+ representando os principais conceitos desse domínio: indicadores, índices
+ e métodos de avaliação.
+ Ela foi desenvolvida em parceria com os especialistas de domínio de sustentabil
+idade da Embrapa.
+\end_layout
+
+\begin_layout Itemize
+Ontologia sobre controles visuais para suportar a geração automática das
+ interfaces gráficas do SAD SustenAgro.
+ Ela permite associar tipos de dados às 
 \lang english
 widgets
 \lang brazilian
- necessários para a geração dos Sistemas de Apoio na Decisão.
+ necessárias para a geração automática das interfaces aos SADs.
 \end_layout
 
 \begin_layout Itemize
-DSL: linguagem de domínio especifico que permite gerenciar ontologias para
- definir sistemas de apoio à decisão.
-\end_layout
-
-\begin_layout Itemize
-Protótipo do Decisioner: Sistema gerador de SADs, que suporta a integração
- de ontologias e DSL em ambientes web.
-\end_layout
-
-\begin_layout Itemize
-SustenAgro: Sistema de Apoio a Decisão para avaliar a sustentabilidade em
- cana-de-açúcar, implementado o método SustenAgro e tecnologias da web semântica.
+O SAD SustenAgro: Sistema para avaliação da sustentabilidade em cana-de-açúcar,
+ na região centro-sul do Brasil, implementado usando o Decisioner.
 \end_layout
 
 \begin_layout Itemize
@@ -401,7 +427,7 @@ Sustainability assessment of sugarcane production systems: SustenAgro Method
 \begin_inset Quotes erd
 \end_inset
 
- submetido no periódico acadêmico 
+ submetido no periódico da Elsevier 
 \begin_inset Quotes eld
 \end_inset
 
@@ -417,12 +443,26 @@ Energy for sustainable Development
  
 \end_layout
 
+\begin_layout Itemize
+Resultados avaliação.
+\end_layout
+
 \begin_layout Section
 Organização
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Rever no fim da escrita.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-A presente dissertação está estruturado da seguinte forma: 
+A presente dissertação está estruturada da seguinte forma: 
 \end_layout
 
 \begin_layout Standard
