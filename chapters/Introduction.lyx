@@ -83,18 +83,18 @@ description "Sistemas de Apoio à Decisão"
 
 \end_inset
 
-) organizam e processam os dados e informações para gerar resultados de
- valor que auxiliem o processo de decisão em um domínio especifico, ditos
- sistemas integram conhecimento desenvolvido pelos especialistas do domínio
- que fica implícito nos dados, informações e processos, dito conhecimento
- não é familiar para os desenvolvedores de software, o que leva a usar diversas
- técnicas de levantamento de requerimentos que envolvem o aprendizado de
- tópicos do domínio dos especialistas por parte dos desenvolvedores, este
- processo exige um esforço adicional por parte dos desenvolvedores do sistema
- e traz limitações no tempo e custo de desenvolvimento, devido a que o conhecime
-nto precisa ser explicado por parte dos especialistas do domínio aos desenvolved
-ores de software, para que eles consigam entender o conhecimento e assim
- implementar o sistema software corretamente.
+) organizam e processam dados e informações para gerar resultados de valor
+ que auxiliem o processo de decisão em um domínio especifico.
+ Esses sistemas integram conhecimento criado por especialistas no domínio
+ alvo às informações implícitas nos dados e processos analisados.
+ Esse conhecimento não é familiar para os desenvolvedores de software, o
+ que leva a usar diversas técnicas de levantamento de requerimentos que
+ envolvem o aprendizado de tópicos do domínio dos especialistas por parte
+ dos desenvolvedores, este processo exige um esforço adicional por parte
+ dos desenvolvedores do sistema e traz limitações no tempo e custo de desenvolvi
+mento, devido a que o conhecimento precisa ser explicado por parte dos especiali
+stas do domínio aos desenvolvedores de software, para que eles consigam
+ entender o conhecimento e assim implementar o sistema software corretamente.
 \end_layout
 
 \begin_layout Standard
