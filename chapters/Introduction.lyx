@@ -94,11 +94,25 @@ key "Turban:2004:DSS:994103"
 
 .
  Os SADs integram conhecimento desenvolvido pelos especialistas do domínio
- que fica implícito nos dados, informações e processos.
+ que fica implícito nos dados, informações e processos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "power2000web"
+
+\end_inset
+
+.
  Tal conhecimento não é familiar para os desenvolvedores de software, levando
  a usar técnicas de levantamento de requerimentos para entender o domínio
  dos especialistas por parte dos desenvolvedores, e assim implementar o
- sistema software corretamente.
+ sistema software corretamente
+\begin_inset CommandInset citation
+LatexCommand citep
+key "GavrilovaAndreeva2012"
+
+\end_inset
+
+.
  Exigindo esforço adicional pelos desenvolvedores do sistema e trazendo
  limitações no tempo e custo de desenvolvimento.
  
@@ -110,18 +124,17 @@ Adicionalmente, os especialistas do domínio, em geral, não tem o suficiente
  dito processo por eles mesmos.
  Além disso os dois domínios, tanto dos especialistas do domínio como do
  desenvolvimento de software são tão amplos que precisam perfis particulares
- para realizar os processos corretamente.
- Dentro deste contexto foi identificado o problema da inexistência de uma
- representação de conhecimento para definir SADs, que tenha um formato computáve
-l, entendível e acessível pelos especialistas do domínio e desenvolvedores
- de software 
+ para realizar os processos corretamente
 \begin_inset CommandInset citation
 LatexCommand citep
 key "roussey2010ontologies"
 
 \end_inset
 
- .
+.
+ Dentro deste contexto foi identificado o problema da inexistência de uma
+ representação de conhecimento para definir SADs, que tenha um formato computáve
+l, entendível e acessível pelos especialistas do domínio.
 \end_layout
 
 \begin_layout Standard
@@ -147,55 +160,53 @@ key "oliveira:2013"
  Tais especialistas precisavam implementar um SAD para disponibilizar o
  método SustenAgro à comunidade interessada em realizar avaliações de sustentabi
 lidade em cana-de-açúcar.
- No caso citado foi identificado que possuíam o conhecimento do domínio
- avaliação de sustentabilidade da cana-de-açúcar, mas não tinham um meio
- para definir dito conhecimento de maneira computável em um SAD.
+ Neste caso foi identificado que possuíam o conhecimento do domínio avaliação
+ de sustentabilidade da cana-de-açúcar, mas não tinham um meio para definir
+ dito conhecimento de maneira computável em um SAD.
 \end_layout
 
 \begin_layout Standard
-O SAD SustenAgro foi escolhido como projeto piloto para desenvolver a presente
- pesquisa, devido a que ele apresenta o problema identificado.
+Pela anterior razão, o SAD SustenAgro foi escolhido como projeto piloto
+ para desenvolver a presente pesquisa, devido a que ele apresenta o problema
+ identificado.
 \end_layout
 
 \begin_layout Section
 Motivação
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Acho que falta dizer algo sobre a sustentabilidade na agricultura, ou até
- mais especificamente na cana-de-açucar.
- pelo menos um paragrafo referenciado dizendo como esta o tema de desenvolviment
-o de softwares para sustentabilidade na agricultura.
- Existe muita aplicação? quais são as necessidades? quais são ainda as dificulda
-des? acho que ajuda a justificar a importancia da realização do trabalho
- e principalmente a justificativa da escola do caso da Embrapa.
- 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 A pesquisa em representação e organização de conhecimento tem alto impacto
- devido ao fato de fornecer métodos e ferramentas para gerenciar o conhecimento
- em diversos domínios.
- Especificamente no desenvolvimentos dos SADs, pode fornecer meios de integração
- de conhecimento que aumentam as funcionalidades e a eficiência desses sistemas
- em comparação com os métodos tradicionais de desenvolvimento.
+ devido ao fato de fornecer métodos e ferramentas para entender e gerenciar
+ o conhecimento em diversos domínios 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tudhope2006"
+
+\end_inset
+
+.
+ Especificamente nos SADs, pode fornecer meios de integração de conhecimento
+ que aumentam as funcionalidades e a eficiência desses sistemas, inclusive
+ trazendo vantagens no processo de desenvolvimento dos SAD 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Saxena"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-A analise do projeto SustenAgro, permitiu identificar varias motivações.
- 
+A analise do projeto SustenAgro, permitiu identificar varias motivações
+ relacionadas com a integração de conhecimento dos especialistas.
 \end_layout
 
 \begin_layout Standard
-A primeira delas é a necessidade do fornecimento de um método e ferramenta
- para que os especialistas do domínio definam o conhecimento nos SADs, principal
-mente as características particulares que requerem profundo conhecimento.
+A primeira delas é a necessidade de um método e ferramenta para que os especiali
+stas do domínio definam o conhecimento nos SADs, principalmente as característic
+as particulares que requerem profundo conhecimento.
  Permitindo a participação deles como descritores de conhecimento especifico
  e fornecendo aos desenvolvedores de software tempo adicional para dedicar-se
  aos assuntos próprios da computação, e assim agilizar o processo de desenvolvim
@@ -211,11 +222,37 @@ A segunda refere-se ao requisito de fornecer meios computáveis de representaç�
  desse conhecimento, que adaptem-se às mudanças do domínio e que facilite
  a comunicação entre os especialistas do domínio e os desenvolvedores de
  software.
- Devido a que a avaliação da sustentabilidade da cultura de cana-de-açúcar
- está em continua mudança 
+ Devido a que os domínios de conhecimento estão em continua mudança, como
+ foi o caso do domínio avaliação da sustentabilidade da cultura de cana-de-açúca
+r 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A terceira é impacto que gerá o correto uso dos SAD
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lee2008349"
+
+\end_inset
+
+, motivando o desenvolvimento do SAD SustenAgro apoiado pela Embrapa Meio
+ Ambiente, poderia gerar impacto positivo na produção agrícola, devido a
+ que o Sistema SAD fornece a funcionalidade de avaliar a sustentabilidade
+ na cana-de-açúcar.
+ Este SAD em particular é uma contribuição inédita que também permite a
+ aplicação em outros sistemas agrícolas, o que poderia suportar melhoras
+ e correções na produção de alimentos e produtos agrícolas
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Matthews2008149"
 
 \end_inset
 
@@ -424,8 +461,8 @@ Capítulo 7: Apresenta as conclusões do presente trabalho, uma discussão
 \end_layout
 
 \begin_layout Standard
-Finalmente são apresentados os anexos que descrevem conceitos específicos
- do trabalho.
+Finalmente são apresentados os anexos que descrevem conceitos de terceiros
+ usados no trabalho e informações técnicas dos sistemas desenvolvidos..
 \end_layout
 
 \end_body
