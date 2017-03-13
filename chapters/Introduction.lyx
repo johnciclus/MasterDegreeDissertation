@@ -353,15 +353,15 @@ Definir a arquitetura e o código da ferramenta Decisioner para gerar SADs
 \end_layout
 
 \begin_layout Itemize
-Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
- produtivos de cana-de-açúcar do centro-sul do Brasil.
- 
-\end_layout
-
-\begin_layout Itemize
 Desenvolver uma DSL que permita a definição da interface de usuário, das
  formulas do modelo, usado pelos especialistas, e do formato do relatório
  final de cada análise.
+\end_layout
+
+\begin_layout Itemize
+Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
+ produtivos de cana-de-açúcar do centro-sul do Brasil.
+ 
 \end_layout
 
 \begin_layout Itemize
