@@ -129,7 +129,13 @@ EndPreamble
 
 \begin_layout Standard
 A instalação dos Sistemas Decisioner e SustenAgro divide-se em dois processos,
- a configuração do servidor web e o deploy do arquivo WAR
+ a configuração do servidor web e o 
+\lang english
+deploy
+\lang brazilian
+ do arquivo 
+\lang english
+Web Application Archive (WAR
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "WAR"
@@ -137,6 +143,8 @@ description "Web Application Archive"
 
 \end_inset
 
+)
+\lang brazilian
 , a continuação são descritos ambos processos:
 \end_layout
 
@@ -145,12 +153,49 @@ Configuração do servidor.
 \end_layout
 
 \begin_layout Standard
-Esta fase do processo consiste em instalar as tecnologias Java, Apache Tomcat,
- WkHtmltoPdf e a triplestore Blazegraph, em um servidor baseado em linux,
- atualmente o sistema foi configurado e testado em uma maquina virtual com
- Ubuntu 14.04, Java OpenJDK 8, Apache Tomcat, WkHtmltoPdf 0.12.3 e a triplestore
- Blazegraph 2.1.0, a instalação destas tecnologias segue uma orientação padrão
- que sera descrita a continuação:
+Esta fase do processo consiste em instalar as tecnologias Java, Apache 
+\lang english
+Tomcat
+\lang brazilian
+, 
+\lang english
+WkHtmltoPdf
+\lang brazilian
+ e a 
+\lang english
+triplestore
+\lang brazilian
+ 
+\lang english
+Blazegraph
+\lang brazilian
+, em um servidor baseado em 
+\lang english
+linux
+\lang brazilian
+, atualmente o sistema foi configurado e testado em uma maquina virtual
+ com Ubuntu 14.04, Java 
+\lang english
+OpenJDK
+\lang brazilian
+ 8, Apache 
+\lang english
+Tomcat
+\lang brazilian
+, 
+\lang english
+WkHtmltoPdf
+\lang brazilian
+ 0.12.3 e a 
+\lang english
+triplestore
+\lang brazilian
+ 
+\lang english
+Blazegraph
+\lang brazilian
+ 2.1.0, a instalação destas tecnologias segue uma orientação padrão que sera
+ descrita a continuação:
 \end_layout
 
 \begin_layout Subsection
@@ -158,8 +203,11 @@ Instalação do Java:
 \end_layout
 
 \begin_layout Standard
-Segundo a documentação de Java OpenJDK, a instalação é realizada por meio
- do comando:
+Segundo a documentação de Java 
+\lang english
+OpenJDK
+\lang brazilian
+, a instalação é realizada por meio do comando:
 \end_layout
 
 \begin_layout Standard
@@ -183,13 +231,25 @@ sudo apt-get install openjdk-8-jre
 \end_layout
 
 \begin_layout Subsection
-Instalação do Apache Tomcat
+Instalação do 
+\lang english
+Apache Tomcat
 \end_layout
 
 \begin_layout Standard
-A instalação do Apache Tomcat depende da instalação do Java 8, e o Tomcat
- versão 7 para suportar a compatibilidade do War gerado, isto é documentado
- no site
+A instalação do 
+\lang english
+Apache Tomcat
+\lang brazilian
+ depende da instalação do Java 8, e o 
+\lang english
+Tomcat
+\lang brazilian
+ versão 7 para suportar a compatibilidade do 
+\lang english
+War
+\lang brazilian
+ gerado, isto é documentado no site
 \begin_inset Foot
 status open
 
@@ -199,14 +259,36 @@ https://grails.org/wiki/Deployment
 
 \end_inset
 
- do framework Grails, que exige uma versão 7 de Apache Tomcat para suportar
- o deploy dos arquivos war.
+ do framework 
+\lang english
+Grails
+\lang brazilian
+, que exige uma versão 7 de 
+\lang english
+Apache Tomcat
+\lang brazilian
+ para suportar o 
+\lang english
+deploy
+\lang brazilian
+ dos arquivos 
+\lang english
+WAR
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
 O processo de instalação consiste em fazer download dos arquivos binários,
- extrair eles em /opt/tomcat/, exportar as variáveis de entorno e executar
- o Web Server, o código é mostrado a continuação:
+ extrair eles em 
+\lang english
+/opt/tomcat/
+\lang brazilian
+, exportar as variáveis de entorno e executar o 
+\lang english
+Web Server
+\lang brazilian
+, o código é mostrado a continuação:
 \end_layout
 
 \begin_layout Standard
@@ -248,8 +330,21 @@ sudo /opt/tomcat/bin/startup.sh
 \end_layout
 
 \begin_layout Standard
-Configurar users de Tomcat em: /opt/tomcat/conf/tomcat-users.xml e acrescentar
- os Rol e User
+Configurar 
+\lang english
+users
+\lang brazilian
+ de 
+\lang english
+Tomcat
+\lang brazilian
+ em: 
+\lang english
+/opt/tomcat/conf/tomcat-users.xml 
+\lang brazilian
+e acrescentar os Rol e 
+\lang english
+User
 \end_layout
 
 \begin_layout Standard
@@ -321,13 +416,34 @@ e verificar a execução do programa na url /manager do domínio do servidor
 \end_layout
 
 \begin_layout Subsection
-Instalação do WkHtmltoPdf
+Instalação do 
+\lang english
+WkHtmltoPdf
 \end_layout
 
 \begin_layout Standard
-A tecnologia WkHtmltoPdf permite converter paginas web em formato Html a
- Pdf, esta ferramenta suporta a funcionalidade de gerar os reportes em formato
- Pdf, a instalação consistem em fazer download dos arquivos binários e a
+A tecnologia 
+\lang english
+WkHtmltoPdf
+\lang brazilian
+ permite converter paginas web em formato 
+\lang english
+HTML
+\lang brazilian
+ a 
+\lang english
+Portable Document Format (PDF
+\lang brazilian
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PDF"
+description "Portable Document Format"
+
+\end_inset
+
+), esta ferramenta suporta a funcionalidade de gerar os reportes em formato
+ PDF, a instalação consistem em fazer download dos arquivos binários e a
  configuração de um X Server Virual para suportar o renderizado, os comandos
  são mostrados a continuação:
 \end_layout
@@ -389,8 +505,15 @@ sudo apt-get install openssl build-essential xorg libssl-dev
 \end_layout
 
 \begin_layout Standard
-Depois disto é criado um script wkhtmltopdf.sh em /usr/local/bin/ e contem
- o seguinte comando:
+Depois disto é criado um 
+\lang english
+script wkhtmltopdf.sh
+\lang brazilian
+ em 
+\lang english
+/usr/local/bin/
+\lang brazilian
+ e contem o seguinte comando:
 \end_layout
 
 \begin_layout Standard
@@ -414,18 +537,34 @@ sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh
 \end_layout
 
 \begin_layout Standard
-Com o comando wkhtmltopdf.sh é possível converter a pdf desde um sistema
- sem X11
+Com o comando 
+\lang english
+wkhtmltopdf.sh
+\lang brazilian
+ é possível converter a 
+\lang english
+PDF
+\lang brazilian
+ desde um sistema sem X11
 \end_layout
 
 \begin_layout Subsubsection*
-Instalação da Triplestore Blazegraph
+Instalação da 
+\lang english
+Triplestore Blazegraph
 \end_layout
 
 \begin_layout Standard
-A instalação do Blazegraph consiste em fazer download do arquivo binário
- e executar com o arquivo de configuração RWStore2.properties o serviço de
- triplestore.
+A instalação do 
+\lang english
+Blazegraph
+\lang brazilian
+ consiste em fazer download do arquivo binário e executar com o arquivo
+ de configuração RWStore2.properties o serviço de 
+\lang english
+triplestore
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -481,13 +620,41 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 \end_layout
 
 \begin_layout Section
-Deploy do arquivo war
+
+\lang english
+Deploy
+\lang brazilian
+ do arquivo 
+\lang english
+WAR
 \end_layout
 
 \begin_layout Standard
-O deploy do sistema consiste em executar os serviços do Tomcat 7 e Triplestore,
- e fazer upload do arquivo SustenAgro-1.0.war ao servidor Apache Tomcat para
- fazer o deploy no Path 
+O 
+\lang english
+deploy
+\lang brazilian
+ do sistema consiste em executar os serviços do 
+\lang english
+Tomcat
+\lang brazilian
+ 7 e 
+\lang english
+Triplestore
+\lang brazilian
+, e fazer 
+\lang english
+upload
+\lang brazilian
+ do arquivo SustenAgro-1.0.war ao servidor Apache Tomcat para fazer o 
+\lang english
+deploy
+\lang brazilian
+ no 
+\lang english
+path
+\lang brazilian
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -495,7 +662,11 @@ O deploy do sistema consiste em executar os serviços do Tomcat 7 e Triplestore,
 \begin_inset Quotes erd
 \end_inset
 
-, e finalmente reiniciar o Tomcat.
+, e finalmente reiniciar o 
+\lang english
+Tomcat
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard

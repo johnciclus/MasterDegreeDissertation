@@ -174,7 +174,7 @@ e para usuários especialistas
 \begin_layout Standard
 dentro deles está o sistema produtivo de cana-de-açúcar que é extremamente
  importante para a economia do Brasil e do estado de São Paulo, devido a
- que é uma das principais culturas produzidas no paisSérgio Alves Torquato
+ que é uma das principais culturas produzidas no pais Sérgio Alves Torquato
  (2015), pelo qual foi escolhido como sistema produtivo piloto para abordar
  a presente pesquisa.
 \end_layout
@@ -271,16 +271,8 @@ widgets
 \lang brazilian
  (elementos da 
 \lang english
-GUI
+UI
 \lang brazilian
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GUI"
-description "Graphical User Interface"
-
-\end_inset
-
 ) reusáveis na web, fornecendo um modelo que permite encapsulamento e interopera
 bilidade dos componentes.
 \end_layout
@@ -304,10 +296,18 @@ Metodologia.
 O conhecimento do domínio envolvido no sistema SustenAgro está em contínua
  evolução, por isso, foi necessário uma metodologia que suporte mudanças
  na estrutura e no conteúdo, durante cada uma das fases do desenvolvimento.
+ O desenvolvimento dessa ontologia ocorreu de forma ágil e modular, por
+ meio de técnicas de prototipação rápida, abrangendo grupos de conceitos
+ relacionados entre si.
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento da ontologia foi iniciado com a criação de um mapa conceitual
+O desenvolvimento da ontologia depende essencialmente da comunicação entre
+ os especialistas e os modeladores.
+ Foram definidos meios de comunicação e de representação do conhecimento:
+ reuniões presenciais e virtuais, e o modelos conceituais que permitem uma
+ visualização direta do domínio.
+ Um dos métodos de maior resultado, foi o desenvolvimento de um mapa conceitual
 \begin_inset Foot
 status open
 
@@ -331,7 +331,15 @@ http://cmap.ihmc.us/
  com o acompanhamento de um grupo de especialistas em modelagem de conhecimento.
  Na reunião da equipe na Embrapa Informática Agropecuária (UNICAMP - Campinas),
  onde foram identificados os principais conceitos e permitiu aprender sobre
- a metodologia para definir ontologias.
+ a metodologia para definir ontologias, depois tais conceitos foram modelados
+ em OWL para fazer computável tal conhecimento.
+\end_layout
+
+\begin_layout Standard
+Depois disso, o especialista do domínio construiu perguntas de interesse,
+ com as quais os modeladores definirão consultas que o sistema deverá responder
+ segundo os resultados esperados, conseguindo validar e ajustar até ter
+ um protótipo confiável.
 \end_layout
 
 \begin_layout Standard
@@ -420,20 +428,26 @@ web components
 \lang brazilian
  foi vinculado no desenvolvimento das 
 \lang english
-web views
+web UI
 \lang brazilian
 , que permitiram integrar e avaliar cada um dos componentes para satisfazer
  os requisitos identificados.
 \end_layout
 
 \begin_layout Standard
-A metodologia de desenvolvimento das 
-\lang english
-web views
-\lang brazilian
- e dos 
+\begin_inset CommandInset label
+LatexCommand label
+name "A-metodologia-de-UI"
+
+\end_inset
+
+A metodologia de desenvolvimento dos 
 \lang english
 web components
+\lang brazilian
+ e das 
+\lang english
+web UIs
 \lang brazilian
  incluiu as seguintes etapas que correspondem ao levantamento de requisitos,
  cujo objetivo foi definir as características do software, cada uma das
@@ -516,6 +530,23 @@ ado os conceitos por meio de entidades, classes, relações semânticas e axioma
 \end_layout
 
 \begin_layout Standard
+Para definir a ontologia de domínio do SustenAgro, realizou-se uma pesquisa
+ das fontes de dados relacionadas com ontologias do domínio de avaliação
+ de sustentabilidade em sistemas produtivos de cana-de-açúcar.
+ Concluiu-se que não existem ontologias que suportem esse domínio, por isso
+ propôs-se desenvolver uma ontologia que utilize os conceitos de avaliação
+ de sustentabilidade e de sistemas agrícolas.
+ Dita ontologia representa os conceitos identificados por 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oliveira:2013"
+
+\end_inset
+
+ e de algumas tecnologias fornecidas pela FAO.
+\end_layout
+
+\begin_layout Standard
 A figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -533,40 +564,17 @@ reference "fig:ontology-conceptual-map"
 As ontologias da web semântica satisfazem o requisito de separar o conhecimento
  do domínio da lógica da computação, permitindo abordar cada desenvolvimento
  de uma maneira independente e suportando conceitos importantes como a inferênci
-a, que são de grande importância no desenvolvimento como os 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SAD"
-description "Domain Specific Language"
-
-\end_inset
-
-.
+a, que são de grande importância no desenvolvimento como os SAD.
 \end_layout
 
 \begin_layout Standard
 Uma caraterística importante de SustenAgro é a recuperação da informação
  com significado semântico, permitindo que o sistema dê respostas às consultas
  complexas de interesse para os especialistas, além da integração com conhecimen
-to externo existente em formatos da web semântica, como são os padrões
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "RDF"
-description "Resource Description Framework"
-
-\end_inset
-
-, 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "OWL"
-description "Web Ontology Language"
-
-\end_inset
-
- e vários sistemas de representação do conhecimento como dicionários, thesaurus
- e redes semânticas, o que permite aumentar as possibilidades de integração
- com diversas tecnologias e fornecer novas funcionalidades.
+to externo existente em formatos da web semântica, como são os padrões RDF,
+ OWL e vários sistemas de representação do conhecimento como dicionários,
+ thesaurus e redes semânticas, o que permite aumentar as possibilidades
+ de integração com diversas tecnologias e fornecer novas funcionalidades.
  
 \end_layout
 
@@ -664,15 +672,450 @@ Production Unit
 \lang brazilian
 , 
 \lang english
-Indicator
+Microregion, Indicator
 \lang brazilian
 , 
-\lang english
-Microregion
 \shape default
+, 
+\lang english
+Categorical
 \lang brazilian
 ; os quais são vinculados por meio do método de avaliação de sustentabilidade,
  a continuação são apresentados as principais classes desta ontologia.
+\end_layout
+
+\begin_layout Standard
+A continuação serão apresentadas as principais classes modeladas na ontologia.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Production Unit
+\end_layout
+
+\begin_layout Standard
+Representa as organizações que podem ser avaliadas pelo sistema SustenAgro
+ para obter avaliações da sustentabilidade, atualmente podem ser 
+\shape italic
+Fornecedores de cana-de-açúcar
+\shape default
+ e / ou 
+\shape italic
+Usinas processadoras de cana-de-açúcar
+\shape default
+, cada processo de avaliação requer dados que definem as unidades produtivas
+ através das propriedades que os conformam, existem propriedades obrigatórias
+ como:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+hasAgriculturalProductionSystem
+\lang brazilian
+: relaciona o sistema de produção agrícola em avaliação.
+\end_layout
+
+\begin_layout Itemize
+hasAvailabilityOfEvaluationResults: relaciona o tipo de disponibilização
+ dos resultados.
+\end_layout
+
+\begin_layout Itemize
+hasSugarcaneSource: relaciona a origem da cana com o sistema em definição
+\end_layout
+
+\begin_layout Itemize
+harvestYear: define o ano da safra.
+\end_layout
+
+\begin_layout Itemize
+canavialLongevity: define a longevidade do canavial 
+\end_layout
+
+\begin_layout Standard
+Na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-unidade-produtiva"
+
+\end_inset
+
+ apresenta-se a modelagem de 
+\lang english
+Production Unit
+\lang brazilian
+, feita na ferramenta Protégé.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/ProductionUnit.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem unidade produtiva 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-unidade-produtiva"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\shape italic
+\lang english
+Microregion
+\lang brazilian
+ 
+\end_layout
+
+\begin_layout Standard
+Representam os locais onde são localizadas as unidades produtivas, permitindo
+ definir a microrregião para as fazendas e usinas do sistema produtivo de
+ cana-de-açúcar, atualmente a ontologia tem 7 estados pertencentes ao centro-sul
+ do Brasil e 243 microrregiões dentro dos estados registrados, estes dados
+ foram consultados semanticamente e integrados no sistema a partir de uma
+ consulta na DB-pedia.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-de-Microrregião"
+
+\end_inset
+
+ representa a modelagem das localizações geograficas usadas no sistema SustenAgr
+o, com algumas instancias de 
+\shape italic
+Microregion
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/Microregion.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem de microrregião
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-de-Microrregião"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir das anteriores classes foi possível desenvolver o modelo de dados
+ em formato de ontologias da web semântica 
+\lang english
+OWL
+\lang brazilian
+, as classes descritas foram relacionados por meio de 
+\shape italic
+\lang english
+Object Properties
+\shape default
+\lang brazilian
+ e 
+\shape italic
+\lang english
+Data Properties
+\shape default
+\lang brazilian
+ que permitem vincular semanticamente as classes associadas na avaliação
+ de sustentabilidade, os 
+\shape italic
+\lang english
+Data/Object Properties
+\shape default
+\lang brazilian
+ precisam ter definida a propriedade 
+\shape italic
+\lang english
+rdfs:range
+\lang brazilian
+ 
+\shape default
+para realizar a validação dos dados vinculados e ditas propriedades podem
+ ser 
+\lang english
+Functional
+\lang brazilian
+ para garantir uma relação de um a um.
+\end_layout
+
+\begin_layout Standard
+A principal contribuição da ontologia do domínio é ser uma representação
+ semântica do conhecimento de domínio tanto para os usuários como para o
+ sistema computacional, tornando-se um meio de comunicação entre os especialista
+s de domínio e os programadores.
+\end_layout
+
+\begin_layout Subsection*
+
+\shape italic
+\lang english
+Indicator
+\end_layout
+
+\begin_layout Standard
+Os indicadores são o principal componente da ontologia, foram propostos
+ por um grupo de especialistas de diversas áreas da produção agrícola e
+ sustentabilidade 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oliveira:2013"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Representam as características das unidades produtivas que serão identificadas
+ e quantificadas em cada processo de avaliação, eles tem um 
+\shape italic
+\lang english
+Value
+\lang brazilian
+ 
+\shape default
+que quantifica a sustentabilidade do indicador, esta propriedade junto com
+ outras conformam um formato que permite identificar e gerenciar tais elementos.
+\end_layout
+
+\begin_layout Standard
+A ontologia do domínio foi desenvolvida baseada nas definições feitas pelos
+ especialistas, que foram generalizadas a través das seguintes classes represent
+adas na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:StructureOfDomainOntology"
+
+\end_inset
+
+, cada uma delas permite representar os conceitos gerais dos sistemas de
+ avaliação da sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+Também permite a integração de conceitos, inclusive quando pertencem a domínios
+ sem relação aparente.
+ Um exemplo disso é a inter-relação do conhecimento de sustentabilidade
+ com conhecimento de interfaces gráficas de usuário, que suporta a geração
+ de SAD para avaliação da sustentabilidade, o conhecimento modelado foi
+ dividido em duas ontologias, avaliação de sustentabilidade e do SAD.
+\end_layout
+
+\begin_layout Standard
+As ontologias da web semântica são compatíveis com as tecnologias web, permitind
+o o uso e integração por outros sistemas dado que está em um formato padronizado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/StructureOfDomainOntology.png
+	scale 150
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estrutura Geral da Ontologia de Domínio
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:StructureOfDomainOntology"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-de-Indicador"
+
+\end_inset
+
+ apresenta a hierarquia dos indicadores, que está subdividida em 
+\lang english
+Efficiency Indicator
+\lang brazilian
+ e 
+\lang english
+Sustainability Indicator
+\lang brazilian
+, os 
+\lang english
+Indicators
+\lang brazilian
+ tem a propriedade 
+\shape italic
+\lang english
+has value
+\lang brazilian
+ 
+\shape default
+que estabelece um valor
+\shape italic
+,
+\shape default
+ existe outra propriedade 
+\lang english
+has weight
+\lang brazilian
+ que é opcional e estabelece um peso, estas características representam
+ o formato de um 
+\shape italic
+\lang english
+Indicator.
+\end_layout
+
+\begin_layout Standard
+A figura também apresenta um indicador intitulado 
+\lang english
+Adequacy of boilers
+\lang brazilian
+ que tem como 
+\lang english
+has value
+\lang brazilian
+ uma lista composta por duas classes e como propriedade 
+\lang english
+has weight
+\lang brazilian
+ uma classe.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/Indicador.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem de indicador 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-de-Indicador"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -967,7 +1410,7 @@ Atributo custo: indicadores que avaliam os aspectos dos custos da produção.
 \end_layout
 
 \begin_layout Standard
-A 
+A Agência Paulista de Tecnologia dos Agronegócios (APTA
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "APTA"
@@ -975,7 +1418,7 @@ description "Agência Paulista de Tecnologia dos Agronegócios"
 
 \end_inset
 
- forneceu dados econômicos das principais usinas do estado de São Paulo,
+) forneceu dados econômicos das principais usinas do estado de São Paulo,
  que permitiram definir a dimensão econômica das unidades produtivas na
  ontologia do domínio.
 \end_layout
@@ -1043,202 +1486,99 @@ name "fig:Method"
 
 \end_layout
 
-\begin_layout Standard
-A continuação serão apresentadas as principais classes modeladas na ontologia.
-\end_layout
-
 \begin_layout Subsection*
 
 \lang english
-Production Unit
+Categorical
 \end_layout
 
 \begin_layout Standard
-Representa as organizações que podem ser avaliadas pelo sistema SustenAgro
- para obter avaliações da sustentabilidade, atualmente podem ser 
-\shape italic
-Fornecedores de cana-de-açúcar
-\shape default
- e / ou 
-\shape italic
-Usinas processadoras de cana-de-açúcar
-\shape default
-, cada processo de avaliação requer dados que definem as unidades produtivas
- através das propriedades que os conformam, existem propriedades obrigatórias
- como:
-\end_layout
-
-\begin_layout Itemize
-
+A ontologia de SustenAgro representa os possíveis 
 \lang english
-hasAgriculturalProductionSystem
+Value
 \lang brazilian
-: relaciona o sistema de produção agrícola em avaliação.
-\end_layout
+ que um 
+\shape italic
+\lang english
+Indicator
+\shape default
+\lang brazilian
+ ou 
+\shape italic
+\lang english
+Variable
+\shape default
+\lang brazilian
+ pode a través das suas subclasses como são a classe 
+\lang english
+Real
+\lang brazilian
+ e a classe 
+\lang english
+Categorical.
 
-\begin_layout Itemize
-hasAvailabilityOfEvaluationResults: relaciona o tipo de disponibilização
- dos resultados.
-\end_layout
-
-\begin_layout Itemize
-hasSugarcaneSource: relaciona a origem da cana com o sistema em definição
-\end_layout
-
-\begin_layout Itemize
-harvestYear: define o ano da safra.
-\end_layout
-
-\begin_layout Itemize
-canavialLongevity: define a longevidade do canavial 
+\lang brazilian
+ Esta classe permite classificar cada umas das categorias de valores que
+ pode ter um 
+\lang english
+Indicator
+\lang brazilian
+, ditas categorias são elementos discretos modelados como indivíduos da
+ classe, permitindo assim, restringir as opções de escolha de cada indicador.
 \end_layout
 
 \begin_layout Standard
 Na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Modelagem-unidade-produtiva"
+reference "fig:Modelagem-de-Value"
 
 \end_inset
 
- apresenta-se a modelagem de 
-\lang english
-Production Unit
-\lang brazilian
-, feita na ferramenta Protégé.
- 
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/ProductionUnit.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Modelagem unidade produtiva 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Modelagem-unidade-produtiva"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-
-\shape italic
-\lang english
-Indicator
-\end_layout
-
-\begin_layout Standard
-Os indicadores são o principal componente da ontologia, foram propostos
- por um grupo de especialistas de diversas áreas da produção agrícola e
- sustentabilidade 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "oliveira:2013"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Representam as características das unidades produtivas que serão identificadas
- e quantificadas em cada processo de avaliação, eles tem um 
+ é apresentado a classe 
 \shape italic
 \lang english
 Value
-\lang brazilian
- 
 \shape default
-que quantifica a sustentabilidade do indicador, esta propriedade junto com
- outras conformam um formato que permite identificar e gerenciar tais elementos.
+\lang brazilian
+ e as subclasses modeladas, tanto 
+\shape italic
+\lang english
+Categorical
+\shape default
+\lang brazilian
+ para conjunto finito de valores e 
+\shape italic
+\lang english
+Real
+\shape default
+\lang brazilian
+ para valores numéricos, como exemplo está a classe 
+\shape italic
+\lang english
+Yes/No
+\shape default
+\lang brazilian
+ que representa os valores de sim e não, os quais são modelados como indivíduos
+ de dita classe.
 \end_layout
 
 \begin_layout Standard
-A figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Modelagem-de-Indicador"
-
-\end_inset
-
- apresenta a hierarquia dos indicadores, que está subdividida em 
+Cada individuo da classe 
+\shape italic
 \lang english
-Efficiency Indicator
-\lang brazilian
- e 
-\lang english
-Sustainability Indicator
-\lang brazilian
-, os 
-\lang english
-Indicators
+Value
+\shape default
 \lang brazilian
  tem a propriedade 
 \shape italic
 \lang english
-has value
+as number
 \lang brazilian
  
 \shape default
-que estabelece um valor
-\shape italic
-,
-\shape default
- existe outra propriedade 
-\lang english
-has weight
-\lang brazilian
- que é opcional e estabelece um peso, estas características representam
- o formato de um 
-\shape italic
-\lang english
-Indicator.
-\end_layout
-
-\begin_layout Standard
-A figura também apresenta um indicador intitulado 
-\lang english
-Adequacy of boilers
-\lang brazilian
- que tem como 
-\lang english
-has value
-\lang brazilian
- uma lista composta por duas classes e como propriedade 
-\lang english
-has weight
-\lang brazilian
- uma classe.
+que relaciona um valor numérico para definir um critério de comparação e
+ fornecer um formato para este tipo de dados.
 \end_layout
 
 \begin_layout Standard
@@ -1249,10 +1589,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\noindent
 \align center
 \begin_inset Graphics
-	filename ../figures/Indicador.png
+	filename ../figures/Value.png
 	scale 50
 
 \end_inset
@@ -1264,87 +1603,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modelagem de indicador 
+Modelagem de 
+\lang english
+Value
+\lang brazilian
+
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Modelagem-de-Indicador"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-
-\shape italic
-\lang english
-Microregion
-\lang brazilian
- 
-\end_layout
-
-\begin_layout Standard
-Representam os locais onde são localizadas as unidades produtivas, permitindo
- definir a microrregião para as fazendas e usinas do sistema produtivo de
- cana-de-açúcar, atualmente a ontologia tem 7 estados pertencentes ao centro-sul
- do Brasil e 243 microrregiões dentro dos estados registrados, estes dados
- foram consultados semanticamente e integrados no sistema a partir de uma
- consulta na DB-pedia.
-\end_layout
-
-\begin_layout Standard
-A figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Modelagem-de-Microrregião"
-
-\end_inset
-
- representa a modelagem das localizações geograficas usadas no sistema SustenAgr
-o, com algumas instancias de 
-\shape italic
-Microregion
-\shape default
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/Microregion.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Modelagem de microrregião
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Modelagem-de-Microrregião"
+name "fig:Modelagem-de-Value"
 
 \end_inset
 
@@ -1362,56 +1628,29 @@ name "fig:Modelagem-de-Microrregião"
 \end_layout
 
 \begin_layout Standard
-A partir das anteriores classes foi possível desenvolver o modelo de dados
- em formato de ontologias da web semântica 
-\lang english
-OWL
-\lang brazilian
-, as classes descritas foram relacionados por meio de 
-\shape italic
-\lang english
-Object Properties
-\shape default
-\lang brazilian
- e 
-\shape italic
-\lang english
-Data Properties
-\shape default
-\lang brazilian
- que permitem vincular semanticamente as classes associadas na avaliação
- de sustentabilidade, os 
-\shape italic
-\lang english
-Data/Object Properties
-\shape default
-\lang brazilian
- precisam ter definida a propriedade 
-\shape italic
+Estas classes são complementadas com propriedades como 
 \lang english
 rdfs:range
 \lang brazilian
- 
-\shape default
-para realizar a validação dos dados vinculados e ditas propriedades podem
- ser 
+ ou por padrões dos dados que relacionam as 
 \lang english
-Functional
+widgets
 \lang brazilian
- para garantir uma relação de um a um.
-\end_layout
-
-\begin_layout Standard
-A principal contribuição da ontologia do domínio é ser uma representação
- semântica do conhecimento de domínio tanto para os usuários como para o
- sistema computacional, tornando-se um meio de comunicação entre os especialista
-s de domínio e os programadores.
+ mais apropriadas na representação de informações, e assim fornecer a geração
+ de interfaces gráficas de usuário.
 \end_layout
 
 \begin_layout Section
 
 \lang english
-GUIs e Web Components
+Web Components e Web UI
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Web-UI"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1419,10 +1658,28 @@ O design das interfaces gráficas e desenvolvimento dos web componentes foram
  realizados por meio da varias técnicas de levantamento de requerimentos
  para especificar as funcionalidades que os especialistas requereram do
  sistema SustenAgro, devido a que não existiam requerimentos bem definidos,
- por isso foi necessário usar as seguintes técnicas.
+ por isso foi necessário usar as seguintes técnicas de 
+\lang english
+User Stories
+\lang brazilian
+, 
+\lang english
+Scenarios
+\lang brazilian
+, 
+\lang english
+Storyboard
+\lang brazilian
+, 
+\lang english
+Mockups
+\lang brazilian
+ e protótipo de interface gráfica, que serão descritas a continuação:
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
 User Stories
 \end_layout
 
@@ -1575,6 +1832,8 @@ de e da qualidade da matéria-prima, bem como em diminuição dos custos da
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
 Scenarios
 \end_layout
 
@@ -1860,11 +2119,17 @@ de.
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
 Storyboard
 \end_layout
 
 \begin_layout Standard
-Storyboards são similares aos cenários.
+
+\lang english
+Storyboards
+\lang brazilian
+ são similares aos cenários.
  Elas ilustram a interação necessária para atingir um objetivo sem utilizar
  uma lista de passos, a interação é visualizada por meio de uma história
  de quadrinhos.
@@ -1874,8 +2139,11 @@ Storyboards são similares aos cenários.
 Esta representação permite se ter uma visão holística da interação do usuário,
  com ênfase nos aspectos funcionais da interação e não nos aspectos da interface
  de usuário.
- A seguir, são apresentados os textos das storyboard dos processos identificados
-:
+ A seguir, são apresentados os textos das 
+\lang english
+storyboard
+\lang brazilian
+ dos processos identificados:
 \end_layout
 
 \begin_layout Standard
@@ -2822,7 +3090,7 @@ name "fig:Semáforo-de-sustentabilidade"
 \begin_layout Section
 
 \lang english
-DSL
+Decisioner DSL: code
 \end_layout
 
 \begin_layout Standard
@@ -2840,16 +3108,49 @@ Web Components
  são vinculados por meio da DSL, para definir o comportamento do SustenAgro,
  definindo cada uma das funcionalidades do sistema para realizar a personalizaçã
 o e vinculação da informação para assim satisfazer os requisitos dos usuários
- do sistema SustenAgro, a DSL final do processo de definição do sistema
- está no código
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "lis:DSL-SustenAgro"
+ do sistema SustenAgro, 
+\end_layout
 
-\end_inset
+\begin_layout Standard
+No sistema SustenAgro foram estabelecidas as Features por meio das URIs
+ das classes: EnvironmentalIndicator, EconomicIndicator, SocialIndicator,
+ ProductionEfficiencyFeature e TechnologicalEfficiencyFeature.
+\end_layout
 
-.
+\begin_layout Standard
+No código seguinte apresenta-se a implementação da formula do Sistema SustenAgro
+, criando variáveis resultado de operações aritméticas para gerar resultados
+ gerais, no caso do SustenAgro o código gera a variável 
+\shape italic
+\lang english
+sustainability
+\shape default
+\lang brazilian
+ que representa o índice de sustentabilidade, más pode ser definido qualquer
+ método computável.
+\end_layout
+
+\begin_layout Standard
+no qual são definidos comandos que geram as interfaces gráficas, como 
+\shape italic
+sustainabilityMatrix
+\shape default
+ que usa as variáveis geradas anteriormente como argumentos.
+\end_layout
+
+\begin_layout Standard
+No caso do sistema SustenAgro a classe 
+\shape italic
+\lang english
+Production Unit
+\lang brazilian
  
+\shape default
+é subclasse do 
+\lang english
+Evaluation Object
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -2874,8 +3175,13 @@ status open
 
   instance ':hasAgriculturalProductionSystem', label: ['en': 'Agricultural
  production system' , 'pt': "Sistema de produção agrícola"], header: ['en':
- 'Options', 'pt': "Opções"]     type label: ['en': "Production unit type",
- 'pt': "Tipo da unidade produtiva"], header: ['en': 'Options', 'pt': "Opções"]
+ 'Options', 'pt': "Opções"]     
+\end_layout
+
+\begin_layout Plain Layout
+
+  type label: ['en': "Production unit type", 'pt': "Tipo da unidade produtiva"],
+ header: ['en': 'Options', 'pt': "Opções"]
 \end_layout
 
 \begin_layout Plain Layout

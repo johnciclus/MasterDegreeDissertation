@@ -1,613 +1,244 @@
-%% LyX 2.2.0 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[english,brazil,oldfontcommands]{abntex2}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\pagestyle{plain}
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{verbatim}
-\usepackage{float}
-\usepackage{url}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage[authoryear]{natbib}
-\usepackage{nomencl}
-% the following is useful when we have the old nomencl.sty package
-\providecommand{\printnomenclature}{\printglossary}
-\providecommand{\makenomenclature}{\makeglossary}
-\makenomenclature
-\OnehalfSpacing
-\usepackage{babel}
-\begin{document}
-Um outro resultado gerado a partir do Decisioner, foi o SAD SustenAgro
-que permite suportar a avaliação da sustentabilidade em cana-de-açúcar,
-o qual faz uso de uma ontologia de domínio em avaliação da sustentabilidade,
-de uma ontologia de GUIs e da DSL para descrever o sistema, os resultados
-gerados durante a implementação do SAD SustenAgro são: User Stories,
-Scenarios, Story Boards, Mockups e o SAD SustenAgro.
+O SAD SustenAgro é um sistema web que suporta a avaliação da sustentabilidade
+em cana-de-açúcar\footnote{A definição conceitual do processo de avaliação está no apêndice \ref{chap:Sustainability_Assessment}},
+especificamente está composto por um conjunto de definições em formato
+de Ontologias e DSL que permitem gerar dito sistema a través do Decisioner,
+o principal componente dele é a ontologia do domínio em avaliação
+da sustentabilidade.
 
-As ontologias suportam a representação e organização do conhecimento,
-permitindo a integração de conceitos, inclusive quando pertencem a
-domínios sem relação aparente. No sistema SustenAgro foi necessário
-inter-relacionar conhecimento de sustentabilidade com conhecimento
-de interfaces gráficas de usuário, para suportar a geração de SAD
-para avaliação da sustentabilidade, o conhecimento modelado foi dividido
-em duas ontologias, avaliação de sustentabilidade e do SAD.
+O desenvolvimento de SustenAgro permitiu definir os componentes principais
+do sistema Decisioner, pelo qual os dois sistemas estão muito relacionados
+mas correspondem a sistemas independentes.
 
-Neste projeto serão desenvolvidas as seguintes ontologias:
-\begin{itemize}
-\item Ontologia de avaliação de sustentabilidade do sistema produtivo da
-cana\nobreakdash-de\nobreakdash-açúcar: essa ontologia vai representar
-o conhecimento sobre sustentabilidade na cultura de cana\nobreakdash-de\nobreakdash-açúcar
-e o conhecimento sobre as metodologias de avaliação de sustentabilidade,
-fornecendo um modelo de dados ao sistema SustenAgro.
-\item Ontologia de controles de gráficos: a finalidade dessa ontologia é
-dar suporte a composição de controles gráficos relacionados com os
-indicadores. Esse é um requisito funcional do software, uma vez que
-os indicadores podem ter diversos tipos de unidades e para cada tipo
-existe um tipo de controle gráfico mais apropriado para sua representação.
-Por exemplo, para representar um indicador de sustentabilidade do
-tipo numérico é recomendável usar um controle visual tipo spinner.
-\end{itemize}
+Um domínio de conhecimento caracterizado pela complexidade são os
+sistemas produtivos agrícolas que envolvem fenômenos de natureza diversa
+(Simon, 1991), integrando aspectos ambientais, sociais e econômicos,
+e tendo em conta as projeções da FAO (2013) 
+
+especificamente pesquisadores da Embrapa Meio Ambiente trabalham na
+definição de métodos que permitam avaliar da sustentabilidade de maneira
+integral Singh et al. (2012)
+
+foi evidenciada a necessidade de fornecer sistemas e ferramentas computacionais
+que organizem a informação, para apoiar aos especialistas a tomar
+decisões baseadas em conhecimento
+
+Dada a complexidade dos sistemas de produção agrícola, surgiu a necessidade
+de determinar um método de , por esta razão desenvolveram um método
+de avaliação de sustentabilidade que aborda a avaliação em termos
+de indicadores, medindo aspectos críticos no sistema produtivo, para
+determinar se é ou não é sustentável, e assim gerar recomendações
+para tomar medidas corretivas.
+
+A partir do método de avaliação, foi desenvolvida uma ferramenta de
+avaliação da sustentabilidade intitulada software SustenAgro que implementa
+o método SustenAgro por meio de um sistema de apoio a decisão e que
+consegue adaptar-se às mudanças do domínio, o qual está baseado em
+uma ontologia que permitem representar e estruturar o conhecimento
+de avaliação da sustentabilidade em agricultura, gerando uma representação
+mais exata da realidade do que outros modelos de dados, em formato
+de ontologias da web semântica, sobre o qual é possível fazer inferências
+e assim gerar informações para suportar a decisão.
+
+Também foi desenvolvida a ontologia de representação das interfaces
+gráficas, permitindo um mapeamento entre conceitos do domínio dos
+especialistas e as interfaces gráficas, concedendo flexibilidade ao
+sistema para adaptar-se às mudanças dos conceitos do domínio de conhecimento.
+
+As ontologias forneceram uma representação de conhecimento, que foi
+gerenciada desde uma , desenhada para gerar sistemas de apoio a decisão,
+dita linguagem e o interprete dela foram intitulados Decisioner, os
+quais constituem uma ferramenta geradora de sistemas de avaliação.
+
+O desenvolvimento do projeto foi apoiado pela Embrapa Meio Ambiente,
+instituição parceira que planejou e executou o projeto SustenAgro,
+cuja finalidade é fornecer os fundamentos teóricos para suportar avaliações
+que possibilitem o embasamento de politicas públicas que incentivem
+a sustentabilidade no setor produtivo da cultura de cana-de-açúcar
+no centro-sul do Brasil.
+
+e para usuários especialistas
+
+dentro deles está o sistema produtivo de cana-de-açúcar que é extremamente
+importante para a economia do Brasil e do estado de São Paulo, devido
+a que é uma das principais culturas produzidas no paisSérgio Alves
+Torquato (2015), pelo qual foi escolhido como sistema produtivo piloto
+para abordar a presente pesquisa.
+
+estes sistemas tem evoluído junto com a Web Shim et al. (2002), integrando
+novas técnicas no processamento dos dados, tecnologias na representação
+visual de resultados e no uso colaborativo por parte dos usuários.
+
+permitindo simplificar a resolução de problemas que de outra maneira
+não seriam triviais.
 
 \section{Arquitetura do SustenAgro}
 
-Este caso de uso permitiu desenhar e modelar os componentes do Decisioner,
-a partir dos componentes de SustenAgro por meio dos seguintes elementos
-representados na arquitetura da figura \ref{fig:Architecture}:
+O SAD SustenAgro permitiu modelar e desenvolver os componentes que
+fazem parte do Decisioner, devido a que foi o primeiro caso de uso,
+a continuação são apresentados os componentes da arquitetura por meio
+da figura \ref{fig:Architecture}:
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[width=0.9\columnwidth]{../figures/arquitectura}
+\includegraphics[width=0.7\columnwidth]{\string"figures/SustenAgro Architecture final\string".png}
 \par\end{centering}
-\centering{}\caption{Arquitetura de SustenAgro \label{fig:Architecture}}
+\centering{}\caption{Arquitetura de SustenAgro \label{fig:Architecture} }
 \end{figure}
 
 \begin{enumerate}
-\item Ontologia do domínio: ontologia que representa os conceitos do domínio:
-avaliação da sustentabilidade do sistema produtivo de cana-de-açúcar.
-Ela é a base fundamental para o sistema SustenAgro porque permite
-estabelecer os conceitos fundamentais são utilizados pelo sistema,
-entre eles: indicadores, componentes de indicadores, índices, dimensões
-da sustentabilidade, recomendações e o método de avaliação.
-\item Ontologia de controles gráficos: ontologia que representará os controles
-de usuários e os tipos de dados, fazendo um mapeamento entre os dois.
-\item TripleStore: sistema de recuperação da informação que padroniza as
-informações em formato de triplas, permitindo a compatibilidade e
-o reúso das informações entre fontes de dados externas.
-\item DSL: linguagem especifica do domínio dos elementos visuais que serão
-usados pelo SustenAgro. Ela permitirá uma definição flexível das interfaces,
-baseada nos conceitos definidos na ontologia de domínio e de controles
-gráficos. Ela permitirá a definição das características visuais e
-dos tipos de controles especializados para cada conceito da ontologia
-de domínio.
-\item Sistema gerador de interfaces gráficas: Sistema gerador de GUIs para
-sistemas Web, que é definido na DSL e na ontologia de controles gráficos.
+\item Ontologia do domínio: ontologia que representa os conceitos do domínio,
+avaliação da sustentabilidade do sistema produtivo de cana-de-açúcar,
+ela é a base para o sistema SustenAgro porque permite estabelecer
+os conceitos fundamentais que são utilizados pelo sistema, entre eles:
+indicadores, componentes de indicadores, índices, dimensões da sustentabilidade,
+recomendações e o método de avaliação.
+\selectlanguage{english}%
+\item Web components\foreignlanguage{brazil}{: são um padrão para definição
+e gerenciamento de }widgets\foreignlanguage{brazil}{ (elementos da
+}GUI\foreignlanguage{brazil}{\nomenclature{GUI}{Graphical User Interface})
+reusáveis na web, fornecendo um modelo que permite encapsulamento
+e interoperabilidade dos componentes.}
+\selectlanguage{brazil}%
+\item DSL: linguagem especifica do domínio para gerenciar os conceitos das
+ontologias permitindo vincular com os componentes necessários para
+gerar o SAD por meio do sistema Decisioner, fornecendo uma linguagem
+especifica para definir \foreignlanguage{english}{SADs} por parte
+dos especialistas do domínio.
 \end{enumerate}
-O desenvolvimento SustenAgro foi realizado com a finalidade de generalizar
-os componentes e assim definir o Decisioner para gerar outros SADs
-que trabalhem em domínios similares ao SustenAgro. 
 
-O desenvolvimento do SustenAgro será feito usando-se uma DSL baseada
-na linguagem Groovy \citet{koenig2007groovy}. Ou seja, essa DSL será
-uma extensão da linguagem Groovy. Groovy é uma linguagem que tem suporte
-ao desenvolvimento de DSLs. Isso inclui suporte a DSL Descriptors,
-arquivos Groovy que descrevem extensões \emph{domain-specific} para
-o motor de inferência e assistente de conteúdo do plugin Groovy\nobreakdash-Eclipse.
-Isso permite que a DSL criada tenha todo o mesmo suporte que o IDE\nomenclature{IDE}{Integrated Development Environment}
-Eclipse dá a linguagens como Java ou Groovy, como code completion,
-debugging, etc. Uma outra vantagem de Groovy é a disponibilidade do
-Grails Framework para a criação de aplicações Web \citet{judd2008beginning}.
-O desenvolvimento dessa DSL será feito em outro trabalho de mestrado.
-Mas este trabalho irá contribuir com a parte da DSL que tem haver
-com interfaces, além da ontologia de Controles Gráficos.
-
-O uso da DSL por especialistas em sustentabilidade deve diminuir o
-esforço necessário para se desenvolver um SAD nesse domínio. Mas mesmo
-assim, ainda será necessário aplicar alguma metodologia de desenvolvimento
-de software. 
-
-Existem múltiplos métodos e metodologias que permitem um desenvolvimento
-ágil de software. Nesse contexto, o termo ágil refere-se ao desenvolvimento
-em tempos curtos e geração de protótipos facilmente adaptáveis às
-mudanças. Exemplos de métodos ágeis são: “Mockups”, “User Stories”,
-“Scenarios”, “Storyboards” e “Use Cases”, exemplos de metodologias
-ágeis são: “SCRUM” ou “XP eXtreme Programming”.
-
-Uma das etapas mais importantes dos desenvolvimentos ágeis é o levantamento
-de requisitos. Essa etapa tem como objetivo definir as características
-do software e pode ser realizada múltiplas vezes. Isso ocorre pois
-as metodologias ágeis são cíclicas e os protótipos mudam em cada ciclo
-para cumprir os requisitos.
-
-O desenvolvimento do sistema SustenAgro será realizado por meio de
-metodologias ágeis de desenvolvimento de software, principalmente
-serão utilizadas algumas práticas da metodologia SCRUM \citet{schwaber2002gile}.
-Também será usado o enfoque User-Centered Design. Nesse sentido, está
-sendo desenvolvido primeiramente um \emph{mockup} da interface gráfica
-do sistema, o qual será o meio de comunicação com os parceiros do
-SustenAgro para determinar as funcionalidades básicas do sistema.
-Quando o \emph{mockup} for validado, será iniciado o desenvolvimento
-de um protótipo da interface gráfica que permitirá determinar os requisitos
-funcionais.
-
-Baseando-se na DSL, pode-se suportar um sistema gerador de interfaces
-gráficas para conceder usabilidade e flexibilidade ao sistema. Essa
-última característica constitui uma nova proposta de desenvolvimento
-de SADs que permite a adaptação automática (ou semi\nobreakdash-automática)
-da interface às mudanças dos conceitos do domínio.
-
-Cada vez que sejam desenvolvidos cada componente de SustenAgro se
-realizarão diversos testes para validar as funcionalidades do sistema,
-esse processo será realizado com os especialistas para refinar as
-funcionalidades do sistema de acordo com os requisitos manifestados.
-Espera-se que, usando a DSL, os próprios especialistas vão ser capazes
-de fazer parte do desenvolvimento e validação.
-
-\begin{comment}
-\begin{enumerate}
-\item \textbf{!!Ainda falta mexer com esta parte!!} 
-\item Recuperação dos dados dos repositórios FAO Linked Data\nomenclature{FAO Linked Data}{Food and Agriculture Organization of the United Nations (FAO) Linked Data}
-e AGRIS referente aos locais que foram realizadas coletas de espécimes
-
-\begin{enumerate}
-\item Análise dos dados de baixa qualidade, ou seja, dados que não tem informações
-importantes, por exemplo, localidade e município
-\item Verificação do número de dados imprecisos e exibição dos mesmos em
-um mapa
-\item Verificação do número de dados que contém informações sobre local,
-latitude, longitude
-\item Verificação da quantidade de dados que possuem informações de latitude
-e longitude antes e depois do uso de GPS por biólogos em coletas
-\end{enumerate}
-\item Utilização de dados de fontes externas como Geonames, Wikimapia, DBpedia
-\item Implementação de um método para agrupar todos os dados dos repositórios
-SpeciesLink e GBIF e realizar a resolução de topônimos utilizando
-técnicas de Recuperação de Informação Geográfica e ontologias
-\item Aprimoramento das informações geográficas ausentes nos dados do SpeciesLink
-e GBIF
-
-\begin{enumerate}
-\item Utilização dos dados referente aos repositórios externos para melhorar
-os registros das localidades dos repositórios SpeciesLink e GBIF
-\item Criação um método para sumarizar as coordenadas geográficas de acordo
-com a abordagem da Lei de Linus
-\end{enumerate}
-\item Verificação da quantidade de dados que tiveram suas informações aprimoradas
-
-\begin{enumerate}
-\item Contagem dos dados que não contém informações sobre latitude, longitude
-e foram recuperados
-\item Contagem dos dados que possui informações geográficas recuperadas
-e eram muito velhos, ou seja, antes do uso de GPS por biólogos em
-coletas
-\item Análise dos resultados dos passos a) e b) anteriores utilizando o
-teste t de Student, para verificar o quão boa foi a abordagem utilizada
-\end{enumerate}
-\item Mapeamento dos dados para uma \textit{triplestore} utilizando ontologias
-
-\begin{enumerate}
-\item Definição das triplas em RDF, que deveram possuir um sujeito, predicado
-e objeto para cada localidade. 
-\item Mapeamento de coordenadas geográficas para GeoSPARQL 
-\end{enumerate}
-\item Construção de uma base de teste com informações sobre qual consulta
-representa uma localidade
-
-\begin{enumerate}
-\item Construção de consultas semânticas e verificação de resultados utilizando
-as medidas de precisão, revocação e F1 
-\item Realização da mesma abordagem do passo a) para os repositórios DBpedia
-e Geonames, com intuito de verificar a viabilidade para expansão de
-consultas
-\end{enumerate}
-\item Desenvolvimento de uma interface que permita aos biólogos inserir
-dados no \textit{Gazetteer }por meio de mapas
-
-\begin{enumerate}
-\item Desenvolvimento de um método que permita aos biólogos inserir lugares
-usando GeoTAGS
-\item Agrupamento dos dados inseridos e aprimoramento dos dados referentes
-a localidades que são similares.
-\item Desenvolvimento de um método que permita aos biólogos inserirem links
-do DBpedia, quando os mesmos existirem, para auxiliar no crescimento
-da \textit{Web of Data}. 
-\item Desenvolvimento de um método que permita aos biólogos verificarem
-a acurácia dos links sobre a DBpedia inseridos no \textit{Gazetteer} 
-\end{enumerate}
-\item Verificação do número de lugares inseridos pelos usuários e qualidade
-dos dados 
-
-\begin{enumerate}
-\item Verificação da média de usuários que concordam com as coordenadas
-geográficas
-\item Verificação da média de usuários que concordam com as informações
-de \emph{Linked Open Data} presentes no \textit{Gazetteer} 
-\item Verificação da quantidade de dados que tiveram suas informações aprimoradas
-\end{enumerate}
-\end{enumerate}
-\end{comment}
-
-
-\section{Metodologia das ontologias}
+\section{Metodologia.}
 
 O conhecimento do domínio envolvido no sistema SustenAgro está em
-contínua construção. Por isso, é necessário um enfoque que permita
-realizar mudanças na estrutura e no conteúdo usados no sistema durante
-seu desenvolvimento. As ontologias permitem representar o conhecimento
-de um domínio por meio de formatos, como a linguagem OWL, permitindo
-separar o conhecimento das outras partes do sistema.
+contínua evolução, por isso, foi necessário uma metodologia que suporte
+mudanças na estrutura e no conteúdo, durante cada uma das fases do
+desenvolvimento.
 
-Os modelos OWL permitem a compilação do conhecimento em sistemas de
-armazenamento e recuperação de informação, chamados \foreignlanguage{english}{triple-stores},
-que são bancos de dados e que adicionam significado semântico aos
-seus dados.
+O desenvolvimento da ontologia foi iniciado com a criação de um mapa
+conceitual\footnote{Mapa conceitual desenhado com a ferramenta Cmap Tool \url{http://cmap.ihmc.us/} }
+com o acompanhamento de um grupo de especialistas em modelagem de
+conhecimento. Na reunião da equipe na Embrapa Informática Agropecuária
+(UNICAMP - Campinas), onde foram identificados os principais conceitos
+e permitiu aprender sobre a metodologia para definir ontologias.
 
-Na Figura \ref{fig:Methodology} é apresentada a proposta metodológica
-que guiará o desenvolvimento das ontologias. Ela tem natureza cíclica,
-gerando, em cada ciclo, um protótipo funcional.
+Na Figura \ref{fig:Methodology} é apresentada a metodologia para
+desenvolver as ontologias, na qual teve vários ciclos de desenvolvimento
+nos quais foram integradas novas caraterísticas.
 
 \begin{figure}[H]
-\begin{centering}
-\includegraphics[width=0.6\columnwidth]{../figures/fluxograma}
+\noindent \begin{centering}
+\includegraphics[width=0.8\columnwidth]{\string"figures/Ontology Methodology\string".png}
 \par\end{centering}
 \caption{Metodologia de definição das ontologias\label{fig:Methodology}}
 \end{figure}
 
+Um aspecto importante das ontologias é que eles fornecem um formato
+que adapta-se às mudanças do domínio e separa o conhecimento dos outros
+componentes do sistema.
 
-\section{Ontologia SustenAgro: avaliação da sustentabilidade}
+A metodologia que direcionou o desenvolvimento do SAD foi SCRUM \citet{schwaber2002gile}
+e o design foi realizado por meio do enfoque \foreignlanguage{english}{User
+Centered Design}, permitindo integrar praticas ágeis no desenvolvimento
+do sistema. Nesse contexto, o termo ágil refere-se ao desenvolvimento
+em tempos curtos e geração de protótipos facilmente adaptáveis às
+mudanças.
 
-A ontologia SustenAgro representa o conhecimento base para realizar
-uma avaliação de sustentabilidade, está composta de várias classes
-fundamentais como \textit{Production Unit, Indicator, Variable, Value,
-Microregion}, etc. As quais são integradas e relacionadas para representar
-o domínio de avaliação de sustentabilidade em cana-de-açúcar, a continuação
-são apresentados as principais classes desta ontologia:
+O desenvolvimento dos \foreignlanguage{english}{web components} foi
+vinculado no desenvolvimento das \foreignlanguage{english}{web views},
+que permitiram integrar e avaliar cada um dos componentes para satisfazer
+os requisitos identificados.
 
-A classe \textit{Production Unit}, representa as organizações que
-podem ser avaliadas pelo sistema SustenAgro para obter uma medida
-da sustentabilidade, atualmente podem ser \textit{Fornecedores de
-cana-de-açúcar} e / ou \textit{Usinas processadoras de cana-de-açúcar},
-cada processo de avaliação requer dados que definem as unidades produtivas
-através das propriedades que os conformam, existe um conjunto de propriedades
-obrigatórias como: 
-\begin{itemize}
-\item Name: define o nome da unidade produtiva
-\item Harvest year: define o ano da safra.
-\item Agricultural production system: relaciona o sistema de produção agrícola
-em avaliação. 
-\item Has microregion: relaciona a microrregião da unidade produtiva 
-\item Has state: relaciona o estado Brasileiro 
-\item Availability of assessment results: relaciona o tipo de disponibilização
-dos resultados. 
-\item Sugarcane source: relaciona a origem da cana
-\end{itemize}
-Na figura \ref{fig:Modelagem-unidade-produtiva} apresenta-se a modelagem
-de Production Unit, feita na ferramenta Protégé. 
-\begin{figure}[H]
-\includegraphics[scale=0.5]{../figures/ProductionUnit}
-
-\caption{Modelagem unidade produtiva \label{fig:Modelagem-unidade-produtiva}}
-\end{figure}
-
-As classes \textit{Indicator} e \textit{Variable} representam as características
-das unidades produtivas que serão identificadas e quantificadas em
-cada processo de avaliação, eles tem um \textit{Value }que os quantifica,
-esta propriedade junto com outras conformam um formato que permite
-identificar e gerenciar tais elementos.
-
-A figura \ref{fig:Modelagem-de-Indicator} apresenta a modelagem do
-indicador \textit{Absolute Emissions Of Greenhouse Gases }que apresenta
-a anotação relevance e a propriedade \textit{has value }que estabelece
-o formato de um \textit{Indicator}.
-\begin{figure}
-\includegraphics[scale=0.5,bb = 0 0 200 100, draft, type=eps]{/media/john/Data/Master Degree/Dissertation Document/figures/Indicator.png}
-
-\caption{Modelagem de Indicator \label{fig:Modelagem-de-Indicator}}
-\end{figure}
-A classe \textit{Variable }também representa características das classes
-\textit{Production Unit} que permite quantificar-las por meio da propriedade
-\textit{has value }e pode ter como opcional um \textit{has weight
-}que relaciona um peso por parte do usuário final para atribuir a
-importancia de cada característica segundo a \textit{Production Unit}
-avaliada.
-
-A figura \ref{fig:Modelagem-de-Var=0000EDavel} apresenta a estrutura
-hierarquica das variáveis e a variavel Adequacy of boilers que tem
-as duas propriedades descritas anteriormente.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{../figures/Variable}
-
-\caption{Modelagem de Variável\label{fig:Modelagem-de-Var=0000EDavel}}
-\end{figure}
-
-As classes \textit{State} e \textit{Microregion }representam os lugares
-onde são localizadas as unidades produtivas, permitindo definir o
-estado e a microrregião para as fazendas e as usinas relacionadas
-com cana-de-açúcar, atualmente o sistema SustenAgro tem 7 estados
-pertencentes ao centro-sul do Brasil e 243 microrregiões dentro dos
-estados registrados, estes dados foram consultados semanticamente
-e integrados no sistema a partir de uma consulta na DB-pedia.
-
-A figura \ref{fig:Modelagem-de-Microrregi=0000E3o} representa a modelagem
-das localizações geograficas usadas no sistema SustenAgro, com algumas
-instancias de \textit{Microregion}.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{../figures/Microregion}
-
-\caption{Modelagem de Microrregião\label{fig:Modelagem-de-Microrregi=0000E3o}}
-\end{figure}
-
-A partir das anteriores classes foi possível desenvolver o modelo
-de dados em formato de ontologias da web semântica OWL, as classes
-descritas foram relacionados por meio de \textit{Object Properties}
-e \textit{Data Properties} que permitem vincular semanticamente as
-classes associadas na avaliação de sustentabilidade.
-
-Os \textit{Data/Object Properties} precisam ter definida a propriedade
-\textit{rdfs:range }para realizar a validação das classes vinculadas
-e algumas são Functional para garantir uma relação de um a um.
-
-\section{Ontologia SAD}
-
-A ontologia de Sistema Apoio à Decisão contem os elementos que foram
-abstraidos a partir do analise dos sistemas SAD usados pela Embrapa
-Meio Ambiente em seus processos de avaliação.
-
-Os sistemas software de avaliação que foram analisados são:
+A metodologia de desenvolvimento das \foreignlanguage{english}{web
+views} e dos \foreignlanguage{english}{web components} incluiu as
+seguintes etapas que correspondem ao levantamento de requisitos, cujo
+objetivo foi definir as características do software, cada uma das
+etapas foi realizada varias vezes devido a que foi necessário redesenhar
+os componentes, isso ocorre pois as metodologias ágeis são cíclicas
+e os protótipos mudam em cada ciclo para cumprir os novos requisitos.
 \begin{enumerate}
-\item Sistema SustenAgro: avaliação da sustentabilidade agricola em cana-de-açúcar.
-\item Sistema Innova-Tec: avaliação do impacto da inovação tecnológica.
-\item Sistema Nano-Tec: avaliação do impacto das nanotecnologias.
+\item Descrição de \foreignlanguage{english}{User Stories:} técnica de desenvolvimento
+ágil que permite descrever características de software desde a perspectiva
+do usuário, fornecendo uma identificação dos usuários, das funcionalidades
+e explicando o porque é necessária dita funcionalidade. 
+\item Descrição de \foreignlanguage{english}{Scenarios:} técnica de desenvolvimento
+ágil que permite descrever detalhadamente as características do sistema.
+\item Descrição de \foreignlanguage{english}{Storyboard\emph{:}} descrevem
+cada uma das interações do usuário com o sistema em uma determinada
+tarefa, visualizando a interação como uma história de quadrinhos.
+\item Descrição de \foreignlanguage{english}{\emph{Mockups:}} design do
+esboço de interface gráfica do sistema, que foi analisado pelos especialistas
+da Embrapa, para avaliar se corresponde às funcionalidades básicas
+descritas no levantamento dos requisitos.
+\item Desenvolvimento de protótipo visual: A partir da validação dos \foreignlanguage{english}{Mockups}
+foi desenvolvido um protótipo da interface gráfica, com a finalidade
+de que os especialistas do domínio avaliassem se cumpre com os requisitos.
 \end{enumerate}
-A partir desses sistemas foram identificados elementos comuns, que
-foram abstraidos na ontologia SAD com o proposito de generalizar as
-classes da ontologia sustenagro, para fornecer a geração de interfaces
-gráficas .
+Cada uma das anteriores etapas de desenvolvimento foram testadas com
+os especialistas do domínio, para realizar o correto levantamento
+de requisitos, devido a que não existia uma definição especifica do
+que os especialistas precisavam.
 
-As classes idenficadas e modeladas são:
-\begin{itemize}
-\item Evaluation Object: classe que representa os objetos que serão analisados
-em cada processo de avaliação, os quais vão ficar como indivíduos
-desta classe ou de alguma subclasse dela, no caso do sistema SustenAgro
-a classe \textit{Production Unit }é subclasse do Evaluation Object.
-\item Feature: classe que representa as caraterísticas de um Evaluation
-Object que serão quantificadas, analisadas e usadas no processo de
-geração de resultados do processo de avaliação, pelo geral as Features
-tem uma propriedade numérica que a quantifica.
-\item Analysis: classe que vincula o resultado de uma avaliação, o nome
-e data da avaliação, assim como o Evaluation Object, para representar
-uma avalição
-\item Value: classe que representa os valores que são atribuídos a cada
-instancia de Feature.
-\item User: classe que representa os usuários do sistema.
-\item Role: classe que representa os tipos de usuário do sistema, relacionando
-as permissões de cada tipo, por padrao tem estão instanciados os perfis
-User e Admin
-\end{itemize}
-Na figura \ref{fig:Modelagem-do-SAD} é apresentada a modelagem basica
-da estrutura de um SAD, com as classes que foram obtidas a partir
-da abstração da ontologia SustenAgro.
+\section{Ontologia do domínio avaliação da sustentabilidade do sistema produtivo
+de cana-de-açúcar}
 
-\begin{figure}[H]
-\includegraphics[scale=0.5]{\string"../figures/DSS ontology\string".eps}\caption{Modelagem abstracto do SAD\label{fig:Modelagem-do-SAD}}
-\end{figure}
+A ontologia SustenAgro representa o conhecimento necessário para suportar
+avaliação de sustentabilidade no sistema produtivo de cana-de-açúcar,
+representado os conceitos por meio de entidades, classes, relações
+semânticas e axiomas, elementos que organizam e representam a realidade
+modelada.
 
-A classe \textit{Value }representa os valores que são relacionados
-com cada característica da unidade produtiva, o qual esta subdividido
-nas classes \textit{Categorical }ou \textit{Real, }no caso de SustenAgro
-representa os possíveis valores que um \textit{Indicator} ou \textit{Variable}
-pode ter, os elementos discretos e definidos como os categóricos são
-modelados como indivíduos da classe, permitindo assim, restringir
-as opções de escolha.
+A figura \ref{fig:ontology-conceptual-map} representa um mapa conceitual
+com os principais conceitos modelados e como estão relacionados entre
+eles, dito mapa conceitual tem etiquetas em cada relação dos conceitos
+que permitem identificar a relação entre os dois conceitos.
 
-Na figura \ref{fig:Modelagem-de-Value} é apresentado a classe \textit{Value}
-e as subclasses modeladas, tanto \textit{Categorical} para conjunto
-finito de valores e \textit{Real} para valores numéricos, como exemplo
-está a classe \textit{Yes/No} que representa os valores de sim e não,
-os quais são modelados como indivíduos de dita classe.
+As ontologias da web semântica satisfazem o requisito de separar o
+conhecimento do domínio da lógica da computação, permitindo abordar
+cada desenvolvimento de uma maneira independente e suportando conceitos
+importantes como a inferência, que são de grande importância no desenvolvimento
+como os \nomenclature{SAD}{Domain Specific Language}.
 
-Cada individuo da classe \textit{Value} tem a propriedade \textit{as
-number }que relaciona um valor numérico para definir um critério de
-comparação e fornecer um formato para este tipo de dados.
+Uma caraterística importante de SustenAgro é a recuperação da informação
+com significado semântico, permitindo que o sistema dê respostas às
+consultas complexas de interesse para os especialistas, além da integração
+com conhecimento externo existente em formatos da web semântica, como
+são os padrões\nomenclature{RDF}{Resource Description Framework},
+\nomenclature{OWL}{Web Ontology Language} e vários sistemas de representação
+do conhecimento como dicionários, thesaurus e redes semânticas, o
+que permite aumentar as possibilidades de integração com diversas
+tecnologias e fornecer novas funcionalidades. 
 
-\begin{figure}[H]
-\includegraphics[scale=0.5]{../figures/Value}
-
-\caption{Modelagem de Value\label{fig:Modelagem-de-Value}}
-\end{figure}
-
-Estas classes são complementadas com propiedades como rdfs:range ou
-por padrões dos dados que relacionam as widgets mais apropriadas na
-representação de informações, e assim fornecer a geração de interfaces
-graficas de usuário.
-
-A partir do anterior formato a classe 
-
-Para definir a ontologia de domínio do SustenAgro, realizou-se uma
-pesquisa das fontes de dados relacionadas com ontologias do domínio
-de avaliação de sustentabilidade em sistemas produtivos de cana-de-açúcar.
-Concluiu-se que não existem ontologias que suportem esse domínio,
-por isso propõe-se desenvolver uma ontologia que utilize os conceitos
-de avaliação de sustentabilidade e de sistemas agrícolas. Ela deve
-fazer uso da pesquisa realizada por \citet{oliveira:2013} e de algumas
-tecnologias fornecidas pela FAO. Essa ontologia terá a finalidade
-de fornecer uma base conceitual e tecnológica para suportar o processo
-de avaliação de sustentabilidade no sistema produtivo da cana\nobreakdash-de\nobreakdash-açúcar
-no estado de São Paulo.
-
-O desenvolvimento dessa ontologia ocorrerá de forma ágil e modular,
-por meio de técnicas de prototipação rápida, que serão de âmbito e
-complexidade crescente, abrangendo grupos de conceitos relacionados
-entre si.
-
-O desenvolvimento da ontologia depende essencialmente da comunicação
-entre os especialistas e os modeladores. Foram definidos meios de
-comunicação e de representação do conhecimento: reuniões presenciais
-e virtuais, e o modelos conceituais que permitem uma visualização
-direta do domínio.
-
-Inicialmente, o modelo conceitual vai ser representado por meio de
-um mapa conceitual que permitirá a comunicação em um formato reconhecido
-por cada um dos profissionais envolvidos no projeto. Esse modelo será
-representado em OWL (pelos modeladores) e serão definidas instâncias
-para cada uma das classes. Depois disso, o especialista do domínio
-construirá perguntas de interesse, com as quais os modeladores definirão
-consultas que o sistema deverá responder segundo os resultados esperados,
-conseguindo validar e ajustar até ter um protótipo confiável.
-
-Uma das principais contribuições da ontologia é que ela será uma representação
-semântica do conhecimento de domínio tanto para os usuários como para
-o sistema computacional. Isso evitará problemas de falhas de entendimento
-entre os especialistas de domínio e os programadores desenvolvendo
-os SADs. A figura \ref{fig:sketch} é um primeiro esboço dos elementos
-que serão contidos na ontologia.
-
-\begin{figure}
-\begin{centering}
-\includegraphics[scale=0.25]{../figures/esboco}
-\par\end{centering}
-\caption{Primeiro esboço do mapa conceitual\label{fig:sketch}}
-\end{figure}
-
-Nessa primeira aproximação, foi identificado o conceito fundamental
-da ontologia, os ``indicadores'', que representam e quantificam
-os aspectos críticos do sistema produtivo de cana-de-açúcar, mediante
-o uso dos ``limiares'', que estabelecem o intervalo dos indicadores,
-que, por sua vez, são instanciados com os valores ``Mais sustentável''
-ou ``Menos sustentável''.
-
-Outro conceito fundamental é a ``avaliação''. Ela é composta de
-um conjunto de ``indicadores'' e de um ``método'', o qual é aplicado
-sobre uma ``fazenda'' ou ``usina''. A avaliação gera ``índices''
-que são apresentados junto às ``recomendações'' como resultado do
-processo de avaliação.
-
-\section{TripleStore}
-
-O sistema SustenAgro será baseado nas tecnologias da web semântica,
-entre as tecnologias existentes encontra-se a Triplestore que é um
-banco de dados para o armazenamento e recuperação de triplas \citet{rusher2003triple}.
-Para o presente projeto foi selecionada a Triplestore Parliament \footnote{http://parliament.semwebcentral.org/}
-porque fornece as características: suporte nativo a SPARQL\nomenclature{SPARQL}{SPARQL Protocol and RDF Query Language}
-e SPARQL/Update e implementa o SPARQL Protocol Endpoint. Esse último,
-padroniza o armazenamento e recuperação da informação; e a compatibilidade
-com os sistemas web por meio do Endpoint.
-
-\section{Sistemas de apóio à decisão}
-
-Os sistemas de apóio à decisão (SAD) ajudam no entendimento de processos
-complexos, auxiliam na comparação dos fenômenos envolvidos e suportam
-a análise e escolha de alternativas no processo de decisão \citep{heinzle2010semantica}.
-
-O sistema SustenAgro é um SAD e será desenvolvido com o apoio da equipe
-do projeto SustenAgro (Anexo \ref{chap:Projeto-SustenAgro}) da Embrapa
-Meio Ambiente, a qual está desenvolvendo uma proposta metodológica
-para avaliar a sustentabilidade de sistemas de produção de cana-de-açúcar
-no Centro Sul do Brasil para equacionar as principais questões referentes
-a esses sistemas produtivos e possibilitar a utilização racional dos
-recursos naturais para suprir as necessidades presentes e garantir
-o suprimento das gerações futuras.
-
-A equipe de TI do SustenAgro determinou que o tipo de sistema mais
-conveniente para o desenvolvimento seria um Sistema de Apóio à Decisão
-(SAD). Com a finalidade de definir a arquitetura e a interface gráfica
-desse sistema realizaram-se duas perguntas de pesquisa que orientaram
-esse projeto:
-\begin{itemize}
-\item Como integrar o conhecimento dos especialistas em um sistema de apoio
-na tomada de decisões permitindo a continua mudança do modelo do domínio?
-\item Como gerar interfaces gráficas a partir de definições simples do domínio
-do conhecimento?
-\end{itemize}
-Tendo em conta os requisitos do software, como o suporte a contínua
-mudança do modelo de dados e a geração dinâmica de interfaces, se
-propõe a arquitetura a seguir.
-
-\section{Ontologia de avaliação de Sustentabilidade}
-
-O conhecimento sobre sustentabilidade no sistema de produção de cana-de-açúcar
-foi representado por meio de entidades, classes, relações semânticas
-e axiomas. Ditos elementos constituíram a ontologia, representado
-formalmente os conceitos do domínio, os quais foram integrados em
-cada uma das funcionalidades do sistema permitindo a personalização
-e vinculação da informação para satisfazer os requisitos dos usuários
-do sistema SustenAgro.
-
-Eles são sistemas complexos que integram fenômenos de natureza diversa
-\citep{simon1991architecture}, integrando três subsistemas: (i) o
-subsistema ambiental que fornece as condições físicas, químicas e
-biológicas que suportam o desenvolvimento das culturas, (ii) o subsistema
-social que integra organizações e pessoas que realizam a produção,
-relacionando-se internamente e externamente com os sistemas produtivos
-e (iii) o subsistema econômico que estabelece as condiciones de oferta
-e demanda dos produtos e subprodutos do sistema de produção agrícola;das
-interações entre estes subsistemas, emerge um comportamento complexo
-que requer uma abordagem holística e inter-relacionada para suportar
-a tomada de decisões que garantam a sustentabilidade do sistema em
-analise.
-
-ditos sistemas também são chamados dimensões da sustentabilidade,
-segundo a literatura estas dimensões são: ambiental, econômica e social
-\citep{AlkanOlsson:2009}.
-
-O software SustenAgro baseou-se em indicadores da sustentabilidade
-nas tres dimensões, os quais foram propostos por um grupo de especialistas
-de diversas áreas da produção agrícola e sustentabilidade \citep{oliveira:2013},
-esta base conceitual foi padronizada por meio de ontologias para representar
-e organizar dito conhecimento, conseguindo assim uma representação
+Para conseguir que dita ontologia seja computável, foi necessário
+definir o conhecimento no formato \foreignlanguage{english}{OW}L modelado
+na ferramenta Protégé\footnote{Editor de ontologias \url{http://protege.stanford.edu/}},
+que permite a compatibilidade com sistemas \foreignlanguage{english}{triple-stores}
+(bancos de dados com significado semântico) e fornece uma representação
 compreensível pelos humanos e computadores \citep{allemang2011semantic},
-além de fornecer suporte com outras tecnologias da web semântica e
-assim realizar consultas complexas que permitam responder perguntas
-de interesse para os usuários do sistema software.
+suportando a realização de consultas complexas que permitam responder
+perguntas de interesse aos usuários do sistema software.
 
-O conhecimento sobre sustentabilidade no sistema de produção de cana-de-açúcar
-foi representado por meio de entidades, classes, relações semânticas
-e axiomas. Ditos elementos constituíram a ontologia, representado
-formalmente os conceitos do domínio, os quais foram integrados em
-cada uma das funcionalidades do sistema permitindo a personalização
-e vinculação da informação para satisfazer os requisitos dos usuários
-do sistema SustenAgro.
-
-O desenvolvimento da Ontologia de Domínio do SustenAgro foi iniciado
-com a criação de um mapa conceitual entre um grupo de especialistas
-em modelagem de conhecimento. Na reunião da equipe na Embrapa Informática
-Agropecuária (UNICAMP - Campinas), foram identificados os principais
-conceitos em cada uma das dimensões da sustentabilidade: ambiental,
-social e econômica. 
-
-O sistemas agricolas foram modelados por meio de três subsistemas:
-(i) o subsistema ambiental que fornece as condições físicas, químicas
-e biológicas que suportam o desenvolvimento das culturas, (ii) o subsistema
-social que integra organizações e pessoas que realizam a produção,
-relacionando-se internamente e externamente com os sistemas produtivos
-e (iii) o subsistema econômico que estabelece as condiciones de oferta
-e demanda dos produtos e subprodutos do sistema de produção agrícola;
-das interações entre estes subsistemas, emerge um comportamento complexo
-que requer uma abordagem holística e inter-relacionada para suportar
-a tomada de decisões que garantam a sustentabilidade do sistema em
-analise.
-
-Cada uma das dimensões faz a função de \emph{container}. Neles estão
-contidos os indicadores que foram validados como os mais relevantes
-para as condições gerais das fazendas e usinas produtoras de cana-de-açúcar
-no estado de São Paulo. Os indicadores têm uma relação de \emph{contains}
-com os atributos e uma relação de \emph{considers} com os componentes
-dos indicadores.
-
-As três dimensões da sustentabilidade têm uma participação equitativa
-no método de avaliação \citep{kraines2011system}. A Figura \ref{fig:environment}
-representa a dimensão ambiental, modelo onde são definidos os seguintes
-conceitos (\emph{containers}):
-
-\begin{figure}
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\textwidth]{../figures/ambiental}
+\includegraphics[width=0.6\columnwidth]{\string"figures/SustenAgro conceptual map\string".png}
+\par\end{centering}
+\caption{Mapa conceitual da ontologia\label{fig:ontology-conceptual-map}}
+\end{figure}
+
+Exemplos dos conceitos modelados são: \foreignlanguage{english}{\textit{Production
+Unit}}\textit{, }\foreignlanguage{english}{\textit{Indicator}}\textit{,
+}\foreignlanguage{english}{\textit{Microregion}}; os quais são vinculados
+por meio do método de avaliação de sustentabilidade, a continuação
+são apresentados as principais classes desta ontologia.
+
+Segundo a descrição do método de avaliação do capitulo \ref{chap:Sustainability_Assessment},
+as três dimensões da sustentabilidade têm uma participação equitativa
+no método de avaliação \citep{kraines2011system}. 
+
+A figura \ref{fig:environment} representa a dimensão ambiental, modelo
+onde são definidos os seguintes conceitos:
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{figures/ambiental}
 \par\end{centering}
 \caption{Mapa conceitual - Ambiental\label{fig:environment}}
 \end{figure}
@@ -626,10 +257,10 @@ a avaliação da sustentabilidade, mas é um aspecto fundamental para
 trabalhar nas próximas etapas de pesquisa.
 
 A Figura \ref{fig:social}, representa a dimensão social, onde são
-definidos os seguintes conceitos (\emph{containers}):
+definidos os seguintes conceitos:
 
-\begin{figure}
-\centering{}\includegraphics[width=1\textwidth]{../figures/social}\caption{Mapa conceitual - Social\label{fig:social}}
+\begin{figure}[H]
+\centering{}\includegraphics[width=1\textwidth]{figures/social}\caption{Mapa conceitual - Social\label{fig:social}}
 \end{figure}
 
 \begin{itemize}
@@ -647,19 +278,18 @@ indicadores para incluir a população externa à unidade produtiva que
 é afetada pelas práticas produtivas.
 
 As Figuras \ref{fig:Economic-1} e \ref{fig:Economic-2} apresentam
-a dimensão econômica, onde foram definidos os seguintes conceitos
-(\emph{containers}):
+a dimensão econômica, onde foram definidos os seguintes conceitos:
 
-\begin{figure}
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\textwidth]{../figures/economica_1}
+\includegraphics[width=1\textwidth]{figures/economica_1}
 \par\end{centering}
 \caption{Mapa conceitual - Dimensão Econômica primeira parte.\label{fig:Economic-1}}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\textwidth]{../figures/economica_2}
+\includegraphics[width=1\textwidth]{figures/economica_2}
 \par\end{centering}
 \caption{Mapa conceitual - Dimensão Econômica segunda parte.\label{fig:Economic-2}}
 \end{figure}
@@ -673,6 +303,11 @@ e dos processos produtivos.
 \item Atributo custo: indicadores que avaliam os aspectos dos custos da
 produção. 
 \end{itemize}
+A \nomenclature{APTA}{Agência Paulista de Tecnologia dos Agronegócios}
+forneceu dados econômicos das principais usinas do estado de São Paulo,
+que permitiram definir a dimensão econômica das unidades produtivas
+na ontologia do domínio.
+
 Cada uma das três dimensões devem ser avaliadas equitativamente para
 gerar um resultado coerente com a teoria da sustentabilidade agrícola.
 
@@ -682,21 +317,139 @@ com o método de avaliação utilizam os indicadores para realizar o
 processo de avaliação. A intenção é representar o mais detalhadamente
 e claramente possível o processo de avaliação para a sus correta execução.
 
-\begin{figure}
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\textwidth]{../figures/metodo}
+\includegraphics[width=1\textwidth]{figures/metodo}
 \par\end{centering}
 \caption{Mapa conceitual - Método\label{fig:Method}}
 \end{figure}
 
+A continuação serão apresentadas as principais classes modeladas na
+ontologia.
+\selectlanguage{english}%
 
-\section{User Stories}
+\subsection*{Production Unit}
+
+\selectlanguage{brazil}%
+Representa as organizações que podem ser avaliadas pelo sistema SustenAgro
+para obter avaliações da sustentabilidade, atualmente podem ser \textit{Fornecedores
+de cana-de-açúcar} e / ou \textit{Usinas processadoras de cana-de-açúcar},
+cada processo de avaliação requer dados que definem as unidades produtivas
+através das propriedades que os conformam, existem propriedades obrigatórias
+como:
+\selectlanguage{english}%
+\begin{itemize}
+\item hasAgriculturalProductionSystem\foreignlanguage{brazil}{: relaciona
+o sistema de produção agrícola em avaliação.}
+\selectlanguage{brazil}%
+\item hasAvailabilityOfEvaluationResults: relaciona o tipo de disponibilização
+dos resultados.
+\item hasSugarcaneSource: relaciona a origem da cana com o sistema em definição
+\item harvestYear: define o ano da safra.
+\item canavialLongevity: define a longevidade do canavial 
+\end{itemize}
+\selectlanguage{brazil}%
+Na figura \ref{fig:Modelagem-unidade-produtiva} apresenta-se a modelagem
+de \foreignlanguage{english}{Production Unit}, feita na ferramenta
+Protégé. 
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{figures/ProductionUnit}
+\par\end{centering}
+\caption{Modelagem unidade produtiva \label{fig:Modelagem-unidade-produtiva}}
+\end{figure}
+
+\selectlanguage{english}%
+
+\subsection*{\textit{Indicator}}
+
+\selectlanguage{brazil}%
+Os indicadores são o principal componente da ontologia, foram propostos
+por um grupo de especialistas de diversas áreas da produção agrícola
+e sustentabilidade \citep{oliveira:2013}. 
+
+Representam as características das unidades produtivas que serão identificadas
+e quantificadas em cada processo de avaliação, eles tem um \foreignlanguage{english}{\textit{Value}}\textit{
+}que quantifica a sustentabilidade do indicador, esta propriedade
+junto com outras conformam um formato que permite identificar e gerenciar
+tais elementos.
+
+A figura \ref{fig:Modelagem-de-Indicador} apresenta a hierarquia
+dos indicadores, que está subdividida em \foreignlanguage{english}{Efficiency
+Indicator} e \foreignlanguage{english}{Sustainability Indicator},
+os \foreignlanguage{english}{Indicators} tem a propriedade \foreignlanguage{english}{\textit{has
+value}}\textit{ }que estabelece um valor\textit{,} existe outra propriedade
+\foreignlanguage{english}{has weight} que é opcional e estabelece
+um peso, estas características representam o formato de um \foreignlanguage{english}{\textit{Indicator.}}
+
+A figura também apresenta um indicador intitulado \foreignlanguage{english}{Adequacy
+of boilers} que tem como \foreignlanguage{english}{has value} uma
+lista composta por duas classes e como propriedade \foreignlanguage{english}{has
+weight} uma classe.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{figures/Indicador}
+\par\end{centering}
+\caption{Modelagem de indicador \label{fig:Modelagem-de-Indicador}}
+\end{figure}
+
+\selectlanguage{english}%
+
+\subsection*{\textit{Microregion}\foreignlanguage{brazil}{\textit{ }}}
+
+\selectlanguage{brazil}%
+Representam os locais onde são localizadas as unidades produtivas,
+permitindo definir a microrregião para as fazendas e usinas do sistema
+produtivo de cana-de-açúcar, atualmente a ontologia tem 7 estados
+pertencentes ao centro-sul do Brasil e 243 microrregiões dentro dos
+estados registrados, estes dados foram consultados semanticamente
+e integrados no sistema a partir de uma consulta na DB-pedia.
+
+A figura \ref{fig:Modelagem-de-Microrregi=0000E3o} representa a modelagem
+das localizações geograficas usadas no sistema SustenAgro, com algumas
+instancias de \textit{Microregion}.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[scale=0.5]{figures/Microregion}
+\par\end{centering}
+\caption{Modelagem de microrregião\label{fig:Modelagem-de-Microrregi=0000E3o}}
+\end{figure}
+
+A partir das anteriores classes foi possível desenvolver o modelo
+de dados em formato de ontologias da web semântica \foreignlanguage{english}{OWL},
+as classes descritas foram relacionados por meio de \foreignlanguage{english}{\textit{Object
+Properties}} e \foreignlanguage{english}{\textit{Data Properties}}
+que permitem vincular semanticamente as classes associadas na avaliação
+de sustentabilidade, os \foreignlanguage{english}{\textit{Data/Object
+Properties}} precisam ter definida a propriedade \foreignlanguage{english}{\textit{rdfs:range}}\textit{
+}para realizar a validação dos dados vinculados e ditas propriedades
+podem ser \foreignlanguage{english}{Functional} para garantir uma
+relação de um a um.
+
+A principal contribuição da ontologia do domínio é ser uma representação
+semântica do conhecimento de domínio tanto para os usuários como para
+o sistema computacional, tornando-se um meio de comunicação entre
+os especialistas de domínio e os programadores.
+\selectlanguage{english}%
+
+\section{GUIs e Web Components}
+
+\selectlanguage{brazil}%
+O design das interfaces gráficas e desenvolvimento dos web componentes
+foram realizados por meio da varias técnicas de levantamento de requerimentos
+para especificar as funcionalidades que os especialistas requereram
+do sistema SustenAgro, devido a que não existiam requerimentos bem
+definidos, por isso foi necessário usar as seguintes técnicas.
+
+\subsection{User Stories}
 
 Histórias de usuário são uma técnica para descrever, de uma forma
 curta e simples, as características do sistema a partir da perspectiva
 do usuário ou cliente do sistema, gerando uma definição de alto nível
-de um requisito. Seu padrão é: Como um “tipo de usuário”, eu quero
-“algum objetivo” para “alguma finalidade”.
+de um requisito. O padrão é: Como um “tipo de usuário”, eu quero “algum
+objetivo” para “alguma finalidade”.
 
 Na aplicação dessa técnica foram obtidos as seguintes histórias:
 \begin{enumerate}
@@ -707,23 +460,22 @@ e longitude - a partir do Google Maps).
 a sua lavoura. O sistema fará uma sugestão de cadastro a partir dos
 dados da localização geográfica.
 \item O usuário deverá preencher o estado de cada indicador específico nas
-dimensões ambiental, econômica e social. Esses indicadores vão ser
-definidos pelo programa. Eles devem se adaptar às condições das regiões
-e microrregiões do Brasil. Da mesma forma as faixas de limiares de
-sustentabilidade são definidas.
+dimensões ambiental, econômica e social, eles devem adaptar-se às
+condições das regiões e microrregiões do Brasil.
 \item Permitir o emprego da metodologia para avaliação caso a caso: possibilitar
-que o usuário selecione quais indicadores vai utilizar. Dentro dos
-indicadores, ele pode recomendar limiares mais adequados para a sua
-realidade. Ele também pode inserir novos indicadores / limiares.
+que o usuário selecione quais indicadores vai utilizar, podendo recomendar
+limiares mais adequados para a realidade dle, também pode inserir
+novos indicadores / limiares.
 \item O usuário poderá obter o resultado dos índices segundo a informação
 preenchida e a formula de agregação dos indicadores.
 \item O usuário poderá armazenar a informação dos indicadores para futuras
 consultas.
 \item O usuário poderá acrescentar indicadores que considere importantes
-para sua análise. Devem-se estabelecer regras para essa funcionalidade
+para a análise, devem-se estabelecer regras para essa funcionalidade
 de tal modo que os novos indicadores (criados pelos usuários) sejam
 recuperáveis de um modo separado dos indicadores cadastrados no sistema. 
-\item Cronograma de avaliação, melhor depois de cada safra. 
+\item O sistema deve fornecer um cronograma de avaliação, recomendado realizar
+avaliação depois de cada safra. 
 \end{enumerate}
 O usuário deverá ser informado da importância dos processos de avaliação,
 exemplo: 
@@ -771,56 +523,57 @@ a mecanização em propriedades com restrição para mecanização.
 dificultam a mecanização. 
 \end{itemize}
 
-\section{Scenarios}
+\subsection{Scenarios}
 
 É uma técnica que permite a descrição das funcionalidades do sistema
-da perspectiva do usuário ou cliente com a descrição detalhada da
-interação destes. Em geral, é uma descrição detalhada de cada um dos
-passos dos usuários no sistema para alcançar seu objetivo. Abaixo,
-serão apresentadas as 8 histórias de usuários do projeto SustenAgro
-com os cenários associados a elas:
+desde a perspectiva do usuário ou cliente, realizando uma descrição
+detalhada de cada um dos passos dos usuários no sistema para atingir
+a tarefa, a continução serão apresentadas as 8 histórias de usuários
+do projeto SustenAgro com os cenários associados a elas:
 
 \textbf{História de usuário \#1:} “O usuário poderá identificar e
 cadastrar a localização geográfica e a área da sua lavoura (definir
 região geográfica do IBGE, latitude e longitude - a partir do Google
 Maps).”
 \begin{enumerate}
-\item O usuário ingressa na sua conta, através do sistema web SustenAgro
+\item O usuário ingressa na conta dele, através do sistema web SustenAgro
 em \url{http://sustenagro.embrapa.br}, e o sistema apresenta a tela
 “Home” 
-\item O usuário seleciona a aba “lavouras” e dá um click em ``cadastrar
-lavoura''. O sistema apresenta a tela de cadastro de lavouras, onde
-tem um mapa do Google Maps 
+\item O usuário seleciona a aba “unidades produtivas” e dá um click em ``cadastrar
+unidade produtiva'', o sistema apresenta a tela de cadastro de unidades
+produtivas, onde tem um mapa do Google Maps 
 \item O usuário seleciona no mapa um ponto que identificará a localização
-da lavoura. Se ele quiser, também é possível marcar a área da lavoura
-para que o sistema possa ter dados mais específicos para o processo
-de avaliação de sustentabilidade. Uma vez terminado, o usuário dá
-um click no botão “seguinte” e o sistema cadastra a informação preenchida. 
+da unidade produtiva, se ele quiser, também é possível marcar a área
+da lavoura para que o sistema possa ter dados mais específicos para
+o processo de avaliação de sustentabilidade, uma vez terminado, o
+usuário dá um click no botão “proximo” e o sistema cadastra a informação
+preenchida. 
 \end{enumerate}
 \textbf{História de usuário \#2}: “O usuário poderá identificar e
-cadastrar a microrregião a que pertence a sua lavoura por meio de
-uma sugestão que o sistema faz com os dados da localização geográfica.”
+cadastrar a microrregião a que pertence a unidade produtivan dele
+por meio de uma sugestão que o sistema faz com os dados da localização
+geográfica.”
 \begin{enumerate}
 \item O usuário poderá fazer a “Historia de usuário \#1” ou entrar no sistema
-e continuar com o cadastro da lavoura de onde ele tenha parado. O
-sistema apresentará uma tela com sugestões de microrregiões. 
+e continuar com o cadastro da unidade produtiva de onde ele tenha
+ficado, o sistema apresentará uma tela com sugestões de microrregiões. 
 \item O usuário poderá escolher a microrregião onde esteja localizada a
-lavoura e salvá-la no sistema por meio do botão ``seguinte''. 
+unidade produtiva e salvá-la no sistema por meio do botão ``próximo''. 
 \end{enumerate}
 \textbf{História de usuário \#3:} “O usuário deverá preencher o estado
 de cada indicador específico nas dimensões ambiental, econômica e
-social. Esses indicadores vão ser definidos pelo programa. Eles devem
-se adaptar às condições das regiões e microrregiões do Brasil. Da
-mesma forma as faixas de limiares de sustentabilidade são definidas.''
+social, ditos indicadores devem adaptar-se às condições das regiões
+e microrregiões do Brasil, da mesma forma as faixas de limiares de
+sustentabilidade foram definidas.''
 \begin{enumerate}
 \item O usuário poderá fazer a “História de usuário \#2” ou entrar no sistema
-e continuar com o cadastro dos indicadores de onde ele tenha parado.
+e continuar com o cadastro dos indicadores de onde ele tenha ficado.
 O sistema apresentará uma tela com três abas que contém os controles
 que permitiram fazer o cadastro dos indicadores nas dimensões ambiental,
 econômica e social. 
 \item O usuário dá um click na primeira aba e começa a preencher os dados
 dos indicadores ambientais, principalmente os limiares que identificam
-o estado do indicador. A interface também permite eliminar ou acrescentar
+o estado do indicador, a interface também permite eliminar ou acrescentar
 indicadores específicos por parte dos usuários (funcionalidade que
 é explicada na “história de usuário \#4”). 
 \item O usuário preenche os dados das outras duas dimensões e o sistema
@@ -828,8 +581,8 @@ salva as mudanças.
 \end{enumerate}
 \textbf{História de usuário \#4:} “Permitir o emprego da metodologia
 para avaliação caso a caso: possibilitar que o usuário selecione quais
-indicadores vai utilizar. Dentro dos indicadores, ele pode recomendar
-limiares mais adequados para a sua realidade. Ele também pode inserir
+indicadores vai utilizar, dentro dos indicadores, ele pode recomendar
+limiares mais adequados para a sua realidade, também pode inserir
 novos indicadores\slash{}limiares.”
 \begin{enumerate}
 \item O usuário poderá fazer a “Historia de usuário \#3” ou entrar no sistema
@@ -837,10 +590,10 @@ e continuar na tela de cadastro de indicadores e, quando aconteça
 que o usuário precise de um indicador que não seja oferecido pelo
 sistema, o usuário poderá acrescentá-lo por meio do botão “acrescentar
 indicador” 
-\item O usuário da click no botão “acrescentar indicador” e lhe é apresentada
+\item O usuário da click no botão “acrescentar indicador” e é apresentada
 uma interface de entrada, onde ele deverá cadastrar o título, a descrição,
-os limiares, a medida do manejo e a justificativa desse indicador.
-Depois, preenche o estado do indicador e o sistema salva esses dados
+os limiares, a medida do manejo e a justificativa desse indicador,
+depois, preenche o estado do indicador e o sistema salva esses dados
 nessa dimensão. 
 \item O usuário também poderá eliminar alguns indicadores segundo seu critério.
 \end{enumerate}
@@ -849,50 +602,48 @@ obter o resultado dos índices segundo a informação preenchida e a
 formula de agregação dos indicadores.\textquotedbl{}
 \begin{enumerate}
 \item Depois de terminada a “História de usuário \#4”, o sistema fará a
-aplicação da metodologia de avaliação, que vai estar definida no sistema
-pelos administradores. 
-\item O resultado da avaliação vai ser cadastrado no sistema com informações
+avaliação, que foi definida no sistema pelos administradores. 
+\item O resultado da avaliação será cadastrado no sistema com informações
 sobre a metodologia utilizada.
 \item A metodologia de avaliação pode ser atualizada pelos administradores
-para ser utilizada em avaliações futuras.
+para uso em avaliações futuras.
 \end{enumerate}
 \textbf{História de usuário \#6:} ``O usuário poderá armazenar a
-informação dos indicadores para futuras consultas.''
+informação dos indicadores em futuras consultas.''
 \begin{enumerate}
-\item O usuário faz qualquer tipo de entrada de dados nos formulários do
-SustenAgro. 
-\item Esses dados vão ser salvos quando o usuário mudar de formulário ou
-quando der um click no botão ``seguinte''.
+\item O usuário preenche alguns indicadores nos formulários do SustenAgro. 
+\item Ditos dados serão salvos quando o usuário mudar de formulário ou quando
+dá click no botão ``próximo''.
 \end{enumerate}
 \textbf{História de usuário \#7:} ``O usuário poderá acrescentar
-indicadores que considere importantes para sua análise. Devem-se estabelecer
+indicadores que considere importantes para sua análise, devem-se estabelecer
 regras para essa funcionalidade de tal modo que os novos indicadores
 (criados pelos usuários) sejam recuperáveis de um modo separado dos
 indicadores cadastrados no sistema.''
 \begin{enumerate}
 \item Quando o usuário estiver preenchendo os indicadores gerados pelo sistema,
 o sistema fornecerá um conjunto de controles que permitam a inclusão
-de um novo indicador. Esse novo indicador vai ser definido pelo próprio
+de um novo indicador. Esse novo indicador será definido pelo próprio
 usuário baseado na sua experiência na área. 
 \item O sistema armazenará esse novo indicador com uma classificação especial
-que permita sua identificação para avaliar sua relevância. 
+que permita a identificação para separar dos outros indicadores. 
 \item O usuário poderá preencher os dados do novo indicador, para que sejam
 inclusos na avaliação de sustentabilidade.
 \end{enumerate}
-\textbf{História de usuário \#8:} ``Cronograma de avaliação, melhor
-depois de cada safra.''
+\textbf{História de usuário \#8:} ``Cronograma de avaliação, depois
+de cada safra.''
 \begin{enumerate}
 \item Depois de fazer o cadastro da fazenda e das culturas que são plantadas
 nela, o sistema poderá identificar quando termina cada safra, gerando
-um alerta para que u usuário faça o processo de avaliação nessa data.
+um alerta para que o usuário faça o processo de avaliação nessa data.
 \item O usuário lerá o alerta e poderá fazer o processo de avaliação de
 sustentabilidade. 
 \end{enumerate}
 
-\section{Storyboard}
+\subsection{Storyboard}
 
 Storyboards são similares aos cenários. Elas ilustram a interação
-necessária para se atingir um objetivo sem utilizar uma lista de passos,
+necessária para atingir um objetivo sem utilizar uma lista de passos,
 a interação é visualizada por meio de uma história de quadrinhos.
 
 Esta representação permite se ter uma visão holística da interação
@@ -900,156 +651,308 @@ do usuário, com ênfase nos aspectos funcionais da interação e não
 nos aspectos da interface de usuário. A seguir, são apresentados os
 textos das storyboard dos processos identificados:
 
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=1\columnwidth]{../figures/Story_1}
-\par\end{centering}
-\begin{centering}
-\emph{\small{}StoryBoard 1.}
-\par\end{centering}{\small \par}
-\smallskip{}
-
-\begin{centering}
-\includegraphics[width=1\columnwidth]{../figures/Story_2}
-\par\end{centering}
-\begin{centering}
-\textit{\small{}StoryBoard 2.}
-\par\end{centering}{\small \par}
-\smallskip{}
-
-\begin{centering}
-\includegraphics[width=1\columnwidth]{../figures/Story_3}
-\par\end{centering}
-\begin{centering}
-\textit{\small{}StoryBoard 3.}
-\par\end{centering}{\small \par}
-\centering{}\caption{Storyboards números 1–3.\label{fig:Storyboard-numero-1}}
-\end{figure}
+A figura \ref{fig:StoryBoard-1} apresenta o processo de cadastro
+da localização da unidade produtiva, para conseguir vincular dados
+a partir da localização geográfica.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\columnwidth]{../figures/Story_4}
+\includegraphics[width=1\columnwidth]{\string"figures/Stroyboard 1\string".png}
 \par\end{centering}
-\begin{centering}
-\textit{\small{}StoryBoard 4.}
-\par\end{centering}{\small \par}
-\bigskip{}
+\centering{}\caption{\textit{\emph{\small{}StoryBoard definição da localização. \label{fig:StoryBoard-1}}}}
+\end{figure}
 
+A figura \ref{fig:StoryBoard-2} apresenta o formulário de seleção
+da microrregião que faz parte da localização descrita no anterior
+storyboard, dita informação é importante para caracterizar a unidade
+produtiva.
+
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\columnwidth]{../figures/Story_5}
+\includegraphics[width=0.8\columnwidth]{\string"figures/Stroyboard 2\string".png}
 \par\end{centering}
-\begin{centering}
-\textit{\small{}StoryBoard 5.}
-\par\end{centering}{\small \par}
-\bigskip{}
+\caption{\textit{\emph{\small{}StoryBoard seleção da unidade produtiva. \label{fig:StoryBoard-2}}}}
 
+\end{figure}
+
+A figura \ref{fig:StoryBoard-3} apresenta o esquema do formulário
+de preenchimento dos indicadores que permite cadastrar uma avaliação,
+dito formulário é adaptável a vários tipos de dados dos indicadores,
+permitindo construir interfaces amigáveis para os usuários.
+
+\begin{figure}[H]
+
+\includegraphics[width=1\columnwidth]{\string"figures/Stroyboard 3\string".png}
+
+\caption{\textit{\emph{\small{}StoryBoard preenchimento dos indicadores.\label{fig:StoryBoard-3}}}}
+
+\end{figure}
+A figura \ref{fig:StoryBoard-4} apresenta o processo de avaliação
+para uma unidade produtiva segundo o método Sustenagro, que processará
+os indicadores preenchidos e gerará informação resultante.
+
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\columnwidth]{../figures/Story_7}
+\includegraphics[width=1\columnwidth]{\string"figures/Stroyboard 4\string".png}
 \par\end{centering}
-\begin{centering}
-\textit{\small{}StoryBoard 6.}
-\par\end{centering}{\small \par}
-\bigskip{}
+\caption{\textit{\emph{\small{}StoryBoard}} avaliação de unidade produtiva\label{fig:StoryBoard-4}}
+\end{figure}
 
-\centering{}\caption{Storyboards números 4–6.\label{fig:Storyboard-numero-4}}
+A figura \ref{fig:StoryBoard-5} apresenta o formulário de definição
+de novos indicadores por parte dos usuários do sistema, suportando
+a integração de novos conceitos no sistema. 
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\columnwidth]{\string"figures/Stroyboard 6\string".png}
+\par\end{centering}
+\centering{}\caption{\textit{\emph{\small{}StoryBoard}} cadastro de novo indicador.\label{fig:StoryBoard-5}}
+\end{figure}
+
+A figura \ref{fig:StoryBoard-6} apresenta o relatório resultante
+do processo de avaliação, que está composto pelos índices, uma tabela
+dos dados cadastrado e como foram processados, a matriz de sustentabilidade
+e as recomendações
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\columnwidth]{\string"figures/Stroyboard 5\string".png}
+\par\end{centering}
+\caption{\textit{\emph{\small{}StoryBoard}} apresentação de resultados\label{fig:StoryBoard-6}}
 \end{figure}
 
 
-\section{Mockups das Interfaces do SustenAgro}
+\subsection{Mockups das Interfaces do SustenAgro}
 
-Mockups permitem uma representação visual das interfaces do sistema
-para ajudar no seu entendimento, fazer demonstrações, avaliações do
-design, dentre outros propósitos. As Figuras \ref{fig:Mockup_home}
-e \ref{fig:Mockup_indicators} mostram algumas telas com desenhos
-dos Mockups que foram avaliados e validados pela equipe do projeto.
+Os Mockups permitiram realizar uma representação visual das interfaces
+do sistema com as \foreignlanguage{english}{widgets} integradas para
+ajudar na avaliação por parte dos especialistas do domínio, e assim
+reorganizar os elementos visuais para definir um design estável das
+interfaces do sistema.\footnote{O desenvolvimento dos Mockups foi feito com a ferramenta Moqups \url{https://moqups.com/} }
 
-\begin{figure}
-\centering{}\includegraphics[width=1\columnwidth]{\string"../figures/Mockup Main\string".eps}\caption{Mockup da tela da Home Page do SustenAgro.\label{fig:Mockup_home}}
+A figura \ref{fig:Mockup_home} apresenta uma interfaz gráfica web
+do Home, onde está uma descrição do sistema, e as principais abas,
+entre elas a aba de Ferramenta permite aceder ao processo de avaliação
+de sustentabilidade.
+
+\begin{figure}[H]
+\centering{}\includegraphics[width=0.8\columnwidth]{\string"figures/Mockup Main\string".png}\caption{Mockup da tela inicial do SustenAgro.\label{fig:Mockup_home}}
 \end{figure}
 
-\begin{figure}
-\centering{}\includegraphics[width=1\columnwidth]{../figures/Tool_environmental_indicators}\caption{Mockup da tela de indicadores do SustenAgro.\label{fig:Mockup_indicators}}
+A figura \ref{fig:Mockup_indicators} apresenta os passos do processo
+de avaliação, na ordem representada pela numeração das abas, realizando
+o cadastro da localização, da cultura, das tecnologias usadas, da
+caracterização do sistema produtivo, a tela dos indicadores e das
+recomendações. A tela apresentada corresponde com o formulário do
+cadastro dos indicadores que permite cadastrar o valor correspondente
+à avaliação em processo.
+
+\begin{figure}[H]
+\centering{}\includegraphics[width=0.8\columnwidth]{figures/Tool_environmental_indicators}\caption{Mockup da tela de indicadores do SustenAgro.\label{fig:Mockup_indicators}}
 \end{figure}
 
 
-\section{Protótipo da Interface Gráfica do SustenAgro}
+\subsection{Protótipo da Interface Gráfica do SustenAgro}
 
-O primeiro protótipo da interface gráfica do SustenAgro está publicado
+O protótipo funcional da interface gráfica do SustenAgro está publicado
 nos servidores do laboratório Intermídia do ICMC\nobreakdash-USP
 \footnote{http://biomac.icmc.usp.br:8080/sustenagro/}, na Figura
 \ref{fig:Home} é apresentada a página inicial do protótipo.
 
-\begin{figure}
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[width=1\textwidth]{../figures/home}
+\includegraphics[width=1\textwidth]{figures/home}
 \par\end{centering}
 \caption{Protótipo do SustenAgro – Home Page.\label{fig:Home}}
 \end{figure}
 
 Nessa tela pode-se observar o texto explicativo da ferramenta e as
-abas de ``Início'', ``Ferramenta'' e ``Contato''. O menu da
-ferramenta permite iniciar o processo de avaliação de sustentabilidade.
+abas de ``Início'', ``Ferramenta'' e ``Contato'', a opção ``Ferramenta''
+permite iniciar o processo de avaliação de sustentabilidade.
 
-Na Figura \ref{fig:Indicators}, é apresentada a página dos indicadores,
-onde se descreve o processo de avaliação. Ele começa com uma descrição
-base do processo, a localização geográfica da unidade produtiva, a
-caracterização dela, os indicadores e as recomendações que o sistema
-vai gerar.
+Uma vez cadastrada uma unidade produtiva disponibiliza-se a opção
+de criar nova avaliação, ação que vai gerar a tela da figura \ref{fig:Indicators}
+que permite visualizar os indicadores para que os usuários preencham
+cada um segundo a realidade da unidade produtiva em avaliação, cada
+indicador tem varias opções de resposta que estão ligadas a valores
+que quantificam a sustentabilidade, esses valores estão definidos
+na ontologia da sustentabilidade e são valores de usados nas formula
+para gerar os índices da sustentabilidade. 
 
-\begin{figure}
-\centering{}\includegraphics[width=1\columnwidth]{../figures/indicators}\caption{Protótipo do SustenAgro - Indicadores.\label{fig:Indicators}}
+Na Figura \ref{fig:Indicators}, é apresentada o formulário dos indicadores
+de eficiência, que tem uma subdivisão em eficiência da produção e
+da sustentabilidade, permitindo agrupar os indicadores correspondentes
+a cada dimensão, na figura \ref{fig:Indicators} é preenchido o indicador
+Manejo a maneira de exemplo, onde é cadastrada uma das opções de resposta
+e o peso do indicador, para depois suportar o processo de avaliação
+da sustentabilidade.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[width=0.8\columnwidth]{figures/SustenAgro-scenario}
+\par\end{centering}
+\caption{Cadastro de indicadores \label{fig:Indicators}}
+\end{figure}
+
+A partir desses desses dados cadastrados, são gerados os resultados
+do sistema que consistem na planilha de eficiência e custo, na planilha
+da sustentabilidade e o relatório do sistema, as planilhas permitem
+a visualizar os atributos dos indicadores e a tela de relatório apresenta
+a matriz de avaliação onde são relacionados os indices de eficiência
+e de sustentabilidade, o relatório é apresentado na figura \ref{fig:Planilhas-de-resultado}. 
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[width=0.8\columnwidth]{figures/SustenAgro-results}
+\par\end{centering}
+\caption{Planilhas de resultado da avaliação \label{fig:Planilhas-de-resultado}}
+\end{figure}
+Foram desenvolvidos dois \foreignlanguage{english}{web components}
+específicos que permitiram suportar gráficas especificas do relatório
+solicitado pelos especialistas da pela Embrapa Meio Ambiente 
+
+\subsection*{Matriz de sustentabilidade}
+
+Com a finalidade de suportar a geração de relatórios que cumpra com
+as especificações dos especialistas do domínio, foi necessário implementar
+uma \foreignlanguage{english}{widget} especifica e compatível com
+os padrões \foreignlanguage{english}{web components}, dita \foreignlanguage{english}{widget}
+foi intitulada Matriz de Sustentabilidade e está composta por dois
+eixos que correspondem ao índice de eficiência no eixo Y e o índice
+de sustentabilidade no eixo X, ditos índices tem magnitudes que são
+dividas em segmentos que permitem dividir a área em doce quadrantes
+da sustentabilidade, cada avaliação realizado com o método SustenAgro
+gerá dois índices que são localizados na matriz de sustentabilidade
+e assim relacionados com um quadrante que tem recomendações especificas,
+a figura \ref{fig:Matriz-de-sustentabilidade} corresponde á implementação
+desta \foreignlanguage{english}{widget} mostrando resultados reais
+de uma avaliação.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[width=0.8\columnwidth]{figures/SustenAgro-matrix}
+\par\end{centering}
+\caption{Matriz de sustentabilidade\label{fig:Matriz-de-sustentabilidade-widget}}
+
 \end{figure}
 
 
-\section{Características do sistema}
+\subsection*{Semáforo da sustentabilidade}
 
-Uma vez cadastrada a unidade produtiva/fazenda disponibiliza-se a
-opção de criar nova avaliação, ação que vai gerar a tela da figura
-9 que permite visualizar as variaveis de eficiencia e os indicadores
-para que os usuários preencham cada uma segundo a realidade da unidade
-produtiva em avaliação, cada indicador ou variavel de eficiencia tem
-varias opções que estão ligadas a valores que quantificam a sustentabilidade,
-esses valores estão definidos na ontologia da sustentabilidade e serao
-os valores de ingreso para a formula que vai gerar os indices da sustentabilidade. 
+A \foreignlanguage{english}{widget} do semáforo da sustentabilidade
+também requiriu uma implementação especifica segundo as especificações
+dos especialistas do domínio, dita \foreignlanguage{english}{widget}
+é compatível com os padrões dos \foreignlanguage{english}{web components},
+e contem um eixo que quantifica o valor da sustentabilidade normalizado
+desde -100 até +100, dividindo o intervalo em 5 segmentos que correspondem
+a categorias da sustentabilidade, a figura \ref{fig:Sem=0000E1foro-de-sustentabilidade}
+apresenta a \foreignlanguage{english}{widget} implementada e integrada
+no sistema SustenAgro, com uma avaliação de sustentabilidade instanciada.
 
-\begin{figure}
-\includegraphics[scale=0.5]{../figures/SustenAgro-scenario}
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[width=0.8\columnwidth]{figures/SustenAgro-semaphore}
+\par\end{centering}
+\caption{Semáforo de sustentabilidade \label{fig:Sem=0000E1foro-de-sustentabilidade}}
 
-\caption{Cadastro das variaveis/indicadores}
 \end{figure}
 
-A partir desses desses dados cadastrados são gerados os resultados
-do sistema que consistem na planilha de ediciência e custo, na planilha
-da sustentabilidade e o relatorio do sistema, as planilhas permitem
-a visualizar os atributos das variaveis de eficiência e dos indicadores
-e a tela de relatorio que apresenta a matrix de avaliação onde são
-relaciondas as variaveis de eficiência e de sustentabilidade, o relatio
-é apresentado na figura 10. 
+\selectlanguage{english}%
 
-\begin{figure}
-\includegraphics{../figures/SustenAgro-results}
+\section{DSL}
 
-\caption{Formato das planilhas de resultado}
-\end{figure}
+\selectlanguage{brazil}%
+A implementação de uma DSL permite aos administradores da ferramenta
+definir como são usados e apresentados os conceitos da ontologia por
+meio de elementos da interface gráfica do usuário, para assim fornecer
+um sistema adaptável às mudanças do domínio, em termos de interface
+gráfica durante runtime.
 
+Os conceitos das ontologias e os \foreignlanguage{english}{Web Components}
+são vinculados por meio da DSL, para definir o comportamento do SustenAgro,
+definindo cada uma das funcionalidades do sistema para realizar a
+personalização e vinculação da informação para assim satisfazer os
+requisitos dos usuários do sistema SustenAgro, a DSL final do processo
+de definição do sistema está no código\ref{lis:DSL-SustenAgro}. 
+
+\inputencoding{latin9}\begin{lstlisting}[caption={SustenAgro DSL  },label={lis:DSL-SustenAgro},breaklines=true]
+ evaluationObject ':ProductionUnit', {             
+  instance 'ui:hasName', label: ['en': 'Production unit or farm name', 'pt': 'Nome da unidade produtiva ou fazenda'], placeholder: ['en': 'Name', 'pt': "Nome"]
+  instance ':hasAgriculturalProductionSystem', label: ['en': 'Agricultural production system' , 'pt': "Sistema de produ��o agr�cola"], header: ['en': 'Options', 'pt': "Op��es"]     type label: ['en': "Production unit type", 'pt': "Tipo da unidade produtiva"], header: ['en': 'Options', 'pt': "Op��es"]
+  instance  ':hasSugarcaneSource', label: ['en': 'Sugarcane source', 'pt': "Origem da cana"], header: ['en': 'Options', 'pt': "Op��es"], multipleSelection: true, required: true
+  instance 'dbp:state', label: ['en': 'State', 'pt': 'Estado'], header: ['en': 'States', 'pt': 'Estados']
+  instance 'ui:hasMicroregion', label: ['en': 'Production unit microregion', 'pt': "Microrregi�o da unidade produtiva"], header: ['en': "Options", 'pt': "Op��es"]
+  instance ':municipalitiesInvolved', label: ['en': "Municipalities involved (unit location)", 'pt': "Munic�pios envolvidos (localiza��o da sede)"], placeholder: "S�o Carlos, Jaguari�na, etc"      instance ':harvestYear', label: ['en': 'Harvest (year)', 'pt': "Safra (Ano)"], placeholder: "yyyy"
+  instance ':beginningOfPlantingDate', label: ['en': "Planting start date", 'pt': "Data de in�cio do plantio"], placeholder: "dd/mm/yyyy"
+  instance ':finishOfPlantingDate', label: ['en': "Planting end date" ,'pt': "Data de t�rmino do plantio"], placeholder: "dd/mm/yyyy"      
+  instance ':beginningOfHarvestDate', label: ['en': 'Harvest start date', 'pt': "Data de in�cio da colheita"], placeholder: "dd/mm/yyyy"
+  instance ':finishOfHarvestDate', label: ['en': 'Planting end date', 'pt': "Data de t�rmino da colheita"], placeholder: "dd/mm/yyyy"
+  instance ':canavialLongevity', label: ['en': "Canavial longevity (time in years and months)", 'pt': "Longevidade do canavial (tempo em anos e meses)"], placeholder: ['en': "One and a half year", 'pt': "Um ano e meio"]
+  instance ':innovationDevelopmentProjects', label: ['en': "Innovation/development projects (BNDES, Finep)", 'pt': "Projetos de inova��o e/ou desenvolvimento (BNDES, Finep)"], placeholder: ['en': "Description", 'pt': "Descri��o"], widget: 'textAreaForm'
+  instance ':financing', label: ['en': "Financing (agricultural credit, machinery costing, BNDES)", 'pt': "Financiamento (cr�dito agr�cola, custeio de maquin�rio, BNDES)"], placeholder: ['en': "Description", 'pt': "Descri��o"], widget: 'textAreaForm'
+  instance ':partnershipsForResearchOrImprovementOfTheSystem', label: ['en': "Partnerships for research or system enhancement (Name of partnership institution, institution type, public or private, cooperatives or associations)", 'pt': "Parcerias para pesquisa ou aprimoramento do sistema (nome da institui��o parceira, tipo da institui��o p�blica, privada, Cooperativas ou associa��es)"], widget: 'textAreaForm', placeholder: ['en': "Description", 'pt': "Descri��o"]
+  instance ':hasAvailabilityOfEvaluationResults', label: ['en': "Availability of evaluation results", 'pt': "Disponibiliza��o dos resultados da avalia��o"], header: ['en': "Options", 'pt': "Op��es"]
+}
+feature ':EnvironmentalIndicator', 'extraFeatures': true 
+feature ':EconomicIndicator', 'extraFeatures': true 
+feature ':SocialIndicator', 'extraFeatures': true 
+feature ':ProductionEfficiencyFeature' 
+feature ':TechnologicalEfficiencyFeature', {          
+  conditional ":ProductionUnit", 'http://dbpedia.org/ontology/Provider', {
+    include ':TechnologicalEfficiencyInTheField'          
+  }
+  conditional ":ProductionUnit", 'http://dbpedia.org/resource/PhysicalPlant', {
+    include ':TechnologicalEfficiencyInTheField', ':TechnologicalEfficiencyInTheIndustrial'          
+  }  
+}
+data 'data'
+report {       
+  environment =   weightedSum(data.':EnvironmentalIndicator')
+
+  economic    =   weightedSum(data.':EconomicIndicator')     
+ 
+  social      =   weightedSum(data.':SocialIndicator')  
+
+  sustainability = (environment + social + economic)/3
+
+  cost_production_efficiency = sum(data.':ProductionEfficiencyFeature')
+
+  technologicalEfficiencyInTheField = 0.8*weightedSum(data.':TechnologicalEfficiencyInTheField')
+
+  technologicalEfficiencyInTheIndustrial = 0.2*weightedSum(data.':TechnologicalEfficiencyInTheIndustrial')
+
+  efficiency = Math.abs(cost_production_efficiency) * (technologicalEfficiencyInTheField+technologicalEfficiencyInTheIndustrial)
+
+  evaluationObjectInfo()   
+
+  sustainabilityMatrix    x: sustainability, y: efficiency,  label_x: ['en': 'Sustainability Index', 'pt': '�ndice de Sustentabilidade'],                 label_y: ['en': 'Efficiency index', 'pt': '�ndice de Efici�ncia'],               range_x: [-43,43],                 range_y: [-160,800],                 quadrants: [4,3], recomendations: ["Avalia��o da efici�ncia: balan�o da efici�ncia tecnol�gica, produ��o, custo favor�vel para o sistema cana, recomenda-se investimentos no sistema avaliado / Avalia��o da sustentabilidade: com bom desempenho, sistema de produ��o de cana fortemente recomendado."]
+   
+  sustainabilitySemaphore value: sustainability,                  label: ['en': 'Sustainability Level', 'pt': '�ndice da sustentabilidade geral'],                  legend: [['en': 'Lower sustainability', 'pt': 'Menos sustent�vel'],                ['en': 'Negative changes', 'pt': 'Altera��es negativas'],                ['en': 'Irrelevant changes', 'pt': 'Sem altera��o'],                ['en': 'Positive changes', 'pt': 'Altera��es positivas'],                                     ['en': 'Higher sustainability', 'pt': 'Mais sustent�vel']],                  range: [-60,60]    
+
+  text    'en': 'Microregion map', 'pt': '**Mapa da microregi�o**'    
+
+  map     data.'Microregion'   
+}     
+
+\end{lstlisting}
+\inputencoding{utf8}
 
 \section{Considerações Finais}
 
 O desenvolvimento do sistema Sustenagro satisfaz uma necessidade presente
 na unidade da Embrapa Meio Ambiente: um sistema de avaliação de sustentabilidade
-em sistemas produtivos de cana-de-açúcar. Ele permitirá adquirir dados
+em sistemas produtivos de cana-de-açúcar, ele permitirá adquirir dados
 do estado atual de sustentabilidade nas fazendas e usinas e assim
 embasar e formalizar políticas publicas para promover práticas produtivas
 mais sustentáveis de acordo com critérios ambientais, sociais e econômicos.
 
 Além de satisfazer uma necessidade institucional, o SustenAgro se
 consolida como uma proposta de SAD baseado em conhecimento e vinculado
-às tecnologias da web semântica, um processo que requer um trabalho
-de pesquisa e de inovação tecnológica. A pesquisa deste trabalho de
-mestrado, usará o SustenAgro como uma base de testes realista para
-os conceitos e ferramentas desenvolvidos. 
+às tecnologias da web semântica, um processo que requereu um trabalho
+de pesquisa e de inovação tecnológica, a pesquisa deste trabalho de
+mestrado. 
 
-Após o desenvolvimento do Sistema SustenAgro, poder-se-a analisar
-as características fundamentais desse tipo de SAD e tentar reusar
-a arquitetura em outros SADs da própria Embrapa.
-\end{document}
+Após o desenvolvimento do Sistema SustenAgro, foram analisadas as
+principais características fundamentais desse tipo de SAD e se abstraiu
+uma arquitetura, para suportar a implementação de outros \foreignlanguage{english}{SADs}
+da própria Embrapa.

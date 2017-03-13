@@ -75,6 +75,16 @@
 \begin_body
 
 \begin_layout Standard
+Neste capitulo são apresentados uma discução sobre os resultados do projeto,
+ os trabalhos futuros e as dificultadades encontradas durante o desenvolvimento
+ da pesquisa.
+\end_layout
+
+\begin_layout Section
+Resultados
+\end_layout
+
+\begin_layout Standard
 Os resultados obtidos são: 
 \end_layout
 
@@ -117,10 +127,6 @@ Uma das finalidades deste projeto é construir um gerador de sistemas de
  para a comunidade uma metodologia de desenvolvimento e manutenção que fique
  simples para os usuários finais e assim permitir que os especialistas no
  domínio façam as mudanças sem precisas dos especialistas de T.I.
-\end_layout
-
-\begin_layout Section
-Discussão
 \end_layout
 
 \begin_layout Section
@@ -197,7 +203,7 @@ Esta linguagem pode ser validada, melhorada e expandida por meio da definição
 \end_layout
 
 \begin_layout Subsection
-Reportes de consultas semanticas
+Reportes de consultas semânticas
 \end_layout
 
 \begin_layout Standard
@@ -206,7 +212,7 @@ Gerar SADs que suportem consultas complexas que requerem conhecimento semântico
 \end_layout
 
 \begin_layout Subsection
-Linguagem de edição de VIEWs
+Linguagem de edição de Web UIs
 \end_layout
 
 \begin_layout Standard
@@ -216,18 +222,21 @@ Na geração de interfaces gráficas é necessário o gerenciamento e organizaç
 \end_layout
 
 \begin_layout Standard
-Atualmente na geração de VIEWs nos sistemas web, são usadas tecnologias
- feitas para os desenvolvedores web front-end que permitem a manipulação
- da estrutura do documento atraves de HTML, do estilo do documento atraves
- de CSS e do comportamento JS.
+Atualmente na geração de 
+\lang english
+web UIs
+\lang brazilian
+ nos sistemas web, são usadas tecnologias feitas para os desenvolvedores
+ web front-end que permitem a manipulação da estrutura do documento atraves
+ de HTML, do estilo do documento atraves de CSS e do comportamento JS.
  Mas estes elementos estão focados na representação computacional dessas
  carateristicas, porem é possivel propor outra maneira de representação
  em mais alto nivel.
 \end_layout
 
 \begin_layout Standard
-A proposta é de uma linguagem para ediação de VIEWs, onde os elementos estejam
- modularizados permitindo abstrair a View em uma hierarquia de componentes
+A proposta é de uma linguagem para edição de Web UIs, onde os elementos
+ estejam modularizados permitindo abstrair a UI em uma hierarquia de componentes
  relacionando-os semanticamente por meio de uma linguagem de alto nivel
  de usuário não especialista em web development.
 \end_layout
@@ -300,6 +309,14 @@ Cada uma das anteriores etapas de desenvolvimento foram testadas com os
  especialistas do domínio, para conseguir realizar o correto levantamento
  de requisitos, devido a que não existia uma definição especifica do que
  os especialistas precisavam.
+\end_layout
+
+\begin_layout Standard
+literatura antiga, especialmente nos DSS
+\end_layout
+
+\begin_layout Standard
+Conclusões finais
 \end_layout
 
 \end_body

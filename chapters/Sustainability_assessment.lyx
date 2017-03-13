@@ -385,7 +385,14 @@ key "deusdara2001criterios"
 \begin_layout Standard
 Cada indicador deverá atender pelo menos um dos critérios de sustentabilidade
  para ser considerado um bom indicador de sustentabilidade, os critérios
- de sustentabilidade escolhidos pela equipe de especialistas são:
+ de sustentabilidade escolhidos pela equipe de especialistas são
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moura2002indicadores"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Itemize
@@ -394,7 +401,8 @@ Produtividade: Relacionado a eficiência e custos.
 
 \begin_layout Itemize
 Estabilidade: Capacidade do ecossistema de absorver perturbações e permanecer
- inalterado (CEPAL
+ inalterado (Comissão Econômica para a América Latina e o Caribe/Programa
+ das Nações Unidas para o Meio Ambiente, CEPAL
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CEPAL"
@@ -411,59 +419,22 @@ description "Programa das Nações Unidas para o Meio Ambiente"
 \end_inset
 
 , 1994) 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "moura2002indicadores"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
 Equidade: Distribuição dos produtos do agroecossistema entre produtores
  e consumidores (Dias Junior, 2000) 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "moura2002indicadores"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
 Resiliência: Capacidade do ecossistema de retornar ao estado original após
  de uma perturbação (CEPAL/PNUMA, 1994) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "moura2002indicadores"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
-Autonomia: Grau de integração entre as partes constituintes do agroecossistema
- e o ambiente externo no fluxo de materiais, energia e informação (Fernández,
- 1995) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "moura2002indicadores"
-
-\end_inset
-
 Autonomia: Grau de integração do agroecossistema no fluxo de materiais,
  energia e informação entre as partes constituintes e entre o agroecossistema
- e o ambiente externo (Fernández, 1995) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "moura2002indicadores"
-
-\end_inset
-
-
+ e o ambiente externo (Fernández, 1995)
 \end_layout
 
 \begin_layout Standard
@@ -519,7 +490,7 @@ Os atributos norteadores foram aplicados nos modelos do sistema SustenAgro
 \end_layout
 
 \begin_layout Section
-Metodo SustenAgro
+Método SustenAgro
 \end_layout
 
 \begin_layout Standard
@@ -663,7 +634,22 @@ O método SustenAgro foi construído a partir de literatura cientifica e de
 status open
 
 \begin_layout Plain Layout
-IBGE: Brazilian Institute of Geography and Statistics, http://www.ibge.gov.br/home/
+IBGE: 
+\lang english
+Brazilian Institute of Geography and Statistics
+\lang brazilian
+, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.ibge.gov.br/home/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -673,12 +659,31 @@ IBGE: Brazilian Institute of Geography and Statistics, http://www.ibge.gov.br/ho
 status open
 
 \begin_layout Plain Layout
-CONAB: National Supply Company, http://www.conab.gov.br/
+CONAB: 
+\lang english
+National Supply Company
+\lang brazilian
+, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.conab.gov.br/
 \end_layout
 
 \end_inset
 
-) e validados por meio da técnica Delphi de consultas aos especialistas.
+
+\end_layout
+
+\end_inset
+
+) e validados por meio da técnica 
+\lang english
+Delphi
+\lang brazilian
+ de consultas aos especialistas.
 \end_layout
 
 \begin_layout Standard

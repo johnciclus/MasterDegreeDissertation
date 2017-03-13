@@ -1,0 +1,131 @@
+A instalação dos Sistemas Decisioner e SustenAgro divide-se em dois
+processos, a configuração do servidor web e o deploy do arquivo WAR\nomenclature{WAR}{Web Application Archive},
+a continuação são descritos ambos processos:
+
+\section{Configuração do servidor.}
+
+Esta fase do processo consiste em instalar as tecnologias Java, Apache
+Tomcat, WkHtmltoPdf e a triplestore Blazegraph, em um servidor baseado
+em linux, atualmente o sistema foi configurado e testado em uma maquina
+virtual com Ubuntu 14.04, Java OpenJDK 8, Apache Tomcat, WkHtmltoPdf
+0.12.3 e a triplestore Blazegraph 2.1.0, a instalação destas tecnologias
+segue uma orientação padrão que sera descrita a continuação:
+
+\subsection{Instalação do Java:}
+
+Segundo a documentação de Java OpenJDK, a instalação é realizada por
+meio do comando:
+
+\inputencoding{latin9}\begin{lstlisting}
+sudo apt-get update
+sudo apt-get install openjdk-8-jre
+\end{lstlisting}
+\inputencoding{utf8}
+
+\subsection{Instalação do Apache Tomcat}
+
+A instalação do Apache Tomcat depende da instalação do Java 8, e o
+Tomcat versão 7 para suportar a compatibilidade do War gerado, isto
+é documentado no site\footnote{https://grails.org/wiki/Deployment}
+do framework Grails, que exige uma versão 7 de Apache Tomcat para
+suportar o deploy dos arquivos war.
+
+O processo de instalação consiste em fazer download dos arquivos binários,
+extrair eles em /opt/tomcat/, exportar as variáveis de entorno e executar
+o Web Server, o código é mostrado a continuação:
+
+\inputencoding{latin9}\begin{lstlisting}
+wget http://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.70/bin/
+apache-tomcat-7.0.70.tar.gz
+
+tar xvzf apache-tomcat-7.0.70.tar.gz -C /opt/tomcat
+
+sudo /opt/tomcat/bin/startup.sh
+\end{lstlisting}
+\inputencoding{utf8}
+Configurar users de Tomcat em: /opt/tomcat/conf/tomcat-users.xml e
+acrescentar os Rol e User
+
+\inputencoding{latin9}\begin{lstlisting}
+<role rolename="manager-gui"/> 
+<user username="admin" password="s3cr3t" roles="manager-gui"/>
+\end{lstlisting}
+\inputencoding{utf8}
+Depois disso, é registrado no final do arquivo \textasciitilde{}/.bashrc
+os próximos dois comandos que definem as variáveis de entorno
+
+\inputencoding{latin9}\begin{lstlisting}
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64 
+export CATALINA_HOME=/opt/tomcat
+\end{lstlisting}
+\inputencoding{utf8}
+Finalmente executar o comando 
+
+\inputencoding{latin9}\begin{lstlisting}
+sudo /opt/tomcat/bin/startup.sh
+\end{lstlisting}
+\inputencoding{utf8}
+e verificar a execução do programa na url /manager do domínio do servidor
+
+\subsection{Instalação do WkHtmltoPdf}
+
+A tecnologia WkHtmltoPdf permite converter paginas web em formato
+Html a Pdf, esta ferramenta suporta a funcionalidade de gerar os reportes
+em formato Pdf, a instalação consistem em fazer download dos arquivos
+binários e a configuração de um X Server Virual para suportar o renderizado,
+os comandos são mostrados a continuação:
+
+\inputencoding{latin9}\begin{lstlisting}
+wget http://download.gna.org/wkhtmltopdf/0.12/0.12.3/
+wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+
+tar xf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+
+cp wkhtmltox/bin/wkhtmltopdf /usr/local/bin/wkhtmltopdf
+
+sudo chmod a+x /usr/local/bin/wkhtmltopdf
+
+sudo apt-get install openssl build-essential xorg libssl-dev
+\end{lstlisting}
+\inputencoding{utf8}
+Depois disto é criado um script wkhtmltopdf.sh em /usr/local/bin/
+e contem o seguinte comando:
+
+\inputencoding{latin9}\begin{lstlisting}
+xvfb-run -a -s "-screen 0 640x480x16" wkhtmltopdf "$@"
+sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh 
+\end{lstlisting}
+\inputencoding{utf8}
+Com o comando wkhtmltopdf.sh é possível converter a pdf desde um sistema
+sem X11
+
+\subsubsection*{Instalação da Triplestore Blazegraph}
+
+A instalação do Blazegraph consiste em fazer download do arquivo binário
+e executar com o arquivo de configuração RWStore2.properties o serviço
+de triplestore.
+
+\inputencoding{latin9}\begin{lstlisting}
+wget https://sourceforge.net/projects/bigdata/files/bigdata/
+2.1.1/blazegraph.jar
+
+wget https://dl.dropboxusercontent.com/u/24827919/
+SustenAgro/RWStore2.properties
+
+java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties 
+-jar blazegraph.jar
+\end{lstlisting}
+\inputencoding{utf8}
+
+\section{Deploy do arquivo war}
+
+O deploy do sistema consiste em executar os serviços do Tomcat 7 e
+Triplestore, e fazer upload do arquivo SustenAgro-1.0.war ao servidor
+Apache Tomcat para fazer o deploy no Path ``/'', e finalmente reiniciar
+o Tomcat.
+
+\inputencoding{latin9}\begin{lstlisting}
+wget https://dl.dropboxusercontent.com/u/24827919/
+SustenAgro/sustenagro-1.0.war
+\end{lstlisting}
+\inputencoding{utf8}

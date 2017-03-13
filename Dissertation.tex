@@ -1,14 +1,16 @@
 %% LyX 2.2.0 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[12pt,a4paper,english,brazil,oldfontcommands]{abntex2}
+\documentclass[11pt,a4paper,english,brazil,oldfontcommands]{abntex2}
 \renewcommand{\sfdefault}{lmss}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
-\usepackage{verbatim}
+\usepackage{array}
 \usepackage{float}
+\usepackage{textcomp}
 \usepackage{url}
+\usepackage{pdfpages}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{nomencl}
@@ -16,12 +18,17 @@
 \providecommand{\printnomenclature}{\printglossary}
 \providecommand{\makenomenclature}{\makeglossary}
 \makenomenclature
-\OnehalfSpacing
 
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-\special{papersize=\the\paperwidth,\the\paperheight}
+\pdfpageheight\paperheight
+\pdfpagewidth\paperwidth
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
@@ -86,57 +93,72 @@
 \makeatother 
 \pagestyle{ruled}
 
-\cleardoublepage{}
-
-\cleardoublepage{}
-
-\cleardoublepage{}
-
-\cleardoublepage{}
-
-\cleardoublepage{}
-
-\cleardoublepage{}
+\includepdf{pages/\string"Half Title Page\string"}\cleardoublepage{}
 
 \newpage{}
 
 \clearpage{}
 
-\renewcommand{\nomname}{Lista De Abreviaturas e Siglas}
+\tableofcontents{}
+
+\newpage{}
+
+\listoffigures
 
 \clearpage{}
 
-\chapter{Introdução}
+\listoftables
+
+\renewcommand{\nomname}{Lista De Abreviaturas e Siglas}
+
+\printnomenclature{}
+
+\clearpage{}
+
+\chapter{Introdução\label{chap:Introdu=0000E7=0000E3o}}
 
 \input{chapters/Introduction.tex}
 
-\chapter{Web semântica}
-
-\input{\string"chapters/Semantic Web.tex\string"}
-
-\chapter{SAD}
+\chapter{SAD\label{chap:SAD}}
 
 \input{chapters/SAD.tex}
 
-\chapter{DSL}
+\chapter{Contexto: Ontologias e DSL\label{chap:Context}}
 
-\input{chapters/DSL.tex}
+\input{chapters/Context.tex}
 
-\chapter{Trabalhos Relacionados}
+\chapter{Decisioner\label{chap:Decisioner}}
 
-\chapter{Metodologia}
+\input{chapters/Decisioner.tex}
 
-\input{chapters/Methodology.tex}
+\chapter{Sustenagro\label{chap:SustenAgro}}
 
-\chapter{Avaliação}
+\input{chapters/SustenAgro.tex}
+
+\chapter{Avaliação\label{chap:Avalia=0000E7=0000E3o}}
 
 \input{chapters/Evaluation.tex}
 
-\chapter{Conclusão}
+\chapter{Conclusões\label{chap:Conclus=0000E3o}}
 
 \input{chapters/Conclution.tex}
 
 \bibliographystyle{abntex2-alf}
 \bibliography{references/references}
+
+
+\appendix
+
+\chapter{Método SustenAgro de Avaliação de Sustentabilidade}
+
+\label{chap:Sustainability_Assessment}\input{chapters/Sustainability_assessment.tex}
+
+\chapter{Indicadores de Sustentabilidade}
+
+\label{chap:SustainabilityIndicators}\input{chapters/Sustainability_indicators.tex}
+
+\chapter{Instalação}
+
+\label{chap:Instalation}\input{chapters/Instalation.tex}
 
 \end{document}
