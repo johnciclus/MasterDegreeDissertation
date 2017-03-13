@@ -75,9 +75,46 @@
 \begin_body
 
 \begin_layout Standard
-Neste capitulo são apresentados uma discução sobre os resultados do projeto,
- os trabalhos futuros e as dificultadades encontradas durante o desenvolvimento
- da pesquisa.
+Neste capitulo são apresentadas as conclusões, os resultados, os trabalhos
+ futuros, as dificuldades e uma discussão final sobre os resultados do projeto.
+\end_layout
+
+\begin_layout Section
+Conclusões
+\end_layout
+
+\begin_layout Standard
+O método de representação de conhecimento dos especialistas desenvolvido
+ na presente pesquisa, que está baseado em ontologias e definido por uma
+ DSL, foi avaliado positivamente pelos especialistas do domínio em sustentabilid
+ade.
+ Esta avaliação demostrou que o método e a ferramenta Decisioner, solucionaram
+ o problema identificado na presente pesquisa.
+ 
+\end_layout
+
+\begin_layout Standard
+Outra contribuição foi a geração do SAD SustenAgro, que permite cumprir
+ os objetivos do projeto SustenAgro, fornecendo uma ferramenta de avaliação
+ da sustentabilidade em cana-de-açúcar, com as características descritas
+ na seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:SAD-SustenAgro"
+
+\end_inset
+
+, precisando complementar o suporte aos sistemas de georreferenciamento
+ que correspondem a outra área de pesquisa fora de nosso alcance.
+\end_layout
+
+\begin_layout Standard
+Os objetivos específicos foram satisfeitos e complementados com outros desenvolv
+imentos, em resumo estes objetivos foram abordados da seguinte maneira:
+\end_layout
+
+\begin_layout Itemize
+Foi desenvolvida a Ferramenta Decisioner, que permite 
 \end_layout
 
 \begin_layout Section
@@ -283,7 +320,7 @@ Fornecer um sistema de classificação e busca de controles de interfaces
 \end_layout
 
 \begin_layout Section
-Dificuldades e Limitações
+Dificuldades
 \end_layout
 
 \begin_layout Standard
@@ -317,6 +354,10 @@ literatura antiga, especialmente nos DSS
 
 \begin_layout Standard
 Conclusões finais
+\end_layout
+
+\begin_layout Section
+Discussão final
 \end_layout
 
 \end_body

@@ -508,7 +508,7 @@ filename "chapters/SAD.lyx"
 \end_layout
 
 \begin_layout Chapter
-Contexto: Ontologias e DSL
+Ontologias e DSL
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Context"
@@ -550,7 +550,7 @@ filename "chapters/Decisioner.lyx"
 \end_layout
 
 \begin_layout Chapter
-Sustenagro
+SustenAgro
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:SustenAgro"

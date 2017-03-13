@@ -306,10 +306,6 @@ Para alcançar o objetivo proposto, foi necessário cumprir os seguintes objetiv
 \end_layout
 
 \begin_layout Itemize
-Estabelecer um método de definição de SAD por parte dos especialistas.
-\end_layout
-
-\begin_layout Itemize
 Definir uma arquitetura e ferramenta para gerar SADs baseados em conhecimento
  de domínios específicos.
 \end_layout
@@ -340,12 +336,13 @@ Resultados Principais
 \end_layout
 
 \begin_layout Standard
-Os principais contribuições desta pesquisa e projeto de mestrado são:
+Os principais contribuições desta pesquisa e mestrado são:
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 Como referir-se ao processo de desenvolvimento e pesquisa ao mesmo tempo
+ - deixar pesquisa, deste mestrado
 \end_layout
 
 \end_inset
@@ -360,8 +357,7 @@ Método e ferramenta para definir SADs por parte dos especialistas do domínio.
 \begin_layout Itemize
 Ontologia sobre avaliação de sustentabilidade em cana-de-açúcar, representando
  os principais conceitos desse domínio: indicadores, os índices e o método
- de avaliação; permitindo assim suportar o desenvolvimento das outras tecnologia
-s do presente projeto.
+ de avaliação; permitindo assim suportar o desenvolvimento de outras tecnologias.
 \end_layout
 
 \begin_layout Itemize

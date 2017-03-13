@@ -94,9 +94,16 @@ reference "chap:Sustainability_Assessment"
 \end_inset
 
 , especificamente está composto por um conjunto de definições em formato
- de Ontologias e DSL que permitem gerar dito sistema a través do Decisioner,
- o principal componente dele é a ontologia do domínio em avaliação da sustentabi
-lidade.
+ de ontologias e DSL que permitem gera-o a través do sistema Decisioner
+ descrito no capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Decisioner"
+
+\end_inset
+
+, o principal componente dele é a ontologia do domínio em avaliação da sustentab
+ilidade.
 \end_layout
 
 \begin_layout Standard
@@ -3489,6 +3496,10 @@ el'],                ['en': 'Negative changes', 'pt': 'Alterações negativas'],
 \begin_layout Plain Layout
 
 }     
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout

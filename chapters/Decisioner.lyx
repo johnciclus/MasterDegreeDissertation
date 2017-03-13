@@ -141,16 +141,16 @@ A partir deste diagrama foi analisado como generalizar os componentes dos
 \end_layout
 
 \begin_layout Standard
-A arquitetura baseada no caso de uso SAD SustenAgro, permitiu definir os
- seguintes componentes gerais de definição de SADs, que permitem o reuso
- deles, a figura 
+A arquitetura do sistema Decisioner baseada tem os seguintes componentes
+ gerais de definição de SADs, a figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Interfaces"
 
 \end_inset
 
- apresenta os componentes e a interação entre eles:
+ apresenta os componentes e a interação com os usuários (especialistas e
+ usuários finais):
 \end_layout
 
 \begin_layout Standard
@@ -361,7 +361,7 @@ Triplestore
 triplestores
 \lang brazilian
  existentes com a finalidade de definir uma que adapta-se aos requisitos
- do SAD SustenAgro e do sistema Decisioner.
+ do sistema Decisioner.
 \end_layout
 
 \begin_layout Enumerate
@@ -422,17 +422,15 @@ web components
 \lang english
 web UI
 \lang brazilian
-s: o desenvolvimento do SAD SustenAgro, requiriu o desenvolvimento de duas
- 
+s: Compatibilidade do Decisioner com as tecnologias de 
 \lang english
-widgets
+web components
 \lang brazilian
- que foram incluídas em uma biblioteca para possibilitar o reuso delas e
- para suportar a geração das 
+, que suportam a geração das 
 \lang english
 Web UIs
 \lang brazilian
- para os usuários.
+ que compõem os SADs e assim fornecer uma interface gráfica de usuários.
 \end_layout
 
 \begin_layout Standard
@@ -519,7 +517,7 @@ Sistema Innova-Tec: avaliação do impacto da inovação tecnológica
 status open
 
 \begin_layout Plain Layout
-Web site sobre Sistema Inova-Tec 
+Web site sobre sistema Inova-Tec 
 \begin_inset Flex URL
 status open
 
@@ -1003,7 +1001,7 @@ Triplestore
 \end_layout
 
 \begin_layout Standard
-O sistema SustenAgro está baseado nas tecnologias da web semântica, entre
+O sistema Decisioner está baseado nas tecnologias da web semântica, entre
  elas estão as 
 \lang english
 triplestores
@@ -1980,32 +1978,31 @@ Para gestionar os dados da ontologia e fornecer eles em uma linguagem do
 triplestore
 \lang brazilian
  que simplifica-se as consultas Sparql, esta característica está desenvolvida
- como um protótipo e poderia ser uma solução eficiente na recuperação de
- informações semânticas por parte dos especialistas do domínio de conhecimento.
+ como um protótipo intitulado 
+\lang english
+Sparql Simplifier
+\lang brazilian
+ e poderia ser uma solução eficiente na recuperação de informações semânticas
+ de um domínio de conhecimento em um formato simples.
  
 \end_layout
 
 \begin_layout Standard
-O Decisioner Core, controla o processo de geração das web 
+O DSL 
 \lang english
-UIs
+Interpreter
 \lang brazilian
- de maneira dinâmica, fazendo o processo de geração cada vez que os usuários
- solicitam uma 
+ interpreta as instruções dos especialistas feitas na linguagem Decisioner
+ DSL.
+ Esta funcionalidade foi programada sobre a linguagem 
 \lang english
-View
+Groovy,
 \lang brazilian
- dos sistemas SADs.
- Esta funcionalidade foi programada sobre o suporte às DSL da linguagem
- 
+ que facilita a definição de 
 \lang english
-Groovy
+DSLs
 \lang brazilian
- e o suporte na criação de aplicações Web fornecida pelo Framework 
-\lang english
-Grails
-\lang brazilian
- 
+.
 \begin_inset CommandInset citation
 LatexCommand citet
 key "judd2008beginning"
@@ -2013,7 +2010,91 @@ key "judd2008beginning"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Finalmente, o Decisioner Core está composto por um 
+\lang english
+UI Renderer
+\lang brazilian
+ que permite renderizar dinamicamente as web 
+\lang english
+UIs,
+\lang brazilian
+ a partir dos web 
+\lang english
+components.
+
+\lang brazilian
+ Este processo é feito a cada vez que os usuários solicitam uma 
+\lang english
+View
+\lang brazilian
+ dos sistemas SADs.
  
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arquitetura-do-Decisioner-Core"
+
+\end_inset
+
+ apresenta os anteriores componentes e os 
+\lang english
+inputs
+\lang brazilian
+ e 
+\lang english
+outputs
+\lang brazilian
+ do SustenAgro Core.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Decisioner Core Architecture.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquitetura do Decisioner Core
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arquitetura-do-Decisioner-Core"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

@@ -318,6 +318,13 @@ feedback
 
 \begin_layout Section
 SAD SustenAgro
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SAD-SustenAgro"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -939,10 +946,6 @@ O desenvolvimento apenas do SAD SustenAgro, não satisfaz os requisitos de
  assim resolver o problema da inexistência de uma representação de conhecimento
  para definir SADs, que tenha um formato computável, entendível e acessível
  pelos especialistas do domínio e desenvolvedores de software.
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body
