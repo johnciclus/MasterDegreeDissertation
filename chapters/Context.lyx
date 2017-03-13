@@ -127,9 +127,9 @@ key "Souza:2004"
 Neste capítulo, vamos apresentar e discutir os conceitos usados da web semântica
 , exatamente: fundamentos da Web Semântica, Ontologias, o 
 \lang english
-Resource Description Framework (RDF)
+Resource Description Framework (RDF
 \lang brazilian
- 
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "RDF"
@@ -137,7 +137,7 @@ description "Resource Description Framework"
 
 \end_inset
 
- e a 
+) e a 
 \lang english
 Web Ontology Language
 \lang brazilian
@@ -145,18 +145,10 @@ Web Ontology Language
 \lang english
 OWL
 \lang brazilian
-)
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "OWL"
-description "Web Ontology Language"
-
-\end_inset
-
-.
+).
  Finalmente as 
 \lang english
-DSLs
+Domain Specific Languages (DSLs
 \lang brazilian
 
 \begin_inset CommandInset nomenclature
@@ -166,7 +158,7 @@ description "Domain Specific Language"
 
 \end_inset
 
- que são linguagens de proposito especifico que permitem definir um meio
+) que são linguagens de propósito especifico que permitem definir um meio
  de comunicação entre os especialistas e o sistema desenvolvido.
 \end_layout
 
@@ -177,11 +169,11 @@ Web Semântica.
 \begin_layout Standard
 A interpretação do significado é uma habilidade inata dos seres humanos,
  através da associação dos conceitos que estão no cérebro por meio de estruturas
- neurais, nas maquinas não existe esta habilidade, devido a que um dado
- ou informação é um conjunto de caracteres sem associação a conceitos.
- A Web Semântica procura determinar métodos para que as maquinas aproximem-se
+ neurais, já que nas maquinas não existe esta habilidade, devido a que um
+ dado ou informação é um conjunto de caracteres sem associação a conceitos.
+ A Web Semântica procura determinar métodos para que as máquinas aproximem-se
  nesta capacidade, atualmente é possível inferir e deduzir informações,
- porem não deve-se confundir com a compreensão humana.
+ porém não deve-se confundir com a compreensão humana.
 \end_layout
 
 \begin_layout Standard
@@ -194,7 +186,7 @@ s na Web para que tenham significado e que seja computável, gerando assim
 \lang english
 World Wide Web Consortium
 \lang brazilian
- (W3C) 
+ (W3C 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "W3C"
@@ -202,7 +194,8 @@ description "World Wide Web Consortium"
 
 \end_inset
 
-, na figura 
+).
+ Na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Semantic_Web_History"
@@ -212,7 +205,11 @@ reference "fig:Semantic_Web_History"
  podem ser observados os padrões que constituem a Web Semântica e uma comparativ
 a cronológica com os padrões 
 \lang english
-XML
+eXtensible Markup Language
+\lang brazilian
+ 
+\lang english
+(XML
 \lang brazilian
  
 \begin_inset CommandInset nomenclature
@@ -222,7 +219,7 @@ description "Extensible Markup Language"
 
 \end_inset
 
-.
+).
  
 \end_layout
 
@@ -271,16 +268,16 @@ name "fig:Semantic_Web_History"
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "bernerslee2001"
 
 \end_inset
 
- propuseram a Web Semântica no 2001, como uma extensão da Web atual na que
+ propuseram a Web Semântica em 2001, como uma extensão da Web atual na que
  é possível vincular conceitos de maneira estruturada e padronizada com
  a finalidade de gerar uma web universal dos conhecimentos da humanidade.
  Permitindo assim fornecer conhecimento estruturado para que seja computável
- pelas maquinas, e gerar um meio comum de representação entre os humanos
+ pelas máquinas, e gerar um meio comum de representação entre os humanos
  e maquinas.
 \end_layout
 
@@ -292,10 +289,10 @@ key "bernerslee2001"
 
 \end_inset
 
- propôs uma arquitetura que organiza as representações do conhecimento por
- meio de camadas, dita arquitetura é conhecida como 
+ propuseram uma arquitetura que organiza as representações do conhecimento
+ por meio de camadas, dita arquitetura é conhecida como 
 \lang english
-Semantic Web Cake
+Semantic Web Cake,
 \lang brazilian
  que é ilustrada na Figura 
 \begin_inset CommandInset ref
@@ -350,8 +347,20 @@ A base da arquitetura é estabelecida pelos padrões
 \lang english
 Unicode
 \lang brazilian
- e URI, que padronizam a representação dos dados por meio das seguintes
- camadas: 
+ e 
+\lang english
+Uniform Resource Identifier
+\lang brazilian
+ (URI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "URI"
+description "Uniform Resource Identifier"
+
+\end_inset
+
+), que padronizam a representação dos dados por meio das seguintes camadas:
+ 
 \end_layout
 
 \begin_layout Description
@@ -368,14 +377,6 @@ Unicode
 \lang english
 URI
 \lang brazilian
- 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "URI"
-description "Uniform Resource Identifier"
-
-\end_inset
-
  permite identificar unificadamente os recursos disponíveis na Web por meio
  de uma 
 \lang english
@@ -466,12 +467,13 @@ Ontologias
 
 \begin_layout Standard
 Existem varias interpretações do conceito ontologia, dependendo da finalidade
- com a qual seja definida, a continuação serão apresentadas algumas definições.
+ com a qual seja definida.
+ A continuação serão apresentadas algumas definições.
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "Smith2007"
 
 \end_inset
@@ -496,7 +498,7 @@ ontologia
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "allemang2011semantic"
 
 \end_inset
@@ -777,6 +779,8 @@ URIs
 \lang brazilian
 , sem importar o tamanho deles, por exemplo, uma pagina web ou um elemento
  
+\lang english
+HyperText Markup Language (HTML 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HTML"
@@ -784,6 +788,8 @@ description "HyperText Markup Language"
 
 \end_inset
 
+)
+\lang brazilian
  podem ser recursos.
 \end_layout
 

@@ -82,12 +82,34 @@ UCD
  das interfaces visuais.
 \end_layout
 
+\begin_layout Standard
+Finalizado o processo de design da UI explicado em 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Web-UI"
+
+\end_inset
+
+, foi apresentado uma versão funcional aos especialistas em sustentabilidade
+ onde podiam interagir com as telas funcionais do SAD SustenAgro, a avaliação
+ 
+\end_layout
+
 \begin_layout Section
-Avaliação da ontologia
+Avaliação da ontologia.
+\end_layout
+
+\begin_layout Standard
+Reunião com o especialista em conhecimento computacional na Embrapa Meio
+ Ambiente, 
 \end_layout
 
 \begin_layout Section
 Avaliação do protótipo funcional com dados
+\end_layout
+
+\begin_layout Standard
+Revisao com planilhas da APTA do metodo
 \end_layout
 
 \begin_layout Section
@@ -140,7 +162,8 @@ A avaliação consistiu em fazer um
 \lang english
 workshop
 \lang brazilian
- com especialistas de diversos perfis 
+ com especialistas de diversos perfis, e eles aprovaram a ferramenta tanto
+ na interação como no conteúdo dela, com as seguintes sugestões.
 \end_layout
 
 \end_body

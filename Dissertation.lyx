@@ -22,6 +22,7 @@ customHeadersFooters
 \end_modules
 \maintain_unincluded_children false
 \begin_local_layout
+Format 60
 Provides natbib 1
 Preamble
 % adaptação do suporte ao natbib do LyX para uso do abntex2cite
@@ -32,6 +33,7 @@ Preamble
 \RequirePackage{abntex2cite}   % previne o não carregamento do abntex2cite,
 % mas não define se as citações serão do
 % tipo 'alf' ou 'num'.
+
 \renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
 \def\citep{\cite}
 \newcommand{\citeyearpar}[1]{(\citeyear{#1})}
@@ -296,15 +298,37 @@ pagestyle{ruled}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
+\begin_layout Resumo
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Abstract_PT.lyx"
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Resumo
+
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Abstract_EN.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -314,6 +338,13 @@ pagestyle{ruled}
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -335,6 +366,37 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+lstlistingname}{C{
+\backslash
+'o}digo-fonte}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+lstlistlistingname}{Lista De C{
+\backslash
+'o}digos-Fonte}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -343,6 +405,15 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand lstlistoflistings
 
 \end_inset
 
@@ -371,6 +442,16 @@ nomname}{Lista De Abreviaturas e Siglas}
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
 set_width "auto"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Lista de abreviaturas (siglas) (está abaixo mas não aparece aqui..)
+\end_layout
 
 \end_inset
 

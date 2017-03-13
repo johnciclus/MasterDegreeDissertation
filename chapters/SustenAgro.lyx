@@ -174,7 +174,7 @@ e para usuários especialistas
 \begin_layout Standard
 dentro deles está o sistema produtivo de cana-de-açúcar que é extremamente
  importante para a economia do Brasil e do estado de São Paulo, devido a
- que é uma das principais culturas produzidas no paisSérgio Alves Torquato
+ que é uma das principais culturas produzidas no pais Sérgio Alves Torquato
  (2015), pelo qual foi escolhido como sistema produtivo piloto para abordar
  a presente pesquisa.
 \end_layout
@@ -271,16 +271,8 @@ widgets
 \lang brazilian
  (elementos da 
 \lang english
-GUI
+UI
 \lang brazilian
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GUI"
-description "Graphical User Interface"
-
-\end_inset
-
 ) reusáveis na web, fornecendo um modelo que permite encapsulamento e interopera
 bilidade dos componentes.
 \end_layout
@@ -436,20 +428,26 @@ web components
 \lang brazilian
  foi vinculado no desenvolvimento das 
 \lang english
-web views
+web UI
 \lang brazilian
 , que permitiram integrar e avaliar cada um dos componentes para satisfazer
  os requisitos identificados.
 \end_layout
 
 \begin_layout Standard
-A metodologia de desenvolvimento das 
-\lang english
-web views
-\lang brazilian
- e dos 
+\begin_inset CommandInset label
+LatexCommand label
+name "A-metodologia-de-UI"
+
+\end_inset
+
+A metodologia de desenvolvimento dos 
 \lang english
 web components
+\lang brazilian
+ e das 
+\lang english
+web UIs
 \lang brazilian
  incluiu as seguintes etapas que correspondem ao levantamento de requisitos,
  cujo objetivo foi definir as características do software, cada uma das
@@ -566,40 +564,17 @@ reference "fig:ontology-conceptual-map"
 As ontologias da web semântica satisfazem o requisito de separar o conhecimento
  do domínio da lógica da computação, permitindo abordar cada desenvolvimento
  de uma maneira independente e suportando conceitos importantes como a inferênci
-a, que são de grande importância no desenvolvimento como os 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SAD"
-description "Domain Specific Language"
-
-\end_inset
-
-.
+a, que são de grande importância no desenvolvimento como os SAD.
 \end_layout
 
 \begin_layout Standard
 Uma caraterística importante de SustenAgro é a recuperação da informação
  com significado semântico, permitindo que o sistema dê respostas às consultas
  complexas de interesse para os especialistas, além da integração com conhecimen
-to externo existente em formatos da web semântica, como são os padrões
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "RDF"
-description "Resource Description Framework"
-
-\end_inset
-
-, 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "OWL"
-description "Web Ontology Language"
-
-\end_inset
-
- e vários sistemas de representação do conhecimento como dicionários, thesaurus
- e redes semânticas, o que permite aumentar as possibilidades de integração
- com diversas tecnologias e fornecer novas funcionalidades.
+to externo existente em formatos da web semântica, como são os padrões RDF,
+ OWL e vários sistemas de representação do conhecimento como dicionários,
+ thesaurus e redes semânticas, o que permite aumentar as possibilidades
+ de integração com diversas tecnologias e fornecer novas funcionalidades.
  
 \end_layout
 
@@ -1435,7 +1410,7 @@ Atributo custo: indicadores que avaliam os aspectos dos custos da produção.
 \end_layout
 
 \begin_layout Standard
-A 
+A Agência Paulista de Tecnologia dos Agronegócios (APTA
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "APTA"
@@ -1443,7 +1418,7 @@ description "Agência Paulista de Tecnologia dos Agronegócios"
 
 \end_inset
 
- forneceu dados econômicos das principais usinas do estado de São Paulo,
+) forneceu dados econômicos das principais usinas do estado de São Paulo,
  que permitiram definir a dimensão econômica das unidades produtivas na
  ontologia do domínio.
 \end_layout
@@ -1668,7 +1643,14 @@ widgets
 \begin_layout Section
 
 \lang english
-GUIs e Web Components
+Web Components e Web UI
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Web-UI"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1676,10 +1658,28 @@ O design das interfaces gráficas e desenvolvimento dos web componentes foram
  realizados por meio da varias técnicas de levantamento de requerimentos
  para especificar as funcionalidades que os especialistas requereram do
  sistema SustenAgro, devido a que não existiam requerimentos bem definidos,
- por isso foi necessário usar as seguintes técnicas.
+ por isso foi necessário usar as seguintes técnicas de 
+\lang english
+User Stories
+\lang brazilian
+, 
+\lang english
+Scenarios
+\lang brazilian
+, 
+\lang english
+Storyboard
+\lang brazilian
+, 
+\lang english
+Mockups
+\lang brazilian
+ e protótipo de interface gráfica, que serão descritas a continuação:
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
 User Stories
 \end_layout
 
@@ -1832,6 +1832,8 @@ de e da qualidade da matéria-prima, bem como em diminuição dos custos da
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
 Scenarios
 \end_layout
 
@@ -2117,11 +2119,17 @@ de.
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
 Storyboard
 \end_layout
 
 \begin_layout Standard
-Storyboards são similares aos cenários.
+
+\lang english
+Storyboards
+\lang brazilian
+ são similares aos cenários.
  Elas ilustram a interação necessária para atingir um objetivo sem utilizar
  uma lista de passos, a interação é visualizada por meio de uma história
  de quadrinhos.
@@ -2131,8 +2139,11 @@ Storyboards são similares aos cenários.
 Esta representação permite se ter uma visão holística da interação do usuário,
  com ênfase nos aspectos funcionais da interação e não nos aspectos da interface
  de usuário.
- A seguir, são apresentados os textos das storyboard dos processos identificados
-:
+ A seguir, são apresentados os textos das 
+\lang english
+storyboard
+\lang brazilian
+ dos processos identificados:
 \end_layout
 
 \begin_layout Standard
@@ -3097,23 +3108,34 @@ Web Components
  são vinculados por meio da DSL, para definir o comportamento do SustenAgro,
  definindo cada uma das funcionalidades do sistema para realizar a personalizaçã
 o e vinculação da informação para assim satisfazer os requisitos dos usuários
- do sistema SustenAgro, a DSL final do processo de definição do sistema
- está no código
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "lis:DSL-SustenAgro"
-
-\end_inset
-
-.
- 
+ do sistema SustenAgro, 
 \end_layout
 
 \begin_layout Standard
 No sistema SustenAgro foram estabelecidas as Features por meio das URIs
  das classes: EnvironmentalIndicator, EconomicIndicator, SocialIndicator,
  ProductionEfficiencyFeature e TechnologicalEfficiencyFeature.
- .
+\end_layout
+
+\begin_layout Standard
+No código seguinte apresenta-se a implementação da formula do Sistema SustenAgro
+, criando variáveis resultado de operações aritméticas para gerar resultados
+ gerais, no caso do SustenAgro o código gera a variável 
+\shape italic
+\lang english
+sustainability
+\shape default
+\lang brazilian
+ que representa o índice de sustentabilidade, más pode ser definido qualquer
+ método computável.
+\end_layout
+
+\begin_layout Standard
+no qual são definidos comandos que geram as interfaces gráficas, como 
+\shape italic
+sustainabilityMatrix
+\shape default
+ que usa as variáveis geradas anteriormente como argumentos.
 \end_layout
 
 \begin_layout Standard
