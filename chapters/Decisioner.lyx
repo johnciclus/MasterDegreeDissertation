@@ -141,7 +141,22 @@ A partir deste diagrama foi analisado como generalizar os componentes dos
 \end_layout
 
 \begin_layout Standard
-A arquitetura do sistema Decisioner baseada tem os seguintes componentes
+Analisando o tipo de sistema software do Decisioner, conclui-se que é de
+ tipo framework.
+ Devido a que corresponde a uma plataforma software com design reutilizável
+ e implementações reutilizáveis pelos clientes que especializam ele em um
+ domínio particular 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "RiehlePhdthesis"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A arquitetura do framework Decisioner está composta dos seguintes componentes
  gerais de definição de SADs, a figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -344,10 +359,10 @@ Metodologia
 \end_layout
 
 \begin_layout Standard
-Com a finalidade de desenvolver o sistema Decisioner que foi definido pela
- arquitetura anterior, escolheu-se um caso de uso que corresponde ao SAD
- SustenAgro, que permitiu definir uma metodologia de desenvolvimento de
- cada uns dos componentes, permitindo generalizar, a metodologia abordada
+Com a finalidade de desenvolver o framework Decisioner que foi definido
+ pela arquitetura anterior, escolheu-se um caso de uso que corresponde ao
+ SAD SustenAgro, que permitiu definir uma metodologia de desenvolvimento
+ de cada uns dos componentes, permitindo generalizar, a metodologia abordada
  durante este processo, incluiu as seguintes etapas:
 \end_layout
 
@@ -361,7 +376,7 @@ Triplestore
 triplestores
 \lang brazilian
  existentes com a finalidade de definir uma que adapta-se aos requisitos
- do sistema Decisioner.
+ do framework Decisioner.
 \end_layout
 
 \begin_layout Enumerate
@@ -466,7 +481,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Decisioner Methodology.png
-	width 60col%
+	width 80col%
 
 \end_inset
 
@@ -870,7 +885,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/DSS ontology.png
-	scale 60
+	scale 70
 
 \end_inset
 
@@ -901,7 +916,7 @@ name "fig:Modelagem-do-SAD"
 \begin_layout Standard
 A partir destas classes é possível organizar os conceitos específicos de
  um SAD como subclasses, permitindo identificar e processar cada conceito
- por parte do Decisioner Core, e assim gerar os SAD desde o sistema Decisioner.
+ por parte do Decisioner Core, e assim gerar os SAD desde o framework Decisioner.
 \end_layout
 
 \begin_layout Standard
@@ -963,7 +978,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-ontology-editor.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -1001,7 +1016,7 @@ Triplestore
 \end_layout
 
 \begin_layout Standard
-O sistema Decisioner está baseado nas tecnologias da web semântica, entre
+O framework Decisioner está baseado nas tecnologias da web semântica, entre
  elas estão as 
 \lang english
 triplestores
@@ -1066,7 +1081,7 @@ Decisioner DSL
 \end_layout
 
 \begin_layout Standard
-Para facilitar que os especialistas definam o conhecimento deles no sistema
+Para facilitar que os especialistas definam o conhecimento deles no framwork
  Decisioner, foi definida uma DSL que permite definir as principais característi
 cas de um SAD.
  Dita DSL foi baseada na modelagem geral da arquitetura do 
@@ -1550,7 +1565,7 @@ name "lis:Definição-das-widgets"
 \end_inset
 
  Por meio destas definições da DSL é possível definir as características
- gerais dos SAD de avaliação, com as quais o sistema Decisioner configura
+ gerais dos SAD de avaliação, com as quais o framework Decisioner configura
  os componentes e as 
 \lang english
 web UIs
@@ -1615,6 +1630,7 @@ reference "fig:Editor-DSL"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1623,7 +1639,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-dsl-editor-2.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -1742,7 +1758,7 @@ spinner
 \end_layout
 
 \begin_layout Standard
-O sistema Decisioner tem disponibilizado os 
+O framework Decisioner tem disponibilizado os 
 \lang english
 web components
 \lang brazilian
@@ -1771,7 +1787,17 @@ http://getbootstrap.com/
 
 \end_inset
 
-, que são usados na geração das Web UI.
+, que são usados na geração das Web UI, estes 
+\lang english
+web components
+\lang brazilian
+ foram definidas no formato de 
+\lang english
+templates
+\lang brazilian
+ do framework 
+\lang english
+Grails
 \end_layout
 
 \begin_layout Section
@@ -1813,8 +1839,20 @@ Evaluation Objects, Features
 \lang english
 Report
 \lang brazilian
-, demostrando esta capacidade do sistema Decisioner.
- No caso das mudanças no design são feitas através da edição do CSS3.
+, demostrando esta capacidade do framework Decisioner.
+ No caso das mudanças no design são feitas através da edição do 
+\lang english
+Cascading Style Sheets (CSS 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CSS"
+description "Cascading Style Sheets"
+
+\end_inset
+
+)
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -1872,6 +1910,62 @@ Melhorar o processo de desenvolvimento
 \end_layout
 
 \begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ontology-Enhanced-User-Interfaces"
+
+\end_inset
+
+ apresenta os tipos de usos das ontologias nas UI.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Ontology-enhanced user interfaces.png
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Ontology Enhanced User Interfaces
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ontology-Enhanced-User-Interfaces"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Ditas pesquisam dão a noção de que as ontologias podem contribuir significativam
 ente na geração de Web UI flexíveis e de SADs, confirmando a hipótese assumida
  na presente pesquisa.
@@ -1897,6 +1991,7 @@ web components
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1905,7 +2000,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-tool.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -1953,7 +2048,7 @@ Decisioner Core
 \end_layout
 
 \begin_layout Standard
-O Decisioner Core é o principal modulo do sistema Decisioner, a principal
+O Decisioner Core é o principal modulo do framework Decisioner, a principal
  funcionalidade dele é a interpretação das 
 \lang english
 DSLs
@@ -2055,6 +2150,7 @@ outputs
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2063,6 +2159,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Decisioner Core Architecture.png
+	width 60col%
 
 \end_inset
 

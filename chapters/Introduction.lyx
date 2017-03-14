@@ -319,7 +319,6 @@ Desenvolver um método e ferramenta web, baseados em ontologias, que permitam
  SADs, onde uma ontologia, desenvolvida por especialistas de domínio, forma
  a base de conhecimento do SAD e instruções, numa DSL, servem para customizar
  seu comportamento.
-
 \end_layout
 
 \begin_layout Standard
@@ -361,7 +360,6 @@ Desenvolver uma DSL que permita a definição da interface de usuário, das
 \begin_layout Itemize
 Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
  produtivos de cana-de-açúcar do centro-sul do Brasil.
-
 \end_layout
 
 \begin_layout Itemize
@@ -404,7 +402,7 @@ Ontologia sobre controles visuais para suportar a geração automática das
  interfaces gráficas do SAD SustenAgro.
  Ela permite associar tipos de dados às
 \lang english
-widgets
+ widgets
 \lang brazilian
  necessárias para a geração automática das interfaces aos SADs.
 \end_layout

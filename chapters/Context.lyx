@@ -314,7 +314,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Semantic Web Architecture.png
-	width 70col%
+	width 60col%
 
 \end_inset
 
@@ -1288,6 +1288,7 @@ reference "fig:Componente-DSL"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open

@@ -561,19 +561,6 @@ name "chap:SustenAgro"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-DESCREVER OS RESULTADOS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/SustenAgro.lyx"
