@@ -77,68 +77,55 @@
 \begin_layout Standard
 A construção de sistemas que sejam capazes de fornecer suporte ao gestor
  em um processo de tomada de decisões tem sido um desafio ao longo dos anos.
- Os SADs são sistemas de software que visam melhorar a tomada de decisão
- individual ou grupal, combinando o conhecimento do(s) tomador(es) de decisão
- com dados relevantes de fontes confiáveis, nos quais são aplicados métodos
- e modelos matemáticos para suportar a análise, comparação e escolha de
- alternativas no processo de decisão 
+ Os Sistemas de Apoio à Decisão (SAD) são uma área de conhecimento ampla
+ e existem múltiplas definições.
+ A continuação serão apresentadas varias definições que permitem explicar
+ o proposito deste tipo de sistemas:
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "Tweedale2016"
 
 \end_inset
 
- 
+ define os SADs são sistemas de software que visam melhorar a tomada de
+ decisão individual ou grupal, combinando o conhecimento do(s) tomador(es)
+ de decisão com dados relevantes de fontes confiáveis, nos quais são aplicados
+ métodos e modelos matemáticos para suportar a análise, comparação e escolha
+ de alternativas no processo de decisão .
 \end_layout
 
 \begin_layout Standard
-Os SADs apoiam o entendimento de processos complexos, auxiliam na comparação
- dos fenômenos envolvidos e suportam a análise e escolha de alternativas
- no processo de decisão 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "heinzle2010semantica"
 
 \end_inset
 
-.
+ define que os SADs apoiam o entendimento de processos complexos, auxiliam
+ na comparação dos fenômenos envolvidos e suportam a análise e escolha de
+ alternativas no processo de decisão.
+ Este entendimento do domínio, surge da combinação das habilidades e metodologia
+s dos especialistas (humanos), à capacidade dos computadores de acessar
+ dados, estruturá-los em modelos, interpretar, formular e avaliar alternativas
+ e cenários distintos.
 \end_layout
 
 \begin_layout Standard
-SADs auxiliam tomadores de decisão dando-lhes um maior entendimento do domínio,
- combinando as habilidades e as metodologias dos especialistas (humanos)
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "heinzle2010semantica"
-
-\end_inset
-
-, à capacidade dos computadores de acessar dados, estruturá-los em modelos,
- interpretar, formular e avaliar alternativas e cenários distintos onde
- pode haver possíveis soluções para os problemas que se quer solucionar
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lu2006application"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-SADs são criados por especialistas nas áreas de domínio nas quais eles serão
- aplicados e implementados por programadores.
- Esse pode ser um processo lento e custoso, já que os dois grupos de profissiona
-is têm 
+Um conceito fundamental é o conhecimento dos especialistas do domínio que
+ está iplicito nos SADs, que deve ser entendido e implementado pelos programador
+es.
+ Esse processo poder ser lento e custoso, já que os dois grupos de profissionais
+ têm 
 \emph on
 \lang english
 Backgrounds
 \emph default
 \lang brazilian
- diferentes e vão ter problemas de comunicação durante o processo de criação
- e testes de um SAD.
+ diferentes e que influira negativamente na comunicação durante o processo
+ de criação e testes de um SAD.
  Esses profissionais podem ser até de organizações diferentes, o que dificulta
  ainda mais o processo.
 \end_layout
@@ -222,8 +209,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Componentes de um SAD.
- 
+Componentes de um SAD, adaptada de 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tweedale2016"
+
+\end_inset
+
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Componentes-SAD"

@@ -1,0 +1,611 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ../abntex2
+\begin_preamble
+\input{pagestyle.tex}
+%\usepackage{lmodern}
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+\setcounter{secnumdepth}{4}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Provides natbib 1
+Preamble
+% adaptação do suporte ao natbib do LyX para uso do abntex2cite
+\AtBeginDocument{%                % garante que este código será carregado após
+% \usepackage[alf]{abntex2cite} ou
+% \usepackage[num]{abntex2cite}
+% no preâmbulo latex.
+\RequirePackage{abntex2cite}   % previne o não carregamento do abntex2cite,
+% mas não define se as citações serão do
+% tipo 'alf' ou 'num'.
+\renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
+\def\citep{\cite}
+\newcommand{\citeyearpar}[1]{(\citeyear{#1})}
+\ifx\AbntCitetype\AbntCitetypeALF
+\def\citet{\citeonline} % alf
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeyear{#1}}
+\newcommand{\citealp}[1]{\citeauthoronline{#1},~\citeyear{#1}}
+\else
+\def\citet{\@ifnextchar[{\citet@with}{\citet@without}} % num
+\def\citet@with[#1]#2{\citeauthoronline{#2}~\cite[#1]{#2}}
+\def\citet@without#1{\citeauthoronline{#1}~\cite{#1}}
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeonline{#1}}
+\def\citealp{\citeonline}
+\fi
+}
+EndPreamble
+\end_local_layout
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "lmss" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style abnt
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Formulário de avaliação SustenAgro
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Formulário-de-avaliação-SustenAgro"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O processo consiste em realizar cinco tarefas descritas a continuação, e
+ responder as seguintes três perguntas para cada tarefa: 
+\end_layout
+
+\begin_layout Itemize
+Conseguiu realizar a tarefa?
+\end_layout
+
+\begin_layout Itemize
+Teve algum problema/dúvida durante a realização da tarefa?
+\end_layout
+
+\begin_layout Itemize
+Tem sugestões que permitam melhorar/facilitar a realização da tarefa?
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 1
+\end_layout
+
+\begin_layout Standard
+Cadastrar usuário:
+\end_layout
+
+\begin_layout Enumerate
+Ingressar no software SustenAgro em http://java.icmc.usp.br:1300/
+\end_layout
+
+\begin_layout Enumerate
+Dar click na opção de 'Inscrever-se' e ingressar no formulário de cadastro
+ de novo usuário
+\end_layout
+
+\begin_layout Enumerate
+Preencher o formulário e enviar
+\end_layout
+
+\begin_layout Enumerate
+Ingressar ao sistema com seus dados cadastrados.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 2
+\end_layout
+
+\begin_layout Standard
+Cadastrar uma unidade produtiva: 
+\end_layout
+
+\begin_layout Enumerate
+Dar click no link de 'Avaliação'
+\end_layout
+
+\begin_layout Enumerate
+Cadastrar no formulário de uma nova unidade produtiva.
+\end_layout
+
+\begin_layout Enumerate
+Preencher o formulário e enviar 
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 3
+\end_layout
+
+\begin_layout Standard
+Preencher dados da avaliação: 
+\end_layout
+
+\begin_layout Standard
+Se a anterior tarefa foi realizada com sucesso, o sistema vai encaminhá-lo
+ ao formulário de nova avaliação, em caso negativo pode dar click no botão
+ 'Análises' e 'Nova Análise', para realizar:
+\end_layout
+
+\begin_layout Enumerate
+Preencher alguns dados de avaliação de eficiência e custo
+\end_layout
+
+\begin_layout Enumerate
+Preencher alguns dados de avaliação da sustentabilidade
+\end_layout
+
+\begin_layout Enumerate
+Solicitar avaliação por meio do botão 'Avaliar' 
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 4
+\end_layout
+
+\begin_layout Standard
+Visualizar os resultados: 
+\end_layout
+
+\begin_layout Standard
+Se a anterior tarefa foi realizada com sucesso, o sistema vai encaminhá-lo
+ a tela de 'Resultados da avaliação', em caso negativo pode dar click no
+ botão 'Análises' e selecionar a análise cadastrada, para realizar:
+\end_layout
+
+\begin_layout Enumerate
+Visualizar a planilha de eficiência e custo
+\end_layout
+
+\begin_layout Enumerate
+Visualizar a planilha de sustentabilidade
+\end_layout
+
+\begin_layout Enumerate
+Visualizar o relatório da avaliação
+\end_layout
+
+\begin_layout Enumerate
+Visualizar os dados da avaliação na aba 'Avaliação'
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 5
+\end_layout
+
+\begin_layout Standard
+Editar avaliação: 
+\end_layout
+
+\begin_layout Enumerate
+Na tela de 'Resultados da avaliação' selecionar a aba 'Avaliação'
+\end_layout
+
+\begin_layout Enumerate
+Acrescentar alguns dados de avaliação de eficiência e custo
+\end_layout
+
+\begin_layout Enumerate
+Acrescentar alguns dados de avaliação da sustentabilidade
+\end_layout
+
+\begin_layout Enumerate
+Solicitar a atualização por meio do botão 'Atualizar' 
+\end_layout
+
+\begin_layout Section
+Formulário de avaliação Decisioner
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Formulário-de-avaliação-Decisioner"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O processo consiste em realizar cinco tarefas descritas a seguir, e responder
+ as seguintes três perguntas para cada tarefa:
+\end_layout
+
+\begin_layout Itemize
+Conseguiu realizar a tarefa?
+\end_layout
+
+\begin_layout Itemize
+Teve algum problema/dúvida durante a realização da tarefa?
+\end_layout
+
+\begin_layout Itemize
+Tem sugestões para melhorar/facilitar a realização da tarefa?
+\end_layout
+
+\begin_layout Standard
+As seguintes tarefas devem ser realizadas na interface de administração
+ do sistema:
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 1
+\end_layout
+
+\begin_layout Standard
+Cadastrar novo indicador
+\end_layout
+
+\begin_layout Enumerate
+Ingressar com login de administrador no software SustenAgro em http://java.icmc.us
+p.br:1300/
+\end_layout
+
+\begin_layout Enumerate
+Dar click no link 'Ontology'
+\end_layout
+
+\begin_layout Enumerate
+Clicar em Feature, Indicador, Indicador de Sustentabilidade e Dimensão Social
+\end_layout
+
+\begin_layout Enumerate
+Cadastrar uma nova dimensão, atributo e indicador a partir da linha 1020
+ no seguinte formato:
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+AgriculturalIndicator: 
+\end_layout
+
+\begin_layout Plain Layout
+
+ is_a: SustainabilityIndicator 
+\end_layout
+
+\begin_layout Plain Layout
+
+ relevance: 1.0 
+\end_layout
+
+\begin_layout Plain Layout
+
+ label: 
+\end_layout
+
+\begin_layout Plain Layout
+
+  - Agricultural dimension @en 
+\end_layout
+
+\begin_layout Plain Layout
+
+  - Dimensão agricultural @pt
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+DeforestationAttribute: 
+\end_layout
+
+\begin_layout Plain Layout
+
+ is_a: AgriculturalIndicator 
+\end_layout
+
+\begin_layout Plain Layout
+
+ label: 
+\end_layout
+
+\begin_layout Plain Layout
+
+  - Atributo desmatamento @pt 
+\end_layout
+
+\begin_layout Plain Layout
+
+  - Deforestation attribute @en 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+DeforestationIndicator: 
+\end_layout
+
+\begin_layout Plain Layout
+
+ is_a: DeforestationAttribute 
+\end_layout
+
+\begin_layout Plain Layout
+
+ label: 
+\end_layout
+
+\begin_layout Plain Layout
+
+  - Indicador desmatamento @pt 
+\end_layout
+
+\begin_layout Plain Layout
+
+  - Deforestation indicator @en 
+\end_layout
+
+\begin_layout Plain Layout
+
+ relevance: 2.0 
+\end_layout
+
+\begin_layout Plain Layout
+
+ value: YesNo
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Codigo de novo indicador
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dar click na opção “Save”
+\end_layout
+
+\begin_layout Enumerate
+Acrescentar a nova dimensão na DSL, clicando na Aba DSL e no link Main adicionar
+ na linha 106 o seguinte código
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+feature ':AgriculturalIndicator'
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+Adição de feature na DSL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dar click na opção “Save” - Procurar o indicador cadastrado na interface
+ de Usuário, na tela de Usuário na aba Avaliação selecionar uma Unidade
+ Produtiva e ir em Nova Avaliação
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 2
+\end_layout
+
+\begin_layout Standard
+Editar a formula de avaliação 
+\end_layout
+
+\begin_layout Enumerate
+Dar click no link 'DSL'
+\end_layout
+
+\begin_layout Enumerate
+Procurar o comando Report e editar algum valor da fórmula
+\end_layout
+
+\begin_layout Enumerate
+Dar click na opção “Save”
+\end_layout
+
+\begin_layout Enumerate
+Visualizar os índices de uma avaliação cadastrada no sistema por meio da
+ aba Report, na tela de Usuário na aba Avaliação selecionar uma Unidade
+ Produtiva, selecionar uma Avaliação e um Report ligado a ela
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 3
+\end_layout
+
+\begin_layout Standard
+Editar os limiares das widgets matriz e semáforo de avaliação
+\end_layout
+
+\begin_layout Enumerate
+Dar click no link 'DSL'
+\end_layout
+
+\begin_layout Enumerate
+Procurar o comando sustainabilityMatrix e editar o valor de range_x
+\end_layout
+
+\begin_layout Enumerate
+Procurar o comando sustainabilitySemaphore e editar o valor de range
+\end_layout
+
+\begin_layout Enumerate
+Dar click na opção “Save”
+\end_layout
+
+\begin_layout Enumerate
+Visualizar os índices de uma avaliação cadastrada no sistema, na tela de
+ Usuário na aba Avaliação selecionar uma Unidade Produtiva, selecionar uma
+ Avaliação e um Report ligado a ela
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 4
+\end_layout
+
+\begin_layout Standard
+Editar uma View
+\end_layout
+
+\begin_layout Enumerate
+Dar click no link 'Views'
+\end_layout
+
+\begin_layout Enumerate
+Selecionar uma a view de contact
+\end_layout
+
+\begin_layout Enumerate
+Editar o título da view por meio do comando pageHeader
+\end_layout
+
+\begin_layout Enumerate
+Dar click na opção “Save”
+\end_layout
+
+\begin_layout Enumerate
+Visualizar a view na interface do Usuário por meio do link Contact
+\end_layout
+
+\begin_layout Subsection*
+Tarefa 5
+\end_layout
+
+\begin_layout Standard
+Editar labels das internationalizations
+\end_layout
+
+\begin_layout Enumerate
+Dar click no link 'Internationalization'
+\end_layout
+
+\begin_layout Enumerate
+Seleccionar ingles
+\end_layout
+
+\begin_layout Enumerate
+Editar o texto de um label
+\end_layout
+
+\begin_layout Enumerate
+Dar click na opção “Save”
+\end_layout
+
+\begin_layout Enumerate
+Visualizar uma view que faça uso do label editado na interface do Usuário
+\end_layout
+
+\end_body
+\end_document
