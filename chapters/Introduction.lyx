@@ -94,7 +94,7 @@ key "Turban:2004:DSS:994103"
 
 .
  Os SADs integram conhecimento desenvolvido pelos especialistas do domínio
- que fica implícito nos dados, informações e processos usados 
+ que fica implícito nos dados, informações e processos usados
 \begin_inset CommandInset citation
 LatexCommand citep
 key "power2000web"
@@ -106,7 +106,7 @@ key "power2000web"
  de software.
  Eles têm que usar técnicas diversas para o levantamento de requisitos para
  entender o domínio dos especialistas e assim implementar o sistema software
- corretamente 
+ corretamente
 \begin_inset CommandInset citation
 LatexCommand citep
 key "GavrilovaAndreeva2012"
@@ -151,7 +151,7 @@ reference "chap:Sustainability_Assessment"
 
 ).
  Nesse projeto, foi desenvolvido um método de avaliação de sustentabilidade
- no sistema produtivo da cana-de-açúcar do centro-sul do Brasil 
+ no sistema produtivo da cana-de-açúcar do centro-sul do Brasil
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
@@ -245,7 +245,7 @@ A segunda refere-se ao requisito de fornecer meios computáveis de representaç�
  do domínio e os desenvolvedores de software e que adaptem-se às mudanças
  do domínio.
  Domínios de conhecimento estão em continua mudança, como é o caso do domínio
- avaliação da sustentabilidade da cultura de cana-de-açúcar 
+ avaliação da sustentabilidade da cultura de cana-de-açúcar
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
@@ -284,7 +284,7 @@ key "Matthews2008149"
 \begin_layout Standard
 Com a finalidade de definir o meio de representação de conhecimento, foi
  analisada a teoria, onde foram analisados vários tipos de sistemas de organizaç
-ão de conhecimento ou 
+ão de conhecimento ou
 \lang english
 Knowledge Organization System
 \lang brazilian
@@ -319,7 +319,6 @@ Desenvolver um método e ferramenta web, baseados em ontologias, que permitam
  SADs, onde uma ontologia, desenvolvida por especialistas de domínio, forma
  a base de conhecimento do SAD e instruções, numa DSL, servem para customizar
  seu comportamento.
- 
 \end_layout
 
 \begin_layout Standard
@@ -361,7 +360,6 @@ Desenvolver uma DSL que permita a definição da interface de usuário, das
 \begin_layout Itemize
 Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
  produtivos de cana-de-açúcar do centro-sul do Brasil.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -402,9 +400,9 @@ idade da Embrapa.
 \begin_layout Itemize
 Ontologia sobre controles visuais para suportar a geração automática das
  interfaces gráficas do SAD SustenAgro.
- Ela permite associar tipos de dados às 
+ Ela permite associar tipos de dados às
 \lang english
-widgets
+ widgets
 \lang brazilian
  necessárias para a geração automática das interfaces aos SADs.
 \end_layout
@@ -427,7 +425,7 @@ Sustainability assessment of sugarcane production systems: SustenAgro Method
 \begin_inset Quotes erd
 \end_inset
 
- submetido no periódico da Elsevier 
+ submetido no periódico da Elsevier
 \begin_inset Quotes eld
 \end_inset
 
@@ -462,7 +460,7 @@ Rever no fim da escrita.
 \end_layout
 
 \begin_layout Standard
-A presente dissertação está estruturada da seguinte forma: 
+A presente dissertação está estruturada da seguinte forma:
 \end_layout
 
 \begin_layout Standard

@@ -314,7 +314,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Semantic Web Architecture.png
-	width 70col%
+	width 60col%
 
 \end_inset
 
@@ -1288,6 +1288,7 @@ reference "fig:Componente-DSL"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1410,8 +1411,7 @@ Os conceitos apresentados anteriormente foram necessários para o desenvolviment
  da presente pesquisa, demostrando que a web semântica fornece o suporte
  tecnológico e teórico suficiente para abordar o desenvolvimento de sistemas
  baseados em conhecimento, particularmente as ontologias suportaram vários
- aspectos cruciais no desenvolvimento deste projeto, pelo qual elas foram
- o foco central da presente pesquisa.
+ aspectos cruciais, pelo qual elas foram o foco central da presente pesquisa.
  
 \end_layout
 

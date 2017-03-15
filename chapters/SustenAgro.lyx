@@ -94,9 +94,16 @@ reference "chap:Sustainability_Assessment"
 \end_inset
 
 , especificamente está composto por um conjunto de definições em formato
- de Ontologias e DSL que permitem gerar dito sistema a través do Decisioner,
- o principal componente dele é a ontologia do domínio em avaliação da sustentabi
-lidade.
+ de ontologias e DSL que permitem gera-o a través do framework Decisioner
+ descrito no capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Decisioner"
+
+\end_inset
+
+, o principal componente dele é a ontologia do domínio em avaliação da sustentab
+ilidade.
 \end_layout
 
 \begin_layout Standard
@@ -160,11 +167,12 @@ As ontologias forneceram uma representação de conhecimento, que foi gerenciada
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento do projeto foi apoiado pela Embrapa Meio Ambiente, instituição
- parceira que planejou e executou o projeto SustenAgro, cuja finalidade
- é fornecer os fundamentos teóricos para suportar avaliações que possibilitem
- o embasamento de politicas públicas que incentivem a sustentabilidade no
- setor produtivo da cultura de cana-de-açúcar no centro-sul do Brasil.
+O desenvolvimento do SAD SustenAgro foi apoiado pela Embrapa Meio Ambiente,
+ instituição parceira que planejou e executou o projeto SustenAgro, cuja
+ finalidade é fornecer os fundamentos teóricos para suportar avaliações
+ que possibilitem o embasamento de politicas públicas que incentivem a sustentab
+ilidade no setor produtivo da cultura de cana-de-açúcar no centro-sul do
+ Brasil.
 \end_layout
 
 \begin_layout Standard
@@ -280,8 +288,8 @@ bilidade dos componentes.
 \begin_layout Enumerate
 DSL: linguagem especifica do domínio para gerenciar os conceitos das ontologias
  permitindo vincular com os componentes necessários para gerar o SAD por
- meio do sistema Decisioner, fornecendo uma linguagem especifica para definir
- 
+ meio do framework Decisioner, fornecendo uma linguagem especifica para
+ definir 
 \lang english
 SADs
 \lang brazilian
@@ -520,6 +528,13 @@ Cada uma das anteriores etapas de desenvolvimento foram testadas com os
 \begin_layout Section
 Ontologia do domínio avaliação da sustentabilidade do sistema produtivo
  de cana-de-açúcar
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ontologia-do-domínio"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -633,7 +648,7 @@ status open
 \begin_inset Graphics
 	filename ../figures/SustenAgro conceptual map.png
 	lyxscale 30
-	width 60col%
+	width 70col%
 
 \end_inset
 
@@ -759,7 +774,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/ProductionUnit.png
-	scale 50
+	width 60col%
 
 \end_inset
 
@@ -836,7 +851,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Microregion.png
-	scale 50
+	width 60col%
 
 \end_inset
 
@@ -986,7 +1001,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/StructureOfDomainOntology.png
-	scale 150
+	width 60col%
 
 \end_inset
 
@@ -1087,7 +1102,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Indicador.png
-	scale 50
+	width 60col%
 
 \end_inset
 
@@ -1592,7 +1607,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Value.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -1841,8 +1856,8 @@ Scenarios
 É uma técnica que permite a descrição das funcionalidades do sistema desde
  a perspectiva do usuário ou cliente, realizando uma descrição detalhada
  de cada um dos passos dos usuários no sistema para atingir a tarefa, a
- continução serão apresentadas as 8 histórias de usuários do projeto SustenAgro
- com os cenários associados a elas:
+ continução serão apresentadas as 8 histórias de usuários do SAD SustenAgro
+ com os cenários associados:
 \end_layout
 
 \begin_layout Standard
@@ -2230,7 +2245,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Stroyboard 2.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -2583,7 +2598,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Mockup Main.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -2638,7 +2653,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Tool_environmental_indicators.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -2824,7 +2839,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-scenario.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -2860,7 +2875,7 @@ A partir desses desses dados cadastrados, são gerados os resultados do sistema
  que consistem na planilha de eficiência e custo, na planilha da sustentabilidad
 e e o relatório do sistema, as planilhas permitem a visualizar os atributos
  dos indicadores e a tela de relatório apresenta a matriz de avaliação onde
- são relacionados os indices de eficiência e de sustentabilidade, o relatório
+ são relacionados os índices de eficiência e de sustentabilidade, o relatório
  é apresentado na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2884,7 +2899,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-results.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -2970,7 +2985,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-matrix.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -3052,7 +3067,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-semaphore.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -3090,7 +3105,7 @@ name "fig:Semáforo-de-sustentabilidade"
 \begin_layout Section
 
 \lang english
-Decisioner DSL: code
+DSL: code
 \end_layout
 
 \begin_layout Standard
@@ -3202,71 +3217,6 @@ status open
   instance 'ui:hasMicroregion', label: ['en': 'Production unit microregion',
  'pt': "Microrregião da unidade produtiva"], header: ['en': "Options", 'pt':
  "Opções"]
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':municipalitiesInvolved', label: ['en': "Municipalities involved
- (unit location)", 'pt': "Municípios envolvidos (localização da sede)"],
- placeholder: "São Carlos, Jaguariúna, etc"      instance ':harvestYear',
- label: ['en': 'Harvest (year)', 'pt': "Safra (Ano)"], placeholder: "yyyy"
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':beginningOfPlantingDate', label: ['en': "Planting start date",
- 'pt': "Data de início do plantio"], placeholder: "dd/mm/yyyy"
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':finishOfPlantingDate', label: ['en': "Planting end date" ,'pt':
- "Data de término do plantio"], placeholder: "dd/mm/yyyy"      
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':beginningOfHarvestDate', label: ['en': 'Harvest start date',
- 'pt': "Data de início da colheita"], placeholder: "dd/mm/yyyy"
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':finishOfHarvestDate', label: ['en': 'Planting end date', 'pt':
- "Data de término da colheita"], placeholder: "dd/mm/yyyy"
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':canavialLongevity', label: ['en': "Canavial longevity (time
- in years and months)", 'pt': "Longevidade do canavial (tempo em anos e
- meses)"], placeholder: ['en': "One and a half year", 'pt': "Um ano e meio"]
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':innovationDevelopmentProjects', label: ['en': "Innovation/developme
-nt projects (BNDES, Finep)", 'pt': "Projetos de inovação e/ou desenvolvimento
- (BNDES, Finep)"], placeholder: ['en': "Description", 'pt': "Descrição"],
- widget: 'textAreaForm'
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':financing', label: ['en': "Financing (agricultural credit,
- machinery costing, BNDES)", 'pt': "Financiamento (crédito agrícola, custeio
- de maquinário, BNDES)"], placeholder: ['en': "Description", 'pt': "Descrição"],
- widget: 'textAreaForm'
-\end_layout
-
-\begin_layout Plain Layout
-
-  instance ':partnershipsForResearchOrImprovementOfTheSystem', label: ['en':
- "Partnerships for research or system enhancement (Name of partnership instituti
-on, institution type, public or private, cooperatives or associations)",
- 'pt': "Parcerias para pesquisa ou aprimoramento do sistema (nome da instituição
- parceira, tipo da instituição pública, privada, Cooperativas ou associações)"],
- widget: 'textAreaForm', placeholder: ['en': "Description", 'pt': "Descrição"]
 \end_layout
 
 \begin_layout Plain Layout
@@ -3432,23 +3382,11 @@ heField+technologicalEfficiencyInTheIndustrial)
 
 \begin_layout Plain Layout
 
-  evaluationObjectInfo()   
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
   sustainabilityMatrix    x: sustainability, y: efficiency,  label_x: ['en':
  'Sustainability Index', 'pt': 'Índice de Sustentabilidade'],          
        label_y: ['en': 'Efficiency index', 'pt': 'Índice de Eficiência'],
                range_x: [-43,43],                 range_y: [-160,800], 
-                quadrants: [4,3], recomendations: ["Avaliação da eficiência:
- balanço da eficiência tecnológica, produção, custo favorável para o sistema
- cana, recomenda-se investimentos no sistema avaliado / Avaliação da sustentabil
-idade: com bom desempenho, sistema de produção de cana fortemente recomendado."]
+                quadrants: [4,3]
 \end_layout
 
 \begin_layout Plain Layout
@@ -3489,6 +3427,10 @@ el'],                ['en': 'Negative changes', 'pt': 'Alterações negativas'],
 \begin_layout Plain Layout
 
 }     
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout

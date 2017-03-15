@@ -75,9 +75,8 @@
 \begin_body
 
 \begin_layout Standard
-Neste capitulo são apresentados uma discução sobre os resultados do projeto,
- os trabalhos futuros e as dificultadades encontradas durante o desenvolvimento
- da pesquisa.
+Neste capitulo são apresentadas os resultados, os trabalhos futuros, as
+ dificuldades e uma discussão final sobre as conclusões do mestrado.
 \end_layout
 
 \begin_layout Section
@@ -89,234 +88,546 @@ Os resultados obtidos são:
 \end_layout
 
 \begin_layout Enumerate
-Ontologia em formatos da web semântica (RDF/OWL) da avaliação da sustentabilidad
-e no sistema de cana-de-açúcar.
- 
+Ontologia SustenAgro sobre avaliação de sustentabilidade em cana-de-açúcar
+ no centro-sul do Brasil, que representa os principais conceitos desse domínio,
+ necessários para o suportar a avaliação: entre eles estão os indicadores,
+ unidades produtivas, microrregiões, índices e método de avaliação.
+ Padronizando o conhecimento dos especialistas em um formato computável
+ e possibilitando o escalonamento no futuro.
+ Ela foi desenvolvida em parceria com os especialistas de domínio de sustentabil
+idade da Embrapa.
 \end_layout
 
 \begin_layout Enumerate
-Protótipo de ontologia de interfaces gráficas em formatos da web semântica
- (RDF/OWL) 
-\end_layout
-
-\begin_layout Enumerate
-Linguagem de domínio especifico DSL, Decisioner, para definir e permitir
- administrar os parâmetros e processos do sistema SustenAgro 
-\end_layout
-
-\begin_layout Enumerate
-Protótipo de sistema de geração de interfaces suportado nas tecnologias
- da web semântica 
-\end_layout
-
-\begin_layout Enumerate
-Formulários para recolha de dados sobre sustentabilidade em cana-de-açúcar,
- e o processo de colheita dos dados de algumas usinas do estado de São Paulo
- 
-\end_layout
-
-\begin_layout Enumerate
-Protótipo do sistema web Sustenagro que integra as ontologias e a DSL, fornecend
-o um comportamento configurável em tempo de execução dos parâmetros, processos
- e das interfaces gráficas de usuário
-\end_layout
-
-\begin_layout Standard
-Uma das finalidades deste projeto é construir um gerador de sistemas de
- apoio a decisão que consiga suportar outros domínios de conhecimento, propondo
- para a comunidade uma metodologia de desenvolvimento e manutenção que fique
- simples para os usuários finais e assim permitir que os especialistas no
- domínio façam as mudanças sem precisas dos especialistas de T.I.
-\end_layout
-
-\begin_layout Section
-Trabalhos Futuros
-\end_layout
-
-\begin_layout Standard
-Analisando os componentes e o desenvolvimento do Sistema SustenAgro, surgem
- ideias que permitem expandir o trabalho atual e propor projetos de investigação
- e desenvolvimento tecnológico, entre as possibilidades identificadas estão:
-\end_layout
-
-\begin_layout Subsection
-Editor de ontologias web focado no usuário especialista
-\end_layout
-
-\begin_layout Standard
-No sistema SustenAgro foi integrado um editor de ontologias que é baseado
- no formato YAML de fácil legibilidade, com a finalidade de fornecer uma
- ferramenta web de fácil uso e acesso para que os usuários especialistas
- possam editar a ontologia do domínio, no caso de SustenAgro a ontologia
- de avaliação de sustentabilidade.
-\end_layout
-
-\begin_layout Standard
-A partir de esta ferramenta é possível propor um editor online focado em
- especialistas do domínio, com a finalidade de facilitar a definição e edição
- de ontologias, o qual poderia estar composto pelas seguintes funcionalidades:
-\end_layout
-
-\begin_layout Enumerate
-Editor textual do conhecimento do domínio do especialista
-\end_layout
-
-\begin_layout Enumerate
-Editor de mapas conceituais que reuse informações do texto
-\end_layout
-
-\begin_layout Enumerate
-Editor visual da ontologia que reuse os mapas conceituais e permita gerar
- o modelo hierárquico RDFS
-\end_layout
-
-\begin_layout Enumerate
-Editor de regras e OWL
-\end_layout
-
-\begin_layout Enumerate
-Editor de indivíduos
-\end_layout
-
-\begin_layout Enumerate
-Publicação da ontologia em um repositório permanente
-\end_layout
-
-\begin_layout Subsection
-Linguagem de definição de SAD: Decisioner
-\end_layout
-
-\begin_layout Standard
-No sistema SustenAgro, foi desenvolvida uma DSL que permite definir o comportame
-nto de um SAD, no caso realizado foi o desenvolvimento de um sistema de
- avaliação de sustentabilide, os conceitos foram abstraidos por meio da
- ontologia de SAD que permite identificar e modelar os conceitos gerais
- dos sistemas software de avaliação usados pela Embrapa Meio Ambiente, o
- que resultou em uma linguagem de proposito especifico para o sistema SustenAgro
- e similares.
-\end_layout
-
-\begin_layout Standard
-Esta linguagem pode ser validada, melhorada e expandida por meio da definição
- e desenvolmiento de outros SAD com propositos similares, desenvolvimento
- continuado pelo sistema NanoTec Ram que permite a valiação do risco.
-\end_layout
-
-\begin_layout Subsection
-Reportes de consultas semânticas
-\end_layout
-
-\begin_layout Standard
-Gerar SADs que suportem consultas complexas que requerem conhecimento semântico,
- facilitando o processo de análises da informação por parte dos usuários.
-\end_layout
-
-\begin_layout Subsection
-Linguagem de edição de Web UIs
-\end_layout
-
-\begin_layout Standard
-Na geração de interfaces gráficas é necessário o gerenciamento e organização
- do conteúdo e das widgets (elementos de uma GUI) com a finalidade de fornecer
- uma representação visual que consiga informar um determinado assunto.
-\end_layout
-
-\begin_layout Standard
-Atualmente na geração de 
+Ontologia sobre tipos de dados e controles visuais para suportar a geração
+ automática das interfaces gráficas do SAD SustenAgro.
+ Ela permite associar tipos de dados às 
 \lang english
-web UIs
+widgets
 \lang brazilian
- nos sistemas web, são usadas tecnologias feitas para os desenvolvedores
- web front-end que permitem a manipulação da estrutura do documento atraves
- de HTML, do estilo do documento atraves de CSS e do comportamento JS.
- Mas estes elementos estão focados na representação computacional dessas
- carateristicas, porem é possivel propor outra maneira de representação
- em mais alto nivel.
+ necessárias para a geração automática das UI para os SAD, e permite a complemen
+tação com 
+\lang english
+web components
+\lang brazilian
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+DSL que permite definir os principais elementos de um SAD, usando os conceitos
+ das ontologias e integrando 
+\lang english
+web components
+\lang brazilian
+ para gerar as UI, dentro dos elementos suportados estão a definição dos
+ objetos de avaliação, os indicadores, as as formulas do método de avaliação
+ e a definição do formato do relatório de cada análise.
+\end_layout
+
+\begin_layout Enumerate
+Método e framework Decisioner para definir SADs por parte dos especialistas
+ do domínio de sustentabilidade baseado em ontologias e DSL.
+ Decisioner Framework possui uma arquitetura escalável que permite generalizar
+ a aplicabilidade dele a outros tipos de SAD com características diferentes,
+ está baseado na linguagem 
+\lang english
+Groovy
+\lang brazilian
+ e o framework 
+\lang english
+Grails
+\lang brazilian
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+O SAD SustenAgro: sistema para avaliação da sustentabilidade em cana-de-açúcar,
+ na região centro-sul do Brasil, que foi implementado usando o Framework
+ Decisioner.
+ O SAD SustenAgro permite a reconfiguração em tempo de execução dos conceitos
+ do domínio, método de avaliação e design das interfaces gráficas, a través
+ do 
+\lang english
+Framework Decisioner
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Enumerate
+Resultados de avaliação do Framework Decisioner e do processo de design
+ realizado no SAD SustenAgro.
+ Os que permitem comprovar a realização dos objetivos da pesquisa.
+\end_layout
+
+\begin_layout Enumerate
+Artigo “
+\lang english
+Sustainability assessment of sugarcane production systems: SustenAgro Method
+\lang brazilian
+” submetido no periódico da 
+\lang english
+Elsevier “Energy for sustainable Development”
+\lang brazilian
+ ISSN: 0973-0826 submissão realizada em 23 de dezembro do 2016.
+\end_layout
+
+\begin_layout Section
+Dificuldades 
 \end_layout
 
 \begin_layout Standard
-A proposta é de uma linguagem para edição de Web UIs, onde os elementos
- estejam modularizados permitindo abstrair a UI em uma hierarquia de componentes
- relacionando-os semanticamente por meio de uma linguagem de alto nivel
- de usuário não especialista em web development.
-\end_layout
-
-\begin_layout Subsection
-Organização de widgets por meio de Polymer
+Uma dificuldade identificadas durante a realização da pesquisa, foram as
+ seguintes:
 \end_layout
 
 \begin_layout Standard
-No desenvolvimento do Sistema SustenAgro, foram definidas 60 widgets que
- foram reusadas na definição de cada uma das vistas de SustenAgro, essas
- widgets estão definidas no formato de templates do framework Grails
+A falta de fontes de dados e informação que permitam entender e modelar
+ o domínio do conhecimento por parte dos especialistas, a partir desta dificulda
+de foi identificado o problema de pesquisa.
+ Porém, depois de estabelecer meios de representação de conhecimento para
+ os especialistas, encontrou-se que não existiam dados que representaram
+ instancias dos conceitos definidos, pelo que foi necessário criar formulários
+ web para fazer a recolheita de dados, dificultando o desenvolvimento do
+ projeto.
+\end_layout
+
+\begin_layout Standard
+Outra dificuldade, foi que a falta de trabalhos relacionados que forneçam
+ um referente em cada uma das etapas de desenvolvimento, repercutindo na
+ realização de tarefas erradas que consumiram tempo.
+ Só foi possível encontrar fundamentação teórica especializada em cada área
+ do conhecimento de maneira separada, no caso dos SAD a literatura as fontes
+ bibliográficas são de vários anos atrás.
+\end_layout
+
+\begin_layout Standard
+Além disso, o principal problema afrontado no mestrado, foi de carácter
+ organizacional pela equipe devido a que existiram interesses heterogêneos
+ por parte da USP e da Embrapa, sendo o interesse em pesquisa por parte
+ da USP e de desenvolvimento por parte de Embrapa.
+ Adicionalmente, não existia uma definição especifica do tipo de sistema
+ que os especialistas da Embrapa precisavam, o que levou a realizar levantamento
+ de requerimentos e processos de design para especificar os sistemas requeridos,
+ consumindo tempo importante em processos que não estavam relacionados a
+ pesquisa.
+\end_layout
+
+\begin_layout Section
+Trabalhos futuros
+\end_layout
+
+\begin_layout Standard
+A partir do analise dos resultados e das dificuldades, foram identificadas
+ várias ideias que permitem complementar e melhorar os resultados da pesquisa.
+ Com as seguintes ideias de trabalhos futuros fica a possibilidade de definir
+ projetos de pesquisa e desenvolvimento tecnológico, entre as possibilidades
+ identificadas estão:
 \end_layout
 
 \begin_layout Subsection
-Georeferenção nos SAD
+Metodologia de modelagem de conhecimento dos especialistas
+\end_layout
+
+\begin_layout Standard
+A metodologia e desenvolvimento das ontologias explicada na seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ontologia-do-domínio"
+
+\end_inset
+
+, permite propor uma esta metodologia para acompanhar a modelagem de conheciment
+o de especialistas do domínio, ela poderia estar composta das seguintes
+ etapas:
 \end_layout
 
 \begin_layout Enumerate
-Recuperação dos dados dos repositórios FAO Linked Data 
+Definição textual do conhecimento do domínio do especialista e identificação
+ dos elementos principais.
 \end_layout
 
 \begin_layout Enumerate
-Utilização de dados de fontes externas como Geonames, Wikimapia, DBpedia
+Modelar um mapa conceitual a partir dos elementos principais, que permitam
+ classificar os conceitos e estabelecer relacionamentos entre eles.
 \end_layout
 
 \begin_layout Enumerate
-Mapeamento dos dados para uma 
-\shape italic
-triplestore
-\shape default
- utilizando coordenadas geográficas para GeoSPARQL 
+Modelar a ontologia de maneira gráfica a través de um editor visual de ontologia
+s, que faça uso dos conceitos, classificações e relacionamentos identificados
+ nos mapas conceituais e permita definir regras em formato 
+\lang english
+OWL
+\end_layout
+
+\begin_layout Enumerate
+Gerar o formato computável da ontologia e carregar ele em um sistema web
+ para permitir gerenciar ela.
+\end_layout
+
+\begin_layout Enumerate
+Por meio de serviços 
+\lang english
+web
+\lang brazilian
+ instanciar a ontologia com indivíduos que representem dados reais do domínio
+ para permitir o uso dela e dos dados em outros sistemas.
 \end_layout
 
 \begin_layout Subsection
-Desenvolver um framework para geração das interfaces usuário-computador
- geral para SAD.
+Editor web de ontologias da web semântica.
+\end_layout
+
+\begin_layout Standard
+O Framework Decisioner, integra um editor de ontologias baseado no formato
+ 
+\lang english
+YAML
+\lang brazilian
+, o qual suporta a edição de ontologias em tempo de execução, a través de
+ uma web UI.
+\end_layout
+
+\begin_layout Standard
+Este editor de ontologia pode ser complementado com um editor visual de
+ ontologias que permita a visualização e edição em forma de grafos 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Visualização baseada na aplicação 
+\lang english
+WebVOWL
+\lang brazilian
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://vowl.visualdataweb.org/webvowl.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Está ferramenta integrará o método de modelagem de conhecimento proposto
+ anteriormente e terá um repositório online de conhecimento que permita
+ a reutilização.
+\end_layout
+
+\begin_layout Subsection
+linguagem simplificado de consultas Sparql
+\end_layout
+
+\begin_layout Standard
+O componente Decisioner Core, está composto de um modulo que simplifica
+ as consultas Sparql nas 
+\lang english
+triplestores
+\lang brazilian
+, o qual pode ser melhorado e generalizado para facilitar o armazenamento
+ e recuperação de informações semânticas.
+ Este componente pode ser disponibilizado como uma biblioteca que dê suporte
+ no desenvolvimento de software que façam uso do Sparql.
  
 \end_layout
 
 \begin_layout Subsection
-Fornecer um sistema de classificação e busca de controles de interfaces
- usuário-computador
+Linguagem de edição de 
+\lang english
+Web UIs
+\end_layout
+
+\begin_layout Standard
+As 
+\lang english
+UI
+\lang brazilian
+ para os SAD, possuem vários tipos de 
+\lang english
+widgets
+\lang brazilian
+, que podem ser customizados de acordo aos critérios dos especialistas.
+ Para suportar a definição da organização e apresentação das UI, é necessária
+ uma linguagem que gerencie as 
+\lang english
+widgets
+\lang brazilian
+ (elementos de uma 
+\lang english
+UI
+\lang brazilian
+), dita linguagem será baseada em 
+\lang english
+HTML
+\lang brazilian
+ e permitira uma linguagem simples de definição.
+\end_layout
+
+\begin_layout Standard
+Atualmente, foi definida uma DSL para especificar as web UI gerando uma
+ estrutura do documento em 
+\lang english
+HTML
+\lang brazilian
+, que associa 
+\lang english
+templates
+\lang brazilian
+ com o estilo predefinido a traves de 
+\lang english
+CSS
+\lang brazilian
+ e com 
+\lang english
+scripts
+\lang brazilian
+ definidos na linguagem 
+\lang english
+Javascript
+\lang brazilian
+.
+ Está DSL está focada na estrutura do documento, más a linguagem proposta
+ deve ser focada em termos dos domínio de interfaces gráficas em mais alto
+ nível, onde os elementos estejam modularizados.
+ A estrutura hierárquica da UI, estaria definida por meio de componentes
+ relacionados semanticamente.
+\end_layout
+
+\begin_layout Subsection
+Linguagem genérico definição de SAD
+\end_layout
+
+\begin_layout Standard
+Decisioner DSL é uma linguagem que permite definir SAD de tipo avaliação,
+ que foi desenvolvido a partir do caso de uso SustenAgro.
+ Está DSL pode ser complementada e generalizada a partir da integração de
+ instruções e funcionalidades que façam parte de outros SAD diferentes aos
+ de avaliação, para desenvolver e validar uma linguagem geral que dê suporte
+ a definição de SADs.
+\end_layout
+
+\begin_layout Subsection
+Georreferenciação
+\end_layout
+
+\begin_layout Standard
+Um aspecto importante para vários tipos de SAD, são a associação de termos
+ e tecnologias de georreferenciamento, que são importantes para relacionar
+ o conhecimento de locais específicos e assim vincular dados e informações
+ para fazer sistemas com maior alcance.
+\end_layout
+
+\begin_layout Standard
+No caso dos SADs associados a agricultura como SustenAgro, permitira contribuir
+ na recuperação de dados existentes em fontes externas como 
+\lang english
+Geonames
+\lang brazilian
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Site do GeoNames 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.geonames.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, 
+\lang english
+Wikimapia
+\lang brazilian
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Site da Wikimapia 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wikimapia.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ e da 
+\lang english
+DBpedia
+\lang brazilian
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Site da 
+\lang english
+DBpedia
+\lang brazilian
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.dbpedia.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Também poderia os sistemas poderiam mapear as instâncias de conceitos agrícolas
+ utilizando coordenadas geográficas para 
+\lang english
+GeoSPARQL
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Subsection
+Biblioteca de 
+\lang english
+web components
+\end_layout
+
+\begin_layout Standard
+O sistema Decisioner conta com aproximadamente 60 
+\lang english
+web components
+\lang brazilian
+, que dão suporte na geração de UI, as quais podem ser agrupadas em uma
+ biblioteca para permitir a reatualização delas e a definição de web componentes
+ especializados como os desenvolvidos para o SAD SustenAgro.
+\end_layout
+
+\begin_layout Standard
+A biblioteca 
+\lang english
+Polymer
+\lang brazilian
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Site do 
+\lang english
+Polymer
+\lang brazilian
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.dbpedia.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ está suportando a criação de 
+\lang english
+web components
+\lang brazilian
+ reusáveis para compor web UI, dada as características dela recomenda-se
+ implementar a biblioteca com esta tecnologia.
+ 
+\end_layout
+
+\begin_layout Standard
+A partir desta biblioteca pode-se desenvolver um sistema de classificação
+ e busca de 
+\lang english
+web components
+\lang brazilian
+ para a geração de SADs.
+\end_layout
+
+\begin_layout Subsection
+Biblioteca de 
+\lang english
+Report
+\lang brazilian
+ com suporte semântico
+\end_layout
+
+\begin_layout Standard
+Os SADs geram saídas em forma de relatórios, previsões e recomendações.
+ Os quais devem ser flexíveis para facilitar a analise das informações geradas,
+ pelo qual se propõe o desenvolvimento de uma biblioteca especializada em
+ consultas complexas para a suportar as respostas dos SADs.
 \end_layout
 
 \begin_layout Section
-Dificuldades e Limitações
+Discussão final
 \end_layout
 
 \begin_layout Standard
-Até o presente momento, foi evidenciado como dificuldade para desenvolvimento
- do projeto as escassas fontes de informação que forneçam uma conexão entre
- sistemas de produção agrícola e sustentabilidade.
- Só foi possível encontrar fontes de informação especializada em cada área
- do conhecimento de maneira separada.
- Outro problema é a falta de dados resultantes da aplicação dos indicadores
- de sustentabilidade fornecidos pela Embrapa.
+A partir dos resultados obtidos pode-se concluir o seguinte:
 \end_layout
 
 \begin_layout Standard
-Organizacional pela equipe
+O método de definição de conhecimento por parte dos especialistas, que foi
+ implementado no framework Decisioner, teve uma avaliação positiva por parte
+ dos especialistas do domínio em sustentabilidade.
+ Esta avaliação demostrou que o método e a ferramenta Decisioner, solucionaram
+ o problema identificado na presente pesquisa.
 \end_layout
 
 \begin_layout Standard
-Interesse heterogêneos por parte da USP e da Embrapa
+Outra contribuição foi a geração do SAD SustenAgro, que permite cumprir
+ os objetivos do projeto SustenAgro, fornecendo uma ferramenta de avaliação
+ da sustentabilidade em cana-de-açúcar, com as características descritas
+ na seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:SAD-SustenAgro"
+
+\end_inset
+
+, a qual precisa complementar o suporte com sistemas de georreferenciamento
+ que correspondem a outra área de pesquisa fora de nosso alcance.
 \end_layout
 
 \begin_layout Standard
-Cada uma das anteriores etapas de desenvolvimento foram testadas com os
- especialistas do domínio, para conseguir realizar o correto levantamento
- de requisitos, devido a que não existia uma definição especifica do que
- os especialistas precisavam.
-\end_layout
-
-\begin_layout Standard
-literatura antiga, especialmente nos DSS
-\end_layout
-
-\begin_layout Standard
-Conclusões finais
+Os objetivos específicos foram satisfeitos e alguns requereram desenvolvimento
+ adicionais para cumprir eles.
 \end_layout
 
 \end_body

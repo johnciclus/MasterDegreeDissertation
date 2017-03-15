@@ -47,3 +47,4 @@
 *.out
 *.synctex.gz
 
+.idea/
