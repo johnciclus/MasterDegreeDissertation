@@ -550,7 +550,7 @@ filename "chapters/Decisioner.lyx"
 \end_layout
 
 \begin_layout Chapter
-Sustenagro
+SustenAgro
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:SustenAgro"
@@ -707,6 +707,27 @@ name "chap:Instalation"
 \begin_inset CommandInset include
 LatexCommand input
 filename "chapters/Instalation.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Formulários
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:formularios"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Forms.lyx"
 
 \end_inset
 

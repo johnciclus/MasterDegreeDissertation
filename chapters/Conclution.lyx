@@ -364,11 +364,13 @@ widgets
 \lang english
 UI
 \lang brazilian
-), dita linguagem será baseada em 
+).
+ Esta linguagem será baseada em 
 \lang english
 HTML
 \lang brazilian
- e permitira uma linguagem simples de definição.
+ e permitira usar termos simples do dominio, e gerará web UIs de tipo single-pag
+e application.
 \end_layout
 
 \begin_layout Standard
@@ -628,6 +630,14 @@ reference "sec:SAD-SustenAgro"
 \begin_layout Standard
 Os objetivos específicos foram satisfeitos e alguns requereram desenvolvimento
  adicionais para cumprir eles.
+\end_layout
+
+\begin_layout Standard
+Para continuar a pesquisa foram escritas anteriormente umas ideias de trabalhos
+ futuros, dentro delas as mais relevantes são a metodologia de edição de
+ ontologias e a ferramenta web que implemente dita ontologia.
+ Esta solução permitira acompanhar o desenvolvimento de ontologias, abordando
+ a complexidade de maneira gradual.
 \end_layout
 
 \end_body

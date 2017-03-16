@@ -74,12 +74,42 @@
 
 \begin_body
 
+\begin_layout Standard
+A continuação serão apresentadas as avaliações realizadas a cada um dos
+ produtos resultantes da presente pesquisa.
+\end_layout
+
 \begin_layout Section
 Avaliação do processo de 
 \lang english
 UCD
 \lang brazilian
  das interfaces visuais.
+\end_layout
+
+\begin_layout Description
+Data Junho do 2015
+\end_layout
+
+\begin_layout Description
+Participantes Especialista em sustentabilidade e especialista em economia
+ agrícola
+\end_layout
+
+\begin_layout Description
+Local Instituto de Ciências Matemáticas e de Computação (ICMC-USP)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ICMC"
+description " Instituto de Ciências Matemáticas e de Computação"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+Técnica Avaliação da usabilidade de interfaces
 \end_layout
 
 \begin_layout Standard
@@ -90,34 +120,606 @@ reference "sec:Web-UI"
 
 \end_inset
 
-, foi apresentado uma versão funcional aos especialistas em sustentabilidade
- onde podiam interagir com as telas funcionais do SAD SustenAgro, a avaliação
+, foi apresentado uma protótipo visual do SAD SustenAgro aos especialistas
+ em sustentabilidade, na que podiam interagir com as telas a través de um
+ navegador web.
+ Este protótipo não tinha dados reais, eles foram definidos pelo desenvolvedor
+ para simular condições reais e com o objetivo de avaliar a interação dos
+ usuários do sistema.
+\end_layout
+
+\begin_layout Standard
+Foi presentado o protótipo das interfaces gráficas aos especialistas e eles
+ avaliaram:
+\end_layout
+
+\begin_layout Itemize
+Facilidade de uso: as interfaces correspondiam às funcionalidades definidas,
+ e permitiam realizar de maneira explicita as tarefas.
+\end_layout
+
+\begin_layout Itemize
+Accessibilidade: o aceso à ferramenta foi possível desde vários navegadores
+ web sem inconvenientes, e as telas tinham informações de ajuda para acompanhar
+ a interação.
+\end_layout
+
+\begin_layout Standard
+A avaliação foi positiva, e gerou varias mudanças, entre elas as mais relevantes
+ foram: 
+\end_layout
+
+\begin_layout Standard
+A organização do processo de avaliação, agrupando varias tarefas que estavam
+ separadas em uma seção denominada 
+\begin_inset Quotes eld
+\end_inset
+
+caracterização da unidade produtiva
+\begin_inset Quotes erd
+\end_inset
+
+, que permite definir a localização, as principais características e a disponibi
+lização da informação em um processo unificado.
  
+\end_layout
+
+\begin_layout Standard
+A organização dos resultados em uma seção 
+\begin_inset Quotes eld
+\end_inset
+
+Resultados
+\begin_inset Quotes erd
+\end_inset
+
+, integrando os 
+\lang english
+web components
+\lang brazilian
+ específicos do SustenAgro com os resultados da avaliação.
+ 
+\end_layout
+
+\begin_layout Standard
+Finalmente, a organização dos indicadores em uma hierarquia simplificada
+ que facilita-se a o preenchimento dos indicadores
 \end_layout
 
 \begin_layout Section
 Avaliação da ontologia.
 \end_layout
 
+\begin_layout Description
+Data 14 de abril do 2016
+\end_layout
+
+\begin_layout Description
+Participantes Especialista em sustentabilidade e Especialista em modelagem
+ de conhecimento
+\end_layout
+
+\begin_layout Description
+Local Embrapa Informática Agropecuária - Campinas
+\end_layout
+
+\begin_layout Description
+Técnica Visualização da ontologia e recuperação de conhecimento
+\end_layout
+
 \begin_layout Standard
-Reunião com o especialista em conhecimento computacional na Embrapa Meio
- Ambiente, 
+O especialista em modelagem de conhecimento da Embrapa Informática Agropecuária
+ e o especialista em sustentabilidade, reuniram-se para realizar a revisão
+ da ontologia SustenAgro por meio de ferramentas de engenharia de conhecimento
+ que permitiram visualizar as ontologias.
+\end_layout
+
+\begin_layout Standard
+As ferramentas usadas na avaliação foram yWorks 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Site do yWorks 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.yworks.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ e Gephi 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Site do Gephi 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://gephi.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A reunião de avaliação chegou no consenso: a ontologia 
+\lang english
+OWL
+\lang brazilian
+ está representando a avaliação da sustentabilidade do sistema de produção
+ de cana no centro-sul do Brasil, avaliaram positivamente a especificidade
+ para suportar SADs.
 \end_layout
 
 \begin_layout Section
 Avaliação do protótipo funcional com dados
 \end_layout
 
+\begin_layout Description
+Data 6 de junho do 2016
+\end_layout
+
+\begin_layout Description
+Participantes Especialista em sustentabilidade e especialista em economia
+ agrícola
+\end_layout
+
+\begin_layout Description
+Local Agência Paulista de Tecnologia dos Agronegócios (APTA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "APTA"
+description "Agência Paulista de Tecnologia dos Agronegócios"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Description
+Técnica Testes numéricos dos resultados do software
+\end_layout
+
 \begin_layout Standard
-Revisao com planilhas da APTA do metodo
+Revisão de resultados numéricos, a partir de vários cenários de indicadores,
+ realizou-se a comparativa dos resultados processados manualmente com os
+ resultados de avaliação do SAD SustenAgro, gerando resultados iguais que
+ permitem validar a correta definição do método SustenAgro e implementação
+ do SAD SustenAgro.
+ 
+\end_layout
+
+\begin_layout Standard
+Os cenários avaliados foram os casos extremos dos indicadores, processo
+ denominado teste de mínimos e máximos, gerando os resultados em forma de
+ relatório para cada um dos cenários, nos relatórios estão os resultados
+ representados na matriz de sustentabilidade.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Matriz-de-sustentabilidade-Maximos"
+
+\end_inset
+
+ apresenta a Matriz de Sustentabilidade com o cenário de mínimos, na qual
+ o ponto preto identifica o resultado da avaliação, ficando no primeiro
+ quadrante tal como esperasse a resposta, o resultado para testes de máximos
+ também deu favorável.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Minimum.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matriz de sustentabilidade com valores máximos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Matriz-de-sustentabilidade-Maximos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Avaliação da DSL SustenAgro e do Editor de ontologias
+Avaliação do SAD SustenAgro: 
 \end_layout
 
-\begin_layout Section
-Avaliação de desempenho do sistema nos servidores da Embrapa
+\begin_layout Description
+Data 22 de junho do 2016
+\end_layout
+
+\begin_layout Description
+Participantes Especialista em sustentabilidade e especialista em economia
+ agrícola
+\end_layout
+
+\begin_layout Description
+Local Instituto de Ciências Matemáticas e de Computação (ICMC-USP)
+\end_layout
+
+\begin_layout Description
+Técnica Percurso cognitivo
+\end_layout
+
+\begin_layout Standard
+Para realizar uma avaliação integral do SAD SustenAgro e do Framework Decisioner
+, foi necessário fazer testes de usabilidade por parte de usuários de ambos
+ perfis do sistema (administradores e usuários finais).
+ A avaliação foi realizada com a maioria dos membros da equipe SustenAgro
+ e com usuários finais de maneira remota e independente, realizando 8 avaliações
+ desde o dia 18 de maio do 2016 até o dia 22 de junho do 2016.
+\end_layout
+
+\begin_layout Standard
+A avaliação consistiu em realizar um conjunto de tarefas com o SAD SustenAgro
+ v1.0, e responder se foi possível terminar a tarefa e as sugestões, as tarefas
+ e perguntas são apresentadas no apêndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Formulário-de-avaliação-SustenAgro"
+
+\end_inset
+
+ e permitiram gerar os seguintes resultados das avaliações:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Perfil de Usuário
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Avaliação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sugestões
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usuário final 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Positiva, realizou as 7 tarefas com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detalhar cada funcionalidade, organizar UI, dar resultados mais detalhados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usuário final 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usuário final 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Especialista em sustentabilidade
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Especialista economia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Positiva, realizou as 7 tarefas com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salvar dados da seção automaticamente, mudanças nos indicadores, editor
+ visual de ontologia e internacionalização
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Especialista em ontologias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Especialista agricultura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Especialista em computação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Avaliação do SAD SustenAgro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Editor de ontologias e DSL
 \end_layout
 
 \begin_layout Section
@@ -125,20 +727,7 @@ Avaliação de desempenho do sistema nos servidores da Embrapa
 \lang english
 Workshop
 \lang brazilian
-: validação do software SustenAgro v1.0, Avaliação com equipe de especialistas
- 
-\end_layout
-
-\begin_layout Standard
-O 
-\lang english
-workshop
-\lang brazilian
- teve o objetivo de avaliar a qualidade e acuidade do Software SustenAgro
- em termos da clareza da informação técnica apresentada nas interfaces,
- com vistas a garantir o entendimento do usuário e possibilitar que a avaliação
- da sustentabilidade do sistema de produção de cana-de-açúcar seja realizada
- da melhor forma possível.
+: validação do software SustenAgro v1.0 com equipe de especialistas 
 \end_layout
 
 \begin_layout Description
@@ -158,12 +747,84 @@ Técnica Delphi
 \end_layout
 
 \begin_layout Standard
+O 
+\lang english
+workshop
+\lang brazilian
+ teve o objetivo de avaliar a qualidade e acuidade do Software SustenAgro
+ em termos da clareza da informação técnica apresentada nas interfaces,
+ com vistas a garantir o entendimento do usuário e possibilitar que a avaliação
+ da sustentabilidade do sistema de produção de cana-de-açúcar seja realizada
+ da melhor forma possível.
+\end_layout
+
+\begin_layout Standard
 A avaliação consistiu em fazer um 
 \lang english
 workshop
 \lang brazilian
  com especialistas de diversos perfis, e eles aprovaram a ferramenta tanto
  na interação como no conteúdo dela, com as seguintes sugestões.
+\end_layout
+
+\begin_layout Itemize
+Especialista em sustentabilidade
+\end_layout
+
+\begin_layout Itemize
+Especialista em ciências agrícolas
+\end_layout
+
+\begin_layout Itemize
+Especialista em modelagem de conhecimento
+\end_layout
+
+\begin_layout Itemize
+Especialista em ciência e Tecnologia do Bioetanol
+\end_layout
+
+\begin_layout Itemize
+Especialista em ciências da computação
+\end_layout
+
+\begin_layout Itemize
+Especialista em economia agrícola
+\end_layout
+
+\begin_layout Itemize
+Especialista em biotecnologia
+\end_layout
+
+\begin_layout Itemize
+Mestrando em ciências da computação (sistemas web e multimídia)
+\end_layout
+
+\begin_layout Itemize
+Mestrando em Planejamento de Sistemas Energéticos 
+\end_layout
+
+\begin_layout Section
+Avaliação de SAD SustenAgro nos servidores da Embrapa
+\end_layout
+
+\begin_layout Description
+Data 18 de agosto do 2016
+\end_layout
+
+\begin_layout Description
+Participantes Especialista em Sustentabilidade e especialista em TI
+\end_layout
+
+\begin_layout Description
+Local Embrapa Meio Ambiente - Campinas
+\end_layout
+
+\begin_layout Description
+Técnica Test de usabilidade
+\end_layout
+
+\begin_layout Section
+Conclusões
 \end_layout
 
 \end_body

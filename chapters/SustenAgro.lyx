@@ -1425,17 +1425,9 @@ Atributo custo: indicadores que avaliam os aspectos dos custos da produção.
 \end_layout
 
 \begin_layout Standard
-A Agência Paulista de Tecnologia dos Agronegócios (APTA
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "APTA"
-description "Agência Paulista de Tecnologia dos Agronegócios"
-
-\end_inset
-
-) forneceu dados econômicos das principais usinas do estado de São Paulo,
- que permitiram definir a dimensão econômica das unidades produtivas na
- ontologia do domínio.
+A Agência Paulista de Tecnologia dos Agronegócios (APTA) forneceu dados
+ econômicos das principais usinas do estado de São Paulo, que permitiram
+ definir a dimensão econômica das unidades produtivas na ontologia do domínio.
 \end_layout
 
 \begin_layout Standard
@@ -1658,7 +1650,7 @@ widgets
 \begin_layout Section
 
 \lang english
-Web Components e Web UI
+Web UI
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Web-UI"
@@ -1689,7 +1681,42 @@ Storyboard
 \lang english
 Mockups
 \lang brazilian
- e protótipo de interface gráfica, que serão descritas a continuação:
+ e protótipo de interface gráfica.
+\end_layout
+
+\begin_layout Standard
+Como fase inicial, foram definidos os perfis de usuários do SAD SustenAgro,
+ inicialmente se definiram os perfis 
+\end_layout
+
+\begin_layout Itemize
+Administrador: usuário com permissões para editar Ontologias, DSL e web
+ UI, que é o responsável da administração do SAD, e tem todas as permissões
+ do sistema.
+\end_layout
+
+\begin_layout Itemize
+Especialista de domínio: especialista em sustentabilidade ou afins, com
+ permissões para recuperar e gerenciar informações das avaliações, gerar
+ reportes e mudar os conceitos relacionados com os indicadores e método
+ de avaliação.
+\end_layout
+
+\begin_layout Itemize
+Usuário final: usuário padrão do sistema que tem permissões para realizar
+ avaliações de sustentabilidade em cana-de-açúcar e de gerenciar os dados
+ cadastrados por ele.
+ 
+\end_layout
+
+\begin_layout Standard
+No SAD SustenAgro v1.0, foi removido o perfil especialista, ficando os perfis
+ administrador e usuário final.
+\end_layout
+
+\begin_layout Standard
+As técnicas realizadas para desenvolver as web UI, estão descritas a continuação
+:
 \end_layout
 
 \begin_layout Subsection
@@ -2927,6 +2954,14 @@ name "fig:Planilhas-de-resultado"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Section
+Web components
+\end_layout
+
+\begin_layout Standard
 Foram desenvolvidos dois 
 \lang english
 web components
@@ -2935,7 +2970,7 @@ web components
 o pelos especialistas da pela Embrapa Meio Ambiente 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Matriz de sustentabilidade
 \end_layout
 
@@ -3020,7 +3055,7 @@ name "fig:Matriz-de-sustentabilidade-widget"
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Semáforo da sustentabilidade
 \end_layout
 
@@ -3170,13 +3205,12 @@ Evaluation Object
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "breaklines=true"
 inline false
 status open
 
 \begin_layout Plain Layout
 
- evaluationObject ':ProductionUnit', {             
+evaluationObject ':ProductionUnit', {             
 \end_layout
 
 \begin_layout Plain Layout
@@ -3431,14 +3465,6 @@ el'],                ['en': 'Negative changes', 'pt': 'Alterações negativas'],
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3449,7 +3475,7 @@ name "lis:DSL-SustenAgro"
 
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
