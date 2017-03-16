@@ -4,12 +4,9 @@
     <list default="true" id="ef0b901e-39f9-4b04-80bd-9ccd21e6ec91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dissertation.lyx" afterPath="$PROJECT_DIR$/Dissertation.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Conclution.lyx" afterPath="$PROJECT_DIR$/chapters/Conclution.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Evaluation.lyx" afterPath="$PROJECT_DIR$/chapters/Evaluation.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Context.lyx" afterPath="$PROJECT_DIR$/chapters/Context.lyx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Introduction.lyx" afterPath="$PROJECT_DIR$/chapters/Introduction.lyx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SAD.lyx" afterPath="$PROJECT_DIR$/chapters/SAD.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SustenAgro.lyx" afterPath="$PROJECT_DIR$/chapters/SustenAgro.lyx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -192,12 +189,12 @@
       <workItem from="1489432918327" duration="1926000" />
       <workItem from="1489502933805" duration="1003000" />
       <workItem from="1489587156589" duration="413000" />
-      <workItem from="1489612204191" duration="38000" />
+      <workItem from="1489612204191" duration="1070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3380000" />
+    <option name="totallyTimeSpent" value="4412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="960" height="1053" extended-state="4" />

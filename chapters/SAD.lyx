@@ -78,8 +78,8 @@
 A construção de sistemas que sejam capazes de fornecer suporte ao gestor
  em um processo de tomada de decisões tem sido um desafio ao longo dos anos.
  Os Sistemas de Apoio à Decisão (SAD) são uma área de conhecimento ampla
- e existem múltiplas definições.
- A continuação serão apresentadas varias definições que permitem explicar
+ e existem múltiplas definições do termo.
+ A continuação serão apresentadas algumas definições que permitem explicar
  o proposito deste tipo de sistemas:
 \end_layout
 
@@ -108,8 +108,8 @@ key "heinzle2010semantica"
  na comparação dos fenômenos envolvidos e suportam a análise e escolha de
  alternativas no processo de decisão.
  Este entendimento do domínio, surge da combinação das habilidades e metodologia
-s dos especialistas (humanos), à capacidade dos computadores de acessar
- dados, estruturá-los em modelos, interpretar, formular e avaliar alternativas
+s dos especialistas (humanos) à capacidade dos computadores de acessar dados,
+ estruturá-los em modelos, interpretar, formular e avaliar alternativas
  e cenários distintos.
 \end_layout
 
@@ -118,7 +118,7 @@ Um conceito fundamental é o conhecimento dos especialistas do domínio que
  está iplicito nos SADs, que deve ser entendido e implementado pelos programador
 es.
  Esse processo poder ser lento e custoso, já que os dois grupos de profissionais
- têm 
+ têm
 \emph on
 \lang english
 Backgrounds
@@ -209,7 +209,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Componentes de um SAD, adaptada de 
+Componentes de um SAD, adaptada de
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Tweedale2016"
@@ -224,6 +224,22 @@ name "fig:Componentes-SAD"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fadaptada{Tweedale2016}
 \end_layout
 
 \end_inset

@@ -140,7 +140,7 @@ l, entendível e acessível pelos especialistas do domínio.
 \end_layout
 
 \begin_layout Standard
-Como exemplo do anterior problema, podemos expor o caso dos especialistas
+Como exemplo do problema anterior, podemos expor o caso dos especialistas
  em sustentabilidade da Embrapa Meio Ambiente, que desenvolveram o projeto
  SustenAgro (capitulo 
 \begin_inset CommandInset ref
@@ -172,19 +172,6 @@ status collapsed
 Pela anterior razão, o SAD SustenAgro foi escolhido como projeto piloto
  para desenvolver a presente pesquisa, devido a que ele apresenta o problema
  identificado.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-DSLs?
 \end_layout
 
 \end_inset
@@ -282,9 +269,8 @@ key "Matthews2008149"
 \end_layout
 
 \begin_layout Standard
-Com a finalidade de definir o meio de representação de conhecimento, foi
- analisada a teoria, onde foram analisados vários tipos de sistemas de organizaç
-ão de conhecimento ou
+Com a finalidade de definir o meio de representação de conhecimento, foram
+ analisados vários tipos de sistemas de organização de conhecimento ou
 \lang english
 Knowledge Organization System
 \lang brazilian
@@ -319,6 +305,20 @@ Desenvolver um método e ferramenta web, baseados em ontologias, que permitam
  SADs, onde uma ontologia, desenvolvida por especialistas de domínio, forma
  a base de conhecimento do SAD e instruções, numa DSL, servem para customizar
  seu comportamento.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DSLs?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -360,6 +360,7 @@ Desenvolver uma DSL que permita a definição da interface de usuário, das
 \begin_layout Itemize
 Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
  produtivos de cana-de-açúcar do centro-sul do Brasil.
+
 \end_layout
 
 \begin_layout Itemize
@@ -402,7 +403,7 @@ Ontologia sobre controles visuais para suportar a geração automática das
  interfaces gráficas do SAD SustenAgro.
  Ela permite associar tipos de dados às
 \lang english
- widgets
+widgets
 \lang brazilian
  necessárias para a geração automática das interfaces aos SADs.
 \end_layout
