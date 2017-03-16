@@ -77,10 +77,21 @@
 \begin_layout Standard
 A construção de sistemas que sejam capazes de fornecer suporte ao gestor
  em um processo de tomada de decisões tem sido um desafio ao longo dos anos.
- Os Sistemas de Apoio à Decisão (SAD) são uma área de conhecimento ampla
- e existem múltiplas definições do termo.
- A continuação serão apresentadas algumas definições que permitem explicar
- o proposito deste tipo de sistemas:
+ A continuação será explicado a definição de SAD, a arquitetura deles e
+ o SAD SustenAgro.
+\end_layout
+
+\begin_layout Section
+Definição de SAD
+\end_layout
+
+\begin_layout Standard
+Os Sistemas de Apoio à Decisão (SAD) são uma área de conhecimento ampla
+ e em continua evolução.
+ A definição de SAD deriva da definição de sistema, contendo um conjunto
+ de partes organizadas para um proposito comum, existem múltiplas definições
+ do termo SAD, a continuação serão apresentadas algumas definições que permitem
+ explicar o proposito deste tipo de sistemas.
 \end_layout
 
 \begin_layout Standard
@@ -94,7 +105,7 @@ key "Tweedale2016"
  decisão individual ou grupal, combinando o conhecimento do(s) tomador(es)
  de decisão com dados relevantes de fontes confiáveis, nos quais são aplicados
  métodos e modelos matemáticos para suportar a análise, comparação e escolha
- de alternativas no processo de decisão .
+ de alternativas no processo de decisão.
 \end_layout
 
 \begin_layout Standard
@@ -114,20 +125,37 @@ s dos especialistas (humanos) à capacidade dos computadores de acessar dados,
 \end_layout
 
 \begin_layout Standard
-Um conceito fundamental é o conhecimento dos especialistas do domínio que
- está iplicito nos SADs, que deve ser entendido e implementado pelos programador
-es.
- Esse processo poder ser lento e custoso, já que os dois grupos de profissionais
- têm
+O conhecimento dos especialistas do domínio é um conceito fundamental que
+ está implícito nos SADs.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Evans:2003:DDT:861502"
+
+\end_inset
+
+ explica existe uma necessidade de modelar o conhecimento profundo de um
+ domínio e os conceitos chaves em um modelo, que permitirá a comunicação
+ e colaboração entre especialistas de domínio e os desenvolvedores.
+ 
+\end_layout
+
+\begin_layout Standard
+O processo de modelagem pode ser lento e custoso, já que os dois grupos
+ de profissionais têm 
 \emph on
 \lang english
 Backgrounds
 \emph default
 \lang brazilian
- diferentes e que influira negativamente na comunicação durante o processo
- de criação e testes de um SAD.
+ diferentes, que influirão negativamente no processo de criação e testes
+ de um SAD.
  Esses profissionais podem ser até de organizações diferentes, o que dificulta
- ainda mais o processo.
+ ainda mais o processo, pelo qual foram pesquisados modelos que facilitem
+ o entendimento entre os dois tipos de profissionais.
+ A continuação será apresentada a arquitetura que explica a importância
+ dos modelos de conhecimento existentes dentro um SAD.
+ 
 \end_layout
 
 \begin_layout Section
@@ -145,10 +173,9 @@ key "de1997software"
 \end_inset
 
 .
- Ela fornece as informações de como os elementos envolvidos nela se relacionam.
- Arquiteturas trabalham a parte externa das ligações entre seus elementos,
- sendo que as implementações internas não são considerados arquiteturas
- 
+ A arquitetura fornece as informações de como os componentes dela se relacionam,
+ explicando a parte externa das ligações entre seus elementos, sendo que
+ as implementações internas não são considerados arquiteturas 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sei2006architecture"
@@ -159,31 +186,18 @@ key "sei2006architecture"
 \end_layout
 
 \begin_layout Standard
-Durante a evolução dos SAD, várias melhorias vem acontecendo, sendo tendência
- a integração com os métodos de inteligência artificial, para estender a
- aplicabilidade dos SAD a problemas complexos.
- Dentre os métodos existentes, estão o uso de bases de conhecimento que
- suportam inferência, permitindo o desenvolvimento de 
-\lang english
-Expert Systems
-\lang brazilian
- e 
-\lang english
-Knowledge Based Systems.
-
-\lang brazilian
- Esses sistemas são classificados como 
-\lang english
-Rule Based Systems
-\lang brazilian
+Estas partes são descritas por meio da arquitetura representada na figura
  
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Tweedale2016"
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Componentes-SAD"
 
 \end_inset
 
-, os quais se enquadram no escopo da pesquisa apresentada neste documento.
+, representando o processo dos SADs, no qual recebem uma entrada, fazem
+ um processamento e retorna resultados que são analisadas pelo tomador(es)
+ de decisão a través da tecnologia computacional.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -209,21 +223,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Componentes de um SAD, adaptada de
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Tweedale2016"
-
-\end_inset
-
-.
+Componentes de um SAD.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Componentes-SAD"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \end_inset
@@ -260,26 +267,14 @@ reference "fig:Componentes-SAD"
 
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-As figuras que não forem suas tem que ter o reconhecimento de origem 
-\backslash
-fadaptada{BlahBlah20141082}, voce fez isso?
-\end_layout
-
-\end_inset
-
-mostra os componentes de um SAD
+ mostra os componentes de um SAD
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Tweedale2016"
 
 \end_inset
 
-, que são descritos como: 
+, que são: 
 \end_layout
 
 \begin_layout Description
@@ -287,10 +282,11 @@ I
 \lang english
 nputs
 \lang brazilian
- Corresponde às entradas do sistema.
- Ela é composta do conhecimento dos especialistas, que pode estar representado
- numa base de conhecimento, e dos dados que serão processados, que podem
- estar em um banco de dados.
+ Corresponde às entradas do sistema, composta dos modelos de conhecimento
+ dos especialistas e dos dados que serão processados.
+ Os modelos pelo geral estão implícitos no SAD ou podem estar representados
+ em uma base de conhecimento, e os dados são representados por um banco
+ de dados.
  Esses dois componentes devem ser o mais precisos e completos possíveis
  para garantir boas respostas do sistema.
 \end_layout
@@ -301,9 +297,9 @@ nputs
 Processing
 \lang brazilian
  É composto pelos modelos e métodos de organização e processamento dos dados,
- e restrições para avaliar as alternativas de resposta.
- Esse componente contem os métodos matemáticos que processam os dados, permitind
-o gerar os resultados do sistema.
+ que tem restrições para avaliar as alternativas de resposta.
+ Os métodos podem ser de tipo matemáticos que processam os dados e geram
+ os resultados do sistema.
 \end_layout
 
 \begin_layout Description
@@ -313,51 +309,54 @@ Outputs
 \lang brazilian
  São os resultados do processamento dos inputs e permitem comparar as alternativ
 as de decisão.
- As saídas comuns são relatórios, previsões e recomendações, os quais são
- apresentados por meio de uma interface de usuário para facilitar o entendimento
- e interação com o usuário.
+ As saídas comuns são relatórios, previsões e recomendações, que são apresentado
+s por meio de uma interface de usuário para facilitar o entendimento e interação
+ pelo usuário.
 \end_layout
 
 \begin_layout Standard
-Os SAD contêm o conhecimento dos especialistas implícito nos componentes
- dele.
- Uma das mudanças da arquitetura 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-que outras mudancas houveram? vc esta falando das mudancas propostas por
- voce?
+Durante a evolução dos SAD, várias melhorias vem acontecendo, sendo tendência
+ a integração com os métodos de inteligência artificial, para estender a
+ aplicabilidade dos SAD a problemas complexos.
+ 
 \end_layout
 
-\end_inset
-
-foi que o conhecimento do especialista ficasse especificado em uma ontologia
- que permite definir, classificar, relacionar e inferir conhecimento.
- O uso de uma ontologia facilita a definição e atualização de conceitos,
- por parte dos especialistas, permitindo que eles mesmos descrevam o domínio
- sem precisar dos desenvolvedores.
- A partir dessa definição computável será gerado o SAD.
- Os especialistas do domínio terão familiaridade com os termos da ontologia,
- criada por eles, e poderão especificar grande parte do conhecimento envolvido
- no SAD.
- Idealmente, essa definição deve ser detalhada o suficiente para que os
- desenvolvedores possam desenvolver a parte computacional do SAD sem necessidade
- de 
+\begin_layout Standard
+Uma variação dos SADs integra bases de conhecimento que suportam inferência,
+ permitindo o desenvolvimento de 
 \lang english
-feedback
+Expert Systems
 \lang brazilian
- dos especialistas.
-\begin_inset Note Note
-status open
+ e 
+\lang english
+Knowledge Based Systems.
 
-\begin_layout Plain Layout
-está falando da sua solucao ou em geral?
-\end_layout
+\lang brazilian
+ Esses sistemas são classificados como 
+\lang english
+Rule Based Systems
+\lang brazilian
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tweedale2016"
 
 \end_inset
 
+, os quais se enquadram no escopo desta pesquisa.
+ 
+\end_layout
 
+\begin_layout Standard
+Os SAD que usam bases de conhecimento, podem representar o o conhecimento
+ dos especialistas em uma ontologia que permite definir, classificar, relacionar
+ e inferir conhecimento.
+ 
+\end_layout
+
+\begin_layout Standard
+A continuação será apresentado o SAD SustenAgro, como exemplo dos SADs baseados
+ em conhecimento.
 \end_layout
 
 \begin_layout Section
@@ -524,6 +523,27 @@ reference "chap:SustenAgro"
 
 \begin_layout Itemize
 Geração de relatórios e de recomendações de sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+O uso de uma ontologia facilita a definição e atualização de conceitos,
+ por parte dos especialistas, permitindo que eles mesmos descrevam o domínio
+ sem precisar dos desenvolvedores.A partir dessa definição computável será
+ gerado o SAD.
+ 
+\end_layout
+
+\begin_layout Standard
+Os especialistas do domínio terão familiaridade com os termos da ontologia,
+ criada por eles, e poderão especificar grande parte do conhecimento envolvido
+ no SAD.
+ Idealmente, essa definição deve ser detalhada o suficiente para que os
+ desenvolvedores possam desenvolver a parte computacional do SAD sem necessidade
+ de 
+\lang english
+feedback
+\lang brazilian
+ dos especialistas.
 \end_layout
 
 \begin_layout Section
@@ -1110,11 +1130,6 @@ status open
 
 \begin_layout Plain Layout
 Onde você quer chegar neste capítulo? Pensei que a ideia era:
-\end_layout
-
-\begin_layout Plain Layout
-Falar o que são os SADs.
- 
 \end_layout
 
 \begin_layout Plain Layout
