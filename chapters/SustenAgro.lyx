@@ -75,27 +75,9 @@
 \begin_body
 
 \begin_layout Standard
-O SAD SustenAgro é um sistema web que suporta a avaliação da sustentabilidade
- em cana-de-açúcar
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-A definição conceitual do processo de avaliação está no apêndice 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Sustainability_Assessment"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-, especificamente está composto por um conjunto de definições em formato
- de ontologias e DSL que permitem gera-o a través do framework Decisioner
- descrito no capitulo 
+O SAD SustenAgro especificamente está composto por um conjunto de definições
+ em formato de ontologias e DSL que permitem gera-o a través do framework
+ Decisioner descrito no capitulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Decisioner"
@@ -107,9 +89,15 @@ ilidade.
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento de SustenAgro permitiu definir os componentes principais
- do sistema Decisioner, pelo qual os dois sistemas estão muito relacionados
- mas correspondem a sistemas independentes.
+O desenvolvimento de SustenAgro e o analise de outros sistemas similares
+ permitiu definir os componentes principais do sistema Decisioner, pelo
+ qual os dois sistemas estão muito relacionados mas correspondem a sistemas
+ independentes.
+\end_layout
+
+\begin_layout Standard
+que podem ser avaliados e modelados com a finalidade de desenvolver um método
+ e ferramenta geral de definição de SADs
 \end_layout
 
 \begin_layout Standard
@@ -197,6 +185,33 @@ estes sistemas tem evoluído junto com a Web Shim et al.
 \begin_layout Standard
 permitindo simplificar a resolução de problemas que de outra maneira não
  seriam triviais.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wilson2007299"
+
+\end_inset
+
+ analisaram e melhoraram a abordagem para o desenho e uso de modelos de
+ Indicadores de Desenvolvimento Sustentável (
+\emph on
+\lang english
+Sustainable Development Indicators
+\emph default
+\lang brazilian
+ 
+\emph on
+– SDI)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SDI"
+description "Sustainable Development Indicator"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

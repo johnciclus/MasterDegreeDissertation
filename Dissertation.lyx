@@ -508,7 +508,11 @@ filename "chapters/SAD.lyx"
 \end_layout
 
 \begin_layout Chapter
-Ontologias e DSLs
+Ontologias e 
+\lang english
+DSLs
+\lang brazilian
+
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Context"
