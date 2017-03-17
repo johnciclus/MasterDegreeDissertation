@@ -827,7 +827,7 @@ URIs
 status open
 
 \begin_layout Plain Layout
-Vc ja flou de URIs?
+Vc ja falou de URIs?
 \end_layout
 
 \end_inset
@@ -1203,8 +1203,21 @@ tem citacao para o Protege nao precisa usar footnote
  Ele permite a edição de ontologias por usuários com conhecimento da linguagem
  OWL e oferece amplo suporte à definição de ontologias através de vários
  plugins.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
+
+\begin_layout Plain Layout
+Fale algo das triple stores SPARQL no capitulo de ontologias.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Plain Layout
 terminou meio seco.
@@ -1466,7 +1479,7 @@ O grande benefício que Groovy traz para este projeto, é o suporte que sua
  DSLs em Groovy se integram facilmente à própria linguagem Groovy de modo
  que não é aparente onde o código em Groovy termina e a DSL começa REF
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Groovy for Domain-Specific Languages Fergal Dearle
@@ -1592,7 +1605,7 @@ es de software, os especialistas poderiam se tornar, na prática, programadores
 \end_layout
 
 \begin_layout Section
-Trabalhos relacionados?
+Trabalhos relacionados???
 \end_layout
 
 \begin_layout Standard
@@ -1660,7 +1673,7 @@ reference "fig:Ontology-Enhanced-User-Interfaces-1"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center

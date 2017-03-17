@@ -377,21 +377,82 @@ SAD SustenAgro
 \end_layout
 
 \begin_layout Standard
-O SAD SustenAgro é um sistema de apoio na tomada de decisão que suporta
- a avaliação da sustentabilidade em cana-de-açúcar no centro-sul do Brasil
-\begin_inset Foot
-status open
+—
+\end_layout
 
-\begin_layout Plain Layout
-A definição conceitual do processo de avaliação está no apêndice 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Sustainability_Assessment"
+\begin_layout Standard
+Um domínio de conhecimento caracterizado pela sua complexidade são os sistemas
+ produtivos agrícolas.
+ Eles envolvem fenômenos de natureza diversa 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "simon1991architecture"
 
 \end_inset
 
+, integrando aspectos ambientais, sociais e econômicos, e também são muito
+ importantes para a economia do Brasil.
+ Particularmente, o sistemas produtivo da cana-de-açúcar é extremamente
+ importante para a economia do estado de São Paulo, além de ser uma das
+ principais culturas produzidas no pais 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Storquato2015"
 
+\end_inset
+
+.
+ Por essas razões, a Embrapa escolheu especificamente o setor produtivo
+ da cultura de cana-de-açúcar na região centro-sul do Brasil, como sistema
+ piloto para o SustenAgro.
 \end_layout
+
+\begin_layout Standard
+Dada a complexidade da análise da sustentabilidade agrícola, em sistemas
+ de produção agrícola, os pesquisadores da Embrapa Meio Ambiente trabalharam
+ na definição de métodos que permitissem avaliar a sustentabilidade de maneira
+ integral 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Singh2012281"
+
+\end_inset
+
+.
+ Por essa razão, desenvolveram um método que aborda a avaliação em termos
+ de indicadores.
+ Cada indicador mede um determinado aspecto crítico no sistema produtivo,
+ para determinar o quão sustentável ele é.
+ A partir da análise de cada indicador, é possível gerar recomendações de
+ medidas corretivas para as unidades produtivas ou para o embasamento de
+ políticas públicas de incentivo a sustentabilidade.
+ 
+\end_layout
+
+\begin_layout Standard
+A partir do método de avaliação SustenAgro, foi desenvolvida uma ferramenta
+ de avaliação da sustentabilidade intitulada SAD SustenAgro que implementa
+ o método SustenAgro por meio de um sistema de apoio a decisão e que consegue
+ adaptar-se às mudanças do domínio, o qual está baseado em uma ontologia
+ que permitem representar e estruturar o conhecimento de avaliação da sustentabi
+lidade em agricultura, gerando uma representação mais exata da realidade
+ do que outros modelos de dados, em formato de ontologias da web semântica,
+ sobre o qual é possível fazer inferências e assim gerar informações para
+ suportar a decisão.
+\end_layout
+
+\begin_layout Standard
+—
+\end_layout
+
+\begin_layout Standard
+O SAD SustenAgro é um sistema de apoio na tomada de decisão que suporta
+ a avaliação da sustentabilidade em cana-de-açúcar no centro-sul do Brasil.
+ A definição conceitual do processo de avaliação é detalhada no apêndice
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Sustainability_Assessment"
 
 \end_inset
 
