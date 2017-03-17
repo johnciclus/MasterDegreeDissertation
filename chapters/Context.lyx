@@ -1592,6 +1592,121 @@ es de software, os especialistas poderiam se tornar, na prática, programadores
 \end_layout
 
 \begin_layout Section
+Trabalhos relacionados?
+\end_layout
+
+\begin_layout Standard
+Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
+ propusessem a geração automática de interface para Sistemas de Apoio a
+ Decisão (SADs) com ou sem o uso de ontologias.
+ Os artigos encontrados mais próximos ao tema deste trabalho tratam do uso
+ de ontologias ou de 
+\lang english
+frameworks
+\lang brazilian
+ em SADs para a área de sustentabilidade, área que vai ser usada neste trabalho
+ para teste dos sistemas desenvolvidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ruiz2006using"
+
+\end_inset
+
+ analisou e identificou 50 tipos de uso de ontologias na engenharia de software,
+ entre as quais foram identificados dois usos no suporte a interfaces gráficas.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "paulheim2012ontology"
+
+\end_inset
+
+ propõem a definição de uma 
+\lang english
+ontology-enhanced user
+\lang brazilian
+ interface, que são um tipo de GUIs cujas capacidades de visualização, possibili
+dades de interação, ou processo de desenvolvimento são habilitados ou (pelo
+ menos) melhorados pelo emprego de uma ou mais ontologias.
+ Nessa pesquisa foram identificados três propósitos para os quais são usadas
+ as ontologias no melhoramento das interfaces gráficas:
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as capacidades de visualização
+\end_layout
+
+\begin_layout Enumerate
+Melhorar as possibilidades de interação
+\end_layout
+
+\begin_layout Enumerate
+Melhorar o processo de desenvolvimento
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ontology-Enhanced-User-Interfaces-1"
+
+\end_inset
+
+ apresenta os tipos de usos das ontologias nas UI.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Ontology-enhanced user interfaces.png
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Ontology Enhanced User Interfaces
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ontology-Enhanced-User-Interfaces-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Essas pesquisam dão a noção de que ontologias podem contribuir significativament
+e na geração de Web UI flexíveis e de SADs, confirmando a hipótese assumida
+ na presente pesquisa.
+ 
+\end_layout
+
+\begin_layout Section
 Considerações finais
 \end_layout
 

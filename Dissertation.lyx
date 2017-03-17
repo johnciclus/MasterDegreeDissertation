@@ -529,7 +529,7 @@ filename "chapters/Context.lyx"
 \end_layout
 
 \begin_layout Chapter
-Decisioner
+Decisioner Framework
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Decisioner"
@@ -550,7 +550,7 @@ filename "chapters/Decisioner.lyx"
 \end_layout
 
 \begin_layout Chapter
-SustenAgro
+SustenAgro SAD
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:SustenAgro"
