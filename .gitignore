@@ -48,3 +48,4 @@
 *.synctex.gz
 
 .idea/
+.idea/*

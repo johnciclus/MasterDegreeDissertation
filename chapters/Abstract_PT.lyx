@@ -128,7 +128,29 @@ EndPreamble
 \begin_body
 
 \begin_layout Standard
-Resumo
+A partir desta abordagem foi desenvolvida uma ferramenta web, intitulada
+ Decisioner, que tem o formato de um framework para SADs, onde uma ontologia,
+ desenvolvida por especialistas de domínio, forma a base de conhecimento
+ do SAD.
+\end_layout
+
+\begin_layout Standard
+O Framework Decisioner facilita a definição dos SADs por meio de instruções
+ de uma 
+\lang english
+Domain Specific Language
+\lang brazilian
+ (DSL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSL"
+description "Domain Specific Language"
+
+\end_inset
+
+), que permite definir uma linguagem computacional com termos do domínio
+ dos especialistas para facilitar o uso a as instruções que são definidas
+ nela.
 \end_layout
 
 \begin_layout Standard

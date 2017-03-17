@@ -75,76 +75,54 @@
 \begin_body
 
 \begin_layout Standard
-O SAD SustenAgro é um sistema web que suporta a avaliação da sustentabilidade
- em cana-de-açúcar
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-A definição conceitual do processo de avaliação está no apêndice 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Sustainability_Assessment"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-, especificamente está composto por um conjunto de definições em formato
- de ontologias e DSL que permitem gera-o a través do framework Decisioner
- descrito no capitulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Decisioner"
-
-\end_inset
-
-, o principal componente dele é a ontologia do domínio em avaliação da sustentab
-ilidade.
-\end_layout
-
-\begin_layout Standard
-O desenvolvimento de SustenAgro permitiu definir os componentes principais
- do sistema Decisioner, pelo qual os dois sistemas estão muito relacionados
- mas correspondem a sistemas independentes.
-\end_layout
-
-\begin_layout Standard
 Um domínio de conhecimento caracterizado pela complexidade são os sistemas
- produtivos agrícolas que envolvem fenômenos de natureza diversa (Simon,
- 1991), integrando aspectos ambientais, sociais e econômicos, e tendo em
- conta as projeções da FAO (2013) 
+ produtivos agrícolas que envolvem fenômenos de natureza diversa 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "simon1991architecture"
+
+\end_inset
+
+, integrando aspectos ambientais, sociais e econômicos.
+ Também é relevante a importância dos sistemas agrícolas no Brasil, sistemas
+ produtivos como o de cana-de-açúcar que é extremamente importante para
+ a economia do Brasil e do estado de São Paulo, devido a que é uma das principai
+s culturas produzidas no pais 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Storquato2015"
+
+\end_inset
+
+, pelo qual foi escolhido como sistema produtivo piloto para abordar a pesquisa.
 \end_layout
 
 \begin_layout Standard
-especificamente pesquisadores da Embrapa Meio Ambiente trabalham na definição
- de métodos que permitam avaliar da sustentabilidade de maneira integral
- Singh et al.
- (2012)
-\end_layout
+Dada a complexidade dos sistemas de produção agrícola, especificamente na
+ sustentabilidade agrícola, os pesquisadores da Embrapa Meio Ambiente trabalhara
+m na definição de métodos que permitam avaliar da sustentabilidade de maneira
+ integral 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Singh2012281"
 
-\begin_layout Standard
-foi evidenciada a necessidade de fornecer sistemas e ferramentas computacionais
- que organizem a informação, para apoiar aos especialistas a tomar decisões
- baseadas em conhecimento
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Dada a complexidade dos sistemas de produção agrícola, surgiu a necessidade
- de determinar um método de , por esta razão desenvolveram um método de
- avaliação de sustentabilidade que aborda a avaliação em termos de indicadores,
- medindo aspectos críticos no sistema produtivo, para determinar se é ou
- não é sustentável, e assim gerar recomendações para tomar medidas corretivas.
+.
+ Por esta razão desenvolveram um método de avaliação de sustentabilidade
+ que aborda a avaliação em termos de indicadores, medindo aspectos críticos
+ no sistema produtivo, para determinar se é ou não é sustentável, e assim
+ gerar recomendações para tomar medidas corretivas nas unidades produtivas
+ e que a futuro possibilitem o embasamento de politicas públicas que incentivem
+ a sustentabilidade no setor produtivo da cultura de cana-de-açúcar no centro-su
+l do Brasil.
 \end_layout
 
 \begin_layout Standard
 A partir do método de avaliação, foi desenvolvida uma ferramenta de avaliação
- da sustentabilidade intitulada software SustenAgro que implementa o método
- SustenAgro por meio de um sistema de apoio a decisão e que consegue adaptar-se
- às mudanças do domínio, o qual está baseado em uma ontologia que permitem
+ da sustentabilidade intitulada SAD SustenAgro que implementa o método SustenAgr
+o por meio de um sistema de apoio a decisão e que consegue adaptar-se às
+ mudanças do domínio, o qual está baseado em uma ontologia que permitem
  representar e estruturar o conhecimento de avaliação da sustentabilidade
  em agricultura, gerando uma representação mais exata da realidade do que
  outros modelos de dados, em formato de ontologias da web semântica, sobre
@@ -153,50 +131,17 @@ A partir do método de avaliação, foi desenvolvida uma ferramenta de avaliaç�
 \end_layout
 
 \begin_layout Standard
-Também foi desenvolvida a ontologia de representação das interfaces gráficas,
- permitindo um mapeamento entre conceitos do domínio dos especialistas e
- as interfaces gráficas, concedendo flexibilidade ao sistema para adaptar-se
- às mudanças dos conceitos do domínio de conhecimento.
-\end_layout
+O SAD SustenAgro especificamente está composto por um conjunto de definições
+ em formato de ontologias e DSL que permitem gera-o a través do framework
+ Decisioner descrito no capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Decisioner"
 
-\begin_layout Standard
-As ontologias forneceram uma representação de conhecimento, que foi gerenciada
- desde uma , desenhada para gerar sistemas de apoio a decisão, dita linguagem
- e o interprete dela foram intitulados Decisioner, os quais constituem uma
- ferramenta geradora de sistemas de avaliação.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-O desenvolvimento do SAD SustenAgro foi apoiado pela Embrapa Meio Ambiente,
- instituição parceira que planejou e executou o projeto SustenAgro, cuja
- finalidade é fornecer os fundamentos teóricos para suportar avaliações
- que possibilitem o embasamento de politicas públicas que incentivem a sustentab
-ilidade no setor produtivo da cultura de cana-de-açúcar no centro-sul do
- Brasil.
-\end_layout
-
-\begin_layout Standard
-e para usuários especialistas
-\end_layout
-
-\begin_layout Standard
-dentro deles está o sistema produtivo de cana-de-açúcar que é extremamente
- importante para a economia do Brasil e do estado de São Paulo, devido a
- que é uma das principais culturas produzidas no pais Sérgio Alves Torquato
- (2015), pelo qual foi escolhido como sistema produtivo piloto para abordar
- a presente pesquisa.
-\end_layout
-
-\begin_layout Standard
-estes sistemas tem evoluído junto com a Web Shim et al.
- (2002), integrando novas técnicas no processamento dos dados, tecnologias
- na representação visual de resultados e no uso colaborativo por parte dos
- usuários.
-\end_layout
-
-\begin_layout Standard
-permitindo simplificar a resolução de problemas que de outra maneira não
- seriam triviais.
+, o principal componente dele é a ontologia do domínio em avaliação da sustentab
+ilidade.
 \end_layout
 
 \begin_layout Section

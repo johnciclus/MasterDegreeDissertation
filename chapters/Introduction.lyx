@@ -165,18 +165,6 @@ lidade em cana-de-açúcar.
  Nesse caso, foi identificado que eles possuíam o conhecimento do domínio
  de avaliação de sustentabilidade da cana-de-açúcar, mas não tinham um meio
  para definir esse conhecimento de maneira computável em um SAD.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Pela anterior razão, o SAD SustenAgro foi escolhido como projeto piloto
- para desenvolver a presente pesquisa, devido a que ele apresenta o problema
- identificado.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -252,9 +240,9 @@ key "Lee2008349"
 \end_inset
 
 .
- O desenvolvimento do SAD SustenAgro, em cooperação com a Embrapa Meio Ambiente,
- poderia gerar impacto positivo na produção agrícola, já que ele fornece
- a funcionalidade de avaliar a sustentabilidade na cana-de-açúcar.
+ O desenvolvimento e do SAD SustenAgro, em cooperação com a Embrapa Meio
+ Ambiente, poderia gerar impacto positivo na produção agrícola, já que ele
+ fornece a funcionalidade de avaliar a sustentabilidade na cana-de-açúcar.
  Este SAD em particular é uma contribuição inédita que também permite a
  aplicação em outros sistemas agrícolas, o que poderia suportar melhoras
  e correções na produção de alimentos e produtos agrícolas
@@ -265,12 +253,11 @@ key "Matthews2008149"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
 Com a finalidade de definir o meio de representação de conhecimento, foram
- analisados vários tipos de sistemas de organização de conhecimento ou
+ analisados vários tipos de sistemas de organização de conhecimento ou 
 \lang english
 Knowledge Organization System
 \lang brazilian
@@ -287,10 +274,40 @@ description "Knowledge Organization System"
 \end_inset
 
 ).
- Um dos sistemas mais completos são as ontologias porque permitem definir,
- classificar, relacionar e inferir conhecimento.
+ 
+\end_layout
+
+\begin_layout Standard
+Um dos 
+\lang english
+KOS
+\lang brazilian
+ mais completos são as ontologias porque permitem definir, classificar,
+ relacionar e inferir conhecimento.
  Por este motivo as ontologias foram selecionadas para representar a modelagem
- do domínio dos especialistas, as quais serão integradas no SAD SustenAgro.
+ do domínio dos especialistas.
+\end_layout
+
+\begin_layout Standard
+Numa parceria com a Embrapa Meio Ambiente, a ontologia do SustenAgro foi
+ desenvolvida pelos especialistas da Embrapa, nas áreas de biologia e agricultur
+a as ontologias são comuns, assim eles não tiveram dificuldade com o conceito.
+ Eles usaram uma DSL para formatar as perguntas aos usuários finais, definir
+ o método de avaliação e gerar o relatório de cada análise.
+ Eles apreciaram muito o fato de usar uma ontologia num SAD, foi a primeira
+ vez que fizeram isso, e de que, ao mudar essa ontologia, verem suas mudanças
+ imediatamente no software.
+\end_layout
+
+\begin_layout Standard
+Além das motivações vinculadas com o domínio dos especialistas existe a
+ motivação de desenvolver novas tecnologias, uma contribuição tecnologia
+ desta pesquisa foi o Framework composto por ontologias e 
+\lang english
+DSLs
+\lang brazilian
+, intitulado Decisioner, cujo proposito é facilitar a implementação de SADs,
+ esse framework foi instanciado para produzir o SAD SustenAgro.
 \end_layout
 
 \begin_layout Section
@@ -301,37 +318,7 @@ Objetivo
 Desenvolver um método e ferramenta web, baseados em ontologias, que permitam
  representar o conhecimento de especialistas do domínio para suportar a
  definição de SADs.
- Essa ferramenta, chamada Decisioner, tem o formato de um framework para
- SADs, onde uma ontologia, desenvolvida por especialistas de domínio, forma
- a base de conhecimento do SAD e instruções, numa DSL, servem para customizar
- seu comportamento.
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-DSLs?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Numa parceria com a Embrapa Meio-ambiente, esse framework foi instanciado
- para produzir o SAD SustenAgro.
- A ontologia do SustenAgro foi desenvolvida pelos especialistas da Embrapa.
- Ontologias são comuns na área de biologia e agricultura, assim eles não
- tiveram dificuldade com o conceito.
- Eles usaram a DSL para formatar as perguntas aos usuários e o relatório
- de cada análise.
- Eles apreciaram muito o fato de usar uma ontologia num SAD, foi a primeira
- vez que fizeram isso, e de que, ao mudar essa ontologia, verem suas mudanças
- imediatamente no software.
+ 
 \end_layout
 
 \begin_layout Subsection*
@@ -360,7 +347,6 @@ Desenvolver uma DSL que permita a definição da interface de usuário, das
 \begin_layout Itemize
 Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
  produtivos de cana-de-açúcar do centro-sul do Brasil.
-
 \end_layout
 
 \begin_layout Itemize
@@ -387,7 +373,15 @@ Método e framework Decisioner para definir SADs por parte dos especialistas
 \end_layout
 
 \begin_layout Itemize
-Protótipo do Decisioner usando a linguagem Groovy e o framework Grails.
+Protótipo do Decisioner usando a linguagem 
+\lang english
+Groovy
+\lang brazilian
+ e o framework 
+\lang english
+Grails
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Itemize
@@ -401,16 +395,16 @@ idade da Embrapa.
 \begin_layout Itemize
 Ontologia sobre controles visuais para suportar a geração automática das
  interfaces gráficas do SAD SustenAgro.
- Ela permite associar tipos de dados às
+ Ela permite associar tipos de dados aos 
 \lang english
-widgets
+web components
 \lang brazilian
- necessárias para a geração automática das interfaces aos SADs.
+ para a geração automática das interfaces aos SADs.
 \end_layout
 
 \begin_layout Itemize
 O SAD SustenAgro: Sistema para avaliação da sustentabilidade em cana-de-açúcar,
- na região centro-sul do Brasil, implementado usando o Decisioner.
+ na região centro-sul do Brasil, usando o Decisioner.
 \end_layout
 
 \begin_layout Itemize
@@ -447,17 +441,7 @@ Resultados avaliação.
 \end_layout
 
 \begin_layout Section
-Organização
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Rever no fim da escrita.
-\end_layout
-
-\end_inset
-
-
+Organização da dissertação.
 \end_layout
 
 \begin_layout Standard
@@ -472,9 +456,9 @@ Capítulo 2: Apresenta a definição de SAD, as características do SAD SustenAg
 \end_layout
 
 \begin_layout Standard
-Capítulo 3: Apresenta a fundamentação teórica sobre Ontologias e DSL, com
- a finalidade de descrever as principais tecnologias e a teoria necessária
- para desenvolver o presente trabalho.
+Capítulo 3: Apresenta as Ontologias e DSL, com a finalidade de descrever
+ as principais tecnologias e a teoria necessária para desenvolver o presente
+ trabalho.
 \end_layout
 
 \begin_layout Standard
