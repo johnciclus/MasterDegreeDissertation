@@ -75,11 +75,11 @@
 \begin_body
 
 \begin_layout Standard
-A partir da descrição das características do SAD SustenAgro, do requisito
- de modelar o conhecimento a través de ontologias da web semântica e de
- definir uma DSL para facilitar a definição de conhecimento por parte dos
- especialistas, foi modelado e desenvolvido um protótipo de sistema intitulado
- Decisioner, que permite definir e gerar SADs do tipo SustenAgro.
+A partir da descrição das características do SAD SustenAgro, da modelagem
+ do conhecimento a través de ontologias da web semântica e de definir uma
+ DSL para facilitar a definição de conhecimento por parte dos especialistas,
+ foi modelado e desenvolvido um protótipo de framework intitulado Decisioner,
+ que permite definir e gerar SADs do tipo SustenAgro.
 \end_layout
 
 \begin_layout Standard

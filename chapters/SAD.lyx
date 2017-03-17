@@ -318,9 +318,19 @@ s por meio de uma interface de usuário para facilitar o entendimento e interaç
 \end_layout
 
 \begin_layout Standard
-Durante a evolução dos SAD, várias melhorias vem acontecendo, sendo tendência
- a integração com os métodos de inteligência artificial, para estender a
- aplicabilidade dos SAD a problemas complexos.
+Durante a evolução dos SAD, várias melhorias vem acontecendo, entre elas
+ o desenvolvimento da Web permitiu integrar novas técnicas no processamento
+ dos dados, tecnologias na representação visual de resultados e no uso colaborat
+ivo por parte dos usuários 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Shim2002"
+
+\end_inset
+
+.
+ Também existe a tendência da integração com métodos de inteligência artificial,
+ para estender a aplicabilidade dos SAD a problemas complexos.
  
 \end_layout
 
@@ -702,10 +712,14 @@ https://www.embrapa.br/en/busca-de-produtos-processos-e-servicos/-/produto-servi
 \end_layout
 
 \begin_layout Standard
-A partir do analise das ferramentas listadas foi identificado que tinham
- em comum um método de avaliação que processava de maneira matemática um
- conjunto de dados e gerava relatórios com resultados da avaliação, gráficos
- e recomendações.
+A partir do analise das ferramentas listadas foi evidenciada a necessidade
+ de fornecer sistemas e ferramentas computacionais que organizem a informação.
+ Para apoiar aos especialistas a tomar decisões baseadas em conhecimento,
+ permitindo simplificar a resolução de problemas que de outra maneira não
+ seriam triviais.
+ Exatamente foi identificado que ditos sistemas tinham em comum um método
+ de avaliação que processava de maneira matemática um conjunto de dados
+ e gerava relatórios com resultados da avaliação, gráficos e recomendações.
 \end_layout
 
 \begin_layout Standard

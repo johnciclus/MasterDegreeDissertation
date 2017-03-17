@@ -128,7 +128,31 @@ EndPreamble
 \begin_body
 
 \begin_layout Standard
+O desenvolvimento de SustenAgro e o analise de outros sistemas similares
+ permitiu definir os componentes principais do sistema Decisioner, pelo
+ qual os dois sistemas estão muito relacionados mas correspondem a sistemas
+ independentes.
+\end_layout
 
+\begin_layout Standard
+que podem ser avaliados e modelados com a finalidade de desenvolver um método
+ e ferramenta geral de definição de SADs
+\end_layout
+
+\begin_layout Standard
+Também foi desenvolvida a ontologia de representação das interfaces gráficas,
+ permitindo um mapeamento entre conceitos do domínio dos especialistas e
+ as interfaces gráficas, concedendo flexibilidade ao sistema para adaptar-se
+ às mudanças dos conceitos do domínio de conhecimento.
+\end_layout
+
+\begin_layout Standard
+As ontologias forneceram uma representação de conhecimento, que foi gerenciada
+ desde uma DSL, desenhada para gerar sistemas de apoio a decisão por parte
+ dos usuários especialistas, dita linguagem e o interprete dela foram intitulado
+s Decisioner, os quais constituem uma ferramenta geradora de sistemas de
+ avaliação.
+ 
 \end_layout
 
 \end_body
