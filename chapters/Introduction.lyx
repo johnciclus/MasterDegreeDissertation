@@ -334,8 +334,7 @@ Para alcançar o objetivo proposto, foi necessário cumprir os seguintes objetiv
 Definir a arquitetura e o código da ferramenta Decisioner para gerar SADs
  baseados em conhecimento de domínios específicos.
  Os SADs gerados usam uma ontologia, desenvolvida por especialistas do domínio
- e uma DSL, para, automaticamente, gerar as interfaces e funcionalidades
- do sistema.
+ e uma DSL, para gerar as interfaces e funcionalidades do sistema.
 \end_layout
 
 \begin_layout Itemize

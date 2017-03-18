@@ -75,16 +75,47 @@
 \begin_body
 
 \begin_layout Standard
-A continuação serão apresentadas as avaliações realizadas a cada um dos
- produtos resultantes da presente pesquisa.
+O Framework Decisioner (capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Decisioner"
+
+\end_inset
+
+) e o SAD SustenAgro (capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:SustenAgro"
+
+\end_inset
+
+), são sistemas software que precisavam avaliação para verificar se os requisito
+s foram implementados corretamente.
+ Estes dois sistemas foram desenvolvidos com metodologias iterativas, realizando
+ varias inspeções e testes durante a implementação, porém, foi realizada
+ uma avaliação final para permita concluir a correta implementação dos sistemas.
+\end_layout
+
+\begin_layout Standard
+A continuação são apresentadas as avaliações realizadas a cada um dos sistemas
+ resultantes da pesquisa, as avaliações foram independentes, mas cada uma
+ gerou resultados que fizeram redesenhar as arquiteturas dos produtos.
 \end_layout
 
 \begin_layout Section
-Avaliação do processo de 
-\lang english
-UCD
-\lang brazilian
- das interfaces visuais.
+Avaliação das web UI.
+\end_layout
+
+\begin_layout Standard
+Na finalização do processo de design das UI explicado em 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Web-UI"
+
+\end_inset
+
+, foi realizada uma avaliação da usabilidade das web UI do SAD SustenAgro,
+ os detalhes da avaliação foram:
 \end_layout
 
 \begin_layout Description
@@ -92,8 +123,8 @@ Data Junho do 2015
 \end_layout
 
 \begin_layout Description
-Participantes Especialista em sustentabilidade e especialista em economia
- agrícola
+Participantes Usuários da ferramenta: especialista em sustentabilidade e
+ especialista em economia agrícola
 \end_layout
 
 \begin_layout Description
@@ -109,49 +140,49 @@ description " Instituto de Ciências Matemáticas e de Computação"
 \end_layout
 
 \begin_layout Description
-Técnica Avaliação da usabilidade de interfaces
+Técnica Avaliação de usabilidade
 \end_layout
 
 \begin_layout Standard
-Finalizado o processo de design da UI explicado em 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Web-UI"
-
-\end_inset
-
-, foi apresentado uma protótipo visual do SAD SustenAgro aos especialistas
- em sustentabilidade, na que podiam interagir com as telas a través de um
- navegador web.
- Este protótipo não tinha dados reais, eles foram definidos pelo desenvolvedor
- para simular condições reais e com o objetivo de avaliar a interação dos
- usuários do sistema.
+Nesta avaliação foi apresentado aos usuários especialistas em sustentabilidade
+ o processo de design da UI e o protótipo da interface gráfica de usuário
+ do SAD SustenAgro sem dados reais.
+ Nessas interfaces eles interagiram com as telas a través de um navegador
+ web, fazendo uso das funcionalidades do SAD que simula os dados durante
+ o processo.
 \end_layout
 
 \begin_layout Standard
-Foi presentado o protótipo das interfaces gráficas aos especialistas e eles
- avaliaram:
+Durante a avaliação foi verificado:
 \end_layout
 
 \begin_layout Itemize
-Facilidade de uso: as interfaces correspondiam às funcionalidades definidas,
- e permitiam realizar de maneira explicita as tarefas.
+Eficácia: as interfaces permitiram realizar as tarefas segundo às funcionalidade
+s definidas e permitiam interagir de maneira intuitiva para realizar as
+ tarefas.
 \end_layout
 
 \begin_layout Itemize
-Accessibilidade: o aceso à ferramenta foi possível desde vários navegadores
- web sem inconvenientes, e as telas tinham informações de ajuda para acompanhar
- a interação.
+Eficiência: o aceso à ferramenta foi realizado em tempos imediatos e possível
+ realizar desde os recursos típicos de um laptop com um navegador, e as
+ telas tinham informações de ajuda para acompanhar a interação.
+\end_layout
+
+\begin_layout Itemize
+Satisfação: os usuários conseguiram realizar as tarefas sem problemas e
+ com uma experiencia de fácil uso.
 \end_layout
 
 \begin_layout Standard
-A avaliação foi positiva, e gerou varias mudanças, entre elas as mais relevantes
- foram: 
+A avaliação foi positiva, cumprindo os três anteriores aspectos que compõem
+ a usabilidade.
+ Esta avaliação gerou varias recomendações para melhorar a interface gráfica
+ de usuário, entre elas as mais relevantes foram: 
 \end_layout
 
-\begin_layout Standard
-A organização do processo de avaliação, agrupando varias tarefas que estavam
- separadas em uma seção denominada 
+\begin_layout Itemize
+Mudar a organização do processo de avaliação, agrupando varias tarefas que
+ estavam separadas em uma seção denominada 
 \begin_inset Quotes eld
 \end_inset
 
@@ -164,8 +195,8 @@ lização da informação em um processo unificado.
  
 \end_layout
 
-\begin_layout Standard
-A organização dos resultados em uma seção 
+\begin_layout Itemize
+Agrupar os resultados em uma seção 
 \begin_inset Quotes eld
 \end_inset
 
@@ -175,15 +206,21 @@ Resultados
 
 , integrando os 
 \lang english
-web components
+Web Components
 \lang brazilian
  específicos do SustenAgro com os resultados da avaliação.
- 
+\end_layout
+
+\begin_layout Itemize
+Organizar os indicadores em uma hierarquia simplificada que facilita-se
+ a o preenchimento dos indicadores.
 \end_layout
 
 \begin_layout Standard
-Finalmente, a organização dos indicadores em uma hierarquia simplificada
- que facilita-se a o preenchimento dos indicadores
+Depois de implementar as recomendações anteriores, foi continuado o ciclo
+ de desenvolvimento, sendo necessário realizar ajustes da interface em cada
+ funcionalidade, más as principais melhoras foram realizadas devido a esta
+ avaliação.
 \end_layout
 
 \begin_layout Section
@@ -390,7 +427,7 @@ Local Instituto de Ciências Matemáticas e de Computação (ICMC-USP)
 \end_layout
 
 \begin_layout Description
-Técnica Percurso cognitivo
+Técnica Test de usabilidade
 \end_layout
 
 \begin_layout Standard

@@ -1816,9 +1816,9 @@ reference "fig:Web-UI"
 
 \end_inset
 
- apresenta uma interface gráfica web de usuário que foi gerada automaticamente
- a partir dos dados da ontologia e das definições na DSL, nela são apresentados
- vários tipos de 
+ apresenta uma interface gráfica web de usuário que foi gerada a partir
+ dos dados da ontologia e das definições na DSL, nela são apresentados vários
+ tipos de 
 \lang english
 web components
 \lang brazilian
