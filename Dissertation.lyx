@@ -508,14 +508,14 @@ filename "chapters/SAD.lyx"
 \end_layout
 
 \begin_layout Chapter
-Ontologias e 
+Web Semântica e 
 \lang english
 DSLs
 \lang brazilian
 
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Context"
+name "chap:SemanticWebAndDSLs"
 
 \end_inset
 
@@ -525,7 +525,7 @@ name "chap:Context"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "chapters/Context.lyx"
+filename "chapters/SemanticWebAndDSLs.lyx"
 
 \end_inset
 

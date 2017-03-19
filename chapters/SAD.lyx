@@ -77,8 +77,8 @@
 \begin_layout Standard
 A construção de sistemas que sejam capazes de fornecer suporte ao gestor
  em um processo de tomada de decisões tem sido um desafio ao longo dos anos.
- A continuação será explicado a definição de SAD, a arquitetura deles e
- o SAD SustenAgro.
+ A continuação será explicado a definição e arquitetura de SAD, o SAD SustenAgro
+ e os trabalhos relacionados.
 \end_layout
 
 \begin_layout Section
@@ -88,10 +88,10 @@ Definição de SAD
 \begin_layout Standard
 Os Sistemas de Apoio à Decisão (SAD) são uma área de conhecimento ampla
  e em continua evolução.
- A definição de SAD deriva da definição de sistema, contendo um conjunto
- de partes organizadas para um proposito comum, existem múltiplas definições
- do termo SAD, a continuação serão apresentadas algumas definições que permitem
- explicar o proposito deste tipo de sistemas.
+ A definição de SAD deriva da definição de sistema, pois eles contem um
+ conjunto de partes organizadas para um proposito comum, existem múltiplas
+ definições do termo SAD, a continuação serão apresentadas algumas definições
+ que permitem explicar o proposito deste tipo de sistemas.
 \end_layout
 
 \begin_layout Standard
@@ -101,11 +101,11 @@ key "Tweedale2016"
 
 \end_inset
 
- define os SADs são sistemas de software que visam melhorar a tomada de
- decisão individual ou grupal, combinando o conhecimento do(s) tomador(es)
- de decisão com dados relevantes de fontes confiáveis, nos quais são aplicados
- métodos e modelos matemáticos para suportar a análise, comparação e escolha
- de alternativas no processo de decisão.
+ define os SADs como sistemas software que visam melhorar a tomada de decisão
+ individual ou grupal, combinando o conhecimento do(s) tomador(es) de decisão
+ com dados relevantes de fontes confiáveis, nos quais são aplicados métodos
+ e modelos matemáticos para suportar a análise, comparação e escolha de
+ alternativas no processo de decisão.
 \end_layout
 
 \begin_layout Standard
@@ -128,35 +128,35 @@ s dos especialistas (humanos) à capacidade dos computadores de acessar dados,
 O conhecimento dos especialistas do domínio está implícito nos SADs.
  
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Evans:2003:DDT:861502"
 
 \end_inset
 
  explica que existe uma necessidade de modelar o conhecimento chave de um
- domínio em um modelo, que permitirá a comunicação e colaboração entre especiali
-stas de domínio e os desenvolvedores.
-\end_layout
-
-\begin_layout Standard
-O processo de modelagem pode ser lento e custoso, já que os dois grupos
+ domínio em um modelo, para permitir a comunicação e colaboração entre especiali
+stas de domínio e os desenvolvedores, pelo qual o modelo de conhecimento
+ dos especialistas será objeto da pesquisa.
+ O processo de modelagem pode ser lento e custoso, já que os dois grupos
  de profissionais têm 
 \emph on
 \lang english
 Backgrounds
 \emph default
 \lang brazilian
- diferentes, que influirão negativamente no processo de criação e testes
- de um SAD.
- Esses profissionais podem ser até de organizações diferentes, o que dificulta
- ainda mais o processo, pelo qual foram pesquisados modelos que facilitem
- o entendimento entre os dois tipos de profissionais e desenvolvida uma
- pesquisa ao redor deste tópico.
- 
+ diferentes, que dificultaram o processo de desenvolvimento e testes de
+ um SAD.
 \end_layout
 
 \begin_layout Standard
-A continuação será apresentada a arquitetura que explica a importância dos
+Os especialistas de domínio e os desenvolvedores, pelo geral são de organizações
+ diferentes, o que dificulta ainda mais o processo, pelo qual foram pesquisados
+ modelos que facilitem o entendimento entre os dois tipos de profissionais
+ e desenvolvida uma pesquisa ao redor deste tópico.
+\end_layout
+
+\begin_layout Standard
+A continuação será apresentada a arquitetura dos SAD e a importância dos
  modelos de conhecimento existentes dentro um SAD.
  
 \end_layout
@@ -166,9 +166,8 @@ Arquitetura para Sistemas de Apoio à Decisão
 \end_layout
 
 \begin_layout Standard
-A arquitetura de um software define a sua organização em termos de seus
- componentes, suas interconexões, suas interações e também suas principais
- propriedades 
+A arquitetura de um software define a organização dele em termos de componentes,
+ de interconexões, e das interações com sistemas externos 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "de1997software"
@@ -178,7 +177,7 @@ key "de1997software"
 .
  A arquitetura fornece as informações de como os componentes dela se relacionam,
  explicando a parte externa das ligações entre seus elementos, sendo que
- as implementações internas não são considerados arquiteturas 
+ as implementações internas não são consideradas parte da arquitetura 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sei2006architecture"
@@ -197,9 +196,16 @@ reference "fig:Componentes-SAD"
 
 \end_inset
 
-, representando o processo dos SADs, no qual recebem uma entrada, fazem
- um processamento e retorna resultados que são analisadas pelo tomador(es)
- de decisão a través da tecnologia computacional.
+, representando o processo realizado pelos SADs, no qual recebem uma entrada,
+ fazem o processamento dela e retorna resultados que são analisadas pelo
+ tomador(es) de decisão a través da tecnologia computacional
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tweedale2016"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -270,14 +276,7 @@ reference "fig:Componentes-SAD"
 
 \end_inset
 
- mostra os componentes de um SAD
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Tweedale2016"
-
-\end_inset
-
-, que são: 
+ mostra os componentes de um SAD, que são: 
 \end_layout
 
 \begin_layout Description
@@ -285,13 +284,12 @@ I
 \lang english
 nputs
 \lang brazilian
- Corresponde às entradas do sistema, composta dos modelos de conhecimento
- dos especialistas e dos dados que serão processados.
- Os modelos pelo geral estão implícitos no SAD ou podem estar representados
- em uma base de conhecimento, e os dados são representados por um banco
- de dados.
+ corresponde às entradas do sistema, composta dos dados que serão processados
+ e dos modelos de conhecimento dos especialistas.
+ Os dados estão armazenados em bancos de dados e os modelos pelo geral estão
+ implícitos no SAD ou podem estar em uma base de conhecimento.
  Esses dois componentes devem ser o mais precisos e completos possíveis
- para garantir boas respostas do sistema.
+ para garantir respostas confiáveis do sistema.
 \end_layout
 
 \begin_layout Description
@@ -299,9 +297,9 @@ nputs
 \lang english
 Processing
 \lang brazilian
- É composto pelos modelos e métodos de organização e processamento dos dados,
- que tem restrições para avaliar as alternativas de resposta.
- Os métodos podem ser de tipo matemáticos que processam os dados e geram
+ está composto pelos modelos e métodos de organização e processamento dos
+ dados, que tem restrições para avaliar as alternativas de resposta.
+ Os métodos podem ser de tipo matemáticos, que processam os dados e geram
  os resultados do sistema.
 \end_layout
 
@@ -310,20 +308,20 @@ Processing
 \lang english
 Outputs
 \lang brazilian
- São os resultados do processamento dos inputs e permitem comparar as alternativ
+ são os resultados do processamento dos inputs e permitem comparar as alternativ
 as de decisão.
  As saídas comuns são relatórios, previsões e recomendações, que são apresentado
 s por meio de uma interface de usuário para facilitar o entendimento e interação
- pelo usuário.
+ por parte dos usuários.
 \end_layout
 
 \begin_layout Standard
-Durante a evolução dos SAD, várias melhorias vem acontecendo, entre elas
- o desenvolvimento da Web permitiu integrar novas técnicas no processamento
- dos dados, tecnologias na representação visual de resultados e no uso colaborat
-ivo por parte dos usuários 
+Durante a evolução dos SAD, várias melhorias aconteceram, entre elas o desenvolv
+imento da Web permitiu integrar novas técnicas no processamento dos dados,
+ tecnologias na representação visual de resultados e no uso colaborativo
+ por parte dos usuários 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Shim2002"
 
 \end_inset
@@ -356,28 +354,32 @@ key "Tweedale2016"
 
 \end_inset
 
-, os quais se enquadram no escopo desta pesquisa.
+, os quais estabelecem o escopo desta pesquisa.
  
 \end_layout
 
 \begin_layout Standard
-Os SAD que usam bases de conhecimento, podem representar o conhecimento
- dos especialistas em uma ontologia que permite definir, classificar, relacionar
- e inferir conhecimento.
+Um tipo SAD que usa bases de conhecimento, são os que usam ontologias para
+ representar o conhecimento dos especialistas, permitindo definir, classificar,
+ relacionar e inferir conhecimento.
  
 \end_layout
 
 \begin_layout Standard
-A continuação será apresentado o SAD SustenAgro, como exemplo dos SADs baseados
- em conhecimento.
+A continuação será apresentado o SAD SustenAgro baseado em conhecimento,
+ que suporta a avaliação da sustentabilidade em cana-de-açúcar a través
+ do uso de ontologias.
 \end_layout
 
 \begin_layout Section
 SAD SustenAgro
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SAD-SustenAgro"
 
-\begin_layout Standard
-—
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -390,11 +392,13 @@ key "simon1991architecture"
 
 \end_inset
 
-, integrando aspectos ambientais, sociais e econômicos, e também são muito
- importantes para a economia do Brasil.
- Particularmente, o sistemas produtivo da cana-de-açúcar é extremamente
- importante para a economia do estado de São Paulo, além de ser uma das
- principais culturas produzidas no pais 
+, integrando aspectos ambientais, sociais e econômicos.
+\end_layout
+
+\begin_layout Standard
+Particularmente, o sistemas produtivo da cana-de-açúcar são extremamente
+ importante para a economia do estado de São Paulo e do Brasil, devido a
+ que é uma das principais culturas produzidas no pais 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Storquato2015"
@@ -402,9 +406,9 @@ key "Storquato2015"
 \end_inset
 
 .
- Por essas razões, a Embrapa escolheu especificamente o setor produtivo
- da cultura de cana-de-açúcar na região centro-sul do Brasil, como sistema
- piloto para o SustenAgro.
+ Por essas razões, a Embrapa Meio Ambiente escolheu especificamente o sistema
+ produtivo da cultura de cana-de-açúcar na região centro-sul do Brasil,
+ como sistema piloto para desenvolver o SAD SustenAgro.
 \end_layout
 
 \begin_layout Standard
@@ -413,42 +417,20 @@ Dada a complexidade da análise da sustentabilidade agrícola, em sistemas
  na definição de métodos que permitissem avaliar a sustentabilidade de maneira
  integral 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Singh2012281"
 
 \end_inset
 
 .
  Por essa razão, desenvolveram um método que aborda a avaliação em termos
- de indicadores.
+ de indicadores, simplificando a complexidade deste sistema agrícola.
  Cada indicador mede um determinado aspecto crítico no sistema produtivo,
  para determinar o quão sustentável ele é.
  A partir da análise de cada indicador, é possível gerar recomendações de
  medidas corretivas para as unidades produtivas ou para o embasamento de
- políticas públicas de incentivo a sustentabilidade.
- 
-\end_layout
-
-\begin_layout Standard
-A partir do método de avaliação SustenAgro, foi desenvolvida uma ferramenta
- de avaliação da sustentabilidade intitulada SAD SustenAgro que implementa
- o método SustenAgro por meio de um sistema de apoio a decisão e que consegue
- adaptar-se às mudanças do domínio, o qual está baseado em uma ontologia
- que permitem representar e estruturar o conhecimento de avaliação da sustentabi
-lidade em agricultura, gerando uma representação mais exata da realidade
- do que outros modelos de dados, em formato de ontologias da web semântica,
- sobre o qual é possível fazer inferências e assim gerar informações para
- suportar a decisão.
-\end_layout
-
-\begin_layout Standard
-—
-\end_layout
-
-\begin_layout Standard
-O SAD SustenAgro é um sistema de apoio na tomada de decisão que suporta
- a avaliação da sustentabilidade em cana-de-açúcar no centro-sul do Brasil.
- A definição conceitual do processo de avaliação é detalhada no apêndice
+ políticas públicas que incentivem a sustentabilidade.
+ A definição conceitual do processo de avaliação está detalhada no apêndice
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -457,10 +439,20 @@ reference "chap:Sustainability_Assessment"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
-A figura 
+A partir do método de avaliação SustenAgro, foi desenvolvida uma ferramenta
+ de avaliação da sustentabilidade intitulada SAD SustenAgro que implementa
+ o método SustenAgro por meio de um sistema de apoio a decisão e que consegue
+ adaptar-se às mudanças do domínio.
+\end_layout
+
+\begin_layout Standard
+O SAD SustenAgro suporta a avaliação da sustentabilidade em cana-de-açúcar
+ no centro-sul do Brasil.
+ A figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:SustenAgro-arquitetura-inicial"
@@ -550,9 +542,9 @@ Desenvolvimento de
 \lang english
 widgets
 \lang brazilian
- especificas
+ especificas 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -648,7 +640,8 @@ status open
 
 \begin_layout Plain Layout
 
-https://ainfo.cnptia.embrapa.br/digital/bitstream/item/77537/1/2012AA80.pdf
+https://www.embrapa.br/en/busca-de-publicacoes/-/publicacao/951543/metodologia-par
+a-avaliacao-de-impactos-das-nanotecnologias-metodo-e-software-impactos-nanotec
 \end_layout
 
 \end_inset
@@ -720,31 +713,6 @@ http://www.cnpma.embrapa.br/nova/mostra2.php3?id=857
 \end_layout
 
 \begin_layout Enumerate
-Software para avaliação de impactos das nanotecnologias 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.embrapa.br/en/busca-de-publicacoes/-/publicacao/951543/metodologia-par
-a-avaliacao-de-impactos-das-nanotecnologias-metodo-e-software-impactos-nanotec
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
 Sistema Atlantis: Sistema para levantamento e sistematização da informação
  técnica em temas de pesquisa, tecnologias e inovação.
  
@@ -774,7 +742,7 @@ https://www.embrapa.br/en/busca-de-produtos-processos-e-servicos/-/produto-servi
 
 \begin_layout Standard
 A partir do analise das ferramentas listadas foi evidenciada a necessidade
- de fornecer sistemas e ferramentas computacionais que organizem a informação.
+ de fornecer métodos e ferramentas computacionais que organizem a informação.
  Para apoiar aos especialistas a tomar decisões baseadas em conhecimento,
  permitindo simplificar a resolução de problemas que de outra maneira não
  seriam triviais.
@@ -784,7 +752,7 @@ A partir do analise das ferramentas listadas foi evidenciada a necessidade
 \end_layout
 
 \begin_layout Standard
-Uma característica importante em ditos sistemas foi a existência conceitos
+Uma característica importante em ditos sistemas foi a existência de conceitos
  de domínio especifico na organização dos dados de entrada dos SAD e no
  método de avaliação.
  Esta característica permite identificar que cada um dos sistemas requiriu
@@ -803,13 +771,12 @@ key "Evans:2003:DDT:861502"
 
 \end_inset
 
-, propõe que este conhecimento deve ser representado em um modelo separado.
- 
+, propõe que este conhecimento deve ser representado em um modelo independente.
 \end_layout
 
 \begin_layout Standard
-Pelo anterior, afirmou-se a hipótese de usar um modelo independente para
- representar dito conhecimento.
+Pelo anterior, afirmou-se a hipótese de usar um modelo para representar
+ dito conhecimento.
  E baseando-se no problema de pesquisa, as ontologias foram selecionadas
  como o modelo mais completo para representar o conhecimento do domínio
  dos especialistas na definição de SAD, e evitar que o conhecimento ficara
@@ -817,17 +784,12 @@ Pelo anterior, afirmou-se a hipótese de usar um modelo independente para
 \end_layout
 
 \begin_layout Standard
-O uso de uma ontologia facilita a definição e atualização de conceitos,
- por parte dos especialistas, permitindo que eles mesmos descrevam o domínio
- sem precisar dos desenvolvedores, a partir dessa definição computável será
- gerado o SAD.
- 
-\end_layout
-
-\begin_layout Standard
-Os especialistas do domínio terão familiaridade com os termos da ontologia,
- criada por eles, e poderão especificar grande parte do conhecimento envolvido
- no SAD.
+O uso de uma ontologia permitira representar e estruturar o conhecimento
+ de avaliação da sustentabilidade em agricultura.
+ A través da definição e atualização de conceitos por parte dos especialistas,
+ permitindo que eles mesmos descrevam o domínio sem precisar dos desenvolvedores.
+ Os especialistas do domínio tem familiaridade com os termos da ontologia
+ e poderão especificar grande parte do conhecimento envolvido no SAD.
  Idealmente, essa definição deve ser detalhada o suficiente para que os
  desenvolvedores possam desenvolver a parte computacional do SAD sem necessidade
  de 
@@ -838,10 +800,19 @@ feedback
 \end_layout
 
 \begin_layout Standard
+Está representação de conhecimento pode ser mais exata da realidade do que
+ outros modelos, devido a que está em um formato voltado a descrição de
+ conhecimento, sobre o qual é possível fazer inferências e assim gerar informaçõ
+es para suportar a decisão.
+ A partir dessa definição computável será gerado o SAD SustenAgro.
+ 
+\end_layout
+
+\begin_layout Standard
 Devido ao anterior, o SAD SustenAgro foi escolhido como projeto piloto para
  desenvolver a presente pesquisa, porque permite o desenvolvimento de um
- SAD baseado em conhecimento e que permite explorar alternativas de representaçã
-o de conhecimento.
+ SAD baseado em conhecimento e que permite explorar alternativas na definição
+ e geração dos SAD.
 \end_layout
 
 \begin_layout Section
@@ -1014,7 +985,7 @@ Cada uma dessas pesquisas fornece um exemplo do uso de ontologias na criação
  de soluções baseadas em conhecimento.
  Isto foi confirmado por 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "roussey2010ontologies"
 
 \end_inset
@@ -1032,8 +1003,8 @@ Sobre a busca de SADs semelhantes ao SustenAgro, encontrou-se:
 
 \begin_layout Standard
 Uma estratégia para abordar a complexidade em SADs são métodos e metodologias
- de avaliação que utilizam indicadores.
- Um exemplo desse enfoque é a pesquisa de 
+ de avaliação que utilizam indicadores, um exemplo desse enfoque é a pesquisa
+ de 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "AlkanOlsson:2009"
@@ -1072,7 +1043,7 @@ Existem pesquisas que abordam a sustentabilidade através de ferramentas
  tecnológicas, as quais podem servir de referência ao sistema SustenAgro.
  Uma delas foi desenvolvida por 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "brilhante:2006"
 
 \end_inset
@@ -1117,18 +1088,23 @@ Considerações finais
 status open
 
 \begin_layout Plain Layout
-O desenvolvimento apenas do SAD SustenAgro, não satisfaz os requisitos de
- pesquisa de um trabalho de mestrado, uma vez que não envolve a utilização
+(Apagar) O desenvolvimento apenas do SAD SustenAgro, não satisfaz os requisitos
+ de pesquisa de um trabalho de mestrado, uma vez que não envolve a utilização
  de métodos e técnicas de investigação cientifica.
 \end_layout
 
 \end_inset
 
- O desenvolvimento do SAD SustenAgro faz parte de um processo maior de pesquisa,
- que permitira avaliar Ele serve como exemplo para o problema da inexistência
- de uma representação de conhecimento para definir SADs, que tenha um formato
- computável, entendível e acessível aos especialistas do domínio e desenvolvedor
-es de software.
+ O desenvolvimento do SAD SustenAgro, permitira avaliar se as ontologias
+ fornecem o suporte de representação de conhecimento para definir o conhecimento
+ do domínio e testar novas possibilidades na definição e geração de SAD
+ baseados em conhecimento.
+\end_layout
+
+\begin_layout Standard
+E assim tentar solucionar o problema da inexistência de uma representação
+ de conhecimento para definir SADs, que tenha um formato computável, entendível
+ e acessível aos especialistas do domínio e desenvolvedores de software.
 \begin_inset Note Note
 status open
 

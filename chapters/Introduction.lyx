@@ -196,7 +196,7 @@ key "Saxena"
 
 \begin_layout Standard
 A analise do projeto SustenAgro permitiu identificar algumas motivações
- relacionadas com a integração de conhecimento dos especialistas.
+ relacionadas com a integração de conhecimento dos especialistas de domínio.
 \end_layout
 
 \begin_layout Standard
@@ -289,25 +289,40 @@ KOS
 \end_layout
 
 \begin_layout Standard
-Numa parceria com a Embrapa Meio Ambiente, a ontologia do SustenAgro foi
- desenvolvida pelos especialistas da Embrapa, nas áreas de biologia e agricultur
-a as ontologias são comuns, assim eles não tiveram dificuldade com o conceito.
- Eles usaram uma DSL para formatar as perguntas aos usuários finais, definir
- o método de avaliação e gerar o relatório de cada análise.
+Numa parceria com a Embrapa Meio Ambiente, foi desenvolvida uma ontologia
+ de avaliação da sustentabilidade em cana-de-açúcar junto com os especialistas
+ da Embrapa.
+ Nas áreas de biologia e agricultura as ontologias são comuns, assim eles
+ não tiveram dificuldade com o conceito.
+ Eles usaram uma 
+\lang english
+Domain Specific Language
+\lang brazilian
+ (DSL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSL"
+description "Domain Specific Language"
+
+\end_inset
+
+) que permite formatar as perguntas aos usuários finais, definir o método
+ de avaliação e gerar o relatório de cada análise.
  Eles apreciaram muito o fato de usar uma ontologia num SAD, foi a primeira
  vez que fizeram isso, e de que, ao mudar essa ontologia, verem suas mudanças
- imediatamente no software.
+ imediatamente no SAD.
 \end_layout
 
 \begin_layout Standard
-Além das motivações vinculadas com o domínio dos especialistas existe a
- motivação de desenvolver novas tecnologias, uma contribuição tecnologia
- desta pesquisa foi o Framework composto por ontologias e 
+Além das motivações vinculadas com o domínio dos especialistas em sustentabilida
+de existe a motivação de desenvolver novas tecnologias, uma contribuição
+ tecnologia desta pesquisa foi o Framework Decisioner composto por ontologias
+ e 
 \lang english
 DSLs
 \lang brazilian
-, intitulado Decisioner, cujo proposito é facilitar a implementação de SADs,
- esse framework foi instanciado para produzir o SAD SustenAgro.
+, cujo proposito é facilitar a implementação de SADs, esse framework foi
+ instanciado para produzir o SAD SustenAgro.
 \end_layout
 
 \begin_layout Section
@@ -331,10 +346,8 @@ Para alcançar o objetivo proposto, foi necessário cumprir os seguintes objetiv
 \end_layout
 
 \begin_layout Itemize
-Definir a arquitetura e o código da ferramenta Decisioner para gerar SADs
- baseados em conhecimento de domínios específicos.
- Os SADs gerados usam uma ontologia, desenvolvida por especialistas do domínio
- e uma DSL, para gerar as interfaces e funcionalidades do sistema.
+Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
+ produtivos de cana-de-açúcar do centro-sul do Brasil.
 \end_layout
 
 \begin_layout Itemize
@@ -344,14 +357,16 @@ Desenvolver uma DSL que permita a definição da interface de usuário, das
 \end_layout
 
 \begin_layout Itemize
-Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
- produtivos de cana-de-açúcar do centro-sul do Brasil.
+Definir a arquitetura e o código da ferramenta Decisioner para gerar SADs
+ baseados em conhecimento de domínios específicos.
+ Os SADs gerados usam uma ontologia, desenvolvida por especialistas do domínio
+ e uma DSL, para gerar as interfaces e funcionalidades do sistema.
 \end_layout
 
 \begin_layout Itemize
 Demonstrar que o método e ferramenta Decisioner permitem a criação de SADs
  funcionais que podem ser modificados por especialistas de domínio.
- Esses especialistas podem definir a ontologia usada e modificar o comportamento
+ Esses especialistas devem definir a ontologia e modificar o comportamento
  do sistema com pouca ou nenhuma intervenção de desenvolvedores.
 \end_layout
 
@@ -361,26 +376,6 @@ Resultados Principais
 
 \begin_layout Standard
 Os principais contribuições deste mestrado são:
-\end_layout
-
-\begin_layout Itemize
-Método e framework Decisioner para definir SADs por parte dos especialistas
- do domínio de sustentabilidade.
- Incluindo a DSL que permite a definição da interface de usuário, das formulas
- do modelo, usado pelos especialistas, e do formato do relatório final de
- cada análise.
-\end_layout
-
-\begin_layout Itemize
-Protótipo do Decisioner usando a linguagem 
-\lang english
-Groovy
-\lang brazilian
- e o framework 
-\lang english
-Grails
-\lang brazilian
-.
 \end_layout
 
 \begin_layout Itemize
@@ -402,8 +397,26 @@ web components
 \end_layout
 
 \begin_layout Itemize
+Uma DSL baseada na linguagem 
+\lang english
+Groovy
+\lang brazilian
+ que permite a definição da interface de usuário, das formulas do modelo
+ e do formato do relatório final de cada análise.
+\end_layout
+
+\begin_layout Itemize
+Método e framework Decisioner para definir SADs por parte dos especialistas
+ do domínio, desenvolvida a través do framework 
+\lang english
+Grails
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Itemize
 O SAD SustenAgro: Sistema para avaliação da sustentabilidade em cana-de-açúcar,
- na região centro-sul do Brasil, usando o Decisioner.
+ na região centro-sul do Brasil, instanciada a través do Framework Decisioner.
 \end_layout
 
 \begin_layout Itemize
@@ -436,7 +449,8 @@ Energy for sustainable Development
 \end_layout
 
 \begin_layout Itemize
-Resultados avaliação.
+Resultados positivos das avaliações do Framework Decisioner, método de geração
+ de SAD e do Sistema SustenAgro.
 \end_layout
 
 \begin_layout Section
@@ -448,16 +462,19 @@ A presente dissertação está estruturada da seguinte forma:
 \end_layout
 
 \begin_layout Standard
-Capítulo 2: Apresenta a definição de SAD, as características do SAD SustenAgro
- e os trabalhos relacionados sobre geração de Sistemas de Apoio à Decisão
- e os Sistemas de Avaliação da Sustentabilidade para representar o estado
+Capítulo 2: Apresenta a definição de Sistemas de Apoio à Decisão, as característ
+icas do SAD SustenAgro e os trabalhos relacionados sobre ontologias em avaliação
+ da sustentabilidade e SADs baseados em ontologias para representar o estado
  da arte da presente pesquisa.
 \end_layout
 
 \begin_layout Standard
-Capítulo 3: Apresenta as Ontologias e DSL, com a finalidade de descrever
- as principais tecnologias e a teoria necessária para desenvolver o presente
- trabalho.
+Capítulo 3: Apresenta as Ontologias e 
+\lang english
+DSLs
+\lang brazilian
+, com a finalidade de descrever as principais tecnologias e a teoria necessária
+ para desenvolver o presente trabalho.
 \end_layout
 
 \begin_layout Standard
@@ -468,18 +485,18 @@ Capítulo 4: Apresenta o protótipo do sistema Decisioner que permite suportar
 
 \begin_layout Standard
 Capítulo 5: Apresenta o SAD SustenAgro, desenvolvido na presente pesquisa
- e que serviu como primeiro caso de uso do sistema Decisioner, para definir
- a arquitetura deste e demostrar a funcionalidade do sistema desenvolvido.
+ como primeiro caso de uso do Framework Decisioner, permitindo definir a
+ arquitetura e demostrar a funcionalidade do Framework desenvolvido.
 \end_layout
 
 \begin_layout Standard
 Capítulo 6: Apresenta a avaliação realizada pelos especialistas em cada
- um dos produtos da pesquisa.
+ um dos sistemas software desenvolvidos e no método de geração de SAD.
 \end_layout
 
 \begin_layout Standard
-Capítulo 7: Apresenta as conclusões do presente trabalho, uma discussão
- e possíveis trabalhos futuros.
+Capítulo 7: Apresenta as conclusões do presente trabalho, dificuldades,
+ trabalhos futuros e uma discussão sobre a pesquisa em geral.
 \end_layout
 
 \begin_layout Standard

@@ -79,11 +79,11 @@
 status collapsed
 
 \begin_layout Plain Layout
-A partir do problema identificado e da revisão da literatura foi encontrado
- que o desenvolvimento de ontologias é um área de pesquisa abrangida pela
- Web Semântica que permite desenvolver sistemas web baseados em conhecimento,
- satisfazendo os requisitos de desenvolvimento do SAD SustenAgro explicados
- no capitulo 
+(Movido para conclusões) A partir do problema identificado e da revisão
+ da literatura foi encontrado que o desenvolvimento de ontologias é um área
+ de pesquisa abrangida pela Web Semântica que permite desenvolver sistemas
+ web baseados em conhecimento, satisfazendo os requisitos de desenvolvimento
+ do SAD SustenAgro explicados no capitulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SAD"
@@ -100,10 +100,11 @@ reference "chap:SAD"
 status collapsed
 
 \begin_layout Plain Layout
-A web foi criada para possibilitar o acesso, intercâmbio e recuperação de
- informações de maneira rápida e simples, seu crescimento exponencial e
- caótico fez com que a mesma se tornasse hoje um gigantesco repositório
- de documentos, o que dificulta a recuperação de informações.
+(Movido para Web Semântica) A web foi criada para possibilitar o acesso,
+ intercâmbio e recuperação de informações de maneira rápida e simples, seu
+ crescimento exponencial e caótico fez com que a mesma se tornasse hoje
+ um gigantesco repositório de documentos, o que dificulta a recuperação
+ de informações.
  Até o momento, não existe nenhuma estratégia abrangente e satisfatória
  para a indexação de documentos por meio de “motores de busca” que seja
  coerente com uma estrutura linguística.
@@ -124,11 +125,11 @@ key "Souza:2004"
 status collapsed
 
 \begin_layout Plain Layout
-Um exemplo da deficiência da web atual, pode ser identificada na busca realizada
- pelos sistemas de recuperação de informação, que usam palavras-chave nas
- buscas, onde apenas a similaridade e o número de ocorrências de certas
- palavras no conteúdo de documentos são levados em consideração e não a
- semântica presente naquela informação.
+(Movido para Web Semântica) Um exemplo da deficiência da web atual, pode
+ ser identificada na busca realizada pelos sistemas de recuperação de informação
+, que usam palavras-chave nas buscas, onde apenas a similaridade e o número
+ de ocorrências de certas palavras no conteúdo de documentos são levados
+ em consideração e não a semântica presente naquela informação.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -141,28 +142,34 @@ key "Souza:2004"
 
 \end_inset
 
-Ontologias e DSLs têm um papel fundamental para a ideia de um framework
- para criação de SADs.
- Ontologias servem para representar o conhecimento de especialistas do domínio
- e DSLs servem para customizar o comportamento dos SADs.
- Neste capítulo, vamos apresentar e discutir essas duas tecnologias.
+Ontologias e 
+\lang english
+DSLs
+\lang brazilian
+ têm um papel fundamental na criação de um meio de descrição de conhecimento
+ por parte dos especialistas e no design de um framework para criação de
+ SADs.
  
 \end_layout
 
 \begin_layout Standard
-Ontologias apareceram originalmente no contexto da filosofia, onde se referem
- ao estudo da natureza, existência e realidade dos entes.
+Ontologias servem para representar o conhecimento de especialistas do domínio
+ e DSLs servem para customizar o comportamento dos SADs, as ontologias aparecera
+m originalmente no contexto da filosofia, onde se referem ao estudo da natureza,
+ existência e realidade dos entes.
  Elas são usadas em vários campos do conhecimento.
- Neste projeto, ontologias se referem a representações de conhecimento,
+ Neste projeto, ontologias referem-se a representações de conhecimento,
  que precisam ser implementadas em código.
- Essas implementações devem trabalhar com ontologias, na sua criação, armazename
-nto, busca e modificação, e que seguir padrões e formatos abertos.
- As tecnologias da Web Semântica fornecem exatamente isso.
+ As implementações de software podem trabalhar com ontologias da Web Semântica
+ que fornecem a criação, armazenamento, busca e modificação de ontologias,
+ seguindo padrões de formatos abertos.
+ 
 \end_layout
 
 \begin_layout Standard
-Neste capítulo, vamos apresentar e discutir conceitos usados da Web Semântica:
- fundamentos da Web Semântica, Ontologias, o 
+Neste capítulo, vamos apresentar e discutir as ontologias da web semântica
+ e as DSL.
+ Descrevendo a teoria da Web Semântica: fundamentos, Ontologias, o 
 \lang english
 Resource Description Framework (RDF
 \lang brazilian
@@ -183,20 +190,12 @@ Web Ontology Language
 OWL
 \lang brazilian
 ).
- Também serão abordadas as 
+ Finalmente serão abordadas as 
 \lang english
 Domain Specific Languages (DSLs
 \lang brazilian
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "DSL"
-description "Domain Specific Language"
-
-\end_inset
-
-) que são linguagens de propósito especifico que permitem definir um meio
- de comunicação entre os especialistas e o sistema desenvolvido.
+) que são linguagens que permitem definir um meio de comunicação entre os
+ especialistas e o sistema desenvolvido.
 \end_layout
 
 \begin_layout Section
@@ -204,12 +203,54 @@ Web Semântica.
 \end_layout
 
 \begin_layout Standard
-A interpretação do significado é uma habilidade inata dos seres humanos,
- através da associação dos conceitos que estão no cérebro por meio de estruturas
- neurais.
- Já as maquinas não têm essa habilidade.
- A Web Semântica procura criar métodos para que as máquinas consigam realizar
- essa interpretação..
+A web foi criada para possibilitar o acesso, intercâmbio e recuperação de
+ informações de maneira rápida e simples, seu crescimento exponencial e
+ caótico fez com que a mesma se tornasse hoje um gigantesco repositório
+ de documentos, o que dificulta a recuperação de informações.
+ Até o momento, não existe nenhuma estratégia abrangente e satisfatória
+ para a organização de documentos por meio de “motores de busca” que seja
+ coerente com uma estrutura linguística.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Souza:2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Um exemplo da deficiência da web atual, pode ser identificada na busca realizada
+ pelos sistemas de recuperação de informação, que usam palavras-chave nas
+ buscas, onde apenas a similaridade e o número de ocorrências de certas
+ palavras no conteúdo de documentos são levados em consideração e não a
+ semântica presente naquela informação.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Souza:2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A Web Semântica aparece como uma proposta para organizar o conhecimento
+ da internet semanticamente em formatos entendíveis pelos humanos e maquinas
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bernerslee2001"
+
+\end_inset
+
+.
+ Procurando métodos para que as máquinas consigam realizar a interpretação
+ do significado, que é uma habilidade inata dos seres humanos, através da
+ associação dos conceitos que estão no cérebro por meio de estruturas neurais
+ e que não é suportado pelas maquinas tradicionais.
 \end_layout
 
 \begin_layout Standard
@@ -217,7 +258,7 @@ A Web Semântica tem como finalidade estruturar os dados e informações dispon�
 s na Web, para que tenham significado e sejam computáveis por máquinas.
  Gerando um ambiente onde agentes de software e usuários possam trabalhar
  de maneira cooperativa.
- A Web Semântica é formada por um conjunto de padrões propostos pelo 
+ A Web Semântica é definida por um conjunto de padrões propostos pelo 
 \lang english
 World Wide Web Consortium
 \lang brazilian
@@ -237,16 +278,14 @@ reference "fig:Semantic_Web_History"
 
 \end_inset
 
-, podem ser observados alguns dos padrões que constituem a Web Semântica
- e uma comparação cronológica com os padrões da 
-\lang english
-eXtensible Markup Language
-\lang brazilian
+, apresenta alguns dos padrões que constituem a Web Semântica de maneira
+ cronológica.
  
-\lang english
-(XML
-\lang brazilian
- 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(Figura editada) Para que essa comparação? O que XML tem haver?
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "XML"
@@ -254,13 +293,7 @@ description "Extensible Markup Language"
 
 \end_inset
 
-).
- 
-\begin_inset Note Note
-status open
 
-\begin_layout Plain Layout
-Para que essa comparação? O que XML tem haver?
 \end_layout
 
 \end_inset
@@ -299,6 +332,22 @@ name "fig:Semantic_Web_History"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fadaptada{bikakis2013xml}
 \end_layout
 
 \end_inset
@@ -351,6 +400,7 @@ reference "fig:Web-Semantic-Architecture"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -375,6 +425,22 @@ name "fig:Web-Semantic-Architecture"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fadaptada{fensel2011semantic}
 \end_layout
 
 \end_inset
@@ -422,10 +488,11 @@ Unicode
 \lang english
 URI
 \lang brazilian
- permite identificar unicamente os recursos disponíveis na Web por meio
- de uma 
+ permite identificar os recursos disponíveis na Web por meio de uma 
 \lang english
-String.
+String
+\lang brazilian
+ única.
 \end_layout
 
 \begin_layout Description
@@ -447,19 +514,35 @@ res, suportando as camadas superiores na arquitetura.
 \lang english
 RDF
 \lang brazilian
- é a camada de descrição que permite especificar o domínio de conhecimento.
- Ela também é usada como um método geral para descrição conceitual da modelagem
- de informação 
-\begin_inset Note Note
+ é um modelo padrão para intercambiar dados na web.
+ 
+\lang english
+RDF
+\lang brazilian
+ tem características que permitem a integração de dados inclusive de esquemas
+ diferentes, e suporta especialmente a evolução dos esquemas a través do
+ tempo sem requerer que mudanças nos consumidores de dados.
+ A W3C especifica ele 
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-???
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.w3.org/RDF/
 \end_layout
 
 \end_inset
 
-por meio de recursos, usa notações sintáticas e formatos de serialização.
+
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Description
@@ -516,7 +599,7 @@ OWL
 , permitindo definir ontologias que representam os domínios de conhecimento.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Ontologias
 \end_layout
 
@@ -740,7 +823,7 @@ key "sugumaran2011"
 .
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 
 \lang english
 Resource Description Framework
@@ -773,16 +856,50 @@ framework
 status open
 
 \begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://www.w3.org/2001/sw/
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
 .
- O RDF foi originalmente projetado como um modelo de metadados e também
- chegou a ser usado como um método de descrições conceituais, principalmente
- para descrever recursos web.
- 
+ O 
+\lang english
+RDF
+\lang brazilian
+ foi originalmente projetado como um modelo de metadados e também chegou
+ a ser usado como um método de descrições conceituais, principalmente para
+ descrever recursos web, formalmente é um formato de dados de tipo grafo
+ direcionado e rotulado para representar informação na web
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.w3.org/TR/rdf-sparql-query/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -827,7 +944,7 @@ URIs
 status open
 
 \begin_layout Plain Layout
-Vc ja falou de URIs?
+Vc ja falou de URIs? (Sim está na descrição de WS Cake)
 \end_layout
 
 \end_inset
@@ -897,7 +1014,84 @@ OWL
  
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
+
+\lang english
+SPARQL Protocol and RDF Query Language (SPARQL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Sparql"
+description "SPARQL Protocol and RDF Query Language"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+SPARQL
+\lang brazilian
+ é uma linguagem de consulta semântica usada por bancos de armazenamento
+ e recuperação de dados de dados compatíveis com o formato 
+\lang english
+RDF
+\lang brazilian
+ ou que sejam fornecidos como 
+\lang english
+RDF
+\lang brazilian
+ via 
+\lang english
+middleware
+\lang brazilian
+.
+ Atualmente é um padrão especificado pela 
+\lang english
+W3C
+\lang brazilian
+ e uma das tecnologias principais da web semântica.
+\end_layout
+
+\begin_layout Standard
+A versão de SPARQL 1.1, veio com novas características que permite a atualização
+ de dados em formato 
+\lang english
+RDF
+\lang brazilian
+, isso permite atualizar, criar e remover dados em formato 
+\lang english
+RDF
+\lang brazilian
+ em um 
+\lang english
+Graph Store
+\lang brazilian
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.w3.org/TR/sparql11-update/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
 
 \lang english
 Web Ontology Language
@@ -1166,58 +1360,114 @@ OWL 2
  
 \end_layout
 
+\begin_layout Subsection
+Protégé
+\end_layout
+
 \begin_layout Standard
-A ferramenta para criar ontologias em OWL, recomendada pela comunidade,
- e usada na presente pesquisa foi o editor Protégé
-\begin_inset Foot
-status open
+O editor de ontologias Protégé 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "musen2015protege"
 
-\begin_layout Plain Layout
+\end_inset
+
+, é a ferramenta recomendada pela comunidade para criar ontologias em formato
  
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://protege.stanford.edu/
+\lang english
+OWL
+\lang brazilian
+, fornecendo:
 \end_layout
 
-\end_inset
+\begin_layout Itemize
 
-
+\lang english
+GUI Framework:
+\lang brazilian
+ para suportar múltiplas vistas da ontologia e layouts configuraveis de
+ componentes
 \end_layout
 
-\end_inset
+\begin_layout Itemize
 
+\lang english
+API:
+\lang brazilian
+ para suportar o desenvolvimento de sistemas baseados em conhecimento.
+\end_layout
 
+\begin_layout Itemize
+
+\lang english
+Modularization
+\lang brazilian
+: permite suportar a edição de múltiplas ontologias em um mesmo entorno.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Navigation
+\lang brazilian
+: fornece buscas globais e locais e hipervínculos nos editores.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Refactoring tools
+\lang brazilian
+: verificação de coerência das ontologias
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Reasoning:
+\lang brazilian
+ compatibilidade com vários 
+\lang english
+reasoner
+\lang brazilian
+ para suportar a inferência.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Plug-ins
+\lang brazilian
+: arquitetura extensível que suporta diferentes tipos de 
+\lang english
+plug-ins.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-tem citacao para o Protege nao precisa usar footnote
+tem citação para o Protege não precisa usar footnote (mudei o footnote pela
+ citação)
 \end_layout
 
 \end_inset
 
-.
- Ele permite a edição de ontologias por usuários com conhecimento da linguagem
- OWL e oferece amplo suporte à definição de ontologias através de vários
- plugins.
-\end_layout
 
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 Fale algo das triple stores SPARQL no capitulo de ontologias.
+ (agreguei a seção de SPARQL)
 \end_layout
 
 \end_inset
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 terminou meio seco.
@@ -1229,6 +1479,210 @@ terminou meio seco.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Triplestore
+\end_layout
+
+\begin_layout Standard
+Uma 
+\lang english
+triplestore
+\lang brazilian
+ é um tipo de banco de dados baseado em grafos que armazena fatos semânticos,
+ e fornece o armazenamento e a recuperação de triplas no padrão 
+\lang english
+RDF,
+\lang brazilian
+ os dados são armazenados em forma de redes de objetos com vínculos rotulados
+ entre eles, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rusher2003triple"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As 
+\lang english
+triplestore
+\lang brazilian
+ fornecem suporte nativo 
+\lang english
+SPARQL
+\lang brazilian
+, que permite consultar e atualizar dados com significado semântico.
+ Também implementam o 
+\lang english
+SPARQL Protocol Endpoint
+\lang brazilian
+ para interconectar os sistemas web por meio de um 
+\lang english
+Endpoint
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Standard
+Este tipo bancos de dados são recomendáveis quando os dados tem uma estrutura
+ flexível, cujas relações não tem um padrão definido.
+\end_layout
+
+\begin_layout Standard
+A 
+\lang english
+triplestore
+\lang brazilian
+ 
+\lang english
+Blazegraph
+\lang brazilian
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.blazegraph.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ é um dos mais completos bancos de dados baseados em grafos e com suporte
+ SPARQL, as principais características dele são:
+\end_layout
+
+\begin_layout Itemize
+Banco de dado baseado em grafo de alta performance
+\end_layout
+
+\begin_layout Itemize
+Suporte Blueprints API e RDF/SPARQL
+\end_layout
+
+\begin_layout Itemize
+Clusters de replicação altamente disponíveis (HAJournalServer) 
+\end_layout
+
+\begin_layout Itemize
+Armazenamento de dados de uma única máquina até ~50B triples/quads (RWStore)
+ 
+\end_layout
+
+\begin_layout Itemize
+O armazenamento de dados em cluster é essencialmente ilimitado (BigdataFederatio
+n) 
+\end_layout
+
+\begin_layout Itemize
+REST API Com deployment embutida e / ou webapp (NanoSparqlServer) 
+\end_layout
+
+\begin_layout Itemize
+SPARQL 1.1 nativo 
+\end_layout
+
+\begin_layout Itemize
+RDFS+ Inferência e manutenção da verdade
+\end_layout
+
+\begin_layout Itemize
+Triples, quads, ou Reificação feita corretamente (RDR) support 
+\end_layout
+
+\begin_layout Itemize
+Gerenciador de memória Java aproveita o JVM nativo heap (no GC) 
+\end_layout
+
+\begin_layout Itemize
+API centrada em vértices(RDF_GAS_API) 
+\end_layout
+
+\begin_layout Itemize
+Licença dupla: GPLv2 ou commercial 
+\end_layout
+
+\begin_layout Itemize
+Assinaturas de suporte ao desenvolvedor e produção
+\end_layout
+
+\begin_layout Subsection
+Discussão 
+\end_layout
+
+\begin_layout Standard
+Para desenvolver os sistemas software da presente pesquisa foram usadas
+ tecnologias da web semântica, primeiramente foram desenhadas as ontologias
+ em formato 
+\lang english
+OWL
+\lang brazilian
+ na ferramenta Protégé, depois instanciadas em 
+\lang english
+triplestores
+\lang brazilian
+ e finalmente integradas no framework Decisioner que está implementado sobre
+ o banco de dados baseado em grafos 
+\lang english
+Blazegraph
+\lang brazilian
+ .
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Blazegraph
+\lang brazilian
+ permitiu instanciar as ontologias em formato 
+\lang english
+RDF,
+\lang brazilian
+ suportar inferência e permitir consultas através da linguagem 
+\lang english
+SPARQL,
+\lang brazilian
+ suportando a definição e atualização dos conceitos das ontologias.
+ Estas funcionalidades foram complementadas com ferramentas de edição da
+ ontologia via web e 
+\lang english
+real-time
+\lang brazilian
+, está implementação está descrita no capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Decisioner"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Além das ontologias, foi necessário fornecer um meio de definição de conheciment
+o mais próximo à linguagem dos especialistas do domínio, para suportar a
+ definição de SADs por parte dos especialistas, a solução identificada foi
+ criar uma 
+\lang english
+DSL
+\lang brazilian
+ definida a continuação.
 \end_layout
 
 \begin_layout Section
@@ -1266,7 +1720,7 @@ key "fowler2010domain"
 \lang english
 DSLs
 \lang brazilian
- é feito o inverso: o computador começa a entender o que o programador (usuário)
+ é feito o inverso: o computador começa a entender o que o usuário do domínio
  escreve.
 \end_layout
 
@@ -1293,7 +1747,7 @@ adas em:
 Domain-Specific Markup Languages
 \lang brazilian
 : são linguagens de um domínio particular com a particularidade de anotar
- os dados para que eles sejam sintaticamente distinguíveis.
+ os dados com etiquetas para que eles sejam sintaticamente distinguíveis.
  Um exemplo delas é a 
 \lang english
 Hypertext Markup Language (HTML),
@@ -1304,20 +1758,21 @@ Hypertext Markup Language (HTML),
 \begin_layout Itemize
 
 \lang english
-Domain-Specific Modeling Languages:
+Domain-Specific Modeling Languages (specification languages):
 \lang brazilian
- são linguagens que permitem expressar informação, conhecimento o sistemas
+ são linguagens que permitem expressar sistemas com o proposito de modelar
+ eles,
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-???
+??? (corrigido)
 \end_layout
 
 \end_inset
 
- em uma estrutura consistente com um conjunto de regras que permitem interpretar
- o significado dos componentes modelados.
+ são compostos de uma estrutura consistente de um conjunto de regras que
+ permitem interpretar o significado dos componentes modelados.
  Uma linguagem deste tipo é a 
 \lang english
 Unified Modeling Language
@@ -1344,9 +1799,8 @@ Domain-Specific Programming Languages:
 \lang brazilian
  são linguagens que permitem a programação em alto nível aplicada a um domínio
  especifico de conhecimento.
- Uma linguagem desse tipo é a R que permite a programação de conceitos estatísti
-cos e geração de gráficos.
- 
+ Uma linguagem desse tipo é a linguagem R que permite a programação de conceitos
+ estatísticos e geração de gráficos.
 \end_layout
 
 \begin_layout Standard
@@ -1363,8 +1817,344 @@ Coloque um paragrafo sobre internal and external DSLs.
 \end_layout
 
 \begin_layout Standard
+Segundo o tipo de implementação as DSL podem ser dividas em 
+\lang english
+external DSL e internal DSL,
+\lang brazilian
+ explicadas a continuação
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fowler2010domain"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+External DSL:
+\lang brazilian
+ é uma linguagem de domínio especifico que é definida com uma sintases independe
+nte de outras linguagens de programação, tendo como principal vantagem a
+ flexibilidade da DSL.
+ A desvantagem é que requer um desenvolvimento de um 
+\lang english
+full
+\lang brazilian
+ parser para processar ela.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Internal DSL:
+\lang brazilian
+ é uma linguagem de domínio especifico escrita dentro de uma linguagem 
+\lang english
+host
+\lang brazilian
+ existente.
+ A vantagem deste enfoque de definição de DSL é que o tempo e custo de desenvolv
+imento é menor em relação a definir uma DSL externa.
+ Devido a que este tipo de linguagens são escritas sobre uma linguagem de
+ proposito geral, a desvantagem é que a linguagem fica dependendo das instruções
+ e características da linguagem 
+\lang english
+host,
+\lang brazilian
+ o que em alguns casos afeta a flexibilidade e expressividade da DSL que
+ quer-se definir.
+\end_layout
+
+\begin_layout Subsection
+Linguagem 
+\lang english
+Groovy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Groovy
+\lang brazilian
+ é uma linguagem dinâmica para a máquina virtual Java (
+\lang english
+JVM
+\lang brazilian
+) 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "koenig2007groovy"
+
+\end_inset
+
+.
+ Ela tem uma sintaxe parecida com Java, suporte para programação funcional,
+ produz 
+\lang english
+JVM bytecodes
+\lang brazilian
+ e interopera bem com código e bibliotecas Java.
+ Ela traz características de linguagens como 
+\lang english
+Python
+\lang brazilian
+, 
+\lang english
+Ruby
+\lang brazilian
+ e 
+\lang english
+Smalltalk
+\lang brazilian
+ para uma linguagem similar a Java 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "koenig2007groovy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O grande benefício que 
+\lang english
+Groovy
+\lang brazilian
+ traz para este projeto, é o suporte que sua natureza dinâmica dá ao desenvolvim
+ento de DSLs.
+ Essas DSLs podem rodar diretamente na 
+\lang english
+JVM
+\lang brazilian
+ e usar bibliotecas Java já existentes.
+ DSLs em 
+\lang english
+Groovy
+\lang brazilian
+ se integram facilmente à própria linguagem Groovy de modo que não é aparente
+ onde o código em 
+\lang english
+Groovy
+\lang brazilian
+ termina e a DSL começa 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dearle2015groovy"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Groovy for Domain-Specific Languages Fergal Dearle(adicionado)
+\end_layout
+
+\end_inset
+
+.
+ Isso permite que a DSL seja implementada como uma DSL interna, estendendo
+ a linguagem Groovy (e simplificando a sua criação), mas mantenha uma sintaxe
+ próxima à linguagem usada pelos especialistas de domínio.
+ Como uma DSL interna, ela pode usar ferramentas já existentes para auxiliar
+ a escrita de código em Groovy, como editores com 
+\shape italic
+\lang english
+syntax highlighting
+\shape default
+\lang brazilian
+ e 
+\shape italic
+\lang english
+code completion
+\shape default
+\lang brazilian
+, para a sua edição.
+\end_layout
+
+\begin_layout Standard
+Outra vantagem de Groovy é que ela é uma linguagem para a 
+\lang english
+JVM
+\lang brazilian
+ e existem muitas bibliotecas, em Java, que dão suporte às tecnologias da
+ Web Semântica.
+ Isso inclui bibliotecas como a 
+\lang english
+OWL API
+\lang brazilian
+, para trabalhar com ontologias em 
+\lang english
+OWL
+\lang brazilian
+, Apache 
+\lang english
+Jena
+\lang brazilian
+, para acesso a 
+\lang english
+triplestores
+\lang brazilian
+, entre outras.
+ Finalmente, os SADs a serem criados serão aplicativos web, Groovy tem um
+ web framework muito poderoso.
+ Grails
+\lang english
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://grails.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\lang brazilian
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Grails usa uma abordagem de convenção sobre configuração que usa opções
+ default razoáveis.
+ Ele se integra bem com a JVM e tem características como ORM integrado,
+ DSLs, metaprogramação durante runtime e compile-time e programação assíncrona
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "smith2009grails"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Grails in Action GLEN SMITH PETER LEDBROOK (adicionado)
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+foi determinado que os especialistas de domínio não têm um conhecimento
+ detalhado sobre modelagem de conhecimento usando os padrões da web semântica,
+ descritos neste capitulo.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Também foi determinado que as ontologias permitem uma definição detalhada
+ do conhecimento do domínio, pelo que foi necessário definir uma camada
+ intermédia que facilitasse a definição do conhecimento por parte dos especialis
+tas.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Por isso foi identificado a necessidade de uma DSL adequada ao nível de
+ conhecimento de computação dos especialistas, e que contenha termos familiares
+ ao domínio desses especialistas.
+ (colocado em considerações)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pelo qual uma DSL de tipo 
+\lang english
+programming
+\lang brazilian
+ pode suportar a definição de conhecimento dos especialistas, fornecendo
+ uma solução compatível com os termos específicos deles.
+ Facilitando que os especialistas especifiquem os SAD com um grau de detalhament
+o suficiente para definir o conhecimento deles sem intervenção dos desenvolvedor
+es de software, os especialistas poderiam se tornar, na prática, programadores
+ de seus próprios SADs.
+ (colocado em considerações)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Discussão
+\end_layout
+
+\begin_layout Standard
+A partir do analise dos especialistas foi determinado que os especialistas
+ de domínio não têm um conhecimento detalhado sobre modelagem de conhecimento
+ usando os padrões da web semântica, descritos neste capitulo.
+ 
+\end_layout
+
+\begin_layout Standard
+Também foi determinado que as ontologias permitem uma definição detalhada
+ do conhecimento do domínio, pelo que foi necessário definir uma camada
+ intermédia que facilitasse a definição do conhecimento por parte dos especialis
+tas.
+ 
+\end_layout
+
+\begin_layout Standard
+Por isso foi identificado a necessidade de uma DSL adequada ao nível de
+ conhecimento de computação dos especialistas, e que contenha termos familiares
+ ao domínio desses especialistas.
+ 
+\end_layout
+
+\begin_layout Standard
+Pelo qual uma DSL de tipo 
+\lang english
+programming
+\lang brazilian
+ pode suportar a definição de conhecimento dos especialistas, fornecendo
+ uma solução compatível com os termos específicos deles.
+ Facilitando que os especialistas especifiquem os SAD com um grau de detalhament
+o suficiente para definir o conhecimento deles sem intervenção dos desenvolvedor
+es de software, os especialistas poderiam se tornar, na prática, programadores
+ de seus próprios SADs.
+\end_layout
+
+\begin_layout Standard
 Neste projeto, DSLs servem para customizar o comportamento dos SADs.
- Por isso, uma Domain-Specifc Programming Language foi desenvolvida.
+ Por isso, uma 
+\lang english
+Domain-Specifc Programming Language 
+\lang brazilian
+foi desenvolvida.
  Ela faz uso da ontologia para organizar o conhecimento do domínio e definir
  o comportamento dos SADs (Figura 
 \begin_inset CommandInset ref
@@ -1409,7 +2199,7 @@ http://groovy-lang.org/
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1443,172 +2233,19 @@ name "fig:Componente-DSL"
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Subsection
-Linguagem Groovy
-\end_layout
-
-\begin_layout Standard
-Groovy é uma linguagem dinâmica para a máquina virtual Java (JVM) 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "koenig2007groovy"
-
-\end_inset
-
-.
- Ela tem uma sintaxe parecida com Java, suporte para programação funcional,
- produz JVM bytecodes e interopera bem com código e bibliotecas Java.
- Ela traz características de linguagens como Python, Ruby e Smalltalk para
- uma linguagem similar a Java 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "koenig2007groovy"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-O grande benefício que Groovy traz para este projeto, é o suporte que sua
- natureza dinâmica dá ao desenvolvimento de DSLs.
- Essas DSLs podem rodar diretamente na JVM e usar bibliotecas Java já existentes.
- DSLs em Groovy se integram facilmente à própria linguagem Groovy de modo
- que não é aparente onde o código em Groovy termina e a DSL começa REF
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Groovy for Domain-Specific Languages Fergal Dearle
-\end_layout
-
-\end_inset
-
-.
- Isso permite que a DSL seja implementada como uma DSL interna, estendendo
- a linguagem Groovy (e simplificando a sua criação), mas mantenha uma sintaxe
- próxima à linguagem usada pelos especialistas de domínio.
- Como uma DSL interna, ela pode usar ferramentas já existentes para auxiliar
- a escrita de código em Groovy, como editores com 
-\shape italic
-syntax highlighting
-\shape default
- e 
-\shape italic
-code completion
-\shape default
-, para a sua edição.
-\end_layout
-
-\begin_layout Standard
-Outra vantagem de Groovy é que ela é uma linguagem para a JVM e existem
- muitas bibliotecas, em Java, que dão suporte às tecnologias da Web Semântica.
- Isso inclui bibliotecas como a OWL API, para trabalhar com ontologias em
- OWL, Apache Jena, para acesso a triple stores, entre outras.
- Finalmente, os SAPs a serem criados serão aplicativos web, Groovy tem um
- web framework muito poderoso.
- Grails
-\lang english
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://grails.org/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\lang brazilian
-.
- Grails usa uma abordagem de convenção sobre configuração que usa opções
- default razoáveis.
- Ele se integra bem com a JVM e tem características como ORM integrado,
- DSLs, metaprogramação durante runtime e compile-time e programação assíncrona
- REF
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Grails in Action GLEN SMITH PETER LEDBROOK
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-foi determinado que os especialistas de domínio não têm um conhecimento
- detalhado sobre modelagem de conhecimento usando os padrões da web semântica,
- descritos neste capitulo.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Também foi determinado que as ontologias permitem uma definição detalhada
- do conhecimento do domínio, pelo que foi necessário definir uma camada
- intermédia que facilitasse a definição do conhecimento por parte dos especialis
-tas.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Por isso foi identificado a necessidade de uma DSL adequada ao nível de
- conhecimento de computação dos especialistas, e que contenha termos familiares
- ao domínio desses especialistas.
- 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Pelo qual uma DSL de tipo 
-\lang english
-programming
-\lang brazilian
- pode suportar a definição de conhecimento dos especialistas, fornecendo
- uma solução compatível com os termos específicos deles.
- Facilitando que os especialistas especifiquem os SAD com um grau de detalhament
-o suficiente para definir o conhecimento deles sem intervenção dos desenvolvedor
-es de software, os especialistas poderiam se tornar, na prática, programadores
- de seus próprios SADs.
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Section
-Trabalhos relacionados???
+Considerações finais
+\begin_inset Note Note
+status open
+
+\begin_layout Section
+Trabalhos relacionados
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
  propusessem a geração automática de interface para Sistemas de Apoio a
  Decisão (SADs) com ou sem o uso de ontologias.
@@ -1621,7 +2258,7 @@ frameworks
  para teste dos sistemas desenvolvidos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ruiz2006using"
@@ -1660,7 +2297,7 @@ Melhorar as possibilidades de interação
 Melhorar o processo de desenvolvimento
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1712,15 +2349,16 @@ name "fig:Ontology-Enhanced-User-Interfaces-1"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Essas pesquisam dão a noção de que ontologias podem contribuir significativament
 e na geração de Web UI flexíveis e de SADs, confirmando a hipótese assumida
  na presente pesquisa.
  
 \end_layout
 
-\begin_layout Section
-Considerações finais
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1730,15 +2368,49 @@ status open
 \begin_layout Plain Layout
 Precisa melhorar essa conclusao.
  Tente linkar com o proximo capítulo.
+ (Feito)
 \end_layout
 
 \end_inset
 
-Os conceitos apresentados neste capítulo fornecem o suporte tecnológico
- para abordar o desenvolvimento de sistemas baseados em conhecimento, particular
-mente as ontologias suportaram vários aspectos cruciais, pelo qual elas
- foram um dos focos centrais da presente pesquisa.
- 
+
+\end_layout
+
+\begin_layout Standard
+A partir do problema identificado e da revisão da literatura foi encontrado
+ que o desenvolvimento de ontologias é um área de pesquisa abrangida pela
+ Web Semântica que permite desenvolver sistemas web baseados em conhecimento,
+ satisfazendo os requisitos de desenvolvimento do SAD SustenAgro explicados
+ no capitulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:SAD"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Porém, a definição de uma ontologia não é uma tarefa trivial, pelo que existe
+ dificuldade por parte dos especialistas do domínio ao definir as ontologias.
+ Ante isto foi analisadas varias soluciones e encontrou-se que complementando
+ a ontologia com uma DSL, favorece na definição dos conceitos dos especialistas
+ em uma linguagem mais natural para os especialistas.
+\end_layout
+
+\begin_layout Standard
+A continuação será apresentado o capitulo intitulado 
+\begin_inset Quotes eld
+\end_inset
+
+Framework Decisioner
+\begin_inset Quotes erd
+\end_inset
+
+ que faz uso das tecnologias explicadas para definir um Framework que facilite
+ a definição de conhecimento dos especialistas com a finalidade de gerar
+ SADs.
 \end_layout
 
 \end_body
