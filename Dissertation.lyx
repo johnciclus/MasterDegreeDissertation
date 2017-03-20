@@ -316,25 +316,6 @@ filename "chapters/Abstract_PT.lyx"
 
 \end_layout
 
-\begin_layout Resumo
-
-\lang english
-\begin_inset CommandInset include
-LatexCommand input
-filename "chapters/Abstract_EN.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents

@@ -75,17 +75,9 @@
 \begin_body
 
 \begin_layout Standard
-Os Sistemas de Apoio à Decisão (SAD 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SAD"
-description "Sistemas de Apoio à Decisão"
-
-\end_inset
-
-) organizam e processam os dados e informações para gerar resultados de
- valor que apoiem e melhorem a tomada de decisão em um área de conhecimento,
- também denominada como domínio especifico 
+Os Sistemas de Apoio à Decisão (SAD ) organizam e processam os dados e informaçõ
+es para gerar resultados de valor que apoiem e melhorem a tomada de decisão
+ em um área de conhecimento, também denominada como domínio especifico 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Turban:2004:DSS:994103"
@@ -142,7 +134,7 @@ l, entendível e acessível pelos especialistas do domínio.
 \begin_layout Standard
 Como exemplo do problema anterior, podemos expor o caso dos especialistas
  em sustentabilidade da Embrapa Meio Ambiente, que desenvolveram o projeto
- SustenAgro (capitulo 
+ SustenAgro (capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Sustainability_Assessment"
