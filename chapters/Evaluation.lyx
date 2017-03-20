@@ -90,16 +90,17 @@ reference "chap:SustenAgro"
 \end_inset
 
 ), são sistemas software que precisavam avaliação para verificar se os requisito
-s foram implementados corretamente.
- Estes dois sistemas foram desenvolvidos com metodologias iterativas, realizando
- varias inspeções e testes durante a implementação, porém, foi realizada
- uma avaliação final para permita concluir a correta implementação dos sistemas.
+s deles foram implementados corretamente.
+ Estes dois sistemas foram desenvolvidos com metodologias iterativas, onde
+ foram realizadas varias inspeções e testes durante a implementação, porém,
+ foi realizada uma avaliação final para analisar em detalhe se eles implementara
+m corretamente as funcionalidades.
 \end_layout
 
 \begin_layout Standard
-A continuação são apresentadas as avaliações realizadas a cada um dos sistemas
- resultantes da pesquisa, as avaliações foram independentes, mas cada uma
- gerou resultados que fizeram redesenhar as arquiteturas dos produtos.
+A continuação são apresentadas as avaliações realizadas ao SAD SustenAgro
+ e ao Framework Decisioner, as avaliações foram independentes, mas cada
+ uma gerou resultados que fizeram redesenhar as arquiteturas de ambos produtos.
 \end_layout
 
 \begin_layout Section
@@ -107,15 +108,15 @@ Avaliação das web UI.
 \end_layout
 
 \begin_layout Standard
-Na finalização do processo de design das UI explicado em 
+Na finalização do processo de design das web UI explicado em 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Web-UI"
 
 \end_inset
 
-, foi realizada uma avaliação da usabilidade das web UI do SAD SustenAgro,
- os detalhes da avaliação foram:
+, foi realizada uma avaliação da usabilidade delas no SAD SustenAgro, os
+ detalhes da avaliação foram:
 \end_layout
 
 \begin_layout Description
@@ -147,13 +148,12 @@ Técnica Avaliação de usabilidade
 Nesta avaliação foi apresentado aos usuários especialistas em sustentabilidade
  o processo de design da UI e o protótipo da interface gráfica de usuário
  do SAD SustenAgro sem dados reais.
- Nessas interfaces eles interagiram com as telas a través de um navegador
- web, fazendo uso das funcionalidades do SAD que simula os dados durante
- o processo.
+ Nessas interfaces eles interagiram nas telas a través de um navegador web,
+ fazendo uso das funcionalidades do SAD que simula os dados durante o processo.
 \end_layout
 
 \begin_layout Standard
-Durante a avaliação foi verificado:
+Durante a avaliação foram verificados, os três aspectos da usabilidade:
 \end_layout
 
 \begin_layout Itemize
@@ -163,14 +163,15 @@ s definidas e permitiam interagir de maneira intuitiva para realizar as
 \end_layout
 
 \begin_layout Itemize
-Eficiência: o aceso à ferramenta foi realizado em tempos imediatos e possível
- realizar desde os recursos típicos de um laptop com um navegador, e as
- telas tinham informações de ajuda para acompanhar a interação.
+Eficiência: o aceso à ferramenta foi realizado em tempos esperado e foi
+ possível realizar as tarefas com recursos típicos de um laptop e um navegador
+ web.
 \end_layout
 
 \begin_layout Itemize
 Satisfação: os usuários conseguiram realizar as tarefas sem problemas e
- com uma experiencia de fácil uso.
+ com uma experiencia de fácil uso, onde a ferramenta fornecia informação
+ de ajuda para realizar as interações.
 \end_layout
 
 \begin_layout Standard
@@ -181,8 +182,8 @@ A avaliação foi positiva, cumprindo os três anteriores aspectos que compõem
 \end_layout
 
 \begin_layout Itemize
-Mudar a organização do processo de avaliação, agrupando varias tarefas que
- estavam separadas em uma seção denominada 
+Mudar a organização do processo de avaliação, agrupando varias tarefas em
+ uma seção denominada 
 \begin_inset Quotes eld
 \end_inset
 
@@ -213,18 +214,38 @@ Web Components
 
 \begin_layout Itemize
 Organizar os indicadores em uma hierarquia simplificada que facilita-se
- a o preenchimento dos indicadores.
+ o preenchimento dos indicadores.
 \end_layout
 
 \begin_layout Standard
-Depois de implementar as recomendações anteriores, foi continuado o ciclo
- de desenvolvimento, sendo necessário realizar ajustes da interface em cada
- funcionalidade, más as principais melhoras foram realizadas devido a esta
- avaliação.
+Depois de implementar as recomendações anteriores, foi continuado desenvolviment
+o com a integração da ontologia e da DSL, sendo necessário realizar ajustes
+ da interface ao integrar cada funcionalidade.
+ As principais mudanças foram realizadas devido a esta avaliação.
 \end_layout
 
 \begin_layout Section
-Avaliação da ontologia.
+Avaliação da ontologia do domínio de avaliação da sustentabilidade.
+\end_layout
+
+\begin_layout Standard
+A ontologia SustenAgro foi o resultado da modelagem do conhecimento dos
+ especialistas que passou por várias etapas, desde ser definida em texto,
+ modelada em mapas conceituas e modelar a ontologia em 
+\lang english
+OWL,
+\lang brazilian
+ este processo foi detalhado na seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Metodologia"
+
+\end_inset
+
+.
+ Cada um dessas etapas requiriu inspeções por parte dos especialistas para
+ verificar a correta modelagem, uma avaliação formal foi realizadas e os
+ detalhes delas são descritos a continuação.
 \end_layout
 
 \begin_layout Description
@@ -232,7 +253,7 @@ Data 14 de abril do 2016
 \end_layout
 
 \begin_layout Description
-Participantes Especialista em sustentabilidade e Especialista em modelagem
+Participantes Especialista em sustentabilidade e especialista em modelagem
  de conhecimento
 \end_layout
 
@@ -294,6 +315,15 @@ https://gephi.org/
 
 \end_inset
 
+, as quais representaram aspectos da ontologia em varias visualizações de
+ grafos, permitindo avaliar a coerência das conexões entre os nós daqueles
+ grafos.
+\end_layout
+
+\begin_layout Standard
+Também foi analisado o SAD SustenAgro que tinha a ontologia integrada, usando
+ as funcionalidades que requeriam dados da ontologia, verificando a informação
+ recuperada e a coerência dela em relação à existente na ontologia.
  
 \end_layout
 
@@ -303,12 +333,36 @@ A reunião de avaliação chegou no consenso: a ontologia
 OWL
 \lang brazilian
  está representando a avaliação da sustentabilidade do sistema de produção
- de cana no centro-sul do Brasil, avaliaram positivamente a especificidade
- para suportar SADs.
+ de cana no centro-sul do Brasil, destacando a especificidade dela para
+ suportar SADs e que não ficou em termos abstratos.
+\end_layout
+
+\begin_layout Standard
+Foi recomendado integrar outro tipo de visualizações e editores de ontologia
+ no framework Decisioner, entre eles foi recomendado fornecer um editor
+ visual de ontologia basado na ferramenta 
+\lang english
+WebVOWL
+\lang brazilian
+ definida e desenvolvida por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "lohmann2014webvowl"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 Avaliação do protótipo funcional com dados
+\end_layout
+
+\begin_layout Standard
+Com a finalidade de avaliar a implementação do método SustenAgro, foram
+ realizados testes de vários tipos de avaliações para comparar com resultados
+ de outras fontes, e assim validar a correta implementação, os detalhes
+ da avaliação foram.
 \end_layout
 
 \begin_layout Description
@@ -321,15 +375,7 @@ Participantes Especialista em sustentabilidade e especialista em economia
 \end_layout
 
 \begin_layout Description
-Local Agência Paulista de Tecnologia dos Agronegócios (APTA
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "APTA"
-description "Agência Paulista de Tecnologia dos Agronegócios"
-
-\end_inset
-
-)
+Local Agência Paulista de Tecnologia dos Agronegócios (APTA)
 \end_layout
 
 \begin_layout Description
@@ -409,17 +455,31 @@ name "fig:Matriz-de-sustentabilidade-Maximos"
 
 \end_layout
 
+\begin_layout Standard
+Um dos aspectos valorados da ferramenta foi que ela permite mudar em tempo
+ real as formulas do método de avaliação, permitindo fazer ajustes no método.
+ Esta funcionalidade permitiu descobrir e avaliar uma mudança do método
+ original, a integração uma operação de valor de um valor absoluto na formula,
+ o que permitiu demostrar agilmente os dois cenários e aceitar a mudança
+ proposta pelo desenvolvedor do framework Decisioner.
+\end_layout
+
 \begin_layout Section
-Avaliação do SAD SustenAgro: 
+Avaliação do SAD SustenAgro e do Framework Decisioner: 
+\end_layout
+
+\begin_layout Standard
+A partir da avaliação da ontologia, da implementação do método SustenAgro
+ e das web UI desenvolvidas, realizou-se uma avaliação do SAD, com a finalidade
+ de avaliar a integração desses componentes.
 \end_layout
 
 \begin_layout Description
-Data 22 de junho do 2016
+Data 18 de maio do 2016 até o dia 22 de junho do 2016
 \end_layout
 
 \begin_layout Description
-Participantes Especialista em sustentabilidade e especialista em economia
- agrícola
+Participantes Usuários especialistas e usuários finais.
 \end_layout
 
 \begin_layout Description
@@ -435,14 +495,13 @@ Para realizar uma avaliação integral do SAD SustenAgro e do Framework Decision
 , foi necessário fazer testes de usabilidade por parte de usuários de ambos
  perfis do sistema (administradores e usuários finais).
  A avaliação foi realizada com a maioria dos membros da equipe SustenAgro
- e com usuários finais de maneira remota e independente, realizando 8 avaliações
- desde o dia 18 de maio do 2016 até o dia 22 de junho do 2016.
+ e com usuários finais de maneira remota e independente, realizando 8 avaliações.
 \end_layout
 
 \begin_layout Standard
 A avaliação consistiu em realizar um conjunto de tarefas com o SAD SustenAgro
  v1.0, e responder se foi possível terminar a tarefa e as sugestões, as tarefas
- e perguntas são apresentadas no apêndice 
+ e perguntas solicitadas aos usuários, estão no apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Formulário-de-avaliação-SustenAgro"
@@ -453,23 +512,20 @@ reference "sec:Formulário-de-avaliação-SustenAgro"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="20col%">
+<column alignment="center" valignment="top" width="20col%">
+<column alignment="center" valignment="top" width="60col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
+\size small
 Perfil de Usuário
 \end_layout
 
@@ -479,15 +535,21 @@ Perfil de Usuário
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
+\size small
 Avaliação
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
+\size small
 Sugestões
 \end_layout
 
@@ -495,204 +557,47 @@ Sugestões
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Usuário final 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Positiva, realizou as 7 tarefas com sucesso
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-Detalhar cada funcionalidade, organizar UI, dar resultados mais detalhados
+\begin_layout Itemize
+
+\size small
+Aumentar a ajuda para cada funcionalidade
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_layout Itemize
 
-\begin_layout Plain Layout
-Usuário final 2
+\size small
+Barra de progresso durante a avaliação
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_layout Itemize
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Usuário final 3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Especialista em sustentabilidade
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Especialista economia
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Positiva, realizou as 7 tarefas com sucesso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Salvar dados da seção automaticamente, mudanças nos indicadores, editor
- visual de ontologia e internacionalização
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Especialista em ontologias
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Especialista agricultura
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\size small
+Resultados de avaliação mais detalhados
 \end_layout
 
 \end_inset
@@ -703,6 +608,361 @@ Especialista agricultura
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
+Usuário final 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Melhorar a explicação do processo de avaliação
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Resultados numéricos com formatação 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Usuário final 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Segurança no cadastro da senha
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Melhorar a localização do botão avaliar
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Remover 
+\lang english
+scroll
+\lang brazilian
+ externo
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Salvar automaticamente os dados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Especialista em sustentabilidade
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas com sucesso
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+e as realizou as 5 tarefas de usuário administrador com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Definir e acrescentar os termos de uso
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Melhorar a sequencia de telas durante o cadastro de novo usuário
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Balão explicativo dos campos do formulário de nova unidade produtiva, especifica
+mente a propriedade de publicação dos dados
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Definir o limite de caráteres para o campo de justificativa
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Salvar avaliação ao mudar de aba
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Justificativas sempre visíveis na tela de resultados.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Acrescentar bandeira em inglês e termos de uso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Especialista economia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas com sucesso
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+e as realizou as 5 tarefas de usuário administrador com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Salvar dados da seção automaticamente
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Mudanças em alguns 
+\lang english
+labels
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Mudanças nos indicadores
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Componentes gráficos para representar os dados 
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Editor visual de ontologia e internacionalização
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Especialista em ontologias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Melhorar a apresentação do botão salvar
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Indicadores em forma de pergunta com verbo e simbolo de pergunta
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Informar a possibilidade de edição de indicadores 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Especialista agricultura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Cadastrar mais de uma microrregião
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Remover 
+\lang english
+scroll
+\lang brazilian
+ externo, mudanças em vários indicadores
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Melhorar a localização do botão salvar e avaliar
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Salvar a seção para não perder os dados
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Melhorar a apresentação do pdf
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 Especialista em computação
 \end_layout
 
@@ -713,15 +973,26 @@ Especialista em computação
 
 \begin_layout Plain Layout
 
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
+\begin_layout Itemize
 
+\size small
+Salvar a seção e os dados dela em tempo real
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Integrar sistemas externos para poupar informação (caracterização da unidade
+ produtiva) 
 \end_layout
 
 \end_inset
@@ -733,6 +1004,13 @@ Especialista em computação
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -746,17 +1024,19 @@ Avaliação do SAD SustenAgro
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Editor de ontologias e DSL
+A partir dessa avaliação integral feita por usuários finais e administradores,
+ foram definidas varias melhoras para realizar sobre o Framework Decisioner
+ e o SAD SustenAgro, devido às limitações de tempo e de desenvolvedores
+ foram implementadas os ajustes visuais nas web UI, melhoras na apresentação
+ dos resultados, na geração do PDF e principalmente o suporte à linguagem
+ inglesa, que foi selecionada de especial importância por parte dos especialista
+s.
 \end_layout
 
 \begin_layout Section
@@ -764,7 +1044,35 @@ Editor de ontologias e DSL
 \lang english
 Workshop
 \lang brazilian
-: validação do software SustenAgro v1.0 com equipe de especialistas 
+: validação do software SustenAgro v1.0 com equipe de especialistas.
+\end_layout
+
+\begin_layout Standard
+A partir das melhoras realizadas na avaliação interna dos dois tipos de
+ usuários do SAD SustenAgro, foi publicado o sistema nos servidos do ICMC,
+ para poder ser usados na Internet.
+ Esta publicação permitiu dar suporte uma avaliação no formato de 
+\lang english
+workshop
+\lang brazilian
+ com especialistas de diversos perfis que tinham interesse no SAD SustenAgro,
+ o 
+\lang english
+Workshop
+\lang brazilian
+ foi intitulado 
+\begin_inset Quotes eld
+\end_inset
+
+validação do software SustenAgro
+\begin_inset Quotes erd
+\end_inset
+
+, os detalhes do 
+\lang english
+workshop
+\lang brazilian
+ são apresentados a continuação.
 \end_layout
 
 \begin_layout Description
@@ -793,15 +1101,34 @@ workshop
  com vistas a garantir o entendimento do usuário e possibilitar que a avaliação
  da sustentabilidade do sistema de produção de cana-de-açúcar seja realizada
  da melhor forma possível.
+ 
 \end_layout
 
 \begin_layout Standard
-A avaliação consistiu em fazer um 
+No 
 \lang english
 workshop
 \lang brazilian
- com especialistas de diversos perfis, e eles aprovaram a ferramenta tanto
- na interação como no conteúdo dela, com as seguintes sugestões.
+ foi apresentado o formulário de avaliação (seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Formulario-Delphi-Workshop"
+
+\end_inset
+
+) usando a técnica 
+\lang english
+Delphi
+\lang brazilian
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wright1985tecnica"
+
+\end_inset
+
+, a um grupo de especialistas com perfis de varias áreas do conhecimento,
+ entre eles destacam-se:
 \end_layout
 
 \begin_layout Itemize
@@ -840,8 +1167,53 @@ Mestrando em ciências da computação (sistemas web e multimídia)
 Mestrando em Planejamento de Sistemas Energéticos 
 \end_layout
 
+\begin_layout Standard
+Os especialistas aprovaram a ferramenta tanto na interação como no conteúdo
+ dela, com as seguintes sugestões
+\end_layout
+
+\begin_layout Itemize
+As perguntas dos indicadores não são de fácil interpretação
+\end_layout
+
+\begin_layout Itemize
+Colocar mais informações na interface para facilitar o uso dela, por exemplo
+ o significado de alinhamento dos indicadores
+\end_layout
+
+\begin_layout Itemize
+Alguns indicadores estão repetidos
+\end_layout
+
+\begin_layout Itemize
+Os resultados da avaliação deveriam estar por dimensão
+\end_layout
+
+\begin_layout Itemize
+Demora para salvar os dados inseridos
+\end_layout
+
+\begin_layout Itemize
+A informação dos site tem inconsistências em relação à informação do pdf
+ gerado
+\end_layout
+
+\begin_layout Itemize
+A recomendações do relatório precisam mais detalhamento 
+\end_layout
+
 \begin_layout Section
 Avaliação de SAD SustenAgro nos servidores da Embrapa
+\end_layout
+
+\begin_layout Standard
+A partir da aprovação do SAD SustenAgro por parte dos especialistas no 
+\lang english
+workshop
+\lang brazilian
+, foi autorizada a instalação da ferramenta nos servidores da Embrapa Meio
+ Ambiente, em um esforço coordenado entre o desenvolvedor do framework Decisione
+r e os técnicos da Embrapa, os detalhes estão a continuação.
 \end_layout
 
 \begin_layout Description
@@ -860,8 +1232,67 @@ Local Embrapa Meio Ambiente - Campinas
 Técnica Test de usabilidade
 \end_layout
 
+\begin_layout Standard
+A instalação deveu ser guiada pelo desenvolvedor aos técnicos da Embrapa,
+ devido a que não foi autorizado o ingresso aos servidor por parte de profission
+ais externos.
+ Por esta razão procedeu-se a gerar um documento de instalação descrito
+ no apêndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Instalation"
+
+\end_inset
+
+, nele estão as instruções para instalar o Framework Decisioner e instanciar
+ o SAD SustenAgro.
+\end_layout
+
+\begin_layout Standard
+A instalação foi exitosa publicando o aplicativo no endereço 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://sustenagro.embrapa.br/
+\end_layout
+
+\end_inset
+
+, mas o endereço atualmente não esta no ar, por entrar em processo de registro
+ pelo Embrapa Meio Ambiente.
+\end_layout
+
 \begin_layout Section
 Conclusões
+\end_layout
+
+\begin_layout Standard
+As anteriores avaliações permitiram verificar que os requisitos do framework
+ Decisioner e do SAD SustenAgro, foram desenvolvidos corretamente segundo
+ as especificações feitas pelos especialistas e identificadas no levantamento
+ de requisitos.
+\end_layout
+
+\begin_layout Standard
+Cada avaliação trouxe correções e melhoras que foram implementadas na medida
+ do possível segundo a relevância cientifica delas e o tempo disponível
+ por parte do desenvolvedor do projeto.
+ 
+\end_layout
+
+\begin_layout Standard
+Devido a que foi um processo cíclico, cada iteração acrescentou novas funcionali
+dades que fizeram mudar a arquitetura do sistema, gerando 
+\lang english
+bugs
+\lang brazilian
+ e inconsistências.
+ Na versão 1.0 dos sistemas conta com funcionalidades estáveis que permitem
+ fornecer os serviços, e a partir das correções e sugestões recebidas durante
+ a avaliação foram formulados trabalhos futuros que serão apresentados no
+ próximo capitulo conclusões.
 \end_layout
 
 \end_body

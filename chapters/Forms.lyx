@@ -475,7 +475,6 @@ feature ':AgriculturalIndicator'
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
 Adição de feature na DSL
 \end_layout
 
@@ -605,6 +604,30 @@ Dar click na opção “Save”
 
 \begin_layout Enumerate
 Visualizar uma view que faça uso do label editado na interface do Usuário
+\end_layout
+
+\begin_layout Section
+Formulário Delphi para Workshop SustenAgro
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Formulario-Delphi-Workshop"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename /home/john/Desktop/Dissertation/pages/workshop.pdf
+	lyxscale 80
+	extra LaTeX "pages=-"
+	width 100col%
+
+\end_inset
+
+
 \end_layout
 
 \end_body

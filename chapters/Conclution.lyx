@@ -76,7 +76,7 @@
 
 \begin_layout Standard
 Neste capitulo são apresentadas os resultados, os trabalhos futuros, as
- dificuldades e uma discussão final sobre as conclusões do mestrado.
+ dificuldades e uma discussão final sobre as caput do mestrado.
 \end_layout
 
 \begin_layout Section
@@ -120,8 +120,8 @@ DSL que permite definir os principais elementos de um SAD, usando os conceitos
 \lang english
 web components
 \lang brazilian
- para gerar as UI, dentro dos elementos suportados estão a definição dos
- objetos de avaliação, os indicadores, as as formulas do método de avaliação
+ para gerar as web UI, dentro dos elementos suportados estão a definição
+ dos objetos de avaliação, os indicadores, as formulas do método de avaliação
  e a definição do formato do relatório de cada análise.
 \end_layout
 
@@ -178,14 +178,15 @@ Dificuldades
 \end_layout
 
 \begin_layout Standard
-Uma dificuldade identificadas durante a realização da pesquisa, foram as
+As dificuldades identificadas durante a realização da pesquisa, foram as
  seguintes:
 \end_layout
 
 \begin_layout Standard
-A falta de fontes de dados e informação que permitam entender e modelar
- o domínio do conhecimento por parte dos especialistas, a partir desta dificulda
-de foi identificado o problema de pesquisa.
+A falta dados e informação para modelar o domínio do conhecimento de avaliação
+ em sustentabilidade, pelo que foi necessário realizar o processo de modelagem
+ para determinar que era necessário fornecer ferramentas de definição do
+ conhecimento por parte dos especialistas.
  Porém, depois de estabelecer meios de representação de conhecimento para
  os especialistas, encontrou-se que não existiam dados que representaram
  instancias dos conceitos definidos, pelo que foi necessário criar formulários
@@ -194,23 +195,24 @@ de foi identificado o problema de pesquisa.
 \end_layout
 
 \begin_layout Standard
-Outra dificuldade, foi que a falta de trabalhos relacionados que forneçam
- um referente em cada uma das etapas de desenvolvimento, repercutindo na
- realização de tarefas erradas que consumiram tempo.
+Outra dificuldade, foi a falta de trabalhos relacionados que forneçam um
+ referente em cada uma das etapas de desenvolvimento, repercutindo na realização
+ de tarefas erradas que consumiram tempo.
  Só foi possível encontrar fundamentação teórica especializada em cada área
- do conhecimento de maneira separada, no caso dos SAD a literatura as fontes
- bibliográficas são de vários anos atrás.
+ do conhecimento de maneira separada, no caso dos SAD as as fontes bibliográfica
+s são de vários anos atrás.
 \end_layout
 
 \begin_layout Standard
 Além disso, o principal problema afrontado no mestrado, foi de carácter
- organizacional pela equipe devido a que existiram interesses heterogêneos
- por parte da USP e da Embrapa, sendo o interesse em pesquisa por parte
- da USP e de desenvolvimento por parte de Embrapa.
+ organizacional entre a equipo do projeto.
+ Este problema deve-se a que existem interesses heterogêneos por parte da
+ USP e da Embrapa, sendo o interesse em pesquisa por parte da USP e de desenvolv
+imento por parte de Embrapa.
  Adicionalmente, não existia uma definição especifica do tipo de sistema
  que os especialistas da Embrapa precisavam, o que levou a realizar levantamento
  de requerimentos e processos de design para especificar os sistemas requeridos,
- consumindo tempo importante em processos que não estavam relacionados a
+ consumindo tempo importante em processos que não estavam relacionados à
  pesquisa.
 \end_layout
 
@@ -221,12 +223,12 @@ Trabalhos futuros
 \begin_layout Standard
 A partir do analise dos resultados e das dificuldades, foram identificadas
  várias ideias que permitem complementar e melhorar os resultados da pesquisa.
- Com as seguintes ideias de trabalhos futuros fica a possibilidade de definir
- projetos de pesquisa e desenvolvimento tecnológico, entre as possibilidades
- identificadas estão:
+ Também a partir das seguintes ideias de trabalhos futuros fica a possibilidade
+ de definir projetos de pesquisa e desenvolvimento tecnológico, os trabalhos
+ futuros são:
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Metodologia de modelagem de conhecimento dos especialistas
 \end_layout
 
@@ -263,7 +265,7 @@ OWL
 
 \begin_layout Enumerate
 Gerar o formato computável da ontologia e carregar ele em um sistema web
- para permitir gerenciar ela.
+ para permitir o gerenciamento ela.
 \end_layout
 
 \begin_layout Enumerate
@@ -275,7 +277,12 @@ web
  para permitir o uso dela e dos dados em outros sistemas.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+Dita metodologia facilitará a definição de conhecimento dos especialistas,
+ devido a que fornece uma abordagem gradual da modelagem.
+\end_layout
+
+\begin_layout Subsection*
 Editor web de ontologias da web semântica.
 \end_layout
 
@@ -291,14 +298,15 @@ YAML
 
 \begin_layout Standard
 Este editor de ontologia pode ser complementado com um editor visual de
- ontologias que permita a visualização e edição em forma de grafos 
+ ontologias que permita a visualização e edição em forma de grafos, um exemplo
+ deste tipo de tecnologias é o visualizador de ontologias WebVOWL 
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Visualização baseada na aplicação 
+
 \lang english
-WebVOWL
+website do WebVOWL
 \lang brazilian
  
 \begin_inset Flex URL
@@ -317,29 +325,42 @@ http://vowl.visualdataweb.org/webvowl.html
 \end_inset
 
 .
- Está ferramenta integrará o método de modelagem de conhecimento proposto
+ 
+\end_layout
+
+\begin_layout Standard
+Está ferramenta integrará o método de modelagem de conhecimento proposto
  anteriormente e terá um repositório online de conhecimento que permita
  a reutilização.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 linguagem simplificado de consultas Sparql
 \end_layout
 
 \begin_layout Standard
-O componente Decisioner Core, está composto de um modulo que simplifica
- as consultas Sparql nas 
+O 
+\lang english
+Decisioner Interpreter
+\lang brazilian
+, está composto de um modulo que simplifica as consultas Sparql nas 
 \lang english
 triplestores
 \lang brazilian
-, o qual pode ser melhorado e generalizado para facilitar o armazenamento
- e recuperação de informações semânticas.
- Este componente pode ser disponibilizado como uma biblioteca que dê suporte
+.
+ Este modulo é um protótipo que pode ser melhorado e generalizado para facilitar
+ o armazenamento e recuperação de informações semânticas por meio de uma
+ linguagem simplificada em comparação do Sparql.
+ 
+\end_layout
+
+\begin_layout Standard
+Este componente pode ser disponibilizado como uma biblioteca que dê suporte
  no desenvolvimento de software que façam uso do Sparql.
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Linguagem de edição de 
 \lang english
 Web UIs
@@ -369,7 +390,7 @@ UI
 \lang english
 HTML
 \lang brazilian
- e permitira usar termos simples do dominio, e gerará web UIs de tipo single-pag
+ e permitira usar termos simples do domínio, e gerará web UIs de tipo single-pag
 e application.
 \end_layout
 
@@ -403,20 +424,20 @@ Javascript
  relacionados semanticamente.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Linguagem genérico definição de SAD
 \end_layout
 
 \begin_layout Standard
 Decisioner DSL é uma linguagem que permite definir SAD de tipo avaliação,
- que foi desenvolvido a partir do caso de uso SustenAgro.
+ que foi desenvolvido a partir do caso de uso SAD SustenAgro.
  Está DSL pode ser complementada e generalizada a partir da integração de
  instruções e funcionalidades que façam parte de outros SAD diferentes aos
  de avaliação, para desenvolver e validar uma linguagem geral que dê suporte
  a definição de SADs.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Georreferenciação
 \end_layout
 
@@ -517,14 +538,14 @@ GeoSPARQL
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Biblioteca de 
 \lang english
 web components
 \end_layout
 
 \begin_layout Standard
-O sistema Decisioner conta com aproximadamente 60 
+O Framework Decisioner conta com aproximadamente 60 
 \lang english
 web components
 \lang brazilian
@@ -538,7 +559,7 @@ A biblioteca
 \lang english
 Polymer
 \lang brazilian
-
+ 
 \begin_inset Foot
 status open
 
@@ -563,7 +584,7 @@ http://wiki.dbpedia.org/
 
 \end_inset
 
- está suportando a criação de 
+ suporta a criação de 
 \lang english
 web components
 \lang brazilian
@@ -578,10 +599,10 @@ A partir desta biblioteca pode-se desenvolver um sistema de classificação
 \lang english
 web components
 \lang brazilian
- para a geração de SADs.
+ para a geração de SADs, inclusive mapear eles diretamente desde a ontologia.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Biblioteca de 
 \lang english
 Report
@@ -601,15 +622,15 @@ Discussão final
 \end_layout
 
 \begin_layout Standard
-A partir dos resultados obtidos pode-se concluir o seguinte:
+O método de definição de SADs e framework Decisioner, tiveram uma avaliação
+ positiva por parte dos especialistas do domínio em sustentabilidade.
+ Esta avaliação guiada pelo SAD SustenAgro, demostrou que o método e a ferrament
+a Decisioner, solucionaram o problema identificado na presente pesquisa.
 \end_layout
 
 \begin_layout Standard
-O método de definição de conhecimento por parte dos especialistas, que foi
- implementado no framework Decisioner, teve uma avaliação positiva por parte
- dos especialistas do domínio em sustentabilidade.
- Esta avaliação demostrou que o método e a ferramenta Decisioner, solucionaram
- o problema identificado na presente pesquisa.
+Os objetivos específicos foram satisfeitos e alguns requereram desenvolvimento
+ adicionais para cumprir eles.
 \end_layout
 
 \begin_layout Standard
@@ -628,16 +649,24 @@ reference "sec:SAD-SustenAgro"
 \end_layout
 
 \begin_layout Standard
-Os objetivos específicos foram satisfeitos e alguns requereram desenvolvimento
- adicionais para cumprir eles.
+Para continuar a pesquisa foram descritos os trabalhos futuros, dentro delas
+ as mais relevantes são a metodologia de edição de ontologias e a ferramenta
+ web que implemente dita ontologia.
+ Esta solução permitira acompanhar o desenvolvimento de ontologias, abordando
+ a complexidade de maneira gradual.
 \end_layout
 
 \begin_layout Standard
-Para continuar a pesquisa foram escritas anteriormente umas ideias de trabalhos
- futuros, dentro delas as mais relevantes são a metodologia de edição de
- ontologias e a ferramenta web que implemente dita ontologia.
- Esta solução permitira acompanhar o desenvolvimento de ontologias, abordando
- a complexidade de maneira gradual.
+A principal contribuição do mestrado foi o método e ferramenta de geração
+ de SADs que usa ontologias e 
+\lang english
+DSLs
+\lang brazilian
+, para gerar SAD de maneira semiautomática.
+ O método permite complementar o conhecimento descrito em uma ontologia
+ com uma DSL que define os componentes de um SAD, fornecendo um método aos
+ especialistas de domínio para que eles mesmos definam SADs.
+ 
 \end_layout
 
 \end_body

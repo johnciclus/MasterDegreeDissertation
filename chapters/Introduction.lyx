@@ -125,7 +125,7 @@ Adicionalmente, os especialistas do domínio, em geral, não tem conhecimento
  suficiente em matéria de desenvolvimento de sistemas de software para realizar
  o dito processo por eles mesmos.
  Além disso, os dois domínios, tanto dos especialistas de domínio como dos
- desenvolvedores de software, são tão amplos que precisam perfis particulares
+ desenvolvedores de software, são tão amplos que precisam de perfis particulares
  para realizar os processos corretamente
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -195,8 +195,8 @@ key "Saxena"
 \end_layout
 
 \begin_layout Standard
-A analise do projeto SustenAgro permitiu identificar algumas motivações
- relacionadas com a integração de conhecimento dos especialistas de domínio.
+A análise do projeto SustenAgro permitiu identificar as seguintes motivações
+ relacionadas com a integração de conhecimento dos especialistas de domínio:
 \end_layout
 
 \begin_layout Standard
@@ -215,10 +215,9 @@ nto de SADs.
 \end_layout
 
 \begin_layout Standard
-A segunda refere-se ao requisito de fornecer meios computáveis de representação
- desse conhecimento, que facilitem a comunicação entre os especialistas
- do domínio e os desenvolvedores de software e que adaptem-se às mudanças
- do domínio.
+A segunda refere-se a fornecer meios computáveis de representação desse
+ conhecimento, que facilitem a comunicação entre os especialistas do domínio
+ e os desenvolvedores de software e que adaptem-se às mudanças do domínio.
  Domínios de conhecimento estão em continua mudança, como é o caso do domínio
  avaliação da sustentabilidade da cultura de cana-de-açúcar
 \begin_inset CommandInset citation
@@ -240,12 +239,12 @@ key "Lee2008349"
 \end_inset
 
 .
- O desenvolvimento e do SAD SustenAgro, em cooperação com a Embrapa Meio
- Ambiente, poderia gerar impacto positivo na produção agrícola, já que ele
- fornece a funcionalidade de avaliar a sustentabilidade na cana-de-açúcar.
+ O desenvolvimento do SAD SustenAgro, em cooperação com a Embrapa Meio Ambiente,
+ poderia gerar impacto positivo na produção agrícola, já que ele fornece
+ a funcionalidade de avaliar a sustentabilidade na cana-de-açúcar.
  Este SAD em particular é uma contribuição inédita que também permite a
  aplicação em outros sistemas agrícolas, o que poderia suportar melhoras
- e correções na produção de alimentos e produtos agrícolas
+ e correções na produção de alimentos e produtos neste setor
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Matthews2008149"
@@ -256,7 +255,7 @@ key "Matthews2008149"
 \end_layout
 
 \begin_layout Standard
-Com a finalidade de definir o meio de representação de conhecimento, foram
+Para definir um meio computável de representação de conhecimento, foram
  analisados vários tipos de sistemas de organização de conhecimento ou 
 \lang english
 Knowledge Organization System
@@ -274,11 +273,7 @@ description "Knowledge Organization System"
 \end_inset
 
 ).
- 
-\end_layout
-
-\begin_layout Standard
-Um dos 
+ Um dos 
 \lang english
 KOS
 \lang brazilian
@@ -291,9 +286,9 @@ KOS
 \begin_layout Standard
 Numa parceria com a Embrapa Meio Ambiente, foi desenvolvida uma ontologia
  de avaliação da sustentabilidade em cana-de-açúcar junto com os especialistas
- da Embrapa.
- Nas áreas de biologia e agricultura as ontologias são comuns, assim eles
- não tiveram dificuldade com o conceito.
+ desta instituição.
+ Nas áreas de biologia e agricultura as ontologias são comuns, desta forma
+ eles não tiveram dificuldade com o conceito.
  Eles usaram uma 
 \lang english
 Domain Specific Language
@@ -308,20 +303,21 @@ description "Domain Specific Language"
 
 ) que permite formatar as perguntas aos usuários finais, definir o método
  de avaliação e gerar o relatório de cada análise.
- Eles apreciaram muito o fato de usar uma ontologia num SAD, foi a primeira
- vez que fizeram isso, e de que, ao mudar essa ontologia, verem suas mudanças
- imediatamente no SAD.
+ Os especialistas apreciaram muito a utilização de uma ontologia em um SAD,
+ foi a primeira vez que fizeram isso, e particularmente, o fato de que as
+ mudanças na ontologia, façam mudanças imediatamente nos componentes do
+ SAD.
 \end_layout
 
 \begin_layout Standard
 Além das motivações vinculadas com o domínio dos especialistas em sustentabilida
-de existe a motivação de desenvolver novas tecnologias, uma contribuição
- tecnologia desta pesquisa foi o Framework Decisioner composto por ontologias
- e 
+de existe a motivação de desenvolver novas tecnologias.
+ Uma contribuição tecnologia neste sentido na pesquisa foi o Framework Decisione
+r composto por ontologias e 
 \lang english
 DSLs
 \lang brazilian
-, cujo proposito é facilitar a implementação de SADs, esse framework foi
+, cujo proposito é facilitar a implementação de SADs, sendo este framework
  instanciado para produzir o SAD SustenAgro.
 \end_layout
 
@@ -375,7 +371,7 @@ Resultados Principais
 \end_layout
 
 \begin_layout Standard
-Os principais contribuições deste mestrado são:
+As principais contribuições da pesquisa foram:
 \end_layout
 
 \begin_layout Itemize
@@ -401,7 +397,7 @@ Uma DSL baseada na linguagem
 \lang english
 Groovy
 \lang brazilian
- que permite a definição da interface de usuário, das formulas do modelo
+ que permite a definição da interface de usuário, das fórmulas do modelo
  e do formato do relatório final de cada análise.
 \end_layout
 
@@ -464,29 +460,29 @@ A presente dissertação está estruturada da seguinte forma:
 \begin_layout Standard
 Capítulo 2: Apresenta a definição de Sistemas de Apoio à Decisão, as característ
 icas do SAD SustenAgro e os trabalhos relacionados sobre ontologias em avaliação
- da sustentabilidade e SADs baseados em ontologias para representar o estado
+ da sustentabilidade e SADs baseados em ontologias, basicamente um estado
  da arte da presente pesquisa.
 \end_layout
 
 \begin_layout Standard
-Capítulo 3: Apresenta as Ontologias e 
+Capítulo 3: Apresenta as Ontologias da web semântica e 
 \lang english
 DSLs
 \lang brazilian
 , com a finalidade de descrever as principais tecnologias e a teoria necessária
- para desenvolver o presente trabalho.
+ para desenvolver a presente pesquisa.
 \end_layout
 
 \begin_layout Standard
-Capítulo 4: Apresenta o protótipo do sistema Decisioner que permite suportar
- a geração de Sistemas de Apoio à Decisão.
+Capítulo 4: Apresenta o protótipo do Framework Decisioner que suporta a
+ geração de Sistemas de Apoio à Decisão.
  
 \end_layout
 
 \begin_layout Standard
 Capítulo 5: Apresenta o SAD SustenAgro, desenvolvido na presente pesquisa
- como primeiro caso de uso do Framework Decisioner, permitindo definir a
- arquitetura e demostrar a funcionalidade do Framework desenvolvido.
+ como caso de uso do Framework Decisioner, permitindo desenvolver a arquitetura
+ e demostrar a funcionalidade do Framework desenvolvido.
 \end_layout
 
 \begin_layout Standard

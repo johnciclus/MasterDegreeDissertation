@@ -198,7 +198,7 @@ Blazegraph
  descrita a continuação:
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Instalação do Java:
 \end_layout
 
@@ -230,7 +230,7 @@ sudo apt-get install openjdk-8-jre
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Instalação do 
 \lang english
 Apache Tomcat
@@ -415,7 +415,7 @@ sudo /opt/tomcat/bin/startup.sh
 e verificar a execução do programa na url /manager do domínio do servidor
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Instalação do 
 \lang english
 WkHtmltoPdf

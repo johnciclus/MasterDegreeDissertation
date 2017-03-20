@@ -87,7 +87,7 @@ reference "sec:SAD-SustenAgro"
 status open
 
 \begin_layout Plain Layout
-Onde isto está? Vai estar no cap SAD? (Esta na secao SAD SustenAgro do capitulo
+Onde isto está? Vai estar no cap SAD? (Esta na seção SAD SustenAgro do capitulo
  SAD)
 \end_layout
 
@@ -599,23 +599,6 @@ name "fig:Metodologia-do-Decisioner"
 
 \end_layout
 
-\begin_layout Subsection
-Metodologia da ontologia Decisioner
-\end_layout
-
-\begin_layout Standard
-Para desenvolver um protótipo de uma ontologia geral, que abstraísse os
- conceitos dos SADs, foram analisados os sistemas SAD criados pela Embrapa
- Meio Ambiente, descritos na seção 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:SAD-SustenAgro"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Enumerate
 \begin_inset Note Note
 status open
@@ -630,17 +613,50 @@ Voce nao esta repetindo? (Solucionado)
 \end_layout
 
 \begin_layout Standard
-A partir das características desses sistemas e da definição do SAD SustenAgro,
- capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:SustenAgro"
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Essa tambem? Nao foi so a outra? (Solucionado)
+\end_layout
 
 \end_inset
 
-, foi possível definir os principais conceitos para definir a ontologia
- Decisioner.
- A versão inicial foi desenvolvida na ferramenta Protégé, no formato 
+
+\end_layout
+
+\begin_layout Standard
+A seguir, cada componente da arquitetura do Decisioner é discutido, começando
+ pela ontologia Decisioner.
+\end_layout
+
+\begin_layout Section
+Ontologia Decisioner
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ontologia-Decisioner"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para desenvolver um protótipo de uma ontologia geral, que abstraísse os
+ conceitos dos SADs, foram analisados os sistemas SAD desenvolvidos pela
+ Embrapa Meio Ambiente, descritos na seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:SAD-SustenAgro"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A versão inicial da ontologia foi modelada na ferramenta Protégé, no formato
+ 
 \lang english
 OWL
 \lang brazilian
@@ -672,32 +688,13 @@ reference "sec:Ontology-Editor"
 
 \end_inset
 
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Essa tambem? Nao foi so a outra?
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Standard
-A seguir, cada componente da arquitetura do Decisioner é discutido, começando
- pela ontologia Decisioner.
-\end_layout
-
-\begin_layout Section
-Ontologia Decisioner
-\end_layout
-
-\begin_layout Standard
-A partir do análise dos SADs da Embrapa, foram identificados e abstraídos
- elementos comuns na ontologia Decisioner, com o propósito de fornecer uma
- ontologia geral que dê suporte a SADs diferentes.
+A ontologia Decisioner contem os elementos comuns identificados e abstraídos
+ dos SADs da Embrapa, e tem o proposito de fornecer uma ontologia geral
+ que dê suporte a SADs diferentes.
  Na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -901,10 +898,35 @@ Para suportar a edição das ontologias do domínio, por parte dos especialistas
  Ele permite editar a ontologia específica do SAD em um formato baseado
  em 
 \lang english
-YAML.
-
+YAML,
 \lang brazilian
- A Figura 
+ a descrição da ontologia neste formato passa a um conversor para ficar
+ no formato 
+\lang english
+OWL
+\lang brazilian
+ que é processado pela 
+\lang english
+API
+\lang brazilian
+ de protégé para instanciar a ontologia com as restrições definidas e finalmente
+ exportado como 
+\lang english
+RDF
+\lang brazilian
+ para ser substituído na 
+\lang english
+triplestore
+\lang brazilian
+ 
+\lang english
+Blazegraph,
+\lang brazilian
+ este processo e realizado a cada vez que o usuário salva a ontologia.
+\end_layout
+
+\begin_layout Standard
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Editor-de-ontologia"
@@ -1045,60 +1067,6 @@ Coloque algumas specs do Blazegraph: max numero de triplas, rodar em cluster,
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-O Decisioner usa a triplestore 
-\lang english
-Blazegraph
-\lang brazilian
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-https://www.blazegraph.com/
-\end_layout
-
-\end_inset
-
-.
- Ela integra as características de uma 
-\lang english
-triplestore
-\lang brazilian
-, fornece suporte nativo a 
-\lang english
-SPARQL
-\lang brazilian
- e implementa o 
-\lang english
-SPARQL Protocol Endpoint
-\lang brazilian
-.
- Esse último, padroniza a comunicação com os clientes e a compatibilidade
- com os sistemas web, por meio de 
-\lang english
-um Endpoint
-\lang brazilian
- (um endereço onde requisições em SPARQL podem ser feitas).
- 
-\end_layout
-
-\begin_layout Plain Layout
-O Blazegraph foi escolhido por ter código aberto (Licença GPL) e ser compatível
- com os padrões da Web Semântica.
- Mas qualquer triplestore que seja compatível com os mesmos padrões pode
- ser usada.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Decisioner DSL
 \end_layout
@@ -1146,7 +1114,7 @@ imento de um SAD.
 As instruções definidas na DSL são:
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Evaluation Object
@@ -1267,7 +1235,7 @@ widget
 status open
 
 \begin_layout Plain Layout
-Voce usou essas opcoes? Elas estao definidas?
+Voce usou essas opcoes? Elas estao definidas? (sim estão definidas na DSL)
 \end_layout
 
 \end_inset
@@ -1326,7 +1294,7 @@ name "lis:DSL-para-definição"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Feature
@@ -1345,7 +1313,14 @@ Feature
  terá que preencher os dados sobre cada característica.
  Cada característica tem um tipo associado a ela (na ontologia de domínio).
  A partir dele, é possível associar uma widget específica para edição.
- Por exemplo, a Figura *** 
+ Por exemplo, a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Widgets-geradas-da-DSL"
+
+\end_inset
+
+ 
 \begin_inset Note Note
 status open
 
@@ -1433,7 +1408,52 @@ name "lis:Definição-de-Features"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/IndicatorSelection.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Widgets geradas a partir da definição da DSL
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Widgets-geradas-da-DSL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 
 \lang english
 Report
@@ -1590,11 +1610,18 @@ sustainability
 efficiency
 \shape default
  num gráfico de matriz de sustentabilidade (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Matriz-de-sustentabilidade-widget"
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Se já tiver uma figura, basta referencia-la.
+Se já tiver uma figura, basta referencia-la (solucionado).
 \end_layout
 
 \end_inset
@@ -1618,6 +1645,13 @@ REF
 \end_inset
 
  padrão (HTML 5) ou componentes do framework Grails (Seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Web-components"
+
+\end_inset
+
+ 
 \begin_inset Note Note
 status open
 
@@ -1723,7 +1757,52 @@ button restore
 button save
 \lang brazilian
  para salvar e carregar a DSL no DSL Interpreter.
- A Figura 
+ 
+\end_layout
+
+\begin_layout Standard
+O Editor de código foi baseado no Ace Editor
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+ttps://ace.c9.io/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, que fornece 
+\lang english
+Syntax highlighting
+\lang brazilian
+ para varias linguagens de programação, entre elas Groovy, e como a DSL
+ foi baseada em Groovy, foi configurada para reconhecer dita sintase, também
+ foi ativado o suporte de 
+\lang english
+code completion
+\lang brazilian
+ para fornecer uma experiência de uso amigável e a principal vantagem é
+ a funcionalidade de salvar a ontologia e reconfigurar o SAD imediatamente,
+ permitindo uma experiencia em tempo real de redefinição do SAD, se o usuário
+ errar, ele vai poder restaurar as configurações por 
+\lang english
+default
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Standard
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Editor-DSL"
@@ -1793,6 +1872,13 @@ name "fig:Editor-DSL"
 
 \lang english
 Web components
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Web-components"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2224,7 +2310,14 @@ Mude o nome na imagem (feito)
 interpreta as instruções dos especialistas na linguagem Decisioner DSL.
  Ele usou técnicas padrões para a criação de DSLs usando a linguagem 
 \lang english
-Groovy 
+Groovy
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dearle2015groovy"
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
@@ -2246,7 +2339,11 @@ DSLs
 \end_layout
 
 \begin_layout Standard
-Finalmente, o DSL Interpreter usa o 
+Finalmente, o DSL 
+\lang english
+Interpreter
+\lang brazilian
+ usa o 
 \lang english
 UI Renderer
 \lang brazilian
@@ -2316,8 +2413,63 @@ name "fig:Arquitetura-do-Decisioner-Core"
 
 \end_layout
 
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arquitetura-do-Decisioner-Core"
+
+\end_inset
+
+ apresenta a essência do método proposto nesta pesquisa para definir SADs.
+ O método consiste em representar o conhecimento dos especialistas em ontologias
+ da web semântica e complementar com uma DSL que descreve os conceitos de
+ 
+\lang english
+evaluation object
+\lang brazilian
+ com 
+\lang english
+features
+\lang brazilian
+, método de avaliação e relatório de resultados, permitindo desta maneira
+ definir o SAD por parte dos especialistas.
+\end_layout
+
 \begin_layout Section
 Considerações finais
+\end_layout
+
+\begin_layout Standard
+Neste capitulo foram apresentados os principais componentes do Framework
+ Decisioner, existem características dele como o gerenciamento de usuários
+ e segurança que foram desenvolvidos, más não se especificaram porque não
+ contribuíram de maneria relevante ao desenvolvimento da pesquisa.
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento do Framework foi realizado simultaneamente com o SAD SustenAgr
+o, devido a que era necessário uma instancia para validar se as funcionalidades
+ foram implementadas corretamente.
+ O processo teve dificuldades para separar os dois desenvolvimentos devido
+ a que tinha componentes em comum, que a partir de um processo iterativo,
+ foram organizando-se e permitindo separar os dois sistemas.
+\end_layout
+
+\begin_layout Standard
+Não foi possível instanciar outro sistema no Decisioner, durante o desenvolvimen
+to do mestrado, mas atualmente encontra-se em andamento a implementação
+ do SAD Nano-Tec como segunda instancia do Framework Decisioner.
+ O que permitira generalizar ainda mais o framework e servir como um caso
+ de uso adicional para validar as hipóteses em outros domínios.
+\end_layout
+
+\begin_layout Standard
+Esta arquitetura foi avaliada por meio da instanciação do SAD SustenAgro,
+ o que permite validar se realmente funcionam cada uma das características
+ aqui descritas, no capitulo seguinte será apresenta o SAD SustenAgro gerado
+ como primeiro caso de uso deste Framework, e depois será apresentado o
+ processo de avaliação que formaliza a avaliação deste sistema.
 \end_layout
 
 \begin_layout Standard
@@ -2355,22 +2507,25 @@ NAO jogue fora as contribuicoes.
 
 \end_inset
 
-Este capítulo apresentou a arquitetura e componentes do framework Decisioner.
- A principal contribuição do Decisioner foi o método e ferramenta de geração
- de SADs que usa ontologias e 
-\lang english
-DSLs
-\lang brazilian
-, para gerar SAD de maneira semiautomática a geração de SADs.
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Não foram encontrados trabalhos na área de geração automática de interfaces
  para SADs.
  Também foi encontrado pouco material sobre ontologias para descrição de
  interfaces gráficas, pelo que se considera que o método e a ferramenta
  desenvolvidas são contribuições para as áreas de pesquisa em Sistemas de
  Apoio à Decisão e em aplicações da Web Semântica.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

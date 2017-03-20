@@ -8,6 +8,7 @@
 \begin_preamble
 \input{pagestyle.tex}
 %\usepackage{lmodern}
+
 \newcommand{\blankpage}{
 \newpage
 \thispagestyle{empty}
@@ -309,7 +310,7 @@ filename "chapters/Abstract_PT.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage cleardoublepage
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -351,45 +352,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset FloatList figure
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-lstlistingname}{C{
-\backslash
-'o}digo-fonte}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-lstlistlistingname}{Lista De C{
-\backslash
-'o}digos-Fonte}
-\end_layout
 
 \end_inset
 
@@ -412,9 +375,43 @@ lstlistlistingname}{Lista De C{
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+lstlistlistingname}{Lista De C{
+\backslash
+'o}digos-Fonte}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand lstlistoflistings
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -450,7 +447,7 @@ set_width "auto"
 status open
 
 \begin_layout Plain Layout
-Lista de abreviaturas (siglas) (está abaixo mas não aparece aqui..)
+Acresentar ao sumario a Lista de abreviaturas (siglas) e a lista de codigos
 \end_layout
 
 \end_inset
@@ -718,7 +715,7 @@ filename "chapters/Instalation.lyx"
 \end_layout
 
 \begin_layout Chapter
-Formulários
+Formulários de avaliação
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:formularios"

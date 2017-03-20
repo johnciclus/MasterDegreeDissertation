@@ -142,7 +142,7 @@ key "Souza:2004"
 
 \end_inset
 
-Ontologias e 
+Ontologias da web semântica e 
 \lang english
 DSLs
 \lang brazilian
@@ -168,7 +168,7 @@ m originalmente no contexto da filosofia, onde se referem ao estudo da natureza,
 
 \begin_layout Standard
 Neste capítulo, vamos apresentar e discutir as ontologias da web semântica
- e as DSL.
+ e as DSLs.
  Descrevendo a teoria da Web Semântica: fundamentos, Ontologias, o 
 \lang english
 Resource Description Framework (RDF
@@ -599,7 +599,7 @@ OWL
 , permitindo definir ontologias que representam os domínios de conhecimento.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Ontologias
 \end_layout
 
@@ -823,7 +823,7 @@ key "sugumaran2011"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Resource Description Framework
@@ -1014,7 +1014,7 @@ OWL
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 SPARQL Protocol and RDF Query Language (SPARQL
@@ -1091,7 +1091,7 @@ https://www.w3.org/TR/sparql11-update/
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Web Ontology Language
@@ -1360,7 +1360,7 @@ OWL 2
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Protégé
 \end_layout
 
@@ -1481,10 +1481,17 @@ terminou meio seco.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Triplestore
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Triplestore"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1506,31 +1513,7 @@ key "rusher2003triple"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-As 
-\lang english
-triplestore
-\lang brazilian
- fornecem suporte nativo 
-\lang english
-SPARQL
-\lang brazilian
-, que permite consultar e atualizar dados com significado semântico.
- Também implementam o 
-\lang english
-SPARQL Protocol Endpoint
-\lang brazilian
- para interconectar os sistemas web por meio de um 
-\lang english
-Endpoint
-\lang brazilian
-.
-\end_layout
-
-\begin_layout Standard
-Este tipo bancos de dados são recomendáveis quando os dados tem uma estrutura
+ Este tipo bancos de dados são recomendáveis quando os dados tem uma estrutura
  flexível, cujas relações não tem um padrão definido.
 \end_layout
 
@@ -1564,7 +1547,35 @@ https://www.blazegraph.com/
 \end_inset
 
  é um dos mais completos bancos de dados baseados em grafos e com suporte
- SPARQL, as principais características dele são:
+ SPARQL.
+ Ele integra as características de uma 
+\lang english
+triplestore
+\lang brazilian
+, fornece suporte nativo a 
+\lang english
+SPARQL
+\lang brazilian
+ e implementa o 
+\lang english
+SPARQL Protocol Endpoint
+\lang brazilian
+.
+ Esse último, padroniza a comunicação com os clientes e a compatibilidade
+ com os sistemas web, por meio de 
+\lang english
+um Endpoint
+\lang brazilian
+ (um endereço onde requisições em SPARQL podem ser feitas).
+ 
+\end_layout
+
+\begin_layout Standard
+O Blazegraph foi escolhido por ter código aberto (Licença GPL) e ser compatível
+ com os padrões da Web Semântica.
+ Mas qualquer triplestore que seja compatível com os mesmos padrões pode
+ ser usada.
+ As principais características dele são:
 \end_layout
 
 \begin_layout Itemize
@@ -1621,7 +1632,7 @@ Licença dupla: GPLv2 ou commercial
 Assinaturas de suporte ao desenvolvedor e produção
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Discussão 
 \end_layout
 
@@ -1868,7 +1879,7 @@ host,
  quer-se definir.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Linguagem 
 \lang english
 Groovy
@@ -2109,7 +2120,7 @@ es de software, os especialistas poderiam se tornar, na prática, programadores
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Discussão
 \end_layout
 
