@@ -128,7 +128,7 @@ EndPreamble
 \begin_body
 
 \begin_layout Standard
-Na implementação dos Sistemas de Apoio à Decisão (SAD
+Nos Sistemas de Apoio à Decisão (SAD
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SAD"
@@ -137,26 +137,20 @@ description "Sistemas de Apoio à Decisão"
 \end_inset
 
 ), os especialistas do domínio conhecem cada uma das particularidades e
- complexidades do conhecimento dos SADs que devem-se implementar, más não
- conseguem formalizar isso em um sistema software para permitir a integração
- desse conhecimento nos sistemas SADs.
-\end_layout
-
-\begin_layout Standard
-Os desenvolvedores de software precisam interpretar o conhecimento do domínio
- para implementar os SADs, processo que fica parcializado pela desconhecimento
- do domínio por parte deles, dificultando o desenvolvimento ágil dos SADs.
-\end_layout
-
-\begin_layout Standard
-Dada está situação, identificou-se a inexistência de uma representação de
- conhecimento computável que permita definir SADs, que tenha um formato
+ complexidades dos dados e modelos, das operações matemáticas que processam
+ esses dados e as informações relevantes no processo de decisão.
+ Nas metodologias de desenvolvimento tradicionais, este conhecimento deve-se
+ interpretar e implementar pelos desenvolvedores de software, devido a que
+ os especialistas não conseguem formalizar esse conhecimento em um modelo
+ computável para integrá-lo nos SADs.
+ O processo de modelagem de conhecimento é realizado pelos desenvolvedores,
+ parcializando o conhecimento do domínio e dificultando o desenvolvimento
+ ágil dos SADs.
+ Dada está situação, identificou-se a inexistência de uma representação
+ de conhecimento computável que permita definir SADs, que tenha um formato
  entendível e accessível pelos especialista do domínio e pelas computadoras.
-\end_layout
-
-\begin_layout Standard
-A partir desse problema, foram testadas soluciones, e encontrou-se que as
- ontologias baseadas na web semântica permitem representar conhecimento
+ A partir desse problema, foram testadas soluciones, e encontrou-se que
+ as ontologias baseadas na web semântica permitem representar conhecimento
  complexo e fornecem um formato entendível pelos humanos e maquinas, basando-se
  nisso foi proposto o método Decisioner que permite aos especialistas representa
 r o conhecimento deles por meio de ontologias e 
@@ -172,18 +166,18 @@ description "Domain Specific Language"
 \end_inset
 
 ), para permitir a definição e geração de SADs.
-\end_layout
-
-\begin_layout Standard
-O Framework Decisioner, foi desenvolvido para implementar o método proposto,
- que permite gerar SADs em entornos web.
-\end_layout
-
-\begin_layout Standard
-Para validar dita proposta e o Framework, foi instanciado no Framework Decisione
-r, o SAD SustenAgro que permite avaliar a Sustentabilidade em cana-de-açúcar
- no centro-sul do Brasil e realizaram-se avaliações que validaram o método
- Decisioner e as funcionalidades do SAD gerado.
+ O 
+\lang english
+Framework
+\lang brazilian
+ Decisioner, implementar este método, fornecendo interfaces web de edição
+ da ontologia e da DSL para definir e gerar os SADs em entornos web.
+ Para validar o método, o Framework Decisioner foi instanciado com uma ontologia
+ de avaliação da Sustentabilidade em cana-de-açúcar no centro-sul do Brasil
+ e com uma descrição dos componentes do SAD na DSL, definindo e gerando
+ de esta maneira o SAD SustenAgro.
+ Finalmente foram realizadas avaliações no Framework Decisioner e no SAD
+ SustenAgro para validar o correto funcionamento deles.
 \end_layout
 
 \begin_layout Standard

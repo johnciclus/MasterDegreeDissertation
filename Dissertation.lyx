@@ -299,6 +299,63 @@ pagestyle{ruled}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename pages/Title Page.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename pages/datasheet.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename pages/Title Page english.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename pages/Dedicatory.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename pages/Acknowledgements.pdf
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Resumo
 \begin_inset CommandInset include
 LatexCommand input
