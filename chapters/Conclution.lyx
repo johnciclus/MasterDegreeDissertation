@@ -75,8 +75,60 @@
 \begin_body
 
 \begin_layout Standard
-Neste capítulo são apresentadas os resultados, os trabalhos futuros, as
- dificuldades e uma discussão final sobre as conclusões do mestrado.
+As principais contribuições desta pesquisa foram o método e ferramenta de
+ geração de SADs usando ontologias e 
+\lang english
+DSLs
+\lang brazilian
+, Esse método permite complementar o conhecimento descrito em uma ontologia
+ com uma DSL, que define o comportamento e formato de um SAD.
+ 
+\end_layout
+
+\begin_layout Standard
+Ontologia e DSL estão abertas a edição pelos especialistas de domínio.
+ Eles podem editá-las, através de editores online (na própria ferramenta),
+ e modificar aspectos fundamentais do SAD em tempo real.
+ Essa característica permite um ciclo de desenvolvimento mais curto e uma
+ participação ativa dos especialistas de domínio.
+ Como o Framework Decisioner fornece uma aplicação semiacabada (como todo
+ o framework) que os próprios especialistas de domínio podem modificar,
+ isso tende a diminuir os custos associados a criação de SADs.
+ 
+\end_layout
+
+\begin_layout Standard
+O Framework Decisioner, o SAD SustenAgro e o método de definição de SADs
+ proposto tiveram uma avaliação positiva por parte dos especialistas do
+ domínio sustentabilidade e usuários finais da Embrapa e do projeto SustenAgro.
+ Essas avaliações demostraram que as ferramentas e o método proposto solucionara
+m, para o caso do SustenAgro, os problemas identificados na pesquisa e que
+ os objetivos específicos desta pesquisa foram satisfeitos.
+\end_layout
+
+\begin_layout Standard
+Se deve ressaltar que, apesar dos bons resultados das avaliações e do entusiasmo
+ dos especialistas da Embrapa (que nunca tiveram tantas facilidades para
+ modificar o código de um projeto de SAD), ainda não é possível, para especialis
+tas de domínio, desenvolver um SAD, usando o Decisioner, a partir do zero.
+ Mas os resultados mostraram que eles podem modificar muitos aspectos do
+ sistema sem a ajuda de programadores.
+ O que é um avanço muito grande, se comparado com o que é possível fazer
+ em métodos de desenvolvimento tradicionais.
+\end_layout
+
+\begin_layout Standard
+Outra importante contribuição foi a geração de uma versão funcional do SAD
+ SustenAgro.
+ Ela permitiu cumprir os objetivos do projeto SustenAgro da Embrapa, fornecendo
+ uma ferramenta de avaliação da sustentabilidade em cana-de-açúcar que pode
+ efetivamente ser usada por empregados de fazendas e usinas.
+\end_layout
+
+\begin_layout Standard
+Para continuar a pesquisa, foram sugeridos trabalhos futuros.
+ Dentre os mais relevantes estão a metodologia de criação de ontologias
+ e as ferramentas web para editá-las.
 \end_layout
 
 \begin_layout Section
@@ -88,12 +140,13 @@ Os resultados obtidos são:
 \end_layout
 
 \begin_layout Enumerate
-Ontologia SustenAgro sobre avaliação de sustentabilidade em cana-de-açúcar
- no centro-sul do Brasil, que representa os principais conceitos desse domínio,
- necessários para o suportar a avaliação: entre eles estão os indicadores,
- unidades produtivas, microrregiões, índices e método de avaliação.
- Padronizando o conhecimento dos especialistas em um formato computável
- e possibilitando o escalonamento no futuro.
+Ontologia SustenAgro sobre avaliação de sustentabilidade em sistemas produtivos
+ de cana-de-açúcar na região centro-sul do Brasil.
+ Ela representa os principais conceitos desse domínio, necessários para
+ o suporte da avaliação de sustentabilidade.
+ Dentre eles estão os indicadores, unidades produtivas, microrregiões, índices
+ e métodos de avaliação.
+ A ontologia padroniza o conhecimento dos especialistas em um formato computável.
  Ela foi desenvolvida em parceria com os especialistas de domínio de sustentabil
 idade da Embrapa.
 \end_layout
@@ -105,33 +158,27 @@ Ontologia sobre tipos de dados e controles visuais para suportar a geração
 \lang english
 widgets
 \lang brazilian
- necessárias para a geração automática das UI para os SAD, e permite a complemen
-tação com 
-\lang english
-web components
-\lang brazilian
-.
- 
+ (Web Components) necessárias para a geração automática das UI para os SAD.
 \end_layout
 
 \begin_layout Enumerate
-DSL que permite definir os principais elementos de um SAD, usando os conceitos
- das ontologias e integrando 
+DSL que permite definir o comportamento de um SAD, usando os conceitos das
+ ontologias e integrando 
 \lang english
 web components
 \lang brazilian
- para gerar as web UI.
+ para gerar as Web UIs.
  Dentro dos elementos suportados estão a definição dos objetos de avaliação,
- os indicadores, as fórmulas do método de avaliação e a definição do formato
- do relatório de cada análise.
+ dos indicadores, das fórmulas do método de avaliação e da definição do
+ formato do relatório de cada análise.
 \end_layout
 
 \begin_layout Enumerate
-Método e framework Decisioner para definir SADs por parte dos especialistas
- do domínio de sustentabilidade baseado em ontologias e DSL.
- Decisioner Framework possui uma arquitetura escalável que permite generalizar
- a aplicabilidade dele a outros tipos de SAD com características diferentes,
- está baseado na linguagem 
+Método e framework Decisioner para definir SADs baseadas em ontologias e
+ DSLs.
+ O framework Decisioner possui uma arquitetura escalável que permite generalizar
+ a aplicabilidade dele a outros tipos de SADs com características diferentes.
+ Ele está baseado na linguagem 
 \lang english
 Groovy
 \lang brazilian
@@ -145,11 +192,10 @@ Grails
 
 \begin_layout Enumerate
 O SAD SustenAgro: sistema para avaliação da sustentabilidade em cana-de-açúcar,
- na região centro-sul do Brasil, que foi implementado usando o Framework
- Decisioner.
- O SAD SustenAgro permite a reconfiguração em tempo de execução dos conceitos
- do domínio, método de avaliação e design das interfaces gráficas, através
- do 
+ que foi implementado usando o Framework Decisioner.
+ O SAD SustenAgro permite a reconfiguração, em tempo de execução, dos conceitos
+ do domínio, métodos de avaliação e componentes das interfaces gráficas,
+ através do 
 \lang english
 Framework Decisioner
 \lang brazilian
@@ -157,9 +203,9 @@ Framework Decisioner
 \end_layout
 
 \begin_layout Enumerate
-Resultados de avaliação do Framework Decisioner e do processo de design
- realizado no SAD SustenAgro.
- Os que permitem comprovar a realização dos objetivos da pesquisa.
+Resultados de avaliação do processo de design do SAD SustenAgro e do seu
+ protótipo final.
+ Eles permitiram comprovar a realização dos objetivos da pesquisa.
 \end_layout
 
 \begin_layout Enumerate
@@ -167,11 +213,25 @@ Artigo “
 \lang english
 Sustainability assessment of sugarcane production systems: SustenAgro Method
 \lang brazilian
-” submetido no periódico da 
+” submetido ao periódico da 
 \lang english
 Elsevier “Energy for sustainable Development”
 \lang brazilian
- ISSN: 0973-0826 submissão realizada em 23 de dezembro do 2016.
+ ISSN: 0973-0826 submissão realizada em 23 de dezembro de 2016.
+\end_layout
+
+\begin_layout Enumerate
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Cadê o que VOCÊ submeteu?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -184,7 +244,7 @@ As dificuldades identificadas durante a realização da pesquisa, foram as
 \end_layout
 
 \begin_layout Standard
-A falta de dados e informação para modelar o domínio do conhecimento de
+A falta de dados e informações para modelar o domínio do conhecimento de
  avaliação em sustentabilidade, pelo que foi necessário realizar o processo
  de modelagem para determinar que era necessário fornecer ferramentas de
  definição do conhecimento por parte dos especialistas.
@@ -214,6 +274,21 @@ imento por parte de Embrapa.
  de requerimentos e processos de design para especificar os sistemas requeridos,
  consumindo tempo importante em processos que não estavam relacionados à
  pesquisa.
+\end_layout
+
+\begin_layout Standard
+A Embrapa não permite que programas, desenvolvidos por ela ou em colaboração
+ com ela, sejam disponibilizado para o público em geral antes do registro
+ no INPI.
+ Como o SAD SustenAgro foi uma colaboração entre Embrapa e USP, a USP deve
+ compartilhar esse registro com a Embrapa.
+ Infelizmente a burocracia da USP é muito demorada e esse registro está
+ demorando muito mais que o necessário.
+ A Embrapa tem uma rede de produtores de cana, usinas e cooperativas do
+ setor interessados em sustentabilidade.
+ Apesar do SustenAgro ter sido avaliado por um número expressivo de profissionai
+s, seria muito interessante uma avaliação por usuários finais de fazendas
+ e usinas.
 \end_layout
 
 \begin_layout Section
@@ -614,68 +689,6 @@ Os SADs geram saídas em forma de relatórios, previsões e recomendações,
  os quais devem ser flexíveis para facilitar a análise das informações geradas,
  pelo qual se propõe o desenvolvimento de uma biblioteca especializada em
  consultas complexas para a suportar as respostas dos SADs.
-\end_layout
-
-\begin_layout Section
-Discussão final
-\end_layout
-
-\begin_layout Standard
-O método de definição de SADs e framework Decisioner, tiveram uma avaliação
- positiva por parte dos especialistas do domínio em sustentabilidade.
- Esta avaliação guiada pelo SAD SustenAgro, demostrou que o método e a ferrament
-a Decisioner, solucionaram o problema identificado na presente pesquisa.
-\end_layout
-
-\begin_layout Standard
-Os objetivos específicos foram satisfeitos e alguns requereram desenvolvimento
- adicionais para serem efetivamente cumpridos.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Falar de cada objetivo especifico
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Outra contribuição foi a geração do SAD SustenAgro, que permite cumprir
- os objetivos do projeto SustenAgro, fornecendo uma ferramenta de avaliação
- da sustentabilidade em cana-de-açúcar, com as características descritas
- na seção 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:SAD-SustenAgro"
-
-\end_inset
-
-, a qual precisa complementar o suporte com sistemas de georreferenciamento
- que correspondem a outra área de pesquisa fora de nosso alcance.
-\end_layout
-
-\begin_layout Standard
-Para continuar a pesquisa foram descritos os trabalhos futuros, e dentre
- as mais relevantes estão a metodologia de edição de ontologias e a ferramenta
- web que implemente dita ontologia.
- Esta solução permitira acompanhar o desenvolvimento de ontologias, abordando
- a complexidade de maneira gradual.
-\end_layout
-
-\begin_layout Standard
-A principal contribuição desta pesquisa foi o método e ferramenta de geração
- de SADs que usa ontologias e 
-\lang english
-DSLs
-\lang brazilian
-, para gerar SAD de maneira semiautomática.
- O método permite complementar o conhecimento descrito em uma ontologia
- com uma DSL que define os componentes de um SAD, fornecendo um método aos
- especialistas de domínio para que eles mesmos definam SADs.
- 
 \end_layout
 
 \end_body
