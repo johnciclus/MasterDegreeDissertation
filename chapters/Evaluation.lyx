@@ -1346,21 +1346,18 @@ Conclusões
 \end_layout
 
 \begin_layout Standard
-Essas avaliações permitiram verificar que os requisitos do framework Decisioner
+Essas avaliações permitiram verificar que os requisitos do Framework Decisioner
  e do SAD SustenAgro foram implementados corretamente e que atenderam as
  necessidades dos especialistas de domínio e usuários finais, identificadas
  nos levantamentos de requisitos.
 \end_layout
 
 \begin_layout Standard
-Cada avaliação trouxe correções e melhoras que foram implementadas na medida
- do possível segundo a relevância cientifica delas e o tempo disponível
- por parte do desenvolvedor do projeto.
- 
-\end_layout
-
-\begin_layout Standard
-Por ter sido desenvolvido em um processo cíclico, cada iteração acrescentou
+As avaliações ocorreram em diferentes fases do projeto e cada uma trouxe
+ correções e melhoras que foram implementadas, na medida do possível, segundo
+ a relevância de cada mudança e o tempo disponível para desenvolvedor do
+ projeto.
+ Por ter sido desenvolvido em um processo cíclico, cada iteração acrescentou
  novas funcionalidades que fizeram mudar a arquitetura dos sistemas, gerando
  
 \lang english
@@ -1368,8 +1365,9 @@ bugs
 \lang brazilian
  e inconsistências.
  Na versão 1.0, os sistemas contam com funcionalidades estáveis que permitem
- fornecer os serviços implementados, e a partir das correções e sugestões
- recebidas durante a avaliação foram formulados trabalhos futuros que serão
+ fornecer os serviços implementados.
+ Correções e sugestões recebidas durante a avaliação e não implementadas
+ por problema de tempo, foram deixadas como trabalhos futuros, que serão
  apresentados no próximo capítulo juntamente com as conclusões.
 \end_layout
 
