@@ -1764,7 +1764,7 @@ O que é Variable, so agora ela aparece.
 
 pode ter na forma de categorias (por exemplo, Existe e Não Existe).
  Um Value também pode ser Real ou Inteiro.
- Na verdade, a classe Categoriacal é definida na ontologia Decisioner, mas
+ Na verdade, a classe Categorical é definida na ontologia Decisioner, mas
  a SustenAgro cria diversas classes filhas para definir uma série de valores
  categóricos.
 \end_layout
@@ -2178,7 +2178,7 @@ de e da qualidade da matéria-prima, bem como em diminuição dos custos da
  a mecanização.
  
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Não vejo essas histórias como User Stories, talvez seja melhor deixa-las
@@ -2689,7 +2689,7 @@ name "fig:StoryBoard-2"
 \end_layout
 
 \begin_layout Standard
-A figura 
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:StoryBoard-3"

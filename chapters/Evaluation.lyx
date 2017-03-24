@@ -75,53 +75,53 @@
 \begin_body
 
 \begin_layout Standard
-O Framework Decisioner (capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Decisioner"
-
-\end_inset
-
-) e o SAD SustenAgro (capítulo 
+O SAD SustenAgro (capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SustenAgro"
 
 \end_inset
 
-), são sistemas software que requereram avaliação para verificar se os requisito
-s deles foram implementados corretamente.
- Estes dois sistemas foram desenvolvidos com metodologias iterativas, onde
- foram realizadas varias inspeções e testes durante a implementação, porém,
- foi realizada uma avaliação final para analisar em detalhe se as funcionalidade
-s foram implementadas implementaram corretamente.
+) foi instanciado usando o Framework Decisioner (capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Decisioner"
+
+\end_inset
+
+) e avaliado, durante diferentes estágios de desenvolvimento, através de
+ experimentos realizados com especialistas de domínio e usuários da Embrapa.
+ Esses dois sistemas foram desenvolvidos com metodologias iterativas, onde
+ foram realizadas varias inspeções e testes durante a implementação.
+ Uma avaliação final também foi realizada para analisar se as funcionalidades
+ foram implementadas corretamente.
 \end_layout
 
 \begin_layout Standard
-A continuação são apresentadas as avaliações realizadas ao SAD SustenAgro
- e ao Framework Decisioner.
- As avaliações foram independentes, mas cada uma gerou resultados que fizeram
- redesenhar as arquiteturas de ambos produtos.
+A seguir, são apresentadas as avaliações realizadas no SAD SustenAgro e
+ ao Framework Decisioner.
+ Elas foram independentes e geraram resultados que levaram ao redesenho
+ das arquiteturas de ambos sistemas em diferentes etapas do seu desenvolvimento.
 \end_layout
 
 \begin_layout Section
-Avaliação das web UI.
+Avaliação das Web UI.
 \end_layout
 
 \begin_layout Standard
-Na finalização do processo de design das web UI explicado em 
+Na finalização do processo de design das Web UI, explicado na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Web-UI"
 
 \end_inset
 
-, foi realizada uma avaliação da usabilidade delas no SAD SustenAgro.
- Os detalhes da avaliação foram:
+, foi realizada uma avaliação da usabilidade das mesmas no SAD SustenAgro.
+ Os detalhes dessa avaliação foram:
 \end_layout
 
 \begin_layout Description
-Data Junho do 2015
+Data Junho de 2015
 \end_layout
 
 \begin_layout Description
@@ -146,15 +146,16 @@ Técnica Avaliação de usabilidade
 \end_layout
 
 \begin_layout Standard
-Nesta avaliação foi apresentado aos usuários especialistas em sustentabilidade
+Nesta avaliação foi apresentado, aos usuários especialistas em sustentabilidade,
  o processo de design da UI e o protótipo da interface gráfica de usuário
  do SAD SustenAgro sem dados reais.
- Nessas interfaces eles interagiram nas telas a través de um navegador web,
- fazendo uso das funcionalidades do SAD que simula os dados durante o processo.
+ Nessas interfaces, eles interagiram com as telas, através de um navegador
+ web, fazendo uso das funcionalidades do SAD que simulava os dados durante
+ o processo.
 \end_layout
 
 \begin_layout Standard
-Durante a avaliação foram verificados, os três aspectos da usabilidade:
+Durante esta avaliação foram verificados, os três aspectos da usabilidade:
 \end_layout
 
 \begin_layout Itemize
@@ -164,7 +165,7 @@ s definidas e permitiam interagir de maneira intuitiva para realizar as
 \end_layout
 
 \begin_layout Itemize
-Eficiência: o aceso à ferramenta foi realizado em tempos esperado e foi
+Eficiência: o aceso à ferramenta foi realizado em tempos esperados e foi
  possível realizar as tarefas com recursos típicos de um laptop e um navegador
  web.
 \end_layout
@@ -176,9 +177,8 @@ Satisfação: os usuários conseguiram realizar as tarefas sem problemas e
 \end_layout
 
 \begin_layout Standard
-A avaliação foi positiva, cumprindo os três anteriores aspectos que compõem
- a usabilidade.
- Esta avaliação gerou varias recomendações para melhorar a interface gráfica
+A avaliação foi positiva, cumprindo os três requisitos anteriores de usabilidade.
+ Esta avaliação gerou várias recomendações para melhorar a interface gráfica
  de usuário, entre elas as mais relevantes foram: 
 \end_layout
 
@@ -215,28 +215,28 @@ Web Components
 
 \begin_layout Itemize
 Organizar os indicadores em uma hierarquia simplificada que facilita o preenchim
-ento dos indicadores.
+ento dos mesmos.
 \end_layout
 
 \begin_layout Standard
 Depois de implementar as recomendações anteriores, foi continuado o desenvolvime
-nto com a integração da ontologia e da DSL, sendo necessário realizar ajustes
- da interface ao integrar cada funcionalidade.
+nto com a integração da ontologia SustenAgro e da DSL.
+ Foi necessário realizar ajustes da interface ao integrar cada funcionalidade.
  As principais mudanças foram realizadas devido a esta avaliação.
 \end_layout
 
 \begin_layout Section
-Avaliação da ontologia do domínio de avaliação da sustentabilidade.
+Avaliação da ontologia de domínio de avaliação da sustentabilidade.
 \end_layout
 
 \begin_layout Standard
 A ontologia SustenAgro foi o resultado da modelagem do conhecimento dos
- especialistas que passou por várias etapas, desde ser definida em texto,
- modelada em mapas conceituas e modelar a ontologia em 
+ especialistas, que passou por várias etapas, desde ser definida em texto,
+ modelada em mapas conceituas e criada a ontologia em 
 \lang english
 OWL
 \lang brazilian
- ( processo foi detalhado na seção 
+ (esse processo foi detalhado na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Metodologia"
@@ -246,7 +246,7 @@ reference "sec:Metodologia"
 ).
  Cada uma dessas etapas requereu inspeções por parte dos especialistas para
  verificar a correta modelagem, uma avaliação formal foi realizada e os
- detalhes delas são descritos a continuação.
+ detalhes são descritos a seguir.
 \end_layout
 
 \begin_layout Description
@@ -268,7 +268,7 @@ Técnica Visualização da ontologia e recuperação de conhecimento
 
 \begin_layout Standard
 O especialista em modelagem de conhecimento da Embrapa Informática Agropecuária
- e o especialista em sustentabilidade, reuniram-se para realizar a revisão
+ e o especialista em sustentabilidade reuniram-se para realizar a revisão
  da ontologia SustenAgro por meio de ferramentas de engenharia de conhecimento
  que permitiram visualizar as ontologias.
 \end_layout
@@ -279,7 +279,6 @@ As ferramentas usadas na avaliação foram yWorks
 status open
 
 \begin_layout Plain Layout
-Site do yWorks 
 \begin_inset Flex URL
 status open
 
@@ -300,7 +299,6 @@ http://www.yworks.com/
 status open
 
 \begin_layout Plain Layout
-Site do Gephi 
 \begin_inset Flex URL
 status open
 
@@ -316,15 +314,16 @@ https://gephi.org/
 
 \end_inset
 
-, as quais representaram aspectos da ontologia em varias visualizações de
- grafos, permitindo avaliar a coerência das conexões entre os nós daqueles
+.
+ Elas representaram aspectos da ontologia usando diversas visualizações
+ de grafos, permitindo avaliar a coerência das conexões entre os nós daqueles
  grafos.
 \end_layout
 
 \begin_layout Standard
-Também foi analisado o SAD SustenAgro que tinha a ontologia integrada, usando
- as funcionalidades que requeriam dados da ontologia, verificando a informação
- recuperada e a coerência dela em relação à existente na ontologia.
+Também foi analisado o SAD SustenAgro, que tinha a ontologia integrada,
+ usando as funcionalidades que requeriam dados da ontologia, verificando
+ a informação recuperada e a coerência dela em relação à existente na ontologia.
  
 \end_layout
 
@@ -335,15 +334,16 @@ OWL
 \lang brazilian
  está representando a avaliação da sustentabilidade do sistema de produção
  de cana no centro-sul do Brasil, destacando a especificidade dela para
- suportar SADs e que não ficou em termos abstratos.
+ suportar o SAD Sustenagro e que seu foco em conceitos concretos.
 \end_layout
 
 \begin_layout Standard
-Foi recomendado integrar outro tipo de visualizações e editores de ontologia
- no framework Decisioner, entre eles foi recomendado fornecer um editor
- visual de ontologia basado na ferramenta 
+Foi recomendado integrar outros tipos de visualizações e editores de ontologia
+ no framework Decisioner.
+ Entre eles foi recomendado fornecer um editor visual de ontologias, basado
+ na ferramenta 
 \lang english
-WebVOWL
+WebVOWL,
 \lang brazilian
  definida e desenvolvida por 
 \begin_inset CommandInset citation
@@ -353,6 +353,8 @@ key "lohmann2014webvowl"
 \end_inset
 
 .
+ Devido a limitações de tempo, não foi possível a implementação dessa sugestão
+ específica.
 \end_layout
 
 \begin_layout Section
@@ -361,7 +363,7 @@ Avaliação do protótipo funcional com dados
 
 \begin_layout Standard
 Com a finalidade de avaliar a implementação do método SustenAgro, foram
- realizados testes de vários tipos de avaliações para comparar com resultados
+ realizados testes de vários tipos de avaliações, para comparar com resultados
  de outras fontes, e assim validar a correta implementação.
  Os detalhes da avaliação foram.
 \end_layout
@@ -384,20 +386,20 @@ Técnica Testes numéricos dos resultados do software
 \end_layout
 
 \begin_layout Standard
-A revisão dos resultados numéricos, foi realizada a partir de vários cenários
- de indicadores, sendo realizada uma comparativa dos resultados processados
- manualmente com os resultados de avaliação do SAD SustenAgro, gerando resultado
-s iguais que permitem validar a correta definição do método SustenAgro e
- implementação do SAD SustenAgro.
+A revisão dos resultados numéricos foi realizada a partir de vários cenários
+ de indicadores, sendo realizada uma comparação dos resultados processados
+ manualmente com os resultados de avaliação do SAD SustenAgro.
+ Os resultados manuais foram iguais aos calculados pelo sistema, o que permitiu
+ validar a correta definição do método SustenAgro e sua implementação no
+ SAD SustenAgro.
  
 \end_layout
 
 \begin_layout Standard
-Os cenários avaliados foram os casos extremos dos indicadores, processo
- denominado teste de mínimos e máximos, gerando os resultados em forma de
- relatório para cada um dos cenários, nos relatórios estão os resultados
- representados na matriz de sustentabilidade.
- A figura 
+Os cenários avaliados foram casos extremos dos indicadores, processo denominado
+ teste de mínimos e máximos, gerando resultados em forma de relatório para
+ cada um dos cenários.
+ A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Matriz-de-sustentabilidade-Maximos"
@@ -405,9 +407,20 @@ reference "fig:Matriz-de-sustentabilidade-Maximos"
 \end_inset
 
  apresenta a Matriz de Sustentabilidade com o cenário de mínimos, na qual
- o ponto preto identifica o resultado da avaliação, ficando no primeiro
- quadrante tal como esperasse a resposta, o resultado para testes de máximos
- também deu favorável.
+ o ponto preto identifica o resultado da avaliação.
+ Ele ficou no primeiro quadrante tal como se esperava
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Isso é um exemplo de minimo? Ou todos os minimos deram assim? Ou foi feito
+ só um teste?
+\end_layout
+
+\end_inset
+
+.
+ Os resultados para testes de máximos também se comportaram como esperado.
 \end_layout
 
 \begin_layout Standard
@@ -432,7 +445,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Matriz de sustentabilidade com valores máximos
+Matriz de Sustentabilidade com valores mínimos.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Matriz-de-sustentabilidade-Maximos"
@@ -457,12 +470,26 @@ name "fig:Matriz-de-sustentabilidade-Maximos"
 \end_layout
 
 \begin_layout Standard
-Um dos aspectos importantes da ferramenta foi que ela permite mudar em tempo
- real as fórmulas do método de avaliação, permitindo fazer ajustes no método.
- Esta funcionalidade permitiu descobrir e avaliar uma mudança do método
- original, a integração de uma operação de valor de um valor absoluto na
- fórmula, o que permitiu demostrar agilmente os dois cenários e aceitar
- a mudança proposta pelo desenvolvedor do framework Decisioner.
+Um dos aspectos importantes da ferramenta, é que ela permite que os próprios
+ especialistas mudem, em tempo real, as fórmulas do método de avaliação,
+ permitindo fazer ajustes finos no método.
+ Essa funcionalidade permitiu descobrir e avaliar rapidamente um problema
+ do método original: a integração de uma operação de valor de um valor absoluto
+ na fórmula
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nao entendi
+\end_layout
+
+\end_inset
+
+.
+ A possibilidade da interação direta e fácil dos especialistas, em tempo
+ real, com o sistema permitiu demostrar agilmente possíveis cenários de
+ resolução do problema e aceitar rapidamente uma solução, proposta pelo
+ autor.
 \end_layout
 
 \begin_layout Section
@@ -471,8 +498,8 @@ Avaliação do SAD SustenAgro e do Framework Decisioner:
 
 \begin_layout Standard
 A partir da avaliação da ontologia, da implementação do método SustenAgro
- e das web UI desenvolvidas, realizou-se uma avaliação do SAD, com a finalidade
- de avaliar a integração desses componentes.
+ e do desenvolvimento das Web UI realizou-se uma avaliação do SAD com a
+ finalidade de avaliar a integração desses componentes.
 \end_layout
 
 \begin_layout Description
@@ -488,22 +515,23 @@ Local Instituto de Ciências Matemáticas e de Computação (ICMC-USP)
 \end_layout
 
 \begin_layout Description
-Técnica Test de usabilidade
+Técnica Teste de usabilidade
 \end_layout
 
 \begin_layout Standard
 Para realizar uma avaliação integral do SAD SustenAgro e do Framework Decisioner
-, foi necessário fazer testes de usabilidade por parte de usuários de ambos
- perfis do sistema (administradores e usuários finais).
- A avaliação foi realizada com a maioria dos membros da equipe SustenAgro
- e com usuários finais de maneira remota e independente, totalizando 8 avaliaçõe
-s.
+, foi necessário fazer testes de usabilidade com usuários de ambos os perfis
+ do sistema (especialistas de domínio e usuários finais).
+ Essa avaliação foi realizada com a maioria dos membros da equipe SustenAgro
+ e com usuários finais, de maneira remota e independente, totalizando 8
+ avaliações.
 \end_layout
 
 \begin_layout Standard
 A avaliação consistiu em realizar um conjunto de tarefas com o SAD SustenAgro
- v1.0, e responder se foi possível terminar a tarefa e as sugestões.
- As tarefas e perguntas solicitadas aos usuários, estão no apêndice 
+ v1.0 e responder se foi possível terminar a tarefa e as sugestões.
+ As tarefas e perguntas solicitadas aos usuários estão listadas no Apêndice
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Formulário-de-avaliação-SustenAgro"
@@ -721,13 +749,8 @@ Especialista em sustentabilidade
 \begin_layout Plain Layout
 
 \size small
-Positiva, realizou as 5 tarefas com sucesso
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-e as realizou as 5 tarefas de usuário administrador com sucesso
+Positiva, realizou as 5 tarefas de usuário e as 5 tarefas de especialista
+ de domínio com sucesso
 \end_layout
 
 \end_inset
@@ -799,13 +822,8 @@ Especialista economia
 \begin_layout Plain Layout
 
 \size small
-Positiva, realizou as 5 tarefas com sucesso
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-e as realizou as 5 tarefas de usuário administrador com sucesso
+Positiva, realizou as 5 tarefas de usuário e as 5 tarefas de especialista
+ de domínio com sucesso
 \end_layout
 
 \end_inset
@@ -1032,15 +1050,16 @@ Avaliação do SAD SustenAgro
 \end_layout
 
 \begin_layout Standard
-A partir dessa avaliação integral feita por usuários finais e administradores,
- foram definidas varias melhorias a serem realizadas sobre o Framework Decisione
-r e o SAD SustenAgro.
- Devido às limitações de tempo e de desenvolvedores foram implementadas
- os ajustes visuais nas web UI, melhoras na apresentação dos resultados,
- na geração do PDF e principalmente a inclusão da linguagem inglês, que
- foi selecionada de especial importância por parte dos especialistas, neste
- documento foram apresentadas varias telas tanto em português como em inglês,
- que foram geradas a partir dessa funcionalidade.
+A partir dessa avaliação integral, feita por usuários finais e administradores,
+ foram definidas várias melhorias a serem realizadas no Framework Decisioner
+ e o SAD SustenAgro.
+ Devido às limitações de tempo e de desenvolvedores, foram implementados
+ apenas os ajustes visuais nas web UI, melhoras na apresentação dos resultados,
+ na geração do PDF e, principalmente, a inclusão da linguagem inglês.
+ Essa última mudança foi selecionada como de especial importância, por parte
+ dos especialistas.
+ Neste documento, são apresentadas várias telas, tanto em português como
+ em inglês, que foram geradas a partir da implementação dessa funcionalidade.
 \end_layout
 
 \begin_layout Section
@@ -1052,9 +1071,9 @@ Workshop
 \end_layout
 
 \begin_layout Standard
-A partir das melhoras realizadas na avaliação interna dos dois tipos de
- usuários do SAD SustenAgro, foi publicado o sistema nos servidos do ICMC,
- para poder ser usados na Internet.
+A partir das melhoras realizadas na avaliação interna pelos dois tipos de
+ usuários do SAD SustenAgro, o sistema foi disponibilizado em servidos web
+ do ICMC.
  Esta publicação permitiu dar suporte a uma avaliação no formato de 
 \lang english
 workshop
@@ -1068,7 +1087,7 @@ Workshop
 \begin_inset Quotes eld
 \end_inset
 
-validação do software SustenAgro
+Validação do software SustenAgro
 \begin_inset Quotes erd
 \end_inset
 
@@ -1076,7 +1095,7 @@ validação do software SustenAgro
 \lang english
 workshop
 \lang brazilian
- são apresentados a continuação.
+ são apresentados a seguir.
 \end_layout
 
 \begin_layout Description
@@ -1084,7 +1103,7 @@ Data 14 de julho do 2016
 \end_layout
 
 \begin_layout Description
-Participantes Equipe do projeto SustenAgro
+Participantes Equipe do projeto SustenAgro de várias unidades da Embrapa
 \end_layout
 
 \begin_layout Description
@@ -1100,9 +1119,9 @@ O
 \lang english
 workshop
 \lang brazilian
- teve o objetivo de avaliar a qualidade e acuidade do Software SustenAgro
- em termos da clareza da informação técnica apresentada nas interfaces,
- com vistas a garantir o entendimento do usuário e possibilitar que a avaliação
+ teve o objetivo de avaliar a qualidade e acuidade do SAD SustenAgro em
+ termos da clareza da informação técnica apresentada nas interfaces, com
+ vistas a garantir o entendimento do usuário e possibilitar que a avaliação
  da sustentabilidade do sistema de produção de cana-de-açúcar seja realizada
  da melhor forma possível.
  
@@ -1113,7 +1132,7 @@ No
 \lang english
 workshop
 \lang brazilian
- foi apresentado o formulário de avaliação (seção 
+ foi apresentado o formulário de avaliação (Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Formulario-Delphi-Workshop"
@@ -1172,8 +1191,31 @@ Mestrando em Planejamento de Sistemas Energéticos
 \end_layout
 
 \begin_layout Standard
+As interações com o sistema foram filmadas enquanto os usuários executavam
+ uma lista de tarefas.
+ Monitores do ICMC ficavam estimulando os usuários a falar o que estavam
+ pensando (técnica Think Aloud 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+) e os questionavam, quando tinham alguma dificuldade de interação.
+ Ao final, houve um 
+\lang english
+debriefing
+\lang brazilian
+ e foram também colhidas mais sugestões de mudança.
+ 
+\end_layout
+
+\begin_layout Standard
 Os especialistas aprovaram a ferramenta tanto na interação como no conteúdo
- dela, com as seguintes sugestões
+ dela, com as seguintes sugestões:
 \end_layout
 
 \begin_layout Itemize
@@ -1206,18 +1248,34 @@ A informação dos site tem inconsistências em relação à informação do pdf
 A recomendações do relatório precisam mais detalhamento.
 \end_layout
 
+\begin_layout Standard
+É interessante que muitas das sugestões não tem haver com aspectos computacionai
+s ou de interface, mas sim com o processo de avaliação de sustentabilidade.
+ Esse processo é de inteira responsabilidade dos especialistas de domínio
+ (e foge totalmente do escopo deste trabalho).
+ Isso foi um ponto positivo.
+ É natural que especialistas em sustentabilidade estejam muito mais interessados
+ na sua área do que nos aspectos computacionais do SAD SustenAgro.
+ Uma boa interface é aquela que desaparece da mente do usuário e permite
+ que este se foque na sua tarefa.
+ Neste caso, a avaliação de sustentabilidade.
+ Acreditamos que o SAD SustenAgro atendeu bem a esse requisito.
+\end_layout
+
 \begin_layout Section
 Avaliação de SAD SustenAgro nos servidores da Embrapa
 \end_layout
 
 \begin_layout Standard
-A partir da aprovação do SAD SustenAgro por parte dos especialistas no 
+A partir da aprovação do SAD SustenAgro, por parte dos especialistas no
+ 
 \lang english
 workshop
 \lang brazilian
 , foi autorizada a instalação da ferramenta nos servidores da Embrapa Meio
- Ambiente, em um esforço coordenado entre o desenvolvedor do framework Decisione
-r e os técnicos da Embrapa, os detalhes estão a continuação.
+ Ambiente.
+ Essa instalação foi um esforço coordenado entre o desenvolvedor do framework
+ Decisioner (o autor deste trabalho) e técnicos de informática da Embrapa.
 \end_layout
 
 \begin_layout Description
@@ -1233,27 +1291,39 @@ Local Embrapa Meio Ambiente - Campinas
 \end_layout
 
 \begin_layout Description
-Técnica Test de usabilidade
+Técnica Teste de usabilidade
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nao parece ser um teste de usabilidade
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-A instalação coordenada pelo desenvolvedor do Framework Decisioner aos técnicos
- da Embrapa, devido ao fato de que não foi autorizado o ingresso aos servidor
- por parte de profissionais externos.
- Por esta razão procedeu-se a gerar um documento de instalação descrito
- no apêndice 
+A instalação, coordenada pelo desenvolvedor do Framework Decisioner e técnicos
+ da Embrapa, foi problemática.
+ A Embrapa não autoriza o acesso físico ou via ssh aos servidor por parte
+ de profissionais externos.
+ Por esta razão, foi criado um documento de instalação, descrito no Apêndice
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Instalation"
 
 \end_inset
 
-, nele estão as instruções para instalar o Framework Decisioner e instanciar
+.
+ Nele estão as instruções para instalar o Framework Decisioner e instanciar
  o SAD SustenAgro.
 \end_layout
 
 \begin_layout Standard
-A instalação foi exitosa publicando o aplicativo no endereço 
+A instalação foi exitosa e o sistema está funcionando no endereço 
 \begin_inset Flex URL
 status open
 
@@ -1265,8 +1335,10 @@ https://sustenagro.embrapa.br/
 \end_inset
 
 .
- Atualmente o endereço não está no ar, por entrar em processo de registro
- de software por parte de Embrapa Meio Ambiente.
+ Atualmente o endereço não está no ar, pois o SAD SustenAgro está em processo
+ de registro no Instituto Nacional de Propriedade Intelectual (INPI), em
+ nome da Embrapa e USP, e a Embrapa ter uma política de exigir esse registro
+ para liberação para uso externo.
 \end_layout
 
 \begin_layout Section
@@ -1274,10 +1346,10 @@ Conclusões
 \end_layout
 
 \begin_layout Standard
-As anteriores avaliações permitiram verificar que os requisitos do framework
- Decisioner e do SAD SustenAgro, foram desenvolvidos corretamente segundo
- as especificações feitas pelos especialistas e identificadas no levantamento
- de requisitos.
+Essas avaliações permitiram verificar que os requisitos do framework Decisioner
+ e do SAD SustenAgro foram implementados corretamente e que atenderam as
+ necessidades dos especialistas de domínio e usuários finais, identificadas
+ nos levantamentos de requisitos.
 \end_layout
 
 \begin_layout Standard
