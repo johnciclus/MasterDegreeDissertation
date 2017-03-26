@@ -1,413 +1,318 @@
-Neste capítulo é apresentado o sistema Decisioner, principal contribuição
-do projeto desenvolvido, ele gerá Sistemas de Apoio à Decisão e está
-composto por ontologias para representar o conhecimento e por uma
-DSL que permite gerenciar os conceitos e estabelecer as configurações
-gerais por parte de especialistas do domínio para gerar o SAD.
+A partir da descrição das características do SAD SustenAgro (seção
+\ref{sec:SAD-SustenAgro}), do requisito de modelar o conhecimento
+através de ontologias (usando tecnologias da Web Semântica) e de definir
+uma DSL para facilitar a definição de comportamentos por parte dos
+especialistas, foi modelado e desenvolvido um protótipo de um framework,
+intitulado Decisioner, que permite definir e gerar SADs do tipo do
+SustenAgro. O framework Decisioner é basicamente formado por ontologias,
+que representam conhecimento do domínio, e por uma DSL que permite
+definir comportamentos e estabelecer configurações gerais de um SAD.
 
-Os SADs segundo a descrição feita no capitulo \ref{chap:Context}
-estão compostos por banco de dados, base de modelos, base de conhecimento
-e a GUI como componentes principais, os quais foram organizados em
-componentes baseados na Web Semântica e nas DSL com a finalidade de
-desenhar um sistema gerador de SAD. 
+Satisfazer os requisitos requeridos pelos pesquisadores da Embrapa
+Meio Ambiente foi uma das forças que dirigiram o desenvolvimento desta
+pesquisa. Para chegar a arquitetura, aqui apresentada, houve um trabalho
+interativo para chegar aos requisitos que eram gerais, que deveriam
+estar no framework, e os que eram específicos, que deveriam estar
+definidos na ontologia ou na DSL do SustenAgro. 
+
+Neste capítulo será apresentado a arquitetura do protótipo Decisioner,
+cada uns dos seus componentes e funcionalidades e as contribuições
+para esta pesquisa.
 
 \section{Arquitetura do Decisioner}
 
-A arquitetura de um software define a organização em termos de seus
-componentes, suas interconexões, suas interações e também suas principais
-propriedades \citet{de1997software}. Ela fornece as informações de
-como os elementos envolvidos nela se relacionam. Arquiteturas trabalham
-a parte externa das ligações entre seus elementos, implementações
-internas desses elementos não são considerados arquiteturais \citet{sei2006architecture}.
+Os SADs, segundo a descrição feita no capítulo \ref{chap:SAD}, são
+compostos por banco de dados, base de conhecimento, módulo de processamento
+da informação e módulo gerador de resultados. Em cada um desses módulos,
+está implícito o conhecimento dos especialistas, pelo qual a primeira
+característica definida do Decisioner foi a integração de ontologias. 
 
-Para encontrar e configurar componentes de software de uma arquitetura,
-uma opção é descrever esses componentes, usando uma ontologia, e usar
-os termos dessa ontologia para encontrar os componentes corretos para
-uma aplicação \citet{Linhalis2010}. Essas ontologias podem ser criadas
-utilizando linguagens padrões da Web Semântica, como a Web Ontology
-Language (OWL), para melhor portabilidade \citet{Pahl2007}. Ontologias
-e padrões da Web Semântica serão abordados com mais profundidade no
-próximo capítulo.
+As ontologias permitem a definição do conhecimento dos especialistas
+em um componente independente. Ele é complementado pela DSL, que permite
+definir comportamento e características do SAD. O diagrama para a
+arquitetura desenvolvida para essa solução é apresentado na figura
+\ref{fig:Componente-DSL}. Com base nesse diagrama, os componentes
+dos SADs foram generalizados e, por meio do desenvolvimento de experimentos,
+foi definida uma arquitetura que pode ser reusada em diferentes SADs
+(do mesmo tipo do SustenAgro).
 
-Devido ao fato de que os elementos básicos de todo o SAD (Figura \ref{fig:Componentes-SAD})
-serem muito parecidos, é possível criar uma arquitetura que possa
-ser re\nobreakdash-usada em diferentes SADs (ou classes de SADs).
-Esta arquitetura pode ser baseada em componentes de software re\nobreakdash-usáveis.
-Programadores podem usar essa arquitetura e re\nobreakdash-usar os
-componentes de software, já desenvolvidos para ela, para implementar
-SADs mais rapidamente.
+O Decisioner pode ser classificado como um framework. Já que é uma
+plataforma de software com design reutilizável e implementações reutilizáveis
+pelos clientes, que o especializam em um domínio particular \citep{RiehlePhdthesis}.
 
-Como especialistas de domínio não têm um conhecimento muito detalhado
-sobre linguagens de especificação de sistemas, é necessário o desenvolvimento
-de uma \foreignlanguage{english}{Domain Specific Languag}e (DSL) adequada
-ao nível de conhecimento de computação dos especialistas. Essa linguagem
-também deve conter termos familiares ao domínio desses especialistas. 
-
-Após uma pesquisa bibliográfica não foi possível encontrar sistemas
-que propusessem a geração automática de interface para Sistemas de
-Apoio a Decisão (SADs) com ou sem o uso de ontologias. Os artigos
-encontrados mais próximos ao tema deste trabalho tratam do uso de
-ontologias ou de frameworks em SADs para a área de sustentabilidade,
-área que vai ser usada neste trabalho para teste dos sistemas desenvolvidos. 
-
-O modelo geral desta solução é apresentado na Figura \ref{fig:Interfaces},
-na qual as ontologias representam o banco de dados, base de modelos
-e base de conhecimento, permitindo a integração e padronização desses
-componentes, ditas ontologias são gerenciadas pela DSL que permite
-definir o comportamento do SAD e finalmente é integrado o sistema
-de GUIs que permite visualizar o SAD por meio de uma interface Web,
-suportando assim o componente visual dos SAD.
-
-O processo de definição dos SAD são controlados pela DSL, disponibilizando
-aos especialistas do domínio uma linguagem especializada e de fácil
-uso para definir e configurar os SAD segundo o critério deles, o conjunto
-destes três componentes foi intitulado Decisioner.
+A arquitetura do framework Decisioner é composta pelos componentes
+gerais para a definição de SADs, apresentados na Figura \ref{fig:Interfaces}.
+Usuários especialistas podem interagir com o framework através dos
+editores de ontologias e DSL. Usuários finais interagem através da
+sua interface Web.
 
 \begin{figure}[H]
-\centering{}\includegraphics[width=0.8\columnwidth]{\string"figures/Decisioner Architecture\string".png}\caption{Arquitetura do Decisioner\label{fig:Interfaces}}
+\centering{}\includegraphics[width=0.8\columnwidth]{\string"figures/Decisioner Architecture\string".eps}\caption{Arquitetura do Decisioner\label{fig:Interfaces}}
 \end{figure}
 
+Os componentes dessa arquitetura são:
+\selectlanguage{english}%
 \begin{enumerate}
-\item Ontologia de interfaces gráficas: ontologia que representa as interfaces
-gráficas de usuários e os tipos de dados, fazendo um mapeamento entre
-os dois.
-\item TripleStore: sistema de armazenamento e recuperação da informação
-que padroniza as informações em formato de triplas, permitindo a compatibilidade
-e o reúso das informações entre fontes de dados externas.
-\item Sistema gerador de interfaces gráficas: Sistema que usa a ontologia
-de interfaces gráficas e as definições feitas na DSL para gerar as
-interfaces gráficas Web, que compõem os SADs gerados pelo Decisioner.
+\item \textbf{Domain ontology}\foreignlanguage{brazil}{: representa os conceitos
+específicos dos especialistas que serão utilizados no SAD.}
+\item \textbf{Decisioner ontology}\foreignlanguage{brazil}{: faz uma ligação
+entre os tipos de dados e as interfaces gráficas capazes de mostrar
+ou editar esses dados, fazendo um mapeamento entre os dois.}
+\item \textbf{Ontology Editor}\foreignlanguage{brazil}{: componente que
+permite editar as ontologias em um formato mais fácil para o uso pelos
+especialistas.}
+\item \textbf{Triplestore}\foreignlanguage{brazil}{: sistema de armazenamento
+e recuperação da informação em formato de triplas }RDF\foreignlanguage{brazil}{,
+(explicado em detalhe na seção \ref{subsec:Triplestore}). Ele permite
+o gerenciamento de dados e ontologias em formato }RDF.\foreignlanguage{brazil}{
+A traves da linguagem padrão }SPARQL Protocol and RDF Query Language
+(Sparql)\foreignlanguage{brazil}{\citep{prud2006sparql}. }
+\item \textbf{DSL code}\foreignlanguage{brazil}{: representa uma instancia
+da DSL com as definições particulares para um SAD específico.}
+\selectlanguage{brazil}%
+\item \textbf{DSL Editor}: Editor visual web da DSL com recursos como \foreignlanguage{english}{code
+completion} e \foreignlanguage{english}{syntax coloring}. Permite
+a edição da \foreignlanguage{english}{DSL} por parte dos especialistas
+do domínio.
+\selectlanguage{english}%
+\item \textbf{Web components}:\foreignlanguage{brazil}{ conjunto de elementos
+visuais que podem ser reusados nos SADs com a finalidade de modularizar
+e simplificar a geração de }Web User Interfaces\foreignlanguage{brazil}{
+(UI\nomenclature{UI}{User Interface}).}
+\item \textbf{DSL Interpreter}\foreignlanguage{brazil}{: Interpretador
+da DSL para processar as definições do SAD e criar um SAD específico.
+Ele usa a DSL, ontologias e componentes web para gerar automaticamente
+a interface e comportamento de um SAD específico.}
+\item \textbf{Web UI}\foreignlanguage{brazil}{: Interfaces visuais geradas
+pelo }DSL Interpreter.\foreignlanguage{brazil}{ Utilizam os }Web Components\foreignlanguage{brazil}{
+e fornecer a interface gráfica, usadas pelos usuários finais, na interação
+com o SAD na Web.}
 \end{enumerate}
-
-\section{Trabalhos relacionados}
-
-Sobre as ontologias na interface gráfica encontramos: no artigo de
-\citet{ruiz2006using} é analisado o uso de ontologias na engenharia
-de software, identificando 50 tipos de uso entre as quais foram identificados
-dois usos no suporte de interfaces gráficas.
-
-\citet{paulheim2012ontology} propõem a seguinte definição, uma \foreignlanguage{english}{ontology-enhanced
-user} interface é uma interface cujas capacidades de visualização,
-possibilidades de interação, ou processo de desenvolvimento estão
-habilitados ou (pelo menos) melhorado pelo emprego de uma ou mais
-ontologias, na pesquisa foram identificados três propósitos para os
-quais são usadas as ontologias no melhoramento das interfaces gráficas,
-e são os seguintes:
-\begin{enumerate}
-\item Melhorar as capacidades de visualização;
-\item Melhorar as possibilidades de interação;
-\item Melhorar o processo de desenvolvimento;
-\end{enumerate}
-são apresentados os usos mais comuns de ontologias que suportem interfaces
-gráficas (ontology-enhanced user interface), eles
+\selectlanguage{brazil}%
+Essa arquitetura foi implementada em um protótipo Decisioner. Sempre
+que possível, na implementação do Decisioner, foram reutilizados componentes
+ou bibliotecas disponíveis publicamente na internet.
 
 \section{Metodologia}
 
-Com a finalidade de desenvolver o modelo de geração de SAD anteriormente
-dito, foi escolhido um caso de uso que corresponde a um SAD para avaliação
-da sustentabilidade intitulado SustenAgro, o qual foi requerido pelos
-especialistas em sustentabilidade da Embrapa Meio Ambiente.
-
-O desenvolvimento dos componentes do Decisioner foram realizados da
-seguinte maneira:
+Com a finalidade de desenvolver o protótipo do framework Decisioner,
+escolheu-se o SAD SustenAgro como um caso de uso e exemplo de instanciação.
+Ele permitiu a definição de uma metodologia de desenvolvimento para
+os componentes. Teria sido interessante instanciar o framework para
+um segundo SAD, para demonstrar melhor sua generalidade. Contudo,
+dada as limitações de tempo impostas a um trabalho de mestrado e ao
+tempo necessário ao desenvolvimento do framework, isso não foi possível.
+No decorrer deste texto, foram feitas algumas considerações sobre
+a generalidade do framework. A metodologia abordada durante este processo,
+incluiu as seguintes etapas:
 \begin{enumerate}
-\item Seleção da \foreignlanguage{english}{Triplestore}: foi realizado um
-processo de avaliação das \foreignlanguage{english}{triplestores}
-existentes com a finalidade de definir uma que adapta-se nos requisitos
-do sistema Decisioner.
-\item Seleção da linguagem de programação e framework web: foi realizado
-uma verificação das tecnologias de desenvolvimento de sistema web
-compatíveis com as tecnologias da web semântica e com as DSLs.
-\item Design da DSL:
-\item Desenvolvimento do interprete DSL:
-\item Integração com tencologias de Web Components:
-\item Desenvolvimento de modulo de geração de GUIs.
-\item Desenvolvimento do DSL editor:
-\item Desenvolvimento do Ontology Editor:
+\item Seleção da \foreignlanguage{english}{Triplestore}: foram avaliadas
+as \foreignlanguage{english}{triplestores} existentes com a finalidade
+de definir uma que se adaptasse aos requisitos do framework.
+\item Seleção da linguagem de programação e framework web: foi realizada
+uma verificação das tecnologias de desenvolvimento de sistemas web
+compatíveis com as tecnologias da web semântica e com a \foreignlanguage{english}{DSL}.
+\item Design da DSL: Durante o processo de desenvolvimento do SAD SustenAgro,
+foram generalizados seus componentes, permitindo definir cada uma
+das características da DSL. O processo foi iterativo, permitindo refinar
+a expressividade da linguagem com a ajuda de especialistas da Embrapa.
+\item Desenvolvimento do \foreignlanguage{english}{DSL editor}: implementação
+de uma \foreignlanguage{english}{web UI} que permite editar a DSL
+em formato textual, fornecendo aos especialistas um editor moderno.
+Modificações na DSL podem ser vistas no SAD imediatamente.
+\item Desenvolvimento do \foreignlanguage{english}{Ontology Editor}: implementação
+de uma \foreignlanguage{english}{web UI} com componentes específicos
+para suportar a edição das ontologias, por parte dos especialistas,
+em um formato textual.
+\item Desenvolvimento do \foreignlanguage{english}{DSL Interpreter}: o interprete
+da Decisioner DSL. Esse componente tinha que ser atualizado a medida
+que o design da DSL mudava.
+\item Integração com \foreignlanguage{english}{web components} e \foreignlanguage{english}{web
+UI}s: \foreignlanguage{english}{Widgets} gráficas, na forma de \foreignlanguage{english}{Web
+components} suportam a geração das \foreignlanguage{english}{Web UIs}
+que compõem os SADs. \foreignlanguage{english}{Widgets} foram adicionadas
+para atender as necessidades do SustenAgro.
 \end{enumerate}
-Os componentes da arquitetura do SustenAgro não são exclusivos do
-SustenAgro, podendo ser reusados em outros SADs, os quais foram generalizados
-para suportar a geração de outros tipos de sistema.
-
-\subsection{Ontologia Decisioner}
-
-Sobre as ontologias sobre interfaces gráficas, no artigo de \citet{ruiz2006using}
-é analisado o uso de ontologias na engenharia de software, identificando
-50 tipos de uso entre os quais foram identificados dois usos no suporte
-de interfaces gráficas.
-
-\citet{paulheim2012ontology} propõem a seguinte definição, uma \emph{ontology-enhanced
-user interface} é uma interface cujas capacidades de visualização,
-possibilidades de interação, ou processo de desenvolvimento estão
-habilitados ou, pelo menos, melhorados pelo emprego de uma ou mais
-ontologias. Na pesquisa foram identificados três propósitos para os
-quais são usadas as ontologias no melhoramento das interfaces gráficas:
-\begin{enumerate}
-\item Melhorar as capacidades de visualização;
-\item Melhorar as possibilidades de interação;
-\item Melhorar o processo de desenvolvimento;
-\end{enumerate}
-Foram apresentados também os usos mais comuns de ontologias que suportam
-interfaces gráficas (ontology-enhanced user interface).
-
-Além disso, na literatura, existem pesquisas relacionadas com o vocabulário
-\emph{AGROVOC Agricultural Vocabulary} \footnote{http://aims.fao.org/agrovoc}
-que é um \foreignlanguage{english}{\emph{thesaurus}} que fornece termos
-padronizados sobre alimentação, nutrição, agricultura, pesca, floresta
-e meio ambiente criados de maneira colaborativa e coordenados pela\emph{
-}\foreignlanguage{english}{Food and Agriculture Organization} (FAO\nomenclature{FAO}{Food and Agriculture Organization}).
-Esses termos podem ser reutilizados nas ontologias \citep{DCMIPro841},
-permitindo uma padronização dos identificadores dos conceitos, reutilizando
-informações e integrando os conceitos com outros dados. Essa reutilização
-foi feita através da vinculação da AGROVOC ao sistema \emph{AOS/CS
-Agricultural Ontology Service Concept Server}, a FAO desenvolveu um
-modelo base para esse novo sistema utilizando o \emph{OWL Web Ontology
-Language.}
-
-Cada uma destas pesquisas fornece um exemplo do uso das tecnologias
-da web semântica na criação de soluções baseadas em conhecimento.
-Isso é confirmado por \citet{roussey2010ontologies} por meio da descrição
-de (i) como as ontologias têm sido usadas para múltiplas tarefas,
-uma das quais é conseguir interoperabilidade entre sistemas de informação
-heterogêneos; e de (ii) como as seguintes gerações de sistemas de
-informação utilizariam uma base do conhecimento do domínio. Dadas
-as afirmações dessas pesquisas, pode-se deduzir que uma ontologia
-pode proporcionar o suporte conceitual para cumprir os requisitos
-de sistema SAD, como o SustenAgro.
-
-A ontologia de Sistema Apoio à Decisão contem os elementos que foram
-abstraidos a partir do analise dos sistemas SAD usados pela Embrapa
-Meio Ambiente em seus processos de avaliação.
-
-Os sistemas software de avaliação que foram analisados foram:
-\begin{enumerate}
-\item Sistema SustenAgro: avaliação da sustentabilidade agricola em cana-de-açúcar.
-\item Sistema Innova-Tec: avaliação do impacto da inovação tecnológica.
-\item Sistema Nano-Tec: avaliação do impacto das nanotecnologias.
-\end{enumerate}
-A partir desses sistemas foram identificados elementos comuns, que
-foram abstraidos na ontologia SAD com o proposito de generalizar as
-classes da ontologia sustenagro, para fornecer a geração de interfaces
-gráficas .
-
-As classes idenficadas e modeladas são:
-\begin{itemize}
-\item Evaluation Object: classe que representa os objetos que serão analisados
-em cada processo de avaliação, os quais vão ficar como indivíduos
-desta classe ou de alguma subclasse dela, no caso do sistema SustenAgro
-a classe \textit{Production Unit }é subclasse do Evaluation Object.
-\item Feature: classe que representa as caraterísticas de um Evaluation
-Object que serão quantificadas, analisadas e usadas no processo de
-geração de resultados do processo de avaliação, pelo geral as Features
-tem uma propriedade numérica que a quantifica.
-\item Analysis: classe que vincula o resultado de uma avaliação, o nome
-e data da avaliação, assim como o Evaluation Object, para representar
-uma avalição
-\item Value: classe que representa os valores que são atribuídos a cada
-instancia de Feature.
-\item User: classe que representa os usuários do sistema.
-\item Role: classe que representa os tipos de usuário do sistema, relacionando
-as permissões de cada tipo, por padrao tem estão instanciados os perfis
-User e Admin
-\end{itemize}
-Na figura \ref{fig:Modelagem-do-SAD} é apresentada a modelagem basica
-da estrutura de um SAD, com as classes que foram obtidas a partir
-da abstração da ontologia SustenAgro.
-
-\begin{figure}[H]
-\centering{}\includegraphics[scale=0.5]{\string"figures/DSS ontology\string".png}\caption{Modelagem abstracto do SAD\label{fig:Modelagem-do-SAD}}
-\end{figure}
-
-A classe \textit{Value }representa os valores que são relacionados
-com cada característica da unidade produtiva, o qual esta subdividido
-nas classes \textit{Categorical }ou \textit{Real, }no caso de SustenAgro
-representa os possíveis valores que um \textit{Indicator} ou \textit{Variable}
-pode ter, os elementos discretos e definidos como os categóricos são
-modelados como indivíduos da classe, permitindo assim, restringir
-as opções de escolha.
-
-Na figura \ref{fig:Modelagem-de-Value} é apresentado a classe \textit{Value}
-e as subclasses modeladas, tanto \textit{Categorical} para conjunto
-finito de valores e \textit{Real} para valores numéricos, como exemplo
-está a classe \textit{Yes/No} que representa os valores de sim e não,
-os quais são modelados como indivíduos de dita classe.
-
-Cada individuo da classe \textit{Value} tem a propriedade \textit{as
-number }que relaciona um valor numérico para definir um critério de
-comparação e fornecer um formato para este tipo de dados.
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[scale=0.5]{figures/Value}
-\par\end{centering}
-\caption{Modelagem de Value\label{fig:Modelagem-de-Value}}
-\end{figure}
-
-Estas classes são complementadas com propiedades como rdfs:range ou
-por padrões dos dados que relacionam as widgets mais apropriadas na
-representação de informações, e assim fornecer a geração de interfaces
-graficas de usuário.
-
-A partir do anterior formato a classe 
-
-Para definir a ontologia de domínio do SustenAgro, realizou-se uma
-pesquisa das fontes de dados relacionadas com ontologias do domínio
-de avaliação de sustentabilidade em sistemas produtivos de cana-de-açúcar.
-Concluiu-se que não existem ontologias que suportem esse domínio,
-por isso propõe-se desenvolver uma ontologia que utilize os conceitos
-de avaliação de sustentabilidade e de sistemas agrícolas. Ela deve
-fazer uso da pesquisa realizada por \citet{oliveira:2013} e de algumas
-tecnologias fornecidas pela FAO. Essa ontologia terá a finalidade
-de fornecer uma base conceitual e tecnológica para suportar o processo
-de avaliação de sustentabilidade no sistema produtivo da cana\nobreakdash-de\nobreakdash-açúcar
-no estado de São Paulo.
-
-O desenvolvimento dessa ontologia ocorrerá de forma ágil e modular,
-por meio de técnicas de prototipação rápida, que serão de âmbito e
-complexidade crescente, abrangendo grupos de conceitos relacionados
-entre si.
-
-O desenvolvimento da ontologia depende essencialmente da comunicação
-entre os especialistas e os modeladores. Foram definidos meios de
-comunicação e de representação do conhecimento: reuniões presenciais
-e virtuais, e o modelos conceituais que permitem uma visualização
-direta do domínio.
-
-Inicialmente, o modelo conceitual vai ser representado por meio de
-um mapa conceitual que permitirá a comunicação em um formato reconhecido
-por cada um dos profissionais envolvidos no projeto. Esse modelo será
-representado em OWL (pelos modeladores) e serão definidas instâncias
-para cada uma das classes. Depois disso, o especialista do domínio
-construirá perguntas de interesse, com as quais os modeladores definirão
-consultas que o sistema deverá responder segundo os resultados esperados,
-conseguindo validar e ajustar até ter um protótipo confiável.
-
-O conhecimento do domínio envolvido no sistema Sustenagro está em
-contínua construção. Por isso, é necessário um enfoque que permita
-realizar mudanças na estrutura e no conteúdo usados no sistema durante
-seu desenvolvimento. As ontologias permitem representar o conhecimento
-de um domínio por meio de formatos, como a linguagem OWL, permitindo
-separar o conhecimento das outras partes do sistema.
-
-A ontologia do domínio foi desenvolvida baseada nas definições feitas
-pelos especialistas, que foram generalizadas a través das seguintes
-classes representadas na Figura \ref{fig:StructureOfDomainOntology},
-cada uma delas permite representar os conceitos gerais dos sistemas
-de avaliação da sustentabilidade.
-
-Também permite a integração de conceitos, inclusive quando pertencem
-a domínios sem relação aparente. Um exemplo disso é a inter-relação
-do conhecimento de sustentabilidade com conhecimento de interfaces
-gráficas de usuário, que suporta a geração de SAD para avaliação da
-sustentabilidade, o conhecimento modelado foi dividido em duas ontologias,
-avaliação de sustentabilidade e do SAD.
-
-As ontologias da web semantica são compatíveis com as tecnologias
-web, permitindo o uso e integração por outros sistemas dado que está
-em um formato padronizado.
+A metodologia de desenvolvimento foi guiada pelo desenvolvimento do
+SAD SustenAgro. Primeiramente foram desenvolvidas as ontologias, continuando
+com o desenvolvimento do \foreignlanguage{english}{DSL Interpreter}
+e depois com a integração dos \foreignlanguage{english}{web components}
+e \foreignlanguage{english}{UI}s. Foram realizados vários ciclos de
+desenvolvimento para refinar as funcionalidades. A Figura \ref{fig:Metodologia-do-Decisioner}
+representa a metodologia realizada.
 
 \begin{figure}
 \begin{centering}
-\includegraphics[scale=1.5]{figures/StructureOfDomainOntology}
+\includegraphics[width=0.8\columnwidth]{\string"figures/Decisioner Methodology\string".eps}
 \par\end{centering}
-\caption{Estrutura Geral da Ontologia de Domínio\label{fig:StructureOfDomainOntology}}
+\caption{Metodologia de desenvolvimento do Decisioner\label{fig:Metodologia-do-Decisioner}}
+
 \end{figure}
 
-A classe \foreignlanguage{english}{\textit{Analysis}} representa o
-conceito de avaliação de sustentabilidade onde cada individuo dela
-representa uma avaliação cadastrada no sistema. 
+A seguir, cada componente da arquitetura do Decisioner é discutido,
+começando pela ontologia Decisioner.
 
-A classe \foreignlanguage{english}{\textit{EvaluationObject}}\textit{
-}representa os objetos que serão avaliados pelo SAD, os quais tem
-indicadores que permitem suportar o processo de avaliação.
+\section{Ontologia Decisioner\label{sec:Ontologia-Decisioner}}
 
-A classe \foreignlanguage{english}{\textit{Feature}} representa cada
-uma das características dos objetos de avaliação, principalmente indicadores
-que são usados durante o processo de avaliação
+Para desenvolver um protótipo de uma ontologia geral, que abstraísse
+os conceitos dos SADs, foram analisados os sistemas SAD desenvolvidos
+pela Embrapa Meio Ambiente, descritos na seção \ref{sec:SAD-SustenAgro}.
 
-A classe \foreignlanguage{english}{\textit{Indicator}} representa
-o conceito de indicador que representa cada conceito a avaliar
+A versão inicial da ontologia foi modelada na ferramenta Protégé,
+no formato \foreignlanguage{english}{OWL}. Depois foi criado um novo
+formato, usando o \foreignlanguage{english}{YAML Ain't Markup Language
+(YAML \nomenclature{YAML}{YAML Ain't Markup Language\\})}, mais simples
+que \foreignlanguage{english}{OWL}, para ser usado pelos especialistas
+no \foreignlanguage{english}{Ontology Editor}, explicado na seção
+\ref{sec:Ontology-Editor}.
 
-A classe \foreignlanguage{english}{\textit{Weighted}} representa o
-conceito de indicador vinculado com um peso que permite atribuir uma 
+A ontologia Decisioner contém os elementos comuns identificados e
+abstraídos dos SADs da Embrapa, e tem o proposito de fornecer uma
+ontologia geral que dê suporte a SADs diferentes. 
 
-Ontologia de controles de gráficos: a finalidade dessa ontologia é
-dar suporte a composição de controles gráficos relacionados com os
-indicadores. Esse é um requisito funcional do software, uma vez que
-os indicadores podem ter diversos tipos de unidades e para cada tipo
-existe um tipo de controle gráfico mais apropriado para sua representação.
-Por exemplo, para representar um indicador de sustentabilidade do
-tipo numérico é recomendável usar um controle visual tipo spinner.
+\begin{figure}[H]
+\centering{}\includegraphics[scale=0.7]{\string"figures/DSS ontology\string".eps}\caption{Modelagem abstrata do SAD\label{fig:Modelagem-do-SAD}}
+\end{figure}
 
-O sistema gerador de interfaces gráficas permite suportar aspectos
-de usabilidade e flexibilidade ao sistema. Essa última característica
-constitui uma nova proposta de desenvolvimento de SADs que permite
-a adaptação automática (ou semi\nobreakdash-automática) da interface
-às mudanças dos conceitos do domínio.
+Na Figura \ref{fig:Modelagem-do-SAD}, é apresentada a hierarquia
+de classes resultante. Ela contém as classes:
+\selectlanguage{english}%
+\begin{description}
+\item [{Evaluation\ Object\foreignlanguage{brazil}{:}}] \foreignlanguage{brazil}{classe
+que representa os objetos que serão analisados em cada processo de
+avaliação. Eles serão indivíduos dessa classe ou de alguma subclasse
+dela.}
+\item [{Feature\foreignlanguage{brazil}{:}}] \foreignlanguage{brazil}{classe
+que representa as caraterísticas a avaliar em um }Evaluation Object.\foreignlanguage{brazil}{
+Elas serão quantificadas, analisadas e usadas no processo de geração
+de relatórios no processo de avaliação. As }Features\foreignlanguage{brazil}{
+têm associado um }Value\foreignlanguage{brazil}{ que as quantifica.
+Existe a subclasse }\textit{Weighted}\foreignlanguage{brazil}{ que
+representa uma }Feature\foreignlanguage{brazil}{ vinculada a um peso.
+Esse peso pode ser usado nas fórmulas para o cálculo dos modelos codificados
+pelos especialistas.}
+\item [{Place\foreignlanguage{brazil}{:}}] \foreignlanguage{brazil}{classe
+que representa a localização física dos objetos modelados, permitindo
+referenciar geograficamente um }Evaluation Object.
+\item [{Analysis\foreignlanguage{brazil}{:}}] \foreignlanguage{brazil}{classe
+que representa uma avaliação associada a um }Evaluation Object\foreignlanguage{brazil}{.
+Suas instâncias têm propriedades, como nome e data da avaliação, e
+correspondem a uma avaliação cadastrada.}
+\item [{Value\foreignlanguage{brazil}{:}}] \foreignlanguage{brazil}{classe
+que representa os valores que são atribuídos a cada instância de }Feature.\foreignlanguage{brazil}{
+As subclasses }Real\foreignlanguage{brazil}{ e }Categorical\foreignlanguage{brazil}{
+representam tipos de valores.}
+\item [{User\foreignlanguage{brazil}{:}}] \foreignlanguage{brazil}{classe
+que representa os usuários do sistema.}
+\item [{Role\foreignlanguage{brazil}{:}}] \foreignlanguage{brazil}{classe
+que representa os papéis de usuário do sistema e suas permissões.
+Por padrão, estão instanciados os perfis }User\foreignlanguage{brazil}{
+e }Admin.
+\end{description}
+\selectlanguage{brazil}%
+A partir dessas classes é possível organizar os conceitos específicos
+de cada SAD como subclasses delas. Um aspecto importante das ontologias
+é que suportam a inferência de novos conhecimentos, permitindo classificar
+e relacionar dados novos do sistema, ajudando desta maneira na automatização
+da geração dos SADs. Isso permite ao \foreignlanguage{english}{DSL
+Interpreter} mapear qualquer conceito novo, específico de um SAD em
+particular, a um desses conceitos conhecidos e saber o que deve ser
+feito com ele. 
+\selectlanguage{english}%
 
-Será desenvolvida uma ontologia para interfaces gráficas focada na
-definição e modificação de controles de usuário. Um exemplo do uso
-dessa ontologia é nos indicadores. Eles armazenam um valor inserido
-pelo usuário, que pode ser de diversos tipos como numérico continuo,
-numérico discreto, percentagem, booleano, lista de termos ou alfanumérico.
-Dada essa diversidade, é importante representar os diversos tipos
-de controles gráficos em uma linguagem do domínio do especialista,
-para que possam ser usados para \foreignlanguage{english}{input} da
-definição dos indicadores e que faça um mapeamento entre os indicadores
-e os tipos de indicador que vai ser armazenado no sistema.
+\section{Ontology Editor\label{sec:Ontology-Editor}}
 
-Esta ontologia vai suportar a DSL fornecendo uma definição formal
-dos controles gráficos que serão mapeados para cada tipo de indicador,
-a DSL será apresentada a continuação.
+\selectlanguage{brazil}%
+Para suportar a edição das ontologias do domínio, por parte dos especialistas,
+foi implementado um editor web. Ele permite editar a ontologia específica
+do SAD em um formato baseado em \foreignlanguage{english}{YAML,} a
+descrição da ontologia neste formato passa a um conversor para ficar
+no formato \foreignlanguage{english}{OWL} que é processado pela \foreignlanguage{english}{API}
+de protégé para instanciar a ontologia com as restrições definidas
+e finalmente exportado como \foreignlanguage{english}{RDF} para ser
+substituído na \foreignlanguage{english}{triplestore} \foreignlanguage{english}{Blazegraph,}
+este processo é realizado a cada vez que o usuário salva a ontologia.
 
-As ontologias desenvolvidas foram modelados os conceitos envolvidos
-no processo de avaliação da sustentabilidade em agricultura, definindo,
-classificando e relacionando cada um dos conceitos para assim permitir
-o uso em outros sistemas e conseguir fazer inferência de novo conhecimento.
+A Figura \ref{fig:Editor-de-ontologia} mostra uma imagem do editor.
+Ela mostra o código da ontologia em formato \foreignlanguage{english}{YAML},
+um \foreignlanguage{english}{side panel,} que apresenta as classes,
+propriedades e indivíduos hierarquicamente (permitindo a referenciação
+dos elementos no código), um \foreignlanguage{english}{button restore}
+para restituir a ultima versão da ontologia e um \foreignlanguage{english}{button
+save} para salvar e carregar no Decisioner a ontologia em edição.
+\begin{flushleft}
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\columnwidth]{figures/SustenAgro-ontology-editor}
+\par\end{centering}
+\caption{Editor de ontologia\label{fig:Editor-de-ontologia} }
+\end{figure}
+\par\end{flushleft}
+
+Idealmente, especialistas de domínio deveriam poder criar a ontologia
+usando um editor gráfico. Mas devido as restrições de escopo de um
+projeto de mestrado, não haveria tempo para criar um. A criação de
+uma ferramenta, como um editor gráfico, teria o escopo de um novo
+mestrado. 
+
+Usar um editor para \foreignlanguage{english}{OWL}, como o Protégé,
+exigiria que os especialistas de domínio aprendessem \foreignlanguage{english}{OWL}
+e lógica descritiva, o que não é uma opção viável. Este editor de
+ontologias é uma solução intermediária. Ele adota um formato em \foreignlanguage{english}{YAML},
+menos complexo que \foreignlanguage{english}{OWL}, mas expressivo
+o suficiente para as necessidades das ontologias. Ele ajuda os usuários
+a encontrar os elementos da ontologia (\foreignlanguage{english}{side
+panel}) e permite a inserção da ontologia no Decisioner. Apesar de
+ser possível aos especialistas desenvolver uma ontologia totalmente
+nova, usando o editor, seu objetivo é permitir que eles possam fazer
+modificações localizadas nas ontologias. 
+
 
 \section{Decisioner DSL}
 
-No desenvolvimento da presente pesquisa foi necessário definir uma
-DSL que permitisse representar as principais características do SAD
-que precisávamos desenvolver, dito SAD foi desenhado para avaliar
-a sustentabilidade em agricultura, pelo qual foram integrados conceitos
-do domínio de conhecimento na definição dos componentes do SAD, fornecendo
-uma linguagem para especialistas onde é suportada a de definição dos
-SAD, as características da DSL são:
+Para permitir que os especialistas definam o comportamento do framework
+Decisioner, foi definida uma DSL que permite definir as principais
+características de um SAD. Tal DSL foi baseada na modelagem geral
+da arquitetura do \foreignlanguage{english}{Decisioner} e permite
+relacionar conceitos específicos dos especialistas, criar equações
+para os modelos usados, gerar a interface web para o usuário final,
+servindo de interface entre a ontologia do Decisioner e a ontologia
+do domínio.
 
-A DSL foi baseada na linguagem Groovy \citet{koenig2007groovy}, sendo
-uma extensão da linguagem Groovy, devido a que esta linguagem suporta
-o desenvolvimento de DSLs. Isso inclui suporte a DSL Descriptors,
-arquivos Groovy que descrevem extensões \emph{domain-specific} para
-o motor de inferência e assistente de conteúdo do plugin Groovy\nobreakdash-Eclipse. 
+A DSL foi baseada na linguagem \foreignlanguage{english}{Groovy},
+porque ela suporta o desenvolvimento de \foreignlanguage{english}{DSLs}
+que se comportam como extensões da linguagem \foreignlanguage{english}{Groovy}.
 
-Uma outra vantagem de Groovy é a disponibilidade do Grails Framework
-para a criação de aplicações Web \citet{judd2008beginning}. 
+O uso da DSL, por parte especialistas, diminui o esforço necessário
+no desenvolvimento de um SAD. Ela permite que os próprios especialistas
+sejam capazes de fazer parte do desenvolvimento e validação do SAD.
+Especialmente na parte de refinamento e atualização do SAD, especialistas
+podem fazer modificações no sistema sem a ajuda de programadores e
+ver o resultado dessas mudanças imediatamente.
 
-O uso da DSL por especialistas em sustentabilidade deve diminuir o
-esforço necessário para se desenvolver um SAD nesse domínio.
+As instruções definidas na DSL são:
+\selectlanguage{english}%
 
-Espera-se que, usando a DSL, os próprios especialistas vão ser capazes
-de fazer parte do desenvolvimento e validação.
+\subsection*{Evaluation Object}
 
-A DSL e o interprete conformam uma ferramenta intitulada Decisioner,
-que por meio de umas declarações permite a geração de \nomenclature{SAD}{Sistema de apoio à decisão},
-dita ferramenta foi a principal contribuição desta pesquisa.
+\selectlanguage{brazil}%
+Nos SAD focados na avaliação, existe um objeto de avaliação que representa
+as entidades a serem avaliadas. Esse objeto é constituído por propriedades
+que especificam o que está sendo avaliado. A instrução \foreignlanguage{english}{\textit{evaluationObject}}\textit{
+}permite definir as propriedades desse objeto. Por exemplo, caso uma
+fazenda esteja sendo avaliada, é possível criar propriedades como
+nome, tipo de produção, localização, etc.
 
-\subsection{Evaluation Object}
+A instrução tem como argumentos a URI (ou label) da classe da ontologia
+do domínio, que será objeto de avaliação, e cada uma das propriedades
+relacionadas. A Listagem \ref{lis:DSL-para-defini=0000E7=0000E3o}
+apresenta um exemplo que usa a classe \textit{ProductionUnit}, como
+classe dos objetos a serem avaliados e define as propriedades \textit{hasName},
+para nome, e \textit{hasAgriculturalProductionSystem}, para tipo de
+produção. Podem ser usados os labels das propriedades, ao invés de
+suas URIs\textit{.}
 
-Os SAD focados na avaliação, é necessário definir um objeto de avaliação
-que permita representar as entidades a avaliar, este objeto pelo geral
-tem propriedades que vão representar cada uns dos indivíduos a avaliar,
-pelo qual foi definido o comando \textit{evaluationObject, }que define
-a estrutura do objeto de avalização e vincula os controles visuais,
-o comando tem como argumentos a URI da classe dos elementos que vão
-ser avaliados e cada uma das propriedades relacionadas. No código
-\ref{lis:DSL-para-defini=0000E7=0000E3o} apresenta-se uma parte da
-DSL que define a classe do objeto de avaliação \textit{ProductionUnit}
-e as propriedades por meio dos comandos \foreignlanguage{english}{\textit{instance}}\textit{
-}e\textit{ }\foreignlanguage{english}{\textit{type}}\textit{.}
-
-\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o de Evaluation Object  },label={lis:DSL-para-defini=0000E7=0000E3o}]
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o do Evaluation Object  },label={lis:DSL-para-defini=0000E7=0000E3o}]
 evaluationObject ":ProductionUnit", {     
  instance "ui:hasName', label: ["en": "Name", "pt": "Nome"]
  instance ":hasAgriculturalProductionSystem"
@@ -415,159 +320,319 @@ evaluationObject ":ProductionUnit", {
 }
 \end{lstlisting}
 \inputencoding{utf8}
-O comando \foreignlanguage{english}{instance} vincula uma propriedade
-definida na ontologia através da URI a qual pode estar complementada
+O comando \foreignlanguage{english}{\textit{instance}} vincula uma
+propriedade definida na ontologia, através da URI. Ela pode ser complementada
 por parâmetros que customizam a representação visual da propriedade.
-
-O comando type vincula as subclasses da classe principal, para ser
-atribuida nas intancias de Evaluation Object, no caso do Sistema SustenAgro,
-dito comando identifica que as instancias de\textit{ ProductonUnit}
-também podem ser um \textit{Provider} ou uma \textit{Plant}. Os parâmetros
-que podem complementar os anteriores comandos são:
+O comando \foreignlanguage{english}{\textit{type}} faz com que os
+\foreignlanguage{english}{EvaluationObject} tenham que ser de subclasses
+da classe principal. Por exemplo, uma unidade produtiva pode ser uma
+plantação greenfield (mecanizada e uniforme), fazenda familiar, etc.
+Os parâmetros que podem complementar as instruções anteriores são:
+\selectlanguage{english}%
 \begin{enumerate}
-\item \textit{label}: define um texto associado
-\item \textit{placeholder:} define um texto de ajuda
-\item \textit{required}: define uma propriedade obrigatória
-\item \textit{widget}: define um controle gráfico de usuário
+\item \textit{required}\foreignlanguage{brazil}{: define uma propriedade
+obrigatória}
+\item \textit{label}\foreignlanguage{brazil}{: define um texto associado}
+\item \textit{placeholder}\foreignlanguage{brazil}{\textit{:} define um
+texto de ajuda}
+\item \textit{widget}\foreignlanguage{brazil}{: define um controle gráfico
+de usuário}
 \end{enumerate}
 
-\subsection{Feature: }
+\subsection*{Feature}
 
-O comando \textit{Feature} define as características que serão apresentadas
-durante a avaliação para serem instanciadas como parte da Analysis,
-ele tem como argumento uma URI que permite vincular as subclasses
-da classe referenciada, as instancias destas classes serão quantificadas
-mediante o processo da avaliação no qual é realizado o preenchimento
-da propriedade \textit{has value }que vincula cada Feature com um
-Value para quantificá-lo. No sistema SustenAgro foram estabelecidas
-as Features por meio das URIs das classes: EnvironmentalIndicator,
-EconomicIndicator, SocialIndicator, ProductionEfficiencyFeature e
-TechnologicalEfficiencyFeature. Além disso é possível acrescentar
-a inserção de \foreignlanguage{english}{\textit{features}} novas na
-interface gráfica de usuário a través do parâmetro \foreignlanguage{english}{\textit{extraFeatures}}.\inputencoding{latin9}
-\begin{lstlisting}[caption={Defini��o de Features}]
+\selectlanguage{brazil}%
+A instrução \foreignlanguage{english}{\textit{Feature}} define as
+características, do Evaluation Object, que serão usadas na sua avaliação.
+O DSL Interpreter vai gerar uma interface gráfica, onde o usuário
+final terá que preencher os dados sobre cada característica. Cada
+característica tem um tipo associado a ela (na ontologia de domínio).
+A partir dele, é possível associar uma widget específica para edição.
+Por exemplo, a Figura \ref{fig:Widgets-geradas-da-DSL} mostra a
+widget para uma característica que tem um tipo categórico com 3 possíveis
+valores. Os textos mostrados vêm da ontologia e fazem parte da descrição
+de cada elemento. É possível criar descrições em mais de uma língua.
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[width=0.8\columnwidth]{figures/IndicatorSelection}
+\par\end{centering}
+\caption{Widgets geradas a partir da definição da DSL\label{fig:Widgets-geradas-da-DSL}}
+\end{figure}
+
+Quando o usuário final usa a widget, o valor escolhido é anotado,
+no Evaluation Object, usando a propriedade \foreignlanguage{english}{\textit{has
+value}}. Nas fórmulas, usadas para os cálculos do modelo usado, é
+possível acessar esses valores. Os usuários não precisam preencher
+a todas as características.
+
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o de Features},label={lis:Defini=0000E7=0000E3o-de-Features}]
 feature ':EnvironmentalIndicator', 'extraFeatures': true
 \end{lstlisting}
 \inputencoding{utf8}
+O comando tem como argumento uma URI (ou label) (Listagem \ref{lis:Defini=0000E7=0000E3o-de-Features})
+que vincula todas as subclasses da classe referenciada. O parâmetro
+opcional \foreignlanguage{english}{\textit{extraFeatures}} permite
+ativar a inserção de novas\foreignlanguage{english}{\textit{ features}},
+por parte do usuário do SAD. 
+\selectlanguage{english}%
 
-\subsection{Logica de avaliação: }
+\subsection*{Report}
 
-O comando \textit{Report} define o tratamento quantitativo que vai
-ser efetuado às \foreignlanguage{english}{\textit{Features}}, com
-a finalidade de obter valores gerais ou padrões como resultado do
-processo de avaliação, suportando a definição de operações logicas
-e aritméticas existentes tanto das linguagens Java e Groovy, fornecendo
-assim uma linguagem para edição do metodo de avaliação, permitindo
-atualizar o metodo dinámicamente e em tempo de execução, ditos valores
-gerais são apresentados diretamente ou por meio de \foreignlanguage{english}{\textit{widgets}}
-que facilitem a representação e compreensão da avaliação do sistema.
-No código seguinte apresenta-se a implementação da formula do Sistema
-SustenAgro, criando variáveis resultado de operações aritméticas para
-gerar resultados gerais, no caso do SustenAgro o código gera a variável
-\foreignlanguage{english}{\textit{sustainability}} que representa
-o índice de sustentabilidade, más pode ser definido qualquer método
-computável.\inputencoding{latin9}
-\begin{lstlisting}[caption={Defini��o da logica de avalia��o.}]
+\selectlanguage{brazil}%
+O comando \foreignlanguage{english}{\textit{Report}} permite definir
+as fórmulas e procedimentos matemáticas necessários para o cálculo
+do modelo usado pelos especialistas de domínio, e como os resultados
+serão apresentados (Listagem \ref{lis:Defini=0000E7=0000E3o-da-logica}).
+Fórmulas e procedimentos para modelagem matemática são de responsabilidade
+dos especialistas de domínio. A DSL permite desde fórmulas simples,
+de uma linha, até o uso de bibliotecas complexas, chamadas usando
+a JVM. Como a DSL é uma extensão da linguagem Groovy, qualquer comando
+da linguagem pode ser usado nela, incluindo operações lógicas e aritméticas.
+Para facilitar o trabalho dos especialistas de domínio, recomenda-se
+encapsular qualquer algoritmo ou chamada de função mais complicados
+num comando simples.
+
+As fórmulas usadas têm acesso a todos os dados associados às \foreignlanguage{english}{\textit{Features}},
+pelos usuários finais. Esses dados são usados no modelo adotado e
+podem gerar múltiplos resultados de avaliação. Na Listagem \ref{lis:Defini=0000E7=0000E3o-da-logica},
+o comando \textit{weightedSum(data.':EnvironmentalIndicator')} calcula
+a média ponderada de todos os indicadores ambientais fornecidos pelo
+usuário final. Esse comando foi criado para simplificar o trabalho
+dos especialistas. Biblioteca de comandos, como essa, podem ser adicionadas
+ao framework ou criados a pedido dos especialistas. 
+
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o da l�gica de avalia��o.},label={lis:Defini=0000E7=0000E3o-da-logica}]
 report {     
  environment = weightedSum(data.':EnvironmentalIndicator')
  economic = weightedSum(data.':EconomicIndicator')
  social = weightedSum(data.':SocialIndicator')
  sustainability = (environment + social + economic)/3
+ ...
 }
 \end{lstlisting}
 \inputencoding{utf8}
-O comando \foreignlanguage{english}{\textit{report}} também define
-as \foreignlanguage{english}{\textit{widgets}} que conformam a parte
-visual do \foreignlanguage{english}{\textit{report}}, o qual pode
-usar as variáveis de resultado da logica de avaliação como entrada
-das \foreignlanguage{english}{\textit{widgets}} para melhorar a representação
-e facilitar a compreensão dos resultados. No código seguinte apresenta-se
-um exemplo de uso desta funcionalidade no sistema SustenAgro, no qual
-são definidos comandos que geram as interfaces gráficas, como \textit{sustainabilityMatrix}
-que usa as variáveis geradas anteriormente como argumentos.\inputencoding{latin9}
-\begin{lstlisting}[caption={Defini��o dos controles visuais do report}]
+Os resultados do processo de avaliação podem ser apresentados por
+meio de várias \foreignlanguage{english}{\textit{widgets}} que facilitam
+a representação e compreensão dos resultados da avaliação. Na listagem
+\ref{lis:Defini=0000E7=0000E3o-das-widgets} o comando \textit{sustainabilityMatrix
+x: sustainability, y: efficiency} apresenta os valores das variáveis
+\textit{sustainability} e \textit{efficiency} num gráfico de matriz
+de sustentabilidade (Figura \ref{fig:Matriz-de-sustentabilidade-widget}).
+Para executar esse comando, o DSL Interpreter simplesmente coloca
+a widget \textit{suatainabilityMatrix} na UI e passa os valores das
+variáveis, como atributos. A widget vai ser responsável por criar
+o gráfico. Essas widgets gráficas podem ser criadas como Web Components
+ padrão (HTML 5) ou componentes do framework Grails (Seção \ref{sec:Web-components}
+). O framework vem com um conjunto de widgets predefinidos, mas novas
+podem ser adicionadas. 
+
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o dos componentes visuais do relat�rio. },label={lis:Defini=0000E7=0000E3o-das-widgets}]
 report {
- evaluationObjectInfo()
+ ...
  sustainabilityMatrix x: sustainability, y: efficiency
  text 'en': 'Microregion map', 'pt': 'Mapa da microregi�o'
  map data.'Microregion'
 }
 \end{lstlisting}
-\inputencoding{utf8} Por meio dessas configurações da DSL definiu-se as interfaces gráficas
-de usuário do sistema para suportar o processo de avaliação, gerando
-a representação visual dos Evaluation Objects, das Features, da logica
-da avaliação e da interface gráfica do report.
+\inputencoding{utf8} Por meio dos comandos da DSL, é possível definir o comportamento
+e as características gerais dos SAD. 
 
-Esta DSL permitirá que a interface gráfica seja definida em uma linguagem
-de alto nível. Ela está baseada nas duas ontologias base e permite
-definir e administrar os seguintes elementos conceituais:
-\begin{itemize}
-\item Indicadores
-\item Componentes dos indicadores
-\item Limiares
-\item Métodos
-\item Avaliações
-\item Índices
-\end{itemize}
-Os elementos que compõem a DSL tem controles gráficos predefinidos
-e será possível parametrizar as características destes controles gráficos
-visuais. Por exemplo para as propriedades de tipo numérico contínuo
-tem uma \foreignlanguage{english}{\textit{widget}} que representa
-os valores reais que posem ser atribuídos em aquela propriedade, dita
-\foreignlanguage{english}{\textit{widget}} pode ser mudada a outra
-de acordo com as preferencias dos usuários. No caso das mudanças no
-design são feitas através da edição do CSS3.
+Os elementos gráficos (widgets), seja os que representam as Features
+ou os usados nos relatórios, são implementados como \foreignlanguage{english}{Web
+Components} HTML 5 ou Grails. Isso dá muita flexibilidade ao framework
+Decisioner. A qualquer tempo é possível se acrescentar novas widgets,
+para novos tipos de dados (Features) ou gráficos de relatórios. 
+\selectlanguage{english}%
 
-\section{TripleStore}
+\section{DSL Editor}
 
-O sistema SustenAgro será baseado nas tecnologias da web semântica,
-entre as tecnologias existentes encontra-se a Triplestore que é um
-banco de dados para o armazenamento e recuperação de triplas \citet{rusher2003triple}.
-Para o presente projeto foi selecionada a Triplestore Parliament \footnote{http://parliament.semwebcentral.org/}
-porque fornece as características: suporte nativo a SPARQL\nomenclature{SPARQL}{SPARQL Protocol and RDF Query Language}
-e SPARQL/Update e implementa o SPARQL Protocol Endpoint. Esse último,
-padroniza o armazenamento e recuperação da informação; e a compatibilidade
-com os sistemas web por meio do Endpoint.
+\selectlanguage{brazil}%
+Para suportar a edição da Decisioner DSL, foi implementado um editor
+textual web que permite aos especialistas editar e rodar o código
+da DSL. Ele é composto por um editor de código para a DSL, um \foreignlanguage{english}{button
+restore} para carregar novamente a última versão válida da DSL e um
+\foreignlanguage{english}{button save} para salvar e carregar a DSL
+no DSL Interpreter. 
 
-\section{Sistemas de apóio à decisão}
+O Editor de código foi baseado no \foreignlanguage{english}{Ace Editor}\footnote{\url{ttps://ace.c9.io/}},
+que fornece \foreignlanguage{english}{Syntax highlighting} para varias
+linguagens de programação, entre elas Groovy, e como a DSL foi baseada
+em Groovy, foi configurada para reconhecer dita sintaxe, também foi
+ativado o suporte de \foreignlanguage{english}{code completion} para
+fornecer uma experiência de uso amigável. A principal vantagem é a
+funcionalidade de salvar a ontologia e reconfigurar o SAD imediatamente,
+permitindo uma experiência em tempo real de redefinição do SAD, se
+o usuário errar, ele vai poder restaurar as configurações por \foreignlanguage{english}{default}.
 
-Os sistemas de apóio à decisão (SAD) ajudam no entendimento de processos
-complexos, auxiliam na comparação dos fenômenos envolvidos e suportam
-a análise e escolha de alternativas no processo de decisão \citep{heinzle2010semantica}.
+A Figura \ref{fig:Editor-DSL} mostra o editor em ação.
 
-A equipe de TI do SustenAgro determinou que o tipo de sistema mais
-conveniente para o desenvolvimento seria um Sistema de Apóio à Decisão
-(SAD). Com a finalidade de definir a arquitetura e a interface gráfica
-desse sistema realizaram-se duas perguntas de pesquisa que orientaram
-esse projeto:
-\begin{itemize}
-\item Como integrar o conhecimento dos especialistas em um sistema de apoio
-na tomada de decisões permitindo a continua mudança do modelo do domínio?
-\item Como gerar interfaces gráficas a partir de definições simples do domínio
-do conhecimento?
-\end{itemize}
-Tendo em conta os requisitos do software, como o suporte a contínua
-mudança do modelo de dados e a geração dinâmica de interfaces, se
-propõe a arquitetura a seguir.
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\columnwidth]{figures/SustenAgro-dsl-editor-2}
+\par\end{centering}
+\caption{Editor DSL\label{fig:Editor-DSL}}
+\end{figure}
+
+\selectlanguage{english}%
+
+\section{Web components\label{sec:Web-components}}
+
+Web Component\foreignlanguage{brazil}{s}\footnote{\selectlanguage{brazil}%
+\url{https://www.webcomponents.org/introduction}\selectlanguage{brazil}%
+}\foreignlanguage{brazil}{ é um conjunto de APIs padrão para definir
+novas tags }HTML\foreignlanguage{brazil}{ personalizadas, reutilizáveis
+e encapsuladas para o uso em páginas ou aplicações web. O framework
+Grails também disponibiliza o uso de layout templates para implementar
+partes reusáveis de uma view (página HTML). Com essas duas tecnologias,
+é possível a criação de componentes (ou widgets) reusáveis da UI. }
+
+\selectlanguage{brazil}%
+Para suportar a geração de diferentes tipos de SADs, foi necessário
+disponibilizar vários tipos de widgets que permitissem visualizar
+e editar diferentes tipos de dados. Para relacionar os \foreignlanguage{english}{web
+components} com o conhecimento dos especialistas, modelou-se, na ontologia
+Decisioner, os \foreignlanguage{english}{data-types} que permitem
+relacionar os tipos de dados com widgets específicas (capazes de edita-los),
+usadas nas \foreignlanguage{english}{web UIs} dos SADs gerados. Os
+dados das Features dos SADs podem ser de vários tipos e, para cada
+tipo, existe uma widget apropriada para visualiza-o. Por exemplo,
+para representar uma propriedade de tipo numérico discreto é possível
+usar uma widget visual tipo \foreignlanguage{english}{spinner}.
+
+Nos relatórios, os especialistas devem contar com widgets para apresentar
+seus resultados em vários formatos, como tabelas, mapas, matriz de
+sustentabilidade, etc. Essas widgets podem ser específicas para um
+tipo de SAD em particular. Por isso, além do framework contar com
+uma biblioteca de widgets prontas, deve ser possível adicionar novas
+widgets facilmente. Ao usar padrões, como para Web Components, o framework
+permite a fácil inclusão de widgets novas. Não se espera que os especialistas
+de domínio criem essas widgets, mas sim que seja fácil para eles consegui-las
+de desenvolvedores independentes (que só precisam conhecer o padrão
+para Web Components e os requisitos da widget). 
+
+O framework Decisioner tem uma biblioteca de \foreignlanguage{english}{web
+components} (widget) construída usando o\foreignlanguage{english}{
+web framework Bootstrap }\footnote{\url{http://getbootstrap.com/}},
+que conta com diversos componentes básicos para a geração das Web
+UI. A maioria deles foi definida usando as \foreignlanguage{english}{layout
+templates} do framework \foreignlanguage{english}{Grails}, por ser
+mais fácil de programar. Atualmente, apenas dois componentes usam
+Web Components.
+\selectlanguage{english}%
+
+\section{Web UI}
+
+\selectlanguage{brazil}%
+A \foreignlanguage{english}{Web UI} é uma interface web de usuário
+responsável por toda a interação com o usuário final. Ela permite
+apresentar e editar as informações do SAD, gerar as análises e visualizar
+os resultados na web ou em relatórios impressos. O mais importante
+é que ela é gerada automaticamente pelo DSL Interpreter, usando a
+DSL e ontologias particulares a cada SAD. 
+
+Parte da Web UI é igual para todos os SADs, como formulários de login.
+O resto dela é gerado com a ajuda dos \foreignlanguage{english}{Web
+Components.} Eles são relacionadas aos tipos de dados existentes no
+sistema, por meio da ontologia Decisioner. Por exemplo, dados podem
+ser dos tipos numérico contínuo, numérico discreto, percentagem, booleano,
+categóricos ou alfanumérico. Dada essa diversidade, os tipos de dados
+foram modelados em ontologias com a finalidade de permitir a adaptação
+automática (ou semiautomática) da interface às mudanças dos conceitos
+do domínio.
+
+Mudanças no layout geral podem ser feitas também através da edição
+das \foreignlanguage{english}{Cascading Style Sheets (CSS \nomenclature{CSS}{Cascading Style Sheets})}
+do Decisioner. É esperado que, quando da instalação do sistema, técnicos
+de informática façam uma customização do sistema para adequá-lo aos
+padrões de apresentação da instituição. Eles também devem incluir
+qualquer Web Component (widget) necessário mas não disponível por
+default no Decisioner. 
+
+A figura \ref{fig:Web-UI} apresenta uma Web UI que foi gerada automaticamente,
+a partir da ontologia e das definições na DSL do SAD SUstenAgro. Nela
+são apresentados vários tipos de \foreignlanguage{english}{Web Components}
+que demostram o suporte a diferentes tipos de dados.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\columnwidth]{figures/SustenAgro-tool}
+\par\end{centering}
+\caption{\foreignlanguage{english}{Web UI \foreignlanguage{brazil}{com} web components\label{fig:Web-UI}}}
+\end{figure}
+
+\selectlanguage{english}%
+
+\section{DSL Interpreter}
+
+\selectlanguage{brazil}%
+O DSL Interpreter é o principal modulo do framework Decisioner. A
+sua principal funcionalidade é a interpretação das \foreignlanguage{english}{DSLs}.
+Ele executa cada uma das instruções da DSL, vinculando dados e informação,
+das ontologias ou fornecidos pelos usuários finais, aos \foreignlanguage{english}{web
+components} com a finalidade de gerar as Web \foreignlanguage{english}{UIs}.
+
+Para interagir com os dados da ontologia e apresenta-los na linguagem
+dos especialistas, foi necessário criar, no DSL Interpreter, uma camada
+de consulta de dados na \foreignlanguage{english}{triplestore} para
+simplificar as consultas SPARQL (Figura \ref{fig:Arquitetura-do-Decisioner-Core}).
+Esta camada, Sparql Simplifier, foi desenvolvida como uma solução
+eficiente para a recuperação de informações semânticas de um domínio
+de conhecimento usando um formato simplificado. 
+
+O componente \foreignlanguage{english}{DSL Interpreter} processa
+as instruções dos especialistas na linguagem Decisioner DSL. Foram
+utilizadas técnicas padrões para a criação de DSLs usando a linguagem
+\foreignlanguage{english}{Groovy\citep{dearle2015groovy},} o que
+facilitou a definição das \foreignlanguage{english}{DSLs}.
+
+Finalmente, o DSL \foreignlanguage{english}{Interpreter} usa o \foreignlanguage{english}{UI
+Renderer} para renderizar dinamicamente as Web \foreignlanguage{english}{UIs}
+usando os Web \foreignlanguage{english}{Components.} Esse processo
+é repetido toda vez que usuários solicitam uma \foreignlanguage{english}{View}
+de um SAD. A figura \ref{fig:Arquitetura-do-Decisioner-Core} apresenta
+o DSL Interpreter e os outros módulos com os quais ele se conecta.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.6\columnwidth]{\string"figures/Decisioner Core Architecture\string".eps}
+\par\end{centering}
+\caption{Arquitetura do DSL Interpreter.\label{fig:Arquitetura-do-Decisioner-Core}}
+\end{figure}
+
+A figura \ref{fig:Arquitetura-do-Decisioner-Core} também representa
+a parte computacional do método proposto nesta pesquisa para definir
+SADs. O método consiste em representar o conhecimento dos especialistas
+em ontologias da web semântica e complementar com uma DSL que descreve
+os conceitos de \foreignlanguage{english}{evaluation object} com \foreignlanguage{english}{features},
+método de avaliação e relatório de resultados, permitindo desta maneira
+definir o SAD por parte dos especialistas.
 
 \section{Considerações finais}
 
-Não foram encontrados trabalhos na área de geração automática de interfaces
-para SADs. Nem mesmo em áreas específicas de aplicação. Também foi
-encontrado pouco material sobre ontologias para descrição de interfaces
-gráficas. 
+Neste capítulo foram apresentados os principais componentes do Framework
+Decisioner, existem características dele como o gerenciamento de usuários
+e segurança que foram desenvolvidos, mas não se especificaram porque
+não contribuíram de maneria relevante ao desenvolvimento da pesquisa.
 
-Este capítulo apresentou os conceitos principais de SADs, incluindo
-a definição geral e a arquitetura de software. Ele também apontou
-para a necessidade da geração automática (ou semi\nobreakdash-automática)
-de interfaces gráficas de usuários SADs. Uma abordagem para conseguir
-a geração automática (ou semi\nobreakdash-automática) de GUIs consiste
-na integração com DSLs, onde sejam definidas as características gerais
-do sistema e integrado com os conceitos do domínio de conhecimento
-a través das ontologias usadas nesses sistemas.
+O desenvolvimento do Framework Decisioner foi realizado simultaneamente
+com o SAD SustenAgro, devido a que era necessário uma instancia para
+validar se as funcionalidades foram implementadas corretamente. O
+processo teve dificuldades para separar os dois desenvolvimentos pois
+tinha componentes em comum, que a partir de um processo iterativo,
+foram organizando-se e permitindo separar os dois sistemas.
 
-Através dos conceitos definidos nelas, será possível associar tipos
-aos dados e modos de apresentação dos mesmos (por exemplo, tipos de
-gráficos de apresentação), a partir dessas descrições, \foreignlanguage{english}{widgets}
-podem ser geradas de maneira automática e assim suportar a geração
-de SADs de maneira semiautomática.
+Não foi possível instanciar outro sistema no Decisioner durante o
+desenvolvimento do mestrado, mas atualmente encontra-se em andamento
+a implementação do SAD Nano-Tec como segunda instancia do Framework
+Decisioner. O que permitirá generalizar ainda mais o framework e servir
+como um caso de uso adicional para validar as hipóteses em outros
+domínios.
+
+Esta arquitetura foi avaliada por meio da instanciação do SAD SustenAgro,
+o que permite validar se realmente funcionam cada uma das características
+aqui descritas. No capítulo seguinte será apresentado o SAD SustenAgro,
+gerado como primeiro caso de uso deste Framework, e depois será apresentado
+o processo de avaliação que formaliza a avaliação deste sistema.
+
+

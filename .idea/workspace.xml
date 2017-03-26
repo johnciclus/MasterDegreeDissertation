@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef0b901e-39f9-4b04-80bd-9ccd21e6ec91" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/Title Page.doc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dissertation.pdf" afterPath="$PROJECT_DIR$/Dissertation.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-matrix.png" afterPath="$PROJECT_DIR$/figures/SustenAgro-matrix.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Half Title Page.doc" afterPath="$PROJECT_DIR$/pages/Half Title Page.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Half Title Page.pdf" afterPath="$PROJECT_DIR$/pages/Half Title Page.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Title Page english.doc" afterPath="$PROJECT_DIR$/pages/Title Page english.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Title Page english.pdf" afterPath="$PROJECT_DIR$/pages/Title Page english.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Title Page.pdf" afterPath="$PROJECT_DIR$/pages/Title Page.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/datasheet.pdf" afterPath="$PROJECT_DIR$/pages/datasheet.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dissertation.lyx" afterPath="$PROJECT_DIR$/Dissertation.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Abstract_EN.lyx" afterPath="$PROJECT_DIR$/chapters/Abstract_EN.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Abstract_PT.lyx" afterPath="$PROJECT_DIR$/chapters/Abstract_PT.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Conclution.lyx" afterPath="$PROJECT_DIR$/chapters/Conclution.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Conclution.tex" afterPath="$PROJECT_DIR$/chapters/Conclution.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Decisioner.lyx" afterPath="$PROJECT_DIR$/chapters/Decisioner.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Decisioner.tex" afterPath="$PROJECT_DIR$/chapters/Decisioner.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Evaluation.lyx" afterPath="$PROJECT_DIR$/chapters/Evaluation.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Evaluation.tex" afterPath="$PROJECT_DIR$/chapters/Evaluation.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Forms.lyx" afterPath="$PROJECT_DIR$/chapters/Forms.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Instalation.lyx" afterPath="$PROJECT_DIR$/chapters/Instalation.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Instalation.tex" afterPath="$PROJECT_DIR$/chapters/Instalation.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Introduction.lyx" afterPath="$PROJECT_DIR$/chapters/Introduction.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Introduction.tex" afterPath="$PROJECT_DIR$/chapters/Introduction.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SAD.lyx" afterPath="$PROJECT_DIR$/chapters/SAD.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SAD.tex" afterPath="$PROJECT_DIR$/chapters/SAD.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Sustainability_assessment.lyx" afterPath="$PROJECT_DIR$/chapters/Sustainability_assessment.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Sustainability_assessment.tex" afterPath="$PROJECT_DIR$/chapters/Sustainability_assessment.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Sustainability_indicators.lyx" afterPath="$PROJECT_DIR$/chapters/Sustainability_indicators.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SustenAgro.lyx" afterPath="$PROJECT_DIR$/chapters/SustenAgro.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SustenAgro.tex" afterPath="$PROJECT_DIR$/chapters/SustenAgro.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagestyle.tex" afterPath="$PROJECT_DIR$/pagestyle.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/references/references.bib" afterPath="$PROJECT_DIR$/references/references.bib" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +74,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="27" />
-    <option name="width" value="950" />
+    <option name="width" value="920" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
@@ -62,8 +93,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -78,12 +107,26 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -191,15 +234,20 @@
       <workItem from="1489674898472" duration="204000" />
       <workItem from="1489675131821" duration="23000" />
       <workItem from="1489805054659" duration="54000" />
+      <workItem from="1490374021785" duration="871000" />
+      <workItem from="1490434699499" duration="567000" />
+      <workItem from="1490435961221" duration="4000" />
+      <workItem from="1490435997920" duration="7000" />
+      <workItem from="1490436033777" duration="37000" />
+      <workItem from="1490485610313" duration="84000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4693000" />
+    <option name="totallyTimeSpent" value="6263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="950" height="1053" extended-state="4" />
-    <editor active="false" />
+    <frame x="0" y="27" width="920" height="1053" extended-state="4" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -209,13 +257,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33582887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.342246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24105263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23804347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

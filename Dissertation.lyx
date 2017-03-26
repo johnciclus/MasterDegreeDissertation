@@ -6,18 +6,21 @@
 \origin unavailable
 \textclass abntex2
 \begin_preamble
-\input{pagestyle.tex}
+\usepackage{afterpage}
 %\usepackage{lmodern}
 
+\input{pagestyle.tex}
+
 \newcommand{\blankpage}{
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
+    \newpage
+    \thispagestyle{empty}
+    \mbox{}
+    \newpage
 }
-\setcounter{secnumdepth}{4}
+
+%\setcounter{secnumdepth}{4}
 \end_preamble
-\use_default_options true
+\use_default_options false
 \begin_modules
 customHeadersFooters
 \end_modules
@@ -34,7 +37,6 @@ Preamble
 \RequirePackage{abntex2cite}   % previne o não carregamento do abntex2cite,
 % mas não define se as citações serão do
 % tipo 'alf' ou 'num'.
-
 \renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
 \def\citep{\cite}
 \newcommand{\citeyearpar}[1]{(\citeyear{#1})}
@@ -57,7 +59,7 @@ EndPreamble
 \inputencoding utf8
 \fontencoding global
 \font_roman "default" "default"
-\font_sans "lmss" "default"
+\font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
@@ -72,7 +74,7 @@ EndPreamble
 \bibtex_command bibtex
 \index_command default
 \float_placement h
-\paperfontsize 11
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \pdf_bookmarks true
@@ -293,6 +295,9 @@ pagestyle{ruled}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -310,10 +315,24 @@ pagestyle{ruled}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename pages/datasheet.pdf
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -347,10 +366,24 @@ pagestyle{ruled}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename pages/Acknowledgements.pdf
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -367,30 +400,18 @@ filename "chapters/Abstract_PT.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_layout Resumo
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList figure
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapters/Abstract_EN.lyx"
 
 \end_inset
 
@@ -398,58 +419,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList table
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-lstlistlistingname}{Lista De C{
-\backslash
-'o}digos-Fonte}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand lstlistoflistings
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -474,6 +444,51 @@ nomname}{Lista De Abreviaturas e Siglas}
 \end_layout
 
 \begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList algorithm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
 set_width "auto"
@@ -481,6 +496,16 @@ set_width "auto"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -494,7 +519,16 @@ Acresentar ao sumario a Lista de abreviaturas (siglas) e a lista de codigos
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 

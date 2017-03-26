@@ -1,162 +1,186 @@
-Os Sistemas de Apoio à Decisão (SAD \nomenclature{SAD}{Sistemas de Apoio à Decisão})
-organizam e processam os dados e informações para gerar resultados
-de valor que auxiliem o processo de decisão em um domínio especifico,
-ditos sistemas integram conhecimento desenvolvido pelos especialistas
-do domínio que fica implícito nos dados, informações e processos,
-dito conhecimento não é familiar para os desenvolvedores de software,
-o que leva a usar diversas técnicas de levantamento de requerimentos
-que envolvem o aprendizado de tópicos do domínio dos especialistas
-por parte dos desenvolvedores, este processo exige um esforço adicional
-por parte dos desenvolvedores do sistema e traz limitações no tempo
-e custo de desenvolvimento, devido a que o conhecimento precisa ser
-explicado por parte dos especialistas do domínio aos desenvolvedores
-de software, para que eles consigam entender o conhecimento e assim
-implementar o sistema software corretamente.
+Os Sistemas de Apoio à Decisão (SAD ) organizam e processam os dados
+e informações para gerar resultados de valor que apoiem e melhorem
+a tomada de decisão em um área de conhecimento, também denominada
+como domínio especifico \citep{Turban:2004:DSS:994103}. Os SADs integram
+conhecimento desenvolvido pelos especialistas do domínio que fica
+implícito nos dados, informações e processos usados \citep{power2000web}.
+Tal conhecimento, específico de um domínio, não é familiar para desenvolvedores
+de software. Eles têm que usar técnicas diversas para o levantamento
+de requisitos para entender o domínio dos especialistas e assim implementar
+o sistema software corretamente \citep{GavrilovaAndreeva2012}. Quanto
+mais especializado for o domínio dos especialistas, mais esforço adicional
+será necessário aos desenvolvedores do sistema, o que leva a ampliação
+do tempo e custo de desenvolvimento. 
 
-Adicionalmente, os especialistas do domínio pelo geral não tem o conhecimento
-de desenvolvimento de sistemas software para realizar dito processo
-por eles mesmos; alem disso os dois domínios, tanto dos especialistas
-do domínio como do desenvolvimento de software são tão amplos que
-precisam perfis particulares para realizar os processos corretamente,
-devido ao anterior foi identificado o problema da inexistência de
-uma representação de conhecimento para definir SADs, que tenha um
-formato computável, entendível e acessível pelos especialistas do
-domínio e desenvolvedores de software.
+Adicionalmente, os especialistas do domínio, em geral, não tem conhecimento
+suficiente em matéria de desenvolvimento de sistemas de software para
+realizar o dito processo por eles mesmos. Além disso, os dois domínios,
+tanto dos especialistas de domínio como dos desenvolvedores de software,
+são tão amplos que precisam de perfis particulares para realizar os
+processos corretamente \citep{roussey2010ontologies}. Dentro deste
+contexto, foi identificado o problema da inexistência de um meio de
+representação de conhecimento para definir SADs, que tenha um formato
+computável, entendível e acessível pelos especialistas do domínio.
 
-Como exemplo do anterior problema, podermos expor o caso dos especialistas
+Como exemplo do problema anterior, podemos expor o caso dos especialistas
 em sustentabilidade da Embrapa Meio Ambiente, que desenvolveram o
-projeto SustenAgro (capitulo \ref{chap:Sustainability_Assessment}),
-onde foi desenvolvido um método de avaliação de sustentabilidade no
-sistema produtivo de cana-de-açúcar, os especialistas precisavam implementar
-um SAD para disponibilizar o uso do método à comunidade interessada
-em realizar avaliações de sustentabilidade em cana-de-açúcar, , no
-caso deles foi identificado que tinham o conhecimento do domínio avaliação
-de sustentabilidade da cana-de-açúcar, mas não tinham o método e ferramenta
-software para definir dito conhecimento de maneira computável em um
-SAD, pelo que dito problema e caso de uso foram abordados na presente
-pesquisa como projeto piloto.
+projeto SustenAgro (capítulo \ref{chap:Sustainability_Assessment}).
+Nesse projeto, foi desenvolvido um método de avaliação de sustentabilidade
+no sistema produtivo da cana-de-açúcar do centro-sul do Brasil \citep{oliveira:2013}.
+Tais especialistas precisavam implementar um SAD para disponibilizar
+o método SustenAgro à comunidade interessada em realizar avaliações
+de sustentabilidade em cana-de-açúcar. Nesse caso, foi identificado
+que eles possuíam o conhecimento do domínio de avaliação de sustentabilidade
+da cana-de-açúcar, mas não tinham um meio para definir esse conhecimento
+de maneira computável em um SAD.
 
 \section{Motivação}
 
 A pesquisa em representação e organização de conhecimento tem alto
-impacto devido a fornece métodos e ferramentas para gerenciar o conhecimento
-em diversos domínios, especificamente no desenvolvimentos dos SADs,
-pode fornecer meios de integração de conhecimento que aumentam as
-funcionalidades e a eficiência desses sistemas em comparação com os
-métodos tradicionais de desenvolvimento.
+impacto devido ao fato de fornecer métodos e ferramentas para entender
+e gerenciar o conhecimento em diversos domínios \citep{Tudhope2006}.
+Especificamente nos SADs, ela pode fornecer meios de integração de
+conhecimento que aumentam as funcionalidades e a eficiência desses
+sistemas, inclusive trazendo vantagens no processo de desenvolvimento
+dos SAD \citep{Saxena}.
 
-Sobre o caso especifico do projeto SustenAgro, existem varias motivações
-para desenvolver novos meios de definição de SAD, entre eles está
-principalmente o fornecimento de um método e ferramenta para que os
-especialistas do domínio definiam o conhecimento nos SADs, permitindo
-a participação deles como descritores de conhecimento especifico,
-também temos que a avaliação da sustentabilidade da cultura de cana-de-açúcar
-está em continua mudança \citep{oliveira:2013}, pelo que existe a
-necessidade de fornecer meios computáveis de representação desse conhecimento
-que adaptem-se às mudanças do domínio e que facilite a comunicação
-entre os especialistas do domínio e os desenvolvedores de software.
+A análise do projeto SustenAgro permitiu identificar as seguintes
+motivações relacionadas com a integração de conhecimento dos especialistas
+de domínio:
 
-Além disso, permitira definir SADs com menos intervenção por parte
-dos não especialistas do domínio, fazendo que a definição do conhecimento
-fique em termos dos especialistas e gerenciadas por eles mesmos, fornecendo
-a possibilidade de que descrevam características particulares que
-requerem profundo conhecimento do domínio, finalmente fornecera aos
-desenvolvedores tempo adicional para dedicar-se aos assuntos próprios
-da computação, e assim agilizar o processo de desenvolvimento de SADs.
+A primeira delas é a necessidade de um método e ferramenta para que
+os especialistas do domínio definam o conhecimento nos SADs, principalmente
+as características particulares que requerem profundo conhecimento.
+Isso permite a participação deles como descritores de conhecimento
+especifico fornecendo, aos desenvolvedores de software, tempo adicional
+para dedicar-se aos assuntos próprios da computação e assim agilizar
+o processo de desenvolvimento de SADs. Essa abordagem facilita a definição
+de SADs com menos intervenção por parte dos não especialistas do domínio,
+fazendo que a definição do conhecimento fique em termos conhecidos
+pelos especialistas e seja gerenciada por eles mesmos. 
 
-Na representação de conhecimento existem vários tipos de sistemas
-de organização de conhecimento (\nomenclature{KOS}{Knowledge Organization System}
-pelas siglas em inglês), um dos sistemas mais completos são as ontologias
-que permitem definir, classificar, relacionar e inferir conhecimento,
-e como deseja-se um meio que suporte vários aspectos do conhecimento,
-se definiu usar este tipo de \foreignlanguage{english}{KOS} no processo
-de modelagem, fornecendo um caso real de aprendizagem e implementação
-de ontologias.
+A segunda refere-se a fornecer meios computáveis de representação
+desse conhecimento, que facilitem a comunicação entre os especialistas
+do domínio e os desenvolvedores de software e que adaptem-se às mudanças
+do domínio. Domínios de conhecimento estão em continua mudança, como
+é o caso do domínio avaliação da sustentabilidade da cultura de cana-de-açúcar\citep{oliveira:2013}. 
 
-A Embrapa Meio Ambiente também tem outros SAD que podem ser avaliados
-e modelados com a finalidade de desenvolver um método e ferramenta
-geral de definição de SADs.
+A terceira é o impacto que gera o correto uso dos SAD\citep{Lee2008349}.
+O desenvolvimento do SAD SustenAgro, em cooperação com a Embrapa Meio
+Ambiente, poderia gerar impacto positivo na produção agrícola, já
+que ele fornece a funcionalidade de avaliar a sustentabilidade na
+cana-de-açúcar. Este SAD em particular é uma contribuição inédita
+que também permite a aplicação em outros sistemas agrícolas, o que
+poderia suportar melhoras e correções na produção de alimentos e produtos
+neste setor\citep{Matthews2008149}.
+
+Para definir um meio computável de representação de conhecimento,
+foram analisados vários tipos de sistemas de organização de conhecimento
+ou \foreignlanguage{english}{Knowledge Organization System} (\foreignlanguage{english}{KOS}\nomenclature{KOS}{Knowledge Organization System}).
+Um dos \foreignlanguage{english}{KOS} mais completos são as ontologias
+porque permitem definir, classificar, relacionar e inferir conhecimento.
+Por este motivo as ontologias foram selecionadas para representar
+a modelagem do domínio dos especialistas.
+
+Numa parceria com a Embrapa Meio Ambiente, foi desenvolvida uma ontologia
+de avaliação da sustentabilidade em cana-de-açúcar junto com os especialistas
+desta instituição. Nas áreas de biologia e agricultura as ontologias
+são comuns, desta forma eles não tiveram dificuldade com o conceito.
+Eles usaram uma \foreignlanguage{english}{Domain Specific Language}
+(DSL\nomenclature{DSL}{Domain Specific Language}) que permite formatar
+as perguntas aos usuários finais, definir o método de avaliação e
+gerar o relatório de cada análise. Os especialistas apreciaram muito
+a utilização de uma ontologia em um SAD, foi a primeira vez que fizeram
+isso, e particularmente, o fato de que as mudanças na ontologia, façam
+mudanças imediatamente nos componentes do SAD.
+
+Além das motivações vinculadas com o domínio dos especialistas em
+sustentabilidade existe a motivação de desenvolver novas tecnologias.
+Uma contribuição tecnologia neste sentido na pesquisa foi o Framework
+Decisioner composto por ontologias e \foreignlanguage{english}{DSLs},
+cujo proposito é facilitar a implementação de SADs, sendo este framework
+instanciado para produzir o SAD SustenAgro.
 
 \section{Objetivo}
 
-Desenvolver um método e ferramenta web baseados em ontologias que
-permita representar o conhecimento dos especialistas do domínio para
-suportar definição de SADs, e provar o funcionamento por meio da definição
-do SAD SustenAgro, que tem como finalidade suportar a avaliação da
-sustentabilidade nos sistemas produtivos de cana-de-açúcar no centro-sul
-do Brasil 
-
-Para atingir o objetivo proposto, foi necessário atingir os seguintes
-objetivos específicos: 
+Desenvolver um método e ferramenta web, baseados em ontologias, que
+permitam representar o conhecimento de especialistas do domínio para
+suportar a definição de SADs. 
 
 \subsection*{Objetivos específicos}
+
+Para alcançar o objetivo proposto, foi necessário cumprir os seguintes
+objetivos específicos: 
 \begin{itemize}
-\item Desenvolver um método de definição de SAD por parte dos especialistas.
-\item Definir uma arquitetura e ferramenta para definir SADs baseados em
-conhecimento de domínios específicos.
 \item Desenvolver uma ontologia sobre avaliação da sustentabilidade nos
-sistemas produtivos de cana-de-açúcar do centro sul do Brasil, como
-base conceitual e tecnológica do sistema SustenAgro.
-\item Desenvolver uma ontologia sobre controles visuais para suportar a
-geração da interface gráfica do SAD SustenAgro.
-\item Desenvolver uma DSL que gerencie as ontologias e que flexibilize a
-definição da interface de usuário por parte dos administradores do
-sistema.
-\item Demonstrar que o método e ferramenta de definição de SADs por parte
-dos especialistas, permite a geração de sistemas funcionais.
+sistemas produtivos de cana-de-açúcar do centro-sul do Brasil.
+\item Desenvolver uma DSL que permita a definição da interface de usuário,
+das formulas do modelo, usado pelos especialistas, e do formato do
+relatório final de cada análise.
+\item Definir a arquitetura e o código da ferramenta Decisioner para gerar
+SADs baseados em conhecimento de domínios específicos. Os SADs gerados
+usam uma ontologia, desenvolvida por especialistas do domínio e uma
+DSL, para gerar as interfaces e funcionalidades do sistema.
+\item Demonstrar que o método e ferramenta Decisioner permitem a criação
+de SADs funcionais que podem ser modificados por especialistas de
+domínio. Esses especialistas devem definir a ontologia e modificar
+o comportamento do sistema com pouca ou nenhuma intervenção de desenvolvedores.
 \end{itemize}
 
 \section{Resultados Principais}
 
-Os principais resultados desta pesquisa e projeto de mestrado são:
+As principais contribuições da pesquisa foram:
 \begin{itemize}
-\item Método e ferramenta para definir SADs por parte dos especialistas
-do domínio.
-\item Ontologia sobre avaliação de sustentabilidade em cana-de-açúcar, representando
-os principais conceitos desse domínio: indicadores, os índices e o
-método de avaliação; permitindo assim suportar o desenvolvimento das
-outras tecnologias do presente projeto.
-\item Ontologia sobre interfaces gráficas que permite representar os tipos
-de dados e \foreignlanguage{english}{widgets} necessários para a geração
-dos Sistemas de Apoio na Decisão.
-\item DSL: linguagem de domínio especifico que permite gerenciar ontologias
-para definir sistemas de apoio à decisão.
-\item Protótipo do Decisioner: Sistema gerador de SADs, que suporta a integração
-de ontologias e DSL em ambientes web.
-\item SustenAgro: Sistema de Apoio a Decisão para avaliar a sustentabilidade
-em cana-de-açúcar, implementado o método SustenAgro e tecnologias
-da web semântica.
+\item Ontologia SustenAgro sobre avaliação de sustentabilidade em cana-de-açúcar,
+representando os principais conceitos desse domínio: indicadores,
+índices e métodos de avaliação. Ela foi desenvolvida em parceria com
+os especialistas de domínio de sustentabilidade da Embrapa.
+\item Ontologia sobre controles visuais para suportar a geração automática
+das interfaces gráficas do SAD SustenAgro. Ela permite associar tipos
+de dados aos \foreignlanguage{english}{web components} para a geração
+automática das interfaces aos SADs.
+\item Uma DSL baseada na linguagem \foreignlanguage{english}{Groovy} que
+permite a definição da interface de usuário, das fórmulas do modelo
+e do formato do relatório final de cada análise.
+\item Método e framework Decisioner para definir SADs por parte dos especialistas
+do domínio, desenvolvida a través do framework \foreignlanguage{english}{Grails}.
+\item O SAD SustenAgro: Sistema para avaliação da sustentabilidade em cana-de-açúcar,
+na região centro-sul do Brasil, instanciada a través do Framework
+Decisioner.
 \item Artigo ``\foreignlanguage{english}{Sustainability assessment of sugarcane
-production systems: SustenAgro Method}'' submetido no periódico acadêmico
-``\foreignlanguage{english}{Energy for sustainable Development}''
-ISSN: 0973-0826 submetido na data 23 de dezembro do 2016. 
+production systems: SustenAgro Method}'' submetido no periódico da
+Elsevier``\foreignlanguage{english}{Energy for sustainable Development}''
+ISSN: 0973-0826 submissão realizada em 23 de dezembro do 2016. 
+\item Resultados positivos das avaliações do Framework Decisioner, método
+de geração de SAD e do Sistema SustenAgro.
 \end{itemize}
 
-\section{Organização}
+\section{Organização da dissertação.}
 
-Este trabalho de dissertação está estruturado da seguinte forma: 
+A presente dissertação está estruturada da seguinte forma:
 
-Capítulo 2: Apresenta o SAD SustenAgro e os trabalhos relacionados
-sobre geração de Sistemas de Apoio à Decisão e os Sistemas de Avaliação
-da Sustentabilidade para representar o estado da arte da presente
-pesquisa.
+Capítulo 2: Apresenta a definição de Sistemas de Apoio à Decisão,
+as características do SAD SustenAgro e os trabalhos relacionados sobre
+ontologias em avaliação da sustentabilidade e SADs baseados em ontologias,
+basicamente um estado da arte da presente pesquisa.
 
-Capítulo 3: Apresenta a fundamentação teórica sobre Ontologias e DSL
+Capítulo 3: Apresenta as Ontologias da web semântica e \foreignlanguage{english}{DSLs},
 com a finalidade de descrever as principais tecnologias e a teoria
-necessária para desenvolver o presente trabalho.
+necessária para desenvolver a presente pesquisa.
 
-Capítulo 4: Apresenta o protótipo do sistema Decisioner que permite
-suportar a geração de Sistemas de Apoio à Decisão. 
+Capítulo 4: Apresenta o protótipo do Framework Decisioner que suporta
+a geração de Sistemas de Apoio à Decisão. 
 
 Capítulo 5: Apresenta o SAD SustenAgro, desenvolvido na presente pesquisa
-e que se serviu como primeiro caso de uso do sistema Decisioner, para
-definir a arquitetura dele e demostra a funcionalidade do sistema
-desenvolvido.
+como caso de uso do Framework Decisioner, permitindo desenvolver a
+arquitetura e demostrar a funcionalidade do Framework desenvolvido.
 
-Capítulo 6: Apresenta a avaliação realizada pelos especialistas.
+Capítulo 6: Apresenta a avaliação realizada pelos especialistas em
+cada um dos sistemas software desenvolvidos e no método de geração
+de SAD.
 
-Capítulo 7: Apresenta as conclusões do presente trabalho, uma discussão
-e possíveis trabalhos futuros.
+Capítulo 7: Apresenta as conclusões do presente trabalho, dificuldades,
+trabalhos futuros e uma discussão sobre a pesquisa em geral.
 
-Finalmente são apresentados os anexos que descrevem conceitos específicos
-do trabalho.
+Finalmente são apresentados os anexos que descrevem conceitos de terceiros
+usados no trabalho e informações técnicas dos sistemas desenvolvidos.

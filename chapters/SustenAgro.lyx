@@ -30,7 +30,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing onehalf
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -3679,6 +3679,12 @@ hasName
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -3738,6 +3744,27 @@ evaluationObject ':ProductionUnit', {
 \begin_layout Plain Layout
 
 }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL que define o SAD SustenAgro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -3810,6 +3837,12 @@ colocar
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -3882,6 +3915,29 @@ Industrial'
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definição de 
+\lang english
+Features
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Definir o modelamento e a forma de apresentação dos resultados
 \end_layout
@@ -3940,6 +3996,12 @@ Usuários podem pedir a geração de relatórios em pdf, uma ferramenta de conve
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -4133,18 +4195,22 @@ heField+technologicalEfficiencyInTheIndustrial)
 
 \begin_layout Plain Layout
 
-}     
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 SustenAgro DSL 
 \begin_inset CommandInset label
 LatexCommand label
-name "lis:DSL-SustenAgro"
+name "alg:SustenAgro-DSL"
 
 \end_inset
 
@@ -4153,6 +4219,10 @@ name "lis:DSL-SustenAgro"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 

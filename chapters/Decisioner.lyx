@@ -715,7 +715,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/DSS ontology.png
+	filename ../figures/DSS ontology.png
 	scale 70
 
 \end_inset
@@ -977,7 +977,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/SustenAgro-ontology-editor.png
+	filename ../figures/SustenAgro-ontology-editor.png
 	width 100col%
 
 \end_inset
@@ -1179,6 +1179,13 @@ hasAgriculturalProductionSystem
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -1206,21 +1213,26 @@ evaluationObject ":ProductionUnit", {
 \begin_layout Plain Layout
 
 }
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Definição do Evaluation Object 
-\begin_inset CommandInset label
-LatexCommand label
-name "lis:DSL-para-definição"
-
-\end_inset
-
- 
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definição do Evaluation Object
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1406,6 +1418,12 @@ has value
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -1415,15 +1433,19 @@ status open
 feature ':EnvironmentalIndicator', 'extraFeatures': true
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Definição de Features
 \begin_inset CommandInset label
 LatexCommand label
-name "lis:Definição-de-Features"
+name "alg:Definição-de-Features"
 
 \end_inset
 
@@ -1524,10 +1546,15 @@ weightedSum(data.':EnvironmentalIndicator')
  Esse comando foi criado para simplificar o trabalho dos especialistas.
  Biblioteca de comandos, como essa, podem ser adicionadas ao framework ou
  criados a pedido dos especialistas.
- 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -1567,15 +1594,19 @@ report {
 }
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Definição da lógica de avaliação.
 \begin_inset CommandInset label
 LatexCommand label
-name "lis:Definição-da-logica"
+name "alg:Definição-da-lógica"
 
 \end_inset
 
@@ -1679,6 +1710,12 @@ colocar Você fala de Web components em algum lugar?
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -1711,14 +1748,21 @@ report {
 \begin_layout Plain Layout
 
 }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Definição dos componentes visuais do relatório.
- 
 \begin_inset CommandInset label
 LatexCommand label
-name "lis:Definição-das-widgets"
+name "alg:Definição-dos-componentes"
 
 \end_inset
 
@@ -1730,10 +1774,18 @@ name "lis:Definição-das-widgets"
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
- Por meio dos comandos da DSL, é possível definir o comportamento e as caracterí
-sticas gerais dos SAD.
+
+\end_layout
+
+\begin_layout Standard
+Por meio dos comandos da DSL, é possível definir o comportamento e as caracterís
+ticas gerais dos SAD.
  
 \end_layout
 
@@ -1852,7 +1904,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/SustenAgro-dsl-editor-2.png
+	filename ../figures/SustenAgro-dsl-editor-2.png
 	width 100col%
 
 \end_inset
@@ -2151,7 +2203,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/Ontology-enhanced user interfaces.png
+	filename ../figures/Ontology-enhanced user interfaces.png
 	width 70col%
 
 \end_inset
@@ -2224,7 +2276,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/SustenAgro-tool.png
+	filename ../figures/SustenAgro-tool.png
 	width 100col%
 
 \end_inset
@@ -2398,7 +2450,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/Decisioner Core Architecture.png
+	filename ../figures/Decisioner Core Architecture.png
 	width 60col%
 
 \end_inset
@@ -2466,9 +2518,9 @@ Neste capítulo foram apresentados os principais componentes do Framework
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento do Framework foi realizado simultaneamente com o SAD SustenAgr
-o, devido a que era necessário uma instancia para validar se as funcionalidades
- foram implementadas corretamente.
+O desenvolvimento do Framework Decisioner foi realizado simultaneamente
+ com o SAD SustenAgro, devido a que era necessário uma instancia para validar
+ se as funcionalidades foram implementadas corretamente.
  O processo teve dificuldades para separar os dois desenvolvimentos pois
  tinha componentes em comum, que a partir de um processo iterativo, foram
  organizando-se e permitindo separar os dois sistemas.

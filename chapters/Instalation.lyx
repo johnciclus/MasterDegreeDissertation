@@ -70,7 +70,7 @@ EndPreamble
 \index_command default
 \float_placement h
 \paperfontsize 12
-\spacing onehalf
+\spacing single
 \use_hyperref false
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -211,6 +211,12 @@ OpenJDK
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -223,6 +229,23 @@ sudo apt-get update
 \begin_layout Plain Layout
 
 sudo apt-get install openjdk-8-jre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do Java
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -292,6 +315,12 @@ Web Server
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -329,6 +358,25 @@ sudo /opt/tomcat/bin/startup.sh
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do 
+\lang english
+Apache Tomcat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Configurar 
 \lang english
@@ -348,18 +396,39 @@ User
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
 
 \begin_layout Plain Layout
-
 <role rolename="manager-gui"/> 
 \end_layout
 
 \begin_layout Plain Layout
-
 <user username="admin" password="s3cr3t" roles="manager-gui"/>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuração dos Users
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -373,6 +442,12 @@ Depois disso, é registrado no final do arquivo ~/.bashrc os próximos dois
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -392,11 +467,34 @@ export CATALINA_HOME=/opt/tomcat
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exportar variáveis de entorno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Finalmente executar o comando 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -411,8 +509,25 @@ sudo /opt/tomcat/bin/startup.sh
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Iniciar o servidor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-e verificar a execução do programa na url /manager do domínio do servidor
+e verificar a execução do programa na URL /manager do domínio do servidor
 \end_layout
 
 \begin_layout Subsection*
@@ -449,6 +564,12 @@ description "Portable Document Format"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -504,6 +625,23 @@ sudo apt-get install openssl build-essential xorg libssl-dev
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do wkhtmltopdf 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Depois disto é criado um 
 \lang english
@@ -517,6 +655,12 @@ script wkhtmltopdf.sh
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -529,6 +673,23 @@ xvfb-run -a -s "-screen 0 640x480x16" wkhtmltopdf "$@"
 \begin_layout Plain Layout
 
 sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Execução do wkhtmltopdf
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -568,6 +729,12 @@ triplestore
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -611,6 +778,25 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do 
+\lang english
+Blazegraph
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -670,6 +856,12 @@ Tomcat
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -682,6 +874,23 @@ wget https://dl.dropboxusercontent.com/u/24827919/
 \begin_layout Plain Layout
 
 SustenAgro/sustenagro-1.0.war
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Execução do sustenagro
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

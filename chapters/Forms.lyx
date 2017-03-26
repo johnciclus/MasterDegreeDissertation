@@ -70,7 +70,7 @@ EndPreamble
 \index_command default
 \float_placement h
 \paperfontsize 12
-\spacing onehalf
+\spacing single
 \use_hyperref false
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -335,9 +335,18 @@ Dar click no link 'Ontology'
 Clicar em Feature, Indicador, Indicador de Sustentabilidade e Dimensão Social
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
 Cadastrar uma nova dimensão, atributo e indicador a partir da linha 1020
  no seguinte formato:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -438,14 +447,26 @@ DeforestationIndicator:
 \begin_layout Plain Layout
 
  value: YesNo
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Codigo de novo indicador
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Código de novo indicador
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -461,6 +482,15 @@ Dar click na opção “Save”
 \begin_layout Enumerate
 Acrescentar a nova dimensão na DSL, clicando na Aba DSL e no link Main adicionar
  na linha 106 o seguinte código
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Enumerate
 \begin_inset listings
 inline false
 status open
@@ -470,8 +500,12 @@ status open
 feature ':AgriculturalIndicator'
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout

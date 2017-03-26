@@ -70,7 +70,7 @@ EndPreamble
 \index_command default
 \float_placement h
 \paperfontsize 12
-\spacing onehalf
+\spacing single
 \use_hyperref false
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -127,8 +127,31 @@ EndPreamble
 
 \begin_body
 
-\begin_layout Standard
-Nos Sistemas de Apoio à Decisão (SAD
+\begin_layout Espaco Simples
+GARAVITO, J.
+ F.
+ Ontologias e DSLs na geração de sistemas de apoio à decisão, caso de estudo
+ SustenAgro.
+ Dissertação (Mestrado em Ciências – Ciências de Computação e Matemática
+ Computacional) – Instituto de Ciências Matemáticas e de Computação, Universidad
+e de São Paulo, São Carlos – SP, 2017.
+\end_layout
+
+\begin_layout Espaco Simples
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Espaco Simples
+Os Sistemas de Apoio à Decisão (SAD
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SAD"
@@ -136,9 +159,9 @@ description "Sistemas de Apoio à Decisão"
 
 \end_inset
 
-), os especialistas do domínio conhecem cada uma das particularidades e
- complexidades dos dados e modelos, das operações matemáticas que processam
- esses dados e as informações relevantes no processo de decisão.
+) integram conhecimento dos especialistas do domínio em cada um dos componentes
+ deles: nos dados e modelos, nas operações matemáticas que processam esses
+ dados e nas informações resultantes que suportam o processo de decisão.
  Nas metodologias de desenvolvimento tradicionais, este conhecimento deve-se
  interpretar e implementar pelos desenvolvedores de software, devido a que
  os especialistas não conseguem formalizar esse conhecimento em um modelo
@@ -146,14 +169,14 @@ description "Sistemas de Apoio à Decisão"
  O processo de modelagem de conhecimento é realizado pelos desenvolvedores,
  parcializando o conhecimento do domínio e dificultando o desenvolvimento
  ágil dos SADs.
- Dada está situação, identificou-se a inexistência de uma representação
- de conhecimento computável que permita definir SADs, que tenha um formato
+ Dada está situação, identificou-se que não existe uma representação de
+ conhecimento computável que permita definir SADs, que tenha um formato
  entendível e accessível pelos especialista do domínio e pelas computadoras.
  A partir desse problema, foram testadas soluciones, e encontrou-se que
- as ontologias baseadas na web semântica permitem representar conhecimento
- complexo e fornecem um formato entendível pelos humanos e maquinas, basando-se
- nisso foi proposto o método Decisioner que permite aos especialistas representa
-r o conhecimento deles por meio de ontologias e 
+ as ontologias baseadas na web semântica representam conhecimento complexo
+ e fornecem um formato entendível pelos humanos e maquinas.
+ O método Decisioner que permite aos especialistas representar o conhecimento
+ deles por meio de ontologias e 
 \lang english
 Domain Specific Language
 \lang brazilian
@@ -172,23 +195,36 @@ Framework
 \lang brazilian
  Decisioner, implementar este método, fornecendo interfaces web de edição
  da ontologia e da DSL para definir e gerar os SADs em entornos web.
- Para validar o método, o Framework Decisioner foi instanciado com uma ontologia
- de avaliação da Sustentabilidade em cana-de-açúcar no centro-sul do Brasil
- e com uma descrição dos componentes do SAD na DSL, definindo e gerando
- de esta maneira o SAD SustenAgro.
+ Para validar dito método, o Framework Decisioner foi instanciado com uma
+ ontologia de avaliação da sustentabilidade em cana-de-açúcar no centro-sul
+ do Brasil e com uma descrição na DSL dos componentes do SAD, permitiu a
+ geração o SAD SustenAgro.
  Finalmente foram realizadas avaliações no Framework Decisioner e no SAD
  SustenAgro para validar o correto funcionamento deles.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Espaco Simples
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Espaco Simples
 
 \series bold
 Palavras Chave:
 \series default
  
 \emph on
-Framework Decisioner, SAD, SustenAgro, ontologias, web semântica, DSL, conhecime
-nto computável.
+Ontologias, Linguagem de Domínio Específico, Web Semântica, Representação
+ de Conhecimento, Framework Decisioner, Sistema de apoio à decisão, SustenAgro
 \end_layout
 
 \end_body

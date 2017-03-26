@@ -1,0 +1,191 @@
+%% LyX 2.2.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,a4paper,english,brazil]{abntex2}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[intoc]{nomencl}
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\special{papersize=\the\paperwidth,\the\paperheight}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\AtBeginDocument{                
+\RequirePackage{abntex2cite}
+
+\renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
+\def\citep{\cite}
+\newcommand{\citeyearpar}[1]{(\citeyear{#1})}
+\ifx\AbntCitetype\AbntCitetypeALF
+\def\citet{\citeonline} % alf
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeyear{#1}}
+\newcommand{\citealp}[1]{\citeauthoronline{#1},~\citeyear{#1}}
+\else
+\def\citet{\@ifnextchar[{\citet@with}{\citet@without}} % num
+\def\citet@with[#1]#2{\citeauthoronline{#2}~\cite[#1]{#2}}
+\def\citet@without#1{\citeauthoronline{#1}~\cite{#1}}
+\newcommand{\citealt}[1]{\citeauthoronline{#1}~\citeonline{#1}}
+\def\citealp{\citeonline}
+\fi
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{pagestyle.tex}
+%\usepackage{lmodern}
+
+%\newcommand{\blankpage}{
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%\newpage
+%}
+%\setcounter{secnumdepth}{4}
+
+\makeatother
+
+\usepackage{babel}
+\usepackage{listings}
+\addto\captionsbrazil{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}}
+\addto\captionsbrazil{\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listagens}}
+\addto\captionsenglish{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listing}}
+\addto\captionsenglish{\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listings}}
+\renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}
+\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listagens}
+
+\begin{document}
+%Configurações do estilo da pagina %==================================
+\makepagestyle{ruled} 
+\makeoddfoot{ruled}{}{}{}   
+\makeevenfoot{ruled}{}{}{}   
+\makeheadrule{ruled}{\textwidth}{\normalrulethickness}   
+\makeevenhead{ruled}{\thepage}{}{\small\itshape\leftmark}   
+\makeoddhead{ruled}{\small\itshape\rightmark}{}{\thepage} 
+\makeatletter % because of \@chapapp      
+\makepsmarks  {ruled}{  
+\nouppercaseheads 
+\createmark	{chapter} 	{both} {shownumber}{\@chapapp\ }{. \ } 
+\createmark	{section} 	{right} {shownumber}{}		  {. \ } 
+\createplainmark {toc}		{both}{\contentsname} 
+\createplainmark {bib}		{both}{\bibname}}
+\makeatother 
+\pagestyle{ruled}
+
+\includepdf{pages/\string"Half Title Page\string"}\clearpage{}
+
+\includepdf{pages/\string"Title Page\string"}\clearpage{}
+
+\includepdf{pages/\string"Title Page english\string"}\clearpage{}
+
+\includepdf{pages/datasheet}
+
+\clearpage{}
+
+\includepdf{pages/Dedicatory}
+
+\clearpage{}
+
+\includepdf{pages/Acknowledgements}\clearpage{}
+\begin{resumo}
+\input{chapters/Abstract_PT.tex}
+\end{resumo}
+\clearpage{}
+\selectlanguage{english}%
+\begin{resumo}
+\input{chapters/Abstract_EN.tex}
+\end{resumo}
+\selectlanguage{brazil}%
+\clearpage{}
+
+\listoffigures
+
+\clearpage{}
+
+\listoftables
+
+\renewcommand{\lstlistlistingname}{Lista De C{\'o}digos-Fonte}
+
+\lstlistoflistings{}
+
+\renewcommand{\nomname}{Lista De Abreviaturas e Siglas}
+
+\printnomenclature{}
+
+\clearpage{}
+
+\tableofcontents{}
+
+\clearpage{}
+
+\chapter{Introdução\label{chap:Introdu=0000E7=0000E3o}}
+
+\input{chapters/Introduction.tex}
+
+\chapter{SAD\label{chap:SAD}}
+
+\input{chapters/SAD.tex}
+
+\chapter{Web Semântica e \foreignlanguage{english}{DSLs}\label{chap:SemanticWebAndDSLs}}
+
+\input{chapters/SemanticWebAndDSLs.tex}
+
+\chapter{Framework Decisioner\label{chap:Decisioner}}
+
+\input{chapters/Decisioner.tex}
+
+\chapter{SAD SustenAgro\label{chap:SustenAgro}}
+
+\input{chapters/SustenAgro.tex}
+
+\chapter{Avaliação\label{chap:Avalia=0000E7=0000E3o}}
+
+\input{chapters/Evaluation.tex}
+
+\chapter{Conclusões\label{chap:Conclus=0000E3o}}
+
+\input{chapters/Conclution.tex}
+
+\bibliographystyle{abntex2-alf}
+\bibliography{references/references}
+
+
+\appendix
+
+\chapter{Método SustenAgro de Avaliação de Sustentabilidade}
+
+\label{chap:Sustainability_Assessment}\input{chapters/Sustainability_assessment.tex}
+
+\chapter{Indicadores de Sustentabilidade}
+
+\label{chap:SustainabilityIndicators}\input{chapters/Sustainability_indicators.tex}
+
+\chapter{Instalação}
+
+\label{chap:Instalation}\input{chapters/Instalation.tex}
+
+\chapter{Formulários de avaliação\label{chap:formularios}}
+
+\input{chapters/Forms.tex}
+
+\end{document}

@@ -77,7 +77,27 @@
 \begin_layout Standard
 A construção de sistemas que sejam capazes de fornecer suporte ao gestor
  em um processo de tomada de decisões tem sido um desafio ao longo dos anos.
- A continuação será explicado a definição e arquitetura de SAD, o SAD SustenAgro
+ 
+\end_layout
+
+\begin_layout Standard
+Principalmente pelas dificuldades relacionadas com a modelagem e entendimento
+ do conhecimento do domínio.
+ Os especialistas de domínio e os desenvolvedores, têm 
+\emph on
+\lang english
+Backgrounds
+\emph default
+\lang brazilian
+ diferentes, que fazem do processo de modelagem um processo lento e custoso,
+ dificultando o processo de desenvolvimento e testes de um SAD.
+ Por está razão  foram pesquisados modelos que facilitem o entendimento
+ entre os dois tipos de profissionais e desenvolvida uma pesquisa ao redor
+ deste tópico.
+\end_layout
+
+\begin_layout Standard
+A continuação será explicado a definição e arquitetura de SAD, o SAD SustenAgro
  e os trabalhos relacionados.
 \end_layout
 
@@ -137,22 +157,7 @@ key "Evans:2003:DDT:861502"
  domínio em um modelo, para permitir a comunicação e colaboração entre especiali
 stas de domínio e os desenvolvedores, pelo qual o modelo de conhecimento
  dos especialistas será objeto da pesquisa.
- O processo de modelagem pode ser lento e custoso, já que os dois grupos
- de profissionais têm 
-\emph on
-\lang english
-Backgrounds
-\emph default
-\lang brazilian
- diferentes, que dificultaram o processo de desenvolvimento e testes de
- um SAD.
-\end_layout
-
-\begin_layout Standard
-Os especialistas de domínio e os desenvolvedores, pelo geral são de organizações
- diferentes, o que dificulta ainda mais o processo, pelo qual foram pesquisados
- modelos que facilitem o entendimento entre os dois tipos de profissionais
- e desenvolvida uma pesquisa ao redor deste tópico.
+ 
 \end_layout
 
 \begin_layout Standard
