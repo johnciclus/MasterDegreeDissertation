@@ -127,6 +127,26 @@ EndPreamble
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+arabic{enumi}.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Formulário de avaliação SustenAgro
 \begin_inset CommandInset label
@@ -533,7 +553,7 @@ Tarefa 2
 \end_layout
 
 \begin_layout Standard
-Editar a formula de avaliação 
+Editar a fórmula de avaliação 
 \end_layout
 
 \begin_layout Enumerate
@@ -551,7 +571,7 @@ Dar click na opção “Save”
 \begin_layout Enumerate
 Visualizar os índices de uma avaliação cadastrada no sistema por meio da
  aba Report, na tela de Usuário na aba Avaliação selecionar uma Unidade
- Produtiva, selecionar uma Avaliação e um Report ligado a ela
+ Produtiva, selecionar uma Avaliação e um Report ligado a ela.
 \end_layout
 
 \begin_layout Subsection*

@@ -145,7 +145,8 @@ description "Web Application Archive"
 
 )
 \lang brazilian
-, a continuação são descritos ambos processos:
+.
+ A continuação são descritos ambos processos:
 \end_layout
 
 \begin_layout Section
@@ -173,8 +174,9 @@ Blazegraph
 \lang english
 linux
 \lang brazilian
-, atualmente o sistema foi configurado e testado em uma maquina virtual
- com Ubuntu 14.04, Java 
+.
+ Atualmente o sistema foi configurado e testado em uma máquina virtual com
+ Ubuntu 14.04, Java 
 \lang english
 OpenJDK
 \lang brazilian
@@ -194,8 +196,9 @@ triplestore
 \lang english
 Blazegraph
 \lang brazilian
- 2.1.0, a instalação destas tecnologias segue uma orientação padrão que sera
- descrita a continuação:
+ 2.1.0.
+ A instalação destas tecnologias segue uma orientação padrão que será descrita
+ a continuação:
 \end_layout
 
 \begin_layout Subsection*
@@ -207,7 +210,7 @@ Segundo a documentação de Java
 \lang english
 OpenJDK
 \lang brazilian
-, a instalação é realizada por meio do comando:
+, a instalação é realizada pelo comando:
 \end_layout
 
 \begin_layout Standard
@@ -311,7 +314,7 @@ O processo de instalação consiste em fazer download dos arquivos binários,
 \lang english
 Web Server
 \lang brazilian
-, o código é mostrado a continuação:
+, com código:
 \end_layout
 
 \begin_layout Standard
@@ -407,10 +410,12 @@ inline false
 status open
 
 \begin_layout Plain Layout
+
 <role rolename="manager-gui"/> 
 \end_layout
 
 \begin_layout Plain Layout
+
 <user username="admin" password="s3cr3t" roles="manager-gui"/>
 \end_layout
 
@@ -485,7 +490,8 @@ Exportar variáveis de entorno
 \end_layout
 
 \begin_layout Standard
-Finalmente executar o comando 
+Finalmente executar o comando, e verificar a execução do programa na URL
+ /manager do domínio do servidor
 \end_layout
 
 \begin_layout Standard
@@ -526,10 +532,6 @@ Iniciar o servidor
 
 \end_layout
 
-\begin_layout Standard
-e verificar a execução do programa na URL /manager do domínio do servidor
-\end_layout
-
 \begin_layout Subsection*
 Instalação do 
 \lang english
@@ -541,7 +543,7 @@ A tecnologia
 \lang english
 WkHtmltoPdf
 \lang brazilian
- permite converter paginas web em formato 
+ permite converter páginas web em formato 
 \lang english
 HTML
 \lang brazilian
@@ -557,10 +559,10 @@ description "Portable Document Format"
 
 \end_inset
 
-), esta ferramenta suporta a funcionalidade de gerar os reportes em formato
- PDF, a instalação consistem em fazer download dos arquivos binários e a
- configuração de um X Server Virual para suportar o renderizado, os comandos
- são mostrados a continuação:
+), suportando a funcionalidade de gerar os reportes em formato PDF.
+ A instalação consiste em fazer download dos arquivos binários e a configuração
+ de um X Server Virual para suportar o renderizado, os comandos são mostrados
+ a continuação:
 \end_layout
 
 \begin_layout Standard
@@ -651,7 +653,7 @@ script wkhtmltopdf.sh
 \lang english
 /usr/local/bin/
 \lang brazilian
- e contem o seguinte comando:
+ e contém o seguinte comando:
 \end_layout
 
 \begin_layout Standard
@@ -698,7 +700,7 @@ Execução do wkhtmltopdf
 \end_layout
 
 \begin_layout Standard
-Com o comando 
+O comando 
 \lang english
 wkhtmltopdf.sh
 \lang brazilian
@@ -857,6 +859,7 @@ Tomcat
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
