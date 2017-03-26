@@ -127,7 +127,7 @@ EndPreamble
 
 \begin_body
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 GARAVITO, J.
  F.
  Ontologias e DSLs na geração de sistemas de apoio à decisão, caso de estudo
@@ -137,7 +137,7 @@ GARAVITO, J.
 e de São Paulo, São Carlos – SP, 2017.
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 \begin_inset Phantom VPhantom
 status open
 
@@ -150,7 +150,7 @@ status open
 
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 Os Sistemas de Apoio à Decisão (SAD
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -169,13 +169,13 @@ description "Sistemas de Apoio à Decisão"
  O processo de modelagem de conhecimento é realizado pelos desenvolvedores,
  parcializando o conhecimento do domínio e dificultando o desenvolvimento
  ágil dos SADs.
- Dada está situação, identificou-se que não existe uma representação de
+ Dada esta situação, identificou-se que não existe uma representação de
  conhecimento computável que permita definir SADs, que tenha um formato
- entendível e accessível pelos especialista do domínio e pelas computadoras.
- A partir desse problema, foram testadas soluciones, e encontrou-se que
- as ontologias baseadas na web semântica representam conhecimento complexo
- e fornecem um formato entendível pelos humanos e maquinas.
- O método Decisioner que permite aos especialistas representar o conhecimento
+ entendível e accessível pelos especialista do domínio e pelos computadores.
+ A partir desse problema, foram testadas soluções, e encontrou-se que as
+ ontologias baseadas na web semântica representam conhecimento complexo
+ e fornecem um formato entendível pelos humanos e máquinas.
+ O método Decisioner permite aos especialistas representar o conhecimento
  deles por meio de ontologias e 
 \lang english
 Domain Specific Language
@@ -188,22 +188,35 @@ description "Domain Specific Language"
 
 \end_inset
 
-), para permitir a definição e geração de SADs.
- O 
+).
+ Este método foi implementado no 
 \lang english
 Framework
 \lang brazilian
- Decisioner, implementar este método, fornecendo interfaces web de edição
- da ontologia e da DSL para definir e gerar os SADs em entornos web.
- Para validar dito método, o Framework Decisioner foi instanciado com uma
- ontologia de avaliação da sustentabilidade em cana-de-açúcar no centro-sul
- do Brasil e com uma descrição na DSL dos componentes do SAD, permitiu a
- geração o SAD SustenAgro.
- Finalmente foram realizadas avaliações no Framework Decisioner e no SAD
- SustenAgro para validar o correto funcionamento deles.
+ Decisioner que fornece interfaces web de edição de ontologia e de DSL para
+ definir e gerar SADs em entornos web.
+ A validação do método foi realizada por meio da instanciação do SAD SustenAgro
+ no Framework Decisioner, através de uma ontologia de avaliação da sustentabilid
+ade em cana-de-açúcar no centro-sul do Brasil e de uma descrição na DSL,
+ que permitiram gerar o SAD SustenAgro.
+ Finalmente, foram realizadas avaliações do Framework Decisioner e do SAD
+ SustenAgro com resultados positivos.
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Conclusão geral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Phantom VPhantom
 status open
 
@@ -216,7 +229,7 @@ status open
 
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 
 \series bold
 Palavras Chave:

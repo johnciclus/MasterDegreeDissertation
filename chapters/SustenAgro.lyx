@@ -75,13 +75,13 @@
 \begin_body
 
 \begin_layout Standard
-O Framework Decisioner organiza e generencia os componentes gerais dos SADs
+O Framework Decisioner organiza e gerencia os componentes gerais dos SADs
  de avaliação
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Voce fala em SADs de avaliacao antes daqui?
+(Sim, falo no capitulo SAD) Voce fala em SADs de avaliacao antes daqui?
 \end_layout
 
 \end_inset
@@ -124,7 +124,7 @@ O SAD SustenAgro serviu de base para modelar e desenvolver os componentes
  Decisioner é usado para instanciar um SAD, as diversas versões do framework
  não serão discutidas.
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 O SAD SustenAgro permitiu modelar e desenvolver os componentes que fazem
@@ -236,7 +236,8 @@ SADs
 \end_layout
 
 \begin_layout Standard
-Um SAD implementado usando o Decisioner tem os seguintes componentes:
+A arquitetura de um SAD implementado usando o Framework Decisioner tem os
+ seguintes componentes:
 \end_layout
 
 \begin_layout Enumerate
@@ -251,11 +252,18 @@ Ontologia do domínio: ontologia que representa os conceitos do domínio.
 
 \begin_layout Enumerate
 DSL: programa descrevendo a configuração e comportamento do SAD.
- Ele especifica as features do domínio a serem usadas, as fórmulas do modelo
- e o aspecto e estrutura do relatório a ser gerado.
- No caso do SustenAgro, as features são os indicadores, as formulas calculam
- os índices de sustentabilidade e produtividade, e o relatório usa a Matriz
- e o Semáforo de Sustentabilidade.
+ Ele especifica as 
+\lang english
+features
+\lang brazilian
+ do domínio a serem usadas, as fórmulas do modelo e o aspecto e estrutura
+ do relatório a ser gerado.
+ No caso do SustenAgro, as 
+\lang english
+features
+\lang brazilian
+ são os indicadores, as formulas calculam os índices de sustentabilidade
+ e produtividade, e o relatório usa a Matriz e o Semáforo de Sustentabilidade.
 \end_layout
 
 \begin_layout Enumerate
@@ -263,15 +271,22 @@ DSL: programa descrevendo a configuração e comportamento do SAD.
 \lang english
 Web components
 \lang brazilian
-: o SustenAgro usa duas widgets específicas (além das oferecidas pelo Decisioner
-): a Matriz de Sustentabilidade e o Semáforo de Sustentabilidade.
- Ambas são implementadas como Web Components usando a biblioteca Polymer
- da Google.
+: o SustenAgro usa dois 
+\lang english
+Web Components
+\lang brazilian
+ específicos (além das oferecidas pelo Decisioner): a Matriz de Sustentabilidade
+ e o Semáforo de Sustentabilidade.
+ Ambas são implementadas usando a biblioteca Polymer da Google.
 \end_layout
 
 \begin_layout Enumerate
 Imagens e layout: Um conjunto de imagens e arquivos de layout (css) compõem
- o look-and-feel específico do SAD, incluindo seu logo.
+ o 
+\lang english
+look-and-feel
+\lang brazilian
+ específico do SAD, incluindo seu logo.
 \end_layout
 
 \begin_layout Section
@@ -342,7 +357,7 @@ Esse foi seu treinamento com o Ivo que durou uma semana? Se sim, diga que
 
 \begin_layout Standard
 Após realizada a modelagem, o especialista do domínio definiu perguntas
- de interesse, com as quais os modeladores, eu e outro colega de mestrado,
+ de interesse, com as quais os modeladores (o autor e um colega de mestrado)
  definiram consultas que o sistema deveria responder segundo os resultados
  esperados, conseguindo validar e ajustar o modelo até ter um protótipo
  confiável.
@@ -350,7 +365,7 @@ Após realizada a modelagem, o especialista do domínio definiu perguntas
 status open
 
 \begin_layout Plain Layout
-Verifique quem sao os modeladores?
+(corrigido) Verifique quem sao os modeladores?
 \end_layout
 
 \end_inset
@@ -383,7 +398,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Ontology Methodology.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -427,12 +442,12 @@ a SCRUM
 \lang brazilian
  
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "schwaber2002gile"
 
 \end_inset
 
-, que permitu integrar práticas ágeis no desenvolvimento do sistema.
+, que permitiu integrar práticas ágeis no desenvolvimento do sistema.
  Nesse contexto, o termo ágil refere-se ao desenvolvimento em tempos curtos
  e geração de protótipos facilmente adaptáveis às mudanças.
  Cada uma das etapas da metodologia foi realizada várias vezes e, por isso,
@@ -466,21 +481,22 @@ Verifique como vc está colocando esses termos.
 
 \end_inset
 
-foi teve um enfoque baseado em 
+ tiveram um enfoque baseado em 
 \lang english
-User Centered Design,
+User Centered Design
 \lang brazilian
- que permitiu integrar esses dois elementos 
+.
+ A avaliação dessas duas interfaces foi realizada integradamente 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-que 2 elementos, nao entendi.
+(corrigido) que 2 elementos, nao entendi.
 \end_layout
 
 \end_inset
 
-para avaliar se as interfaces satisfazem os requisitos identificados.
+para validar se os requisitos identificados.
  
 \end_layout
 
@@ -598,7 +614,11 @@ key "oliveira:2013"
 \end_inset
 
 .
- Deve-se destacar que a ontologia SustenAgro abrange um domínio bem específico:
+ 
+\end_layout
+
+\begin_layout Standard
+Deve-se destacar que a ontologia SustenAgro abrange um domínio bem específico:
  sustentabilidade de sistemas produtivos de cana-de-açucar na região centro-sul
  do Brasil.
  Acreditamos que essa é uma característica deste tipo de SAD.
@@ -609,7 +629,8 @@ key "oliveira:2013"
 status open
 
 \begin_layout Plain Layout
-Será que a Katia nao arranja uma Ref para essas afirmacoes?
+(Não tem artigos publicados sobre isso, só a dissertação do Bruno) Será
+ que a Katia nao arranja uma Ref para essas afirmacoes?
 \end_layout
 
 \end_inset
@@ -632,6 +653,12 @@ reference "fig:ontology-conceptual-map"
 \end_layout
 
 \begin_layout Standard
+As ontologias da web semântica permitem separar o conhecimento do domínio
+ da lógica da computação, independizando o desenvolvimento destes aspectos
+ do SAD.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -643,7 +670,7 @@ status open
 \begin_inset Graphics
 	filename ../figures/SustenAgro conceptual map.png
 	lyxscale 60
-	width 70col%
+	width 80col%
 
 \end_inset
 
@@ -675,56 +702,6 @@ name "fig:ontology-conceptual-map"
 \end_layout
 
 \begin_layout Standard
-As ontologias da web semântica satisfazem o requisito de separar o conhecimento
- do domínio da lógica da computação.
- Essa separação permite que o desenvolvimento de cada parte seja feito de
- maneira independente 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-daqui em diante nao entendi.
-\end_layout
-
-\end_inset
-
-e suportando conceitos importantes como a inferência, que são de grande
- importância no desenvolvimento de SAD.
-\end_layout
-
-\begin_layout Standard
-Uma caraterística importante da ontologia SustenAgro é a recuperação da
- informação com significado semântico, permitindo que o sistema dê respostas
- às consultas complexas de interesse para os especialistas, além da integração
- com conhecimento externo existente em formatos da web semântica, como são
- os padrões 
-\lang english
-RDF
-\lang brazilian
-, 
-\lang english
-OWL
-\lang brazilian
- e vários sistemas de representação do conhecimento como dicionários, 
-\lang english
-thesaurus
-\lang brazilian
- e redes semânticas, o que permite aumentar as possibilidades de integração
- com diversas tecnologias e fornecer novas funcionalidades
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Não entendi o paragrafo
-\end_layout
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
 Para conseguir que a ontologia SustenAgro fosse computável, foi necessário
  defini-la na linguagem 
 \lang english
@@ -751,12 +728,12 @@ http://protege.stanford.edu/
 
 \end_inset
 
- foi usado.
- O arquivo final foi exportado no formato 
+ foi usado, permitindo modelar o conhecimento e exportar ele ao formato
+ 
 \lang english
 RDF
 \lang brazilian
-, para melhor compatibilidade com sistemas 
+, para ser compatível com sistemas 
 \lang english
 triple-stores
 \lang brazilian
@@ -775,8 +752,16 @@ key "allemang2011semantic"
 \end_inset
 
 .
- Triplestores suportam a realização de consultas complexas para permitir
- a resposta a perguntas de interesse aos usuários do sistema.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Triplestores
+\lang brazilian
+ suportam a realização de consultas complexas para permitir a resposta a
+ perguntas de interesse aos usuários do sistema.
 \begin_inset Note Note
 status open
 
@@ -786,7 +771,38 @@ Voce fala que foi usado o YAML mais para frente?
 
 \end_inset
 
+ 
+\begin_inset Note Note
+status open
 
+\begin_layout Plain Layout
+(corrigido)daqui em diante nao entendi.
+\end_layout
+
+\end_inset
+
+ Esta caraterística permite a recuperação da informação com significado
+ semântico, permitindo que os sistemas deem respostas às consultas complexas
+ de interesse.
+ Também o RDF suporta a integração de conhecimento externo existente em
+ formatos da web semântica, como são vários sistemas de representação do
+ conhecimento como dicionários, 
+\lang english
+thesaurus
+\lang brazilian
+ e redes semânticas, o que permite aumentar as possibilidades de desenvolvimento
+ de novas funcionalidades
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(corrigido) Não entendi o paragrafo
+\end_layout
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -799,8 +815,7 @@ reference "fig:Modelagem-do-SAD"
 \end_inset
 
 ).
- Ela inclui a ontologia Decisioner e define seus conceitoa a partir de conceitos
- gerais da Decisioner.
+ Ela inclui a ontologia Decisioner e define conceitos gerais dos SADs.
  Isso é obrigatório, pois o código do framework Decisioner entende os conceitos
  da ontologia SustenAgro apenas porque eles também são conceitos válidos
  derivados da ontologia Decisioner.
@@ -878,8 +893,8 @@ tas de domínio e os programadores.
 \end_layout
 
 \begin_layout Standard
-Nas próximas seçõe, serão apresentadas as principais classes modeladas na
- ontologia do domínio de avaliação da sustentabilidade (SustenAgro).
+Nas próximas seções, serão apresentadas as principais classes modeladas
+ na ontologia do domínio de avaliação da sustentabilidade (SustenAgro).
 \end_layout
 
 \begin_layout Subsection*
@@ -901,7 +916,10 @@ Usinas processadoras de cana-de-açúcar
 .
  Cada processo de avaliação requer dados que identifiquem as unidades produtivas
  através de propriedades que as definam.
- Existem propriedades obrigatórias como:
+\end_layout
+
+\begin_layout Standard
+Esta classe tem propriedades obrigatórias como:
 \end_layout
 
 \begin_layout Itemize
@@ -1003,7 +1021,10 @@ Representam os locais onde são localizadas as unidades produtivas.
  produtivo de cana-de-açúcar se localizam.
  Atualmente, a ontologia tem os 7 estados pertencentes ao centro-sul do
  Brasil e as 243 microrregiões dentro desses estados.
- Esses dados foram originalmente obtidos por consulta SPARQL à DB-pedia
+ Esses dados foram originalmente obtidos por consulta SPARQL à 
+\lang english
+DB-pedia
+\lang brazilian
  e integrados à ontologia.
 \end_layout
 
@@ -1125,7 +1146,7 @@ Também permite a integração de conceitos, inclusive quando pertencem a domín
 status open
 
 \begin_layout Plain Layout
-A ontologia de UI usa indicadores?
+(Não )A ontologia de UI usa indicadores?
 \end_layout
 
 \end_inset
@@ -1181,7 +1202,16 @@ Qual a diferen'ca entre Value e has_value?
 
 \end_inset
 
-que estabelece um valor
+que vincula indivíduos da classe 
+\emph on
+\lang english
+Value
+\shape italic
+\emph default
+\lang brazilian
+ 
+\shape default
+que representa as opções de resposta dos indicadores
 \shape italic
  
 \begin_inset Note Note
@@ -1190,7 +1220,7 @@ status open
 \begin_layout Plain Layout
 
 \shape italic
-que valor???
+(corrigido)que valor???
 \end_layout
 
 \end_inset
@@ -1325,6 +1355,30 @@ key "kraines2011system"
 \end_layout
 
 \begin_layout Standard
+A continuação serão apresentados cada uma das três dimensões.
+\end_layout
+
+\begin_layout Subsubsection*
+Dimensão ambiental
+\end_layout
+
+\begin_layout Standard
+Nesta dimensão não foi possível identificar indicadores de tipo hídrico.
+ Não existe consenso entre os especialistas consultados sobre quais são
+ os aspectos mais relevantes deles para a avaliação da sustentabilidade,
+ porém, é um aspecto fundamental para trabalhar nas futuras etapas de pesquisa.
+ 
+\end_layout
+
+\begin_layout Standard
+A dimensão de indicadores ambientais, está composta dos seguintes conceitos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1332,11 +1386,10 @@ reference "fig:environment"
 
 \end_inset
 
- representa a dimensão de indicadores ambientais, de onde foram definidos
- os seguintes conceitos:
+ representa 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1362,6 +1415,11 @@ Mapa conceitual - Dimensão Ambiental.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:environment"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1404,15 +1462,41 @@ Weather Attribute
 ): indicadores que avaliam os aspectos climáticos.
 \end_layout
 
-\begin_layout Standard
-Nessa dimensão (ambiental), não foi possível identificar indicadores de
- tipo hídrico.
- Não existe consenso entre os especialistas consultados sobre quais são
- os aspectos mais relevantes deles para a avaliação da sustentabilidade,
- porém, é um aspecto fundamental para trabalhar nas futuras etapas de pesquisa.
+\begin_layout Subsubsection*
+A dimensão social
 \end_layout
 
 \begin_layout Standard
+Nesta dimensão é importante reconhecer que as unidades produtivas, sejam
+ do tipo fazendas ou usinas, têm vínculos com pessoas tanto internamente
+ como externamente.
+ Por isso, é importante refinar os indicadores para incluir a população
+ externa à unidade produtiva que é afetada pelas práticas produtivas.
+\end_layout
+
+\begin_layout Standard
+A Agência Paulista de Tecnologia dos Agronegócios (APTA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "APTA"
+description "Agência Paulista de Tecnologia dos Agronegócios"
+
+\end_inset
+
+) forneceu dados econômicos das principais usinas do estado de São Paulo,
+ que permitiram definir a dimensão econômica das unidades produtivas na
+ ontologia de domínio.
+\end_layout
+
+\begin_layout Standard
+A dimensão social está composta dos seguintes conceitos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1420,10 +1504,10 @@ reference "fig:social"
 
 \end_inset
 
- mostra a dimensão social, onde são definidos os seguintes conceitos:
+ mostra
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1446,6 +1530,11 @@ Mapa conceitual - Dimensão Social.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:social"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1486,29 +1575,19 @@ Training Attribute
 ): indicadores que avaliam os aspectos da capacitação dos trabalhadores.
 \end_layout
 
-\begin_layout Standard
-Nessa dimensão (Social), é importante reconhecer que as unidades produtivas,
- sejam do tipo fazendas ou usinas, têm vínculos com pessoas tanto internamente
- como externamente.
- Por isso, é importante refinar os indicadores para incluir a população
- externa à unidade produtiva que é afetada pelas práticas produtivas.
+\begin_layout Subsubsection*
+A dimensão econômica
 \end_layout
 
 \begin_layout Standard
-A Agência Paulista de Tecnologia dos Agronegócios (APTA
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "APTA"
-description "Agência Paulista de Tecnologia dos Agronegócios"
-
-\end_inset
-
-) forneceu dados econômicos das principais usinas do estado de São Paulo,
- que permitiram definir a dimensão econômica das unidades produtivas na
- ontologia de domínio.
+Esta dimensão está composta dos seguintes conceitos:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 As Figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1523,10 +1602,10 @@ reference "fig:Economic-2"
 
 \end_inset
 
- apresentam a dimensão econômica, onde foram definidos os seguintes conceitos:
+ apresentam 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1568,7 +1647,7 @@ name "fig:Economic-1"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -1594,6 +1673,11 @@ Mapa conceitual - Dimensão Econômica (segunda parte).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Economic-2"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1642,27 +1726,36 @@ key "tilman2002agricultural"
 \end_inset
 
 .
- A Figura 
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Modelagem do método de avaliação SustenAgro
+\end_layout
+
+\begin_layout Standard
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Method"
 
 \end_inset
 
- mostra os conceitos envolvidos na avaliação da sustentabilidade, fazendo
- uma integração entre os indicadores e o método de avaliação.
- Cada um dos indicadores tem componentes de indicadores
+ mostra um mapa conceitual dos conceitos envolvidos na avaliação da sustentabili
+dade, na qual recebe como entrada os indicadores selecionados pelos usuários
+ e aplica as formulas de avaliação para gerar os índices de sustentabilidade
+ e eficiência.
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-???
+(corrigido)???
 \end_layout
 
 \end_inset
 
- que serão processados pelo método de avaliação, permitindo quantificar
- a sustentabilidade.
+ Desta maneira é possível quantificar a sustentabilidade.
 \end_layout
 
 \begin_layout Standard
@@ -1718,11 +1811,11 @@ As dimensões da sustentabilidade permitiram organizar os indicadores, levando
 \begin_layout Subsection*
 
 \lang english
-Categorical
+Subclasses of Categorical
 \end_layout
 
 \begin_layout Standard
-O conceito 
+A classe 
 \lang english
 Categorical
 \lang brazilian
@@ -1731,7 +1824,8 @@ Categorical
 status collapsed
 
 \begin_layout Plain Layout
-O conceito Categorical não é da Decisioner ONtology? O que faz aqui?
+(coloquei subclasses of categorical) O conceito Categorical não é da Decisioner
+ ONtology? O que faz aqui?
 \end_layout
 
 \end_inset
@@ -1740,16 +1834,10 @@ representa os possíveis
 \lang english
 Value
 \lang brazilian
- que um 
+ discretos que um 
 \shape italic
 \lang english
 Indicator
-\shape default
-\lang brazilian
- ou 
-\shape italic
-\lang english
-Variable
 \shape default
 \lang brazilian
  
@@ -1757,16 +1845,19 @@ Variable
 status collapsed
 
 \begin_layout Plain Layout
-O que é Variable, so agora ela aparece.
+(corrigido)O que é Variable, so agora ela aparece.
 \end_layout
 
 \end_inset
 
 pode ter na forma de categorias (por exemplo, Existe e Não Existe).
- Um Value também pode ser Real ou Inteiro.
- Na verdade, a classe Categorical é definida na ontologia Decisioner, mas
- a SustenAgro cria diversas classes filhas para definir uma série de valores
- categóricos.
+ Um 
+\lang english
+Value
+\lang brazilian
+ também pode ser Real ou Inteiro.
+ A classe Categorical é definida na ontologia Decisioner, mas a SustenAgro
+ cria diversas classes filhas para definir uma série de valores categóricos.
 \end_layout
 
 \begin_layout Standard
@@ -1774,7 +1865,11 @@ pode ter na forma de categorias (por exemplo, Existe e Não Existe).
 status collapsed
 
 \begin_layout Plain Layout
-, através das suas subclasses como são as classes 
+(fica melhor: subclasse de 
+\lang english
+Categorical
+\lang brazilian
+), através das suas subclasses como são as classes 
 \lang english
 Real
 \lang brazilian
@@ -1800,8 +1895,11 @@ Elas são subclasses de quem?
 
 \end_inset
 
-Cada subclasse de Categorical é composta por um conjunto finito de elementos
- ou valores.
+Cada subclasse de 
+\lang english
+Categorical
+\lang brazilian
+ é composta por um conjunto finito de elementos ou valores.
  Cada valor é modelado como indivíduo da classe, permitindo assim, restringir
  as opções de instanciação de cada indicador.
 \end_layout
@@ -1840,7 +1938,11 @@ Yes/No
 \shape default
 \lang brazilian
  que representa os valores de sim e não e é composta pela lista de indivíduos
- Yes e No.
+ 
+\lang english
+Yes
+\lang brazilian
+ e No.
 \end_layout
 
 \begin_layout Standard
@@ -2014,8 +2116,8 @@ User Stories
 Histórias de usuário são uma técnica para descrever, de uma forma curta
  e simples, as características do sistema a partir da perspectiva do usuário
  ou cliente do sistema, gerando uma definição de alto nível de um requisito.
- O padrão é: como um “tipo de usuário”, eu quero atingir “algum objetivo”
- para “alguma finalidade”.
+ O padrão é: como um “tipo de usuário”, quero atingir “algum objetivo” para
+ “alguma finalidade”.
 \end_layout
 
 \begin_layout Standard
@@ -2067,127 +2169,6 @@ O usuário poderá acrescentar indicadores que considere importantes para
 \begin_layout Enumerate
 O sistema deve fornecer um cronograma de avaliação, sendo recomendado realizar
  a avaliação depois de cada safra.
-\end_layout
-
-\begin_layout Standard
-O usuário pode empregar a metodologia de avaliação caso a caso: possibilitando
- que o usuário selecione quais indicadores vai utilizar, podendo recomendar
- limiares mais adequados para a realidade dele e também inserir novos indicadore
-s/limiares.
- Finalmente, o usuário deverá ser informado da importância dos processos
- de avaliação, exemplo: 
-\end_layout
-
-\begin_layout Itemize
-“A crescente demanda de países desenvolvidos por produtos com garantia de
- origem tem induzido aumento das certificações nas usinas no Brasil (ALVES
- et al., 2008)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Coloque como Ref
-\end_layout
-
-\end_inset
-
-.” 
-\end_layout
-
-\begin_layout Itemize
-A certificação tem sido uma importante forma de diferenciação de commodities
- agrícolas, facilitando seu acesso aos mercados protegidos dos países desenvolvi
-dos.
- 
-\end_layout
-
-\begin_layout Itemize
-A caracterização climática, aliada aos detalhes de fertilidade e manejo
- do solo (quantificação edafoclimática), são essenciais para a determinação
- das regiões aptas ao cultivo de culturas de interesse comercial (CIIAGRO,
- 2009)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Coloque como Ref
-\end_layout
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Depois do ingresso da informação sobre os indicadores, o usuário receberá
- recomendações classificadas sobre práticas de sustentabilidade recomendadas
- com sua argumentação, exemplo: 
-\end_layout
-
-\begin_layout Itemize
-(Ambiental) “O sistema de plantio direto da cana-de-açúcar sobre leguminosas
- proporciona maiores teores foliares de N e K na cana do que o plantio convencio
-nal (JÚNIOR; COELHO, 2008)”.
-\end_layout
-
-\begin_layout Itemize
-(Ambiental) Segundo Leme (2005), haveria redução de 36% na emissão de gases
- do efeito estufa (GEE) se a palha fosse queimada nas caldeiras das usinas
- e destilarias, ao invés de ser queimada no campo.
-\end_layout
-
-\begin_layout Itemize
-(Ambiental) A queima da cana aumenta a erosão do solo e a poluição do ar
- e reduz a qualidade da matéria-prima (LINS; SAAVEDR, 2007).
- 
-\end_layout
-
-\begin_layout Itemize
-(Ambiental) Quando a cana não é queimada, proliferam, nos canaviais, roedores
- silvestres originários de fragmentos florestais.
- Esses roedores podem transmitir o Hantavírus através da urina e contaminar
- cortadores de cana, causando uma síndrome respiratória e cardíaca, a pneumocito
-se, podendo levar à morte.
- 
-\end_layout
-
-\begin_layout Itemize
-(Ambiental) Quando não há queima da cana é comum, também, o aumento do ataque
- de cigarrinhas, com perdas significativas de produção (ANDRADE; DINIZ,
- 2007).
- 
-\end_layout
-
-\begin_layout Itemize
-(Econômico) A utilização das colheitadeiras reverte-se em aumento da produtivida
-de e da qualidade da matéria-prima, bem como em diminuição dos custos da
- produção agrícola, que representam entre 50% e 60% em relação ao custo
- total (SCOPINHO, 1995).
-\end_layout
-
-\begin_layout Itemize
-(Econômico e Social) A utilização das colheitadeiras em cooperativa possibilita
- a soma das áreas de produtores próximos possibilitando a mecanização em
- propriedades com restrição para mecanização.
-\end_layout
-
-\begin_layout Itemize
-(Econômico) Restrições físicas da propriedade (menos de 500 ha de área com
- declividade inferior a 12% e talhões menores que 800 metros) dificultam
- a mecanização.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Não vejo essas histórias como User Stories, talvez seja melhor deixa-las
- no anexo já que pouco delas parece ter sido usado.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection*
@@ -2316,7 +2297,7 @@ História de usuário #3:
 status open
 
 \begin_layout Plain Layout
-???
+(história gerada pela katia)???
 \end_layout
 
 \end_inset
@@ -2369,7 +2350,7 @@ limiares.”
 
 \begin_layout Enumerate
 O usuário poderá fazer a “Historia de usuário #3” ou entrar no sistema e
- continuar na tela de cadastro de indicadores e, quando aconteçer que o
+ continuar na tela de cadastro de indicadores e, quando acontecer que o
  usuário precise de um indicador que não seja oferecido pelo sistema, o
  usuário poderá acrescentá-lo por meio do botão “acrescentar indicador”
  
@@ -2384,12 +2365,12 @@ click
  onde ele deverá cadastrar o título, a descrição, os limiares, a medida
  do manejo e a justificativa desse indicador.
  Em seguida preencher o estado do indicador.
- O sistema salva esses dados nessa dimensão
+ O sistema salva esses dados inseridos
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-que dimensao?
+(corrido) que dimensao?
 \end_layout
 
 \end_inset
@@ -2864,7 +2845,7 @@ StoryBoard
 status open
 
 \begin_layout Plain Layout
-Legendas incorretas
+(Estão bem) Legendas incorretas
 \end_layout
 
 \end_inset
@@ -2903,7 +2884,7 @@ reference "fig:StoryBoard-6"
 status open
 
 \begin_layout Plain Layout
-e como foram processados???
+(aqui só tem impontancia os aspectos visuais) e como foram processados???
 \end_layout
 
 \end_inset
@@ -2966,26 +2947,20 @@ Mockups das Interfaces do SustenAgro
 \end_layout
 
 \begin_layout Standard
-Estes Mockups permitiram criar uma representação visual das interfaces do
- sistema, com suas 
-\lang english
-widgets,
-\lang brazilian
- para ajudar na sua avaliação por parte dos especialistas do domínio.
+A partir das técnicas anteriores foi possível identificar as tarefas que
+ os usuários do sistema SustenAgro realizarão.
+ O fluxo das tarefas e os dados de cada um foram mudando na aplicação de
+ cada técnica, gerando varias definições das web UI.
+ Uma vez identificadas as caracterizaras essenciais da interface gráfica,
+ procedeu-se a definir os Mockups que permitiram criar uma representação
+ visual das interfaces do sistema.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-, e assim reorganizar os elementos visuais para definir um design estável
- das interfaces do sistema.???
 \end_layout
 
-\end_inset
-
- O desenvolvimento dos 
+\begin_layout Standard
+O desenvolvimento dos 
 \lang english
-mockups
+Mockups
 \lang brazilian
  foram feitos com a ferramenta 
 \lang english
@@ -3013,6 +2988,7 @@ https://moqups.com/
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3023,16 +2999,12 @@ reference "fig:Mockup_home"
 
 \end_inset
 
- mostra uma interface gráfica web do 
-\lang english
-Home
-\lang brazilian
-
+ mostra uma interface gráfica da tela inicial do SAD SustenAgro 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-o que é home???
+(corrigido)o que é home???
 \end_layout
 
 \end_inset
@@ -3083,6 +3055,28 @@ name "fig:Mockup_home"
 \end_layout
 
 \begin_layout Standard
+Os Mockups integram as 
+\lang english
+widgets,
+\lang brazilian
+ que permitem avaliar a interface gráfica de uma maneira mais próxima à
+ interface final e assim suportar a sua avaliação por parte dos especialistas
+ do domínio.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(corrigido), e assim reorganizar os elementos visuais para definir um design
+ estável das interfaces do sistema.???
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3092,7 +3086,26 @@ reference "fig:Mockup_indicators"
 
  apresenta os passos do processo de avaliação, na ordem representada pela
  numeração das abas.
- realizando o cadastro da localização, da cultura, das tecnologias usadas,
+ Esta tela corresponde ao formulário de cadastro dos indicadores, que permite
+ cadastrar o valor correspondente a cada indicador
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+à avaliação em processo
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+realizando o cadastro da localização, da cultura, das tecnologias usadas,
  da caracterização do sistema produtivo, a tela dos indicadores e das recomendaç
 ões
 \begin_inset Note Note
@@ -3105,18 +3118,12 @@ status open
 \end_inset
 
 .
- A tela apresentada corresponde ao formulário de cadastro dos indicadores,
- que permite cadastrar o valor correspondente a cada indicador
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-à avaliação em processo
+ 
 \end_layout
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -3158,14 +3165,30 @@ name "fig:Mockup_indicators"
 
 \end_layout
 
+\begin_layout Standard
+Na apresentação dos Mockups aos especialistas foram identificadas varias
+ mudanças para facilitar a navegabilidade da 
+\lang english
+web UI,
+\lang brazilian
+ as mudanças corresponderam à integração de tarefas e a melhora na apresentação
+ dos formulários e dos resultados de avaliação.
+ Estas mudanças reestruturaram o 
+\lang english
+look-and-feel
+\lang brazilian
+ do SAD.
+ 
+\end_layout
+
 \begin_layout Subsection*
 Protótipo da Interface Gráfica do SustenAgro
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Já que os mockups não se parecem com as interfaces, o que aconteceu? Qual
- a conexao entre eles?
+(Corrigido)Já que os mockups não se parecem com as interfaces, o que aconteceu?
+ Qual a conexao entre eles?
 \end_layout
 
 \end_inset
@@ -3174,7 +3197,15 @@ Já que os mockups não se parecem com as interfaces, o que aconteceu? Qual
 \end_layout
 
 \begin_layout Standard
-O protótipo funcional da interface gráfica do SustenAgro está disponível
+A partir das melhoras dos protótipos visuais identificadas nas avaliações
+ dos Mockups, foram identificadas as características da web UI, com as quais
+ foi desenvolvido um protótipo funcional da interface gráfica do SustenAgro,
+ que inicialmente só permitia interagir com dados simulados.
+\end_layout
+
+\begin_layout Standard
+A web UI do SAD SustenAgro, foi integrada com cada uma das funcionalidades
+ do SAD em cada ciclo de desenvolvimento, e actualmente está disponível
  nos servidores do laboratório Intermídia do ICMC\SpecialChar nobreakdash
 USP 
 \begin_inset Foot
@@ -3187,7 +3218,11 @@ http://biomac.icmc.usp.br:8080/sustenagro/
 \end_inset
 
 .
- Na Figura 
+ 
+\end_layout
+
+\begin_layout Standard
+Na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Home"
@@ -3219,7 +3254,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Protótipo do SustenAgro – Home Page.
+Protótipo do SustenAgro – Tela incial.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Home"
@@ -3459,7 +3494,7 @@ Com a finalidade de suportar a geração de relatórios, no formato definido
 \lang english
 Web Component
 \lang brazilian
- especificos.
+ específicos.
  Um deles foi a 
 \lang english
 widget
@@ -3472,10 +3507,14 @@ widget
  Cada avaliação realizada com o método SustenAgro gerará dois índices que
  são localizados em um quadrante da matriz de sustentabilidade.
  Cada quadrante está relacionado com uma recomendação específica.
- A Figura 
+ 
+\end_layout
+
+\begin_layout Standard
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Matriz-de-sustentabilidade"
+reference "fig:Matriz-de-sustentabilidade-widget"
 
 \end_inset
 
@@ -3483,7 +3522,8 @@ reference "fig:Matriz-de-sustentabilidade"
 \lang english
 Web Component,
 \lang brazilian
- mostrando resultados reais de uma avaliação.
+ mostrando resultados reais de uma avaliação, com o índice de sustentabilidade
+ avaliado em 2.33 e o índice de eficiência avaliado em 2.4.
 \end_layout
 
 \begin_layout Standard
@@ -3514,7 +3554,7 @@ Matriz de sustentabilidade
 status open
 
 \begin_layout Plain Layout
-Coloque quais foram os índices
+(corrigido)Coloque quais foram os índices
 \end_layout
 
 \end_inset
@@ -3554,15 +3594,20 @@ Web Component
  Ele tem um eixo que quantifica o valor da sustentabilidade normalizado
  entre -100 até +100, dividindo o intervalo em 5 segmentos que correspondem
  às categorias de sustentabilidade.
- A Figura 
+ 
+\end_layout
+
+\begin_layout Standard
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Semáforo-de-sustentabilidade"
 
 \end_inset
 
- mostra esse componente no sistema SustenAgro com os valores para uma avaliação
- de sustentabilidade.
+ mostra esse componente no sistema SustenAgro com os valores para de avaliação
+ de sustentabilidade que gerou um índice de sustentabilidade geral de 4
+ em escala de -100 até +100.
 \end_layout
 
 \begin_layout Standard
@@ -3646,12 +3691,19 @@ Definir o Objeto da Avaliação
 \end_layout
 
 \begin_layout Standard
-No comando, a seguir
+No comando, a seguir 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:DSL-EvaluationObject"
+
+\end_inset
+
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-ref
+(corrigido) ref
 \end_layout
 
 \end_inset
@@ -3659,11 +3711,23 @@ ref
 , o Objeto de Avaliação é definido como uma instância da classe ProductionUnit.
  Essa classe foi definida pelos próprios especialistas na ontologia e tem
  como filhos as classes 
+\emph on
+\lang english
+Farm
+\emph default
+\lang brazilian
+ e 
+\emph on
+\lang english
+Power Plant
+\emph default
+\lang brazilian
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-coloque
+(corrigido) coloque
 \end_layout
 
 \end_inset
@@ -3680,12 +3744,14 @@ hasName
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -3697,48 +3763,41 @@ evaluationObject ':ProductionUnit', {
 \begin_layout Plain Layout
 
   instance 'ui:hasName', label: ['en': 'Production unit or farm name', 'pt':
- 'Nome da unidade produtiva ou fazenda'], placeholder: ['en': 'Name', 'pt':
- "Nome"]
+ 'Nome da unidade produtiva ou fazenda']
 \end_layout
 
 \begin_layout Plain Layout
 
   instance ':hasAgriculturalProductionSystem', label: ['en': 'Agricultural
- production system' , 'pt': "Sistema de produção agrícola"], header: ['en':
- 'Options', 'pt': "Opções"]     
+ production system' , 'pt': "Sistema de produção agrícola"]   
 \end_layout
 
 \begin_layout Plain Layout
 
-  type label: ['en': "Production unit type", 'pt': "Tipo da unidade produtiva"],
- header: ['en': 'Options', 'pt': "Opções"]
+  type label: ['en': "Production unit type", 'pt': "Tipo da unidade produtiva"]
 \end_layout
 
 \begin_layout Plain Layout
 
   instance  ':hasSugarcaneSource', label: ['en': 'Sugarcane source', 'pt':
- "Origem da cana"], header: ['en': 'Options', 'pt': "Opções"], multipleSelection
-: true, required: true
+ "Origem da cana"], multipleSelection: true, required: true
 \end_layout
 
 \begin_layout Plain Layout
 
-  instance 'dbp:state', label: ['en': 'State', 'pt': 'Estado'], header:
- ['en': 'States', 'pt': 'Estados']
+  instance 'dbp:state', label: ['en': 'State', 'pt': 'Estado']
 \end_layout
 
 \begin_layout Plain Layout
 
   instance 'ui:hasMicroregion', label: ['en': 'Production unit microregion',
- 'pt': "Microrregião da unidade produtiva"], header: ['en': "Options", 'pt':
- "Opções"]
+ 'pt': "Microrregião da unidade produtiva"]
 \end_layout
 
 \begin_layout Plain Layout
 
   instance ':hasAvailabilityOfEvaluationResults', label: ['en': "Availability
- of evaluation results", 'pt': "Disponibilização dos resultados da avaliação"],
- header: ['en': "Options", 'pt': "Opções"]
+ of evaluation results", 'pt': "Disponibilização dos resultados da avaliação"]
 \end_layout
 
 \begin_layout Plain Layout
@@ -3755,7 +3814,14 @@ evaluationObject ':ProductionUnit', {
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DSL que define o SAD SustenAgro
+DSL que define o Evaluation Object 
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:DSL-EvaluationObject"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3823,7 +3889,14 @@ Features
 \shape default
  criadas pelos usuários ('extraFeatures': true) e a apresentação condicional
  de grupos de Features.
- No exemplo da Listagem 
+ No exemplo do algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:DSL-Definição-de-Features"
+
+\end_inset
+
+ 
 \begin_inset Note Note
 status open
 
@@ -3844,6 +3917,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -3921,7 +3995,14 @@ Industrial'
 \begin_layout Plain Layout
 Definição de 
 \lang english
-Features
+Features 
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:DSL-Definição-de-Features"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3953,7 +4034,14 @@ data
 report
 \shape default
 , fazem o cálculo do modelamento e definem o que vai ser apresentado.
- Na listagem 
+ No algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:SustenAgro-DSL"
+
+\end_inset
+
+ 
 \begin_inset Note Note
 status open
 
@@ -3997,12 +4085,14 @@ Usuários podem pedir a geração de relatórios em pdf, uma ferramenta de conve
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -4023,16 +4113,7 @@ report {
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
   economic    =   weightedSum(data.':EconomicIndicator')     
-\end_layout
-
-\begin_layout Plain Layout
-
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -4042,6 +4123,7 @@ report {
 
 \begin_layout Plain Layout
 
+  
 \end_layout
 
 \begin_layout Plain Layout
@@ -4060,16 +4142,8 @@ report {
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
   technologicalEfficiencyInTheField = 0.8*weightedSum(data.':TechnologicalEfficien
 cyInTheField')
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -4138,36 +4212,6 @@ heField+technologicalEfficiencyInTheIndustrial)
 
                           label: ['en': 'Sustainability Level', 'pt': 'Índice
  da sustentabilidade geral'],
-\end_layout
-
-\begin_layout Plain Layout
-
-                          legend: [['en': 'Lower sustainability', 'pt':
- 'Menos sustentável'],
-\end_layout
-
-\begin_layout Plain Layout
-
-                                  ['en': 'Negative changes', 'pt': 'Alterações
- negativas'],
-\end_layout
-
-\begin_layout Plain Layout
-
-                                  ['en': 'Irrelevant changes', 'pt': 'Sem
- alteração'],
-\end_layout
-
-\begin_layout Plain Layout
-
-                                  ['en': 'Positive changes', 'pt': 'Alterações
- positivas'],                                     
-\end_layout
-
-\begin_layout Plain Layout
-
-                                  ['en': 'Higher sustainability', 'pt':
- 'Mais sustentável']],
 \end_layout
 
 \begin_layout Plain Layout

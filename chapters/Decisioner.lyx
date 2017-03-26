@@ -87,8 +87,8 @@ reference "sec:SAD-SustenAgro"
 status open
 
 \begin_layout Plain Layout
-Onde isto está? Vai estar no cap SAD? (Esta na seção SAD SustenAgro do capitulo
- SAD)
+(corrigido) Onde isto está? Vai estar no cap SAD? (Esta na seção SAD SustenAgro
+ do capitulo SAD)
 \end_layout
 
 \end_inset
@@ -198,7 +198,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Decisioner Architecture.png
-	width 80col%
+	width 90col%
 
 \end_inset
 
@@ -292,7 +292,7 @@ RDF.
 \lang english
 SPARQL Protocol and RDF Query Language (Sparql)
 \lang brazilian
-
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "prud2006sparql"
@@ -571,7 +571,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Decisioner Methodology.png
-	width 80col%
+	width 90col%
 
 \end_inset
 
@@ -967,6 +967,47 @@ button save
 \end_layout
 
 \begin_layout Standard
+Idealmente, especialistas de domínio deveriam poder criar a ontologia usando
+ um editor gráfico.
+ Mas devido as restrições de escopo de um projeto de mestrado, não haveria
+ tempo para criar um.
+ A criação de uma ferramenta, como um editor gráfico, teria o escopo de
+ um novo mestrado.
+ 
+\end_layout
+
+\begin_layout Standard
+Usar um editor para 
+\lang english
+OWL
+\lang brazilian
+, como o Protégé, exigiria que os especialistas de domínio aprendessem 
+\lang english
+OWL
+\lang brazilian
+ e lógica descritiva, o que não é uma opção viável.
+ Este editor de ontologias é uma solução intermediária.
+ Ele adota um formato em 
+\lang english
+YAML
+\lang brazilian
+, menos complexo que 
+\lang english
+OWL
+\lang brazilian
+, mas expressivo o suficiente para as necessidades das ontologias.
+ Ele ajuda os usuários a encontrar os elementos da ontologia (
+\lang english
+side panel
+\lang brazilian
+) e permite a inserção da ontologia no Decisioner.
+ Apesar de ser possível aos especialistas desenvolver uma ontologia totalmente
+ nova, usando o editor, seu objetivo é permitir que eles possam fazer modificaçõ
+es localizadas nas ontologias.
+ 
+\end_layout
+
+\begin_layout Standard
 \align left
 \begin_inset Float figure
 placement H
@@ -1010,52 +1051,11 @@ name "fig:Editor-de-ontologia"
 \end_layout
 
 \begin_layout Standard
-Idealmente, especialistas de domínio deveriam poder criar a ontologia usando
- um editor gráfico.
- Mas devido as restrições de escopo de um projeto de mestrado, não haveria
- tempo para criar um.
- A criação de uma ferramenta, como um editor gráfico, teria o escopo de
- um novo mestrado.
- 
-\end_layout
-
-\begin_layout Standard
-Usar um editor para 
-\lang english
-OWL
-\lang brazilian
-, como o Protégé, exigiria que os especialistas de domínio aprendessem 
-\lang english
-OWL
-\lang brazilian
- e lógica descritiva, o que não é uma opção viável.
- Este editor de ontologias é uma solução intermediária.
- Ele adota um formato em 
-\lang english
-YAML
-\lang brazilian
-, menos complexo que 
-\lang english
-OWL
-\lang brazilian
-, mas expressivo o suficiente para as necessidades das ontologias.
- Ele ajuda os usuários a encontrar os elementos da ontologia (
-\lang english
-side panel
-\lang brazilian
-) e permite a inserção da ontologia no Decisioner.
- Apesar de ser possível aos especialistas desenvolver uma ontologia totalmente
- nova, usando o editor, seu objetivo é permitir que eles possam fazer modificaçõ
-es localizadas nas ontologias.
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Fale algo das triple stores no capitulo de ontologias.
+(corrigido) Fale algo das triple stores no capitulo de ontologias.
  (Mudei triplestore para o capitulo 2)
 \end_layout
 
@@ -1069,14 +1069,21 @@ Fale algo das triple stores no capitulo de ontologias.
 status open
 
 \begin_layout Plain Layout
-Coloque algumas specs do Blazegraph: max numero de triplas, rodar em cluster,
- etc.
+(corrigdo) Coloque algumas specs do Blazegraph: max numero de triplas, rodar
+ em cluster, etc.
  (realizado)
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+A ontologia definida em este editor será usada para definir a estrutura
+ dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
+ a continuação.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1153,10 +1160,10 @@ des como nome, tipo de produção, localização, etc.
 A instrução tem como argumentos a URI (ou label) da classe da ontologia
  do domínio, que será objeto de avaliação, e cada uma das propriedades relaciona
 das.
- A Listagem 
+ O algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lis:DSL-para-definição"
+reference "alg:Definição-do-Evaluation"
 
 \end_inset
 
@@ -1225,14 +1232,17 @@ evaluationObject ":ProductionUnit", {
 
 \begin_layout Plain Layout
 Definição do Evaluation Object
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Definição-do-Evaluation"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -1349,7 +1359,7 @@ reference "fig:Widgets-geradas-da-DSL"
 status open
 
 \begin_layout Plain Layout
-Fazer essa figura mostrando uma única caracteristica sendo escolhida.
+(corrigido) Fazer essa figura mostrando uma única caracteristica sendo escolhida.
 \end_layout
 
 \end_inset
@@ -1363,7 +1373,7 @@ mostra a widget para uma característica que tem um tipo categórico com 3
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -1383,7 +1393,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Widgets geradas a partir da definição da DSL
+Widget geradas a partir da definição da DSL
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Widgets-geradas-da-DSL"
@@ -1419,6 +1429,7 @@ has value
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -1463,10 +1474,10 @@ name "alg:Definição-de-Features"
 \end_layout
 
 \begin_layout Standard
-O comando tem como argumento uma URI (ou label) (Listagem 
+O comando tem como argumento uma URI (ou label) (Algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lis:Definição-de-Features"
+reference "alg:Definição-de-Features"
 
 \end_inset
 
@@ -1502,10 +1513,10 @@ Report
 \lang brazilian
  permite definir as fórmulas e procedimentos matemáticas necessários para
  o cálculo do modelo usado pelos especialistas de domínio, e como os resultados
- serão apresentados (Listagem 
+ serão apresentados (Algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lis:Definição-da-logica"
+reference "alg:Definição-da-lógica"
 
 \end_inset
 
@@ -1530,10 +1541,10 @@ Features
 , pelos usuários finais.
  Esses dados são usados no modelo adotado e podem gerar múltiplos resultados
  de avaliação.
- Na Listagem 
+ No algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lis:Definição-da-logica"
+reference "alg:Definição-da-lógica"
 
 \end_inset
 
@@ -1550,6 +1561,7 @@ weightedSum(data.':EnvironmentalIndicator')
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -1632,10 +1644,10 @@ widgets
 \shape default
 \lang brazilian
  que facilitam a representação e compreensão dos resultados da avaliação.
- Na listagem 
+ No algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lis:Definição-das-widgets"
+reference "alg:Definição-dos-componentes"
 
 \end_inset
 
@@ -1711,6 +1723,7 @@ colocar Você fala de Web components em algum lugar?
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -1882,8 +1895,8 @@ reference "fig:Editor-DSL"
 status open
 
 \begin_layout Plain Layout
-Fale um pouco mais: diga que o editor usa o ACE e oferece code coloring,
- etc.
+(corrigido) Fale um pouco mais: diga que o editor usa o ACE e oferece code
+ coloring, etc.
  Comente o fato que o usuário pode ver os resultados das mudanças imediatamente,
  permitindo um feedback imediato para os especialistas.
  Fale que, se houver algum erro, a ultima versao pode rodar, etc.
@@ -1936,6 +1949,61 @@ name "fig:Editor-DSL"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Atualmente, foi definida uma DSL para especificar as web UI gerando uma
+ estrutura do documento em 
+\lang english
+HTML
+\lang brazilian
+, que associa 
+\lang english
+templates
+\lang brazilian
+ com o estilo predefinido através de 
+\lang english
+CSS
+\lang brazilian
+ e com 
+\lang english
+scripts
+\lang brazilian
+ definidos na linguagem 
+\lang english
+Javascript
+\lang brazilian
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O editor da DSL tem compatibilidade com 
+\lang english
+web components
+\lang brazilian
+, tanto os fornecidos pelas bibliotecas integradas no Framework Decisioner,
+ como com os 
+\lang english
+web components
+\lang brazilian
+ do Framework 
+\lang english
+Grails
+\lang brazilian
+ e adicionalmente podem ser definidos 
+\lang english
+web components 
+\lang brazilian
+especializados.
+\end_layout
+
 \begin_layout Section
 
 \lang english
@@ -1954,11 +2022,16 @@ name "sec:Web-components"
 \lang english
 Web Component
 \lang brazilian
-s
+s 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
+Site oficial de 
+\lang english
+web components
+\lang brazilian
+ 
 \begin_inset Flex URL
 status open
 
@@ -2043,7 +2116,7 @@ web components
 \lang brazilian
 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
@@ -2258,7 +2331,7 @@ reference "fig:Web-UI"
 \end_inset
 
  apresenta uma Web UI que foi gerada automaticamente, a partir da ontologia
- e das definições na DSL do SAD SUstenAgro.
+ e das definições na DSL do SAD SustenAgro.
  Nela são apresentados vários tipos de 
 \lang english
 Web Components
@@ -2370,7 +2443,7 @@ DSL Interpreter
 status open
 
 \begin_layout Plain Layout
-Mude o nome na imagem (feito)
+(corrigido) Mude o nome na imagem (feito)
 \end_layout
 
 \end_inset
@@ -2393,7 +2466,7 @@ status open
 \begin_layout Plain Layout
 
 \lang english
-Veja ref DSL in Groovy
+(corrigido) Veja ref DSL in Groovy
 \end_layout
 
 \end_inset
@@ -2451,7 +2524,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Decisioner Core Architecture.png
-	width 60col%
+	width 70col%
 
 \end_inset
 
@@ -2530,15 +2603,15 @@ O desenvolvimento do Framework Decisioner foi realizado simultaneamente
 Não foi possível instanciar outro sistema no Decisioner durante o desenvolviment
 o do mestrado, mas atualmente encontra-se em andamento a implementação do
  SAD Nano-Tec como segunda instancia do Framework Decisioner.
- O que permitirá generalizar ainda mais o framework e servir como um caso
- de uso adicional para validar as hipóteses em outros domínios.
+ O que permitirá generalizar ainda mais e servir como um caso de uso adicional
+ para validar as hipóteses em outros domínios.
+ Esta arquitetura foi validada por meio da instanciação do SAD SustenAgro,
+ o que permite validar se realmente funcionam cada uma das características
+ aqui descritas.
 \end_layout
 
 \begin_layout Standard
-Esta arquitetura foi avaliada por meio da instanciação do SAD SustenAgro,
- o que permite validar se realmente funcionam cada uma das características
- aqui descritas.
- No capítulo seguinte será apresentado o SAD SustenAgro, gerado como primeiro
+No capítulo seguinte será apresentado o SAD SustenAgro, gerado como primeiro
  caso de uso deste Framework, e depois será apresentado o processo de avaliação
  que formaliza a avaliação deste sistema.
 \end_layout
@@ -2548,8 +2621,8 @@ Esta arquitetura foi avaliada por meio da instanciação do SAD SustenAgro,
 status open
 
 \begin_layout Plain Layout
-Voce deixou de fora aspectos mais padroes, como criacao de usuarios, seguranca
- etc.
+(corrigido) Voce deixou de fora aspectos mais padroes, como criacao de usuarios,
+ seguranca etc.
  Isso está ok, mas coloque isso numa sentenca, pode ate ser na conclusao,
  dizendo que eles existem mas foram deixados de lado por nao serem tao important
 es no entendimento do Decisioner e para deixar a explicacao mais simples.

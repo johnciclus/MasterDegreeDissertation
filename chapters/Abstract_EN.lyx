@@ -127,7 +127,7 @@ EndPreamble
 
 \begin_body
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 GARAVITO, J.
  F.
  
@@ -141,7 +141,7 @@ Ontologies and DSLs in the generation of decision support systems, SustenAgro
  Paulo, São Carlos – SP, 2017.
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 \begin_inset Phantom VPhantom
 status open
 
@@ -154,7 +154,7 @@ status open
 
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 
 \lang english
 Decision Support Systems (DSS) integrate knowledge from Domain Experts in
@@ -186,7 +186,7 @@ Decision Support Systems (DSS) integrate knowledge from Domain Experts in
  SustenAgro to validate the proper operation of them.
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 \begin_inset Phantom VPhantom
 status open
 
@@ -199,7 +199,7 @@ status open
 
 \end_layout
 
-\begin_layout Espaco Simples
+\begin_layout Standard
 
 \series bold
 \lang english

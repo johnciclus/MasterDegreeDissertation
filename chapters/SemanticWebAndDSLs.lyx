@@ -147,16 +147,25 @@ Ontologias da web semântica e
 DSLs
 \lang brazilian
  têm um papel fundamental na criação de um meio de descrição de conhecimento
- por parte dos especialistas e no design de um framework para criação de
- SADs.
+ por parte dos especialistas e portanto suportar o design 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+(troquei) de um framework para criação
+\end_layout
+
+\end_inset
+
+ de SADs baseados em conhecimento.
  
 \end_layout
 
 \begin_layout Standard
 Ontologias servem para representar o conhecimento de especialistas do domínio
  e DSLs servem para customizar o comportamento dos SADs.
- Estas apareceram originalmente no contexto da filosofia, onde se referem
- ao estudo da natureza, existência e realidade dos entes.
+ As ontologias apareceram originalmente no contexto da filosofia, onde se
+ referem ao estudo da natureza, existência e realidade dos entes.
  Elas são usadas em vários campos do conhecimento.
  Neste projeto, ontologias referem-se a representações de conhecimento,
  que precisam ser implementadas em código.
@@ -189,6 +198,14 @@ Web Ontology Language
 \lang english
 OWL
 \lang brazilian
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OWL"
+description "Web Ontology Language"
+
+\end_inset
+
 ).
  Finalmente serão abordadas as 
 \lang english
@@ -285,7 +302,7 @@ reference "fig:Semantic_Web_History"
 status open
 
 \begin_layout Plain Layout
-(Figura editada) Para que essa comparação? O que XML tem haver?
+(Corrigido - Figura editada) Para que essa comparação? O que XML tem haver?
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "XML"
@@ -500,6 +517,14 @@ String
 \lang english
 XML
 \lang brazilian
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "XML"
+description "Extensible Markup Language"
+
+\end_inset
+
  representa os dados de maneira sintática, através da definição de 
 \lang english
 markups
@@ -793,6 +818,22 @@ name "fig:Smart-data-continuum"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fadaptada{allemang2011semantic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -812,7 +853,7 @@ XML
  domínios, sendo suficientemente independentes para serem recuperados e
  combinados com outras fontes de dados.
  Finalmente no quarto nível, é possível inferir novos dados a partir dos
- existentes e compartilha-los entre aplicações sem requerer interferência
+ existentes e compartilhá-los entre aplicações sem requerer interferência
  humana 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -952,7 +993,7 @@ URIs
 status open
 
 \begin_layout Plain Layout
-Vc ja falou de URIs? (Sim está na descrição de WS Cake)
+(Corrigido) Vc ja falou de URIs? (Sim está na descrição de WS Cake)
 \end_layout
 
 \end_inset
@@ -1028,7 +1069,7 @@ OWL
 SPARQL Protocol and RDF Query Language (SPARQL
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "Sparql"
+symbol "SPARQL"
 description "SPARQL Protocol and RDF Query Language"
 
 \end_inset
@@ -1230,9 +1271,24 @@ name "fig:OWL2-Profiles"
 
 \end_layout
 
+\begin_layout Plain Layout
+Figura original da W3C 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.w3.org/People/Sandro/owl2-profiles-doc
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Description
@@ -1456,8 +1512,8 @@ plug-ins.
 status open
 
 \begin_layout Plain Layout
-tem citação para o Protege não precisa usar footnote (mudei o footnote pela
- citação)
+(corrigido) tem citação para o Protege não precisa usar footnote (mudei
+ o footnote pela citação)
 \end_layout
 
 \end_inset
@@ -1467,7 +1523,7 @@ tem citação para o Protege não precisa usar footnote (mudei o footnote pela
 status open
 
 \begin_layout Plain Layout
-Fale algo das triple stores SPARQL no capitulo de ontologias.
+(corrigido) Fale algo das triple stores SPARQL no capitulo de ontologias.
  (agreguei a seção de SPARQL)
 \end_layout
 
@@ -1478,7 +1534,7 @@ Fale algo das triple stores SPARQL no capitulo de ontologias.
 status open
 
 \begin_layout Plain Layout
-terminou meio seco.
+(corrigido) terminou meio seco.
  Você poderia ter falado da ou de como usou o Protege ou de como ontologias
  foram integradas na ferramenta.
  ou do fato que Domain Experts nao poderiam usar OWL diretamente.
@@ -1492,7 +1548,7 @@ terminou meio seco.
 \begin_layout Subsection*
 
 \lang english
-Triplestore
+Triplestore 
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Triplestore"
@@ -1662,12 +1718,9 @@ Para desenvolver os sistemas software da presente pesquisa foram usadas
 \lang english
 OWL
 \lang brazilian
- na ferramenta Protégé, depois instanciadas em 
-\lang english
-triplestores
-\lang brazilian
- e finalmente integradas no framework Decisioner que está implementado sobre
- o banco de dados baseado em grafos 
+ na ferramenta Protégé, depois instanciadas exportadas a RDF e finalmente
+ integradas no framework Decisioner que está implementado sobre o banco
+ de dados baseado em grafos 
 \lang english
 Blazegraph
 \lang brazilian
@@ -1790,8 +1843,7 @@ Hypertext Markup Language (HTML),
 \lang english
 Domain-Specific Modeling Languages (specification languages):
 \lang brazilian
- são linguagens que permitem especificar sistemas com o propósito de modelar
- eles,
+ são linguagens que permitem especificar sistemas com o propósito de modelá-los,
 \begin_inset Note Note
 status open
 
@@ -1838,7 +1890,7 @@ Domain-Specific Programming Languages:
 status open
 
 \begin_layout Plain Layout
-Coloque um paragrafo sobre internal and external DSLs.
+(corrigido) Coloque um paragrafo sobre internal and external DSLs.
 \end_layout
 
 \end_inset
@@ -1982,7 +2034,7 @@ key "dearle2015groovy"
 status open
 
 \begin_layout Plain Layout
-Groovy for Domain-Specific Languages Fergal Dearle(adicionado)
+(Corrigido) Groovy for Domain-Specific Languages Fergal Dearle(adicionado)
 \end_layout
 
 \end_inset
@@ -2034,7 +2086,7 @@ triplestores
  Finalmente, os SADs a serem criados serão aplicativos web, Groovy tem um
  web framework completo e madurecido, Grails
 \lang english
-
+ 
 \begin_inset Foot
 status open
 
@@ -2079,7 +2131,7 @@ key "smith2009grails"
 status open
 
 \begin_layout Plain Layout
-Grails in Action GLEN SMITH PETER LEDBROOK (adicionado)
+(corrigido) Grails in Action GLEN SMITH PETER LEDBROOK (adicionado)
 \end_layout
 
 \end_inset
@@ -2143,20 +2195,16 @@ Discussão
 \end_layout
 
 \begin_layout Standard
-A partir do análise dos especialistas do domínio foi determinado que não
- têm um conhecimento detalhado sobre modelagem de conhecimento usando os
- padrões da web semântica, descritos neste capítulo.
- 
-\end_layout
-
-\begin_layout Standard
-Também foi determinado que as ontologias permitem uma definição detalhada
+A partir do análise dos conceitos e tecnologias descritas neste capítulo,
+ foi determinado que os especialistas do domínio não têm um conhecimento
+ detalhado sobre modelagem de conhecimento usando os padrões da web semântica.
+ Também foi determinado que as ontologias permitem uma definição detalhada
  do conhecimento do domínio, pelo que foi necessário definir uma camada
  intermédia que facilitasse a definição do conhecimento por parte dos especialis
 tas.
- Por isso foi identificado a necessidade de uma DSL adequada ao nível de
- conhecimento de computação dos especialistas, e que contenha termos familiares
- ao domínio desses especialistas.
+ Por isso foi justificado o requisito de uma DSL adequada ao nível de conhecimen
+to de computação dos especialistas, e que contenha termos familiares ao
+ domínio desses especialistas.
  
 \end_layout
 
@@ -2391,7 +2439,7 @@ e na geração de Web UI flexíveis e de SADs, confirmando a hipótese assumida
 status open
 
 \begin_layout Plain Layout
-Precisa melhorar essa conclusao.
+(corrigido) Precisa melhorar essa conclusao.
  Tente linkar com o proximo capítulo.
  (Feito)
 \end_layout

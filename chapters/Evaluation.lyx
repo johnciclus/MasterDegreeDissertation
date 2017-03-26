@@ -399,10 +399,14 @@ A revisão dos resultados numéricos foi realizada a partir de vários cenários
 Os cenários avaliados foram casos extremos dos indicadores, processo denominado
  teste de mínimos e máximos, gerando resultados em forma de relatório para
  cada um dos cenários.
- A Figura 
+ 
+\end_layout
+
+\begin_layout Standard
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Matriz-de-sustentabilidade-Maximos"
+reference "fig:Matriz-de-sustentabilidade-Minimos"
 
 \end_inset
 
@@ -413,8 +417,8 @@ reference "fig:Matriz-de-sustentabilidade-Maximos"
 status open
 
 \begin_layout Plain Layout
-Isso é um exemplo de minimo? Ou todos os minimos deram assim? Ou foi feito
- só um teste?
+(corrigido)Isso é um exemplo de minimo? Ou todos os minimos deram assim?
+ Ou foi feito só um teste?
 \end_layout
 
 \end_inset
@@ -434,7 +438,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/Minimum.png
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -448,7 +452,7 @@ status open
 Matriz de Sustentabilidade com valores mínimos.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Matriz-de-sustentabilidade-Maximos"
+name "fig:Matriz-de-sustentabilidade-Minimos"
 
 \end_inset
 
@@ -470,17 +474,26 @@ name "fig:Matriz-de-sustentabilidade-Maximos"
 \end_layout
 
 \begin_layout Standard
-Um dos aspectos importantes da ferramenta, é que ela permite que os próprios
- especialistas mudem, em tempo real, as fórmulas do método de avaliação,
- permitindo fazer ajustes finos no método.
- Essa funcionalidade permitiu descobrir e avaliar rapidamente um problema
- do método original: a integração de uma operação de valor de um valor absoluto
- na fórmula
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Nao entendi
+Um dos aspectos mais importantes da ferramenta, é que ela permite que os
+ próprios especialistas mudem, em tempo real, as fórmulas do método de avaliação
+, permitindo fazer ajustes finos no método.
+\end_layout
+
+\end_inset
+
+ Durante a realização dos testes foi descoberto um problema na formula do
+ método SustenAgro original, e a avaliação efetuada permitiu contribuir
+ na redefinição da formula de avaliação, por meio da integração de uma operação
+ de valor de um valor absoluto na fórmula
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(corrigido)Nao entendi
 \end_layout
 
 \end_inset
@@ -1195,11 +1208,18 @@ As interações com o sistema foram filmadas enquanto os usuários executavam
  uma lista de tarefas.
  Monitores do ICMC ficavam estimulando os usuários a falar o que estavam
  pensando (técnica Think Aloud 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "davey1983think"
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-ref
+(corrigido)ref
 \end_layout
 
 \end_inset
@@ -1291,12 +1311,12 @@ Local Embrapa Meio Ambiente - Campinas
 \end_layout
 
 \begin_layout Description
-Técnica Teste de usabilidade
+Técnica Teste de integração
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Nao parece ser um teste de usabilidade
+(corrigido)Nao parece ser um teste de usabilidade
 \end_layout
 
 \end_inset

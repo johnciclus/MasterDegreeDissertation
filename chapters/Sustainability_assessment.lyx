@@ -798,6 +798,135 @@ Formula de eficiência produtiva e de costo:
 
 \end_layout
 
+\begin_layout Standard
+Segundo a metodologia de avaliação caso a caso: os usuário poderão selecionar
+ quais indicadores vai utilizar, podendo recomendar limiares mais adequados
+ para a realidade dele e também inserir novos indicadores/limiares.
+ 
+\end_layout
+
+\begin_layout Standard
+A partir dos resultados da aplicação das formulas de avaliação será possível
+ identificar os indicadores com baixa qualificação e gerar recomendações.
+\end_layout
+
+\begin_layout Standard
+A Finalmente, o usuário deverá ser informado da importância dos processos
+ de avaliação, exemplo dados pelos especialistas (não tem referências porque
+ só são exemplos): 
+\end_layout
+
+\begin_layout Itemize
+“A crescente demanda de países desenvolvidos por produtos com garantia de
+ origem tem induzido aumento das certificações nas usinas no Brasil (ALVES
+ et al., 2008)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(só exemplos)Coloque como Ref
+\end_layout
+
+\end_inset
+
+.” 
+\end_layout
+
+\begin_layout Itemize
+“A certificação tem sido uma importante forma de diferenciação de commodities
+ agrícolas, facilitando seu acesso aos mercados protegidos dos países desenvolvi
+dos.” 
+\end_layout
+
+\begin_layout Itemize
+“A caracterização climática, aliada aos detalhes de fertilidade e manejo
+ do solo (quantificação edafoclimática), são essenciais para a determinação
+ das regiões aptas ao cultivo de culturas de interesse comercial (CIIAGRO,
+ 2009)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Coloque como Ref
+\end_layout
+
+\end_inset
+
+.”
+\end_layout
+
+\begin_layout Standard
+Depois do ingresso da informação sobre os indicadores, o usuário receberá
+ recomendações classificadas sobre práticas de sustentabilidade recomendadas
+ com sua argumentação, exemplos (não tem referências) : 
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) “O sistema de plantio direto da cana-de-açúcar sobre leguminosas
+ proporciona maiores teores foliares de N e K na cana do que o plantio convencio
+nal (JÚNIOR; COELHO, 2008)”.
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) “Segundo Leme (2005), haveria redução de 36% na emissão de gases
+ do efeito estufa (GEE) se a palha fosse queimada nas caldeiras das usinas
+ e destilarias, ao invés de ser queimada no campo”.
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) “A queima da cana aumenta a erosão do solo e a poluição do ar
+ e reduz a qualidade da matéria-prima (LINS; SAAVEDR, 2007)”.
+ 
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) “Quando a cana não é queimada, proliferam, nos canaviais, roedores
+ silvestres originários de fragmentos florestais.
+ Esses roedores podem transmitir o Hantavírus através da urina e contaminar
+ cortadores de cana, causando uma síndrome respiratória e cardíaca, a pneumocito
+se, podendo levar à morte”.
+ 
+\end_layout
+
+\begin_layout Itemize
+(Ambiental) “Quando não há queima da cana é comum, também, o aumento do
+ ataque de cigarrinhas, com perdas significativas de produção (ANDRADE;
+ DINIZ, 2007)”.
+ 
+\end_layout
+
+\begin_layout Itemize
+(Econômico) “A utilização das colheitadeiras reverte-se em aumento da produtivid
+ade e da qualidade da matéria-prima, bem como em diminuição dos custos da
+ produção agrícola, que representam entre 50% e 60% em relação ao custo
+ total (SCOPINHO, 1995)”.
+\end_layout
+
+\begin_layout Itemize
+(Econômico e Social) “A utilização das colheitadeiras em cooperativa possibilita
+ a soma das áreas de produtores próximos possibilitando a mecanização em
+ propriedades com restrição para mecanização”.
+\end_layout
+
+\begin_layout Itemize
+(Econômico) “Restrições físicas da propriedade (menos de 500 ha de área
+ com declividade inferior a 12% e talhões menores que 800 metros) dificultam
+ a mecanização”.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(isso foi gerado pela Katia) Não vejo essas histórias como User Stories,
+ talvez seja melhor deixa-las no anexo já que pouco delas parece ter sido
+ usado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Matriz de sustentabilidade
 \end_layout
