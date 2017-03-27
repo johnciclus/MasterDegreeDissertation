@@ -695,15 +695,7 @@ a-avaliacao-de-impactos-das-nanotecnologias-metodo-e-software-impactos-nanotec
 
 \begin_layout Enumerate
 Sistema GMP-RAM v.1.1: avaliação de Risco de Plantas Geneticamente Modificadas
- (GMP 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GMP"
-description "Genetically Modified Plants"
-
-\end_inset
-
-)
+ (GMP )
 \begin_inset Foot
 status open
 
