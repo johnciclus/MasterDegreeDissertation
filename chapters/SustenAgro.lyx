@@ -76,17 +76,7 @@
 
 \begin_layout Standard
 O Framework Decisioner organiza e gerencia os componentes gerais dos SADs
- de avaliação
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(Sim, falo no capitulo SAD) Voce fala em SADs de avaliacao antes daqui?
-\end_layout
-
-\end_inset
-
-.
+ de avaliação.
  Cada SAD tem particularidades que precisam ser definidas e ajustadas para
  configurar suas funcionalidades.
  As ontologias específicas do domínio e as DSL, explicadas nos capítulos
@@ -123,116 +113,6 @@ O SAD SustenAgro serviu de base para modelar e desenvolver os componentes
  Para simplificar o texto e facilitar o entendimento de como o framework
  Decisioner é usado para instanciar um SAD, as diversas versões do framework
  não serão discutidas.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-O SAD SustenAgro permitiu modelar e desenvolver os componentes que fazem
- parte do Decisioner, devido ao fato de ter sido o primeiro caso de uso.
- A continuação são apresentados os componentes do SAD por meio da arquitetura
- representada na figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Architecture"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro Architecture final.png
-	width 70col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Arquitetura de SustenAgro 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Architecture"
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Enumerate
-Ontologia do domínio: ontologia que representa os conceitos do domínio,
- avaliação da sustentabilidade do sistema produtivo de cana-de-açúcar, ela
- é a base para o sistema SustenAgro porque permite estabelecer os conceitos
- fundamentais que são utilizados pelo sistema, entre eles: indicadores,
- componentes de indicadores, índices, dimensões da sustentabilidade, recomendaçõ
-es e o método de avaliação.
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Web components
-\lang brazilian
-: são um padrão para definição e gerenciamento de 
-\lang english
-widgets
-\lang brazilian
- (elementos da 
-\lang english
-UI
-\lang brazilian
-) reusáveis na web, fornecendo um modelo que permite encapsulamento e interopera
-bilidade dos componentes.
-\end_layout
-
-\begin_layout Enumerate
-DSL: linguagem especifica do domínio para complementar os conceitos das
- ontologias permitindo definir o objeto de avaliação, os método de avaliação
- e vincular os 
-\lang english
-web components
-\lang brazilian
- para gerar o SAD por meio do framework Decisioner, fornecendo uma linguagem
- especifica para definir 
-\lang english
-SADs
-\lang brazilian
- para os especialistas do domínio.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -333,7 +213,7 @@ http://cmap.ihmc.us/
 
 , com a participação de um grupo de especialistas em modelagem de conhecimento.
  Esse processo começou em uma reunião da equipe na Embrapa Informática Agropecuá
-ria (situada situada na Universidade Estadual de Campinas, UNICAMP).
+ria (situada na Universidade Estadual de Campinas, UNICAMP).
  Nessa reunião, um especialista em desenvolvimento de ontologias da Embrapa
  forneceu treinamento sobre a metodologia para definir ontologias, desenvolvimen
 to de mapas conceituais, com os principais conceitos, e desenvolvimento
@@ -341,18 +221,7 @@ to de mapas conceituais, com os principais conceitos, e desenvolvimento
 \lang english
 OWL,
 \lang brazilian
- para tornar esse conehcimento computável
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Esse foi seu treinamento com o Ivo que durou uma semana? Se sim, diga que
- durou uma semana.
-\end_layout
-
-\end_inset
-
-.
+ para tornar esse conhecimento computável.
 \end_layout
 
 \begin_layout Standard
@@ -361,16 +230,6 @@ Após realizada a modelagem, o especialista do domínio definiu perguntas
  definiram consultas que o sistema deveria responder segundo os resultados
  esperados, conseguindo validar e ajustar o modelo até ter um protótipo
  confiável.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) Verifique quem sao os modeladores?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -471,32 +330,13 @@ Web Components
 \lang english
 Web UI
 \lang brazilian
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Verifique como vc está colocando esses termos.
-\end_layout
-
-\end_inset
-
  tiveram um enfoque baseado em 
 \lang english
 User Centered Design
 \lang brazilian
 .
- A avaliação dessas duas interfaces foi realizada integradamente 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) que 2 elementos, nao entendi.
-\end_layout
-
-\end_inset
-
-para validar se os requisitos identificados.
+ A avaliação dessas duas interfaces foi realizada integradamente para validar
+ os requisitos identificados.
  
 \end_layout
 
@@ -619,23 +459,12 @@ key "oliveira:2013"
 
 \begin_layout Standard
 Deve-se destacar que a ontologia SustenAgro abrange um domínio bem específico:
- sustentabilidade de sistemas produtivos de cana-de-açucar na região centro-sul
+ sustentabilidade de sistemas produtivos de cana-de-açúcar na região centro-sul
  do Brasil.
  Acreditamos que essa é uma característica deste tipo de SAD.
  Modelamentos desse tipo tendem a ser específicos.
- No caso do Sustenagro, ele abrange apenas um só sistema produtivo em uma
+ No caso do SustenAgro, ele abrange apenas um só sistema produtivo em uma
  região específica.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(Não tem artigos publicados sobre isso, só a dissertação do Bruno) Será
- que a Katia nao arranja uma Ref para essas afirmacoes?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -762,26 +591,7 @@ Triplestores
 \lang brazilian
  suportam a realização de consultas complexas para permitir a resposta a
  perguntas de interesse aos usuários do sistema.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Voce fala que foi usado o YAML mais para frente?
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido)daqui em diante nao entendi.
-\end_layout
-
-\end_inset
-
- Esta caraterística permite a recuperação da informação com significado
+ Essa caraterística permite a recuperação da informação com significado
  semântico, permitindo que os sistemas deem respostas às consultas complexas
  de interesse.
  Também o RDF suporta a integração de conhecimento externo existente em
@@ -793,7 +603,7 @@ thesaurus
  e redes semânticas, o que permite aumentar as possibilidades de desenvolvimento
  de novas funcionalidades
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 (corrigido) Não entendi o paragrafo
@@ -858,35 +668,7 @@ Data Properties
 \shape default
 \lang brazilian
  que permitem vincular semanticamente as instâncias das classes.
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Os 
-\shape italic
-\lang english
-Data/Object Properties
-\shape default
-\lang brazilian
- precisam ter definida a propriedade 
-\shape italic
-\lang english
-rdfs:range
-\lang brazilian
- 
-\shape default
-se for necessária a validação dos dados vinculados e ditas propriedades
- podem ser 
-\lang english
-Functional
-\lang brazilian
- para garantir uma relação de um a um.
-\end_layout
-
-\end_inset
-
-A principal contribuição da ontologia do domínio é ser uma representação
+ A principal contribuição da ontologia do domínio é ser uma representação
  semântica do conhecimento de domínio, tanto para os usuários como para
  o sistema computacional, tornando-se um meio de comunicação entre os especialis
 tas de domínio e os programadores.
