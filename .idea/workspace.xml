@@ -2,60 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef0b901e-39f9-4b04-80bd-9ccd21e6ec91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Forms.tex" afterPath="$PROJECT_DIR$/chapters/Forms.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-semaphore.png" afterPath="$PROJECT_DIR$/figures/SustenAgro-semaphore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Dedicatory.doc" afterPath="$PROJECT_DIR$/pages/Dedicatory.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Dedicatory.pdf" afterPath="$PROJECT_DIR$/pages/Dedicatory.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/datasheet.pdf" afterPath="$PROJECT_DIR$/pages/datasheet.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dissertation.lyx" afterPath="$PROJECT_DIR$/Dissertation.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dissertation.tex" afterPath="$PROJECT_DIR$/Dissertation.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Abstract_EN.lyx" afterPath="$PROJECT_DIR$/chapters/Abstract_EN.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Abstract_EN.tex" afterPath="$PROJECT_DIR$/chapters/Abstract_EN.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Abstract_PT.lyx" afterPath="$PROJECT_DIR$/chapters/Abstract_PT.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Abstract_PT.tex" afterPath="$PROJECT_DIR$/chapters/Abstract_PT.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Conclution.tex" afterPath="$PROJECT_DIR$/chapters/Conclution.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Decisioner.tex" afterPath="$PROJECT_DIR$/chapters/Decisioner.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Evaluation.tex" afterPath="$PROJECT_DIR$/chapters/Evaluation.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Forms.lyx" afterPath="$PROJECT_DIR$/chapters/Forms.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Instalation.tex" afterPath="$PROJECT_DIR$/chapters/Instalation.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Introduction.tex" afterPath="$PROJECT_DIR$/chapters/Introduction.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Decisioner.lyx" afterPath="$PROJECT_DIR$/chapters/Decisioner.lyx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Introduction.lyx" afterPath="$PROJECT_DIR$/chapters/Introduction.lyx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SAD.lyx" afterPath="$PROJECT_DIR$/chapters/SAD.lyx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SAD.tex" afterPath="$PROJECT_DIR$/chapters/SAD.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SemanticWebAndDSLs.tex" afterPath="$PROJECT_DIR$/chapters/SemanticWebAndDSLs.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Sustainability_assessment.tex" afterPath="$PROJECT_DIR$/chapters/Sustainability_assessment.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/Sustainability_indicators.tex" afterPath="$PROJECT_DIR$/chapters/Sustainability_indicators.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SustenAgro.tex" afterPath="$PROJECT_DIR$/chapters/SustenAgro.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/DSS ontology.eps" afterPath="$PROJECT_DIR$/figures/DSS ontology.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Decisioner Architecture.eps" afterPath="$PROJECT_DIR$/figures/Decisioner Architecture.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Decisioner Core Architecture.eps" afterPath="$PROJECT_DIR$/figures/Decisioner Core Architecture.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Decisioner Methodology.eps" afterPath="$PROJECT_DIR$/figures/Decisioner Methodology.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Indicador.eps" afterPath="$PROJECT_DIR$/figures/Indicador.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/IndicatorSelection.eps" afterPath="$PROJECT_DIR$/figures/IndicatorSelection.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Microregion.eps" afterPath="$PROJECT_DIR$/figures/Microregion.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Minimum.eps" afterPath="$PROJECT_DIR$/figures/Minimum.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Mockup Main.eps" afterPath="$PROJECT_DIR$/figures/Mockup Main.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Ontology Methodology.eps" afterPath="$PROJECT_DIR$/figures/Ontology Methodology.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/ProductionUnit.eps" afterPath="$PROJECT_DIR$/figures/ProductionUnit.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Semantic Web History.eps" afterPath="$PROJECT_DIR$/figures/Semantic Web History.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Stroyboard 1.eps" afterPath="$PROJECT_DIR$/figures/Stroyboard 1.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Stroyboard 2.eps" afterPath="$PROJECT_DIR$/figures/Stroyboard 2.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Stroyboard 3.eps" afterPath="$PROJECT_DIR$/figures/Stroyboard 3.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Stroyboard 4.eps" afterPath="$PROJECT_DIR$/figures/Stroyboard 4.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Stroyboard 5.eps" afterPath="$PROJECT_DIR$/figures/Stroyboard 5.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Stroyboard 6.eps" afterPath="$PROJECT_DIR$/figures/Stroyboard 6.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustaiabilityMatrixDesign.eps" afterPath="$PROJECT_DIR$/figures/SustaiabilityMatrixDesign.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro Initial Architecture.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro Initial Architecture.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-dsl-editor-2.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro-dsl-editor-2.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-matrix.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro-matrix.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-ontology-editor.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro-ontology-editor.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-results.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro-results.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-scenario.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro-scenario.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-semaphore.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro-semaphore.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/SustenAgro-tool.eps" afterPath="$PROJECT_DIR$/figures/SustenAgro-tool.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Tool_environmental_indicators.eps" afterPath="$PROJECT_DIR$/figures/Tool_environmental_indicators.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/Value.eps" afterPath="$PROJECT_DIR$/figures/Value.eps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figures/home.eps" afterPath="$PROJECT_DIR$/figures/home.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapters/SemanticWebAndDSLs.lyx" afterPath="$PROJECT_DIR$/chapters/SemanticWebAndDSLs.lyx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -260,12 +210,12 @@
       <workItem from="1490435997920" duration="7000" />
       <workItem from="1490436033777" duration="37000" />
       <workItem from="1490485610313" duration="84000" />
-      <workItem from="1490625459149" duration="104000" />
+      <workItem from="1490625459149" duration="240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6367000" />
+    <option name="totallyTimeSpent" value="6503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="910" height="1053" extended-state="4" />
