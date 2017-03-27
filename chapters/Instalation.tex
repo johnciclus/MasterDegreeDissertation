@@ -1,30 +1,34 @@
 A instalação dos Sistemas Decisioner e SustenAgro divide-se em dois
 processos, a configuração do servidor web e o \foreignlanguage{english}{deploy}
-do arquivo \foreignlanguage{english}{Web Application Archive (WAR\nomenclature{WAR}{Web Application Archive})},
-a continuação são descritos ambos processos:
+do arquivo \foreignlanguage{english}{Web Application Archive (WAR\nomenclature{WAR}{Web Application Archive})}.
+A continuação são descritos ambos processos:
 
 \section{Configuração do servidor.}
 
 Esta fase do processo consiste em instalar as tecnologias Java, Apache
 \foreignlanguage{english}{Tomcat}, \foreignlanguage{english}{WkHtmltoPdf}
 e a \foreignlanguage{english}{triplestore} \foreignlanguage{english}{Blazegraph},
-em um servidor baseado em \foreignlanguage{english}{linux}, atualmente
-o sistema foi configurado e testado em uma maquina virtual com Ubuntu
+em um servidor baseado em \foreignlanguage{english}{linux}. Atualmente
+o sistema foi configurado e testado em uma máquina virtual com Ubuntu
 14.04, Java \foreignlanguage{english}{OpenJDK} 8, Apache \foreignlanguage{english}{Tomcat},
 \foreignlanguage{english}{WkHtmltoPdf} 0.12.3 e a \foreignlanguage{english}{triplestore}
-\foreignlanguage{english}{Blazegraph} 2.1.0, a instalação destas tecnologias
-segue uma orientação padrão que sera descrita a continuação:
+\foreignlanguage{english}{Blazegraph} 2.1.0. A instalação destas tecnologias
+segue uma orientação padrão que será descrita a continuação:
 
 \subsection*{Instalação do Java:}
 
 Segundo a documentação de Java \foreignlanguage{english}{OpenJDK},
-a instalação é realizada por meio do comando:
+a instalação é realizada pelo comando:
 
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 sudo apt-get update
 sudo apt-get install openjdk-8-jre
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Instalação do Java}
+\end{algorithm}
+
 
 \subsection*{Instalação do \foreignlanguage{english}{Apache Tomcat}}
 
@@ -39,8 +43,9 @@ dos arquivos \foreignlanguage{english}{WAR}.
 O processo de instalação consiste em fazer download dos arquivos binários,
 extrair eles em \foreignlanguage{english}{/opt/tomcat/}, exportar
 as variáveis de entorno e executar o \foreignlanguage{english}{Web
-Server}, o código é mostrado a continuação:
+Server}, com código:
 
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 wget http://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.70/bin/
 apache-tomcat-7.0.70.tar.gz
@@ -50,41 +55,57 @@ tar xvzf apache-tomcat-7.0.70.tar.gz -C /opt/tomcat
 sudo /opt/tomcat/bin/startup.sh
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Instalação do \foreignlanguage{english}{Apache Tomcat}}
+\end{algorithm}
+
 Configurar \foreignlanguage{english}{users} de \foreignlanguage{english}{Tomcat}
 em: \foreignlanguage{english}{/opt/tomcat/conf/tomcat-users.xml }e
 acrescentar os Rol e \foreignlanguage{english}{User}
 
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 <role rolename="manager-gui"/> 
 <user username="admin" password="s3cr3t" roles="manager-gui"/>
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Configuração dos Users}
+\end{algorithm}
+
 Depois disso, é registrado no final do arquivo \textasciitilde{}/.bashrc
 os próximos dois comandos que definem as variáveis de entorno
 
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64 
 export CATALINA_HOME=/opt/tomcat
 \end{lstlisting}
 \inputencoding{utf8}
-Finalmente executar o comando 
+\caption{Exportar variáveis de entorno}
+\end{algorithm}
 
+Finalmente executar o comando, e verificar a execução do programa
+na URL /manager do domínio do servidor
+
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 sudo /opt/tomcat/bin/startup.sh
 \end{lstlisting}
 \inputencoding{utf8}
-e verificar a execução do programa na url /manager do domínio do servidor
+\caption{Iniciar o servidor}
+\end{algorithm}
+
 
 \subsection*{Instalação do \foreignlanguage{english}{WkHtmltoPdf}}
 
 A tecnologia \foreignlanguage{english}{WkHtmltoPdf} permite converter
-paginas web em formato \foreignlanguage{english}{HTML} a \foreignlanguage{english}{Portable
+páginas web em formato \foreignlanguage{english}{HTML} a \foreignlanguage{english}{Portable
 Document Format (PDF}\nomenclature{PDF}{Portable Document Format}),
-esta ferramenta suporta a funcionalidade de gerar os reportes em formato
-PDF, a instalação consistem em fazer download dos arquivos binários
-e a configuração de um X Server Virual para suportar o renderizado,
-os comandos são mostrados a continuação:
+suportando a funcionalidade de gerar os reportes em formato PDF. A
+instalação consiste em fazer download dos arquivos binários e a configuração
+de um X Server Virual para suportar o renderizado, os comandos são
+mostrados a continuação:
 
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 wget http://download.gna.org/wkhtmltopdf/0.12/0.12.3/
 wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
@@ -98,17 +119,24 @@ sudo chmod a+x /usr/local/bin/wkhtmltopdf
 sudo apt-get install openssl build-essential xorg libssl-dev
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Instalação do wkhtmltopdf }
+\end{algorithm}
+
 Depois disto é criado um \foreignlanguage{english}{script wkhtmltopdf.sh}
-em \foreignlanguage{english}{/usr/local/bin/} e contem o seguinte
+em \foreignlanguage{english}{/usr/local/bin/} e contém o seguinte
 comando:
 
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 xvfb-run -a -s "-screen 0 640x480x16" wkhtmltopdf "$@"
 sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh 
 \end{lstlisting}
 \inputencoding{utf8}
-Com o comando \foreignlanguage{english}{wkhtmltopdf.sh} é possível
-converter a \foreignlanguage{english}{PDF} desde um sistema sem X11
+\caption{Execução do wkhtmltopdf}
+\end{algorithm}
+
+O comando \foreignlanguage{english}{wkhtmltopdf.sh} é possível converter
+a \foreignlanguage{english}{PDF} desde um sistema sem X11
 
 \subsubsection*{Instalação da \foreignlanguage{english}{Triplestore Blazegraph}}
 
@@ -116,6 +144,7 @@ A instalação do \foreignlanguage{english}{Blazegraph} consiste em
 fazer download do arquivo binário e executar com o arquivo de configuração
 RWStore2.properties o serviço de \foreignlanguage{english}{triplestore}.
 
+\begin{algorithm}[h]
 \inputencoding{latin9}\begin{lstlisting}
 wget https://sourceforge.net/projects/bigdata/files/bigdata/
 2.1.1/blazegraph.jar
@@ -127,6 +156,9 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 -jar blazegraph.jar
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Instalação do \foreignlanguage{english}{Blazegraph}}
+\end{algorithm}
+
 \selectlanguage{english}%
 
 \section{Deploy\foreignlanguage{brazil}{ do arquivo }WAR}
@@ -139,8 +171,12 @@ ao servidor Apache Tomcat para fazer o \foreignlanguage{english}{deploy}
 no \foreignlanguage{english}{path} ``/'', e finalmente reiniciar
 o \foreignlanguage{english}{Tomcat}.
 
+\begin{algorithm}[H]
 \inputencoding{latin9}\begin{lstlisting}
 wget https://dl.dropboxusercontent.com/u/24827919/
 SustenAgro/sustenagro-1.0.war
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Execução do sustenagro}
+\end{algorithm}
+

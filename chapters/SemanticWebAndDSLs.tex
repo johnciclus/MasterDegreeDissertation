@@ -1,13 +1,13 @@
 Ontologias da web semântica e \foreignlanguage{english}{DSLs} têm
 um papel fundamental na criação de um meio de descrição de conhecimento
-por parte dos especialistas e no design de um framework para criação
-de SADs. 
+por parte dos especialistas e portanto suportar o design  de SADs
+baseados em conhecimento. 
 
 Ontologias servem para representar o conhecimento de especialistas
 do domínio e DSLs servem para customizar o comportamento dos SADs.
-Estas apareceram originalmente no contexto da filosofia, onde se referem
-ao estudo da natureza, existência e realidade dos entes. Elas são
-usadas em vários campos do conhecimento. Neste projeto, ontologias
+As ontologias apareceram originalmente no contexto da filosofia, onde
+se referem ao estudo da natureza, existência e realidade dos entes.
+Elas são usadas em vários campos do conhecimento. Neste projeto, ontologias
 referem-se a representações de conhecimento, que precisam ser implementadas
 em código. As implementações de software podem trabalhar com ontologias
 da Web Semântica que fornecem a criação, armazenamento, busca e modificação
@@ -16,7 +16,7 @@ de ontologias, seguindo padrões de formatos abertos.
 Neste capítulo, vamos apresentar e discutir as ontologias da web semântica
 e as DSLs. Descrevendo a teoria da Web Semântica: fundamentos, Ontologias,
 o \foreignlanguage{english}{Resource Description Framework (RDF}\nomenclature{RDF}{Resource Description Framework})
-e a \foreignlanguage{english}{Web Ontology Language} (\foreignlanguage{english}{OWL}).
+e a \foreignlanguage{english}{Web Ontology Language} (\foreignlanguage{english}{OWL}\nomenclature{OWL}{Web Ontology Language}).
 Finalmente serão abordadas as \foreignlanguage{english}{Domain Specific
 Languages (DSLs}) que são linguagens que permitem definir um meio
 de comunicação entre os especialistas e o sistema desenvolvido.
@@ -93,11 +93,11 @@ texto com fines de processamento computacional.}
 \item [{URI}] \foreignlanguage{brazil}{permite identificar os recursos
 disponíveis na Web por meio de uma }String\foreignlanguage{brazil}{
 única.}
-\item [{XML}] \foreignlanguage{brazil}{representa os dados de maneira sintática,
-através da definição de }markups\foreignlanguage{brazil}{ que codificam
-documentos em formatos preestabelecidos. Ela permite que informações
-sejam legíveis tanto por humanos como por computadores, suportando
-as camadas superiores na arquitetura.}
+\item [{XML\foreignlanguage{brazil}{\nomenclature{XML}{Extensible Markup Language}}}] \foreignlanguage{brazil}{representa
+os dados de maneira sintática, através da definição de }markups\foreignlanguage{brazil}{
+que codificam documentos em formatos preestabelecidos. Ela permite
+que informações sejam legíveis tanto por humanos como por computadores,
+suportando as camadas superiores na arquitetura.}
 \item [{RDF}] \foreignlanguage{brazil}{é um modelo padrão para intercambiar
 dados na web. }RDF\foreignlanguage{brazil}{ tem características que
 permitem a integração de dados inclusive de esquemas diferentes, e
@@ -175,8 +175,11 @@ mostra os níveis de representação de dados na forma de conhecimento
 processável por máquinas.
 
 \begin{figure}[H]
-\centering{}\includegraphics[width=0.6\columnwidth]{\string"figures/smart data\string".eps}\caption{\foreignlanguage{english}{Smart data continuum\foreignlanguage{brazil}{: níveis de representação
+\begin{centering}
+\includegraphics[width=0.6\columnwidth]{\string"figures/smart data\string".eps}\caption{\foreignlanguage{english}{Smart data continuum\foreignlanguage{brazil}{: níveis de representação
 de dados na forma de conhecimento processável por máquinas.\label{fig:Smart-data-continuum}}}}
+\par\end{centering}
+\fadaptada{allemang2011semantic}
 \end{figure}
 
 O nível mais baixo de representação começa com os dados sem nenhum
@@ -188,7 +191,7 @@ fora do domínio. No terceiro nível, os dados podem ser combinados
 a partir de diferentes domínios, sendo suficientemente independentes
 para serem recuperados e combinados com outras fontes de dados. Finalmente
 no quarto nível, é possível inferir novos dados a partir dos existentes
-e compartilha-los entre aplicações sem requerer interferência humana
+e compartilhá-los entre aplicações sem requerer interferência humana
 \citep{sugumaran2011}.
 \selectlanguage{english}%
 
@@ -233,7 +236,7 @@ com outros objetos, são necessárias ontologias descritas no padrão
 \foreignlanguage{english}{OWL}. 
 \selectlanguage{english}%
 
-\subsection*{SPARQL Protocol and RDF Query Language (SPARQL\nomenclature{Sparql}{SPARQL Protocol and RDF Query Language})}
+\subsection*{SPARQL Protocol and RDF Query Language (SPARQL\nomenclature{SPARQL}{SPARQL Protocol and RDF Query Language})}
 
 SPARQL\foreignlanguage{brazil}{ é uma linguagem de consulta semântica
 usada por bancos de armazenamento e recuperação de dados de dados
@@ -275,8 +278,10 @@ de aplicação:
 \includegraphics[width=0.6\columnwidth]{figures/owl2Profiles}
 \par\end{centering}
 \caption{OWL2 Profiles.\label{fig:OWL2-Profiles}}
-\end{figure}
 
+Figura original da W3C \url{https://www.w3.org/People/Sandro/owl2-profiles-doc}
+\end{figure}
+ 
 \selectlanguage{english}%
 \begin{description}
 \item [{Full}] \foreignlanguage{brazil}{O perfil }OWL Full\foreignlanguage{brazil}{
@@ -347,7 +352,7 @@ diferentes tipos de }plug-ins.
 
 \selectlanguage{english}%
 
-\subsection*{Triplestore\label{subsec:Triplestore}}
+\subsection*{Triplestore \label{subsec:Triplestore}}
 
 \selectlanguage{brazil}%
 Uma \foreignlanguage{english}{triplestore} é um tipo de banco de dados
@@ -394,9 +399,9 @@ triples/quads (RWStore)
 Para desenvolver os sistemas software da presente pesquisa foram usadas
 tecnologias da web semântica. Primeiramente foram desenhadas as ontologias
 em formato \foreignlanguage{english}{OWL} na ferramenta Protégé, depois
-instanciadas em \foreignlanguage{english}{triplestores} e finalmente
-integradas no framework Decisioner que está implementado sobre o banco
-de dados baseado em grafos \foreignlanguage{english}{Blazegraph} .
+instanciadas exportadas a RDF e finalmente integradas no framework
+Decisioner que está implementado sobre o banco de dados baseado em
+grafos \foreignlanguage{english}{Blazegraph} .
 
 \selectlanguage{english}%
 Blazegraph\foreignlanguage{brazil}{ permitiu instanciar as ontologias
@@ -447,7 +452,7 @@ exemplo delas é a }Hypertext Markup Language (HTML),\foreignlanguage{brazil}{
 que permite anotar dados no domínio das páginas web.}
 \item Domain-Specific Modeling Languages (specification languages):\foreignlanguage{brazil}{
 são linguagens que permitem especificar sistemas com o propósito de
-modelar eles, são compostos de uma estrutura consistente de um conjunto
+modelá-los, são compostos de uma estrutura consistente de um conjunto
 de regras que permitem interpretar o significado dos componentes modelados.
 Uma linguagem deste tipo é a }Unified Modeling Language\foreignlanguage{brazil}{
 (}UML\nomenclature{UML}{Unified Modeling Language }\foreignlanguage{brazil}{)
@@ -515,7 +520,8 @@ da Web Semântica. Isso inclui bibliotecas como a \foreignlanguage{english}{OWL
 API}, para trabalhar com ontologias em \foreignlanguage{english}{OWL},
 Apache \foreignlanguage{english}{Jena}, para acesso a \foreignlanguage{english}{triplestores},
 entre outras. Finalmente, os SADs a serem criados serão aplicativos
-web, Groovy tem um web framework completo e madurecido, Grails\foreignlanguage{english}{}\footnote{\selectlanguage{english}%
+web, Groovy tem um web framework completo e madurecido, Grails\foreignlanguage{english}{
+}\footnote{\selectlanguage{english}%
 \url{https://grails.org/}\selectlanguage{brazil}%
 }. 
 
@@ -527,15 +533,14 @@ e programação assíncrona \citep{smith2009grails}.
 
 \subsection*{Discussão}
 
-A partir do análise dos especialistas do domínio foi determinado que
-não têm um conhecimento detalhado sobre modelagem de conhecimento
-usando os padrões da web semântica, descritos neste capítulo. 
-
-Também foi determinado que as ontologias permitem uma definição detalhada
-do conhecimento do domínio, pelo que foi necessário definir uma camada
-intermédia que facilitasse a definição do conhecimento por parte dos
-especialistas. Por isso foi identificado a necessidade de uma DSL
-adequada ao nível de conhecimento de computação dos especialistas,
+A partir do análise dos conceitos e tecnologias descritas neste capítulo,
+foi determinado que os especialistas do domínio não têm um conhecimento
+detalhado sobre modelagem de conhecimento usando os padrões da web
+semântica. Também foi determinado que as ontologias permitem uma definição
+detalhada do conhecimento do domínio, pelo que foi necessário definir
+uma camada intermédia que facilitasse a definição do conhecimento
+por parte dos especialistas. Por isso foi justificado o requisito
+de uma DSL adequada ao nível de conhecimento de computação dos especialistas,
 e que contenha termos familiares ao domínio desses especialistas. 
 
 Uma DSL de tipo \foreignlanguage{english}{programming} pode suportar

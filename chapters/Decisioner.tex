@@ -47,7 +47,7 @@ editores de ontologias e DSL. Usuários finais interagem através da
 sua interface Web.
 
 \begin{figure}[H]
-\centering{}\includegraphics[width=0.8\columnwidth]{\string"figures/Decisioner Architecture\string".eps}\caption{Arquitetura do Decisioner\label{fig:Interfaces}}
+\centering{}\includegraphics[width=0.9\columnwidth]{\string"figures/Decisioner Architecture\string".eps}\caption{Arquitetura do Decisioner\label{fig:Interfaces}}
 \end{figure}
 
 Os componentes dessa arquitetura são:
@@ -66,7 +66,7 @@ e recuperação da informação em formato de triplas }RDF\foreignlanguage{brazi
 (explicado em detalhe na seção \ref{subsec:Triplestore}). Ele permite
 o gerenciamento de dados e ontologias em formato }RDF.\foreignlanguage{brazil}{
 A traves da linguagem padrão }SPARQL Protocol and RDF Query Language
-(Sparql)\foreignlanguage{brazil}{\citep{prud2006sparql}. }
+(Sparql)\foreignlanguage{brazil}{ \citep{prud2006sparql}. }
 \item \textbf{DSL code}\foreignlanguage{brazil}{: representa uma instancia
 da DSL com as definições particulares para um SAD específico.}
 \selectlanguage{brazil}%
@@ -143,7 +143,7 @@ representa a metodologia realizada.
 
 \begin{figure}
 \begin{centering}
-\includegraphics[width=0.8\columnwidth]{\string"figures/Decisioner Methodology\string".eps}
+\includegraphics[width=0.9\columnwidth]{\string"figures/Decisioner Methodology\string".eps}
 \par\end{centering}
 \caption{Metodologia de desenvolvimento do Decisioner\label{fig:Metodologia-do-Decisioner}}
 
@@ -240,14 +240,6 @@ propriedades e indivíduos hierarquicamente (permitindo a referenciação
 dos elementos no código), um \foreignlanguage{english}{button restore}
 para restituir a ultima versão da ontologia e um \foreignlanguage{english}{button
 save} para salvar e carregar no Decisioner a ontologia em edição.
-\begin{flushleft}
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=1\columnwidth]{figures/SustenAgro-ontology-editor}
-\par\end{centering}
-\caption{Editor de ontologia\label{fig:Editor-de-ontologia} }
-\end{figure}
-\par\end{flushleft}
 
 Idealmente, especialistas de domínio deveriam poder criar a ontologia
 usando um editor gráfico. Mas devido as restrições de escopo de um
@@ -266,7 +258,18 @@ panel}) e permite a inserção da ontologia no Decisioner. Apesar de
 ser possível aos especialistas desenvolver uma ontologia totalmente
 nova, usando o editor, seu objetivo é permitir que eles possam fazer
 modificações localizadas nas ontologias. 
+\begin{flushleft}
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\columnwidth]{figures/SustenAgro-ontology-editor}
+\par\end{centering}
+\caption{Editor de ontologia\label{fig:Editor-de-ontologia} }
+\end{figure}
+\par\end{flushleft}
 
+A ontologia definida em este editor será usada para definir a estrutura
+dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
+a continuação. 
 
 \section{Decisioner DSL}
 
@@ -305,14 +308,15 @@ nome, tipo de produção, localização, etc.
 
 A instrução tem como argumentos a URI (ou label) da classe da ontologia
 do domínio, que será objeto de avaliação, e cada uma das propriedades
-relacionadas. A Listagem \ref{lis:DSL-para-defini=0000E7=0000E3o}
+relacionadas. O algoritmo \ref{alg:Defini=0000E7=0000E3o-do-Evaluation}
 apresenta um exemplo que usa a classe \textit{ProductionUnit}, como
 classe dos objetos a serem avaliados e define as propriedades \textit{hasName},
 para nome, e \textit{hasAgriculturalProductionSystem}, para tipo de
 produção. Podem ser usados os labels das propriedades, ao invés de
 suas URIs\textit{.}
 
-\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o do Evaluation Object  },label={lis:DSL-para-defini=0000E7=0000E3o}]
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}
 evaluationObject ":ProductionUnit", {     
  instance "ui:hasName', label: ["en": "Name", "pt": "Nome"]
  instance ":hasAgriculturalProductionSystem"
@@ -320,6 +324,9 @@ evaluationObject ":ProductionUnit", {
 }
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Definição do Evaluation Object\label{alg:Defini=0000E7=0000E3o-do-Evaluation}}
+\end{algorithm}
+
 O comando \foreignlanguage{english}{\textit{instance}} vincula uma
 propriedade definida na ontologia, através da URI. Ela pode ser complementada
 por parâmetros que customizam a representação visual da propriedade.
@@ -353,11 +360,11 @@ widget para uma característica que tem um tipo categórico com 3 possíveis
 valores. Os textos mostrados vêm da ontologia e fazem parte da descrição
 de cada elemento. É possível criar descrições em mais de uma língua.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[width=0.8\columnwidth]{figures/IndicatorSelection}
 \par\end{centering}
-\caption{Widgets geradas a partir da definição da DSL\label{fig:Widgets-geradas-da-DSL}}
+\caption{Widget geradas a partir da definição da DSL\label{fig:Widgets-geradas-da-DSL}}
 \end{figure}
 
 Quando o usuário final usa a widget, o valor escolhido é anotado,
@@ -366,11 +373,15 @@ value}}. Nas fórmulas, usadas para os cálculos do modelo usado, é
 possível acessar esses valores. Os usuários não precisam preencher
 a todas as características.
 
-\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o de Features},label={lis:Defini=0000E7=0000E3o-de-Features}]
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}
 feature ':EnvironmentalIndicator', 'extraFeatures': true
 \end{lstlisting}
 \inputencoding{utf8}
-O comando tem como argumento uma URI (ou label) (Listagem \ref{lis:Defini=0000E7=0000E3o-de-Features})
+\caption{Definição de Features\label{alg:Defini=0000E7=0000E3o-de-Features}}
+\end{algorithm}
+
+O comando tem como argumento uma URI (ou label) (Algoritmo \ref{alg:Defini=0000E7=0000E3o-de-Features})
 que vincula todas as subclasses da classe referenciada. O parâmetro
 opcional \foreignlanguage{english}{\textit{extraFeatures}} permite
 ativar a inserção de novas\foreignlanguage{english}{\textit{ features}},
@@ -383,7 +394,7 @@ por parte do usuário do SAD.
 O comando \foreignlanguage{english}{\textit{Report}} permite definir
 as fórmulas e procedimentos matemáticas necessários para o cálculo
 do modelo usado pelos especialistas de domínio, e como os resultados
-serão apresentados (Listagem \ref{lis:Defini=0000E7=0000E3o-da-logica}).
+serão apresentados (Algoritmo \ref{alg:Defini=0000E7=0000E3o-da-l=0000F3gica}).
 Fórmulas e procedimentos para modelagem matemática são de responsabilidade
 dos especialistas de domínio. A DSL permite desde fórmulas simples,
 de uma linha, até o uso de bibliotecas complexas, chamadas usando
@@ -395,14 +406,15 @@ num comando simples.
 
 As fórmulas usadas têm acesso a todos os dados associados às \foreignlanguage{english}{\textit{Features}},
 pelos usuários finais. Esses dados são usados no modelo adotado e
-podem gerar múltiplos resultados de avaliação. Na Listagem \ref{lis:Defini=0000E7=0000E3o-da-logica},
+podem gerar múltiplos resultados de avaliação. No algoritmo \ref{alg:Defini=0000E7=0000E3o-da-l=0000F3gica},
 o comando \textit{weightedSum(data.':EnvironmentalIndicator')} calcula
 a média ponderada de todos os indicadores ambientais fornecidos pelo
 usuário final. Esse comando foi criado para simplificar o trabalho
 dos especialistas. Biblioteca de comandos, como essa, podem ser adicionadas
-ao framework ou criados a pedido dos especialistas. 
+ao framework ou criados a pedido dos especialistas.
 
-\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o da l�gica de avalia��o.},label={lis:Defini=0000E7=0000E3o-da-logica}]
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}
 report {     
  environment = weightedSum(data.':EnvironmentalIndicator')
  economic = weightedSum(data.':EconomicIndicator')
@@ -412,10 +424,13 @@ report {
 }
 \end{lstlisting}
 \inputencoding{utf8}
+\caption{Definição da lógica de avaliação.\label{alg:Defini=0000E7=0000E3o-da-l=0000F3gica}}
+\end{algorithm}
+
 Os resultados do processo de avaliação podem ser apresentados por
 meio de várias \foreignlanguage{english}{\textit{widgets}} que facilitam
-a representação e compreensão dos resultados da avaliação. Na listagem
-\ref{lis:Defini=0000E7=0000E3o-das-widgets} o comando \textit{sustainabilityMatrix
+a representação e compreensão dos resultados da avaliação. No algoritmo
+\ref{alg:Defini=0000E7=0000E3o-dos-componentes} o comando \textit{sustainabilityMatrix
 x: sustainability, y: efficiency} apresenta os valores das variáveis
 \textit{sustainability} e \textit{efficiency} num gráfico de matriz
 de sustentabilidade (Figura \ref{fig:Matriz-de-sustentabilidade-widget}).
@@ -427,7 +442,8 @@ o gráfico. Essas widgets gráficas podem ser criadas como Web Components
 ). O framework vem com um conjunto de widgets predefinidos, mas novas
 podem ser adicionadas. 
 
-\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o dos componentes visuais do relat�rio. },label={lis:Defini=0000E7=0000E3o-das-widgets}]
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}
 report {
  ...
  sustainabilityMatrix x: sustainability, y: efficiency
@@ -435,8 +451,13 @@ report {
  map data.'Microregion'
 }
 \end{lstlisting}
-\inputencoding{utf8} Por meio dos comandos da DSL, é possível definir o comportamento
-e as características gerais dos SAD. 
+\inputencoding{utf8}
+\caption{Definição dos componentes visuais do relatório.\label{alg:Defini=0000E7=0000E3o-dos-componentes}}
+
+\end{algorithm}
+
+Por meio dos comandos da DSL, é possível definir o comportamento e
+as características gerais dos SAD. 
 
 Os elementos gráficos (widgets), seja os que representam as Features
 ou os usados nos relatórios, são implementados como \foreignlanguage{english}{Web
@@ -474,12 +495,17 @@ A Figura \ref{fig:Editor-DSL} mostra o editor em ação.
 \caption{Editor DSL\label{fig:Editor-DSL}}
 \end{figure}
 
+O editor da DSL tem compatibilidade com \foreignlanguage{english}{web
+components}, tanto os fornecidos pelas bibliotecas integradas no Framework
+Decisioner, como com os \foreignlanguage{english}{web components}
+do Framework \foreignlanguage{english}{Grails} e adicionalmente podem
+ser definidos \foreignlanguage{english}{web components }especializados.
 \selectlanguage{english}%
 
 \section{Web components\label{sec:Web-components}}
 
-Web Component\foreignlanguage{brazil}{s}\footnote{\selectlanguage{brazil}%
-\url{https://www.webcomponents.org/introduction}\selectlanguage{brazil}%
+Web Component\foreignlanguage{brazil}{s }\footnote{\selectlanguage{brazil}%
+Site oficial de \foreignlanguage{english}{web components} \url{https://www.webcomponents.org/introduction}\selectlanguage{brazil}%
 }\foreignlanguage{brazil}{ é um conjunto de APIs padrão para definir
 novas tags }HTML\foreignlanguage{brazil}{ personalizadas, reutilizáveis
 e encapsuladas para o uso em páginas ou aplicações web. O framework
@@ -550,7 +576,7 @@ qualquer Web Component (widget) necessário mas não disponível por
 default no Decisioner. 
 
 A figura \ref{fig:Web-UI} apresenta uma Web UI que foi gerada automaticamente,
-a partir da ontologia e das definições na DSL do SAD SUstenAgro. Nela
+a partir da ontologia e das definições na DSL do SAD SustenAgro. Nela
 são apresentados vários tipos de \foreignlanguage{english}{Web Components}
 que demostram o suporte a diferentes tipos de dados.
 
@@ -595,7 +621,7 @@ o DSL Interpreter e os outros módulos com os quais ele se conecta.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[width=0.6\columnwidth]{\string"figures/Decisioner Core Architecture\string".eps}
+\includegraphics[width=0.7\columnwidth]{\string"figures/Decisioner Core Architecture\string".eps}
 \par\end{centering}
 \caption{Arquitetura do DSL Interpreter.\label{fig:Arquitetura-do-Decisioner-Core}}
 \end{figure}
@@ -625,14 +651,14 @@ foram organizando-se e permitindo separar os dois sistemas.
 Não foi possível instanciar outro sistema no Decisioner durante o
 desenvolvimento do mestrado, mas atualmente encontra-se em andamento
 a implementação do SAD Nano-Tec como segunda instancia do Framework
-Decisioner. O que permitirá generalizar ainda mais o framework e servir
-como um caso de uso adicional para validar as hipóteses em outros
-domínios.
-
-Esta arquitetura foi avaliada por meio da instanciação do SAD SustenAgro,
+Decisioner. O que permitirá generalizar ainda mais e servir como um
+caso de uso adicional para validar as hipóteses em outros domínios.
+Esta arquitetura foi validada por meio da instanciação do SAD SustenAgro,
 o que permite validar se realmente funcionam cada uma das características
-aqui descritas. No capítulo seguinte será apresentado o SAD SustenAgro,
-gerado como primeiro caso de uso deste Framework, e depois será apresentado
-o processo de avaliação que formaliza a avaliação deste sistema.
+aqui descritas.
+
+No capítulo seguinte será apresentado o SAD SustenAgro, gerado como
+primeiro caso de uso deste Framework, e depois será apresentado o
+processo de avaliação que formaliza a avaliação deste sistema.
 
 

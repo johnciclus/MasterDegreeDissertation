@@ -7,6 +7,7 @@
 \textclass abntex2
 \begin_preamble
 \usepackage{afterpage}
+
 %\usepackage{lmodern}
 
 \input{pagestyle.tex}
@@ -282,6 +283,19 @@ makeatother
 pagestyle{ruled}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+addto
+\backslash
+captionsbrazil{
+\backslash
+renewcommand{
+\backslash
+algorithmname}{Listagem}} 
+\end_layout
+
 \end_inset
 
 
@@ -389,6 +403,23 @@ pagestyle{ruled}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename pages/Epigraph.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Resumo
 \begin_inset CommandInset include
 LatexCommand input
@@ -463,6 +494,10 @@ nomname}{Lista De Abreviaturas e Siglas}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

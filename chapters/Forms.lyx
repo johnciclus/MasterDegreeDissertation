@@ -675,9 +675,8 @@ name "sec:Formulario-Delphi-Workshop"
 \begin_inset External
 	template PDFPages
 	filename /home/john/Desktop/Dissertation/pages/workshop.pdf
-	lyxscale 80
 	extra LaTeX "pages=-"
-	width 100col%
+	width 100page%
 
 \end_inset
 

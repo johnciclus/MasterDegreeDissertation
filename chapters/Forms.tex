@@ -1,3 +1,4 @@
+\renewcommand{\labelenumi}{\arabic{enumi}.}
 
 \section{Formulário de avaliação SustenAgro\label{sec:Formul=0000E1rio-de-avalia=0000E7=0000E3o-SustenAgro}}
 
@@ -86,9 +87,12 @@ Cadastrar novo indicador
 \item Dar click no link 'Ontology'
 \item Clicar em Feature, Indicador, Indicador de Sustentabilidade e Dimensão
 Social
-\item Cadastrar uma nova dimensão, atributo e indicador a partir da linha
-1020 no seguinte formato:\inputencoding{latin9}
-\begin{lstlisting}[caption={Codigo de novo indicador}]
+\end{enumerate}
+Cadastrar uma nova dimensão, atributo e indicador a partir da linha
+1020 no seguinte formato:
+
+\begin{algorithm}[h]
+\inputencoding{latin9}\begin{lstlisting}
 AgriculturalIndicator: 
  is_a: SustainabilityIndicator 
  relevance: 1.0 
@@ -110,27 +114,40 @@ DeforestationIndicator:
  relevance: 2.0 
  value: YesNo
 \end{lstlisting}
-\inputencoding{utf8}\item Dar click na opção “Save”
+\inputencoding{utf8}
+\caption{Código de novo indicador}
+
+\end{algorithm}
+
+\begin{enumerate}
+\item Dar click na opção “Save”
 \item Acrescentar a nova dimensão na DSL, clicando na Aba DSL e no link
-Main adicionar na linha 106 o seguinte código\inputencoding{latin9}
-\begin{lstlisting}[caption={Adi��o de feature na DSL}]
+Main adicionar na linha 106 o seguinte código
+\item 
+\begin{algorithm}[h]
+\begin{enumerate}
+\item \inputencoding{latin9}
+\begin{lstlisting}
 feature ':AgriculturalIndicator'
 \end{lstlisting}
-\inputencoding{utf8}\item Dar click na opção “Save” - Procurar o indicador cadastrado na interface
+\inputencoding{utf8}\end{enumerate}
+\caption{Adição de feature na DSL}
+\end{algorithm}
+\item Dar click na opção “Save” - Procurar o indicador cadastrado na interface
 de Usuário, na tela de Usuário na aba Avaliação selecionar uma Unidade
 Produtiva e ir em Nova Avaliação
 \end{enumerate}
 
 \subsection*{Tarefa 2}
 
-Editar a formula de avaliação 
+Editar a fórmula de avaliação 
 \begin{enumerate}
 \item Dar click no link 'DSL'
 \item Procurar o comando Report e editar algum valor da fórmula
 \item Dar click na opção “Save”
 \item Visualizar os índices de uma avaliação cadastrada no sistema por meio
 da aba Report, na tela de Usuário na aba Avaliação selecionar uma
-Unidade Produtiva, selecionar uma Avaliação e um Report ligado a ela
+Unidade Produtiva, selecionar uma Avaliação e um Report ligado a ela.
 \end{enumerate}
 
 \subsection*{Tarefa 3}
@@ -171,4 +188,4 @@ Usuário
 
 \section{Formulário Delphi para Workshop SustenAgro\label{sec:Formulario-Delphi-Workshop}}
 
-\includepdf[pages=-,width=1\columnwidth]{/home/john/Desktop/Dissertation/pages/workshop}
+\includepdf[pages=-,width=1\paperwidth]{/home/john/Desktop/Dissertation/pages/workshop}

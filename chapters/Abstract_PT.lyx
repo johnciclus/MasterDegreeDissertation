@@ -166,7 +166,7 @@ description "Sistemas de Apoio à Decisão"
  interpretar e implementar pelos desenvolvedores de software, devido a que
  os especialistas não conseguem formalizar esse conhecimento em um modelo
  computável para integrá-lo nos SADs.
- O processo de modelagem de conhecimento é realizado pelos desenvolvedores,
+ Sendo realizado o processo de modelagem de conhecimento pelos desenvolvedores,
  parcializando o conhecimento do domínio e dificultando o desenvolvimento
  ágil dos SADs.
  Dada esta situação, identificou-se que não existe uma representação de
@@ -175,8 +175,8 @@ description "Sistemas de Apoio à Decisão"
  A partir desse problema, foram testadas soluções, e encontrou-se que as
  ontologias baseadas na web semântica representam conhecimento complexo
  e fornecem um formato entendível pelos humanos e máquinas.
- O método Decisioner permite aos especialistas representar o conhecimento
- deles por meio de ontologias e 
+ Com o qual propôs-se o método Decisioner de consiste em que as ontologias
+ complementadas com 
 \lang english
 Domain Specific Language
 \lang brazilian
@@ -188,32 +188,20 @@ description "Domain Specific Language"
 
 \end_inset
 
-).
+) permitem aos especialistas representar o conhecimento deles.
  Este método foi implementado no 
 \lang english
 Framework
 \lang brazilian
- Decisioner que fornece interfaces web de edição de ontologia e de DSL para
- definir e gerar SADs em entornos web.
+ Decisioner que permite definir e gerar SADs em entornos web.
  A validação do método foi realizada por meio da instanciação do SAD SustenAgro
  no Framework Decisioner, através de uma ontologia de avaliação da sustentabilid
 ade em cana-de-açúcar no centro-sul do Brasil e de uma descrição na DSL,
  que permitiram gerar o SAD SustenAgro.
  Finalmente, foram realizadas avaliações do Framework Decisioner e do SAD
- SustenAgro com resultados positivos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Conclusão geral
-\end_layout
-
-\end_inset
-
-
+ SustenAgro com resultados positivos que permitem concluir que o método
+ proposto forneceu um meio de representação de conhecimento do domínio para
+ que especialistas possam definir SADs.
 \end_layout
 
 \begin_layout Standard

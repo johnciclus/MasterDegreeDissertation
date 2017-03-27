@@ -126,29 +126,29 @@ implementação no SAD SustenAgro.
 
 Os cenários avaliados foram casos extremos dos indicadores, processo
 denominado teste de mínimos e máximos, gerando resultados em forma
-de relatório para cada um dos cenários. A Figura \ref{fig:Matriz-de-sustentabilidade-Maximos}
-apresenta a Matriz de Sustentabilidade com o cenário de mínimos, na
-qual o ponto preto identifica o resultado da avaliação. Ele ficou
-no primeiro quadrante tal como se esperava. Os resultados para testes
-de máximos também se comportaram como esperado.
+de relatório para cada um dos cenários. 
+
+A Figura \ref{fig:Matriz-de-sustentabilidade-Minimos} apresenta a
+Matriz de Sustentabilidade com o cenário de mínimos, na qual o ponto
+preto identifica o resultado da avaliação. Ele ficou no primeiro quadrante
+tal como se esperava. Os resultados para testes de máximos também
+se comportaram como esperado.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[width=0.8\columnwidth]{figures/Minimum}
+\includegraphics[width=1\columnwidth]{figures/Minimum}
 \par\end{centering}
-\caption{Matriz de Sustentabilidade com valores mínimos.\label{fig:Matriz-de-sustentabilidade-Maximos}}
+\caption{Matriz de Sustentabilidade com valores mínimos.\label{fig:Matriz-de-sustentabilidade-Minimos}}
 
 \end{figure}
 
-Um dos aspectos importantes da ferramenta, é que ela permite que os
-próprios especialistas mudem, em tempo real, as fórmulas do método
-de avaliação, permitindo fazer ajustes finos no método. Essa funcionalidade
-permitiu descobrir e avaliar rapidamente um problema do método original:
-a integração de uma operação de valor de um valor absoluto na fórmula.
-A possibilidade da interação direta e fácil dos especialistas, em
-tempo real, com o sistema permitiu demostrar agilmente possíveis cenários
-de resolução do problema e aceitar rapidamente uma solução, proposta
-pelo autor.
+ Durante a realização dos testes foi descoberto um problema na formula
+do método SustenAgro original, e a avaliação efetuada permitiu contribuir
+na redefinição da formula de avaliação, por meio da integração de
+uma operação de valor de um valor absoluto na fórmula. A possibilidade
+da interação direta e fácil dos especialistas, em tempo real, com
+o sistema permitiu demostrar agilmente possíveis cenários de resolução
+do problema e aceitar rapidamente uma solução, proposta pelo autor.
 
 \section{Avaliação do SAD SustenAgro e do Framework Decisioner: }
 
@@ -315,10 +315,10 @@ entre eles destacam-se:
 \end{itemize}
 As interações com o sistema foram filmadas enquanto os usuários executavam
 uma lista de tarefas. Monitores do ICMC ficavam estimulando os usuários
-a falar o que estavam pensando (técnica Think Aloud ) e os questionavam,
-quando tinham alguma dificuldade de interação. Ao final, houve um
-\foreignlanguage{english}{debriefing} e foram também colhidas mais
-sugestões de mudança. 
+a falar o que estavam pensando (técnica Think Aloud \citep{davey1983think})
+e os questionavam, quando tinham alguma dificuldade de interação.
+Ao final, houve um \foreignlanguage{english}{debriefing} e foram também
+colhidas mais sugestões de mudança. 
 
 Os especialistas aprovaram a ferramenta tanto na interação como no
 conteúdo dela, com as seguintes sugestões:
@@ -356,7 +356,7 @@ foi um esforço coordenado entre o desenvolvedor do framework Decisioner
 \item [{Participantes}] Especialista em Sustentabilidade e especialista
 em TI
 \item [{Local}] Embrapa Meio Ambiente - Campinas
-\item [{Técnica}] Teste de usabilidade
+\item [{Técnica}] Teste de integração
 \end{description}
 A instalação, coordenada pelo desenvolvedor do Framework Decisioner
 e técnicos da Embrapa, foi problemática. A Embrapa não autoriza o

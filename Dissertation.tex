@@ -1,7 +1,6 @@
 %% LyX 2.2.0 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
 \documentclass[12pt,a4paper,english,brazil]{abntex2}
-\renewcommand{\familydefault}{\rmdefault}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{3}
@@ -14,7 +13,7 @@
 \usepackage{pdfpages}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[intoc]{nomencl}
+\usepackage{nomencl}
 % the following is useful when we have the old nomencl.sty package
 \providecommand{\printnomenclature}{\printglossary}
 \providecommand{\makenomenclature}{\makeglossary}
@@ -30,11 +29,20 @@
 %% A simple dot to overcome graphicx limitations
 \newcommand{\lyxdot}{.}
 
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}[chapter]
+\providecommand{\algorithmname}{Algoritmo}
+\floatname{algorithm}{\protect\algorithmname}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\AtBeginDocument{                
-\RequirePackage{abntex2cite}
-
+% adaptação do suporte ao natbib do LyX para uso do abntex2cite
+\AtBeginDocument{%                % garante que este código será carregado após
+% \usepackage[alf]{abntex2cite} ou
+% \usepackage[num]{abntex2cite}
+% no preâmbulo latex.
+\RequirePackage{abntex2cite}   % previne o não carregamento do abntex2cite,
+% mas não define se as citações serão do
+% tipo 'alf' ou 'num'.
 \renewcommand{\citeauthor}[1]{\citeauthoronline{#1}}
 \def\citep{\cite}
 \newcommand{\citeyearpar}[1]{(\citeyear{#1})}
@@ -52,27 +60,30 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\input{pagestyle.tex}
+\usepackage{afterpage}
+
 %\usepackage{lmodern}
 
-%\newcommand{\blankpage}{
-%\newpage
-%\thispagestyle{empty}
-%\mbox{}
-%\newpage
-%}
+\input{pagestyle.tex}
+
+\newcommand{\blankpage}{
+    \newpage
+    \thispagestyle{empty}
+    \mbox{}
+    \newpage
+}
+
 %\setcounter{secnumdepth}{4}
 
 \makeatother
 
 \usepackage{babel}
 \usepackage{listings}
+\addto\captionsbrazil{\renewcommand{\algorithmname}{Algoritmo}}
 \addto\captionsbrazil{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}}
-\addto\captionsbrazil{\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listagens}}
+\addto\captionsenglish{\renewcommand{\algorithmname}{Algorithm}}
 \addto\captionsenglish{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listing}}
-\addto\captionsenglish{\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listings}}
 \renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}
-\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listagens}
 
 \begin{document}
 %Configurações do estilo da pagina %==================================
@@ -91,52 +102,67 @@
 \createplainmark {bib}		{both}{\bibname}}
 \makeatother 
 \pagestyle{ruled}
+\addto\captionsbrazil{\renewcommand{\algorithmname}{Listagem}} 
 
-\includepdf{pages/\string"Half Title Page\string"}\clearpage{}
+\includepdf{pages/\string"Half Title Page\string"}
 
-\includepdf{pages/\string"Title Page\string"}\clearpage{}
+\cleardoublepage{}
 
-\includepdf{pages/\string"Title Page english\string"}\clearpage{}
+\includepdf{pages/\string"Title Page\string"}
+
+\clearpage{}
 
 \includepdf{pages/datasheet}
 
 \clearpage{}
 
+\includepdf{pages/\string"Title Page english\string"}
+
+\cleardoublepage{}
+
 \includepdf{pages/Dedicatory}
 
-\clearpage{}
+\cleardoublepage{}
 
-\includepdf{pages/Acknowledgements}\clearpage{}
+\includepdf{pages/Acknowledgements}
+
+\cleardoublepage{}
+
+\includepdf{pages/Epigraph}
+
+\cleardoublepage{}
 \begin{resumo}
 \input{chapters/Abstract_PT.tex}
 \end{resumo}
-\clearpage{}
+\cleardoublepage{}
 \selectlanguage{english}%
 \begin{resumo}
 \input{chapters/Abstract_EN.tex}
 \end{resumo}
 \selectlanguage{brazil}%
-\clearpage{}
-
-\listoffigures
-
-\clearpage{}
-
-\listoftables
-
-\renewcommand{\lstlistlistingname}{Lista De C{\'o}digos-Fonte}
-
-\lstlistoflistings{}
+\cleardoublepage{}
 
 \renewcommand{\nomname}{Lista De Abreviaturas e Siglas}
 
+\listoffigures
+
+\cleardoublepage{}
+
+\listof{algorithm}{Lista de Algoritmos}
+
+\cleardoublepage{}
+
+\listoftables
+
+\cleardoublepage{}
+
 \printnomenclature{}
 
-\clearpage{}
+\cleardoublepage{}
 
 \tableofcontents{}
 
-\clearpage{}
+\cleardoublepage{}
 
 \chapter{Introdução\label{chap:Introdu=0000E7=0000E3o}}
 

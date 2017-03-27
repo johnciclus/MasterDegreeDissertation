@@ -72,7 +72,7 @@ que ele fornece a funcionalidade de avaliar a sustentabilidade na
 cana-de-açúcar. Este SAD em particular é uma contribuição inédita
 que também permite a aplicação em outros sistemas agrícolas, o que
 poderia suportar melhoras e correções na produção de alimentos e produtos
-neste setor\citep{Matthews2008149}.
+neste setor \citep{Matthews2008149}.
 
 Para definir um meio computável de representação de conhecimento,
 foram analisados vários tipos de sistemas de organização de conhecimento
@@ -87,12 +87,12 @@ de avaliação da sustentabilidade em cana-de-açúcar junto com os especialista
 desta instituição. Nas áreas de biologia e agricultura as ontologias
 são comuns, desta forma eles não tiveram dificuldade com o conceito.
 Eles usaram uma \foreignlanguage{english}{Domain Specific Language}
-(DSL\nomenclature{DSL}{Domain Specific Language}) que permite formatar
-as perguntas aos usuários finais, definir o método de avaliação e
-gerar o relatório de cada análise. Os especialistas apreciaram muito
-a utilização de uma ontologia em um SAD, foi a primeira vez que fizeram
-isso, e particularmente, o fato de que as mudanças na ontologia, façam
-mudanças imediatamente nos componentes do SAD.
+(DSL) \citep{fowler2010domain} que permite formatar as perguntas
+aos usuários finais, definir o método de avaliação e gerar o relatório
+de cada análise. Os especialistas apreciaram muito a utilização de
+uma ontologia em um SAD, foi a primeira vez que fizeram isso, e particularmente,
+o fato de que as mudanças na ontologia, façam mudanças imediatamente
+nos componentes do SAD.
 
 Além das motivações vinculadas com o domínio dos especialistas em
 sustentabilidade existe a motivação de desenvolver novas tecnologias.
@@ -137,50 +137,57 @@ representando os principais conceitos desse domínio: indicadores,
 os especialistas de domínio de sustentabilidade da Embrapa.
 \item Ontologia sobre controles visuais para suportar a geração automática
 das interfaces gráficas do SAD SustenAgro. Ela permite associar tipos
-de dados aos \foreignlanguage{english}{web components} para a geração
-automática das interfaces aos SADs.
+de dados aos \foreignlanguage{english}{web components} que constituem
+as interfaces dos SADs.
 \item Uma DSL baseada na linguagem \foreignlanguage{english}{Groovy} que
-permite a definição da interface de usuário, das fórmulas do modelo
-e do formato do relatório final de cada análise.
+permite a definição da interface de usuário, do formato do dados a
+processar, das fórmulas do modelo e do formato do relatório final
+de cada análise.
 \item Método e framework Decisioner para definir SADs por parte dos especialistas
-do domínio, desenvolvida a través do framework \foreignlanguage{english}{Grails}.
+do domínio, desenvolvido a través do framework \foreignlanguage{english}{Grails}.
 \item O SAD SustenAgro: Sistema para avaliação da sustentabilidade em cana-de-açúcar,
 na região centro-sul do Brasil, instanciada a través do Framework
 Decisioner.
 \item Artigo ``\foreignlanguage{english}{Sustainability assessment of sugarcane
-production systems: SustenAgro Method}'' submetido no periódico da
-Elsevier``\foreignlanguage{english}{Energy for sustainable Development}''
-ISSN: 0973-0826 submissão realizada em 23 de dezembro do 2016. 
-\item Resultados positivos das avaliações do Framework Decisioner, método
-de geração de SAD e do Sistema SustenAgro.
+production systems: SustenAgro Method}'' submetido ao periódico da
+\foreignlanguage{english}{Elsevier} ``\foreignlanguage{english}{Energy
+for sustainable Development}'' ISSN: 0973-0826.
+\item Artigo ``SustenAgro Sistema de Apoio à Decisão baseado em Ontologias
+e definido por uma Linguagem de Domínio Especifico'' submetido ao
+periódico ``Revista Brasileira de Sistemas de Informação'' ISSN
+Eletrônico: 1984-2902.
+\item Resultados positivos das avaliações do Framework Decisioner, do método
+de geração de SADs e do Sistema SustenAgro.
 \end{itemize}
 
 \section{Organização da dissertação.}
 
 A presente dissertação está estruturada da seguinte forma:
 
-Capítulo 2: Apresenta a definição de Sistemas de Apoio à Decisão,
-as características do SAD SustenAgro e os trabalhos relacionados sobre
-ontologias em avaliação da sustentabilidade e SADs baseados em ontologias,
+Capítulo \ref{chap:SAD}: Apresenta a definição de Sistemas de Apoio
+à Decisão, as características do SAD SustenAgro e os trabalhos relacionados,
 basicamente um estado da arte da presente pesquisa.
 
-Capítulo 3: Apresenta as Ontologias da web semântica e \foreignlanguage{english}{DSLs},
-com a finalidade de descrever as principais tecnologias e a teoria
-necessária para desenvolver a presente pesquisa.
+Capítulo \ref{chap:SemanticWebAndDSLs}: Apresenta as Ontologias da
+web semântica e \foreignlanguage{english}{DSLs}, com a finalidade
+de descrever as principais tecnologias e a teoria necessária para
+desenvolver a presente pesquisa.
 
-Capítulo 4: Apresenta o protótipo do Framework Decisioner que suporta
-a geração de Sistemas de Apoio à Decisão. 
+Capítulo \ref{chap:Decisioner}: Apresenta o protótipo do Framework
+Decisioner que suporta a geração de Sistemas de Apoio à Decisão. 
 
-Capítulo 5: Apresenta o SAD SustenAgro, desenvolvido na presente pesquisa
-como caso de uso do Framework Decisioner, permitindo desenvolver a
-arquitetura e demostrar a funcionalidade do Framework desenvolvido.
+Capítulo \ref{chap:SustenAgro}: Apresenta o SAD SustenAgro, desenvolvido
+na presente pesquisa como caso de uso do Framework Decisioner, permitindo
+desenvolver a arquitetura e demostrar a funcionalidade do Framework
+desenvolvido.
 
-Capítulo 6: Apresenta a avaliação realizada pelos especialistas em
-cada um dos sistemas software desenvolvidos e no método de geração
-de SAD.
+Capítulo \ref{chap:Avalia=0000E7=0000E3o}: Apresenta a avaliação
+realizada pelos especialistas em cada um dos sistemas software desenvolvidos
+e no método de geração de SAD.
 
-Capítulo 7: Apresenta as conclusões do presente trabalho, dificuldades,
-trabalhos futuros e uma discussão sobre a pesquisa em geral.
+Capítulo \ref{chap:Conclus=0000E3o}: Apresenta as conclusões do presente
+trabalho, dificuldades, trabalhos futuros e uma discussão sobre a
+pesquisa em geral.
 
 Finalmente são apresentados os anexos que descrevem conceitos de terceiros
 usados no trabalho e informações técnicas dos sistemas desenvolvidos.

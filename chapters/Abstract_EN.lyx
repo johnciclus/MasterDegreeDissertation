@@ -162,9 +162,8 @@ Decision Support Systems (DSS) integrate knowledge from Domain Experts in
  that processes this data and in the resulting information that supports
  the decision-making process.
  In traditional development methodologies, this knowledge must be interpreted
- and implemented by software developers, because the specialist can not
- formalize this knowledge in a computable model to integrate it into the
- DSS.
+ and implemented by software developers, because the experts cannot formalize
+ this knowledge in a computable model to integrate it into the DSS.
  The knowledge modeling process is carried out by the developers, biasing
  domain knowledge and hindering the agile development of DSSs.
  Given this situation, it was identified that there is no computable knowledge
