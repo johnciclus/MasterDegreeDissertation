@@ -101,8 +101,8 @@ customHeadersFooters
 
 \begin_layout Standard
 Este anexo apresenta os principais conceitos relacionados com a avaliação
- da sustentabilidade segundo o projeto SustenAgro, e como foram usados no
- processo de avaliação de sustentabilidade.
+ da sustentabilidade segundo os fins do projeto SustenAgro, e como foram
+ usados no processo de avaliação de sustentabilidade.
 \end_layout
 
 \begin_layout Section
@@ -506,7 +506,7 @@ Método SustenAgro
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Devido à importância da sustentabilidade, especialmente nos sistemas de
@@ -517,6 +517,10 @@ Devido à importância da sustentabilidade, especialmente nos sistemas de
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 O método SustenAgro foi construído a partir de literatura cientifica e de
  contribuições de pesquisadores de instituições de pesquisa como (IBGE
 \begin_inset Foot
@@ -594,67 +598,64 @@ A continuação serão apresentadas as fórmulas destes dois índices:
 As equações para calcular o índice da eficiência são:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float algorithm
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula de eficiência tecnologia no campo:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $efficiency(field)=\sum(CharacteristicsField*RelevanceProduction)*correctionFactor(0.8)$
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+efficiency(field) & = & \sum(CharacteristicsField*RelevanceProduction)\\
+ &  & *correctionFactor(0.8)
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula de eficiência tecnologia na indústria:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $efficiency(industry)=\sum(CharacteristicsProcessing*SugarcaneProcessing)*correctionFactor(0.2)$
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+efficiency(industry) & = & \sum(CharacteristicsProcessing*SugarcaneProcessing)\\
+ &  & *correctionFactor(0.2)
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula de eficiência produtiva e de custo:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $efficiencyAndCost=\sum(SugarcanEquality+\sum(Logistic+MarketVariables+Policies+Productivity))$
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+efficiencyAndCost & = & \sum(SugarcanEquality+\\
+ &  & \sum(Logistic+MarketVariables+Policies+Productivity))
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Índice de eficiência:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $EfficiencyIndex=\sum(efficiency(filed)+efficiency(industry))*efficiencyAndCost$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Fórmulas do índice de eficiência.
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+EfficiencyIndex & = & \sum(efficiency(filed)+efficiency(industry))\\
+ &  & *efficiencyAndCost
+\end{eqnarray*}
 
 \end_inset
 
@@ -669,68 +670,60 @@ Fórmulas do índice de eficiência.
 As equações para calcular o índice de sustentabilidade são:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float algorithm
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula da dimensão ambiental:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $EnvironmentalIndex=\sum(EnvironmentalIndicator*EnvironmentIndicatorWeight)$
+\begin_layout Standard
+\begin_inset Formula 
+\[
+EnvironmentalIndex=\sum(EnvironmentalIndicator*EnvironmentIndicatorWeight)
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula da dimensão econômica:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $EconomicIndex=\sum(EconomicIndicator*EconomicIndicatorWeight)$
+\begin_layout Standard
+\begin_inset Formula 
+\[
+EconomicIndex=\sum(EconomicIndicator*EconomicIndicatorWeight)
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula da dimensão social:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $SocialIndex=\sum(SocialIndicator*SocialIndicatorWeight)$
+\begin_layout Standard
+\begin_inset Formula 
+\[
+SocialIndex=\sum(SocialIndicator*SocialIndicatorWeight)
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Índice de sustentabilidade:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $SustainabilityIndex=\sum(EnvironmentalIndex+EconomicIndex+SocialIndex)/3$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Fórmulas do índice da sustentabilidade.
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_layout Standard
+\begin_inset Formula 
+\[
+SustainabilityIndex=\sum(EnvironmentalIndex+EconomicIndex+SocialIndex)/3
+\]
 
 \end_inset
 
@@ -739,7 +732,7 @@ Fórmulas do índice da sustentabilidade.
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 A Embrapa Meio Ambiente coordenou e financiou o projeto SustenAgro com a
@@ -885,7 +878,7 @@ Brochure fornecido pela Embrapa Meio Ambiente
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Segundo a metodologia de avaliação caso a caso: os usuário poderão selecionar
@@ -967,7 +960,7 @@ nal (JÚNIOR; COELHO, 2008)”.
  e reduz a qualidade da matéria-prima (LINS; SAAVEDR, 2007)”.
  
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 (Ambiental) “Quando a cana não é queimada, proliferam, nos canaviais, roedores
@@ -1009,7 +1002,7 @@ ade e da qualidade da matéria-prima, bem como em diminuição dos custos da
  a mecanização”.
  
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 (isso foi gerado pela Katia) Não vejo essas histórias como User Stories,
@@ -1063,7 +1056,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Matriz de sustentabilidade 
+Design da matriz de sustentabilidade 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Matriz-de-sustentabilidade"

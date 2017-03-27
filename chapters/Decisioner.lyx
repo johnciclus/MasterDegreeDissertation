@@ -1077,7 +1077,7 @@ das.
  A Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:Definição-do-Evaluation"
+reference "lis:Definição-do-Evaluation"
 
 \end_inset
 
@@ -1134,21 +1134,18 @@ evaluationObject ":ProductionUnit", {
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Definição do Evaluation Object
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:Definição-do-Evaluation"
+name "lis:Definição-do-Evaluation"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1336,21 +1333,18 @@ status open
 \begin_layout Plain Layout
 
 feature ':EnvironmentalIndicator', 'extraFeatures': true
-\end_layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definição de Features 
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Definição-de-Features"
 
 \end_inset
 
 
 \end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Definição de Features
-\begin_inset CommandInset label
-LatexCommand label
-name "alg:Definição-de-Features"
 
 \end_inset
 
@@ -1371,7 +1365,7 @@ name "alg:Definição-de-Features"
 O comando tem como argumento uma URI (ou label) (Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:Definição-de-Features"
+reference "lis:Definição-de-Features"
 
 \end_inset
 
@@ -1410,7 +1404,7 @@ Report
  serão apresentados (Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:Definição-da-lógica"
+reference "lis:Definição-da-lógica"
 
 \end_inset
 
@@ -1438,7 +1432,7 @@ Features
  Na Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:Definição-da-lógica"
+reference "lis:Definição-da-lógica"
 
 \end_inset
 
@@ -1498,21 +1492,18 @@ report {
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Definição da lógica de avaliação.
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:Definição-da-lógica"
+name "lis:Definição-da-lógica"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1541,7 +1532,7 @@ widgets
  No algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:Definição-dos-componentes"
+reference "lis:Definição-dos-componentes"
 
 \end_inset
 
@@ -1628,19 +1619,15 @@ report {
 }
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Definição dos componentes visuais do relatório.
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:Definição-dos-componentes"
+name "lis:Definição-dos-componentes"
 
 \end_inset
 
@@ -1652,7 +1639,8 @@ name "alg:Definição-dos-componentes"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 

@@ -234,16 +234,17 @@ sudo apt-get update
 sudo apt-get install openjdk-8-jre
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Instalação do Java
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -356,18 +357,17 @@ tar xvzf apache-tomcat-7.0.70.tar.gz -C /opt/tomcat
 sudo /opt/tomcat/bin/startup.sh
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Instalação do 
-\lang english
-Apache Tomcat
+Instalação do Apache Tomcat
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -419,16 +419,17 @@ status open
 <user username="admin" password="s3cr3t" roles="manager-gui"/>
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Configuração dos Users
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -467,16 +468,17 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 export CATALINA_HOME=/opt/tomcat
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Exportar variáveis de entorno
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -510,16 +512,17 @@ status open
 sudo /opt/tomcat/bin/startup.sh
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Iniciar o servidor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -622,16 +625,17 @@ sudo chmod a+x /usr/local/bin/wkhtmltopdf
 sudo apt-get install openssl build-essential xorg libssl-dev
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Instalação do wkhtmltopdf 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -677,16 +681,17 @@ xvfb-run -a -s "-screen 0 640x480x16" wkhtmltopdf "$@"
 sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Execução do wkhtmltopdf
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -781,20 +786,17 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Instalação do 
 \lang english
 Blazegraph
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -879,16 +881,17 @@ wget https://dl.dropboxusercontent.com/u/24827919/
 SustenAgro/sustenagro-1.0.war
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Execução do sustenagro
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

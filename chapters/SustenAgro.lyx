@@ -2941,6 +2941,15 @@ status open
 \begin_layout Plain Layout
 Semáforo de Sustentabilidade mostrando um índice de sustentabilidade geral
  de 4 numa escala de -100 até +100.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Dizer qual o valor
+\end_layout
+
+\end_inset
+
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -3083,19 +3092,15 @@ evaluationObject ':ProductionUnit', {
 }
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 DSL que define o Evaluation Object 
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:DSL-EvaluationObject"
+name "lis:DSL-EvaluationObject"
 
 \end_inset
 
@@ -3107,7 +3112,8 @@ name "alg:DSL-EvaluationObject"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -3170,7 +3176,7 @@ Features
  No exemplo do algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:DSL-Definição-de-Features"
+reference "lis:DSL-Definição-de-Features"
 
 \end_inset
 
@@ -3252,12 +3258,8 @@ Industrial'
 }
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3266,7 +3268,7 @@ Definição de
 Features 
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:DSL-Definição-de-Features"
+name "lis:DSL-Definição-de-Features"
 
 \end_inset
 
@@ -3278,7 +3280,8 @@ name "alg:DSL-Definição-de-Features"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -3305,7 +3308,7 @@ report
  No algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:SustenAgro-DSL"
+reference "lis:SustenAgro-DSL"
 
 \end_inset
 
@@ -3500,19 +3503,14 @@ heField+technologicalEfficiencyInTheIndustrial)
 }
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-SustenAgro DSL 
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:SustenAgro-DSL"
+name "lis:SustenAgro-DSL"
 
 \end_inset
 
@@ -3524,7 +3522,8 @@ name "alg:SustenAgro-DSL"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
