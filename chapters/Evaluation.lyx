@@ -410,20 +410,9 @@ reference "fig:Matriz-de-sustentabilidade-Minimos"
 
 \end_inset
 
- apresenta a Matriz de Sustentabilidade com o cenário de mínimos, na qual
- o ponto preto identifica o resultado da avaliação.
- Ele ficou no primeiro quadrante tal como se esperava
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido)Isso é um exemplo de minimo? Ou todos os minimos deram assim?
- Ou foi feito só um teste?
-\end_layout
-
-\end_inset
-
-.
+ apresenta a Matriz de Sustentabilidade com o cenário de mínimos.
+ Na matriz, o ponto preto identifica o resultado da avaliação.
+ Ele ficou no primeiro quadrante tal como se esperava.
  Os resultados para testes de máximos também se comportaram como esperado.
 \end_layout
 
@@ -474,35 +463,17 @@ name "fig:Matriz-de-sustentabilidade-Minimos"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 Um dos aspectos mais importantes da ferramenta, é que ela permite que os
  próprios especialistas mudem, em tempo real, as fórmulas do método de avaliação
 , permitindo fazer ajustes finos no método.
-\end_layout
-
-\end_inset
-
- Durante a realização dos testes foi descoberto um problema na formula do
- método SustenAgro original, e a avaliação efetuada permitiu contribuir
- na redefinição da formula de avaliação, por meio da integração de uma operação
- de valor de um valor absoluto na fórmula
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido)Nao entendi
-\end_layout
-
-\end_inset
-
-.
+ Por exemplo, durante a realização dos testes, foi descoberto um problema
+ na fórmula do método SustenAgro original.
+ Usando a DSL, algumas opções de correção foram tentadas e, rapidamente,
+ foi possível redefinir a fórmula de avaliação.
  A possibilidade da interação direta e fácil dos especialistas, em tempo
  real, com o sistema permitiu demostrar agilmente possíveis cenários de
- resolução do problema e aceitar rapidamente uma solução, proposta pelo
- autor.
+ resolução desse problema e aceitar, rapidamente, uma solução (proposta
+ pelo autor).
 \end_layout
 
 \begin_layout Section
@@ -1214,16 +1185,6 @@ key "davey1983think"
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido)ref
-\end_layout
-
-\end_inset
-
 ) e os questionavam, quando tinham alguma dificuldade de interação.
  Ao final, houve um 
 \lang english
@@ -1312,16 +1273,6 @@ Local Embrapa Meio Ambiente - Campinas
 
 \begin_layout Description
 Técnica Teste de integração
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido)Nao parece ser um teste de usabilidade
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

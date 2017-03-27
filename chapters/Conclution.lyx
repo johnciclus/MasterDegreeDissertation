@@ -128,21 +128,6 @@ Para continuar a pesquisa, foram sugeridos trabalhos futuros.
  e as ferramentas web para editá-las.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(Apagar) O desenvolvimento apenas do SAD SustenAgro, não satisfaz os requisitos
- de pesquisa de um trabalho de mestrado, uma vez que não envolve a utilização
- de métodos e técnicas de investigação cientifica.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Resultados
 \end_layout
@@ -166,7 +151,7 @@ idade da Embrapa.
 \begin_layout Enumerate
 Ontologia sobre tipos de dados e controles visuais para suportar a geração
  automática das interfaces gráficas dos SADs.
- Ela permite ass///////////ociar tipos de dados às 
+ Ela permite associar tipos de dados às 
 \lang english
 widgets
 \lang brazilian
@@ -212,7 +197,7 @@ Resultados de avaliação do processo de design do SAD SustenAgro e do seu
  Eles também demonstram que especialistas de domínio são capazes de alterar
  a ontologia e DSL, sem a ajuda de programadores, e ver os resultados dessas
  modificações em tempo real.
- Essa flexibilidade torna o desenvolvimento de SADs mais agil com potencial
+ Essa flexibilidade torna o desenvolvimento de SADs mais ágil com potencial
  de redução de seus custos finais.
 \end_layout
 
@@ -250,16 +235,6 @@ Revista Brasileira de Sistemas de Informação
 
 .
  ISSN Eletrônico: 1984-2902.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(Corrigido) Cadê o que VOCÊ submeteu?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -284,7 +259,7 @@ A primeira delas refere-se à falta de dados e informações para modelar o
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 (já melhorei a explicação )nao entendi porque isso foi uma dificuldade e
@@ -298,19 +273,8 @@ status open
 
 \begin_layout Standard
 Outra dificuldade foi a falta de trabalhos de referência sobre a integração
- de ontologias e DSLs, 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(Trocado por trabalhos de refeencia)Acho meio perigoso falar isso sem uma
- justificatva do porque disso.
-\end_layout
-
-\end_inset
-
- o que levou a realizar alguns desenvolvimentos de maneira errada que consumiram
- tempo da pesquisa.
+ de ontologias e DSLs, o que levou a realização de alguns desenvolvimentos
+ de maneira errada que consumiram tempo da pesquisa.
  
 \end_layout
 
@@ -326,28 +290,7 @@ A dificuldade mais importante enfrentada foi de carácter organizacional,
  tem importância periférica, são muito mais importantes.
  A Embrapa não permite que programas, desenvolvidos por ela ou em colaboração
  com ela, sejam disponibilizados para o público em geral antes do registro
- no INPI 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Instituto Nacional da Propriedade Industrial 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://www.inpi.gov.br/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
+ no Instituto Nacional da Propriedade Industrial (INPI).
  Como o SAD SustenAgro foi uma colaboração entre Embrapa e USP, a USP deve
  compartilhar esse registro com a Embrapa.
  Infelizmente, a burocracia da USP é muito demorada e esse registro está
@@ -376,26 +319,16 @@ Metodologia de modelagem de conhecimento dos especialistas
 \end_layout
 
 \begin_layout Standard
-A metodologia e desenvolvimento das ontologias, explicada na seção 
+O método de definição de conhecimento, explicado na seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Ontologia-do-domínio"
 
 \end_inset
 
-, permite propor uma metodologia para acompanhar a um processo geral de
- modelagem de conhecimento de especialistas do domínio.
+, permite propor uma metodologia geral de modelagem de conhecimento de especiali
+stas de domínio.
  Ela seria uma nova proposta que poderia estar composta das seguintes etapas:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(ja expliquei melhor, mas nao entendi sua pergunta?) o que é novo?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -545,43 +478,6 @@ widgets
 UI
 \lang brazilian
 ) com suporte a edição gráfica.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(Apagar) Atualmente, foi definida uma DSL para especificar as web UI gerando
- uma estrutura do documento em 
-\lang english
-HTML
-\lang brazilian
-, que associa 
-\lang english
-templates
-\lang brazilian
- com o estilo predefinido através de 
-\lang english
-CSS
-\lang brazilian
- e com 
-\lang english
-scripts
-\lang brazilian
- definidos na linguagem 
-\lang english
-Javascript
-\lang brazilian
-.
- Está DSL está focada na estrutura do documento, mas a linguagem proposta
- deve ser focada em termos dos domínio de interfaces gráficas em mais alto
- nível, onde os elementos estejam modularizados.
- A estrutura hierárquica da UI, estaria definida por meio de componentes
- relacionados semanticamente.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection*
@@ -743,49 +639,12 @@ Web Components
  
 \end_layout
 
-\begin_layout Subsection*
-\begin_inset Note Note
-status open
-
-\begin_layout Subsection*
-Biblioteca de 
-\lang english
-Report
-\lang brazilian
- com suporte semântico
-\end_layout
-
-\begin_layout Plain Layout
-Os SADs geram saídas em forma de relatórios, previsões e recomendações,
- os quais devem ser flexíveis para facilitar a análise das informações geradas,
- pelo qual se propõe o desenvolvimento de uma biblioteca especializada em
- consultas complexas para a suportar as respostas dos SADs.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(Feito)Agradecer à CAPES
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Agradecimento do financiamento
 \end_layout
 
 \begin_layout Standard
-Este trabalho foi realizado com uma bolsa de estudo financiado pela Coordenação
+Este trabalho foi realizado com uma bolsa de estudo financiada pela Coordenação
  de Aperfeiçoamento de Pessoal de Nı́vel Superior (CAPES) no âmbito do Ministéri
 o da educação do Brasil.
 \end_layout

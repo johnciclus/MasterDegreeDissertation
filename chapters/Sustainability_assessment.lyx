@@ -101,8 +101,8 @@ customHeadersFooters
 
 \begin_layout Standard
 Este anexo apresenta os principais conceitos relacionados com a avaliação
- da sustentabilidade segundo os fins do projeto SustenAgro, e como foram
- usados no processo de avaliação de sustentabilidade.
+ da sustentabilidade segundo o projeto SustenAgro, e como foram usados no
+ processo de avaliação de sustentabilidade.
 \end_layout
 
 \begin_layout Section
@@ -506,7 +506,7 @@ Método SustenAgro
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Devido à importância da sustentabilidade, especialmente nos sistemas de
@@ -517,10 +517,6 @@ Devido à importância da sustentabilidade, especialmente nos sistemas de
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 O método SustenAgro foi construído a partir de literatura cientifica e de
  contribuições de pesquisadores de instituições de pesquisa como (IBGE
 \begin_inset Foot
@@ -743,7 +739,7 @@ Fórmulas do índice da sustentabilidade.
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 A Embrapa Meio Ambiente coordenou e financiou o projeto SustenAgro com a
@@ -889,7 +885,7 @@ Brochure fornecido pela Embrapa Meio Ambiente
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Segundo a metodologia de avaliação caso a caso: os usuário poderão selecionar
@@ -971,7 +967,7 @@ nal (JÚNIOR; COELHO, 2008)”.
  e reduz a qualidade da matéria-prima (LINS; SAAVEDR, 2007)”.
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 (Ambiental) “Quando a cana não é queimada, proliferam, nos canaviais, roedores
@@ -1013,7 +1009,7 @@ ade e da qualidade da matéria-prima, bem como em diminuição dos custos da
  a mecanização”.
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 (isso foi gerado pela Katia) Não vejo essas histórias como User Stories,
