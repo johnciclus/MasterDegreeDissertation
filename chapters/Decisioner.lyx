@@ -75,27 +75,16 @@
 \begin_body
 
 \begin_layout Standard
-A partir da descrição das características do SAD SustenAgro (seção 
+A partir da descrição das características do SAD SustenAgro (Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:SAD-SustenAgro"
 
 \end_inset
 
-)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) Onde isto está? Vai estar no cap SAD? (Esta na seção SAD SustenAgro
- do capitulo SAD)
-\end_layout
-
-\end_inset
-
-, do requisito de modelar o conhecimento através de ontologias (usando tecnologi
-as da Web Semântica) e de definir uma DSL para facilitar a definição de
- comportamentos por parte dos especialistas, foi modelado e desenvolvido
+), do requisito de modelar o conhecimento através de ontologias (usando
+ tecnologias da Web Semântica) e de definir uma DSL para facilitar a definição
+ de comportamentos por parte dos especialistas, foi modelado e desenvolvido
  um protótipo de um framework, intitulado Decisioner, que permite definir
  e gerar SADs do tipo do SustenAgro.
  O framework Decisioner é basicamente formado por ontologias, que representam
@@ -301,16 +290,6 @@ key "prud2006sparql"
 
 .
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF (adicionada)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -376,17 +355,7 @@ description "User Interface"
 DSL Interpreter
 \series default
 \lang brazilian
-: 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mude na figura (Mudado)
-\end_layout
-
-\end_inset
-
-Interpretador da DSL para processar as definições do SAD e criar um SAD
+: Interpretador da DSL para processar as definições do SAD e criar um SAD
  específico.
  Ele usa a DSL, ontologias e componentes web para gerar automaticamente
  a interface e comportamento de um SAD específico.
@@ -599,32 +568,6 @@ name "fig:Metodologia-do-Decisioner"
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Voce nao esta repetindo? (Solucionado)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Essa tambem? Nao foi so a outra? (Solucionado)
 \end_layout
 
 \end_inset
@@ -1051,38 +994,9 @@ name "fig:Editor-de-ontologia"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) Fale algo das triple stores no capitulo de ontologias.
- (Mudei triplestore para o capitulo 2)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigdo) Coloque algumas specs do Blazegraph: max numero de triplas, rodar
- em cluster, etc.
- (realizado)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 A ontologia definida em este editor será usada para definir a estrutura
  dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
- a continuação.
+ a seguir.
  
 \end_layout
 
@@ -1160,7 +1074,7 @@ des como nome, tipo de produção, localização, etc.
 A instrução tem como argumentos a URI (ou label) da classe da ontologia
  do domínio, que será objeto de avaliação, e cada uma das propriedades relaciona
 das.
- O algoritmo 
+ A Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:Definição-do-Evaluation"
@@ -1316,16 +1230,6 @@ widget
 \shape default
 \lang brazilian
 : define um controle gráfico de usuário
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Voce usou essas opcoes? Elas estao definidas? (sim estão definidas na DSL)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection*
@@ -1354,18 +1258,8 @@ reference "fig:Widgets-geradas-da-DSL"
 
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) Fazer essa figura mostrando uma única caracteristica sendo escolhida.
-\end_layout
-
-\end_inset
-
-mostra a widget para uma característica que tem um tipo categórico com 3
- possíveis valores.
+ mostra a widget para uma característica que tem um tipo categórico (Controle
+ biológico de pragas) com 2 possíveis valores (Sim e Não).
  Os textos mostrados vêm da ontologia e fazem parte da descrição de cada
  elemento.
  É possível criar descrições em mais de uma língua.
@@ -1474,7 +1368,7 @@ name "alg:Definição-de-Features"
 \end_layout
 
 \begin_layout Standard
-O comando tem como argumento uma URI (ou label) (Algoritmo 
+O comando tem como argumento uma URI (ou label) (Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:Definição-de-Features"
@@ -1513,7 +1407,7 @@ Report
 \lang brazilian
  permite definir as fórmulas e procedimentos matemáticas necessários para
  o cálculo do modelo usado pelos especialistas de domínio, e como os resultados
- serão apresentados (Algoritmo 
+ serão apresentados (Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:Definição-da-lógica"
@@ -1541,7 +1435,7 @@ Features
 , pelos usuários finais.
  Esses dados são usados no modelo adotado e podem gerar múltiplos resultados
  de avaliação.
- No algoritmo 
+ Na Listagem 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:Definição-da-lógica"
@@ -1670,16 +1564,6 @@ reference "fig:Matriz-de-sustentabilidade-widget"
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se já tiver uma figura, basta referencia-la (solucionado).
-\end_layout
-
-\end_inset
-
 ).
  Para executar esse comando, o DSL Interpreter simplesmente coloca a widget
  
@@ -1688,30 +1572,11 @@ suatainabilityMatrix
 \shape default
  na UI e passa os valores das variáveis, como atributos.
  A widget vai ser responsável por criar o gráfico.
- Essas widgets gráficas podem ser criadas como Web Components 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF
-\end_layout
-
-\end_inset
-
- padrão (HTML 5) ou componentes do framework Grails (Seção 
+ Essas widgets gráficas podem ser criadas como Web Components padrão (HTML
+ 5) ou componentes do framework Grails (Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Web-components"
-
-\end_inset
-
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-colocar Você fala de Web components em algum lugar? 
-\end_layout
 
 \end_inset
 
@@ -1863,18 +1728,23 @@ ttps://ace.c9.io/
 
 , que fornece 
 \lang english
-Syntax highlighting
+syntax highlighting
 \lang brazilian
- para varias linguagens de programação, entre elas Groovy, e como a DSL
- foi baseada em Groovy, foi configurada para reconhecer dita sintaxe, também
- foi ativado o suporte de 
+ para várias linguagens de programação, entre elas Groovy.
+ Como a DSL foi baseada em Groovy, o editor foi configurado para reconhecer
+ a sintaxe de Groovy.
+ Também foi ativado o suporte para 
 \lang english
 code completion
 \lang brazilian
- para fornecer uma experiência de uso amigável.
- A principal vantagem é a funcionalidade de salvar a ontologia e reconfigurar
- o SAD imediatamente, permitindo uma experiência em tempo real de redefinição
- do SAD, se o usuário errar, ele vai poder restaurar as configurações por
+ para fornecer uma experiência de uso mais amigável.
+\end_layout
+
+\begin_layout Standard
+A principal vantagem desse editor é a funcionalidade de salvar a ontologia
+ e reconfigurar o SAD imediatamente, permitindo uma experiência em tempo
+ real de redefinição do SAD.
+ Se o usuário errar algo, ele pode simplesmente restaurar as configurações
  
 \lang english
 default
@@ -1891,20 +1761,6 @@ reference "fig:Editor-DSL"
 \end_inset
 
  mostra o editor em ação.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) Fale um pouco mais: diga que o editor usa o ACE e oferece code
- coloring, etc.
- Comente o fato que o usuário pode ver os resultados das mudanças imediatamente,
- permitindo um feedback imediato para os especialistas.
- Fale que, se houver algum erro, a ultima versao pode rodar, etc.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1950,56 +1806,22 @@ name "fig:Editor-DSL"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Atualmente, foi definida uma DSL para especificar as web UI gerando uma
- estrutura do documento em 
-\lang english
-HTML
-\lang brazilian
-, que associa 
-\lang english
-templates
-\lang brazilian
- com o estilo predefinido através de 
-\lang english
-CSS
-\lang brazilian
- e com 
-\lang english
-scripts
-\lang brazilian
- definidos na linguagem 
-\lang english
-Javascript
-\lang brazilian
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 O editor da DSL tem compatibilidade com 
 \lang english
-web components
+Web Components
 \lang brazilian
 , tanto os fornecidos pelas bibliotecas integradas no Framework Decisioner,
  como com os 
 \lang english
-web components
+Web Components
 \lang brazilian
  do Framework 
 \lang english
 Grails
 \lang brazilian
- e adicionalmente podem ser definidos 
+ e, adicionalmente, podem ser definidos 
 \lang english
-web components 
+Web Components 
 \lang brazilian
 especializados.
 \end_layout
@@ -2007,7 +1829,7 @@ especializados.
 \begin_layout Section
 
 \lang english
-Web components
+Web Components
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Web-components"
@@ -2024,14 +1846,9 @@ Web Component
 \lang brazilian
 s 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Site oficial de 
-\lang english
-web components
-\lang brazilian
- 
 \begin_inset Flex URL
 status open
 
@@ -2074,7 +1891,7 @@ web components
 data-types
 \lang brazilian
  que permitem relacionar os tipos de dados com widgets específicas (capazes
- de edita-los), usadas nas 
+ de editá-los), usadas nas 
 \lang english
 web UIs
 \lang brazilian
@@ -2116,7 +1933,7 @@ web components
 \lang brazilian
 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
@@ -2203,127 +2020,10 @@ description "Cascading Style Sheets"
  Eles também devem incluir qualquer Web Component (widget) necessário mas
  não disponível por default no Decisioner.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Após uma pesquisa bibliográfica não foi possível encontrar sistemas que
- propusessem a geração automática de interface para Sistemas de Apoio a
- Decisão (SADs) com ou sem o uso de ontologias.
- Os artigos encontrados mais próximos ao tema deste trabalho tratam do uso
- de ontologias ou de 
-\lang english
-frameworks
-\lang brazilian
- em SADs para a área de sustentabilidade, área que vai ser usada neste trabalho
- para teste dos sistemas desenvolvidos.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ruiz2006using"
-
-\end_inset
-
- analisou e identificou 50 tipos de uso de ontologias na engenharia de software,
- entre as quais foram identificados dois usos no suporte a interfaces gráficas.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "paulheim2012ontology"
-
-\end_inset
-
- propõem a definição de uma 
-\lang english
-ontology-enhanced user
-\lang brazilian
- interface, que são um tipo de GUIs cujas capacidades de visualização, possibili
-dades de interação, ou processo de desenvolvimento são habilitados ou (pelo
- menos) melhorados pelo emprego de uma ou mais ontologias.
- Nessa pesquisa foram identificados três propósitos para os quais são usadas
- as ontologias no melhoramento das interfaces gráficas:
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as capacidades de visualização
-\end_layout
-
-\begin_layout Enumerate
-Melhorar as possibilidades de interação
-\end_layout
-
-\begin_layout Enumerate
-Melhorar o processo de desenvolvimento
-\end_layout
-
-\begin_layout Plain Layout
-A figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Ontology-Enhanced-User-Interfaces"
-
-\end_inset
-
- apresenta os tipos de usos das ontologias nas UI.
- 
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/Ontology-enhanced user interfaces.png
-	width 70col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-Ontology Enhanced User Interfaces
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Ontology-Enhanced-User-Interfaces"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Essas pesquisam dão a noção de que ontologias podem contribuir significativament
-e na geração de Web UI flexíveis e de SADs, confirmando a hipótese assumida
- na presente pesquisa.
- 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-A figura 
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Web-UI"
@@ -2438,17 +2138,7 @@ O componente
 \lang english
 DSL Interpreter
 \lang brazilian
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) Mude o nome na imagem (feito)
-\end_layout
-
-\end_inset
-
-processa as instruções dos especialistas na linguagem Decisioner DSL.
+ processa as instruções dos especialistas na linguagem Decisioner DSL.
  Foram utilizadas técnicas padrões para a criação de DSLs usando a linguagem
  
 \lang english
@@ -2456,18 +2146,6 @@ Groovy
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dearle2015groovy"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-(corrigido) Veja ref DSL in Groovy
-\end_layout
 
 \end_inset
 
@@ -2602,7 +2280,7 @@ O desenvolvimento do Framework Decisioner foi realizado simultaneamente
 \begin_layout Standard
 Não foi possível instanciar outro sistema no Decisioner durante o desenvolviment
 o do mestrado, mas atualmente encontra-se em andamento a implementação do
- SAD Nano-Tec como segunda instancia do Framework Decisioner.
+ SAD Nano-Tec como segunda instanciação do Framework Decisioner.
  O que permitirá generalizar ainda mais e servir como um caso de uso adicional
  para validar as hipóteses em outros domínios.
  Esta arquitetura foi validada por meio da instanciação do SAD SustenAgro,
@@ -2614,62 +2292,6 @@ o do mestrado, mas atualmente encontra-se em andamento a implementação do
 No capítulo seguinte será apresentado o SAD SustenAgro, gerado como primeiro
  caso de uso deste Framework, e depois será apresentado o processo de avaliação
  que formaliza a avaliação deste sistema.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(corrigido) Voce deixou de fora aspectos mais padroes, como criacao de usuarios,
- seguranca etc.
- Isso está ok, mas coloque isso numa sentenca, pode ate ser na conclusao,
- dizendo que eles existem mas foram deixados de lado por nao serem tao important
-es no entendimento do Decisioner e para deixar a explicacao mais simples.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Não gostei desse fim.
- Você fala de contribuições, mas aqui não é o melhor lugar, não tem destaque.
- Faça um resumo do capitulo e fale sobre validacao do framework e da necessidade
- de instancia-lo (o que sera feito no proximo capitulo).
- Fale das dificuldades de separar o que é geral e especifico ao Sustenagro
- e que isso foi um processo iterativo.
- Comente que só houve tempo para uma instanciacao.
-\end_layout
-
-\begin_layout Plain Layout
-NAO jogue fora as contribuicoes.
- Guarde para outro lugar (intro-conclusoes).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Não foram encontrados trabalhos na área de geração automática de interfaces
- para SADs.
- Também foi encontrado pouco material sobre ontologias para descrição de
- interfaces gráficas, pelo que se considera que o método e a ferramenta
- desenvolvidas são contribuições para as áreas de pesquisa em Sistemas de
- Apoio à Decisão e em aplicações da Web Semântica.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

@@ -77,28 +77,26 @@
 \begin_layout Standard
 A construção de sistemas que sejam capazes de fornecer suporte ao gestor
  em um processo de tomada de decisões tem sido um desafio ao longo dos anos.
- 
-\end_layout
-
-\begin_layout Standard
-Principalmente pelas dificuldades relacionadas com a modelagem e entendimento
- do conhecimento do domínio.
- Os especialistas de domínio e os desenvolvedores, têm 
+ Um dos problemas principais, são as dificuldades relacionadas com a modelagem
+ e o entendimento do conhecimento do domínio.
+ Especialistas de domínio e desenvolvedores de software têm 
 \emph on
 \lang english
 Backgrounds
 \emph default
 \lang brazilian
- diferentes, que fazem do processo de modelagem um processo lento e custoso,
- dificultando o processo de desenvolvimento e testes de um SAD.
- Por está razão  foram pesquisados modelos que facilitem o entendimento
- entre os dois tipos de profissionais e desenvolvida uma pesquisa ao redor
- deste tópico.
+ e culturas diferentes.
+ Isso faz com que o processo de modelagem desses sistemas seja um processo,
+ na maioria das vezes, lento e custoso, dificultando os processos de desenvolvim
+ento e testes.
+ Por esta razão, foram pesquisados modelos que facilitem o entendimento
+ entre esses dois tipos de profissionais e que permitam uma maior liberdade
+ e participação no desenvolvimento dos especialistas de domínio.
 \end_layout
 
 \begin_layout Standard
-A continuação será explicado a definição e arquitetura de SAD, o SAD SustenAgro
- e os trabalhos relacionados.
+Neste capítulo serão abordados a definição e arquitetura de SADs, o projeto
+ SustenAgro da Embrapa e os trabalhos relacionados.
 \end_layout
 
 \begin_layout Section
@@ -161,7 +159,7 @@ stas de domínio e os desenvolvedores, pelo qual o modelo de conhecimento
 \end_layout
 
 \begin_layout Standard
-A continuação será apresentada a arquitetura dos SAD e explicada a importância
+A seguir será apresentada a arquitetura dos SAD e explicada a importância
  dos modelos de conhecimento existentes dentro um SAD.
  
 \end_layout
@@ -253,7 +251,7 @@ fadaptada{Tweedale2016}
 
 \begin_layout Standard
 A arquitetura de um SAD pode ser representada pelos componentes descritos
- na figura 
+ na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Componentes-SAD"
@@ -316,7 +314,7 @@ Outputs
  são os resultados do processamento dos inputs e permitem comparar as alternativ
 as de decisão.
  As saídas comuns são relatórios, previsões e recomendações, apresentados
- por meio de uma interface grafica para facilitar o entendimento e interação
+ por meio de uma interface gráfica para facilitar o entendimento e interação
  por parte dos usuários.
 \end_layout
 
@@ -371,8 +369,8 @@ Um tipo de SAD que usa bases de conhecimento, são os SADs baseados em ontologia
 \end_layout
 
 \begin_layout Standard
-A continuação será apresentado o SAD SustenAgro, que suporta a avaliação
- da sustentabilidade em cana-de-açúcar a través do uso de ontologias.
+A seguir será apresentado o SAD SustenAgro, que suporta a avaliação da sustentab
+ilidade em cana-de-açúcar a través do uso de ontologias.
 \end_layout
 
 \begin_layout Section
@@ -512,7 +510,7 @@ reference "fig:SustenAgro-arquitetura-inicial"
 
  apresenta a arquitetura inicial do SAD SustenAgro, definida a partir dos
  requisitos dos especialistas.
- Esta arqutetura corresponde a um sistema de informação tradicional, que
+ Esta arquitetura corresponde a um sistema de informação tradicional, que
  requer a intervenção de desenvolvedores de software, para definir ou atualizar
  o conhecimento dos especialistas implícito no SAD.
 \end_layout
@@ -560,7 +558,7 @@ name "fig:SustenAgro-arquitetura-inicial"
 \end_layout
 
 \begin_layout Standard
-Os especialistas em sustentabilidade definiram o SAD Sustenagro com as seguintes
+Os especialistas em sustentabilidade definiram o SAD SustenAgro com as seguintes
  características:
 \end_layout
 
@@ -571,7 +569,7 @@ Sistema web com banco de dados para armazenar e recuperar as informações
 
 \begin_layout Itemize
 Integração e implementação do método SustenAgro de avaliação de sustentabilidade
-, descrito no apêndice 
+, descrito no Apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Sustainability_Assessment"
@@ -594,31 +592,16 @@ Desenvolvimento de
 \lang english
 widgets
 \lang brazilian
- especificas 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-Widgets
-\lang brazilian
- refere-se à componentes visuais dos sistemas web 
-\end_layout
-
-\end_inset
-
- para mostrar resultados obtidos, especificamente a implementação da matriz
- de sustentabilidade e do semáforo da sustentabilidade 
-\lang english
-
+ (componentes visuais dos sistemas web) para mostrar resultados obtidos,
+ especificamente a implementação da matriz de sustentabilidade e do semáforo
+ da sustentabilidade (Capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SustenAgro"
 
 \end_inset
 
-
+).
 \end_layout
 
 \begin_layout Itemize
@@ -629,7 +612,7 @@ Geração de relatórios e de recomendações de sustentabilidade.
 Um dos problemas identificados foi que os especialistas não tinham uma definição
  clara do SAD SustenAgro.
  Pelo que foi necessário realizar um levantamento de requisitos, descrito
- no capítulo 
+ no Capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SustenAgro"
@@ -844,10 +827,10 @@ feedback
 \end_layout
 
 \begin_layout Standard
-Esta representação de conhecimento pode ser mais exata da realidade do que
- outros modelos, devido a que está em um formato voltado a descrição de
- conhecimento, sobre o qual é possível fazer inferências que complementem
- o modelo ou gerar informações para suportar a decisão.
+Essa representação de conhecimento pode ser mais exata do que outros modelos,
+ devido a que está em um formato voltado a descrição de conhecimento, sobre
+ o qual é possível fazer inferências que complementem o modelo ou gerar
+ informações para suportar a decisão.
  A partir desse modelo computável definido pelos especialistas será gerado
  o SAD SustenAgro.
  
@@ -1025,7 +1008,7 @@ key "Abt2009"
 \end_inset
 
  apresenta uma proposta para modelar conceitualmente fazendas para desenvolver
- sistemas de gerenciamento que abrangem maiores complexidade do domı́nio.
+ sistemas de gerenciamento que abrangem maiores complexidade do domínio.
  O objetivo é melhorar o sistema produtivo, principalmente em aspectos de
  sustentabilidade.
  
@@ -1038,7 +1021,7 @@ key "Bonacin:2013:CIA:2536146.2536185"
 
 \end_inset
 
- apresentam uma ontologia sobre recursos hı́dricos na agricultura que tem
+ apresentam uma ontologia sobre recursos hídricos na agricultura que tem
  o objetivo de fornecer um meio de recuperação e compartilhamento do conheciment
 o de especialistas.
  Esse trabalho tem o objetivo de fornecer um meio de representação de conhecimen
@@ -1064,13 +1047,10 @@ key "roussey2010ontologies"
 \end_layout
 
 \begin_layout Standard
-Sobre a busca de SADs semelhantes ao SustenAgro, encontrou-se: 
-\end_layout
-
-\begin_layout Standard
-Uma estratégia para abordar a complexidade em SADs é a utilização de métodos
- e metodologias de avaliação que utilizam indicadores, um exemplo desse
- enfoque é a pesquisa de 
+Sobre a busca de SADs semelhantes ao SustenAgro, encontrou-se que uma estratégia
+ para abordar a complexidade em SADs é a utilização de métodos e metodologias
+ de avaliação que utilizam indicadores, um exemplo desse enfoque é a pesquisa
+ de 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "AlkanOlsson:2009"
@@ -1138,7 +1118,7 @@ key "soulignac2012knowledge"
 ais para selecionar e formalizar o conhecimento em agricultura orgânica.
  Esse trabalho abrange técnicas para formalizar o conhecimento agrı́cola
  com a visão de fornecer informações que ajudem a tomar decisões e a adotar
- práticas sus- tentáveis.
+ práticas sustentáveis.
  
 \end_layout
 
@@ -1168,11 +1148,8 @@ key "Rospocher:2012:ODS:2887638.2887644"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 O que todas essas referencias tem haver com o Decisioner ou Sustenagro?
@@ -1188,7 +1165,7 @@ Considerações finais
 \end_layout
 
 \begin_layout Standard
-A partir da análise dos SADs de avaliação apresentados e particularmente
+A partir da análise dos SADs de avaliação apresentados e, particularmente,
  dos requisitos inciais do SAD SustenAgro, foi evidenciado que um meio computáve
 l de definição de conhecimento por parte dos especialistas permite organizar
  dito conhecimento para integrá-lo com os SADs.
@@ -1209,7 +1186,7 @@ Desta forma será abordada uma solução ao problema da inexistência de uma
 l, entendível e acessível aos especialistas do domínio e desenvolvedores
  de software.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Onde você quer chegar neste capítulo? Pensei que a ideia era:
