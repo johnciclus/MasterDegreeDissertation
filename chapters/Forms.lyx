@@ -469,12 +469,8 @@ DeforestationIndicator:
  value: YesNo
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -486,7 +482,8 @@ Código de novo indicador
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -505,12 +502,6 @@ Acrescentar a nova dimensão na DSL, clicando na Aba DSL e no link Main adiciona
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Float algorithm
-wide false
-sideways false
-status open
-
-\begin_layout Enumerate
 \begin_inset listings
 inline false
 status open
@@ -520,12 +511,8 @@ status open
 feature ':AgriculturalIndicator'
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout

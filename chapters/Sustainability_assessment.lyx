@@ -598,67 +598,64 @@ A continuação serão apresentadas as fórmulas destes dois índices:
 As equações para calcular o índice da eficiência são:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float algorithm
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula de eficiência tecnologia no campo:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $efficiency(field)=\sum(CharacteristicsField*RelevanceProduction)*correctionFactor(0.8)$
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+efficiency(field) & = & \sum(CharacteristicsField*RelevanceProduction)\\
+ &  & *correctionFactor(0.8)
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula de eficiência tecnologia na indústria:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $efficiency(industry)=\sum(CharacteristicsProcessing*SugarcaneProcessing)*correctionFactor(0.2)$
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+efficiency(industry) & = & \sum(CharacteristicsProcessing*SugarcaneProcessing)\\
+ &  & *correctionFactor(0.2)
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula de eficiência produtiva e de custo:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $efficiencyAndCost=\sum(SugarcanEquality+\sum(Logistic+MarketVariables+Policies+Productivity))$
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+efficiencyAndCost & = & \sum(SugarcanEquality+\\
+ &  & \sum(Logistic+MarketVariables+Policies+Productivity))
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Índice de eficiência:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $EfficiencyIndex=\sum(efficiency(filed)+efficiency(industry))*efficiencyAndCost$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Fórmulas do índice de eficiência.
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+EfficiencyIndex & = & \sum(efficiency(filed)+efficiency(industry))\\
+ &  & *efficiencyAndCost
+\end{eqnarray*}
 
 \end_inset
 
@@ -673,68 +670,60 @@ Fórmulas do índice de eficiência.
 As equações para calcular o índice de sustentabilidade são:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float algorithm
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula da dimensão ambiental:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $EnvironmentalIndex=\sum(EnvironmentalIndicator*EnvironmentIndicatorWeight)$
+\begin_layout Standard
+\begin_inset Formula 
+\[
+EnvironmentalIndex=\sum(EnvironmentalIndicator*EnvironmentIndicatorWeight)
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula da dimensão econômica:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $EconomicIndex=\sum(EconomicIndicator*EconomicIndicatorWeight)$
+\begin_layout Standard
+\begin_inset Formula 
+\[
+EconomicIndex=\sum(EconomicIndicator*EconomicIndicatorWeight)
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Fórmula da dimensão social:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $SocialIndex=\sum(SocialIndicator*SocialIndicatorWeight)$
+\begin_layout Standard
+\begin_inset Formula 
+\[
+SocialIndex=\sum(SocialIndicator*SocialIndicatorWeight)
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Subsubsection*
 Índice de sustentabilidade:
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $SustainabilityIndex=\sum(EnvironmentalIndex+EconomicIndex+SocialIndex)/3$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Fórmulas do índice da sustentabilidade.
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_layout Standard
+\begin_inset Formula 
+\[
+SustainabilityIndex=\sum(EnvironmentalIndex+EconomicIndex+SocialIndex)/3
+\]
 
 \end_inset
 

@@ -3476,7 +3476,7 @@ Definir o Objeto da Avaliação
 No comando, a seguir 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:DSL-EvaluationObject"
+reference "lis:DSL-EvaluationObject"
 
 \end_inset
 
@@ -3587,19 +3587,15 @@ evaluationObject ':ProductionUnit', {
 }
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 DSL que define o Evaluation Object 
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:DSL-EvaluationObject"
+name "lis:DSL-EvaluationObject"
 
 \end_inset
 
@@ -3611,7 +3607,8 @@ name "alg:DSL-EvaluationObject"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -3674,7 +3671,7 @@ Features
  No exemplo do algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:DSL-Definição-de-Features"
+reference "lis:DSL-Definição-de-Features"
 
 \end_inset
 
@@ -3766,12 +3763,8 @@ Industrial'
 }
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3780,7 +3773,7 @@ Definição de
 Features 
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:DSL-Definição-de-Features"
+name "lis:DSL-Definição-de-Features"
 
 \end_inset
 
@@ -3792,7 +3785,8 @@ name "alg:DSL-Definição-de-Features"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -3819,7 +3813,7 @@ report
  No algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:SustenAgro-DSL"
+reference "lis:SustenAgro-DSL"
 
 \end_inset
 
@@ -4024,19 +4018,14 @@ heField+technologicalEfficiencyInTheIndustrial)
 }
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-SustenAgro DSL 
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:SustenAgro-DSL"
+name "lis:SustenAgro-DSL"
 
 \end_inset
 
@@ -4048,7 +4037,8 @@ name "alg:SustenAgro-DSL"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 

@@ -285,6 +285,19 @@ pagestyle{ruled}
 
 \begin_layout Plain Layout
 
+%
+\backslash
+addto
+\backslash
+captionsbrazil{
+\backslash
+renewcommand{
+\backslash
+algorithmname}{Listagem}}
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 addto
@@ -293,7 +306,9 @@ captionsbrazil{
 \backslash
 renewcommand{
 \backslash
-algorithmname}{Listagem}} 
+lstlistingname}{C{
+\backslash
+'o}digo-fonte}}
 \end_layout
 
 \end_inset
@@ -475,6 +490,26 @@ nomname}{Lista De Abreviaturas e Siglas}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+lstlistlistingname}{Lista De C{
+\backslash
+'o}digos-Fonte}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset FloatList figure
 
 \end_inset
@@ -490,14 +525,11 @@ nomname}{Lista De Abreviaturas e Siglas}
 \end_layout
 
 \begin_layout Standard
-\begin_inset FloatList algorithm
+\begin_inset CommandInset toc
+LatexCommand lstlistoflistings
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

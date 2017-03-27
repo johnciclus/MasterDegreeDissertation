@@ -166,8 +166,8 @@ description "Sistemas de Apoio à Decisão"
  interpretar e implementar pelos desenvolvedores de software, devido a que
  os especialistas não conseguem formalizar esse conhecimento em um modelo
  computável para integrá-lo nos SADs.
- Sendo realizado o processo de modelagem de conhecimento pelos desenvolvedores,
- parcializando o conhecimento do domínio e dificultando o desenvolvimento
+ A modelagem de conhecimento resulta sendo realizada pelos desenvolvedores,
+ influeniando o conhecimento do domínio e dificultando o desenvolvimento
  ágil dos SADs.
  Dada esta situação, identificou-se que não existe uma representação de
  conhecimento computável que permita definir SADs, que tenha um formato
