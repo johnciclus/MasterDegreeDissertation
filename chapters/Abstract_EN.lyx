@@ -157,36 +157,40 @@ status open
 \begin_layout Standard
 
 \lang english
-Decision Support Systems (DSS) integrate knowledge from Domain Experts in
- each of their components: in data and models, in mathematical operations
- that processes this data and in the resulting information that supports
- the decision-making process.
+Decision Support Systems (DSSs) organize and process data and information
+ to generate results to support decision making in a specific domain.
+ They integrate knowledge from domain experts in each of their components:
+ models, data, mathematical operations (that process the data) and analysis
+ results.
  In traditional development methodologies, this knowledge must be interpreted
- and implemented by software developers, because the experts cannot formalize
- this knowledge in a computable model to integrate it into the DSS.
- Knowledge modeling results being held by developers, biasing the domain
- knowledge and hindering the agile development of DSSs.
- Given this situation, it was identified that there is no computable knowledge
- representation that allows to define DSSs, that has a format understandable
- and accessible by the domain experts and by the computers.
- From that problem, solutions were tested, and found that the semantic web
- ontologies represent complex knowledge and provide a format understandable
- by humans and machines.
- Decisioner method allowing experts represent their knowledge by means of
- ontologies and Domain Specific Languages (DSL), to allow the definition
- and generation of SADs.
- With which proposed the Decisioner method that contains ontologies complemented
- with Domain Specific Language (DSL), it allow experts represent their knowledge.
- This method has been implemented in the Framework Decisioner to generate
- DSS in web environments.
- Method validation was performed with the instantiation of the DSS SustenAgro
- in Decisioner Framework, through asustainability assessment ontology in
- sugarcane in the center-south of Brazil and description on DSL, that allowed
- to generate the SustenAgro SDD.
- Finally, evaluations were carried out in the Framework Decisioner and DSS
- SustenAgro with positive results, that lead to the conclusion that the
- proposed method provided a means of representation of domain knowledge
- so that experts can define SADs.
+ and used by software developers to implement DSSs.
+ That is because domain experts cannot formalize this knowledge in a computable
+ model that can be integrated into DSSs.
+ The knowledge modeling process is carried out, in practice, by the developers,
+ biasing domain knowledge and hindering the agile development of DSSs (as
+ domain experts cannot modify code directly).
+ To solve this problem, a method and web tool is proposed that uses ontologies,
+ in the Web Ontology Language (OWL), to represent expert's knowledge, and
+ a Domain Specific Language (DSL), to model DSS behavior.
+ Ontologies, in OWL, are a computable knowledge representations, which allow
+ the definition of DSSs in a format understandable and accessible to humans
+ and machines.
+ This method was used to create the Decisioner Framework for the instantiation
+ of DSSs.
+ Decisioner automatically generates DSSs from an ontology and a description
+ in its DSL, including the DSS interface (using a Web Components library).
+ An online ontology editor, using a simplified format, allows that domain
+ experts change the ontology and immediately see the consequences of their
+ changes in the in the DSS.
+ A validation of this method was done through the instantiation of the SustenAgr
+o DSS, using the Decisioner Framework.
+ The SustenAgro DSS evaluates the sustainability of sugarcane production
+ systems in the center-south region of Brazil.
+ Evaluations, done by by sustainability experts from Embrapa Environment
+ (partners in this project), showed that domain experts are capable of changing
+ the ontology and DSL program used, without the help of software developers,
+ and that the system produced correct sustainability analysis.
+ 
 \end_layout
 
 \begin_layout Standard

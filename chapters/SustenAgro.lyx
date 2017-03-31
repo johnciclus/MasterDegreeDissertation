@@ -791,6 +791,176 @@ name "fig:Modelagem-unidade-produtiva"
 \begin_layout Subsection
 
 \lang english
+Subclasses of Categorical
+\end_layout
+
+\begin_layout Standard
+A classe 
+\lang english
+Categorical
+\lang brazilian
+ representa os possíveis 
+\lang english
+Value
+\lang brazilian
+ discretos que um 
+\shape italic
+\lang english
+Indicator
+\shape default
+\lang brazilian
+ pode ter na forma de categorias (por exemplo, Existe e Não Existe).
+ Um 
+\lang english
+Value
+\lang brazilian
+ também pode ser Real ou Inteiro.
+ A classe Categorical é definida na ontologia Decisioner, mas a SustenAgro
+ cria diversas classes filhas para definir uma série de valores categóricos.
+\end_layout
+
+\begin_layout Standard
+Cada subclasse de 
+\lang english
+Categorical
+\lang brazilian
+ é composta por um conjunto finito de elementos ou valores.
+ Cada valor é modelado como indivíduo da classe, permitindo assim, restringir
+ as opções de instanciação de cada indicador.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modelagem-de-Value"
+
+\end_inset
+
+, é apresentada a classe 
+\shape italic
+\lang english
+Value
+\shape default
+\lang brazilian
+ e suas subclasses, tanto 
+\shape italic
+\lang english
+Categorical
+\shape default
+\lang brazilian
+ para conjunto finito de valores e 
+\shape italic
+\lang english
+Real
+\shape default
+\lang brazilian
+ para valores numéricos.
+ Um exemplo de classe categórica seria a 
+\shape italic
+\lang english
+Yes/No
+\shape default
+\lang brazilian
+ que representa os valores de sim e não e é composta pela lista de instâncias
+ 
+\lang english
+Yes
+\lang brazilian
+ e No.
+\end_layout
+
+\begin_layout Standard
+Cada individuo da classe 
+\shape italic
+\lang english
+Value
+\shape default
+\lang brazilian
+ tem a propriedade 
+\shape italic
+\lang english
+as number
+\lang brazilian
+ 
+\shape default
+que relaciona a ele um valor numérico.
+ Esse valor define um critério de comparação entre os indivíduos da mesma
+ classe.
+ Ele é usado nas fórmulas do método de avaliação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Value.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelagem de 
+\lang english
+Value
+\lang brazilian
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelagem-de-Value"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Estas classes são complementadas com propriedades como 
+\lang english
+rdfs:range
+\lang brazilian
+ ou por padrões que representaram os 
+\lang english
+Value
+\lang brazilian
+ dos indicadores de outras maneiras mais especificas, permitindo expandir
+ o modelo a outros tipos de métodos de avaliação.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
 Classe Microregion
 \lang brazilian
  
@@ -1263,176 +1433,6 @@ As dimensões da sustentabilidade permitiram organizar os indicadores, levando
  essa organização desde os modelos de mapas conceituais, às ontologias,
  método de avaliação e, finalmente, até a representação dos resultados nas
  web UI dos SADs.
-\end_layout
-
-\begin_layout Subsection
-
-\lang english
-Subclasses of Categorical
-\end_layout
-
-\begin_layout Standard
-A classe 
-\lang english
-Categorical
-\lang brazilian
- representa os possíveis 
-\lang english
-Value
-\lang brazilian
- discretos que um 
-\shape italic
-\lang english
-Indicator
-\shape default
-\lang brazilian
- pode ter na forma de categorias (por exemplo, Existe e Não Existe).
- Um 
-\lang english
-Value
-\lang brazilian
- também pode ser Real ou Inteiro.
- A classe Categorical é definida na ontologia Decisioner, mas a SustenAgro
- cria diversas classes filhas para definir uma série de valores categóricos.
-\end_layout
-
-\begin_layout Standard
-Cada subclasse de 
-\lang english
-Categorical
-\lang brazilian
- é composta por um conjunto finito de elementos ou valores.
- Cada valor é modelado como indivíduo da classe, permitindo assim, restringir
- as opções de instanciação de cada indicador.
-\end_layout
-
-\begin_layout Standard
-Na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Modelagem-de-Value"
-
-\end_inset
-
-, é apresentada a classe 
-\shape italic
-\lang english
-Value
-\shape default
-\lang brazilian
- e suas subclasses, tanto 
-\shape italic
-\lang english
-Categorical
-\shape default
-\lang brazilian
- para conjunto finito de valores e 
-\shape italic
-\lang english
-Real
-\shape default
-\lang brazilian
- para valores numéricos.
- Um exemplo de classe categórica seria a 
-\shape italic
-\lang english
-Yes/No
-\shape default
-\lang brazilian
- que representa os valores de sim e não e é composta pela lista de instâncias
- 
-\lang english
-Yes
-\lang brazilian
- e No.
-\end_layout
-
-\begin_layout Standard
-Cada individuo da classe 
-\shape italic
-\lang english
-Value
-\shape default
-\lang brazilian
- tem a propriedade 
-\shape italic
-\lang english
-as number
-\lang brazilian
- 
-\shape default
-que relaciona a ele um valor numérico.
- Esse valor define um critério de comparação entre os indivíduos da mesma
- classe.
- Ele é usado nas fórmulas do método de avaliação.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/Value.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Modelagem de 
-\lang english
-Value
-\lang brazilian
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Modelagem-de-Value"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Estas classes são complementadas com propriedades como 
-\lang english
-rdfs:range
-\lang brazilian
- ou por padrões que representaram os 
-\lang english
-Value
-\lang brazilian
- dos indicadores de outras maneiras mais especificas, permitindo expandir
- o modelo a outros tipos de métodos de avaliação.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -2569,7 +2569,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../figures/home.jpg
+	filename /home/john/Desktop/Dissertation/figures/home.jpg
 	width 100text%
 
 \end_inset
@@ -3001,7 +3001,7 @@ Definir o Objeto da Avaliação
 No comando, a seguir 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:DSL-EvaluationObject"
+reference "lis:DSL-EvaluationObject"
 
 \end_inset
 

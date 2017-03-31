@@ -202,7 +202,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../figures/DSS.png
-	width 90col%
+	width 80col%
 
 \end_inset
 

@@ -215,6 +215,7 @@ OpenJDK
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -320,6 +321,7 @@ Web Server
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -400,6 +402,7 @@ User
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -449,6 +452,7 @@ Depois disso, é registrado no final do arquivo ~/.bashrc os próximos dois
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -498,6 +502,7 @@ Finalmente executar o comando, e verificar a execução do programa na URL
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -570,6 +575,7 @@ description "Portable Document Format"
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -662,6 +668,7 @@ script wkhtmltopdf.sh
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open
@@ -737,6 +744,7 @@ triplestore
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
 status open

@@ -137,7 +137,7 @@ as do SAD.
  na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Componente-DSL"
+reference "fig:Arquitectura-do-decisioner"
 
 \end_inset
 
@@ -166,7 +166,7 @@ A arquitetura do framework Decisioner é composta pelos componentes gerais
  para a definição de SADs, apresentados na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Interfaces"
+reference "fig:Arquitectura-do-decisioner"
 
 \end_inset
 
@@ -198,7 +198,7 @@ status open
 Arquitetura do Decisioner
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Interfaces"
+name "fig:Arquitectura-do-decisioner"
 
 \end_inset
 
@@ -951,6 +951,12 @@ es localizadas nas ontologias.
 \end_layout
 
 \begin_layout Standard
+A ontologia definida em este editor será usada para definir a estrutura
+ dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
+ a seguir.
+\end_layout
+
+\begin_layout Standard
 \align left
 \begin_inset Float figure
 placement H
@@ -991,13 +997,6 @@ name "fig:Editor-de-ontologia"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-A ontologia definida em este editor será usada para definir a estrutura
- dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
- a seguir.
- 
 \end_layout
 
 \begin_layout Section
@@ -1416,7 +1415,8 @@ reference "lis:Definição-da-lógica"
  Como a DSL é uma extensão da linguagem Groovy, qualquer comando da linguagem
  pode ser usado nela, incluindo operações lógicas e aritméticas.
  Para facilitar o trabalho dos especialistas de domínio, recomenda-se encapsular
- qualquer algoritmo ou chamada de função mais complicados num comando simples.
+ qualquer algoritmo ou chamada de função mais complicados em um comando
+ simples.
 \end_layout
 
 \begin_layout Standard
@@ -1548,7 +1548,7 @@ sustainability
 \shape italic
 efficiency
 \shape default
- num gráfico de matriz de sustentabilidade (Figura 
+ em um gráfico de matriz de sustentabilidade (Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Matriz-de-sustentabilidade-widget"
@@ -1690,57 +1690,6 @@ button save
 \end_layout
 
 \begin_layout Standard
-O Editor de código foi baseado no 
-\lang english
-Ace Editor
-\lang brazilian
-
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-ttps://ace.c9.io/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-, que fornece 
-\lang english
-syntax highlighting
-\lang brazilian
- para várias linguagens de programação, entre elas Groovy.
- Como a DSL foi baseada em Groovy, o editor foi configurado para reconhecer
- a sintaxe de Groovy.
- Também foi ativado o suporte para 
-\lang english
-code completion
-\lang brazilian
- para fornecer uma experiência de uso mais amigável.
-\end_layout
-
-\begin_layout Standard
-A principal vantagem desse editor é a funcionalidade de salvar a ontologia
- e reconfigurar o SAD imediatamente, permitindo uma experiência em tempo
- real de redefinição do SAD.
- Se o usuário errar algo, ele pode simplesmente restaurar as configurações
- 
-\lang english
-default
-\lang brazilian
-.
-\end_layout
-
-\begin_layout Standard
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1791,6 +1740,57 @@ name "fig:Editor-DSL"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+O Editor de código foi baseado no 
+\lang english
+Ace Editor
+\lang brazilian
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+ttps://ace.c9.io/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, que fornece 
+\lang english
+syntax highlighting
+\lang brazilian
+ para várias linguagens de programação, entre elas Groovy.
+ Como a DSL foi baseada em Groovy, o editor foi configurado para reconhecer
+ a sintaxe de Groovy.
+ Também foi ativado o suporte para 
+\lang english
+code completion
+\lang brazilian
+ para fornecer uma experiência de uso mais amigável.
+\end_layout
+
+\begin_layout Standard
+A principal vantagem desse editor é a funcionalidade de salvar a ontologia
+ e reconfigurar o SAD imediatamente, permitindo uma experiência em tempo
+ real de redefinição do SAD.
+ Se o usuário errar algo, ele pode simplesmente restaurar as configurações
+ 
+\lang english
+default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -1973,44 +1973,6 @@ Web UI
 \end_layout
 
 \begin_layout Standard
-Parte da Web UI é igual para todos os SADs, como formulários de login.
- O resto dela é gerado com a ajuda dos 
-\lang english
-Web Components.
-
-\lang brazilian
- Eles são relacionadas aos tipos de dados existentes no sistema, por meio
- da ontologia Decisioner.
- Por exemplo, dados podem ser dos tipos numérico contínuo, numérico discreto,
- percentagem, booleano, categóricos ou alfanumérico.
- Dada essa diversidade, os tipos de dados foram modelados em ontologias
- com a finalidade de permitir a adaptação automática (ou semiautomática)
- da interface às mudanças dos conceitos do domínio.
-\end_layout
-
-\begin_layout Standard
-Mudanças no layout geral podem ser feitas também através da edição das 
-\lang english
-Cascading Style Sheets (CSS 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "CSS"
-description "Cascading Style Sheets"
-
-\end_inset
-
-)
-\lang brazilian
- do Decisioner.
- É esperado que, quando da instalação do sistema, técnicos de informática
- façam uma customização do sistema para adequá-lo aos padrões de apresentação
- da instituição.
- Eles também devem incluir qualquer Web Component (widget) necessário mas
- não disponível por default no Decisioner.
- 
-\end_layout
-
-\begin_layout Standard
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2073,6 +2035,44 @@ name "fig:Web-UI"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Parte da Web UI é igual para todos os SADs, como formulários de login.
+ O resto dela é gerado com a ajuda dos 
+\lang english
+Web Components.
+
+\lang brazilian
+ Eles são relacionadas aos tipos de dados existentes no sistema, por meio
+ da ontologia Decisioner.
+ Por exemplo, dados podem ser dos tipos numérico contínuo, numérico discreto,
+ percentagem, booleano, categóricos ou alfanumérico.
+ Dada essa diversidade, os tipos de dados foram modelados em ontologias
+ com a finalidade de permitir a adaptação automática (ou semiautomática)
+ da interface às mudanças dos conceitos do domínio.
+\end_layout
+
+\begin_layout Standard
+Mudanças no layout geral podem ser feitas também através da edição das 
+\lang english
+Cascading Style Sheets (CSS 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CSS"
+description "Cascading Style Sheets"
+
+\end_inset
+
+)
+\lang brazilian
+ do Decisioner.
+ É esperado que, quando da instalação do sistema, técnicos de informática
+ façam uma customização do sistema para adequá-lo aos padrões de apresentação
+ da instituição.
+ Eles também devem incluir qualquer Web Component (widget) necessário mas
+ não disponível por default no Decisioner.
+ 
 \end_layout
 
 \begin_layout Section
