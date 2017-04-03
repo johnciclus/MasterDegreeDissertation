@@ -2569,7 +2569,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/john/Desktop/Dissertation/figures/home.jpg
+	filename ../figures/home.jpg
 	width 100text%
 
 \end_inset

@@ -661,7 +661,7 @@ name "sec:Formulario-Delphi-Workshop"
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename /home/john/Desktop/Dissertation/pages/workshop.pdf
+	filename ../pages/workshop.pdf
 	extra LaTeX "pages=-"
 	width 100page%
 
