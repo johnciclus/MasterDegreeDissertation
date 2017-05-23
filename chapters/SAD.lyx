@@ -260,7 +260,7 @@ reference "fig:Componentes-SAD"
 
 , representando o processo realizado pelos SADs, no qual recebem uma entrada,
  fazem o processamento dela e retorna resultados que são analisadas pelo
- tomador(es) de decisão a través da tecnologia computacional 
+ tomador(es) de decisão através da tecnologia computacional 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Tweedale2016"
@@ -370,7 +370,7 @@ Um tipo de SAD que usa bases de conhecimento, são os SADs baseados em ontologia
 
 \begin_layout Standard
 A seguir será apresentado o SAD SustenAgro, que suporta a avaliação da sustentab
-ilidade em cana-de-açúcar a través do uso de ontologias.
+ilidade em cana-de-açúcar através do uso de ontologias.
 \end_layout
 
 \begin_layout Section
@@ -804,8 +804,8 @@ r dito conhecimento.
 
 \begin_layout Standard
 O uso de uma ontologia permite representar e estruturar o conhecimento de
- avaliação da sustentabilidade em agricultura, a través da definição e atualizaç
-ão de conceitos por parte dos especialistas.
+ avaliação da sustentabilidade em agricultura, através da definição e atualizaçã
+o de conceitos por parte dos especialistas.
  permitindo que eles mesmos descrevam o domínio sem precisar dos desenvolvedores.
  Os especialistas do domínio tem familiaridade com os termos da ontologia
  e poderão especificar grande parte do conhecimento envolvido no SAD.

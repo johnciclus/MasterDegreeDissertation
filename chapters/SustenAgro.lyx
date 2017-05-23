@@ -89,7 +89,7 @@ O SAD SustenAgro foi usado como a primeira instanciação do Framework Decisione
  Ele é composto por uma ontologia de domínio, DSL e elementos gráficos de
  design (ícones, imgens de fundo, etc.) que permitem instanciá-lo no Decisioner.
  Sendo seu principal componente a ontologia do domínio de avaliação da sustentab
-ilidade da produção de cana-de-açucar na região centro-sul do Brasil..
+ilidade da produção de cana-de-açucar na região centro-sul do Brasil.
 \end_layout
 
 \begin_layout Standard
@@ -649,9 +649,7 @@ Categorical
 .
  A partir dessas classes foi possível desenvolver o modelo de dados em 
 \lang english
-OWL
-\lang brazilian
-, 
+OWL.
 \end_layout
 
 \begin_layout Standard

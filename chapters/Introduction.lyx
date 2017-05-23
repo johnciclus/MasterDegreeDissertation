@@ -395,7 +395,7 @@ Groovy
 
 \begin_layout Itemize
 Método e framework Decisioner para definir SADs por parte dos especialistas
- do domínio, desenvolvido a través do framework 
+ do domínio, desenvolvido através do framework 
 \lang english
 Grails
 \lang brazilian
@@ -404,7 +404,7 @@ Grails
 
 \begin_layout Itemize
 O SAD SustenAgro: Sistema para avaliação da sustentabilidade em cana-de-açúcar,
- na região centro-sul do Brasil, instanciada a través do Framework Decisioner.
+ na região centro-sul do Brasil, instanciada através do Framework Decisioner.
 \end_layout
 
 \begin_layout Itemize

@@ -450,7 +450,7 @@ RDF
 RDF
 \lang brazilian
  tem características que permitem a integração de dados inclusive de esquemas
- diferentes, e suporta especialmente a evolução dos esquemas a través do
+ diferentes, e suporta especialmente a evolução dos esquemas através do
  tempo sem requerer que mudanças nos consumidores de dados.
  RDF é uma recomendação do W3C
 \begin_inset Foot
