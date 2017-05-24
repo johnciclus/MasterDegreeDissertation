@@ -640,13 +640,29 @@ Web Components
 \end_layout
 
 \begin_layout Section
-Agradecimento do financiamento
+Agradecimentos
 \end_layout
 
 \begin_layout Standard
 Este trabalho foi realizado com uma bolsa de estudo financiada pela Coordenação
  de Aperfeiçoamento de Pessoal de Nı́vel Superior (CAPES) no âmbito do Ministéri
 o da educação do Brasil.
+\end_layout
+
+\begin_layout Standard
+Um especial agradecemento pelo apoio excepcional à Dra.
+ Katia Regina Evaristo de Jesus, pesquisadora da Embrapa Meio Ambiente,
+ coordenadora do Projeto 'Avaliação da Sustentabilidade de Sistemas de Produção
+ da Cana-de-açúcar e Soja na Região Centro-Sul do Brasil: Uma proposta metodológ
+ica e de modelo conceitual SustenAgro', financiado pela Embrapa.
+ Os dados técnicos empregados no desenvolvimento do Software foram desenvolvidos
+ no escopo do projeto supra citado.
+ 
+\end_layout
+
+\begin_layout Standard
+Também um especial agradecimento ao pesquisador Sérgio Alves Torquato da
+ Agência Paulista de Tecnologia do Agronegócio – APTA/ UPD Tietê/SP.
 \end_layout
 
 \end_body
