@@ -87,7 +87,7 @@ DSLs
 
 \begin_layout Standard
 Ontologia e DSL estão abertas a edição pelos especialistas de domínio.
- Eles podem editá-las, através de editores online (na própria ferramenta),
+ Eles podem editá-las, por meio de editores online (na própria ferramenta),
  e modificar aspectos fundamentais do SAD em tempo real.
  Essa característica permite um ciclo de desenvolvimento mais curto e uma
  participação ativa dos especialistas de domínio.
@@ -180,9 +180,9 @@ Método e framework Decisioner para definir SADs, baseados em ontologias
 \begin_layout Enumerate
 O SAD SustenAgro: sistema para avaliação da sustentabilidade em cana-de-açúcar,
  que foi implementado usando o Framework Decisioner.
- O SAD SustenAgro permite a reconfiguração, m tempo de execução, dos conceitos
+ O SAD SustenAgro permite a reconfiguração, em tempo de execução, dos conceitos
  do domínio, métodos de avaliação e componentes das interfaces gráficas,
- através do 
+ por meio do 
 \lang english
 Framework Decisioner
 \lang brazilian
@@ -342,8 +342,8 @@ Modelagem de um mapa conceitual, a partir dos elementos principais, que
 \end_layout
 
 \begin_layout Enumerate
-Modelagem da ontologia de maneira gráfica, através de um editor visual de
- ontologias, que faça uso dos conceitos, classificações e relacionamentos,
+Modelagem da ontologia de maneira gráfica, por meio de um editor visual
+ de ontologias, que faça uso dos conceitos, classificações e relacionamentos,
  identificados nos mapas conceituais, e permita definir ontologias em formato
  
 \lang english
@@ -380,7 +380,7 @@ O Framework Decisioner integra um editor de ontologias, baseado no formato
 YAML
 \lang brazilian
 .
- Ele dá suporte a edição de ontologias, em tempo de execução, através de
+ Ele dá suporte a edição de ontologias, em tempo de execução, por meio de
  uma Web UI.
  Ele pode ser complementado com um editor visual de ontologias que permita
  a visualização e edição em forma de grafos.

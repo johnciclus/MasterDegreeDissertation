@@ -1,17 +1,17 @@
 A construção de sistemas que sejam capazes de fornecer suporte ao
 gestor em um processo de tomada de decisões tem sido um desafio ao
-longo dos anos. 
+longo dos anos. Um dos problemas principais, são as dificuldades relacionadas
+com a modelagem e o entendimento do conhecimento do domínio. Especialistas
+de domínio e desenvolvedores de software têm \foreignlanguage{english}{\emph{Backgrounds}}
+e culturas diferentes. Isso faz com que o processo de modelagem desses
+sistemas seja um processo, na maioria das vezes, lento e custoso,
+dificultando os processos de desenvolvimento e testes. Por esta razão,
+foram pesquisados modelos que facilitem o entendimento entre esses
+dois tipos de profissionais e que permitam uma maior liberdade e participação
+no desenvolvimento dos especialistas de domínio.
 
-Principalmente pelas dificuldades relacionadas com a modelagem e entendimento
-do conhecimento do domínio. Os especialistas de domínio e os desenvolvedores,
-têm \foreignlanguage{english}{\emph{Backgrounds}} diferentes, que
-fazem do processo de modelagem um processo lento e custoso, dificultando
-o processo de desenvolvimento e testes de um SAD. Por está razão  foram
-pesquisados modelos que facilitem o entendimento entre os dois tipos
-de profissionais e desenvolvida uma pesquisa ao redor deste tópico.
-
-A continuação será explicado a definição e arquitetura de SAD, o SAD
-SustenAgro e os trabalhos relacionados.
+Neste capítulo serão abordados a definição e arquitetura de SADs,
+o projeto SustenAgro da Embrapa e os trabalhos relacionados.
 
 \section{Definição de SAD}
 
@@ -43,8 +43,8 @@ a comunicação e colaboração entre especialistas de domínio e os desenvolved
 pelo qual o modelo de conhecimento dos especialistas será objeto da
 pesquisa. 
 
-A continuação será apresentada a arquitetura dos SAD e explicada a
-importância dos modelos de conhecimento existentes dentro um SAD. 
+A seguir será apresentada a arquitetura dos SAD e explicada a importância
+dos modelos de conhecimento existentes dentro um SAD. 
 
 \section{Arquitetura para Sistemas de Apoio à Decisão}
 
@@ -57,7 +57,7 @@ não são consideradas parte da arquitetura \citep{sei2006architecture}.
 
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=0.9\columnwidth]{figures/DSS}
+\includegraphics[width=0.8\columnwidth]{figures/DSS}
 \par\end{centering}
 \caption{Componentes de um SAD.\label{fig:Componentes-SAD} }
 
@@ -65,10 +65,10 @@ não são consideradas parte da arquitetura \citep{sei2006architecture}.
 \end{figure}
 
 A arquitetura de um SAD pode ser representada pelos componentes descritos
-na figura \ref{fig:Componentes-SAD}, representando o processo realizado
+na Figura \ref{fig:Componentes-SAD}, representando o processo realizado
 pelos SADs, no qual recebem uma entrada, fazem o processamento dela
 e retorna resultados que são analisadas pelo tomador(es) de decisão
-a través da tecnologia computacional \citep{Tweedale2016}. 
+através da tecnologia computacional \citep{Tweedale2016}. 
 
 A Figura \ref{fig:Componentes-SAD} mostra os componentes de um SAD,
 que são generalizados em:
@@ -89,7 +89,7 @@ sistema.}
 \item [{Outputs}] \foreignlanguage{brazil}{são os resultados do processamento
 dos inputs e permitem comparar as alternativas de decisão. As saídas
 comuns são relatórios, previsões e recomendações, apresentados por
-meio de uma interface grafica para facilitar o entendimento e interação
+meio de uma interface gráfica para facilitar o entendimento e interação
 por parte dos usuários.}
 \end{description}
 Durante a evolução dos SAD, várias melhorias aconteceram, entre elas
@@ -109,8 +109,8 @@ Um tipo de SAD que usa bases de conhecimento, são os SADs baseados
 em ontologias para representar o conhecimento dos especialistas, permitindo
 definir, classificar, relacionar e inferir conhecimento. 
 
-A continuação será apresentado o SAD SustenAgro, que suporta a avaliação
-da sustentabilidade em cana-de-açúcar a través do uso de ontologias.
+A seguir será apresentado o SAD SustenAgro, que suporta a avaliação
+da sustentabilidade em cana-de-açúcar através do uso de ontologias.
 
 \section{SAD SustenAgro\label{sec:SAD-SustenAgro}}
 
@@ -135,7 +135,7 @@ aspectos fazem complexo manter a produtividade sem afetar a sustentabilidade.
 Por essas razões, a Embrapa Meio Ambiente escolheu especificamente
 o sistema produtivo da cultura de cana-de-açúcar na região centro-sul
 do Brasil, como sistema piloto para desenvolver métodos e software
-de avaliação da sustentabilidade (apêndice \ref{chap:Sustainability_Assessment}).
+de avaliação da sustentabilidade (apêndice \ref{appendix:Sustainability_Assessment}).
 
 Dada a complexidade da análise da sustentabilidade em sistemas de
 produção agrícola, os pesquisadores da Embrapa Meio Ambiente trabalharam
@@ -148,7 +148,7 @@ o quão sustentável ele é. A partir da análise de cada indicador, é
 possível gerar recomendações de medidas corretivas para as unidades
 produtivas ou para o embasamento de políticas públicas que incentivem
 a sustentabilidade. A definição conceitual do processo de avaliação
-da sustentabilidade em cana-de-açúcar está detalhada no apêndice \ref{chap:Sustainability_Assessment}. 
+da sustentabilidade em cana-de-açúcar está detalhada no apêndice \ref{appendix:Sustainability_Assessment}. 
 
 A partir do método SustenAgro, foi desenvolvido um sistema software
 de avaliação da sustentabilidade intitulado SAD SustenAgro que implementa
@@ -158,7 +158,7 @@ consegue adaptar-se às mudanças do domínio.
 O SAD SustenAgro suporta a avaliação da sustentabilidade em cana-de-açúcar
 no centro-sul do Brasil. A figura \ref{fig:SustenAgro-arquitetura-inicial}
 apresenta a arquitetura inicial do SAD SustenAgro, definida a partir
-dos requisitos dos especialistas. Esta arqutetura corresponde a um
+dos requisitos dos especialistas. Esta arquitetura corresponde a um
 sistema de informação tradicional, que requer a intervenção de desenvolvedores
 de software, para definir ou atualizar o conhecimento dos especialistas
 implícito no SAD.
@@ -170,29 +170,27 @@ implícito no SAD.
 \caption{Arquitetura inicial do SAD SustenAgro .\label{fig:SustenAgro-arquitetura-inicial}}
 \end{figure}
 
-Os especialistas em sustentabilidade definiram o SAD Sustenagro com
+Os especialistas em sustentabilidade definiram o SAD SustenAgro com
 as seguintes características:
 \begin{itemize}
 \item Sistema web com banco de dados para armazenar e recuperar as informações
 do sistema.
 \item Integração e implementação do método SustenAgro de avaliação de sustentabilidade,
-descrito no apêndice \ref{chap:Sustainability_Assessment} 
+descrito no Apêndice \ref{appendix:Sustainability_Assessment} 
 \item Flexibilidade para adaptar o método SustenAgro a outras culturas.
 \item Integração com sistemas de georreferenciamento.
-\item Desenvolvimento de \foreignlanguage{english}{widgets} especificas
-\footnote{\selectlanguage{english}%
-Widgets\foreignlanguage{brazil}{ refere-se à componentes visuais dos
-sistemas web }\selectlanguage{brazil}%
-} para mostrar resultados obtidos, especificamente a implementação
-da matriz de sustentabilidade e do semáforo da sustentabilidade \foreignlanguage{english}{\ref{chap:SustenAgro}}
+\item Desenvolvimento de \foreignlanguage{english}{widgets} (componentes
+visuais dos sistemas web) para mostrar resultados obtidos, especificamente
+a implementação da matriz de sustentabilidade e do semáforo da sustentabilidade
+(Capítulo \ref{chap:SustenAgro}).
 \item Geração de relatórios e de recomendações de sustentabilidade.
 \end{itemize}
 Um dos problemas identificados foi que os especialistas não tinham
 uma definição clara do SAD SustenAgro. Pelo que foi necessário realizar
-um levantamento de requisitos, descrito no capítulo \ref{chap:SustenAgro},
-para definir os requisitos funcionais (essenciais) e não funcionais
-(desejáveis). Além disso, foi necessário reestruturar o desenvolvimento
-do SAD SustenAgro para que fosse integrado no processo de pesquisa.
+um levantamento de requisitos (Capítulo \ref{chap:SustenAgro}), para
+definir os requisitos funcionais (essenciais) e não funcionais (desejáveis).
+Além disso, foi necessário reestruturar o desenvolvimento do SAD SustenAgro
+para que fosse integrado no processo de pesquisa.
 
 O SAD SustenAgro faz parte de um conjunto de ferramentas de avaliação
 definidas pela Embrapa Meio Ambiente. A partir do analise das ferramentas
@@ -235,7 +233,7 @@ de SAD, e evitar que o conhecimento ficara implícito no software como
 aconteceu no desenvolvimento dos SAD listados.
 
 O uso de uma ontologia permite representar e estruturar o conhecimento
-de avaliação da sustentabilidade em agricultura, a través da definição
+de avaliação da sustentabilidade em agricultura, através da definição
 e atualização de conceitos por parte dos especialistas. permitindo
 que eles mesmos descrevam o domínio sem precisar dos desenvolvedores.
 Os especialistas do domínio tem familiaridade com os termos da ontologia
@@ -244,11 +242,11 @@ Idealmente, essa definição deve ser detalhada o suficiente para que
 os desenvolvedores possam desenvolver a parte computacional do SAD
 sem necessidade de \foreignlanguage{english}{feedback} dos especialistas.
 
-Esta representação de conhecimento pode ser mais exata da realidade
-do que outros modelos, devido a que está em um formato voltado a descrição
-de conhecimento, sobre o qual é possível fazer inferências que complementem
-o modelo ou gerar informações para suportar a decisão. A partir desse
-modelo computável definido pelos especialistas será gerado o SAD SustenAgro. 
+Essa representação de conhecimento pode ser mais exata do que outros
+modelos, devido a que está em um formato voltado a descrição de conhecimento,
+sobre o qual é possível fazer inferências que complementem o modelo
+ou gerar informações para suportar a decisão. A partir desse modelo
+computável definido pelos especialistas será gerado o SAD SustenAgro. 
 
 Devido a este contexto, o SAD SustenAgro foi escolhido como projeto
 piloto para desenvolver a presente pesquisa, porque permite o desenvolvimento
@@ -292,11 +290,11 @@ statements}}).
 
 \citet{Abt2009} apresenta uma proposta para modelar conceitualmente
 fazendas para desenvolver sistemas de gerenciamento que abrangem maiores
-complexidade do dom\'{ı}nio. O objetivo é melhorar o sistema produtivo,
+complexidade do domínio. O objetivo é melhorar o sistema produtivo,
 principalmente em aspectos de sustentabilidade. 
 
 \citet{Bonacin:2013:CIA:2536146.2536185} apresentam uma ontologia
-sobre recursos h\'{ı}dricos na agricultura que tem o objetivo de fornecer
+sobre recursos hídricos na agricultura que tem o objetivo de fornecer
 um meio de recuperação e compartilhamento do conhecimento de especialistas.
 Esse trabalho tem o objetivo de fornecer um meio de representação
 de conhecimento em agricultura, mas não aborda maneiras de facilitar
@@ -310,9 +308,8 @@ Dadas as afirmações dessas pesquisas, pode-se concluir que uma ontologia
 pode proporcionar o suporte na representação e organização de conhecimento
 necessário para cumprir os requisitos do sistema SustenAgro.
 
-Sobre a busca de SADs semelhantes ao SustenAgro, encontrou-se: 
-
-Uma estratégia para abordar a complexidade em SADs é a utilização
+Sobre a busca de SADs semelhantes ao SustenAgro, encontrou-se que
+uma estratégia para abordar a complexidade em SADs é a utilização
 de métodos e metodologias de avaliação que utilizam indicadores, um
 exemplo desse enfoque é a pesquisa de \citet{AlkanOlsson:2009}. Nela
 foi desenvolvido um \foreignlanguage{english}{\emph{framework}} de
@@ -338,7 +335,7 @@ conhecimento que fornece serviços computacionais para selecionar e
 formalizar o conhecimento em agricultura orgânica. Esse trabalho abrange
 técnicas para formalizar o conhecimento agr\'{ı}cola com a visão de
 fornecer informações que ajudem a tomar decisões e a adotar práticas
-sus- tentáveis. 
+sustentáveis. 
 
 \citet{kumazawa2009toward} advoga que, na ciência da sustentabilidade,
 é necessário criar meios que permitam definir conhecimento estruturado
@@ -351,10 +348,9 @@ SADs têm usado ontologias para suportar várias fases do processo de
 decisão como: a organização dos dados, seu processamento e a representação
 da informação produzida \citep{Rospocher:2012:ODS:2887638.2887644}.
 
-
 \section{Considerações finais}
 
-A partir da análise dos SADs de avaliação apresentados e particularmente
+A partir da análise dos SADs de avaliação apresentados e, particularmente,
 dos requisitos inciais do SAD SustenAgro, foi evidenciado que um meio
 computável de definição de conhecimento por parte dos especialistas
 permite organizar dito conhecimento para integrá-lo com os SADs.

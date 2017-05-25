@@ -6,36 +6,39 @@ Carlos – SP, 2017.
 
 \vphantom{}
 
-Os Sistemas de Apoio à Decisão (SAD\nomenclature{SAD}{Sistemas de Apoio à Decisão})
-integram conhecimento dos especialistas do domínio em cada um dos
-componentes deles: nos dados e modelos, nas operações matemáticas
-que processam esses dados e nas informações resultantes que suportam
-o processo de decisão. Nas metodologias de desenvolvimento tradicionais,
-este conhecimento deve-se interpretar e implementar pelos desenvolvedores
-de software, devido a que os especialistas não conseguem formalizar
-esse conhecimento em um modelo computável para integrá-lo nos SADs.
-Sendo realizado o processo de modelagem de conhecimento pelos desenvolvedores,
-parcializando o conhecimento do domínio e dificultando o desenvolvimento
-ágil dos SADs. Dada esta situação, identificou-se que não existe uma
-representação de conhecimento computável que permita definir SADs,
-que tenha um formato entendível e accessível pelos especialista do
-domínio e pelos computadores. A partir desse problema, foram testadas
-soluções, e encontrou-se que as ontologias baseadas na web semântica
-representam conhecimento complexo e fornecem um formato entendível
-pelos humanos e máquinas. Com o qual propôs-se o método Decisioner
-de consiste em que as ontologias complementadas com \foreignlanguage{english}{Domain
-Specific Language} (DSL\nomenclature{DSL}{Domain Specific Language})
-permitem aos especialistas representar o conhecimento deles. Este
-método foi implementado no \foreignlanguage{english}{Framework} Decisioner
-que permite definir e gerar SADs em entornos web. A validação do método
-foi realizada por meio da instanciação do SAD SustenAgro no Framework
-Decisioner, através de uma ontologia de avaliação da sustentabilidade
-em cana-de-açúcar no centro-sul do Brasil e de uma descrição na DSL,
-que permitiram gerar o SAD SustenAgro. Finalmente, foram realizadas
-avaliações do Framework Decisioner e do SAD SustenAgro com resultados
-positivos que permitem concluir que o método proposto forneceu um
-meio de representação de conhecimento do domínio para que especialistas
-possam definir SADs.
+Os Sistemas de Apoio à Decisão (SAD\nomenclature{SAD}{Sistema de Apoio à Decisão})
+organizam e processam dados e informações para gerar resultados que
+apoiem a tomada de decisão em um domínio especifico. Eles integram
+conhecimento de especialistas de domínio em cada um de seus componentes:
+modelos, dados, operações matemáticas (que processam os dados) e resultado
+de análises. Nas metodologias de desenvolvimento tradicionais, esse
+conhecimento deve ser interpretado e usado por desenvolvedores de
+software para implementar os SADs. Isso porque especialistas de domínio
+não conseguem formalizar esse conhecimento em um modelo computável
+que possa ser integrado aos SADs. O processo de modelagem de conhecimento
+é realizado, na prática, pelos desenvolvedores, parcializando o conhecimento
+do domínio e dificultando o desenvolvimento ágil dos SADs (já que
+os especialistas não modificam o código diretamente). Para solucionar
+esse problema, propõe-se um método e ferramenta web que usa ontologias,
+na Web Ontology Language (OWL), para representar o conhecimento de
+especialistas, e uma Domain Specific Language (DSL\nomenclature{DSL}{Domain Specific Language}),
+para modelar o comportamento dos SADs. Ontologias, em OWL, são uma
+representação de conhecimento computável, que permite definir SADs
+em um formato entendível e accessível a humanos e máquinas. Esse método
+foi usado para criar o framework Decisioner para a instanciação de
+SADs. O Decisioner gera automaticamente SADs a partir de uma ontologia
+e uma descrição na  DSL, incluindo a interface do SAD (usando uma
+biblioteca de Web Components). Um editor online de ontologias, que
+usa um formato simplificado, permite que especialistas de domínio
+possam modificar aspectos da ontologia e imediatamente ver as consequência
+de suas mudanças no SAD. Uma validação desse método foi realizada,
+por meio da instanciação do SAD SustenAgro no Framework Decisioner.
+O SAD SustenAgro avalia a sustentabilidade de sistemas produtivos
+de cana-de-açúcar na região centro-sul do Brasil. Avaliações, conduzidas
+por especialistas em sustentabilidade da Embrapa Meio ambiente (parceiros
+neste projeto), mostraram que especialistas são capazes de alterar
+a ontologia e DSL usadas, sem a ajuda de programadores, e que o sistema
+produz análises de sustentabilidade corretas. 
 
 \vphantom{}
 

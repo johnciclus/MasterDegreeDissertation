@@ -1,5 +1,5 @@
-O SAD SustenAgro (capítulo \ref{chap:SustenAgro}) foi instanciado
-usando o Framework Decisioner (capítulo \ref{chap:Decisioner}) e
+O SAD SustenAgro (Capítulo \ref{chap:SustenAgro}) foi instanciado
+usando o Framework Decisioner (Capítulo \ref{chap:Decisioner}) e
 avaliado, durante diferentes estágios de desenvolvimento, através
 de experimentos realizados com especialistas de domínio e usuários
 da Embrapa. Esses dois sistemas foram desenvolvidos com metodologias
@@ -129,10 +129,10 @@ denominado teste de mínimos e máximos, gerando resultados em forma
 de relatório para cada um dos cenários. 
 
 A Figura \ref{fig:Matriz-de-sustentabilidade-Minimos} apresenta a
-Matriz de Sustentabilidade com o cenário de mínimos, na qual o ponto
-preto identifica o resultado da avaliação. Ele ficou no primeiro quadrante
-tal como se esperava. Os resultados para testes de máximos também
-se comportaram como esperado.
+Matriz de Sustentabilidade com o cenário de mínimos. Na matriz, o
+ponto preto identifica o resultado da avaliação. Ele ficou no primeiro
+quadrante tal como se esperava. Os resultados para testes de máximos
+também se comportaram como esperado.
 
 \begin{figure}[H]
 \begin{centering}
@@ -142,13 +142,16 @@ se comportaram como esperado.
 
 \end{figure}
 
- Durante a realização dos testes foi descoberto um problema na formula
-do método SustenAgro original, e a avaliação efetuada permitiu contribuir
-na redefinição da formula de avaliação, por meio da integração de
-uma operação de valor de um valor absoluto na fórmula. A possibilidade
-da interação direta e fácil dos especialistas, em tempo real, com
-o sistema permitiu demostrar agilmente possíveis cenários de resolução
-do problema e aceitar rapidamente uma solução, proposta pelo autor.
+Um dos aspectos mais importantes da ferramenta, é que ela permite
+que os próprios especialistas mudem, em tempo real, as fórmulas do
+método de avaliação, permitindo fazer ajustes finos no método. Por
+exemplo, durante a realização dos testes, foi descoberto um problema
+na fórmula do método SustenAgro original. Usando a DSL, algumas opções
+de correção foram tentadas e, rapidamente, foi possível redefinir
+a fórmula de avaliação. A possibilidade da interação direta e fácil
+dos especialistas, em tempo real, com o sistema permitiu demostrar
+agilmente possíveis cenários de resolução desse problema e aceitar,
+rapidamente, uma solução (proposta pelo autor).
 
 \section{Avaliação do SAD SustenAgro e do Framework Decisioner: }
 
@@ -174,34 +177,12 @@ sugestões. As tarefas e perguntas solicitadas aos usuários estão listadas
 no Apêndice \ref{sec:Formul=0000E1rio-de-avalia=0000E7=0000E3o-SustenAgro}
 e permitiram gerar os seguintes resultados das avaliações:
 
-\begin{longtable}{|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.6\columnwidth}|}
+\setlist[itemize]{leftmargin=*, topsep=0pt}
+
+\begin{table}
+\begin{tabular}{|>{\centering}p{2.5cm}|>{\centering}p{2.5cm}|>{\centering}p{10cm}|}
 \hline 
 \textbf{\small{}Perfil de Usuário} & \textbf{\small{}Avaliação} & \textbf{\small{}Sugestões}\tabularnewline
-\hline 
-\hline 
-{\small{}Usuário final 1} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
-\item {\small{}Aumentar a ajuda para cada funcionalidade}{\small \par}
-\item {\small{}Barra de progresso durante a avaliação}{\small \par}
-\item {\small{}Resultados de avaliação mais detalhados}
-\end{itemize}
-\tabularnewline
-\hline 
-\hline 
-{\small{}Usuário final 2} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
-\item {\small{}Melhorar a explicação do processo de avaliação}{\small \par}
-\item {\small{}Resultados numéricos com formatação }
-\end{itemize}
-\tabularnewline
-\hline 
-\hline 
-{\small{}Usuário final 3} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
-\item {\small{}Segurança no cadastro da senha}{\small \par}
-\item {\small{}Melhorar a localização do botão avaliar}{\small \par}
-\item {\small{}Remover }\foreignlanguage{english}{{\small{}scroll}}{\small{}
-externo}{\small \par}
-\item {\small{}Salvar automaticamente os dados}
-\end{itemize}
-\tabularnewline
 \hline 
 \hline 
 {\small{}Especialista em sustentabilidade} & {\small{}Positiva, realizou as 5 tarefas de usuário e as 5 tarefas
@@ -218,7 +199,6 @@ produtiva, especificamente a propriedade de publicação dos dados}{\small \par}
 \end{itemize}
 \tabularnewline
 \hline 
-\hline 
 {\small{}Especialista economia} & {\small{}Positiva, realizou as 5 tarefas de usuário e as 5 tarefas
 de especialista de domínio com sucesso} & \begin{itemize}
 \item {\small{}Salvar dados da seção automaticamente}{\small \par}
@@ -229,14 +209,12 @@ de especialista de domínio com sucesso} & \begin{itemize}
 \end{itemize}
 \tabularnewline
 \hline 
-\hline 
 {\small{}Especialista em ontologias} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
 \item {\small{}Melhorar a apresentação do botão salvar}{\small \par}
 \item {\small{}Indicadores em forma de pergunta com verbo e simbolo de pergunta}{\small \par}
 \item {\small{}Informar a possibilidade de edição de indicadores }
 \end{itemize}
 \tabularnewline
-\hline 
 \hline 
 {\small{}Especialista agricultura} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
 \item {\small{}Cadastrar mais de uma microrregião}{\small \par}
@@ -248,7 +226,6 @@ externo, mudanças em vários indicadores}{\small \par}
 \end{itemize}
 \tabularnewline
 \hline 
-\hline 
 {\small{}Especialista em computação} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
 \item {\small{}Salvar a seção e os dados dela em tempo real}{\small \par}
 \item {\small{}Integrar sistemas externos para poupar informação (caracterização
@@ -256,10 +233,38 @@ da unidade produtiva) }
 \end{itemize}
 \tabularnewline
 \hline 
-\end{longtable}
+\end{tabular}\caption{Avaliação dos especialistas do SAD SustenAgro}
+\end{table}
 
-\begin{table}[H]
-\caption{Avaliação do SAD SustenAgro}
+\begin{table}
+\begin{tabular}{|>{\centering}p{3cm}|>{\centering}p{3cm}|>{\centering}p{9cm}|}
+\hline 
+\textbf{\small{}Perfil de Usuário} & \textbf{\small{}Avaliação} & \textbf{\small{}Sugestões}\tabularnewline
+\hline 
+\hline 
+{\small{}Usuário final 1} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
+\item {\small{}Aumentar a ajuda para cada funcionalidade}{\small \par}
+\item {\small{}Barra de progresso durante a avaliação}{\small \par}
+\item {\small{}Resultados de avaliação mais detalhados}
+\end{itemize}
+\tabularnewline
+\hline 
+{\small{}Usuário final 2} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
+\item {\small{}Melhorar a explicação do processo de avaliação}{\small \par}
+\item {\small{}Resultados numéricos com formatação }
+\end{itemize}
+\tabularnewline
+\hline 
+{\small{}Usuário final 3} & {\small{}Positiva, realizou as 5 tarefas de usuário final com sucesso} & \begin{itemize}
+\item {\small{}Segurança no cadastro da senha}{\small \par}
+\item {\small{}Melhorar a localização do botão avaliar}{\small \par}
+\item {\small{}Remover }\foreignlanguage{english}{{\small{}scroll}}{\small{}
+externo}{\small \par}
+\item {\small{}Salvar automaticamente os dados}
+\end{itemize}
+\tabularnewline
+\hline 
+\end{tabular}\caption{Avaliação dos usuários finais do SAD SustenAgro}
 \end{table}
 
 A partir dessa avaliação integral, feita por usuários finais e administradores,
@@ -271,6 +276,8 @@ a inclusão da linguagem inglês. Essa última mudança foi selecionada
 como de especial importância, por parte dos especialistas. Neste documento,
 são apresentadas várias telas, tanto em português como em inglês,
 que foram geradas a partir da implementação dessa funcionalidade.
+
+\setlist[itemize]{}
 \selectlanguage{english}%
 
 \section{Workshop\foreignlanguage{brazil}{: validação do software SustenAgro
@@ -306,7 +313,7 @@ entre eles destacam-se:
 \item Especialista em sustentabilidade
 \item Especialista em ciências agrícolas
 \item Especialista em modelagem de conhecimento
-\item Especialista em ciência e Tecnologia do Bioetanol
+\item Especialista em ciência e tecnologia do bioetanol
 \item Especialista em ciências da computação
 \item Especialista em economia agrícola
 \item Especialista em biotecnologia
@@ -362,8 +369,8 @@ A instalação, coordenada pelo desenvolvedor do Framework Decisioner
 e técnicos da Embrapa, foi problemática. A Embrapa não autoriza o
 acesso físico ou via ssh aos servidor por parte de profissionais externos.
 Por esta razão, foi criado um documento de instalação, descrito no
-Apêndice \ref{chap:Instalation}. Nele estão as instruções para instalar
-o Framework Decisioner e instanciar o SAD SustenAgro.
+Apêndice \ref{appendix:Instalation}. Nele estão as instruções para
+instalar o Framework Decisioner e instanciar o SAD SustenAgro.
 
 A instalação foi exitosa e o sistema está funcionando no endereço
 \url{https://sustenagro.embrapa.br/}. Atualmente o endereço não está

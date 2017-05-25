@@ -9,9 +9,9 @@ Decisioner. Ele é composto por uma ontologia de domínio, DSL e elementos
 gráficos de design (ícones, imgens de fundo, etc.) que permitem instanciá-lo
 no Decisioner. Sendo seu principal componente a ontologia do domínio
 de avaliação da sustentabilidade da produção de cana-de-açucar na
-região centro-sul do Brasil..
+região centro-sul do Brasil.
 
-Nest capítulo, serão explicadas a arquitetura, a metodologia e os
+Neste capítulo, serão explicadas a arquitetura, a metodologia e os
 componentes mais importantes do SAD SustenAgro. Serão feitas também
 algumas considerações sobre o processo de definição do SAD.
 
@@ -73,12 +73,12 @@ Um dos meios, que permitiu uma melhor comunicação, foi o desenvolvimento
 de um mapa conceitual, por meio da ferramenta Cmap Tools\footnote{http://cmap.ihmc.us/},
 com a participação de um grupo de especialistas em modelagem de conhecimento.
 Esse processo começou em uma reunião da equipe na Embrapa Informática
-Agropecuária (situada situada na Universidade Estadual de Campinas,
-UNICAMP). Nessa reunião, um especialista em desenvolvimento de ontologias
-da Embrapa forneceu treinamento sobre a metodologia para definir ontologias,
+Agropecuária (situada na Universidade Estadual de Campinas, UNICAMP).
+Nessa reunião, um especialista em desenvolvimento de ontologias da
+Embrapa forneceu treinamento sobre a metodologia para definir ontologias,
 desenvolvimento de mapas conceituais, com os principais conceitos,
 e desenvolvimento de modelos em \foreignlanguage{english}{OWL,} para
-tornar esse conehcimento computável.
+tornar esse conhecimento computável.
 
 Após realizada a modelagem, o especialista do domínio definiu perguntas
 de interesse, com as quais os modeladores (o autor e um colega de
@@ -112,10 +112,10 @@ são cíclicas e os protótipos mudam em cada ciclo para cumprir os novos
 requisitos.
 
 \label{A-metodologia-de-UI}A metodologia de desenvolvimento dos \foreignlanguage{english}{Web
-Components} e das \foreignlanguage{english}{Web UI}  tiveram um enfoque
+Components} e das \foreignlanguage{english}{Web UI} tiveram um enfoque
 baseado em \foreignlanguage{english}{User Centered Design}. A avaliação
-dessas duas interfaces foi realizada integradamente para validar
-se os requisitos identificados. 
+dessas duas interfaces foi realizada integradamente para validar os
+requisitos identificados. 
 
 O processo de design das \foreignlanguage{english}{web UI} incluiu
 as seguintes etapas de levantamento de requisitos:
@@ -164,10 +164,10 @@ representa conceitos gerais de conceitos identificados na literatura
 e conceitos particulares ao SustenAgro, identificados por \citet{oliveira:2013}. 
 
 Deve-se destacar que a ontologia SustenAgro abrange um domínio bem
-específico: sustentabilidade de sistemas produtivos de cana-de-açucar
+específico: sustentabilidade de sistemas produtivos de cana-de-açúcar
 na região centro-sul do Brasil. Acreditamos que essa é uma característica
 deste tipo de SAD. Modelamentos desse tipo tendem a ser específicos.
-No caso do Sustenagro, ele abrange apenas um só sistema produtivo
+No caso do SustenAgro, ele abrange apenas um só sistema produtivo
 em uma região específica.
 
 A figura \ref{fig:ontology-conceptual-map} representa um mapa conceitual
@@ -197,7 +197,7 @@ foi usado, permitindo modelar o conhecimento e exportar ele ao formato
 \selectlanguage{english}%
 Triplestores\foreignlanguage{brazil}{ suportam a realização de consultas
 complexas para permitir a resposta a perguntas de interesse aos usuários
-do sistema.  Esta caraterística permite a recuperação da informação
+do sistema. Essa caraterística permite a recuperação da informação
 com significado semântico, permitindo que os sistemas deem respostas
 às consultas complexas de interesse. Também o RDF suporta a integração
 de conhecimento externo existente em formatos da web semântica, como
@@ -215,7 +215,7 @@ conceitos válidos derivados da ontologia Decisioner. Exemplos de conceitos/clas
 modelados são: \foreignlanguage{english}{\textit{Production Unit}}\textit{,
 }\foreignlanguage{english}{\textit{Microregion, Indicator}}\textit{,}
 \foreignlanguage{english}{\textit{Categorical}}. A partir dessas classes
-foi possível desenvolver o modelo de dados em \foreignlanguage{english}{OWL}, 
+foi possível desenvolver o modelo de dados em \foreignlanguage{english}{OWL.}
 
 As classes da ontologia SustenAgro são relacionados por meio de \foreignlanguage{english}{\textit{Object
 Properties}} e \foreignlanguage{english}{\textit{Data Properties}}
@@ -229,7 +229,7 @@ Nas próximas seções, serão apresentadas as principais classes modeladas
 na ontologia do domínio de avaliação da sustentabilidade (SustenAgro).
 \selectlanguage{english}%
 
-\subsection*{Production Unit}
+\subsection{Classe Production Unit}
 
 \selectlanguage{brazil}%
 Representa as organizações que podem ser avaliadas pelo sistema SustenAgro.
@@ -264,167 +264,7 @@ Protégé.
 
 \selectlanguage{english}%
 
-\subsection*{\textit{Microregion}\foreignlanguage{brazil}{\textit{ }}}
-
-\selectlanguage{brazil}%
-Representam os locais onde são localizadas as unidades produtivas.
-É permitido definir a microrregião onde as fazendas e usinas do sistema
-produtivo de cana-de-açúcar se localizam. Atualmente, a ontologia
-tem os 7 estados pertencentes ao centro-sul do Brasil e as 243 microrregiões
-dentro desses estados. Esses dados foram originalmente obtidos por
-consulta SPARQL à \foreignlanguage{english}{DB-pedia} e integrados
-à ontologia.
-
-A Figura \ref{fig:Modelagem-de-Microrregi=0000E3o} mostra a modelagem
-das localizações geográficas usadas no sistema SustenAgro, com algumas
-instâncias de \foreignlanguage{english}{\textit{Microregion}}.
-
-\begin{figure}[H]
-\noindent \begin{centering}
-\includegraphics[width=0.6\columnwidth]{figures/Microregion}
-\par\end{centering}
-\caption{Modelagem de microrregiões.\label{fig:Modelagem-de-Microrregi=0000E3o}}
-\end{figure}
-
-\selectlanguage{english}%
-
-\subsection*{\textit{Indicator}}
-
-\selectlanguage{brazil}%
-Os indicadores são o principal componente da ontologia. Eles foram
-propostos por um grupo de especialistas de diversas áreas da produção
-agrícola e sustentabilidade \citep{oliveira:2013}. 
-
-Eles representam as características das unidades produtivas que serão
-identificadas e quantificadas em cada processo de avaliação. Eles
-tem uma propriedade \foreignlanguage{english}{\textit{Value}}\textit{
-}que quantifica a sustentabilidade do indicador.
-
-Também permite a integração de conceitos, inclusive quando pertencem
-a domínios sem relação aparente. Um exemplo disso é a inter-relação
-do conhecimento de sustentabilidade com conhecimento de interfaces
-gráficas de usuário, que suporta a geração de SAD para avaliação da
-sustentabilidade. O conhecimento foi dividido em duas ontologias,
-avaliação de sustentabilidade e outra dos componentes gerais de um
-SAD.
-
-A Figura \ref{fig:Modelagem-de-Indicador} apresenta a hierarquia
-dos indicadores, que está subdividida em \foreignlanguage{english}{Efficiency
-Indicator} e \foreignlanguage{english}{Sustainability Indicator}.
-Os \foreignlanguage{english}{Indicators} têm a propriedade \foreignlanguage{english}{\textit{has
-value}}\textit{ }que vincula indivíduos da classe \foreignlanguage{english}{\emph{Value}}\textit{
-}que representa as opções de resposta dos indicadores\textit{ .}
-Existe outra propriedade, \foreignlanguage{english}{has weight,} que
-é opcional e estabelece um peso para o indicador\foreignlanguage{english}{\textit{.}}
-
-A Figura \ref{fig:Modelagem-de-Indicador} mostra o indicador intitulado
-\foreignlanguage{english}{\textit{Adequacy of boilers}}. Na propriedade
-\foreignlanguage{english}{\textit{has value}} ele tem uma restrição
-que limita os valores dessa propriedade a valores de uma lista de
-valores categóricos. A propriedade \foreignlanguage{english}{\textit{has
-weight}} também tem uma restrição que limita seus valores a instâncias
-da classe \foreignlanguage{english}{\textit{Sugarcane process Optimization}}.
-
-\begin{figure}[H]
-\noindent \begin{centering}
-\includegraphics[width=0.6\columnwidth]{figures/Indicador}
-\par\end{centering}
-\caption{Modelagem de indicador \label{fig:Modelagem-de-Indicador}}
-\end{figure}
-
-Segundo a descrição do método de avaliação (Capítulo \ref{chap:Sustainability_Assessment}),
-os indicadores de sustentabilidade são classificados em três dimensões
-de sustentabilidade: dimensão ambiental, dimensão social e dimensão
-econômica. Tendo as três uma participação equitativa no método de
-avaliação \citep{kraines2011system}. 
-
-A continuação serão apresentados cada uma das três dimensões.
-
-\subsubsection*{Dimensão ambiental}
-
-Nesta dimensão não foi possível identificar indicadores de tipo hídrico.
-Não existe consenso entre os especialistas consultados sobre quais
-são os aspectos mais relevantes deles para a avaliação da sustentabilidade,
-porém, é um aspecto fundamental para trabalhar nas futuras etapas
-de pesquisa. 
-
-A dimensão de indicadores ambientais, está composta dos seguintes
-conceitos:
-
-\begin{itemize}
-\item Atributo solo (\foreignlanguage{english}{Soil Attribute}): indicadores
-que avaliam os aspectos referentes às características do solo.
-\item Atributo hídrico (\foreignlanguage{english}{Hydric Attribute}): indicadores
-que avaliam os aspectos referentes à disponibilidade e qualidade das
-fontes hídricas.
-\item Atributo clima (\foreignlanguage{english}{Weather Attribute}): indicadores
-que avaliam os aspectos climáticos.
-\end{itemize}
-
-\subsubsection*{A dimensão social}
-
-Nesta dimensão é importante reconhecer que as unidades produtivas,
-sejam do tipo fazendas ou usinas, têm vínculos com pessoas tanto internamente
-como externamente. Por isso, é importante refinar os indicadores para
-incluir a população externa à unidade produtiva que é afetada pelas
-práticas produtivas.
-
-A Agência Paulista de Tecnologia dos Agronegócios (APTA\nomenclature{APTA}{Agência Paulista de Tecnologia dos Agronegócios})
-forneceu dados econômicos das principais usinas do estado de São Paulo,
-que permitiram definir a dimensão econômica das unidades produtivas
-na ontologia de domínio.
-
-A dimensão social está composta dos seguintes conceitos:
-
-\begin{itemize}
-\item Atributo emprego e renda (\foreignlanguage{english}{Employment and
-Income Attribute}): indicadores que avaliam os aspectos referentes
-à mão de obra.
-\item Atributo saúde (\foreignlanguage{english}{Health Attribute}): indicadores
-que avaliam os aspectos de segurança dos trabalhadores.
-\item Atributo treinamento (\foreignlanguage{english}{Training Attribute}):
-indicadores que avaliam os aspectos da capacitação dos trabalhadores.
-\end{itemize}
-
-\subsubsection*{A dimensão econômica}
-
-Esta dimensão está composta dos seguintes conceitos:
-
-\begin{itemize}
-\item Atributo industrial (Industrial Atribute): indicadores que avaliam
-os aspectos industriais. 
-\item Atributo área recuperada (Recovered Area Atribute): indicadores que
-avaliam os aspectos da área produtiva e das técnicas produtivas.
-\item Atributo produtividade (Porductivity Atribute): indicadores que avaliam
-os aspectos dos produtos e dos processos produtivos.
-\item Atributo custo (Cost Atribute): indicadores que avaliam os aspectos
-dos custos da produção. 
-\end{itemize}
-Cada uma das três dimensões deve ser avaliada equitativamente para
-gerar um resultado coerente com a teoria da sustentabilidade agrícola\citep{tilman2002agricultural}. 
-
-\subsubsection*{Modelagem do método de avaliação SustenAgro}
-
-A Figura \ref{fig:Method} mostra um mapa conceitual dos conceitos
-envolvidos na avaliação da sustentabilidade, na qual recebe como entrada
-os indicadores selecionados pelos usuários e aplica as formulas de
-avaliação para gerar os índices de sustentabilidade e eficiência.
- Desta maneira é possível quantificar a sustentabilidade.
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=1\textwidth]{figures/metodo}
-\par\end{centering}
-\caption{Mapa conceitual - Método de Avaliação.\label{fig:Method}}
-\end{figure}
-
-As dimensões da sustentabilidade permitiram organizar os indicadores,
-levando essa organização desde os modelos de mapas conceituais, às
-ontologias, método de avaliação e, finalmente, até a representação
-dos resultados nas web UI dos SADs.
-\selectlanguage{english}%
-
-\subsection*{Subclasses of Categorical}
+\subsection{Subclasses of Categorical}
 
 \selectlanguage{brazil}%
 A classe \foreignlanguage{english}{Categorical} representa os possíveis
@@ -444,7 +284,7 @@ e suas subclasses, tanto \foreignlanguage{english}{\textit{Categorical}}
 para conjunto finito de valores e \foreignlanguage{english}{\textit{Real}}
 para valores numéricos. Um exemplo de classe categórica seria a \foreignlanguage{english}{\textit{Yes/No}}
 que representa os valores de sim e não e é composta pela lista de
-indivíduos \foreignlanguage{english}{Yes} e No.
+instâncias \foreignlanguage{english}{Yes} e No.
 
 Cada individuo da classe \foreignlanguage{english}{\textit{Value}}
 tem a propriedade \foreignlanguage{english}{\textit{as number}}\textit{
@@ -459,6 +299,151 @@ fórmulas do método de avaliação.
 \caption{Modelagem de \foreignlanguage{english}{Value}\label{fig:Modelagem-de-Value}}
 \end{figure}
 
+\selectlanguage{english}%
+
+\subsection{Classe Microregion\foreignlanguage{brazil}{ }}
+
+\selectlanguage{brazil}%
+Representam os locais onde são localizadas as unidades produtivas.
+É permitido definir a microrregião onde as fazendas e usinas do sistema
+produtivo de cana-de-açúcar se localizam. Atualmente, a ontologia
+tem os 7 estados pertencentes ao centro-sul do Brasil e as 243 microrregiões
+dentro desses estados. Esses dados foram originalmente obtidos por
+consulta SPARQL à \foreignlanguage{english}{DBpedia} e integrados
+à ontologia.
+
+A Figura \ref{fig:Modelagem-de-Microrregi=0000E3o} mostra a modelagem
+das localizações geográficas usadas no sistema SustenAgro, com algumas
+instâncias de \foreignlanguage{english}{\textit{Microregion}}.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[width=0.6\columnwidth]{figures/Microregion}
+\par\end{centering}
+\caption{Modelagem de microrregiões.\label{fig:Modelagem-de-Microrregi=0000E3o}}
+\end{figure}
+
+\selectlanguage{english}%
+
+\subsection{Classe Indicator}
+
+\selectlanguage{brazil}%
+Os indicadores são o principal componente da ontologia. Eles foram
+propostos por um grupo de especialistas de diversas áreas da produção
+agrícola e sustentabilidade \citep{oliveira:2013}. 
+
+Eles representam as características das unidades produtivas que serão
+identificadas e quantificadas em cada processo de avaliação. Eles
+têm uma propriedade \foreignlanguage{english}{\textit{has value}}\textit{
+}que quantifica a sustentabilidade do indicador. Também permitem a
+integração de conceitos, inclusive quando pertencem a domínios sem
+relação aparente.
+
+A Figura \ref{fig:Modelagem-de-Indicador} apresenta a hierarquia
+dos indicadores, que está subdividida em \foreignlanguage{english}{Efficiency
+Indicator} e \foreignlanguage{english}{Sustainability Indicator}.
+A propriedade \foreignlanguage{english}{\textit{has value}} usa instâncias
+da classe \foreignlanguage{english}{\emph{Value}} para quantificar
+a sustentabilidade. Instâncias de \textit{Value} representam as opções
+de resposta que os usuários têm para cada indicador\textit{.} Existe
+outra propriedade,\textit{ }\foreignlanguage{english}{\textit{has
+weight},} que é opcional e estabelece um peso para o indicador\foreignlanguage{english}{\textit{.}}
+
+A Figura \ref{fig:Modelagem-de-Indicador} mostra o indicador intitulado
+\foreignlanguage{english}{\textit{Adequacy of boilers}}. Na propriedade
+\foreignlanguage{english}{\textit{has value}} ele tem uma restrição
+que limita os valores dessa propriedade a valores de uma lista de
+valores categóricos. A propriedade \foreignlanguage{english}{\textit{has
+weight}} também tem uma restrição que limita seus valores a instâncias
+da classe \foreignlanguage{english}{\textit{Sugarcane process Optimization}}.
+
+\begin{figure}[H]
+\noindent \begin{centering}
+\includegraphics[width=0.6\columnwidth]{figures/Indicador}
+\par\end{centering}
+\caption{Modelagem de indicador \label{fig:Modelagem-de-Indicador}}
+\end{figure}
+
+Segundo a descrição do método de avaliação (Apêndice \ref{appendix:Sustainability_Assessment}),
+os indicadores de sustentabilidade são classificados em três dimensões
+de sustentabilidade: dimensão ambiental, dimensão social e dimensão
+econômica. Tendo as três uma participação equitativa no método de
+avaliação \citep{kraines2011system}. 
+
+A continuação serão apresentados cada uma das três dimensões.
+
+\subsubsection*{Dimensão ambiental}
+
+A dimensão de indicadores ambientais, é composta dos seguintes conceitos:
+\begin{itemize}
+\item Atributo solo (\foreignlanguage{english}{Soil Attribute}): indicadores
+que avaliam os aspectos referentes às características do solo.
+\item Atributo hídrico (\foreignlanguage{english}{Hydric Attribute}): indicadores
+que avaliam os aspectos referentes à disponibilidade e qualidade das
+fontes hídricas.
+\item Atributo clima (\foreignlanguage{english}{Weather Attribute}): indicadores
+que avaliam os aspectos climáticos.
+\end{itemize}
+
+\subsubsection*{Dimensão social}
+
+Nesta dimensão é importante reconhecer que as unidades produtivas,
+sejam do tipo fazendas ou usinas, têm vínculos com pessoas, tanto
+internamente como externamente. Por isso, é importante refinar os
+indicadores para incluir a população externa à unidade produtiva que
+é afetada pelas práticas produtivas.
+
+A Agência Paulista de Tecnologia dos Agronegócios (APTA\nomenclature{APTA}{Agência Paulista de Tecnologia dos Agronegócios})
+forneceu dados econômicos das principais usinas do estado de São Paulo,
+que permitiram definir a dimensão econômica das unidades produtivas
+na ontologia de domínio.
+
+A dimensão social está composta dos seguintes conceitos:
+\begin{itemize}
+\item Atributo emprego e renda (\foreignlanguage{english}{Employment and
+Income Attribute}): indicadores que avaliam os aspectos referentes
+à mão de obra.
+\item Atributo saúde (\foreignlanguage{english}{Health Attribute}): indicadores
+que avaliam os aspectos de segurança dos trabalhadores.
+\item Atributo treinamento (\foreignlanguage{english}{Training Attribute}):
+indicadores que avaliam os aspectos da capacitação dos trabalhadores.
+\end{itemize}
+
+\subsubsection*{Dimensão econômica}
+
+Esta dimensão está composta pelos seguintes conceitos:
+\begin{itemize}
+\item Atributo industrial (Industrial Atribute): indicadores que avaliam
+os aspectos industriais. 
+\item Atributo área recuperada (Recovered Area Atribute): indicadores que
+avaliam os aspectos da área produtiva e das técnicas produtivas.
+\item Atributo produtividade (Porductivity Atribute): indicadores que avaliam
+os aspectos dos produtos e dos processos produtivos.
+\item Atributo custo (Cost Atribute): indicadores que avaliam os aspectos
+dos custos da produção. 
+\end{itemize}
+Cada uma das três dimensões deve ser avaliada equitativamente para
+gerar um resultado coerente com a teoria da sustentabilidade agrícola\citep{tilman2002agricultural}. 
+
+\subsection*{Modelagem do método de avaliação SustenAgro}
+
+A Figura \ref{fig:Method} mostra um mapa conceitual dos conceitos
+envolvidos na avaliação da sustentabilidade, que recebe como entrada
+os indicadores selecionados pelos usuários e aplica as fórmulas de
+avaliação, para gerar os índices de sustentabilidade e eficiência.
+Usando esses índices, é possível quantificar a sustentabilidade.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{figures/metodo}
+\par\end{centering}
+\caption{Mapa conceitual - Método de Avaliação.\label{fig:Method}}
+\end{figure}
+
+As dimensões da sustentabilidade permitiram organizar os indicadores,
+levando essa organização desde os modelos de mapas conceituais, às
+ontologias, método de avaliação e, finalmente, até a representação
+dos resultados nas web UI dos SADs.
 \selectlanguage{english}%
 
 \section{SustenAgro Web UI\label{sec:Web-UI}}
@@ -720,7 +705,7 @@ a integração de novos conceitos ao sistema.
 
 A Figura \ref{fig:StoryBoard-6} apresenta o relatório resultante
 do processo de avaliação. Ele é composto pelos índices, uma tabela
-dos dados cadastrados , a matriz de sustentabilidade e as recomendações
+dos dados cadastrados, a matriz de sustentabilidade e as recomendações
 
 \begin{figure}[H]
 \begin{centering}
@@ -732,55 +717,56 @@ dos dados cadastrados , a matriz de sustentabilidade e as recomendações
 
 \subsection*{Mockups das Interfaces do SustenAgro}
 
-A partir das técnicas anteriores foi possível identificar as tarefas
+A partir das técnicas anteriores, foi possível identificar as tarefas
 que os usuários do sistema SustenAgro realizarão. O fluxo das tarefas
-e os dados de cada um foram mudando na aplicação de cada técnica,
-gerando varias definições das web UI. Uma vez identificadas as caracterizaras
-essenciais da interface gráfica, procedeu-se a definir os Mockups
-que permitiram criar uma representação visual das interfaces do sistema. 
+e os dados de cada uma foram mudando ao longo do tempo, como resultado
+na aplicação de cada técnica, gerando varias definições das Web UI.
+Uma vez identificadas as caracterizaras essenciais da interface gráfica,
+procedeu-se a definição dos Mockups, que permitiram criar uma representação
+visual das interfaces do sistema. 
 
-O desenvolvimento dos \foreignlanguage{english}{Mockups} foram feitos
+O desenvolvimento dos \foreignlanguage{english}{Mockups} foi feito
 com a ferramenta \foreignlanguage{english}{Moqups} \footnote{Moqups \url{https://moqups.com/} }. 
 
 A Figura \ref{fig:Mockup_home} mostra uma interface gráfica da tela
-inicial do SAD SustenAgro . A interface mostra uma descrição do sistema,
-e as principais abas, entre elas a aba de Ferramenta que permite iniciar
-o processo de avaliação de sustentabilidade.
+inicial do SAD SustenAgro. A interface mostra uma descrição do sistema
+e as principais abas, dentre elas, a aba de Ferramenta que permite
+iniciar o processo de avaliação de sustentabilidade.
 
 \begin{figure}[H]
 \centering{}\includegraphics[width=1\columnwidth]{\string"figures/Mockup Main\string".eps}\caption{Mockup da tela inicial do SustenAgro.\label{fig:Mockup_home}}
 \end{figure}
 
-Os Mockups integram as \foreignlanguage{english}{widgets,} que permitem
-avaliar a interface gráfica de uma maneira mais próxima à interface
-final e assim suportar a sua avaliação por parte dos especialistas
-do domínio.  
+Os Mockups representam as \foreignlanguage{english}{widgets,} o que
+permitem avaliar a interface gráfica de uma maneira mais próxima à
+interface final e assim suportar a sua avaliação por parte dos especialistas
+do domínio. 
 
 A Figura \ref{fig:Mockup_indicators} apresenta os passos do processo
-de avaliação, na ordem representada pela numeração das abas. Esta
-tela corresponde ao formulário de cadastro dos indicadores, que permite
-cadastrar o valor correspondente a cada indicador.
+de avaliação, na ordem representada pela numeração das abas. A tela
+apresentada corresponde ao formulário de cadastro dos indicadores,
+que permite cadastrar o valor correspondente a cada indicador.
 
 \begin{figure}[H]
 \centering{}\includegraphics[width=1\columnwidth]{figures/Tool_environmental_indicators}\caption{Mockup da tela de indicadores do SustenAgro.\label{fig:Mockup_indicators}}
 \end{figure}
 
-Na apresentação dos Mockups aos especialistas foram identificadas
-varias mudanças para facilitar a navegabilidade da \foreignlanguage{english}{web
-UI,} as mudanças corresponderam à integração de tarefas e a melhora
-na apresentação dos formulários e dos resultados de avaliação. Estas
+Na apresentação dos Mockups aos especialistas, foram identificadas
+várias mudanças para facilitar a navegabilidade da \foreignlanguage{english}{Web
+UI.} Essas mudanças corresponderam à integração de tarefas e a melhora
+na apresentação dos formulários e dos resultados de avaliação. Essas
 mudanças reestruturaram o \foreignlanguage{english}{look-and-feel}
 do SAD. 
 
 \subsection*{Protótipo da Interface Gráfica do SustenAgro}
 
-A partir das melhoras dos protótipos visuais identificadas nas avaliações
-dos Mockups, foram identificadas as características da web UI, com
-as quais foi desenvolvido um protótipo funcional da interface gráfica
-do SustenAgro, que inicialmente só permitia interagir com dados simulados.
+A partir das melhoras identificadas nas avaliações dos Mockups, foram
+identificadas as características finais da Web UI, com as quais foi
+desenvolvido um protótipo funcional da Web UI do SustenAgro. Inicialmente,
+esse protótipo só permitia interagir com dados simulados.
 
-A web UI do SAD SustenAgro, foi integrada com cada uma das funcionalidades
-do SAD em cada ciclo de desenvolvimento, e actualmente está disponível
+A Web UI do SAD SustenAgro foi integrada com cada uma das funcionalidades
+do SAD em cada ciclo de desenvolvimento, e, atualmente, está disponível
 nos servidores do laboratório Intermídia do ICMC\nobreakdash-USP
 \footnote{http://biomac.icmc.usp.br:8080/sustenagro/}. 
 
@@ -847,7 +833,7 @@ relatório solicitado pelos especialistas da Embrapa Meio Ambiente
 
 Com a finalidade de suportar a geração de relatórios, no formato definido
 pelos especialistas do domínio, foi necessário implementar dois \foreignlanguage{english}{Web
-Component} específicos. Um deles foi a \foreignlanguage{english}{widget}
+Components} específicos. Um deles foi a \foreignlanguage{english}{widget}
 intitulada Matriz de Sustentabilidade. Ela é composta por dois eixos
 que correspondem ao índice de eficiência, eixo Y, e ao índice de sustentabilidade,
 eixo X. Os índices tem magnitudes que são dividas em segmentos que
@@ -858,14 +844,14 @@ quadrante está relacionado com uma recomendação específica.
 
 A Figura \ref{fig:Matriz-de-sustentabilidade-widget} mostra a implementação
 desse \foreignlanguage{english}{Web Component,} mostrando resultados
-reais de uma avaliação, com o índice de sustentabilidade avaliado
-em 2.33 e o índice de eficiência avaliado em 2.4.
+reais de uma avaliação.
 
 \begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[width=1\columnwidth]{figures/SustenAgro-matrix}
 \par\end{centering}
-\caption{Matriz de sustentabilidade\label{fig:Matriz-de-sustentabilidade-widget}}
+\caption{Matriz de sustentabilidade mostrando um índice de sustentabilidade
+de 2,3 e um índice de eficiência de 2,4.\label{fig:Matriz-de-sustentabilidade-widget}}
 \end{figure}
 
 
@@ -879,15 +865,15 @@ entre -100 até +100, dividindo o intervalo em 5 segmentos que correspondem
 às categorias de sustentabilidade. 
 
 A Figura \ref{fig:Sem=0000E1foro-de-sustentabilidade} mostra esse
-componente no sistema SustenAgro com os valores para de avaliação
-de sustentabilidade que gerou um índice de sustentabilidade geral
-de 4 em escala de -100 até +100.
+componente no sistema SustenAgro com os valores de uma avaliação de
+sustentabilidade.
 
 \begin{figure}[H]
 \noindent \begin{centering}
 \includegraphics[width=1\columnwidth]{figures/SustenAgro-semaphore}
 \par\end{centering}
-\caption{Semáforo de sustentabilidade \label{fig:Sem=0000E1foro-de-sustentabilidade}}
+\caption{Semáforo de Sustentabilidade mostrando um índice de sustentabilidade
+geral de 4 numa escala de -100 até +100. \label{fig:Sem=0000E1foro-de-sustentabilidade}}
 
 \end{figure}
 
@@ -909,17 +895,17 @@ que:
 
 \subsection{Definir o Objeto da Avaliação}
 
-No comando, a seguir \ref{alg:DSL-EvaluationObject} , o Objeto de
+No comando, a seguir \ref{lis:DSL-EvaluationObject}, o Objeto de
 Avaliação é definido como uma instância da classe ProductionUnit.
 Essa classe foi definida pelos próprios especialistas na ontologia
 e tem como filhos as classes \foreignlanguage{english}{\emph{Farm}}
-e \foreignlanguage{english}{\emph{Power Plant}} . Também são declaradas
+e \foreignlanguage{english}{\emph{Power Plant}}. Também são declaradas
 todas as propriedades que os usuários terão que preencher quando criarem
 uma avaliação. Por exemplo, na propriedade \textit{hasName} os usuários
 devem preencher o nome da unidade de produção.
 
 \begin{algorithm}[H]
-\inputencoding{latin9}\begin{lstlisting}[breaklines=true]
+\inputencoding{latin9}\begin{lstlisting}[caption={DSL que define o Evaluation Object },label={lis:DSL-EvaluationObject},breaklines=true]
 evaluationObject ':ProductionUnit', {             
   instance 'ui:hasName', label: ['en': 'Production unit or farm name', 'pt': 'Nome da unidade produtiva ou fazenda']
   instance ':hasAgriculturalProductionSystem', label: ['en': 'Agricultural production system' , 'pt': "Sistema de produ��o agr�cola"]   
@@ -930,10 +916,7 @@ evaluationObject ':ProductionUnit', {
   instance ':hasAvailabilityOfEvaluationResults', label: ['en': "Availability of evaluation results", 'pt': "Disponibiliza��o dos resultados da avalia��o"]
 }
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{DSL que define o Evaluation Object \label{alg:DSL-EvaluationObject}}
-
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 
 \subsection{Definir as características a serem avaliadas}
@@ -952,11 +935,11 @@ TechnologicalEfficiencyFeature.
 O comando \textit{feature} também permite dizer se existirão novas
 \textit{Features} criadas pelos usuários ('extraFeatures': true) e
 a apresentação condicional de grupos de Features. No exemplo do algoritmo
-\ref{alg:DSL-Defini=0000E7=0000E3o-de-Features} , são mostradas
-Features industriais apenas à usuários de usinas.
+\ref{lis:DSL-Defini=0000E7=0000E3o-de-Features}, são mostradas Features
+industriais apenas à usuários de usinas.
 
 \begin{algorithm}
-\inputencoding{latin9}\begin{lstlisting}[breaklines=true]
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o de \foreignlanguage{english}{Features }},label={lis:DSL-Defini=0000E7=0000E3o-de-Features},breaklines=true]
 feature ':EnvironmentalIndicator', 'extraFeatures': true 
 feature ':EconomicIndicator', 'extraFeatures': true 
 feature ':SocialIndicator', 'extraFeatures': true 
@@ -970,10 +953,7 @@ feature ':TechnologicalEfficiencyFeature', {
   }  
 }
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Definição de \foreignlanguage{english}{Features \label{alg:DSL-Defini=0000E7=0000E3o-de-Features}}}
-
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 
 \subsection{Definir o modelamento e a forma de apresentação dos resultados}
@@ -981,14 +961,14 @@ feature ':TechnologicalEfficiencyFeature', {
 Finalmente, no comando \textit{data}, os especialistas definem o nome
 da variável que contém as respostas dos usuários e, no comando \textit{report},
 fazem o cálculo do modelamento e definem o que vai ser apresentado.
-No algoritmo \ref{alg:SustenAgro-DSL} , é possível ver o cálculo
-dos índices de sustentabilidade e eficiência através das formulas
-do modelo usado pelo SustenAgro. É possível usar qualquer comando
-da linguagem Groovy ou biblioteca externa. As variáveis guardam os
-valores de interesse que serão mostrados no relatório de avaliação.
-No caso do SustenAgro, a variável \foreignlanguage{english}{\textit{sustainability}}
-guarda o índice de sustentabilidade e a variável \textit{efficiency}
-guarda o índice de eficiência do sistema.
+No algoritmo \ref{lis:SustenAgro-DSL}, é possível ver o cálculo dos
+índices de sustentabilidade e eficiência através das formulas do modelo
+usado pelo SustenAgro. É possível usar qualquer comando da linguagem
+Groovy ou biblioteca externa. As variáveis guardam os valores de interesse
+que serão mostrados no relatório de avaliação. No caso do SustenAgro,
+a variável \foreignlanguage{english}{\textit{sustainability}} guarda
+o índice de sustentabilidade e a variável \textit{efficiency} guarda
+o índice de eficiência do sistema.
 
 No relatório aparecerão a Matriz de Sustentabilidade (SustainabilityMatrix),
 o Semáforo de Sustentabilidade (SustainabilitySemaphore), o texto
@@ -1002,7 +982,7 @@ Usuários podem pedir a geração de relatórios em pdf, uma ferramenta
 de conversão de HTML para pdf é usada.
 
 \begin{algorithm}[H]
-\inputencoding{latin9}\begin{lstlisting}[breaklines=true]
+\inputencoding{latin9}\begin{lstlisting}[caption={},label={lis:SustenAgro-DSL},breaklines=true]
 data 'data'
 report {       
   environment =   weightedSum(data.':EnvironmentalIndicator')
@@ -1033,10 +1013,7 @@ report {
   map data.'Microregion'   
 }
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{SustenAgro DSL \label{alg:SustenAgro-DSL}}
-
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 
 \section{Considerações Finais}

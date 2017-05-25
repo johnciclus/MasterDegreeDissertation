@@ -82,7 +82,7 @@ reference "sec:SAD-SustenAgro"
 
 \end_inset
 
-), do requisito de modelar o conhecimento através de ontologias (usando
+), do requisito de modelar o conhecimento por meio de ontologias (usando
  tecnologias da Web Semântica) e de definir uma DSL para facilitar a definição
  de comportamentos por parte dos especialistas, foi modelado e desenvolvido
  um protótipo de um framework, intitulado Decisioner, que permite definir
@@ -171,9 +171,9 @@ reference "fig:Arquitectura-do-decisioner"
 \end_inset
 
 .
- Usuários especialistas podem interagir com o framework através dos editores
- de ontologias e DSL.
- Usuários finais interagem através da sua interface Web.
+ Usuários especialistas podem usar o framework por meio dos editores de
+ ontologias e DSL.
+ Usuários finais usam os SADs por meio da sua interface Web.
 \end_layout
 
 \begin_layout Standard
@@ -274,12 +274,11 @@ reference "subsec:Triplestore"
 ).
  Ele permite o gerenciamento de dados e ontologias em formato 
 \lang english
-RDF.
-
+RDF
 \lang brazilian
- Através da linguagem padrão 
+ e a consulta por meio da linguagem padrão 
 \lang english
-SPARQL Protocol and RDF Query Language (Sparql)
+SPARQL Protocol and RDF Query Language (SPARQL)
 \lang brazilian
  
 \begin_inset CommandInset citation
@@ -643,7 +642,7 @@ reference "sec:Ontology-Editor"
 
 \begin_layout Standard
 A ontologia Decisioner contém os elementos comuns identificados e abstraídos
- dos SADs da Embrapa, e tem o proposito de fornecer uma ontologia geral
+ dos SADs da Embrapa, e tem o propósito de fornecer uma ontologia geral
  que dê suporte a SADs diferentes.
  
 \end_layout
@@ -1168,7 +1167,7 @@ O comando
 instance
 \shape default
 \lang brazilian
- vincula uma propriedade definida na ontologia, através da URI.
+ vincula uma propriedade definida na ontologia por meio da URI.
  Ela pode ser complementada por parâmetros que customizam a representação
  visual da propriedade.
  O comando 
@@ -2054,7 +2053,8 @@ Web Components.
 \end_layout
 
 \begin_layout Standard
-Mudanças no layout geral podem ser feitas também através da edição das 
+Mudanças no layout geral podem ser feitas também por meio da edição das
+ 
 \lang english
 Cascading Style Sheets (CSS 
 \begin_inset CommandInset nomenclature

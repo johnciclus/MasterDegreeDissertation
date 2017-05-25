@@ -7,7 +7,6 @@
 \textclass abntex2
 \begin_preamble
 \usepackage{afterpage}
-
 %\usepackage{lmodern}
 
 \input{pagestyle.tex}
@@ -797,7 +796,7 @@ Método SustenAgro de Avaliação de Sustentabilidade
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Sustainability_Assessment"
+name "appendix:Sustainability_Assessment"
 
 \end_inset
 
@@ -818,7 +817,7 @@ Indicadores de Sustentabilidade
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:SustainabilityIndicators"
+name "appendix:SustainabilityIndicators"
 
 \end_inset
 
@@ -839,7 +838,7 @@ Instalação
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Instalation"
+name "appendix:Instalation"
 
 \end_inset
 
@@ -857,7 +856,7 @@ filename "chapters/Instalation.lyx"
 Formulários de avaliação
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:formularios"
+name "appendix:formularios"
 
 \end_inset
 

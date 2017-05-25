@@ -189,9 +189,9 @@ key "bernerslee2001"
 
 .
  Procurando métodos para que as máquinas consigam realizar a interpretação
- do significado, que é uma habilidade inata dos seres humanos, através da
- associação dos conceitos que estão no cérebro por meio de estruturas neurais
- e que não é suportado pelas máquinas tradicionais.
+ do significado, que é uma habilidade inata dos seres humanos, por meio
+ da associação dos conceitos que estão no cérebro por meio de estruturas
+ neurais e que não é suportado pelas máquinas tradicionais.
 \end_layout
 
 \begin_layout Standard
@@ -430,7 +430,7 @@ description "Extensible Markup Language"
 
 \end_inset
 
- representa os dados de maneira sintática, através da definição de 
+ representa os dados de maneira sintática, por meio da definição de 
 \lang english
 markups
 \lang brazilian
@@ -450,7 +450,7 @@ RDF
 RDF
 \lang brazilian
  tem características que permitem a integração de dados inclusive de esquemas
- diferentes, e suporta especialmente a evolução dos esquemas através do
+ diferentes, e suporta especialmente a evolução dos esquemas por meio do
  tempo sem requerer que mudanças nos consumidores de dados.
  RDF é uma recomendação do W3C
 \begin_inset Foot
@@ -680,7 +680,14 @@ reference "fig:Smart-data-continuum"
 \end_inset
 
  mostra os níveis de representação de dados na forma de conhecimento processável
- por máquinas.
+ por máquinas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "allemang2011semantic"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -716,22 +723,6 @@ name "fig:Smart-data-continuum"
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fadaptada{allemang2011semantic}
 \end_layout
 
 \end_inset
@@ -796,7 +787,7 @@ Semantic Web Effort
 \lang english
 framework
 \lang brazilian
- comum que permite que dados sejam compartilhados e reusados através das
+ comum que permite que dados sejam compartilhados e reusados por meio das
  fronteiras das aplicações, empresas e comunidades 
 \begin_inset Foot
 status open
@@ -1072,7 +1063,7 @@ key "mcguinness2004owl"
 OWL
 \lang brazilian
  é uma linguagem que permite que a semântica seja explicitamente associada
- ao conteúdo dos dados na web e formalmente especificada através de ontologias,
+ ao conteúdo dos dados na web e formalmente especificada por meio de ontologias,
  compartilhadas na Internet.
  
 \end_layout
@@ -1606,13 +1597,13 @@ O Blazegraph
 \lang english
 RDF,
 \lang brazilian
- suportar inferência e permitir consultas através da linguagem 
+ suportar inferência e permitir consultas por meio da linguagem 
 \lang english
 SPARQL.
 
 \lang brazilian
  Essas funcionalidades foram complementadas com ferramentas para edição
- da ontologia via web (essa implementação está descrita no Capítulo 
+ da ontologia via web (Capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Decisioner"

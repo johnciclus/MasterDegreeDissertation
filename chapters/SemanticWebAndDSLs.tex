@@ -1,7 +1,7 @@
 Ontologias da web semântica e \foreignlanguage{english}{DSLs} têm
 um papel fundamental na criação de um meio de descrição de conhecimento
-por parte dos especialistas e portanto suportar o design  de SADs
-baseados em conhecimento. 
+por parte dos especialistas e portanto suportar o design de SADs baseados
+em conhecimento. 
 
 Ontologias servem para representar o conhecimento de especialistas
 do domínio e DSLs servem para customizar o comportamento dos SADs.
@@ -52,7 +52,7 @@ possam trabalhar de maneira cooperativa. A Web Semântica é definida
 por um conjunto de padrões propostos pelo \foreignlanguage{english}{World
 Wide Web Consortium} (W3C \nomenclature{W3C}{World Wide Web Consortium}).
 A figura \ref{fig:Semantic_Web_History} apresenta alguns dos padrões
-que constituem a Web Semântica de maneira cronológica. 
+que constituem a Web Semântica de maneira cronológica.
 
 \begin{figure}[H]
 \begin{centering}
@@ -101,9 +101,9 @@ suportando as camadas superiores na arquitetura.}
 \item [{RDF}] \foreignlanguage{brazil}{é um modelo padrão para intercambiar
 dados na web. }RDF\foreignlanguage{brazil}{ tem características que
 permitem a integração de dados inclusive de esquemas diferentes, e
-suporta especialmente a evolução dos esquemas a través do tempo sem
-requerer que mudanças nos consumidores de dados. A W3C especifica
-ele }\footnote{\selectlanguage{brazil}%
+suporta especialmente a evolução dos esquemas através do tempo sem
+requerer que mudanças nos consumidores de dados. RDF é uma recomendação
+do W3C}\footnote{\selectlanguage{brazil}%
 \url{https://www.w3.org/RDF/}\selectlanguage{brazil}%
 }\foreignlanguage{brazil}{.}
 \item [{Ontology}] \foreignlanguage{brazil}{estende a camada de descrição,
@@ -279,7 +279,7 @@ de aplicação:
 \par\end{centering}
 \caption{OWL2 Profiles.\label{fig:OWL2-Profiles}}
 
-Figura original da W3C \url{https://www.w3.org/People/Sandro/owl2-profiles-doc}
+Figura original do W3C \url{https://www.w3.org/People/Sandro/owl2-profiles-doc}
 \end{figure}
  
 \selectlanguage{english}%
@@ -334,7 +334,7 @@ fornecendo:
 \selectlanguage{english}%
 \begin{itemize}
 \item GUI Framework:\foreignlanguage{brazil}{ para suportar múltiplas vistas
-da ontologia e layouts configuraveis de componentes.}
+da ontologia e layouts configuráveis de componentes.}
 \item API:\foreignlanguage{brazil}{ para suportar o desenvolvimento de sistemas
 baseados em conhecimento.}
 \item Modularization\foreignlanguage{brazil}{: permite suportar a edição
@@ -352,22 +352,22 @@ diferentes tipos de }plug-ins.
 
 \selectlanguage{english}%
 
-\subsection*{Triplestore \label{subsec:Triplestore}}
+\subsection*{Triplestores \label{subsec:Triplestore}}
 
 \selectlanguage{brazil}%
-Uma \foreignlanguage{english}{triplestore} é um tipo de banco de dados
-baseado em grafos que armazena fatos semânticos, e fornece o armazenamento
-e a recuperação de triplas no padrão \foreignlanguage{english}{RDF}
-(Seção \ref{triplas}). Os dados são armazenados em forma de redes
-de objetos com vínculos rotulados entre eles, \citep{rusher2003triple}.
-Este tipo bancos de dados são recomendáveis quando os dados tem uma
-estrutura flexível, cujas relações não tem um padrão definido.
+Uma \foreignlanguage{english}{triplestore} é um tipo de banco de dados,
+baseado em grafos, para armazenar e recuperar fatos (assertions).
+Esses fatos são representados na forma de triplas no padrão \foreignlanguage{english}{RDF}
+(Seção \ref{triplas}). Dados são armazenados em forma de redes de
+objetos com vínculos rotulados entre eles \citep{rusher2003triple}.
+Esse tipo bancos de dados é recomendável quando os dados tem uma estrutura
+flexível, cujas relações não tem um padrão definido.
 
 A \foreignlanguage{english}{triplestore} \foreignlanguage{english}{Blazegraph}
 \footnote{\url{https://www.blazegraph.com/}} é um dos mais completos
-bancos de dados baseados em grafos e com suporte SPARQL. Ele integra
+bancos de dados baseados em grafos e com suporte SPARQL. Ela integra
 as características de uma \foreignlanguage{english}{triplestore},
-fornece suporte nativo a \foreignlanguage{english}{SPARQL} e implementa
+fornece suporte nativo à \foreignlanguage{english}{SPARQL} e implementa
 o \foreignlanguage{english}{SPARQL Protocol Endpoint}. Esse último,
 padroniza a comunicação com os clientes e a compatibilidade com os
 sistemas web, por meio de \foreignlanguage{english}{um Endpoint} (um
@@ -375,8 +375,8 @@ endereço onde requisições em SPARQL podem ser feitas).
 
 O Blazegraph foi escolhido por ter código aberto (Licença GPL) e ser
 compatível com os padrões da Web Semântica. Mas qualquer \foreignlanguage{english}{triplestore}
-que seja compatível com os mesmos padrões SPARQL 1.1 e RDF pode ser
-usada. As principais características dele são:
+que seja compatível com os mesmos padrões (SPARQL 1.1 e RDF) pode
+ser usada. As principais características dela são:
 \begin{itemize}
 \item Banco de dado baseado em grafo de alta performance
 \item Suporte Blueprints API e RDF/SPARQL
@@ -393,46 +393,40 @@ triples/quads (RWStore)
 \item Licença dupla: GPLv2 ou commercial 
 \item Assinaturas de suporte ao desenvolvedor e produção
 \end{itemize}
-
-\subsection*{Discussão }
-
-Para desenvolver os sistemas software da presente pesquisa foram usadas
-tecnologias da web semântica. Primeiramente foram desenhadas as ontologias
-em formato \foreignlanguage{english}{OWL} na ferramenta Protégé, depois
-instanciadas exportadas a RDF e finalmente integradas no framework
-Decisioner que está implementado sobre o banco de dados baseado em
-grafos \foreignlanguage{english}{Blazegraph} .
+Para desenvolver os sistemas de software, presentes neste trabalho,
+foram usadas tecnologias da web semântica. Primeiramente foram desenhadas
+as ontologias em formato \foreignlanguage{english}{OWL,} na ferramenta
+Protégé, depois elas foram exportadas em RDF e, finalmente, integradas
+no framework Decisioner, que foi implementado usando a triplestore
+\foreignlanguage{english}{Blazegraph} .
 
 \selectlanguage{english}%
-Blazegraph\foreignlanguage{brazil}{ permitiu instanciar as ontologias
+O Blazegraph\foreignlanguage{brazil}{ permitiu instanciar as ontologias,
 em formato }RDF,\foreignlanguage{brazil}{ suportar inferência e permitir
-consultas através da linguagem }SPARQL,\foreignlanguage{brazil}{ suportando
-a definição e atualização dos conceitos das ontologias. Estas funcionalidades
-foram complementadas com ferramentas de edição da ontologia via web
-e }real-time\foreignlanguage{brazil}{, esta implementação está descrita
-no capítulo \ref{chap:Decisioner}. }
+consultas através da linguagem }SPARQL.\foreignlanguage{brazil}{ Essas
+funcionalidades foram complementadas com ferramentas para edição da
+ontologia via web (Capítulo \ref{chap:Decisioner}). }
 
 \selectlanguage{brazil}%
 Além das ontologias, foi necessário fornecer um meio de definição
 de conhecimento mais próximo à linguagem dos especialistas do domínio,
-para suportar a definição de SADs por parte dos especialistas. A solução
-identificada foi criar uma \foreignlanguage{english}{DSL} definida
-a continuação.
+para suportar a definição de SADs por parte deles. A solução identificada
+foi criar uma \foreignlanguage{english}{DSL} definida a seguir.
 \selectlanguage{english}%
 
 \section{Domain Specific Language (DSL)\foreignlanguage{brazil}{ }}
 
 \selectlanguage{brazil}%
-Em desenvolvimento de software e engenharia de domínio uma linguagem
+Em desenvolvimento de software e engenharia de domínio, uma linguagem
 de domínio específico, em inglês \foreignlanguage{english}{\emph{Domain-Specific
 Language}}\emph{ (DSL)}, é um tipo de linguagem de programação, ou
 linguagem de especificação, dedicada a um domínio particular de problema
 que usa expressões próprias dos especialistas daquele domínio. Um
 usuário, relacionado com um domínio específico, pode usar uma DSL
-sem ter experiência em desenvolvimento de software pois a DSL está
+sem ter experiência em desenvolvimento de software, pois a DSL está
 relacionada com seu domínio de trabalho. \citet{fowler2010domain}
 afirma que programadores instruem o computador no que ele deve fazer,
-pois já entendem a maneira dele trabalhar, mas com \foreignlanguage{english}{DSLs}
+pois já entendem a maneira dele trabalhar, mas, com \foreignlanguage{english}{DSLs,}
 é feito o inverso: o computador começa a entender o que o usuário
 do domínio escreve.
 
@@ -452,10 +446,10 @@ exemplo delas é a }Hypertext Markup Language (HTML),\foreignlanguage{brazil}{
 que permite anotar dados no domínio das páginas web.}
 \item Domain-Specific Modeling Languages (specification languages):\foreignlanguage{brazil}{
 são linguagens que permitem especificar sistemas com o propósito de
-modelá-los, são compostos de uma estrutura consistente de um conjunto
+modelá-los. São compostas de uma estrutura consistente e de um conjunto
 de regras que permitem interpretar o significado dos componentes modelados.
-Uma linguagem deste tipo é a }Unified Modeling Language\foreignlanguage{brazil}{
-(}UML\nomenclature{UML}{Unified Modeling Language }\foreignlanguage{brazil}{)
+Uma linguagem desse tipo é a }Unified Modeling Language\foreignlanguage{brazil}{
+(}UML\nomenclature{UML}{Unified Modeling Language }\foreignlanguage{brazil}{),
 que permite especificar sistemas de software.}
 \item Domain-Specific Programming Languages:\foreignlanguage{brazil}{ são
 linguagens que permitem a programação em alto nível aplicada a um
@@ -464,26 +458,25 @@ R que permite a programação de conceitos estatísticos e geração de
 gráficos.}
 \end{itemize}
 \selectlanguage{brazil}%
-
-Segundo o tipo de implementação as DSL podem ser dividas em \foreignlanguage{english}{external
-DSL e internal DSL,} explicadas a continuação\citep{fowler2010domain}:
-
+Segundo o tipo de implementação, as DSLs podem ser dividas em \foreignlanguage{english}{external
+DSL e internal DSL}\citep{fowler2010domain}:
 \selectlanguage{english}%
-External DSL:\foreignlanguage{brazil}{ é uma linguagem de domínio
-especifico que é definida com uma sintaxes independente de outras
-linguagens de programação, tendo como principal vantagem a flexibilidade
-da DSL. A desvantagem é que requer um desenvolvimento de um }full\foreignlanguage{brazil}{
-parser para processar ela.}
-
-Internal DSL:\foreignlanguage{brazil}{ é uma linguagem de domínio
+\begin{description}
+\item [{External\ DSL:}] \foreignlanguage{brazil}{é uma linguagem de domínio
+especifico que é definida com uma sintaxe independente de outras linguagens
+de programação, tendo como principal vantagem a flexibilidade. A desvantagem
+é que requer um desenvolvimento de um }full\foreignlanguage{brazil}{
+parser para processá-la.}
+\item [{Internal\ DSL:}] \foreignlanguage{brazil}{é uma linguagem de domínio
 especifico escrita dentro de uma linguagem }host\foreignlanguage{brazil}{
-existente. A vantagem deste enfoque de definição de DSL é que o tempo
-e custo de desenvolvimento é menor em relação a definir uma DSL externa.
-Este tipo de linguagens são escritas sobre uma linguagem de propósito
-geral e por isso apresenta a desvantagem da linguagem depender das
-instruções e características da linguagem }host,\foreignlanguage{brazil}{
-o que em alguns casos afeta a flexibilidade e expressividade da DSL
-que quer-se definir.}
+existente. A vantagem desse enfoque de definição de DSL é que o tempo
+e custo de desenvolvimento é menor, em relação a uma DSL externa.
+Linguagens desse tipo são escritas sobre uma linguagem de propósito
+geral e, por isso, apresentam a desvantagem de depender das instruções
+e características da linguagem }host,\foreignlanguage{brazil}{ o que,
+em alguns casos, afeta a flexibilidade e expressividade da DSL que
+se quer definir.}
+\end{description}
 \selectlanguage{brazil}%
 
 \subsection*{Linguagem \foreignlanguage{english}{Groovy}}
@@ -500,17 +493,17 @@ código e bibliotecas Java. Traz características de linguagens como
 
 \selectlanguage{brazil}%
 O grande benefício que \foreignlanguage{english}{Groovy} traz para
-este projeto é o suporte que da natureza dinâmica que dá ao desenvolvimento
+este projeto é o suporte que a sua natureza dinâmica dá ao desenvolvimento
 de DSLs. Essas DSLs podem rodar diretamente na \foreignlanguage{english}{JVM}
 e usar bibliotecas Java já existentes. DSLs em \foreignlanguage{english}{Groovy}
-se integram facilmente à própria linguagem Groovy de modo que não
+se integram facilmente à própria linguagem Groovy, de modo que não
 é aparente onde o código em \foreignlanguage{english}{Groovy} termina
-e a DSL começa \citep{dearle2015groovy}. Isso permite que a DSL
-seja implementada como uma DSL interna, estendendo a linguagem Groovy
-(e simplificando a sua criação), mas mantenha uma sintaxe próxima
-à linguagem usada pelos especialistas de domínio. Como uma DSL interna,
-ela pode usar ferramentas já existentes para auxiliar a escrita de
-código em Groovy, como editores com \foreignlanguage{english}{\textit{syntax
+e a DSL começa \citep{dearle2015groovy}. Isso permite que a DSL seja
+implementada como uma DSL interna, estendendo a linguagem Groovy (e
+simplificando a sua criação), mas mantenha uma sintaxe próxima à linguagem
+usada pelos especialistas de domínio. Como uma DSL interna, ela pode
+usar ferramentas já existentes para auxiliar a escrita de código em
+Groovy, como editores com \foreignlanguage{english}{\textit{syntax
 highlighting}} e \foreignlanguage{english}{\textit{code completion}},
 para a sua edição.
 
@@ -520,7 +513,7 @@ da Web Semântica. Isso inclui bibliotecas como a \foreignlanguage{english}{OWL
 API}, para trabalhar com ontologias em \foreignlanguage{english}{OWL},
 Apache \foreignlanguage{english}{Jena}, para acesso a \foreignlanguage{english}{triplestores},
 entre outras. Finalmente, os SADs a serem criados serão aplicativos
-web, Groovy tem um web framework completo e madurecido, Grails\foreignlanguage{english}{
+web, Groovy tem um web framework completo e amadurecido, o Grails\foreignlanguage{english}{
 }\footnote{\selectlanguage{english}%
 \url{https://grails.org/}\selectlanguage{brazil}%
 }. 
@@ -530,60 +523,35 @@ default razoáveis. Ele se integra bem com a JVM e tem características
 como ORM integrado, DSLs, metaprogramação durante runtime e compile-time,
 e programação assíncrona \citep{smith2009grails}.
 
-
-\subsection*{Discussão}
-
-A partir do análise dos conceitos e tecnologias descritas neste capítulo,
-foi determinado que os especialistas do domínio não têm um conhecimento
-detalhado sobre modelagem de conhecimento usando os padrões da web
-semântica. Também foi determinado que as ontologias permitem uma definição
-detalhada do conhecimento do domínio, pelo que foi necessário definir
-uma camada intermédia que facilitasse a definição do conhecimento
-por parte dos especialistas. Por isso foi justificado o requisito
-de uma DSL adequada ao nível de conhecimento de computação dos especialistas,
-e que contenha termos familiares ao domínio desses especialistas. 
-
-Uma DSL de tipo \foreignlanguage{english}{programming} pode suportar
-a definição de conhecimento dos especialistas, fornecendo uma solução
-compatível com os termos específicos deles. Isso facilita que os especialistas
-especifiquem os SAD com um grau de detalhamento suficiente para definir
-o conhecimento deles sem intervenção dos desenvolvedores de software,
-os especialistas poderiam se tornar, na prática, programadores de
-seus próprios SADs.
+Uma DSL pode suportar a definição do comportamento de um SAD, fornecendo
+uma solução compatível com os termos usados pelos especialistas. Isso
+facilita que eles possam especificar o comportamento de um SAD com
+um alto grau de detalhamento, suficiente para diminuir ou evitar a
+necessidade de intervenção de desenvolvedores de software. Especialistas
+podem se tornar, na prática, programadores de seus próprios SADs.
 
 Neste projeto, DSLs servem para customizar o comportamento dos SADs.
 Por isso, uma \foreignlanguage{english}{Domain-Specifc Programming
-Language }foi desenvolvida. Ela faz uso da ontologia para organizar
-o conhecimento do domínio e definir o comportamento dos SADs (Figura
-\ref{fig:Componente-DSL}). Para facilitar a criação desse tipo de
-DSL, a linguagem \foreignlanguage{english}{Groovy}\footnote{\selectlanguage{english}%
-\url{http://groovy-lang.org/}\selectlanguage{brazil}%
-} foi escolhida para implementação. 
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=0.5\columnwidth]{\string"figures/DSL Diagram\string".eps}
-\par\end{centering}
-\caption{Componente DSL \label{fig:Componente-DSL}}
-\end{figure}
-
+Language }em Groovy foi desenvolvida. Ela faz uso da ontologia para
+organizar o conhecimento do domínio e definir o comportamento dos
+SADs. 
 
 \section{Considerações finais}
 
-A partir do problema identificado e da revisão da literatura foi encontrado
-que o desenvolvimento de ontologias é um área de pesquisa abrangida
-pela Web Semântica que permite desenvolver sistemas web baseados em
-conhecimento, satisfazendo os requisitos de desenvolvimento do SAD
-SustenAgro explicados no capítulo \ref{chap:SAD}.
+A partir do problema identificado e da revisão da literatura, foi
+concluído que o desenvolvimento de ontologias é um área de pesquisa
+(abrangida pela Web Semântica) que permite desenvolver sistemas web
+baseados em conhecimento, satisfazendo os requisitos de desenvolvimento
+do SAD SustenAgro (Capítulo \ref{chap:SAD}).
 
-Porém, a definição de uma ontologia não é uma tarefa trivial, pelo
-que existe dificuldade por parte dos especialistas do domínio ao definir
-as ontologias. Diante deste cenário foram analisadas varias soluções
-e encontrou-se que complementando a ontologia com uma DSL, favorece
-na definição dos conceitos dos especialistas em uma linguagem mais
-natural para os especialistas.
+Porém, a definição de uma ontologia não é uma tarefa trivial, existem
+dificuldade, por parte dos especialistas do domínio, para formalizar
+ontologias. Diante deste cenário, foram analisadas varias soluções
+e encontrou-se que, fornecendo ferramentas simplificadas para edição
+e complementando ontologias com uma DSL, é possível facilitar a definição
+dos conceitos de um SAD e seu comportamento por especialistas.
 
-A continuação será apresentado o capítulo intitulado ``Framework
-Decisioner'' que faz uso das tecnologias explicadas para definir
-um Framework que facilite a definição de conhecimento dos especialistas
+No próximo capítulo, será apresentado o Framework Decisioner. Ele
+faz uso das tecnologias, abordadas neste capítulo, para definir um
+framework que facilita a definição de conhecimento dos especialistas
 com a finalidade de gerar SADs.

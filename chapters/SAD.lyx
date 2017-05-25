@@ -105,11 +105,11 @@ Definição de SAD
 
 \begin_layout Standard
 Os Sistemas de Apoio à Decisão (SAD) são uma área de conhecimento ampla
- e em continua evolução.
+ e em contínua evolução.
  A definição de SAD deriva da definição de sistema, pois eles contêm um
- conjunto de partes organizadas para um proposito comum, existem múltiplas
- definições do termo SAD, a continuação serão apresentadas algumas definições
- que permitem explicar o proposito deste tipo de sistemas.
+ conjunto de partes organizadas para um propósito comum, existem múltiplas
+ definições do termo SAD, a seguir serão apresentadas algumas definições
+ que permitem explicar o propósito deste tipo de sistemas.
 \end_layout
 
 \begin_layout Standard
@@ -250,7 +250,7 @@ fadaptada{Tweedale2016}
 \end_layout
 
 \begin_layout Standard
-A arquitetura de um SAD pode ser representada pelos componentes descritos
+A arquitetura de um SAD pode ser representada pelos componentes ilustrados
  na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -260,7 +260,7 @@ reference "fig:Componentes-SAD"
 
 , representando o processo realizado pelos SADs, no qual recebem uma entrada,
  fazem o processamento dela e retorna resultados que são analisadas pelo
- tomador(es) de decisão através da tecnologia computacional 
+ tomador(es) de decisão por meio da tecnologia computacional 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Tweedale2016"
@@ -289,7 +289,7 @@ nputs
 \lang brazilian
  corresponde às entradas do sistema, composta dos dados que serão processados
  e dos modelos de conhecimento dos especialistas.
- Os dados estão armazenados em bancos de dados e os modelos pelo geral estão
+ Os dados estão armazenados em bancos de dados e os modelos em geral estão
  implícitos no SAD ou podem estar em uma base de conhecimento.
  Esses dois componentes devem ser o mais precisos e completos possíveis
  para garantir respostas confiáveis do sistema.
@@ -300,8 +300,8 @@ nputs
 \lang english
 Processing
 \lang brazilian
- está composto pelos modelos e métodos de organização e processamento dos
- dados, que têm restrições para avaliar as alternativas de resposta.
+ composto pelos modelos e métodos de organização e processamento dos dados,
+ que têm restrições para avaliar as alternativas de resposta.
  Os métodos podem ser de tipo matemáticos, que processam os dados e geram
  os resultados do sistema.
 \end_layout
@@ -359,6 +359,16 @@ key "Tweedale2016"
 
 , os quais estabelecem o escopo desta pesquisa.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Expandir com taxonomia de SADs
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -370,7 +380,7 @@ Um tipo de SAD que usa bases de conhecimento, são os SADs baseados em ontologia
 
 \begin_layout Standard
 A seguir será apresentado o SAD SustenAgro, que suporta a avaliação da sustentab
-ilidade em cana-de-açúcar através do uso de ontologias.
+ilidade em cana-de-açúcar por meio do uso de ontologias.
 \end_layout
 
 \begin_layout Section
@@ -453,7 +463,7 @@ ade.
  sustentabilidade (apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Sustainability_Assessment"
+reference "appendix:Sustainability_Assessment"
 
 \end_inset
 
@@ -483,7 +493,7 @@ key "Singh2012281"
  cana-de-açúcar está detalhada no apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Sustainability_Assessment"
+reference "appendix:Sustainability_Assessment"
 
 \end_inset
 
@@ -572,7 +582,7 @@ Integração e implementação do método SustenAgro de avaliação de sustentab
 , descrito no Apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Sustainability_Assessment"
+reference "appendix:Sustainability_Assessment"
 
 \end_inset
 
@@ -611,16 +621,16 @@ Geração de relatórios e de recomendações de sustentabilidade.
 \begin_layout Standard
 Um dos problemas identificados foi que os especialistas não tinham uma definição
  clara do SAD SustenAgro.
- Pelo que foi necessário realizar um levantamento de requisitos, descrito
- no Capítulo 
+ Pelo que foi necessário realizar um levantamento de requisitos (Capítulo
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SustenAgro"
 
 \end_inset
 
-, para definir os requisitos funcionais (essenciais) e não funcionais (desejávei
-s).
+), para definir os requisitos funcionais (essenciais) e não funcionais (desejáve
+is).
  Além disso, foi necessário reestruturar o desenvolvimento do SAD SustenAgro
  para que fosse integrado no processo de pesquisa.
 \end_layout
@@ -804,8 +814,8 @@ r dito conhecimento.
 
 \begin_layout Standard
 O uso de uma ontologia permite representar e estruturar o conhecimento de
- avaliação da sustentabilidade em agricultura, através da definição e atualizaçã
-o de conceitos por parte dos especialistas.
+ avaliação da sustentabilidade em agricultura, por meio da definição e atualizaç
+ão de conceitos por parte dos especialistas.
  permitindo que eles mesmos descrevam o domínio sem precisar dos desenvolvedores.
  Os especialistas do domínio tem familiaridade com os termos da ontologia
  e poderão especificar grande parte do conhecimento envolvido no SAD.
@@ -1077,7 +1087,7 @@ key "Ewert2009546"
 \end_layout
 
 \begin_layout Standard
-Existem pesquisas que abordam a sustentabilidade através de ferramentas
+Existem pesquisas que abordam a sustentabilidade por meio de ferramentas
  tecnológicas, as quais podem servir de referência ao sistema SustenAgro.
  Uma delas foi desenvolvida por 
 \begin_inset CommandInset citation

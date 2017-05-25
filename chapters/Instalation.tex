@@ -20,14 +20,12 @@ segue uma orientação padrão que será descrita a continuação:
 Segundo a documentação de Java \foreignlanguage{english}{OpenJDK},
 a instalação é realizada pelo comando:
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Instala��o do Java}]
 sudo apt-get update
 sudo apt-get install openjdk-8-jre
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Instalação do Java}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 
 \subsection*{Instalação do \foreignlanguage{english}{Apache Tomcat}}
@@ -45,8 +43,8 @@ extrair eles em \foreignlanguage{english}{/opt/tomcat/}, exportar
 as variáveis de entorno e executar o \foreignlanguage{english}{Web
 Server}, com código:
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Instala��o do Apache Tomcat}]
 wget http://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.70/bin/
 apache-tomcat-7.0.70.tar.gz
 
@@ -54,45 +52,37 @@ tar xvzf apache-tomcat-7.0.70.tar.gz -C /opt/tomcat
 
 sudo /opt/tomcat/bin/startup.sh
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Instalação do \foreignlanguage{english}{Apache Tomcat}}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 Configurar \foreignlanguage{english}{users} de \foreignlanguage{english}{Tomcat}
 em: \foreignlanguage{english}{/opt/tomcat/conf/tomcat-users.xml }e
 acrescentar os Rol e \foreignlanguage{english}{User}
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Configura��o dos Users}]
 <role rolename="manager-gui"/> 
 <user username="admin" password="s3cr3t" roles="manager-gui"/>
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Configuração dos Users}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 Depois disso, é registrado no final do arquivo \textasciitilde{}/.bashrc
 os próximos dois comandos que definem as variáveis de entorno
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Exportar vari�veis de entorno}]
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64 
 export CATALINA_HOME=/opt/tomcat
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Exportar variáveis de entorno}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 Finalmente executar o comando, e verificar a execução do programa
 na URL /manager do domínio do servidor
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Iniciar o servidor}]
 sudo /opt/tomcat/bin/startup.sh
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Iniciar o servidor}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 
 \subsection*{Instalação do \foreignlanguage{english}{WkHtmltoPdf}}
@@ -105,8 +95,8 @@ instalação consiste em fazer download dos arquivos binários e a configuraçã
 de um X Server Virual para suportar o renderizado, os comandos são
 mostrados a continuação:
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Instala��o do wkhtmltopdf }]
 wget http://download.gna.org/wkhtmltopdf/0.12/0.12.3/
 wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
 
@@ -118,22 +108,18 @@ sudo chmod a+x /usr/local/bin/wkhtmltopdf
 
 sudo apt-get install openssl build-essential xorg libssl-dev
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Instalação do wkhtmltopdf }
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 Depois disto é criado um \foreignlanguage{english}{script wkhtmltopdf.sh}
 em \foreignlanguage{english}{/usr/local/bin/} e contém o seguinte
 comando:
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Execu��o do wkhtmltopdf}]
 xvfb-run -a -s "-screen 0 640x480x16" wkhtmltopdf "$@"
 sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh 
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Execução do wkhtmltopdf}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 O comando \foreignlanguage{english}{wkhtmltopdf.sh} é possível converter
 a \foreignlanguage{english}{PDF} desde um sistema sem X11
@@ -144,8 +130,8 @@ A instalação do \foreignlanguage{english}{Blazegraph} consiste em
 fazer download do arquivo binário e executar com o arquivo de configuração
 RWStore2.properties o serviço de \foreignlanguage{english}{triplestore}.
 
-\begin{algorithm}[h]
-\inputencoding{latin9}\begin{lstlisting}
+\begin{algorithm}[H]
+\inputencoding{latin9}\begin{lstlisting}[caption={Instala��o do \foreignlanguage{english}{Blazegraph}}]
 wget https://sourceforge.net/projects/bigdata/files/bigdata/
 2.1.1/blazegraph.jar
 
@@ -155,9 +141,7 @@ SustenAgro/RWStore2.properties
 java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties 
 -jar blazegraph.jar
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Instalação do \foreignlanguage{english}{Blazegraph}}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 \selectlanguage{english}%
 
@@ -172,11 +156,9 @@ no \foreignlanguage{english}{path} ``/'', e finalmente reiniciar
 o \foreignlanguage{english}{Tomcat}.
 
 \begin{algorithm}[H]
-\inputencoding{latin9}\begin{lstlisting}
+\inputencoding{latin9}\begin{lstlisting}[caption={Execu��o do sustenagro}]
 wget https://dl.dropboxusercontent.com/u/24827919/
 SustenAgro/sustenagro-1.0.war
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Execução do sustenagro}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 

@@ -97,8 +97,8 @@ key "power2000web"
  Tal conhecimento, específico de um domínio, não é familiar para desenvolvedores
  de software.
  Eles têm que usar técnicas diversas para o levantamento de requisitos para
- entender o domínio dos especialistas e assim implementar o sistema software
- corretamente 
+ entender o domínio dos especialistas e assim implementar o software corretament
+e 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "GavrilovaAndreeva2012"
@@ -113,7 +113,7 @@ key "GavrilovaAndreeva2012"
 \end_layout
 
 \begin_layout Standard
-Adicionalmente, os especialistas do domínio, em geral, não tem conhecimento
+Adicionalmente, os especialistas do domínio, em geral, não têm conhecimento
  suficiente em matéria de desenvolvimento de sistemas de software para realizar
  o dito processo por eles mesmos.
  Além disso, os dois domínios, tanto dos especialistas de domínio como dos
@@ -134,10 +134,10 @@ key "roussey2010ontologies"
 \begin_layout Standard
 Como exemplo do problema anterior, podemos expor o caso dos especialistas
  em sustentabilidade da Embrapa Meio Ambiente, que desenvolveram o projeto
- SustenAgro (capítulo 
+ SustenAgro (Apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Sustainability_Assessment"
+reference "appendix:Sustainability_Assessment"
 
 \end_inset
 
@@ -193,8 +193,8 @@ A análise do projeto SustenAgro permitiu identificar as seguintes motivações
 
 \begin_layout Standard
 A primeira delas é a necessidade de um método e ferramenta para que os especiali
-stas do domínio definam o conhecimento nos SADs, principalmente as característic
-as particulares que requerem profundo conhecimento.
+stas do domínio definam o conhecimento deles nos SADs, principalmente as
+ características particulares que requerem profundo conhecimento.
  Isso permite a participação deles como descritores de conhecimento especifico
  fornecendo, aos desenvolvedores de software, tempo adicional para dedicar-se
  aos assuntos próprios da computação e assim agilizar o processo de desenvolvime
@@ -210,7 +210,7 @@ nto de SADs.
 A segunda refere-se a fornecer meios computáveis de representação desse
  conhecimento, que facilitem a comunicação entre os especialistas do domínio
  e os desenvolvedores de software e que adaptem-se às mudanças do domínio.
- Domínios de conhecimento estão em continua mudança, como é o caso do domínio
+ Domínios de conhecimento estão em contínua mudança, como é o caso do domínio
  avaliação da sustentabilidade da cultura de cana-de-açúcar
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -223,7 +223,7 @@ key "oliveira:2013"
 \end_layout
 
 \begin_layout Standard
-A terceira é o impacto que gera o correto uso dos SAD
+A terceira é o impacto que gera o correto uso dos SAD 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lee2008349"
@@ -279,7 +279,7 @@ KOS
 Numa parceria com a Embrapa Meio Ambiente, foi desenvolvida uma ontologia
  de avaliação da sustentabilidade em cana-de-açúcar junto com os especialistas
  desta instituição.
- Nas áreas de biologia e agricultura as ontologias são comuns, desta forma
+ Nas áreas de biologia e ecologia as ontologias são comuns, desta forma
  eles não tiveram dificuldade com o conceito.
  Eles usaram uma 
 \lang english
@@ -308,7 +308,7 @@ r composto por ontologias e
 \lang english
 DSLs
 \lang brazilian
-, cujo proposito é facilitar a implementação de SADs, sendo este framework
+, cujo propósito é facilitar a implementação de SADs, sendo este framework
  instanciado para produzir o SAD SustenAgro.
 \end_layout
 
@@ -344,15 +344,15 @@ Desenvolver uma DSL que permita a definição da interface de usuário, das
 \end_layout
 
 \begin_layout Itemize
-Definir a arquitetura e o código da ferramenta Decisioner para gerar SADs
+Definir a arquitetura e o código de uma ferramenta que permita gerar SADs
  baseados em conhecimento de domínios específicos.
  Os SADs gerados usam uma ontologia, desenvolvida por especialistas do domínio
  e uma DSL, para gerar as interfaces e funcionalidades do sistema.
 \end_layout
 
 \begin_layout Itemize
-Demonstrar que o método e ferramenta Decisioner permitem a criação de SADs
- funcionais que podem ser modificados por especialistas de domínio.
+Demostrar que o método e ferramenta permitem a criação de SADs funcionais
+ que podem ser modificados por especialistas de domínio.
  Esses especialistas devem definir a ontologia e modificar o comportamento
  do sistema com pouca ou nenhuma intervenção de desenvolvedores.
 \end_layout
@@ -395,7 +395,7 @@ Groovy
 
 \begin_layout Itemize
 Método e framework Decisioner para definir SADs por parte dos especialistas
- do domínio, desenvolvido através do framework 
+ do domínio, baseado do framework 
 \lang english
 Grails
 \lang brazilian
@@ -403,8 +403,9 @@ Grails
 \end_layout
 
 \begin_layout Itemize
-O SAD SustenAgro: Sistema para avaliação da sustentabilidade em cana-de-açúcar,
- na região centro-sul do Brasil, instanciada através do Framework Decisioner.
+O SAD SustenAgro: sistema de apoio à decisão para suportar a avaliação da
+ sustentabilidade em cana-de-açúcar, na região centro-sul do Brasil, instanciado
+ por meio do Framework Decisioner.
 \end_layout
 
 \begin_layout Itemize
@@ -461,8 +462,8 @@ Revista Brasileira de Sistemas de Informação
 \end_layout
 
 \begin_layout Itemize
-Resultados positivos das avaliações do Framework Decisioner, do método de
- geração de SADs e do Sistema SustenAgro.
+Avaliações do Framework Decisioner, do método de geração de SADs e do Sistema
+ SustenAgro satisfactorias para os especialistas do conhecimento.
 \end_layout
 
 \begin_layout Section

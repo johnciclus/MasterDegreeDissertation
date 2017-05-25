@@ -93,7 +93,7 @@ ilidade da produção de cana-de-açucar na região centro-sul do Brasil.
 \end_layout
 
 \begin_layout Standard
-Nest capítulo, serão explicadas a arquitetura, a metodologia e os componentes
+Neste capítulo, serão explicadas a arquitetura, a metodologia e os componentes
  mais importantes do SAD SustenAgro.
  Serão feitas também algumas considerações sobre o processo de definição
  do SAD.
@@ -695,7 +695,7 @@ Usinas processadoras de cana-de-açúcar
 \shape default
 .
  Cada processo de avaliação requer dados que identifiquem as unidades produtivas
- através de propriedades que as definam.
+ por meio de propriedades que as definam.
 \end_layout
 
 \begin_layout Standard
@@ -1209,10 +1209,10 @@ name "fig:Modelagem-de-Indicador"
 \end_layout
 
 \begin_layout Standard
-Segundo a descrição do método de avaliação (Capítulo 
+Segundo a descrição do método de avaliação (Apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Sustainability_Assessment"
+reference "appendix:Sustainability_Assessment"
 
 \end_inset
 
@@ -1230,7 +1230,7 @@ key "kraines2011system"
 \end_layout
 
 \begin_layout Standard
-A continuação serão apresentados cada uma das três dimensões.
+A seguir serão apresentados cada uma das três dimensões.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1600,7 +1600,7 @@ Google Maps
 \end_layout
 
 \begin_layout Enumerate
-O usuário ingressa na conta dele, através do sistema web SustenAgro em 
+O usuário ingressa na conta dele por meio do sistema web SustenAgro em 
 \begin_inset Flex URL
 status open
 
@@ -3311,7 +3311,7 @@ reference "lis:SustenAgro-DSL"
 \end_inset
 
 , é possível ver o cálculo dos índices de sustentabilidade e eficiência
- através das formulas do modelo usado pelo SustenAgro.
+ por meio das formulas do modelo usado pelo SustenAgro.
  É possível usar qualquer comando da linguagem Groovy ou biblioteca externa.
  As variáveis guardam os valores de interesse que serão mostrados no relatório
  de avaliação.
@@ -3550,15 +3550,15 @@ Além de satisfazer uma necessidade institucional, o SustenAgro é uma proposta
  de SAD baseado em conhecimento e vinculado às tecnologias da web semântica.
  O SustenAgro não foi apenas uma instanciação do framework Decisioner, ele
  definiu o próprio framework.
- Através do desenvolvimento do SustenAgro, foi possível determinar as caracterís
-ticas gerais desse tipo de SAD, e implementá-las no framework, e as característi
-cas específicas do Sustenagro, que foram implementadas usando a ontologia
+ Por meio do desenvolvimento do SustenAgro, foi possível determinar as caracterí
+sticas gerais desse tipo de SAD, e implementá-las no framework, e as característ
+icas específicas do Sustenagro, que foram implementadas usando a ontologia
  SustenAgro, os dois Web Components e a DSL.
 \end_layout
 
 \begin_layout Standard
-Tendo o sistema SustenAgro instanciado e rodando, foi possível validar suas
- funcionalidades através de alguns experimentos com integrantes do projeto
+Tendo o sistema SustenAgro instanciado e rodando, foi possível validar as
+ funcionalidades por meio de alguns experimentos com integrantes do projeto
  SustenAgro da Embrapa.
  Os resultados obtidos nas avaliações dos experimentos serão detalhados
  no próximo capítulo.

@@ -1,4 +1,4 @@
-A partir da descrição das características do SAD SustenAgro (seção
+A partir da descrição das características do SAD SustenAgro (Seção
 \ref{sec:SAD-SustenAgro}), do requisito de modelar o conhecimento
 através de ontologias (usando tecnologias da Web Semântica) e de definir
 uma DSL para facilitar a definição de comportamentos por parte dos
@@ -31,23 +31,23 @@ As ontologias permitem a definição do conhecimento dos especialistas
 em um componente independente. Ele é complementado pela DSL, que permite
 definir comportamento e características do SAD. O diagrama para a
 arquitetura desenvolvida para essa solução é apresentado na figura
-\ref{fig:Componente-DSL}. Com base nesse diagrama, os componentes
-dos SADs foram generalizados e, por meio do desenvolvimento de experimentos,
-foi definida uma arquitetura que pode ser reusada em diferentes SADs
-(do mesmo tipo do SustenAgro).
+\ref{fig:Arquitectura-do-decisioner}. Com base nesse diagrama, os
+componentes dos SADs foram generalizados e, por meio do desenvolvimento
+de experimentos, foi definida uma arquitetura que pode ser reusada
+em diferentes SADs (do mesmo tipo do SustenAgro).
 
 O Decisioner pode ser classificado como um framework. Já que é uma
 plataforma de software com design reutilizável e implementações reutilizáveis
 pelos clientes, que o especializam em um domínio particular \citep{RiehlePhdthesis}.
 
 A arquitetura do framework Decisioner é composta pelos componentes
-gerais para a definição de SADs, apresentados na Figura \ref{fig:Interfaces}.
+gerais para a definição de SADs, apresentados na Figura \ref{fig:Arquitectura-do-decisioner}.
 Usuários especialistas podem interagir com o framework através dos
 editores de ontologias e DSL. Usuários finais interagem através da
 sua interface Web.
 
 \begin{figure}[H]
-\centering{}\includegraphics[width=0.9\columnwidth]{\string"figures/Decisioner Architecture\string".eps}\caption{Arquitetura do Decisioner\label{fig:Interfaces}}
+\centering{}\includegraphics[width=0.9\columnwidth]{\string"figures/Decisioner Architecture\string".eps}\caption{Arquitetura do Decisioner\label{fig:Arquitectura-do-decisioner}}
 \end{figure}
 
 Os componentes dessa arquitetura são:
@@ -65,7 +65,7 @@ especialistas.}
 e recuperação da informação em formato de triplas }RDF\foreignlanguage{brazil}{,
 (explicado em detalhe na seção \ref{subsec:Triplestore}). Ele permite
 o gerenciamento de dados e ontologias em formato }RDF.\foreignlanguage{brazil}{
-A traves da linguagem padrão }SPARQL Protocol and RDF Query Language
+Através da linguagem padrão }SPARQL Protocol and RDF Query Language
 (Sparql)\foreignlanguage{brazil}{ \citep{prud2006sparql}. }
 \item \textbf{DSL code}\foreignlanguage{brazil}{: representa uma instancia
 da DSL com as definições particulares para um SAD específico.}
@@ -79,8 +79,8 @@ do domínio.
 visuais que podem ser reusados nos SADs com a finalidade de modularizar
 e simplificar a geração de }Web User Interfaces\foreignlanguage{brazil}{
 (UI\nomenclature{UI}{User Interface}).}
-\item \textbf{DSL Interpreter}\foreignlanguage{brazil}{: Interpretador
-da DSL para processar as definições do SAD e criar um SAD específico.
+\item \textbf{DSL Interpreter}\foreignlanguage{brazil}{: Interpretador da
+DSL para processar as definições do SAD e criar um SAD específico.
 Ele usa a DSL, ontologias e componentes web para gerar automaticamente
 a interface e comportamento de um SAD específico.}
 \item \textbf{Web UI}\foreignlanguage{brazil}{: Interfaces visuais geradas
@@ -258,6 +258,10 @@ panel}) e permite a inserção da ontologia no Decisioner. Apesar de
 ser possível aos especialistas desenvolver uma ontologia totalmente
 nova, usando o editor, seu objetivo é permitir que eles possam fazer
 modificações localizadas nas ontologias. 
+
+A ontologia definida em este editor será usada para definir a estrutura
+dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
+a seguir.
 \begin{flushleft}
 \begin{figure}[H]
 \begin{centering}
@@ -266,10 +270,6 @@ modificações localizadas nas ontologias.
 \caption{Editor de ontologia\label{fig:Editor-de-ontologia} }
 \end{figure}
 \par\end{flushleft}
-
-A ontologia definida em este editor será usada para definir a estrutura
-dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
-a continuação. 
 
 \section{Decisioner DSL}
 
@@ -308,7 +308,7 @@ nome, tipo de produção, localização, etc.
 
 A instrução tem como argumentos a URI (ou label) da classe da ontologia
 do domínio, que será objeto de avaliação, e cada uma das propriedades
-relacionadas. O algoritmo \ref{alg:Defini=0000E7=0000E3o-do-Evaluation}
+relacionadas. A Listagem \ref{lis:Defini=0000E7=0000E3o-do-Evaluation}
 apresenta um exemplo que usa a classe \textit{ProductionUnit}, como
 classe dos objetos a serem avaliados e define as propriedades \textit{hasName},
 para nome, e \textit{hasAgriculturalProductionSystem}, para tipo de
@@ -316,16 +316,14 @@ produção. Podem ser usados os labels das propriedades, ao invés de
 suas URIs\textit{.}
 
 \begin{algorithm}[H]
-\inputencoding{latin9}\begin{lstlisting}
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o do Evaluation Object},label={lis:Defini=0000E7=0000E3o-do-Evaluation}]
 evaluationObject ":ProductionUnit", {     
  instance "ui:hasName', label: ["en": "Name", "pt": "Nome"]
  instance ":hasAgriculturalProductionSystem"
  type label: ["en": "Type", "pt": "Tipo"]
 }
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Definição do Evaluation Object\label{alg:Defini=0000E7=0000E3o-do-Evaluation}}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 O comando \foreignlanguage{english}{\textit{instance}} vincula uma
 propriedade definida na ontologia, através da URI. Ela pode ser complementada
@@ -355,10 +353,11 @@ O DSL Interpreter vai gerar uma interface gráfica, onde o usuário
 final terá que preencher os dados sobre cada característica. Cada
 característica tem um tipo associado a ela (na ontologia de domínio).
 A partir dele, é possível associar uma widget específica para edição.
-Por exemplo, a Figura \ref{fig:Widgets-geradas-da-DSL} mostra a
-widget para uma característica que tem um tipo categórico com 3 possíveis
-valores. Os textos mostrados vêm da ontologia e fazem parte da descrição
-de cada elemento. É possível criar descrições em mais de uma língua.
+Por exemplo, a Figura \ref{fig:Widgets-geradas-da-DSL} mostra a widget
+para uma característica que tem um tipo categórico (Controle biológico
+de pragas) com 2 possíveis valores (Sim e Não). Os textos mostrados
+vêm da ontologia e fazem parte da descrição de cada elemento. É possível
+criar descrições em mais de uma língua.
 
 \begin{figure}[H]
 \begin{centering}
@@ -374,14 +373,12 @@ possível acessar esses valores. Os usuários não precisam preencher
 a todas as características.
 
 \begin{algorithm}[H]
-\inputencoding{latin9}\begin{lstlisting}
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o de Features },label={lis:Defini=0000E7=0000E3o-de-Features}]
 feature ':EnvironmentalIndicator', 'extraFeatures': true
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Definição de Features\label{alg:Defini=0000E7=0000E3o-de-Features}}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
-O comando tem como argumento uma URI (ou label) (Algoritmo \ref{alg:Defini=0000E7=0000E3o-de-Features})
+O comando tem como argumento uma URI (ou label) (Listagem \ref{lis:Defini=0000E7=0000E3o-de-Features})
 que vincula todas as subclasses da classe referenciada. O parâmetro
 opcional \foreignlanguage{english}{\textit{extraFeatures}} permite
 ativar a inserção de novas\foreignlanguage{english}{\textit{ features}},
@@ -394,7 +391,7 @@ por parte do usuário do SAD.
 O comando \foreignlanguage{english}{\textit{Report}} permite definir
 as fórmulas e procedimentos matemáticas necessários para o cálculo
 do modelo usado pelos especialistas de domínio, e como os resultados
-serão apresentados (Algoritmo \ref{alg:Defini=0000E7=0000E3o-da-l=0000F3gica}).
+serão apresentados (Listagem \ref{lis:Defini=0000E7=0000E3o-da-l=0000F3gica}).
 Fórmulas e procedimentos para modelagem matemática são de responsabilidade
 dos especialistas de domínio. A DSL permite desde fórmulas simples,
 de uma linha, até o uso de bibliotecas complexas, chamadas usando
@@ -402,11 +399,11 @@ a JVM. Como a DSL é uma extensão da linguagem Groovy, qualquer comando
 da linguagem pode ser usado nela, incluindo operações lógicas e aritméticas.
 Para facilitar o trabalho dos especialistas de domínio, recomenda-se
 encapsular qualquer algoritmo ou chamada de função mais complicados
-num comando simples.
+em um comando simples.
 
 As fórmulas usadas têm acesso a todos os dados associados às \foreignlanguage{english}{\textit{Features}},
 pelos usuários finais. Esses dados são usados no modelo adotado e
-podem gerar múltiplos resultados de avaliação. No algoritmo \ref{alg:Defini=0000E7=0000E3o-da-l=0000F3gica},
+podem gerar múltiplos resultados de avaliação. Na Listagem \ref{lis:Defini=0000E7=0000E3o-da-l=0000F3gica},
 o comando \textit{weightedSum(data.':EnvironmentalIndicator')} calcula
 a média ponderada de todos os indicadores ambientais fornecidos pelo
 usuário final. Esse comando foi criado para simplificar o trabalho
@@ -414,7 +411,7 @@ dos especialistas. Biblioteca de comandos, como essa, podem ser adicionadas
 ao framework ou criados a pedido dos especialistas.
 
 \begin{algorithm}[H]
-\inputencoding{latin9}\begin{lstlisting}
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o da l�gica de avalia��o.},label={lis:Defini=0000E7=0000E3o-da-l=0000F3gica}]
 report {     
  environment = weightedSum(data.':EnvironmentalIndicator')
  economic = weightedSum(data.':EconomicIndicator')
@@ -423,27 +420,25 @@ report {
  ...
 }
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Definição da lógica de avaliação.\label{alg:Defini=0000E7=0000E3o-da-l=0000F3gica}}
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 Os resultados do processo de avaliação podem ser apresentados por
 meio de várias \foreignlanguage{english}{\textit{widgets}} que facilitam
 a representação e compreensão dos resultados da avaliação. No algoritmo
-\ref{alg:Defini=0000E7=0000E3o-dos-componentes} o comando \textit{sustainabilityMatrix
+\ref{lis:Defini=0000E7=0000E3o-dos-componentes} o comando \textit{sustainabilityMatrix
 x: sustainability, y: efficiency} apresenta os valores das variáveis
-\textit{sustainability} e \textit{efficiency} num gráfico de matriz
+\textit{sustainability} e \textit{efficiency} em um gráfico de matriz
 de sustentabilidade (Figura \ref{fig:Matriz-de-sustentabilidade-widget}).
 Para executar esse comando, o DSL Interpreter simplesmente coloca
 a widget \textit{suatainabilityMatrix} na UI e passa os valores das
 variáveis, como atributos. A widget vai ser responsável por criar
 o gráfico. Essas widgets gráficas podem ser criadas como Web Components
- padrão (HTML 5) ou componentes do framework Grails (Seção \ref{sec:Web-components}
-). O framework vem com um conjunto de widgets predefinidos, mas novas
+padrão (HTML 5) ou componentes do framework Grails (Seção \ref{sec:Web-components}).
+O framework vem com um conjunto de widgets predefinidos, mas novas
 podem ser adicionadas. 
 
 \begin{algorithm}[H]
-\inputencoding{latin9}\begin{lstlisting}
+\inputencoding{latin9}\begin{lstlisting}[caption={Defini��o dos componentes visuais do relat�rio.},label={lis:Defini=0000E7=0000E3o-dos-componentes}]
 report {
  ...
  sustainabilityMatrix x: sustainability, y: efficiency
@@ -451,10 +446,7 @@ report {
  map data.'Microregion'
 }
 \end{lstlisting}
-\inputencoding{utf8}
-\caption{Definição dos componentes visuais do relatório.\label{alg:Defini=0000E7=0000E3o-dos-componentes}}
-
-\end{algorithm}
+\inputencoding{utf8}\end{algorithm}
 
 Por meio dos comandos da DSL, é possível definir o comportamento e
 as características gerais dos SAD. 
@@ -476,16 +468,6 @@ restore} para carregar novamente a última versão válida da DSL e um
 \foreignlanguage{english}{button save} para salvar e carregar a DSL
 no DSL Interpreter. 
 
-O Editor de código foi baseado no \foreignlanguage{english}{Ace Editor}\footnote{\url{ttps://ace.c9.io/}},
-que fornece \foreignlanguage{english}{Syntax highlighting} para varias
-linguagens de programação, entre elas Groovy, e como a DSL foi baseada
-em Groovy, foi configurada para reconhecer dita sintaxe, também foi
-ativado o suporte de \foreignlanguage{english}{code completion} para
-fornecer uma experiência de uso amigável. A principal vantagem é a
-funcionalidade de salvar a ontologia e reconfigurar o SAD imediatamente,
-permitindo uma experiência em tempo real de redefinição do SAD, se
-o usuário errar, ele vai poder restaurar as configurações por \foreignlanguage{english}{default}.
-
 A Figura \ref{fig:Editor-DSL} mostra o editor em ação.
 
 \begin{figure}[H]
@@ -495,17 +477,29 @@ A Figura \ref{fig:Editor-DSL} mostra o editor em ação.
 \caption{Editor DSL\label{fig:Editor-DSL}}
 \end{figure}
 
-O editor da DSL tem compatibilidade com \foreignlanguage{english}{web
-components}, tanto os fornecidos pelas bibliotecas integradas no Framework
-Decisioner, como com os \foreignlanguage{english}{web components}
-do Framework \foreignlanguage{english}{Grails} e adicionalmente podem
-ser definidos \foreignlanguage{english}{web components }especializados.
+O Editor de código foi baseado no \foreignlanguage{english}{Ace Editor}\footnote{\url{ttps://ace.c9.io/}},
+que fornece \foreignlanguage{english}{syntax highlighting} para várias
+linguagens de programação, entre elas Groovy. Como a DSL foi baseada
+em Groovy, o editor foi configurado para reconhecer a sintaxe de Groovy.
+Também foi ativado o suporte para \foreignlanguage{english}{code completion}
+para fornecer uma experiência de uso mais amigável.
+
+A principal vantagem desse editor é a funcionalidade de salvar a ontologia
+e reconfigurar o SAD imediatamente, permitindo uma experiência em
+tempo real de redefinição do SAD. Se o usuário errar algo, ele pode
+simplesmente restaurar as configurações \foreignlanguage{english}{default}.
+
+O editor da DSL tem compatibilidade com \foreignlanguage{english}{Web
+Components}, tanto os fornecidos pelas bibliotecas integradas no Framework
+Decisioner, como com os \foreignlanguage{english}{Web Components}
+do Framework \foreignlanguage{english}{Grails} e, adicionalmente,
+podem ser definidos \foreignlanguage{english}{Web Components }especializados.
 \selectlanguage{english}%
 
-\section{Web components\label{sec:Web-components}}
+\section{Web Components\label{sec:Web-components}}
 
 Web Component\foreignlanguage{brazil}{s }\footnote{\selectlanguage{brazil}%
-Site oficial de \foreignlanguage{english}{web components} \url{https://www.webcomponents.org/introduction}\selectlanguage{brazil}%
+\url{https://www.webcomponents.org/introduction}\selectlanguage{brazil}%
 }\foreignlanguage{brazil}{ é um conjunto de APIs padrão para definir
 novas tags }HTML\foreignlanguage{brazil}{ personalizadas, reutilizáveis
 e encapsuladas para o uso em páginas ou aplicações web. O framework
@@ -519,7 +513,7 @@ disponibilizar vários tipos de widgets que permitissem visualizar
 e editar diferentes tipos de dados. Para relacionar os \foreignlanguage{english}{web
 components} com o conhecimento dos especialistas, modelou-se, na ontologia
 Decisioner, os \foreignlanguage{english}{data-types} que permitem
-relacionar os tipos de dados com widgets específicas (capazes de edita-los),
+relacionar os tipos de dados com widgets específicas (capazes de editá-los),
 usadas nas \foreignlanguage{english}{web UIs} dos SADs gerados. Os
 dados das Features dos SADs podem ser de vários tipos e, para cada
 tipo, existe uma widget apropriada para visualiza-o. Por exemplo,
@@ -557,6 +551,18 @@ os resultados na web ou em relatórios impressos. O mais importante
 é que ela é gerada automaticamente pelo DSL Interpreter, usando a
 DSL e ontologias particulares a cada SAD. 
 
+A Figura \ref{fig:Web-UI} apresenta uma Web UI que foi gerada automaticamente,
+a partir da ontologia e das definições na DSL do SAD SustenAgro. Nela
+são apresentados vários tipos de \foreignlanguage{english}{Web Components}
+que demostram o suporte a diferentes tipos de dados.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\columnwidth]{figures/SustenAgro-tool}
+\par\end{centering}
+\caption{\foreignlanguage{english}{Web UI \foreignlanguage{brazil}{com} web components\label{fig:Web-UI}}}
+\end{figure}
+
 Parte da Web UI é igual para todos os SADs, como formulários de login.
 O resto dela é gerado com a ajuda dos \foreignlanguage{english}{Web
 Components.} Eles são relacionadas aos tipos de dados existentes no
@@ -574,19 +580,6 @@ de informática façam uma customização do sistema para adequá-lo aos
 padrões de apresentação da instituição. Eles também devem incluir
 qualquer Web Component (widget) necessário mas não disponível por
 default no Decisioner. 
-
-A figura \ref{fig:Web-UI} apresenta uma Web UI que foi gerada automaticamente,
-a partir da ontologia e das definições na DSL do SAD SustenAgro. Nela
-são apresentados vários tipos de \foreignlanguage{english}{Web Components}
-que demostram o suporte a diferentes tipos de dados.
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=1\columnwidth]{figures/SustenAgro-tool}
-\par\end{centering}
-\caption{\foreignlanguage{english}{Web UI \foreignlanguage{brazil}{com} web components\label{fig:Web-UI}}}
-\end{figure}
-
 \selectlanguage{english}%
 
 \section{DSL Interpreter}
@@ -606,11 +599,10 @@ Esta camada, Sparql Simplifier, foi desenvolvida como uma solução
 eficiente para a recuperação de informações semânticas de um domínio
 de conhecimento usando um formato simplificado. 
 
-O componente \foreignlanguage{english}{DSL Interpreter} processa
-as instruções dos especialistas na linguagem Decisioner DSL. Foram
-utilizadas técnicas padrões para a criação de DSLs usando a linguagem
-\foreignlanguage{english}{Groovy\citep{dearle2015groovy},} o que
-facilitou a definição das \foreignlanguage{english}{DSLs}.
+O componente \foreignlanguage{english}{DSL Interpreter} processa as
+instruções dos especialistas na linguagem Decisioner DSL. Foram utilizadas
+técnicas padrões para a criação de DSLs usando a linguagem \foreignlanguage{english}{Groovy\citep{dearle2015groovy},}
+o que facilitou a definição das \foreignlanguage{english}{DSLs}.
 
 Finalmente, o DSL \foreignlanguage{english}{Interpreter} usa o \foreignlanguage{english}{UI
 Renderer} para renderizar dinamicamente as Web \foreignlanguage{english}{UIs}
@@ -650,7 +642,7 @@ foram organizando-se e permitindo separar os dois sistemas.
 
 Não foi possível instanciar outro sistema no Decisioner durante o
 desenvolvimento do mestrado, mas atualmente encontra-se em andamento
-a implementação do SAD Nano-Tec como segunda instancia do Framework
+a implementação do SAD Nano-Tec como segunda instanciação do Framework
 Decisioner. O que permitirá generalizar ainda mais e servir como um
 caso de uso adicional para validar as hipóteses em outros domínios.
 Esta arquitetura foi validada por meio da instanciação do SAD SustenAgro,
@@ -660,5 +652,3 @@ aqui descritas.
 No capítulo seguinte será apresentado o SAD SustenAgro, gerado como
 primeiro caso de uso deste Framework, e depois será apresentado o
 processo de avaliação que formaliza a avaliação deste sistema.
-
-

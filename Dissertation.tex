@@ -6,7 +6,6 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 \usepackage{array}
-\usepackage{longtable}
 \usepackage{float}
 \usepackage{textcomp}
 \usepackage{url}
@@ -81,9 +80,12 @@
 \usepackage{listings}
 \addto\captionsbrazil{\renewcommand{\algorithmname}{Algoritmo}}
 \addto\captionsbrazil{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}}
+\addto\captionsbrazil{\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listagens}}
 \addto\captionsenglish{\renewcommand{\algorithmname}{Algorithm}}
 \addto\captionsenglish{\renewcommand{\lstlistingname}{\inputencoding{latin9}Listing}}
+\addto\captionsenglish{\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listings}}
 \renewcommand{\lstlistingname}{\inputencoding{latin9}Listagem}
+\renewcommand{\lstlistlistingname}{\inputencoding{latin9}Listagens}
 
 \begin{document}
 %Configurações do estilo da pagina %==================================
@@ -102,7 +104,8 @@
 \createplainmark {bib}		{both}{\bibname}}
 \makeatother 
 \pagestyle{ruled}
-\addto\captionsbrazil{\renewcommand{\algorithmname}{Listagem}} 
+%\addto\captionsbrazil{\renewcommand{\algorithmname}{Listagem}}
+\addto\captionsbrazil{\renewcommand{\lstlistingname}{C{\'o}digo-fonte}}
 
 \includepdf{pages/\string"Half Title Page\string"}
 
@@ -144,11 +147,13 @@
 
 \renewcommand{\nomname}{Lista De Abreviaturas e Siglas}
 
+\renewcommand{\lstlistlistingname}{Lista De C{\'o}digos-Fonte}
+
 \listoffigures
 
 \cleardoublepage{}
 
-\listof{algorithm}{Lista de Algoritmos}
+\lstlistoflistings{}
 
 \cleardoublepage{}
 
@@ -200,17 +205,17 @@
 
 \chapter{Método SustenAgro de Avaliação de Sustentabilidade}
 
-\label{chap:Sustainability_Assessment}\input{chapters/Sustainability_assessment.tex}
+\label{appendix:Sustainability_Assessment}\input{chapters/Sustainability_assessment.tex}
 
 \chapter{Indicadores de Sustentabilidade}
 
-\label{chap:SustainabilityIndicators}\input{chapters/Sustainability_indicators.tex}
+\label{appendix:SustainabilityIndicators}\input{chapters/Sustainability_indicators.tex}
 
 \chapter{Instalação}
 
-\label{chap:Instalation}\input{chapters/Instalation.tex}
+\label{appendix:Instalation}\input{chapters/Instalation.tex}
 
-\chapter{Formulários de avaliação\label{chap:formularios}}
+\chapter{Formulários de avaliação\label{appendix:formularios}}
 
 \input{chapters/Forms.tex}
 

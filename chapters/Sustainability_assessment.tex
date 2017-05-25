@@ -56,7 +56,7 @@ novas políticas em cada dimensão.
 \section{Dimensões da Sustentabilidade}
 
 As dimensões da sustentabilidade são classificações que permitem identificar
-e agrupar conceitos de sustentabilidade\citep{AlkanOlsson:2009}.,
+e agrupar conceitos de sustentabilidade\citep{AlkanOlsson:2009},
 dependendo da teoria de sustentabilidade escolhida. Existem diversas
 propostas de dimensões que podem ser usadas segundo a finalidade da
 pesquisa. Um exemplo desta classificação é a assumida na pesquisa
@@ -164,10 +164,12 @@ e de contribuições de pesquisadores de instituições de pesquisa como
 (IBGE\footnote{IBGE: \foreignlanguage{english}{Brazilian Institute of Geography and
 Statistics}, \url{http://www.ibge.gov.br/home/}}, CONAB \footnote{CONAB: \foreignlanguage{english}{National Supply Company}, \url{http://www.conab.gov.br/}})
 e validados por meio da técnica \foreignlanguage{english}{Delphi}
-de consultas aos especialistas.
+de consultas aos especialistas. O metodo foi desenvolvido dentro do
+projeto SustenAgro liderado pela pesquisadora Dra. Katia Regina Evaristo
+de Jesus da Embrapa Meio Ambiente.
 
-O método está composto pelos índices da eficiência e índice da sustentabilidade,
-o índice da eficiência está composto por dois fatores de eficiência
+O método SustenAgro está composto pelos índices da eficiência e índice
+da sustentabilidade, o índice da eficiência têm dois fatores de eficiência
 tecnológica no campo e na indústria e o índice da sustentabilidade
 está composto pelas dimensões ambientais, econômica e social.
 
@@ -177,50 +179,68 @@ A continuação serão apresentadas as fórmulas destes dois índices:
 
 As equações para calcular o índice da eficiência são:
 
-\begin{algorithm}[h]
-Fórmula de eficiência tecnologia no campo:
+\subsubsection*{Fórmula de eficiência tecnologia no campo:}
 
-$efficiency(field)=\sum(CharacteristicsField*RelevanceProduction)*correctionFactor(0.8)$
+\begin{eqnarray*}
+efficiency(field) & = & \sum(CharacteristicsField*RelevanceProduction)\\
+ &  & *correctionFactor(0.8)
+\end{eqnarray*}
 
-Fórmula de eficiência tecnologia na indústria:
 
-$efficiency(industry)=\sum(CharacteristicsProcessing*SugarcaneProcessing)*correctionFactor(0.2)$
+\subsubsection*{Fórmula de eficiência tecnologia na indústria:}
 
-Fórmula de eficiência produtiva e de custo:
+\begin{eqnarray*}
+efficiency(industry) & = & \sum(CharacteristicsProcessing*SugarcaneProcessing)\\
+ &  & *correctionFactor(0.2)
+\end{eqnarray*}
 
-$efficiencyAndCost=\sum(SugarcanEquality+\sum(Logistic+MarketVariables+Policies+Productivity))$
 
-Índice de eficiência:
+\subsubsection*{Fórmula de eficiência produtiva e de custo:}
 
-$EfficiencyIndex=\sum(efficiency(filed)+efficiency(industry))*efficiencyAndCost$
+\begin{eqnarray*}
+efficiencyAndCost & = & \sum(SugarcanEquality+\\
+ &  & \sum(Logistic+MarketVariables+Policies+Productivity))
+\end{eqnarray*}
 
-\caption{Fórmulas do índice de eficiência.}
-\end{algorithm}
+
+\subsubsection*{Índice de eficiência:}
+
+\begin{eqnarray*}
+EfficiencyIndex & = & \sum(efficiency(filed)+efficiency(industry))\\
+ &  & *efficiencyAndCost
+\end{eqnarray*}
 
 
 \subsection*{Índice de sustentabilidade}
 
 As equações para calcular o índice de sustentabilidade são:
 
-\begin{algorithm}[H]
-Fórmula da dimensão ambiental:
+\subsubsection*{Fórmula da dimensão ambiental:}
 
-$EnvironmentalIndex=\sum(EnvironmentalIndicator*EnvironmentIndicatorWeight)$
+\[
+EnvironmentalIndex=\sum(EnvironmentalIndicator*EnvironmentIndicatorWeight)
+\]
 
-Fórmula da dimensão econômica:
 
-$EconomicIndex=\sum(EconomicIndicator*EconomicIndicatorWeight)$
+\subsubsection*{Fórmula da dimensão econômica:}
 
-Fórmula da dimensão social:
+\[
+EconomicIndex=\sum(EconomicIndicator*EconomicIndicatorWeight)
+\]
 
-$SocialIndex=\sum(SocialIndicator*SocialIndicatorWeight)$
 
-Índice de sustentabilidade:
+\subsubsection*{Fórmula da dimensão social:}
 
-$SustainabilityIndex=\sum(EnvironmentalIndex+EconomicIndex+SocialIndex)/3$
+\[
+SocialIndex=\sum(SocialIndicator*SocialIndicatorWeight)
+\]
 
-\caption{Fórmulas do índice da sustentabilidade.}
-\end{algorithm}
+
+\subsubsection*{Índice de sustentabilidade:}
+
+\[
+SustainabilityIndex=\sum(EnvironmentalIndex+EconomicIndex+SocialIndex)/3
+\]
 
 O usuário deverá ser informado da importância dos processos de avaliação,
 exemplo dados pelos especialistas (não tem referências porque só são
@@ -276,7 +296,7 @@ das classificações com os limiares correspondentes a cada índice.
 \begin{figure}[H]
 \includegraphics[width=0.8\columnwidth]{figures/SustaiabilityMatrixDesign}
 
-\caption{Matriz de sustentabilidade \label{fig:Matriz-de-sustentabilidade}}
+\caption{Design da matriz de sustentabilidade \label{fig:Matriz-de-sustentabilidade}}
 
 Matriz fornecida pelos pesquisadores da Embrapa Meio Ambiente.
 
