@@ -153,7 +153,7 @@ key "Evans:2003:DDT:861502"
 
  explica que existe uma necessidade de modelar o conhecimento chave de um
  domínio em um modelo, para permitir a comunicação e colaboração entre especiali
-stas de domínio e os desenvolvedores, pelo qual o modelo de conhecimento
+stas de domínio e os desenvolvedores, portanto o modelo de conhecimento
  dos especialistas será objeto da pesquisa.
  
 \end_layout
@@ -460,7 +460,7 @@ ade.
  Por essas razões, a Embrapa Meio Ambiente escolheu especificamente o sistema
  produtivo da cultura de cana-de-açúcar na região centro-sul do Brasil,
  como sistema piloto para desenvolver métodos e software de avaliação da
- sustentabilidade (apêndice 
+ sustentabilidade (Apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "appendix:Sustainability_Assessment"
@@ -511,7 +511,7 @@ o por meio de um sistema de apoio a decisão e que consegue adaptar-se às
 \begin_layout Standard
 O SAD SustenAgro suporta a avaliação da sustentabilidade em cana-de-açúcar
  no centro-sul do Brasil.
- A figura 
+ A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:SustenAgro-arquitetura-inicial"
@@ -579,14 +579,14 @@ Sistema web com banco de dados para armazenar e recuperar as informações
 
 \begin_layout Itemize
 Integração e implementação do método SustenAgro de avaliação de sustentabilidade
-, descrito no Apêndice 
+ (Apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "appendix:Sustainability_Assessment"
 
 \end_inset
 
- 
+) 
 \end_layout
 
 \begin_layout Itemize

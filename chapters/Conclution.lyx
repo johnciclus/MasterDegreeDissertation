@@ -252,7 +252,7 @@ A primeira delas refere-se à falta de dados e informações para modelar o
  Depois de estabelecer meios de representação para modelar o conhecimento
  dos especialistas, descobriu-se que não existiam dados existentes na Embrapa
  Meio Ambiente que representassem instâncias dos conceitos definidos.
- Pelo que foi necessário fazer a recoleta de dados por parte dos desenvolvedores
+ Portanto foi necessário fazer a recoleta de dados por parte dos desenvolvedores
 , desenvolvendo formulários web e analisando as dados enviados, este processo
  dificultou o desenvolvimento do projeto.
 \end_layout

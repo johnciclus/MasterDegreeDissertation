@@ -123,7 +123,7 @@ reference "chap:SAD"
 , são compostos por banco de dados, base de conhecimento, módulo de processament
 o da informação e módulo gerador de resultados.
  Em cada um desses módulos, está implícito o conhecimento dos especialistas,
- pelo qual a primeira característica definida do Decisioner foi a integração
+ portanto a primeira característica definida do Decisioner foi a integração
  de ontologias.
  
 \end_layout
@@ -134,7 +134,7 @@ As ontologias permitem a definição do conhecimento dos especialistas em
  Ele é complementado pela DSL, que permite definir comportamento e característic
 as do SAD.
  O diagrama para a arquitetura desenvolvida para essa solução é apresentado
- na figura 
+ na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Arquitectura-do-decisioner"
@@ -2169,7 +2169,7 @@ Components.
 View
 \lang brazilian
  de um SAD.
- A figura 
+ A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Arquitetura-do-Decisioner-Core"
@@ -2222,7 +2222,7 @@ name "fig:Arquitetura-do-Decisioner-Core"
 \end_layout
 
 \begin_layout Standard
-A figura 
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Arquitetura-do-Decisioner-Core"
