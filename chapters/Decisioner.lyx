@@ -86,26 +86,24 @@ reference "sec:SAD-SustenAgro"
  tecnologias da Web Semântica) e de definir uma DSL para facilitar a definição
  de comportamentos por parte dos especialistas, foi modelado e desenvolvido
  um protótipo de um framework, intitulado Decisioner, que permite definir
- e gerar SADs do tipo do SustenAgro.
+ e gerar SADs de avaliação.
  O framework Decisioner é basicamente formado por ontologias, que representam
  conhecimento do domínio, e por uma DSL que permite definir comportamentos
  e estabelecer configurações gerais de um SAD.
 \end_layout
 
 \begin_layout Standard
-Satisfazer os requisitos requeridos pelos pesquisadores da Embrapa Meio
- Ambiente foi uma das forças que dirigiram o desenvolvimento desta pesquisa.
- Para chegar a arquitetura, aqui apresentada, houve um trabalho interativo
- para chegar aos requisitos que eram gerais, que deveriam estar no framework,
- e os que eram específicos, que deveriam estar definidos na ontologia ou
- na DSL do SustenAgro.
+Satisfazer os requisitos do SAD SustenAgro requeridos pelos pesquisadores
+ da Embrapa Meio Ambiente dirigiou o desenvolvimento desta pesquisa.
+ Para chegar à arquitetura aqui apresentada, houve um trabalho colaborativo
+ com os especialistas em sustentabilidade para chegar aos requisitos que
+ eram gerais, que deveriam estar no framework, e os que eram específicos,
+ que deveriam estar definidos na ontologia ou na DSL do SustenAgro.
  
 \end_layout
 
 \begin_layout Standard
-Neste capítulo será apresentado a arquitetura do protótipo Decisioner, cada
- uns dos seus componentes e funcionalidades e as contribuições para esta
- pesquisa.
+A seguir será apresentada a arquitetura do protótipo Decisioner.
 \end_layout
 
 \begin_layout Section
@@ -113,7 +111,7 @@ Arquitetura do Decisioner
 \end_layout
 
 \begin_layout Standard
-Os SADs, segundo a descrição feita no capítulo 
+Os SADs, segundo a descrição feita no Capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SAD"
@@ -185,13 +183,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Decisioner Architecture.png
-	width 90col%
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -204,6 +195,13 @@ name "fig:Arquitectura-do-decisioner"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Decisioner Architecture.png
+	width 90col%
 
 \end_inset
 
@@ -264,7 +262,7 @@ Triplestore
 \lang english
 RDF
 \lang brazilian
-, (explicado em detalhe na seção 
+, (explicado em detalhe na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Triplestore"
@@ -536,17 +534,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/Decisioner Methodology.png
-	width 90col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -566,6 +553,13 @@ name "fig:Metodologia-do-Decisioner"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/Decisioner Methodology.png
+	width 90col%
+
+\end_inset
+
 
 \end_layout
 
@@ -593,7 +587,7 @@ name "sec:Ontologia-Decisioner"
 \begin_layout Standard
 Para desenvolver um protótipo de uma ontologia geral, que abstraísse os
  conceitos dos SADs, foram analisados os sistemas SAD desenvolvidos pela
- Embrapa Meio Ambiente, descritos na seção 
+ Embrapa Meio Ambiente, descritos na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:SAD-SustenAgro"
@@ -630,7 +624,7 @@ OWL
 \lang english
 Ontology Editor
 \lang brazilian
-, explicado na seção 
+, explicado na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Ontology-Editor"
@@ -656,13 +650,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/DSS ontology.png
-	scale 70
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -675,6 +662,13 @@ name "fig:Modelagem-do-SAD"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/DSS ontology.png
+	scale 70
 
 \end_inset
 
@@ -965,16 +959,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-ontology-editor.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -987,6 +971,13 @@ name "fig:Editor-de-ontologia"
 
  
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/SustenAgro-ontology-editor.png
+	width 100col%
 
 \end_inset
 
@@ -1105,6 +1096,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definição do Evaluation Object
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Definição-do-Evaluation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -1132,22 +1139,6 @@ evaluationObject ":ProductionUnit", {
 \begin_layout Plain Layout
 
 }
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Definição do Evaluation Object
-\begin_inset CommandInset label
-LatexCommand label
-name "lis:Definição-do-Evaluation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1268,17 +1259,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/IndicatorSelection.png
-	width 80col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1291,6 +1271,17 @@ name "fig:Widgets-geradas-da-DSL"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/IndicatorSelection.png
+	width 80col%
 
 \end_inset
 
@@ -1324,13 +1315,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-feature ':EnvironmentalIndicator', 'extraFeatures': true
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1347,6 +1331,13 @@ name "lis:Definição-de-Features"
 \end_inset
 
 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+feature ':EnvironmentalIndicator', 'extraFeatures': true
 \end_layout
 
 \end_inset
@@ -1454,6 +1445,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definição da lógica de avaliação.
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Definição-da-lógica"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -1491,22 +1498,6 @@ report {
 \begin_layout Plain Layout
 
 }
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Definição da lógica de avaliação.
-\begin_inset CommandInset label
-LatexCommand label
-name "lis:Definição-da-lógica"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1584,6 +1575,25 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definição dos componentes visuais do relatório.
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Definição-dos-componentes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -1616,26 +1626,6 @@ report {
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Definição dos componentes visuais do relatório.
-\begin_inset CommandInset label
-LatexCommand label
-name "lis:Definição-dos-componentes"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1707,17 +1697,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-dsl-editor-2.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1730,6 +1709,17 @@ name "fig:Editor-DSL"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/SustenAgro-dsl-editor-2.png
+	width 100col%
 
 \end_inset
 
@@ -1997,16 +1987,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-tool.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2025,6 +2005,13 @@ name "fig:Web-UI"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/SustenAgro-tool.png
+	width 100col%
 
 \end_inset
 
@@ -2188,16 +2175,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Decisioner Core Architecture.png
-	width 70col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2210,6 +2187,13 @@ name "fig:Arquitetura-do-Decisioner-Core"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Decisioner Core Architecture.png
+	width 70col%
 
 \end_inset
 

@@ -170,7 +170,7 @@ look-and-feel
 \end_layout
 
 \begin_layout Section
-Metodologia.
+Metodologia
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Metodologia"
@@ -255,16 +255,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/Ontology Methodology.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -277,6 +267,13 @@ name "fig:Methodology"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Ontology Methodology.png
+	width 100col%
 
 \end_inset
 
@@ -496,17 +493,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro conceptual map.png
-	lyxscale 60
-	width 80col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -519,6 +505,14 @@ name "fig:ontology-conceptual-map"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/SustenAgro conceptual map.png
+	lyxscale 60
+	width 80col%
 
 \end_inset
 
@@ -566,7 +560,7 @@ RDF
 \lang english
 triple-stores
 \lang brazilian
- (seção 
+ (Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Triplestore"
@@ -752,16 +746,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/ProductionUnit.png
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -775,6 +759,13 @@ name "fig:Modelagem-unidade-produtiva"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/ProductionUnit.png
+	width 60col%
 
 \end_inset
 
@@ -897,16 +888,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Value.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -923,6 +904,13 @@ name "fig:Modelagem-de-Value"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Value.png
+	scale 60
 
 \end_inset
 
@@ -1005,16 +993,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/Microregion.png
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1027,6 +1005,13 @@ name "fig:Modelagem-de-Microrregião"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Microregion.png
+	width 60col%
 
 \end_inset
 
@@ -1175,16 +1160,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/Indicador.png
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1197,6 +1172,13 @@ name "fig:Modelagem-de-Indicador"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Indicador.png
+	width 60col%
 
 \end_inset
 
@@ -1392,17 +1374,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/metodo.png
-	lyxscale 80
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1415,6 +1386,14 @@ name "fig:Method"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/metodo.png
+	lyxscale 80
+	width 100text%
 
 \end_inset
 
@@ -1942,17 +1921,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Stroyboard 1.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1970,6 +1938,13 @@ name "fig:StoryBoard-1"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Stroyboard 1.png
+	width 100col%
 
 \end_inset
 
@@ -2007,16 +1982,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Stroyboard 2.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2034,6 +1999,13 @@ name "fig:StoryBoard-2"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Stroyboard 2.png
+	width 100col%
 
 \end_inset
 
@@ -2071,20 +2043,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../figures/Stroyboard 3.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2101,6 +2059,16 @@ name "fig:StoryBoard-3"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/Stroyboard 3.png
+	width 100col%
 
 \end_inset
 
@@ -2134,16 +2102,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Stroyboard 4.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2164,6 +2122,13 @@ name "fig:StoryBoard-4"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Stroyboard 4.png
+	width 100col%
 
 \end_inset
 
@@ -2198,17 +2163,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Stroyboard 6.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2239,6 +2193,13 @@ name "fig:StoryBoard-5"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Stroyboard 6.png
+	width 100col%
 
 \end_inset
 
@@ -2281,16 +2242,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Stroyboard 5.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2311,6 +2262,13 @@ name "fig:StoryBoard-6"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Stroyboard 5.png
+	width 100col%
 
 \end_inset
 
@@ -2395,13 +2353,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Mockup Main.png
-	width 100col%
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2414,6 +2365,13 @@ name "fig:Mockup_home"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Mockup Main.png
+	width 100col%
 
 \end_inset
 
@@ -2459,13 +2417,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Tool_environmental_indicators.png
-	width 100col%
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2478,6 +2429,13 @@ name "fig:Mockup_indicators"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Tool_environmental_indicators.png
+	width 100col%
 
 \end_inset
 
@@ -2566,16 +2524,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/home.jpg
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2588,6 +2536,13 @@ name "fig:Home"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/home.jpg
+	width 100text%
 
 \end_inset
 
@@ -2689,16 +2644,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-scenario.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2711,6 +2656,13 @@ name "fig:Indicators"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/SustenAgro-scenario.png
+	width 100col%
 
 \end_inset
 
@@ -2750,16 +2702,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-results.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2772,6 +2714,13 @@ name "fig:Planilhas-de-resultado"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/SustenAgro-results.png
+	width 100col%
 
 \end_inset
 
@@ -2850,16 +2799,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-matrix.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2873,6 +2812,13 @@ name "fig:Matriz-de-sustentabilidade-widget"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/SustenAgro-matrix.png
+	width 100col%
 
 \end_inset
 
@@ -2924,16 +2870,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-semaphore.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2961,9 +2897,12 @@ name "fig:Semáforo-de-sustentabilidade"
 \end_inset
 
 
-\end_layout
+\begin_inset Graphics
+	filename ../figures/SustenAgro-semaphore.png
+	width 100col%
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -3035,6 +2974,25 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DSL que define o Evaluation Object 
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:DSL-EvaluationObject"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset listings
 lstparams "breaklines=true"
 inline false
@@ -3088,26 +3046,6 @@ evaluationObject ':ProductionUnit', {
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-DSL que define o Evaluation Object 
-\begin_inset CommandInset label
-LatexCommand label
-name "lis:DSL-EvaluationObject"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3188,6 +3126,27 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definição de 
+\lang english
+Features 
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:DSL-Definição-de-Features"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset listings
 lstparams "breaklines=true"
 inline false
@@ -3254,28 +3213,6 @@ Industrial'
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Definição de 
-\lang english
-Features 
-\begin_inset CommandInset label
-LatexCommand label
-name "lis:DSL-Definição-de-Features"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3350,6 +3287,21 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:SustenAgro-DSL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 lstparams "breaklines=true"
 inline false
@@ -3499,25 +3451,6 @@ heField+technologicalEfficiencyInTheIndustrial)
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "lis:SustenAgro-DSL"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset

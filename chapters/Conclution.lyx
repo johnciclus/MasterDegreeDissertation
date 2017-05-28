@@ -319,7 +319,7 @@ Metodologia de modelagem de conhecimento dos especialistas
 \end_layout
 
 \begin_layout Standard
-O método de definição de conhecimento, explicado na seção 
+O método de definição de conhecimento, explicado na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Ontologia-do-domínio"
@@ -370,7 +370,7 @@ stas, por fornecer uma abordagem mais gradual da modelagem.
 \end_layout
 
 \begin_layout Subsection*
-Editor web de ontologias em OWL.
+Editor web de ontologias em OWL
 \end_layout
 
 \begin_layout Standard

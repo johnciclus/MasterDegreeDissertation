@@ -150,7 +150,7 @@ description "Web Application Archive"
 \end_layout
 
 \begin_layout Section
-Configuração do servidor.
+Configuração do servidor
 \end_layout
 
 \begin_layout Standard
@@ -202,7 +202,7 @@ Blazegraph
 \end_layout
 
 \begin_layout Subsection*
-Instalação do Java:
+Instalação do Java
 \end_layout
 
 \begin_layout Standard
@@ -221,6 +221,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do Java
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -236,15 +245,6 @@ sudo apt-get install openjdk-8-jre
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Instalação do Java
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -327,6 +327,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do Apache Tomcat
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -360,15 +369,6 @@ sudo /opt/tomcat/bin/startup.sh
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Instalação do Apache Tomcat
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -408,6 +408,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuração dos Users
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -423,15 +432,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Configuração dos Users
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -458,6 +458,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exportar variáveis de entorno
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -473,15 +482,6 @@ export CATALINA_HOME=/opt/tomcat
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Exportar variáveis de entorno
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -508,6 +508,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Iniciar o servidor
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -518,15 +527,6 @@ sudo /opt/tomcat/bin/startup.sh
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Iniciar o servidor
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -581,6 +581,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do wkhtmltopdf 
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -633,15 +642,6 @@ sudo apt-get install openssl build-essential xorg libssl-dev
 
 \begin_layout Plain Layout
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Instalação do wkhtmltopdf 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -674,6 +674,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Execução do wkhtmltopdf
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -689,15 +698,6 @@ sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Execução do wkhtmltopdf
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -750,6 +750,17 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalação do 
+\lang english
+Blazegraph
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -793,17 +804,6 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Instalação do 
-\lang english
-Blazegraph
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -875,6 +875,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Execução do sustenagro
+\end_layout
+
+\end_inset
+
+
 \begin_inset listings
 inline false
 status open
@@ -890,15 +899,6 @@ SustenAgro/sustenagro-1.0.war
 \end_layout
 
 \begin_layout Plain Layout
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Execução do sustenagro
-\end_layout
-
-\end_inset
-
 
 \end_layout
 

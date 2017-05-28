@@ -200,16 +200,6 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
-\begin_inset Graphics
-	filename ../figures/DSS.png
-	width 80col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -222,6 +212,13 @@ name "fig:Componentes-SAD"
 
  
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/DSS.png
+	width 80col%
 
 \end_inset
 
@@ -534,16 +531,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro Initial Architecture.png
-	width 70col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -556,6 +543,13 @@ name "fig:SustenAgro-arquitetura-inicial"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/SustenAgro Initial Architecture.png
+	width 70col%
 
 \end_inset
 
@@ -621,7 +615,7 @@ Geração de relatórios e de recomendações de sustentabilidade.
 \begin_layout Standard
 Um dos problemas identificados foi que os especialistas não tinham uma definição
  clara do SAD SustenAgro.
- Pelo que foi necessário realizar um levantamento de requisitos (Capítulo
+ Portanto foi necessário realizar um levantamento de requisitos (Capítulo
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -629,8 +623,7 @@ reference "chap:SustenAgro"
 
 \end_inset
 
-), para definir os requisitos funcionais (essenciais) e não funcionais (desejáve
-is).
+), para definir os requisitos funcionais e não funcionais.
  Além disso, foi necessário reestruturar o desenvolvimento do SAD SustenAgro
  para que fosse integrado no processo de pesquisa.
 \end_layout
@@ -648,7 +641,7 @@ a a necessidade de fornecer métodos e ferramentas computacionais que organizem
 \end_layout
 
 \begin_layout Standard
-Exatamente foi identificado que ditos sistemas tinham em comum um método
+Principalmente foi identificado que ditos sistemas tinham em comum um método
  de avaliação que processava de maneira matemática um conjunto de dados
  e gerava relatórios com resultados da avaliação, gráficos e recomendações.
  As ferramentas analisadas foram:
@@ -781,10 +774,10 @@ https://www.embrapa.br/en/busca-de-produtos-processos-e-servicos/-/produto-servi
 \end_layout
 
 \begin_layout Standard
-Uma característica importante em ditos sistemas foi a existência de conceitos
+Uma característica importante nesses sistemas foi a existência de conceitos
  de domínio especifico na organização dos dados de entrada dos SAD e no
  método de avaliação.
- Esta característica permite identificar que cada um dos sistemas requiriu
+ Esta característica permite identificar que cada um dos sistemas utiliza
  um processo de modelagem dos conceitos do domínio por parte dos desenvolvedores.
  
 \end_layout
@@ -800,7 +793,7 @@ key "Evans:2003:DDT:861502"
 
 \end_inset
 
-, propõe que este conhecimento deve ser representado em um modelo independente.
+ propõe que este conhecimento deve ser representado em um modelo independente.
 \end_layout
 
 \begin_layout Standard
@@ -815,9 +808,9 @@ r dito conhecimento.
 \begin_layout Standard
 O uso de uma ontologia permite representar e estruturar o conhecimento de
  avaliação da sustentabilidade em agricultura, por meio da definição e atualizaç
-ão de conceitos por parte dos especialistas.
- permitindo que eles mesmos descrevam o domínio sem precisar dos desenvolvedores.
- Os especialistas do domínio tem familiaridade com os termos da ontologia
+ão de conceitos por parte dos especialistas, permitindo que eles mesmos
+ descrevam o domínio sem precisar dos desenvolvedores.
+ Os especialistas do domínio têm familiaridade com os termos da ontologia
  e poderão especificar grande parte do conhecimento envolvido no SAD.
  Idealmente, essa definição deve ser detalhada o suficiente para que os
  desenvolvedores possam desenvolver a parte computacional do SAD sem necessidade
@@ -833,7 +826,7 @@ Essa representação de conhecimento pode ser mais exata do que outros modelos,
  devido a que está em um formato voltado a descrição de conhecimento, sobre
  o qual é possível fazer inferências que complementem o modelo ou gerar
  informações para suportar a decisão.
- A partir desse modelo computável definido pelos especialistas será gerado
+ A partir desse modelo computável definido pelos especialistas foi gerado
  o SAD SustenAgro.
  
 \end_layout
@@ -858,7 +851,7 @@ s ao SustenAgro.
 \end_layout
 
 \begin_layout Standard
-Sobre o uso de ontologias em domínios similares ao SustenAgro:
+Sobre o uso de ontologias em domínios similares ao SustenAgro, tem-se:
 \end_layout
 
 \begin_layout Standard
@@ -1049,8 +1042,8 @@ key "roussey2010ontologies"
 \end_layout
 
 \begin_layout Standard
-Sobre a busca de SADs semelhantes ao SustenAgro, encontrou-se que uma estratégia
- para abordar a complexidade em SADs é a utilização de métodos e metodologias
+Sobre SADs semelhantes ao SustenAgro, encontrou-se que uma estratégia para
+ abordar a complexidade em SADs é a utilização de métodos e metodologias
  de avaliação que utilizam indicadores, um exemplo desse enfoque é a pesquisa
  de 
 \begin_inset CommandInset citation
@@ -1178,7 +1171,7 @@ Segundo o estado da arte dos SADs relacionados com ontologias, permite identific
 ar que as ontologias suportam vários tipos de SADs e domínios de conhecimento.
  Porém, será avaliada se as ontologias suportam a representação de conhecimento
  de sustentabilidade e as características do SAD SustenAgro.
- Também o uso de ontologias permite testar novas possibilidades na definição
+ O uso de ontologias permite também testar novas possibilidades na definição
  e geração de SAD baseados em conhecimento.
 \end_layout
 

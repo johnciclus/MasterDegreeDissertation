@@ -246,7 +246,7 @@ framework
 \end_layout
 
 \begin_layout Section
-Dimensões da Sustentabilidade
+Dimensões da sustentabilidade
 \end_layout
 
 \begin_layout Standard
@@ -327,16 +327,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/sustainability_spheres.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -349,6 +339,13 @@ name "fig:sustainability_spheres"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/sustainability_spheres.png
+	width 100col%
 
 \end_inset
 
@@ -594,7 +591,7 @@ A seguir serão apresentadas as fórmulas destes dois índices:
 \end_layout
 
 \begin_layout Subsection*
-Índice de eficiência:
+Índice de eficiência
 \end_layout
 
 \begin_layout Standard
@@ -1046,16 +1043,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../figures/SustaiabilityMatrixDesign.png
-	width 80col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1072,14 +1059,17 @@ name "fig:Matriz-de-sustentabilidade"
 \end_inset
 
 
+\begin_inset Graphics
+	filename ../figures/SustaiabilityMatrixDesign.png
+	width 80col%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 Matriz fornecida pelos pesquisadores da Embrapa Meio Ambiente.
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset

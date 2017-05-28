@@ -105,7 +105,7 @@ A seguir, são apresentadas as avaliações realizadas no SAD SustenAgro e
 \end_layout
 
 \begin_layout Section
-Avaliação das Web UI.
+Avaliação das Web UI
 \end_layout
 
 \begin_layout Standard
@@ -226,7 +226,7 @@ nto com a integração da ontologia SustenAgro e da DSL.
 \end_layout
 
 \begin_layout Section
-Avaliação da ontologia de domínio de avaliação da sustentabilidade.
+Avaliação da ontologia de domínio de avaliação da sustentabilidade
 \end_layout
 
 \begin_layout Standard
@@ -425,16 +425,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Minimum.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -447,6 +437,13 @@ name "fig:Matriz-de-sustentabilidade-Minimos"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/Minimum.png
+	width 100col%
 
 \end_inset
 
@@ -477,7 +474,7 @@ Um dos aspectos mais importantes da ferramenta, é que ela permite que os
 \end_layout
 
 \begin_layout Section
-Avaliação do SAD SustenAgro e do Framework Decisioner: 
+Avaliação do SAD SustenAgro e do Framework Decisioner
 \end_layout
 
 \begin_layout Standard
@@ -1151,7 +1148,7 @@ setlist[itemize]{}
 \lang english
 Workshop
 \lang brazilian
-: validação do software SustenAgro v1.0 com equipe de especialistas.
+: validação do software SustenAgro v1.0 com equipe de especialistas
 \end_layout
 
 \begin_layout Standard

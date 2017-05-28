@@ -367,6 +367,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Código de novo indicador
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -471,15 +483,6 @@ DeforestationIndicator:
 
 \begin_layout Plain Layout
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Código de novo indicador
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -508,11 +511,6 @@ status open
 
 \begin_layout Plain Layout
 
-feature ':AgriculturalIndicator'
-\end_layout
-
-\begin_layout Plain Layout
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -521,6 +519,15 @@ Adição de feature na DSL
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+
+feature ':AgriculturalIndicator'
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 

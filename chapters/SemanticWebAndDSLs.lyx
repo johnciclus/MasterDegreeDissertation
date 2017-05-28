@@ -80,7 +80,7 @@ Ontologias da web semântica e
 DSLs
 \lang brazilian
  têm um papel fundamental na criação de um meio de descrição de conhecimento
- por parte dos especialistas e portanto suportar o design de SADs baseados
+ por parte dos especialistas e, portanto, suportar o design de SADs baseados
  em conhecimento.
  
 \end_layout
@@ -140,7 +140,7 @@ Domain Specific Languages (DSLs
 \end_layout
 
 \begin_layout Section
-Web Semântica.
+Web Semântica
 \end_layout
 
 \begin_layout Standard
@@ -162,7 +162,7 @@ key "Souza:2004"
 \end_layout
 
 \begin_layout Standard
-Um exemplo da deficiência da web atual, pode ser identificada na busca realizada
+Um exemplo da deficiência da web atual pode ser identificada na busca realizada
  pelos sistemas de recuperação de informação, que usam palavras-chave nas
  buscas, onde apenas a similaridade e o número de ocorrências de certas
  palavras no conteúdo de documentos são levados em consideração e não a
@@ -212,7 +212,7 @@ description "World Wide Web Consortium"
 \end_inset
 
 ).
- A figura 
+ A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Semantic_Web_History"
@@ -220,7 +220,14 @@ reference "fig:Semantic_Web_History"
 \end_inset
 
  apresenta alguns dos padrões que constituem a Web Semântica de maneira
- cronológica.
+ cronológica 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bikakis2013xml"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -232,17 +239,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Semantic Web History.png
-	lyxscale 20
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -259,18 +255,10 @@ name "fig:Semantic_Web_History"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fadaptada{bikakis2013xml}
-\end_layout
+\begin_inset Graphics
+	filename ../figures/Semantic Web History.png
+	lyxscale 20
+	width 100col%
 
 \end_inset
 
@@ -308,7 +296,14 @@ key "bernerslee2001"
  propuseram uma arquitetura que organiza as representações do conhecimento
  por meio de camadas, conhecida como 
 \lang english
-Semantic Web Cake,
+Semantic Web Cake
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fensel2011semantic"
+
+\end_inset
+
+,
 \lang brazilian
  que é ilustrada na Figura 
 \begin_inset CommandInset ref
@@ -329,13 +324,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/Semantic Web Architecture.png
-	width 60col%
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -352,18 +340,9 @@ name "fig:Web-Semantic-Architecture"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fadaptada{fensel2011semantic}
-\end_layout
+\begin_inset Graphics
+	filename ../figures/Semantic Web Architecture.png
+	width 60col%
 
 \end_inset
 
@@ -699,14 +678,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/smart data.png
-	lyxscale 50
-	width 60col%
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -724,6 +695,14 @@ name "fig:Smart-data-continuum"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/smart data.png
+	lyxscale 50
+	width 60col%
 
 \end_inset
 
@@ -1129,16 +1108,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename ../figures/owl2Profiles.png
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1151,6 +1120,13 @@ name "fig:OWL2-Profiles"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../figures/owl2Profiles.png
+	width 60col%
 
 \end_inset
 
@@ -1678,7 +1654,14 @@ key "Mernik:2005:DDL:1118890.1118892"
  O conceito não é novo, linguagens de programação de propósito especifico
  existem desde o começo das linguagens de programação, mas o termo tornou-se
  padrão devido à ascensão da modelagem de domínio específico.
- DSLs são classificadas da seguinte forma:
+ DSLs são classificadas da seguinte forma 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ghosh:2010:DA:1965333"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Itemize
@@ -2082,8 +2065,8 @@ reference "chap:SAD"
 
 \begin_layout Standard
 Porém, a definição de uma ontologia não é uma tarefa trivial, existem dificuldad
-e, por parte dos especialistas do domínio, para formalizar ontologias.
- Diante deste cenário, foram analisadas varias soluções e encontrou-se que,
+es, por parte dos especialistas do domínio, para formalizar ontologias.
+ Diante deste cenário, foram analisadas várias soluções e encontrou-se que,
  fornecendo ferramentas simplificadas para edição e complementando ontologias
  com uma DSL, é possível facilitar a definição dos conceitos de um SAD e
  seu comportamento por especialistas.
