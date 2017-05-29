@@ -85,8 +85,7 @@ reference "sec:SAD-SustenAgro"
 ), do requisito de modelar o conhecimento por meio de ontologias (usando
  tecnologias da Web Semântica) e de definir uma DSL para facilitar a definição
  de comportamentos por parte dos especialistas, foi modelado e desenvolvido
- um protótipo de um framework, intitulado Decisioner, que permite definir
- e gerar SADs de avaliação.
+ o protótipo Framework Decisioner que permite definir e gerar SADs de avaliação.
  O framework Decisioner é basicamente formado por ontologias, que representam
  conhecimento do domínio, e por uma DSL que permite definir comportamentos
  e estabelecer configurações gerais de um SAD.
@@ -498,8 +497,8 @@ Widgets
 \end_layout
 
 \begin_layout Standard
-A metodologia de desenvolvimento foi guiada pelo desenvolvimento do SAD
- SustenAgro.
+A metodologia de desenvolvimento do Framework Decisioner foi guiada pelo
+ desenvolvimento do SAD SustenAgro.
  Primeiramente foram desenvolvidas as ontologias, continuando com o desenvolvime
 nto do 
 \lang english
@@ -585,8 +584,8 @@ name "sec:Ontologia-Decisioner"
 
 \begin_layout Standard
 Para desenvolver um protótipo de uma ontologia geral, que abstraísse os
- conceitos dos SADs, foram analisados os sistemas SAD desenvolvidos pela
- Embrapa Meio Ambiente, descritos na Seção 
+ conceitos dos SADs, foram analisados os SADs desenvolvidos pela Embrapa
+ Meio Ambiente, descritos na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:SAD-SustenAgro"
@@ -840,8 +839,8 @@ name "sec:Ontology-Editor"
 \begin_layout Standard
 Para suportar a edição das ontologias do domínio, por parte dos especialistas,
  foi implementado um editor web.
- Ele permite editar a ontologia específica do SAD em um formato baseado
- em 
+ Ele permite editar a ontologia específica do SAD SustenAgro em um formato
+ baseado em 
 \lang english
 YAML,
 \lang brazilian
@@ -959,7 +958,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Editor de ontologia
+Editor da ontologia SustenAgro
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Editor-de-ontologia"
@@ -1000,7 +999,7 @@ Decisioner
 \lang brazilian
  e permite relacionar conceitos específicos dos especialistas, criar equações
  para os modelos usados, gerar a interface web para o usuário final, servindo
- de interface entre a ontologia do Decisioner e a ontologia do domínio.
+ de interface entre a ontologia do Decisioner e a ontologia de SustenAgro.
 \end_layout
 
 \begin_layout Standard
@@ -1439,8 +1438,8 @@ weightedSum(data.':EnvironmentalIndicator')
  calcula a média ponderada de todos os indicadores ambientais fornecidos
  pelo usuário final.
  Esse comando foi criado para simplificar o trabalho dos especialistas.
- Biblioteca de comandos, como essa, podem ser adicionadas ao framework ou
- criados a pedido dos especialistas.
+ Biblioteca de comandos, como essa, podem ser adicionadas ao Framework Decisione
+r ou criados a pedido dos especialistas.
 \end_layout
 
 \begin_layout Standard
@@ -1572,8 +1571,8 @@ reference "sec:Web-components"
 \end_inset
 
 ).
- O framework vem com um conjunto de widgets predefinidos, mas novas podem
- ser adicionadas.
+ O framework Decisioner vem com um conjunto de widgets predefinidos, mas
+ novas podem ser adicionadas.
  
 \end_layout
 
@@ -1669,12 +1668,13 @@ Web Components
 \end_layout
 
 \begin_layout Section
-Editor de DSL
+Editor da DSL
 \end_layout
 
 \begin_layout Standard
 Para suportar a edição da Decisioner DSL, foi implementado um editor textual
- web que permite aos especialistas editar e rodar o código da DSL.
+ web que permite aos especialistas de sustentabilidade editar e rodar o
+ código da DSL.
  Ele é composto por um editor de código para a DSL, um 
 \lang english
 button restore
@@ -1709,7 +1709,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Editor DSL
+Editor da DSL
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Editor-DSL"
@@ -1856,7 +1856,7 @@ HTML
 \lang brazilian
  personalizadas, reutilizáveis e encapsuladas para o uso em páginas ou aplicaçõe
 s web.
- O framework Grails também disponibiliza o uso de layout templates para
+ O Framework Grails também disponibiliza o uso de layout templates para
  implementar partes reusáveis de uma view (página HTML).
  Com essas duas tecnologias, é possível a criação de componentes (ou widgets)
  reusáveis da UI.
@@ -1864,14 +1864,14 @@ s web.
 \end_layout
 
 \begin_layout Standard
-Para suportar a geração de diferentes tipos de SADs, foi necessário disponibiliz
-ar vários tipos de widgets que permitissem visualizar e editar diferentes
+Para suportar a geração de SADs de tipo avaliação, foi necessário disponibilizar
+ vários tipos de widgets que permitissem visualizar e editar diferentes
  tipos de dados.
  Para relacionar os 
 \lang english
 web components
 \lang brazilian
- com o conhecimento dos especialistas, modelou-se, na ontologia Decisioner,
+ com o conhecimento dos especialistas, modelou-se na ontologia Decisioner,
  os 
 \lang english
 data-types
@@ -1896,9 +1896,9 @@ spinner
 Nos relatórios, os especialistas devem contar com widgets para apresentar
  seus resultados em vários formatos, como tabelas, mapas, matriz de sustentabili
 dade, etc.
- Essas widgets podem ser específicas para um tipo de SAD em particular.
- Por isso, além do framework contar com uma biblioteca de widgets prontas,
- deve ser possível adicionar novas widgets facilmente.
+ Essas widgets podem ser específicas para um tipo de SAD.
+ Por isso, além do Framework Decisioner contar com uma biblioteca de widgets
+ prontas, deve ser possível adicionar novas widgets facilmente.
  Ao usar padrões, como para Web Components, o framework permite a fácil
  inclusão de widgets novas.
  Não se espera que os especialistas de domínio criem essas widgets, mas
@@ -1909,13 +1909,13 @@ dade, etc.
 \end_layout
 
 \begin_layout Standard
-O framework Decisioner tem uma biblioteca de 
+O Framework Decisioner tem uma biblioteca de 
 \lang english
 web components
 \lang brazilian
  (widget) construída usando o
 \lang english
- web framework Bootstrap 
+ web Framework Bootstrap 
 \lang brazilian
 
 \begin_inset Foot
@@ -1942,7 +1942,7 @@ http://getbootstrap.com/
 \lang english
 layout templates
 \lang brazilian
- do framework 
+ do Framework 
 \lang english
 Grails
 \lang brazilian
@@ -2245,8 +2245,8 @@ Considerações finais
 \begin_layout Standard
 Neste capítulo foram apresentados os principais componentes do Framework
  Decisioner, existem características dele como o gerenciamento de usuários
- e segurança que foram desenvolvidos, mas não se especificaram porque não
- contribuíram de maneria relevante ao desenvolvimento da pesquisa.
+ e segurança que foram desenvolvidos, mas não foram especificados porque
+ não contribuíram de maneria relevante ao desenvolvimento da pesquisa.
 \end_layout
 
 \begin_layout Standard

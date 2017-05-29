@@ -380,7 +380,7 @@ description "Uniform Resource Identifier"
 Unicode
 \lang brazilian
  é um padrão que codifica os caracteres na maioria dos sistemas de escrita
- para representação de texto com fines de processamento computacional.
+ para representação de texto com fins de processamento computacional.
 \end_layout
 
 \begin_layout Description
@@ -390,7 +390,7 @@ URI
 \lang brazilian
  permite identificar os recursos disponíveis na Web por meio de uma 
 \lang english
-String
+'String'
 \lang brazilian
  única.
 \end_layout
@@ -761,12 +761,9 @@ Resource Description Framework (RDF)
 Semantic Web Effort
 \lang brazilian
 .
- Elas fornecem um 
-\lang english
-framework
-\lang brazilian
- comum que permite que dados sejam compartilhados e reusados por meio das
- fronteiras das aplicações, empresas e comunidades 
+ Elas fornecem um estrutura comum que permite que dados sejam compartilhados
+ e reusados por meio das fronteiras das aplicações, empresas e comunidades
+ 
 \begin_inset Foot
 status open
 
@@ -1598,12 +1595,23 @@ reference "chap:Decisioner"
 \begin_layout Standard
 Além das ontologias, foi necessário fornecer um meio de definição de conheciment
 o mais próximo à linguagem dos especialistas do domínio, para suportar a
- definição de SADs por parte deles.
- A solução identificada foi criar uma 
+ definição dos coiceitos do dominio nos SADs.
+ O melhor meio de definição de conhecimento identificado foi uma a definição
+ de uma 
 \lang english
 DSL
 \lang brazilian
- definida a seguir.
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Detalhar como foi usada a triplestore
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1833,8 +1841,8 @@ O grande benefício que
 \lang english
 Groovy
 \lang brazilian
- traz para este projeto é o suporte que a sua natureza dinâmica dá ao desenvolvi
-mento de DSLs.
+ traz para esta pesquisa é o suporte que a sua natureza dinâmica dá ao desenvolv
+imento de DSLs.
  Essas DSLs podem rodar diretamente na 
 \lang english
 JVM
