@@ -671,7 +671,7 @@ Nas próximas seções, serão apresentadas as principais classes modeladas
  na ontologia do domínio de avaliação da sustentabilidade (SustenAgro).
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Classe Production Unit
@@ -777,7 +777,7 @@ name "fig:Modelagem-unidade-produtiva"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Subclasses of Categorical
@@ -944,7 +944,7 @@ Value
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Classe Microregion
@@ -1023,7 +1023,7 @@ name "fig:Modelagem-de-Microrregião"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 
 \lang english
 Classe Indicator
@@ -1427,9 +1427,9 @@ name "sec:Web-UI"
 
 \begin_layout Standard
 O design das interfaces gráficas e desenvolvimento dos web componentes foram
- realizados por meio da várias técnicas de levantamento de requerimentos
- para especificar as funcionalidades que os especialistas precisavam do
- sistema SustenAgro.
+ realizados por meio da várias técnicas de levantamento de requisitos para
+ especificar as funcionalidades que os especialistas precisavam do sistema
+ SustenAgro.
  Foram usadas as seguintes técnicas: 
 \lang english
 User Stories
@@ -1642,7 +1642,7 @@ História de usuário #2
 \end_layout
 
 \begin_layout Enumerate
-O usuário poderá fazer a “Historia de usuário #1” ou entrar no sistema e
+O usuário poderá fazer a “História de usuário #1” ou entrar no sistema e
  continuar com o cadastro da unidade produtiva de onde ele tenha parado.
  O sistema apresentará uma tela com sugestões de microrregiões.
  
@@ -1718,7 +1718,7 @@ limiares.”
 \end_layout
 
 \begin_layout Enumerate
-O usuário poderá fazer a “Historia de usuário #3” ou entrar no sistema e
+O usuário poderá fazer a “História de usuário #3” ou entrar no sistema e
  continuar na tela de cadastro de indicadores e, quando acontecer que o
  usuário precise de um indicador que não seja oferecido pelo sistema, o
  usuário poderá acrescentá-lo por meio do botão “acrescentar indicador”
@@ -2930,7 +2930,7 @@ A implementação de uma DSL permite aos especialistas do domínio definir
 Para definir o comportamento do SustenAgro, especialistas tiveram que:
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Definir o Objeto da Avaliação
 \end_layout
 
@@ -2974,6 +2974,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2993,10 +3000,8 @@ name "lis:DSL-EvaluationObject"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset listings
-lstparams "breaklines=true"
-inline false
-status open
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -3058,7 +3063,7 @@ evaluationObject ':ProductionUnit', {
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Definir as características a serem avaliadas
 \end_layout
 
@@ -3126,6 +3131,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3145,12 +3157,6 @@ name "lis:DSL-Definição-de-Features"
 
 
 \end_layout
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "breaklines=true"
-inline false
-status open
 
 \begin_layout Plain Layout
 
@@ -3225,7 +3231,7 @@ Industrial'
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Definir o modelamento e a forma de apresentação dos resultados
 \end_layout
 
@@ -3287,6 +3293,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3302,10 +3315,7 @@ name "lis:SustenAgro-DSL"
 \end_inset
 
 
-\begin_inset listings
-lstparams "breaklines=true"
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -3491,8 +3501,8 @@ icas específicas do Sustenagro, que foram implementadas usando a ontologia
 
 \begin_layout Standard
 Tendo o sistema SustenAgro instanciado e rodando, foi possível validar as
- funcionalidades por meio de alguns experimentos com integrantes do projeto
- SustenAgro da Embrapa.
+ funcionalidades por meio de experimentos com integrantes do projeto SustenAgro
+ da Embrapa.
  Os resultados obtidos nas avaliações dos experimentos serão detalhados
  no próximo capítulo.
 \end_layout

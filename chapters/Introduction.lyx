@@ -86,7 +86,8 @@ key "Turban:2004:DSS:994103"
 
 .
  Os SADs integram conhecimento desenvolvido pelos especialistas do domínio
- que fica implícito nos dados, informações e processos usados 
+ que fica implícito nos dados, informações e processos usados durante o
+ processo de decisão 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "power2000web"
@@ -126,9 +127,9 @@ key "roussey2010ontologies"
 \end_inset
 
 .
- Dentro deste contexto, foi identificado o problema da inexistência de um
- meio de representação de conhecimento para definir SADs, que tenha um formato
- computável, entendível e acessível pelos especialistas do domínio.
+ Dentro deste contexto, foi identificado o problema que os especialistas
+ do dominio não tinham um meio de representação de conhecimento para definir
+ SADs, que tenha um formato computável, entendível e acessível.
 \end_layout
 
 \begin_layout Standard
@@ -188,7 +189,7 @@ key "Saxena"
 
 \begin_layout Standard
 A análise do projeto SustenAgro permitiu identificar as seguintes motivações
- relacionadas com a integração de conhecimento dos especialistas de domínio:
+ relacionadas com a definição de conhecimento dos especialistas de domínio:
 \end_layout
 
 \begin_layout Standard
@@ -211,7 +212,7 @@ A segunda refere-se a fornecer meios computáveis de representação desse
  conhecimento, que facilitem a comunicação entre os especialistas do domínio
  e os desenvolvedores de software e que adaptem-se às mudanças do domínio.
  Domínios de conhecimento estão em contínua mudança, como é o caso do domínio
- avaliação da sustentabilidade da cultura de cana-de-açúcar
+ avaliação da sustentabilidade da cultura de cana-de-açúcar 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "oliveira:2013"
@@ -333,21 +334,21 @@ Para alcançar o objetivo proposto, foi necessário cumprir os seguintes objetiv
 \end_layout
 
 \begin_layout Itemize
-Desenvolver uma ontologia sobre avaliação da sustentabilidade nos sistemas
- produtivos de cana-de-açúcar do centro-sul do Brasil.
-\end_layout
-
-\begin_layout Itemize
-Desenvolver uma DSL que permita a definição da interface de usuário, das
- fórmulas do modelo, usado pelos especialistas, e do formato do relatório
- final de cada análise.
-\end_layout
-
-\begin_layout Itemize
 Definir a arquitetura e o código de uma ferramenta que permita gerar SADs
  baseados em conhecimento de domínios específicos.
  Os SADs gerados usam uma ontologia, desenvolvida por especialistas do domínio
  e uma DSL, para gerar as interfaces e funcionalidades do sistema.
+\end_layout
+
+\begin_layout Itemize
+Definir uma ontologia sobre avaliação da sustentabilidade nos sistemas produtivo
+s de cana-de-açúcar do centro-sul do Brasil.
+\end_layout
+
+\begin_layout Itemize
+Definir uma DSL que permita a definição da interface de usuário, das fórmulas
+ do modelo, usado pelos especialistas, e do formato do relatório final de
+ cada análise.
 \end_layout
 
 \begin_layout Itemize
@@ -358,11 +359,26 @@ Demostrar que o método e ferramenta permitem a criação de SADs funcionais
 \end_layout
 
 \begin_layout Section
-Resultados Principais
+Resultados principais
 \end_layout
 
 \begin_layout Standard
 As principais contribuições da pesquisa foram:
+\end_layout
+
+\begin_layout Itemize
+Método e framework Decisioner para definir SADs por parte dos especialistas
+ do domínio, baseado do framework 
+\lang english
+Grails
+\lang brazilian
+.
+\end_layout
+
+\begin_layout Itemize
+O SAD SustenAgro: sistema de apoio à decisão para suportar a avaliação da
+ sustentabilidade em cana-de-açúcar, na região centro-sul do Brasil, instanciado
+ por meio do Framework Decisioner.
 \end_layout
 
 \begin_layout Itemize
@@ -391,21 +407,6 @@ Groovy
  que permite a definição da interface de usuário, do formato do dados a
  processar, das fórmulas do modelo e do formato do relatório final de cada
  análise.
-\end_layout
-
-\begin_layout Itemize
-Método e framework Decisioner para definir SADs por parte dos especialistas
- do domínio, baseado do framework 
-\lang english
-Grails
-\lang brazilian
-.
-\end_layout
-
-\begin_layout Itemize
-O SAD SustenAgro: sistema de apoio à decisão para suportar a avaliação da
- sustentabilidade em cana-de-açúcar, na região centro-sul do Brasil, instanciado
- por meio do Framework Decisioner.
 \end_layout
 
 \begin_layout Itemize

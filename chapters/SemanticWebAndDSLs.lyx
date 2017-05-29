@@ -150,8 +150,7 @@ A web foi criada para possibilitar o acesso, intercâmbio e recuperação de
  de documentos, o que dificulta a recuperação de informações.
  Até o momento, não existe nenhuma estratégia abrangente e satisfatória
  para a organização de documentos por meio de “motores de busca” que seja
- coerente com uma estrutura linguística.
- 
+ coerente com uma estrutura linguística 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Souza:2004"
@@ -1094,7 +1093,28 @@ reference "fig:OWL2-Profiles"
 
 \end_inset
 
-).
+)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Figura original do W3C 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.w3.org/People/Sandro/owl2-profiles-doc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
  Cada um desses perfis fornece características de expressividade diferente
  para diversos cenários de aplicação:
 \end_layout
@@ -1127,21 +1147,6 @@ name "fig:OWL2-Profiles"
 \begin_inset Graphics
 	filename ../figures/owl2Profiles.png
 	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Figura original do W3C 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.w3.org/People/Sandro/owl2-profiles-doc
-\end_layout
 
 \end_inset
 
@@ -1602,11 +1607,7 @@ DSL
 \end_layout
 
 \begin_layout Section
-
-\lang english
-Domain Specific Language (DSL)
-\lang brazilian
- 
+Linguagem de domínio específico 
 \end_layout
 
 \begin_layout Standard
@@ -1721,7 +1722,7 @@ Segundo o tipo de implementação, as DSLs podem ser dividas em
 \lang english
 external DSL e internal DSL
 \lang brazilian
-
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fowler2010domain"

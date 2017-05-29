@@ -535,6 +535,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão ambiental 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-ambiental"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="1">
 <features tabularvalignment="middle">
@@ -672,22 +688,6 @@ Cumprimento com os Termos de Compromisso de Recuperação Ambiental
 \end_inset
 
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Indicadores de sustentabilidade de SustenAgro na dimensão ambiental 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Indicadores-de-sustentabilidade-ambiental"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -715,6 +715,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão social 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-social"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="1">
 <features tabularvalignment="middle">
@@ -794,25 +810,6 @@ Registro de treinamentos, capacitação ou requalificação de trabalhadores
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Indicadores de sustentabilidade de SustenAgro na dimensão social 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Indicadores-de-sustentabilidade-social"
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -838,6 +835,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicadores de sustentabilidade de SustenAgro na dimensão econômica
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Indicadores-de-sustentabilidade-economica"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="31" columns="1">
 <features tabularvalignment="middle">
@@ -1198,25 +1211,6 @@ Iniciativas do poder público com a proteção ao ambiente
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Indicadores de sustentabilidade de SustenAgro na dimensão econômica
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Indicadores-de-sustentabilidade-economica"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

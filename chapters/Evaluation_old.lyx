@@ -6,30 +6,16 @@
 \origin unavailable
 \textclass abntex2
 \begin_preamble
-%\input{pagestyle.tex}
-%\usepackage{lmodern}
-\newcommand{\blankpage}{
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-}
-\setcounter{secnumdepth}{4}
+
 \end_preamble
 \use_default_options true
-\begin_modules
-customHeadersFooters
-\end_modules
 \maintain_unincluded_children false
-\begin_local_layout
-
-\end_local_layout
 \language brazilian
 \language_package default
 \inputencoding utf8
 \fontencoding global
 \font_roman "default" "default"
-\font_sans "lmss" "default"
+\font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
@@ -41,23 +27,13 @@ customHeadersFooters
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command bibtex
+\bibtex_command default
 \index_command default
-\float_placement h
-\paperfontsize 12
+\paperfontsize default
 \spacing single
 \use_hyperref false
-\pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
-\pdf_breaklinks false
-\pdf_pdfborder false
-\pdf_colorlinks true
-\pdf_backref false
-\pdf_pdfusetitle true
 \papersize a4paper
-\use_geometry true
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -70,7 +46,7 @@ customHeadersFooters
 \use_package undertilde 1
 \cite_engine natbib
 \cite_engine_type authoryear
-\biblio_style abnt
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -81,10 +57,6 @@ customHeadersFooters
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
-\topmargin 3cm
-\rightmargin 2cm
-\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -92,7 +64,7 @@ customHeadersFooters
 \quotes_language english
 \papercolumns 1
 \papersides 2
-\paperpagestyle default
+\paperpagestyle plain
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -478,6 +450,10 @@ name "fig:Matriz-de-sustentabilidade-Minimos"
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -512,7 +488,7 @@ Data 18 de maio do 2016 até o dia 22 de junho do 2016
 \end_layout
 
 \begin_layout Description
-Participantes Usuários especialistas em sustentabilidade e usuários finais.
+Participantes Usuários especialistas e usuários finais.
 \end_layout
 
 \begin_layout Description
@@ -548,7 +524,6 @@ reference "sec:Formulário-de-avaliação-SustenAgro"
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
 wide false
 sideways false
 status open
@@ -557,7 +532,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Avaliação dos especialistas do SAD SustenAgro 
+Avaliação dos especialistas do SAD SustenAgro
 \end_layout
 
 \end_inset
@@ -914,30 +889,10 @@ Integrar sistemas externos para poupar informação (caracterização da unidade
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlist[itemize]{}
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
-placement H
 wide false
 sideways false
 status open
@@ -952,25 +907,6 @@ Avaliação dos usuários finais do SAD SustenAgro
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlist[itemize]{leftmargin=*, topsep=0pt}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
@@ -1285,8 +1221,8 @@ key "wright1985tecnica"
 
 \end_inset
 
- (recomendada pelos especialistas em sustentabilidade), a um grupo de especialis
-tas com perfis de varias áreas do conhecimento, entre eles destacam-se:
+, a um grupo de especialistas com perfis de varias áreas do conhecimento,
+ entre eles destacam-se:
 \end_layout
 
 \begin_layout Itemize

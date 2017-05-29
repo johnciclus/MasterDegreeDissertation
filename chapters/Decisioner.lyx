@@ -107,7 +107,7 @@ A seguir será apresentada a arquitetura do protótipo Decisioner.
 \end_layout
 
 \begin_layout Section
-Arquitetura do Decisioner
+Arquitetura do Framework Decisioner
 \end_layout
 
 \begin_layout Standard
@@ -305,7 +305,7 @@ DSL code
 \series bold
 DSL Editor
 \series default
-: Editor visual web da DSL com recursos como 
+: editor visual web da DSL com recursos como 
 \lang english
 code completion
 \lang brazilian
@@ -314,7 +314,7 @@ code completion
 syntax coloring
 \lang brazilian
 .
- Permite a edição da 
+ Permite a edição do codigo da 
 \lang english
 DSL
 \lang brazilian
@@ -352,7 +352,7 @@ description "User Interface"
 DSL Interpreter
 \series default
 \lang brazilian
-: Interpretador da DSL para processar as definições do SAD e criar um SAD
+: interpretador da DSL para processar as definições do SAD e criar um SAD
  específico.
  Ele usa a DSL, ontologias e componentes web para gerar automaticamente
  a interface e comportamento de um SAD específico.
@@ -365,17 +365,16 @@ DSL Interpreter
 Web UI
 \series default
 \lang brazilian
-: Interfaces visuais geradas pelo 
+: interfaces visuais geradas pelo 
 \lang english
 DSL Interpreter.
 
 \lang brazilian
- Utilizam os 
+ Estão compostas dos 
 \lang english
 Web Components
 \lang brazilian
- e fornecer a interface gráfica, usadas pelos usuários finais, na interação
- com o SAD na Web.
+ que são usados pelos usuários finais na interação com o SAD.
 \end_layout
 
 \begin_layout Standard
@@ -390,7 +389,7 @@ Metodologia
 
 \begin_layout Standard
 Com a finalidade de desenvolver o protótipo do framework Decisioner, escolheu-se
- o SAD SustenAgro como um caso de uso e exemplo de instanciação.
+ o SAD SustenAgro como um estudo de caso.
  Ele permitiu a definição de uma metodologia de desenvolvimento para os
  componentes.
  Teria sido interessante instanciar o framework para um segundo SAD, para
@@ -399,7 +398,7 @@ Com a finalidade de desenvolver o protótipo do framework Decisioner, escolheu-s
  e ao tempo necessário ao desenvolvimento do framework, isso não foi possível.
  No decorrer deste texto, foram feitas algumas considerações sobre a generalidad
 e do framework.
- A metodologia abordada durante este processo, incluiu as seguintes etapas:
+ A metodologia adotada durante este processo, incluiu as seguintes etapas:
 \end_layout
 
 \begin_layout Enumerate
@@ -426,7 +425,7 @@ DSL
 \end_layout
 
 \begin_layout Enumerate
-Design da DSL: Durante o processo de desenvolvimento do SAD SustenAgro,
+Design da DSL: durante o processo de desenvolvimento do SAD SustenAgro,
  foram generalizados seus componentes, permitindo definir cada uma das caracterí
 sticas da DSL.
  O processo foi iterativo, permitindo refinar a expressividade da linguagem
@@ -465,7 +464,7 @@ Desenvolvimento do
 \lang english
 DSL Interpreter
 \lang brazilian
-: o interprete da Decisioner DSL.
+: o interpretador da DSL do Decisioner.
  Esse componente tinha que ser atualizado a medida que o design da DSL mudava.
 \end_layout
 
@@ -480,9 +479,9 @@ web UI
 \lang brazilian
 s: 
 \lang english
-Widgets
+widgets
 \lang brazilian
- gráficas, na forma de 
+ na forma de 
 \lang english
 Web components
 \lang brazilian
@@ -828,9 +827,7 @@ DSL Interpreter
 \end_layout
 
 \begin_layout Section
-
-\lang english
-Ontology Editor
+Editor de Ontologias
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Ontology-Editor"
@@ -944,7 +941,7 @@ es localizadas nas ontologias.
 \end_layout
 
 \begin_layout Standard
-A ontologia definida em este editor será usada para definir a estrutura
+A ontologia definida com este editor será usada para definir a estrutura
  dos SADs, as funcionalidades dos SADs são descritas na DSL apresentada
  a seguir.
 \end_layout
@@ -990,7 +987,7 @@ name "fig:Editor-de-ontologia"
 \end_layout
 
 \begin_layout Section
-Decisioner DSL
+DSL do Framework Decisioner
 \end_layout
 
 \begin_layout Standard
@@ -1007,7 +1004,7 @@ Decisioner
 \end_layout
 
 \begin_layout Standard
-A DSL foi baseada na linguagem 
+A DSL foi desenvolvida na linguagem 
 \lang english
 Groovy
 \lang brazilian
@@ -1063,7 +1060,7 @@ des como nome, tipo de produção, localização, etc.
 A instrução tem como argumentos a URI (ou label) da classe da ontologia
  do domínio, que será objeto de avaliação, e cada uma das propriedades relaciona
 das.
- A Listagem 
+ O código-fonte 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Definição-do-Evaluation"
@@ -1096,6 +1093,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1112,9 +1115,7 @@ name "lis:Definição-do-Evaluation"
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -1248,7 +1249,7 @@ reference "fig:Widgets-geradas-da-DSL"
  biológico de pragas) com 2 possíveis valores (Sim e Não).
  Os textos mostrados vêm da ontologia e fazem parte da descrição de cada
  elemento.
- É possível criar descrições em mais de uma língua.
+ É possível criar descrições em mais de um idioma.
 \end_layout
 
 \begin_layout Standard
@@ -1262,7 +1263,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Widget geradas a partir da definição da DSL
+Widget gerada a partir da definição da DSL
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Widgets-geradas-da-DSL"
@@ -1315,6 +1316,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1331,9 +1338,7 @@ name "lis:Definição-de-Features"
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -1351,14 +1356,15 @@ feature ':EnvironmentalIndicator', 'extraFeatures': true
 \end_layout
 
 \begin_layout Standard
-O comando tem como argumento uma URI (ou label) (Listagem 
+O comando tem como argumento uma URI (ou label) que vincula todas as subclasses
+ da classe referenciada (Código-fonte 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Definição-de-Features"
 
 \end_inset
 
-) que vincula todas as subclasses da classe referenciada.
+).
  O parâmetro opcional 
 \shape italic
 \lang english
@@ -1390,7 +1396,7 @@ Report
 \lang brazilian
  permite definir as fórmulas e procedimentos matemáticas necessários para
  o cálculo do modelo usado pelos especialistas de domínio, e como os resultados
- serão apresentados (Listagem 
+ serão apresentados (Código-fonte 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Definição-da-lógica"
@@ -1419,7 +1425,7 @@ Features
 , pelos usuários finais.
  Esses dados são usados no modelo adotado e podem gerar múltiplos resultados
  de avaliação.
- Na Listagem 
+ O Código-fonte 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Definição-da-lógica"
@@ -1445,6 +1451,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1461,9 +1473,7 @@ name "lis:Definição-da-lógica"
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -1575,6 +1585,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1592,11 +1608,6 @@ name "lis:Definição-dos-componentes"
 
 
 \end_layout
-
-\begin_layout Plain Layout
-\begin_inset listings
-inline false
-status open
 
 \begin_layout Plain Layout
 
@@ -1658,9 +1669,7 @@ Web Components
 \end_layout
 
 \begin_layout Section
-
-\lang english
-DSL Editor
+Editor de DSL
 \end_layout
 
 \begin_layout Standard

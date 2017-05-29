@@ -221,6 +221,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -230,9 +236,7 @@ Instalação do Java
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -242,10 +246,6 @@ sudo apt-get update
 \begin_layout Plain Layout
 
 sudo apt-get install openjdk-8-jre
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -327,6 +327,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -336,9 +342,7 @@ Instalação do Apache Tomcat
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -366,10 +370,6 @@ tar xvzf apache-tomcat-7.0.70.tar.gz -C /opt/tomcat
 \begin_layout Plain Layout
 
 sudo /opt/tomcat/bin/startup.sh
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -408,6 +408,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -417,9 +423,7 @@ Configuração dos Users
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -429,10 +433,6 @@ status open
 \begin_layout Plain Layout
 
 <user username="admin" password="s3cr3t" roles="manager-gui"/>
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -458,6 +458,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -467,9 +473,7 @@ Exportar variáveis de entorno
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -479,10 +483,6 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 \begin_layout Plain Layout
 
 export CATALINA_HOME=/opt/tomcat
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -508,6 +508,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -516,18 +522,7 @@ Iniciar o servidor
 
 \end_inset
 
-
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
 sudo /opt/tomcat/bin/startup.sh
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -581,6 +576,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -590,9 +591,7 @@ Instalação do wkhtmltopdf
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -674,6 +673,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -682,23 +687,12 @@ Execução do wkhtmltopdf
 
 \end_inset
 
-
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
 xvfb-run -a -s "-screen 0 640x480x16" wkhtmltopdf "$@"
 \end_layout
 
 \begin_layout Plain Layout
 
 sudo chmod a+x /usr/local/bin/wkhtmltopdf.sh 
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -750,6 +744,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -761,9 +761,7 @@ Blazegraph
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -801,10 +799,6 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 \begin_layout Plain Layout
 
 -jar blazegraph.jar
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -875,6 +869,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -884,9 +884,7 @@ Execução do sustenagro
 \end_inset
 
 
-\begin_inset listings
-inline false
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -896,10 +894,6 @@ wget https://dl.dropboxusercontent.com/u/24827919/
 \begin_layout Plain Layout
 
 SustenAgro/sustenagro-1.0.war
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset

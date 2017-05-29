@@ -100,7 +100,7 @@ Neste capítulo serão abordados a definição e arquitetura de SADs, o projeto
 \end_layout
 
 \begin_layout Section
-Definição de SAD
+Definição de Sistema de Apoio à Decisão
 \end_layout
 
 \begin_layout Standard
@@ -376,12 +376,12 @@ Um tipo de SAD que usa bases de conhecimento, são os SADs baseados em ontologia
 \end_layout
 
 \begin_layout Standard
-A seguir será apresentado o SAD SustenAgro, que suporta a avaliação da sustentab
-ilidade em cana-de-açúcar por meio do uso de ontologias.
+A seguir serão apresentados os requisitos iniciais do SAD SustenAgro, que
+ suportam a avaliação da sustentabilidade em cana-de-açúcar.
 \end_layout
 
 \begin_layout Section
-SAD SustenAgro
+Sistema de Apoio à Decisão SustenAgro
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:SAD-SustenAgro"
@@ -631,7 +631,7 @@ reference "chap:SustenAgro"
 \begin_layout Standard
 O SAD SustenAgro faz parte de um conjunto de ferramentas de avaliação definidas
  pela Embrapa Meio Ambiente.
- A partir do analise das ferramentas similares ao SAD SustenAgro, foi evidenciad
+ A partir da analise das ferramentas similares ao SAD SustenAgro, foi evidenciad
 a a necessidade de fornecer métodos e ferramentas computacionais que organizem
  a informação.
  Para apoiar aos especialistas a tomar decisões baseadas em conhecimento,
@@ -641,10 +641,11 @@ a a necessidade de fornecer métodos e ferramentas computacionais que organizem
 \end_layout
 
 \begin_layout Standard
-Principalmente foi identificado que ditos sistemas tinham em comum um método
- de avaliação que processava de maneira matemática um conjunto de dados
- e gerava relatórios com resultados da avaliação, gráficos e recomendações.
- As ferramentas analisadas foram:
+As seguintes ferramentas software foram analisadas e concluiu-se que têm
+ em comum um método de avaliação que processa de maneira matemática um conjunto
+ de dados e gera relatórios com resultados da avaliação, gráficos e recomendaçõe
+s.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -777,15 +778,15 @@ https://www.embrapa.br/en/busca-de-produtos-processos-e-servicos/-/produto-servi
 Uma característica importante nesses sistemas foi a existência de conceitos
  de domínio especifico na organização dos dados de entrada dos SAD e no
  método de avaliação.
- Esta característica permite identificar que cada um dos sistemas utiliza
+ Esta característica permitiu identificar que cada um dos sistemas utiliza
  um processo de modelagem dos conceitos do domínio por parte dos desenvolvedores.
  
 \end_layout
 
 \begin_layout Standard
-Principalmente identificou-se que a implementação desse conhecimento gerava
- dificuldades de compreensão entre os especialistas do domínio e os desenvolvedo
-res de software por serem de áreas diferentes.
+Identificou-se que a implementação desse conhecimento gerava dificuldades
+ de compreensão entre os especialistas do domínio e os desenvolvedores de
+ software por serem de áreas diferentes.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -797,12 +798,12 @@ key "Evans:2003:DDT:861502"
 \end_layout
 
 \begin_layout Standard
-Baseando-se no anterior, afirmou-se a hipótese de usar um modelo para representa
-r dito conhecimento.
- E baseando-se no problema de pesquisa, as ontologias foram selecionadas
- como o modelo mais completo para representar o conhecimento do domínio
- dos especialistas na definição de SAD, e evitar que o conhecimento ficara
- implícito no software como aconteceu no desenvolvimento dos SAD listados.
+Por conseguinte, afirmou-se a hipótese de usar um KOS para representar dito
+ conhecimento, e baseando-se analisando o problema de pesquisa, foram selecciona
+das as ontologias como o modelo mais completo para representar o conhecimento
+ do domínio dos especialistas na definição de SAD.
+ Desta maneira foi evitado que o conhecimento ficara implícito no software
+ como aconteceu no desenvolvimento dos SAD listados.
 \end_layout
 
 \begin_layout Standard
@@ -822,10 +823,9 @@ feedback
 \end_layout
 
 \begin_layout Standard
-Essa representação de conhecimento pode ser mais exata do que outros modelos,
- devido a que está em um formato voltado a descrição de conhecimento, sobre
- o qual é possível fazer inferências que complementem o modelo ou gerar
- informações para suportar a decisão.
+Essa representação de conhecimento permite representar relaciones semânticas,
+ integrar sistemas de inferência que complementem o modelo e gerem informações
+ para suportar a decisão.
  A partir desse modelo computável definido pelos especialistas foi gerado
  o SAD SustenAgro.
  
@@ -941,8 +941,9 @@ key "DCMIPro841"
 
 \end_inset
 
-, permitindo uma padronização com os identificadores dos conceitos, reutilizando
- informações e integrando os conceitos com outros dados da 
+, dando um exemplo de padronização com os identificadores dos conceitos,
+ reutilizando informações e integrando os conceitos com outros dados da
+ 
 \lang english
 Linked Open Data
 \lang brazilian
@@ -975,12 +976,12 @@ ento de conhecimento (
 Knowledge Sharing System
 \emph default
 \lang brazilian
-), para a ciência da sustentabilidade, por meio de um processo de modelagem
+), para pesquisa em sustentabilidade, por meio de um processo de modelagem
  semântica.
  Uma ontologia, fundamentada em lógica descritiva, foi desenvolvida por
  meio do modelo de dados ISO 15926 para descrever três tipos de conceitualizaçõe
-s de ciência sustentável: conhecimento situacional, métodos analíticos e
- 
+s relacionadas à sustentábilidade: conhecimento situacional, métodos analíticos
+ e 
 \lang english
 frameworks
 \lang brazilian
@@ -1044,8 +1045,8 @@ key "roussey2010ontologies"
 \begin_layout Standard
 Sobre SADs semelhantes ao SustenAgro, encontrou-se que uma estratégia para
  abordar a complexidade em SADs é a utilização de métodos e metodologias
- de avaliação que utilizam indicadores, um exemplo desse enfoque é a pesquisa
- de 
+ de avaliação que utilizam indicadores.
+ Um exemplo desse enfoque é a pesquisa de 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "AlkanOlsson:2009"
@@ -1124,11 +1125,18 @@ key "kumazawa2009toward"
 
 \end_inset
 
- advoga que, na ciência da sustentabilidade, é necessário criar meios que
- permitam definir conhecimento estruturado e demostra que as ontologias
- fornecem o suporte para isso.
- Ele confirma que as ontologias podem ser o meio de representação de conheciment
-o que é requerido em sistemas como o SustenAgro, já que a proposta é focada
+ advoga que, na sustentabilidade, é necessário criar meios que permitam
+ definir conhecimento estruturado e demostra que as ontologias fornecem
+ o suporte para isso.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kumazawa2009toward"
+
+\end_inset
+
+ confirma que as ontologias podem ser o meio de representação de conhecimento
+ que é requerido em sistemas como o SustenAgro, já que a proposta é focada
  em sustentabilidade.
 \end_layout
 
