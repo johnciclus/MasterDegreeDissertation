@@ -105,12 +105,12 @@ Arquitetura do SustenAgro
 
 \begin_layout Standard
 O SAD SustenAgro serviu de base para modelar e desenvolver os componentes
- que fazem parte do Decisioner.
+ que fazem parte do Framework Decisioner.
  Por isso, o processo real de desenvolvimento dele foi muito mais complicado
  que uma simples instanciação de um framework.
  Ele envolveu diversas iterações para determinar o que deveria ser implementado
- como parte do framework e como parte da aplicação.
- Para simplificar o texto e facilitar o entendimento de como o framework
+ como parte do Framework Decisioner e como parte do SAD.
+ Para simplificar o texto e facilitar o entendimento de como o Framework
  Decisioner é usado para instanciar um SAD, as diversas versões do framework
  não serão discutidas.
 \end_layout
@@ -332,8 +332,7 @@ Web UI
 User Centered Design
 \lang brazilian
 .
- A avaliação dessas duas interfaces foi realizada integradamente para validar
- os requisitos identificados.
+ A avaliação foi realizada integradamente para validar os requisitos.
  
 \end_layout
 
@@ -439,11 +438,11 @@ A ontologia SustenAgro representa o conhecimento necessário para suportar
 Para definir a ontologia SustenAgro, realizou-se uma pesquisa das fontes
  de dados relacionadas com ontologias do domínio de avaliação de sustentabilidad
 e em sistemas produtivos de cana-de-açúcar.
- Concluiu-se que não existem ontologias que suportassem esse domínio.
+ Concluiu-se que não existem ontologias que suportem esse domínio.
  Por isso, propôs-se desenvolver uma ontologia que utilizasse conceitos
  sobre avaliação de sustentabilidade e sistemas agrícolas.
- Essa ontologia representa conceitos gerais de conceitos identificados na
- literatura e conceitos particulares ao SustenAgro, identificados por 
+ Essa ontologia representa conceitos gerais sobre sustentabilidade e os
+ conceitos particulares do SAD SustenAgro, identificados por 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "oliveira:2013"
@@ -455,7 +454,7 @@ key "oliveira:2013"
 \end_layout
 
 \begin_layout Standard
-Deve-se destacar que a ontologia SustenAgro abrange um domínio bem específico:
+Deve-se destacar que a ontologia SustenAgro abrange um domínio bem específico;
  sustentabilidade de sistemas produtivos de cana-de-açúcar na região centro-sul
  do Brasil.
  Acreditamos que essa é uma característica deste tipo de SAD.

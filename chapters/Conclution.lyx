@@ -76,7 +76,7 @@
 
 \begin_layout Standard
 As principais contribuições desta pesquisa foram o método e ferramenta de
- geração de SADs usando ontologias e 
+ geração de SADs de avaliação usando ontologias e 
 \lang english
 DSLs
 \lang brazilian
@@ -645,9 +645,9 @@ Agradecimentos
 \end_layout
 
 \begin_layout Standard
-Este trabalho foi realizado com uma bolsa de estudo financiada pela Coordenação
- de Aperfeiçoamento de Pessoal de Nı́vel Superior (CAPES) no âmbito do Ministéri
-o da Educação do Brasil.
+O presente trabalho foi realizado com o apoio do Conselho Nacional de Desenvolvi
+mento Científico e Tecnológico (CNPq) no âmbito do Ministério da Educação
+ do Brasil, quem financiou-o por meio de uma bolsa de estudo de mestrado.
 \end_layout
 
 \begin_layout Standard

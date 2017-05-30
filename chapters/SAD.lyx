@@ -180,14 +180,7 @@ key "de1997software"
 .
  A arquitetura fornece as informações de como os componentes dela relacionam-se,
  explicando a parte externa das ligações entre seus componentes, sendo que
- as implementações internas não são consideradas parte da arquitetura 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "sei2006architecture"
-
-\end_inset
-
-.
+ as implementações internas não são consideradas parte da arquitetura.
 \end_layout
 
 \begin_layout Standard
