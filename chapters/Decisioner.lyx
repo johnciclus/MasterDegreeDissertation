@@ -200,7 +200,23 @@ name "fig:Arquitectura-do-decisioner"
 
 \begin_inset Graphics
 	filename ../figures/Decisioner Architecture.png
-	width 90col%
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -561,6 +577,22 @@ name "fig:Metodologia-do-Decisioner"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -667,6 +699,22 @@ name "fig:Modelagem-do-SAD"
 \begin_inset Graphics
 	filename ../figures/DSS ontology.png
 	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -980,6 +1028,22 @@ name "fig:Editor-de-ontologia"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -1281,7 +1345,23 @@ name "fig:Widgets-geradas-da-DSL"
 \align center
 \begin_inset Graphics
 	filename ../figures/IndicatorSelection.png
-	width 80col%
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -1688,59 +1768,6 @@ button save
 \end_layout
 
 \begin_layout Standard
-A Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Editor-DSL"
-
-\end_inset
-
- mostra o editor em ação.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Editor da DSL
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Editor-DSL"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../figures/SustenAgro-dsl-editor-2.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 O Editor de código foi baseado no 
 \lang english
 Ace Editor
@@ -1810,6 +1837,75 @@ Grails
 Web Components 
 \lang brazilian
 especializados.
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Editor-DSL"
+
+\end_inset
+
+ mostra o editor em ação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Editor da DSL
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Editor-DSL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../figures/SustenAgro-dsl-editor-2.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2018,9 +2114,29 @@ name "fig:Web-UI"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../figures/SustenAgro-tool.png
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -2203,6 +2319,22 @@ name "fig:Arquitetura-do-Decisioner-Core"
 \begin_inset Graphics
 	filename ../figures/Decisioner Core Architecture.png
 	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 

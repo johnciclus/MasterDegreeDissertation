@@ -219,14 +219,7 @@ reference "fig:Semantic_Web_History"
 \end_inset
 
  apresenta alguns dos padrões que constituem a Web Semântica de maneira
- cronológica 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bikakis2013xml"
-
-\end_inset
-
-.
+ cronológica.
 \end_layout
 
 \begin_layout Standard
@@ -258,6 +251,22 @@ name "fig:Semantic_Web_History"
 	filename ../figures/Semantic Web History.png
 	lyxscale 20
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fdireta{bikakis2013xml}
+\end_layout
 
 \end_inset
 
@@ -342,6 +351,22 @@ name "fig:Web-Semantic-Architecture"
 \begin_inset Graphics
 	filename ../figures/Semantic Web Architecture.png
 	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fdireta{fensel2011semantic}
+\end_layout
 
 \end_inset
 
@@ -702,6 +727,22 @@ name "fig:Smart-data-continuum"
 	filename ../figures/smart data.png
 	lyxscale 50
 	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fdireta{allemang2011semantic}
+\end_layout
 
 \end_inset
 
@@ -1144,6 +1185,22 @@ name "fig:OWL2-Profiles"
 \begin_inset Graphics
 	filename ../figures/owl2Profiles.png
 	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Fonte: W3C 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.w3.org/People/Sandro/owl2-profiles-doc
+\end_layout
 
 \end_inset
 

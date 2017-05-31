@@ -352,21 +352,16 @@ name "fig:sustainability_spheres"
 
 \end_layout
 
+\begin_layout Plain Layout
+Fonte: http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Tomada de: http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
-\end_layout
-
-\end_inset
-
 Essas dimensões serão usadas como contendedores gerais dos conceitos de
  sustentabilidade em agricultura permitindo agrupar conceitos relacionados.
 \end_layout
@@ -1063,7 +1058,8 @@ name "fig:Matriz-de-sustentabilidade"
 \end_layout
 
 \begin_layout Plain Layout
-Matriz fornecida pelos pesquisadores da Embrapa Meio Ambiente.
+\align center
+Fonte: Matriz fornecida pelos pesquisadores da Embrapa Meio Ambiente.
 \end_layout
 
 \end_inset

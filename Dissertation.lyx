@@ -71,7 +71,7 @@ EndPreamble
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command bibtex
+\bibtex_command default
 \index_command default
 \float_placement h
 \paperfontsize 12
@@ -100,7 +100,7 @@ EndPreamble
 \use_package undertilde 1
 \cite_engine natbib
 \cite_engine_type authoryear
-\biblio_style abnt
+\biblio_style 
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -778,6 +778,7 @@ filename "chapters/Conclution.lyx"
 \end_layout
 
 \begin_layout Standard
+\align block
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "references/references"

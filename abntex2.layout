@@ -170,6 +170,9 @@ End
 #########################################
 Style Bibliography
 	Category	ABNTEXPosTextual
+	Align		Block
+	AlignPossible	Block
+
 End
 
 ###################################################

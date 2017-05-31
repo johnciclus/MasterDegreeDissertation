@@ -280,6 +280,22 @@ name "fig:Methodology"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -512,6 +528,22 @@ name "fig:ontology-conceptual-map"
 	filename ../figures/SustenAgro conceptual map.png
 	lyxscale 60
 	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -771,6 +803,22 @@ name "fig:Modelagem-unidade-produtiva"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -916,6 +964,22 @@ name "fig:Modelagem-de-Value"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -1011,6 +1075,22 @@ name "fig:Modelagem-de-Microrregião"
 \begin_inset Graphics
 	filename ../figures/Microregion.png
 	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -1178,6 +1258,22 @@ name "fig:Modelagem-de-Indicador"
 \begin_inset Graphics
 	filename ../figures/Indicador.png
 	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -1393,6 +1489,22 @@ name "fig:Method"
 	filename ../figures/metodo.png
 	lyxscale 80
 	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -1950,6 +2062,22 @@ name "fig:StoryBoard-1"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -2012,6 +2140,18 @@ name "fig:StoryBoard-2"
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2075,6 +2215,18 @@ name "fig:StoryBoard-3"
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2128,6 +2280,22 @@ name "fig:StoryBoard-4"
 \begin_inset Graphics
 	filename ../figures/Stroyboard 4.png
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -2205,6 +2373,22 @@ name "fig:StoryBoard-5"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -2268,6 +2452,22 @@ name "fig:StoryBoard-6"
 \begin_inset Graphics
 	filename ../figures/Stroyboard 5.png
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -2377,6 +2577,22 @@ name "fig:Mockup_home"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -2435,6 +2651,22 @@ name "fig:Mockup_indicators"
 \begin_inset Graphics
 	filename ../figures/Tool_environmental_indicators.png
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -2542,6 +2774,22 @@ name "fig:Home"
 \begin_inset Graphics
 	filename ../figures/home.jpg
 	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -2668,6 +2916,22 @@ name "fig:Indicators"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -2720,6 +2984,22 @@ name "fig:Planilhas-de-resultado"
 \begin_inset Graphics
 	filename ../figures/SustenAgro-results.png
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
@@ -2824,6 +3104,22 @@ name "fig:Matriz-de-sustentabilidade-widget"
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -2899,6 +3195,22 @@ name "fig:Semáforo-de-sustentabilidade"
 \begin_inset Graphics
 	filename ../figures/SustenAgro-semaphore.png
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fautor
+\end_layout
 
 \end_inset
 
