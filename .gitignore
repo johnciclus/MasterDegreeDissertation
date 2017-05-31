@@ -47,7 +47,5 @@
 *.out
 *.synctex.gz
 
-*.pdf
-
 .idea/
 .idea/*
