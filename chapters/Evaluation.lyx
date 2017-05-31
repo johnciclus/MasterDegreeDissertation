@@ -445,6 +445,20 @@ reference "fig:Matriz-de-sustentabilidade-Minimos"
 \end_layout
 
 \begin_layout Standard
+Um dos aspectos mais importantes da ferramenta, é que ela permite que os
+ próprios especialistas mudem, em tempo real, as fórmulas do método de avaliação
+, permitindo fazer ajustes finos no método.
+ Por exemplo, durante a realização dos testes, foi descoberto um problema
+ na fórmula do método SustenAgro original.
+ Usando a DSL, algumas opções de correção foram tentadas e, rapidamente,
+ foi possível redefinir a fórmula de avaliação.
+ A possibilidade da interação direta e fácil dos especialistas, em tempo
+ real, com o sistema permitiu demostrar agilmente possíveis cenários de
+ resolução desse problema e aceitar, rapidamente, uma solução (proposta
+ pelo autor).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -499,20 +513,6 @@ fautor
 
 \end_layout
 
-\begin_layout Standard
-Um dos aspectos mais importantes da ferramenta, é que ela permite que os
- próprios especialistas mudem, em tempo real, as fórmulas do método de avaliação
-, permitindo fazer ajustes finos no método.
- Por exemplo, durante a realização dos testes, foi descoberto um problema
- na fórmula do método SustenAgro original.
- Usando a DSL, algumas opções de correção foram tentadas e, rapidamente,
- foi possível redefinir a fórmula de avaliação.
- A possibilidade da interação direta e fácil dos especialistas, em tempo
- real, com o sistema permitiu demostrar agilmente possíveis cenários de
- resolução desse problema e aceitar, rapidamente, uma solução (proposta
- pelo autor).
-\end_layout
-
 \begin_layout Section
 Avaliação do SAD SustenAgro e do Framework Decisioner
 \end_layout
@@ -560,6 +560,255 @@ reference "sec:Formulário-de-avaliação-SustenAgro"
 \end_inset
 
  e permitiram gerar os seguintes resultados das avaliações:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Avaliação dos usuários finais do SAD SustenAgro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlist[itemize]{leftmargin=*, topsep=0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Perfil de Usuário
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Avaliação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Sugestões
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Usuário final 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Aumentar a ajuda para cada funcionalidade
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Barra de progresso durante a avaliação
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Resultados de avaliação mais detalhados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Usuário final 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Melhorar a explicação do processo de avaliação
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Resultados numéricos com formatação 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Usuário final 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Positiva, realizou as 5 tarefas de usuário final com sucesso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\size small
+Segurança no cadastro da senha
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Melhorar a localização do botão avaliar
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Remover scroll externo
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Salvar automaticamente os dados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlist[itemize]{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -918,255 +1167,6 @@ Salvar a seção e os dados dela em tempo real
 \size small
 Integrar sistemas externos para poupar informação (caracterização da unidade
  produtiva) 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlist[itemize]{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Avaliação dos usuários finais do SAD SustenAgro
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlist[itemize]{leftmargin=*, topsep=0pt}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="9cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-\size small
-Perfil de Usuário
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-\size small
-Avaliação
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-\size small
-Sugestões
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Usuário final 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Positiva, realizou as 5 tarefas de usuário final com sucesso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Itemize
-
-\size small
-Aumentar a ajuda para cada funcionalidade
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Barra de progresso durante a avaliação
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Resultados de avaliação mais detalhados
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Usuário final 2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Positiva, realizou as 5 tarefas de usuário final com sucesso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Itemize
-
-\size small
-Melhorar a explicação do processo de avaliação
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Resultados numéricos com formatação 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Usuário final 3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Positiva, realizou as 5 tarefas de usuário final com sucesso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Itemize
-
-\size small
-Segurança no cadastro da senha
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Melhorar a localização do botão avaliar
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Remover scroll externo
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Salvar automaticamente os dados
 \end_layout
 
 \end_inset
