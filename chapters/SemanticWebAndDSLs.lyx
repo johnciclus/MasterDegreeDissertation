@@ -2095,14 +2095,7 @@ Melhorar o processo de desenvolvimento
 \end_layout
 
 \begin_layout Plain Layout
-A figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Ontology-Enhanced-User-Interfaces-1"
-
-\end_inset
-
- apresenta os tipos de usos das ontologias nas UI.
+A figura apresenta os tipos de usos das ontologias nas UI.
  Essas pesquisam dão a noção de que ontologias podem contribuir significativamen
 te na geração de Web UI flexíveis e de SADs, confirmando a hipótese assumida
  na presente pesquisa.

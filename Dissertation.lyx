@@ -778,6 +778,22 @@ filename "chapters/Conclution.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+postextual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align block
 \begin_inset CommandInset bibtex
 LatexCommand bibtex

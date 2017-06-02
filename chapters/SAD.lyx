@@ -326,6 +326,50 @@ key "Shim2002"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "power2002decision"
+
+\end_inset
+
+ classificou os SADs em 5 categorias principais cujo critério de classificação
+ foi o componente dominante que dirige as funcionalidades de cada SAD.
+ As categorias propostas foram:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data-Driven DSS
+\lang brazilian
+: SADs especializados no processamento e gerenciamento de grandes quantidades
+ de dados estruturados (principalmente dados históricos).
+ Estes SADs podem estar on-line fornecendo funcionalidades de agregação
+ de dados e cálculos simples de maneira remota.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Model-Driven DSS
+\lang brazilian
+: SADs especializados em gerenciar modelos que representam aspectos de uma
+ realidade, exemplos deles são ferramentas estatísticas e analíticas onde
+ é possível editar os modelos.
+ Estes SADs usam dados e parâmetros fornecidos pelos tomadores de decisão
+ para suportar o processo de tomada de decisão, mas não são sistemas de
+ dados intensivos.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Knowledge-Driven DSS
+\lang brazilian
+: 
+\end_layout
+
+\begin_layout Standard
 Uma variação dos SADs integra bases de conhecimento que suportam inferência,
  permitindo o desenvolvimento de 
 \lang english

@@ -90,7 +90,7 @@ key "Turban:2004:DSS:994103"
  processo de decisão 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "power2000web"
+key "power2002decision"
 
 \end_inset
 
@@ -407,38 +407,6 @@ Groovy
  que permite a definição da interface de usuário, do formato do dados a
  processar, das fórmulas do modelo e do formato do relatório final de cada
  análise.
-\end_layout
-
-\begin_layout Itemize
-Artigo 
-\begin_inset Quotes eld
-\end_inset
-
-
-\lang english
-Sustainability assessment of sugarcane production systems: SustenAgro Method
-\lang brazilian
-
-\begin_inset Quotes erd
-\end_inset
-
- submetido ao periódico da 
-\lang english
-Elsevier
-\lang brazilian
- 
-\begin_inset Quotes eld
-\end_inset
-
-
-\lang english
-Energy for sustainable Development
-\lang brazilian
-
-\begin_inset Quotes erd
-\end_inset
-
- ISSN: 0973-0826.
 \end_layout
 
 \begin_layout Itemize
