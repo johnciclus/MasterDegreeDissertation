@@ -366,7 +366,10 @@ Model-Driven DSS
 \lang english
 Knowledge-Driven DSS
 \lang brazilian
-: 
+: SADs especializados que usam regras do negocio e bases de conhecimento
+ para recomendar ações para gerentes.
+ Estes sistemas são de tipo persona computador com expertise especializada
+ em resolver problemas.
 \end_layout
 
 \begin_layout Standard
