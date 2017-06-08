@@ -367,13 +367,27 @@ Model-Driven DSS
 Knowledge-Driven DSS
 \lang brazilian
 : SADs especializados que usam regras do negocio e bases de conhecimento
- para recomendar ações para gerentes.
- Estes sistemas são de tipo persona computador com expertise especializada
- em resolver problemas.
+ para recomendar ações para tomadores de decisão.
+ Estes sistemas tem conhecimento de um domínio em particular e funcionalidades
+ especializada em resolver problemas.
 \end_layout
 
 \begin_layout Itemize
-Communication-Driven DSS:
+
+\lang english
+Document-Driven DSS
+\lang brazilian
+: SADs especializados em ajudar aos tomadores de decisão a obter, recuperar,
+ classificar e gerenciar documentos não estruturados.
+ Estes sistemas integram uma variedade de tecnologias de armazenamento e
+ de processamento para fornecer a recuperação e analise de informações.
+\end_layout
+
+\begin_layout Itemize
+Communications-Driven: SADs especializados suportar a comunicação, colaboração
+ e decisão dentro de um grupo de pessoas.
+ Estes sistemas usam tecnologias de comunicação e modelos de processos de
+ decisão para resolver problemas por duas ou mais pessoas.
 \end_layout
 
 \begin_layout Standard
