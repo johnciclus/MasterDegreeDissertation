@@ -384,24 +384,22 @@ Document-Driven DSS
 \end_layout
 
 \begin_layout Itemize
-Communications-Driven: SADs especializados suportar a comunicação, colaboração
- e decisão dentro de um grupo de pessoas.
+
+\lang english
+Communications-Driven
+\lang brazilian
+: SADs especializados suportar a comunicação, colaboração e decisão dentro
+ de um grupo de pessoas.
  Estes sistemas usam tecnologias de comunicação e modelos de processos de
  decisão para resolver problemas por duas ou mais pessoas.
 \end_layout
 
 \begin_layout Standard
-Uma variação dos SADs integra bases de conhecimento que suportam inferência,
- permitindo o desenvolvimento de 
+Os 
 \lang english
-Expert Systems
+Knowledge-Driven DSS
 \lang brazilian
- e 
-\lang english
-Knowledge Based Systems.
-
-\lang brazilian
- Esses sistemas são classificados como 
+ também denominados 
 \lang english
 Rule Based Systems
 \lang brazilian
@@ -412,7 +410,8 @@ key "Tweedale2016"
 
 \end_inset
 
-, os quais estabelecem o escopo desta pesquisa.
+, usam bases de conhecimento que geralmente integram regras para suportar
+ a inferência, estes tipos de sistemas compõem o escopo desta pesquisa.
  
 \begin_inset Note Note
 status open
@@ -427,15 +426,19 @@ Expandir com taxonomia de SADs
 \end_layout
 
 \begin_layout Standard
-Um tipo de SAD que usa bases de conhecimento, são os SADs baseados em ontologias
- para representar o conhecimento dos especialistas, permitindo definir,
- classificar, relacionar e inferir conhecimento.
+Um tipo de 
+\lang english
+Knowledge-Driven DSS
+\lang brazilian
+, são os SADs baseados em ontologias que representam o conhecimento dos
+ especialistas, permitindo definir, classificar, relacionar e inferir conhecimen
+to.
  
 \end_layout
 
 \begin_layout Standard
 A seguir serão apresentados os requisitos iniciais do SAD SustenAgro, que
- suportam a avaliação da sustentabilidade em cana-de-açúcar.
+ suporta a avaliação da sustentabilidade em cana-de-açúcar.
 \end_layout
 
 \begin_layout Section
