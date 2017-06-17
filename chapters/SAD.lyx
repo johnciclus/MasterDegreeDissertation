@@ -325,6 +325,10 @@ key "Shim2002"
  
 \end_layout
 
+\begin_layout Section
+Taxonomía dos Sistemas de Apoio à Decisão
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -411,18 +415,8 @@ key "Tweedale2016"
 \end_inset
 
 , usam bases de conhecimento que geralmente integram regras para suportar
- a inferência, estes tipos de sistemas compõem o escopo desta pesquisa.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Expandir com taxonomia de SADs
-\end_layout
-
-\end_inset
-
-
+ a representação, organização e inferência de dados, estes tipos de sistemas
+ compõem o escopo da presente pesquisa.
 \end_layout
 
 \begin_layout Standard
