@@ -174,8 +174,15 @@ description "Sistema de Apoio à Decisão"
  o desenvolvimento ágil dos SADs (já que os especialistas não modificam
  o código diretamente).
  Para solucionar esse problema, propõe-se um método e ferramenta web que
- usa ontologias, na Web Ontology Language (OWL), para representar o conhecimento
- de especialistas, e uma Domain Specific Language (DSL
+ usa ontologias, na 
+\shape italic
+Web Ontology Language
+\shape default
+ (OWL), para representar o conhecimento de especialistas, e uma 
+\shape italic
+Domain Specific Language
+\shape default
+ (DSL
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DSL"
@@ -187,16 +194,32 @@ description "Domain Specific Language"
  Ontologias, em OWL, são uma representação de conhecimento computável, que
  permite definir SADs em um formato entendível e accessível a humanos e
  máquinas.
- Esse método foi usado para criar o framework Decisioner para a instanciação
- de SADs.
- O Decisioner gera automaticamente SADs a partir de uma ontologia e uma
- descrição na  DSL, incluindo a interface do SAD (usando uma biblioteca
- de Web Components).
+ Esse método foi usado para criar o 
+\shape italic
+Framework Decisioner
+\shape default
+ para a instanciação de SADs.
+ O 
+\shape italic
+Decisioner
+\shape default
+ gera automaticamente SADs a partir de uma ontologia e uma descrição na
+  DSL, incluindo a interface do SAD (usando uma biblioteca de 
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+).
  Um editor online de ontologias, que usa um formato simplificado, permite
  que especialistas de domínio possam modificar aspectos da ontologia e imediatam
 ente ver as consequência de suas mudanças no SAD.
  Uma validação desse método foi realizada, por meio da instanciação do SAD
- SustenAgro no Framework Decisioner.
+ SustenAgro no 
+\shape italic
+Framework Decisioner
+\shape default
+.
  O SAD SustenAgro avalia a sustentabilidade de sistemas produtivos de cana-de-aç
 úcar na região centro-sul do Brasil.
  Avaliações, conduzidas por especialistas em sustentabilidade da Embrapa

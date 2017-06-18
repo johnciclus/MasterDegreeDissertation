@@ -85,7 +85,8 @@ reference "sec:SAD-SustenAgro"
 ), do requisito de modelar o conhecimento por meio de ontologias (usando
  tecnologias da Web Semântica) e de definir uma DSL para facilitar a definição
  de comportamentos por parte dos especialistas, foi modelado e desenvolvido
- o protótipo Framework Decisioner que permite definir e gerar SADs de avaliação.
+ o protótipo Framework Decisioner que permite definir e gerar SADs baseados
+ em conhecimento.
  O framework Decisioner é basicamente formado por ontologias, que representam
  conhecimento do domínio, e por uma DSL que permite definir comportamentos
  e estabelecer configurações gerais de um SAD.

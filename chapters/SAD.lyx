@@ -326,7 +326,7 @@ key "Shim2002"
 \end_layout
 
 \begin_layout Section
-Taxonomía dos Sistemas de Apoio à Decisão
+Taxonomia dos Sistemas de Apoio à Decisão
 \end_layout
 
 \begin_layout Standard
@@ -337,7 +337,7 @@ key "power2002decision"
 \end_inset
 
  classificou os SADs em 5 categorias principais cujo critério de classificação
- foi o componente dominante que dirige as funcionalidades de cada SAD.
+ foi a funcionalidade dominante de cada SAD.
  As categorias propostas foram:
 \end_layout
 
@@ -370,10 +370,11 @@ Model-Driven DSS
 \lang english
 Knowledge-Driven DSS
 \lang brazilian
-: SADs especializados que usam regras do negocio e bases de conhecimento
- para recomendar ações para tomadores de decisão.
- Estes sistemas tem conhecimento de um domínio em particular e funcionalidades
- especializada em resolver problemas.
+: SADs especializados em resolução de problemas por meio de regras, fatos,
+ procedimentos ou conhecimento do domínio que permite recomendar soluções
+ aos tomadores de decisão.
+ Estes sistemas são caracterizados por conter conhecimento de um domínio
+ em particular.
 \end_layout
 
 \begin_layout Itemize
@@ -415,8 +416,8 @@ key "Tweedale2016"
 \end_inset
 
 , usam bases de conhecimento que geralmente integram regras para suportar
- a representação, organização e inferência de dados, estes tipos de sistemas
- compõem o escopo da presente pesquisa.
+ a representação, organização e inferência de conhecimento, estes tipos
+ de sistemas compõem o escopo da presente pesquisa.
 \end_layout
 
 \begin_layout Standard
@@ -428,11 +429,6 @@ Knowledge-Driven DSS
  especialistas, permitindo definir, classificar, relacionar e inferir conhecimen
 to.
  
-\end_layout
-
-\begin_layout Standard
-A seguir serão apresentados os requisitos iniciais do SAD SustenAgro, que
- suporta a avaliação da sustentabilidade em cana-de-açúcar.
 \end_layout
 
 \begin_layout Section
@@ -511,8 +507,8 @@ A produção da cana-de-açúcar e dos subprodutos dela, influem em aspectos
 ade.
  Por essas razões, a Embrapa Meio Ambiente escolheu especificamente o sistema
  produtivo da cultura de cana-de-açúcar na região centro-sul do Brasil,
- como sistema piloto para desenvolver métodos e software de avaliação da
- sustentabilidade (Apêndice 
+ como sistema piloto para desenvolver um método e SAD de avaliação da sustentabi
+lidade (Apêndice 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "appendix:Sustainability_Assessment"
@@ -554,10 +550,9 @@ reference "appendix:Sustainability_Assessment"
 \end_layout
 
 \begin_layout Standard
-A partir do método SustenAgro, foi desenvolvido um sistema software de avaliação
- da sustentabilidade intitulado SAD SustenAgro que implementa o método SustenAgr
-o por meio de um sistema de apoio a decisão e que consegue adaptar-se às
- mudanças do domínio.
+A partir do método SustenAgro, foi desenvolvido o SAD Sustenagro que suporta
+ a avaliação de sustentabilidade, ele usa o método SustenAgro e que consegue
+ adaptar-se às mudanças do domínio.
 \end_layout
 
 \begin_layout Standard
@@ -1239,10 +1234,10 @@ Considerações finais
 \end_layout
 
 \begin_layout Standard
-A partir da análise dos SADs de avaliação apresentados e, particularmente,
- dos requisitos inciais do SAD SustenAgro, foi evidenciado que um meio computáve
-l de definição de conhecimento por parte dos especialistas permite organizar
- dito conhecimento para integrá-lo com os SADs.
+A partir da análise dos SADs desenvolvidos pela Embrapa Meio Ambiente e
+ dos requisitos inciais do SAD SustenAgro, foi evidenciado é necessario
+ um meio computável de definição de conhecimento por parte dos especialistas
+ para organizar dito conhecimento e integrá-lo com os SADs.
 \end_layout
 
 \begin_layout Standard

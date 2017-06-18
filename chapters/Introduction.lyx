@@ -98,8 +98,11 @@ key "power2002decision"
  Tal conhecimento, específico de um domínio, não é familiar para desenvolvedores
  de software.
  Eles têm que usar técnicas diversas para o levantamento de requisitos para
- entender o domínio dos especialistas e assim implementar o software corretament
-e 
+ entender o domínio dos especialistas e assim implementar o 
+\shape italic
+software
+\shape default
+ corretamente 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "GavrilovaAndreeva2012"
@@ -115,11 +118,18 @@ key "GavrilovaAndreeva2012"
 
 \begin_layout Standard
 Adicionalmente, os especialistas do domínio, em geral, não têm conhecimento
- suficiente em matéria de desenvolvimento de sistemas de software para realizar
- o dito processo por eles mesmos.
+ suficiente em matéria de desenvolvimento de sistemas de 
+\shape italic
+software
+\shape default
+ para realizar o processo por eles mesmos.
  Além disso, os dois domínios, tanto dos especialistas de domínio como dos
- desenvolvedores de software, são tão amplos que precisam de perfis particulares
- para realizar os processos corretamente 
+ desenvolvedores de 
+\shape italic
+software
+\shape default
+, são tão amplos que precisam de perfis particulares para realizar os processos
+ corretamente 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "roussey2010ontologies"
@@ -128,12 +138,12 @@ key "roussey2010ontologies"
 
 .
  Dentro deste contexto, foi identificado o problema que os especialistas
- do dominio não tinham um meio de representação de conhecimento para definir
+ do domínio não tinham um meio de representação de conhecimento para definir
  SADs, que tenha um formato computável, entendível e acessível.
 \end_layout
 
 \begin_layout Standard
-Como exemplo do problema anterior, podemos expor o caso dos especialistas
+Como exemplo do anterior problema, podemos expor o caso dos especialistas
  em sustentabilidade da Embrapa Meio Ambiente, que desenvolveram o projeto
  SustenAgro (Apêndice 
 \begin_inset CommandInset ref
@@ -197,9 +207,12 @@ A primeira delas é a necessidade de um método e ferramenta para que os especia
 stas do domínio definam o conhecimento deles nos SADs, principalmente as
  características particulares que requerem profundo conhecimento.
  Isso permite a participação deles como descritores de conhecimento especifico
- fornecendo, aos desenvolvedores de software, tempo adicional para dedicar-se
- aos assuntos próprios da computação e assim agilizar o processo de desenvolvime
-nto de SADs.
+ fornecendo, aos desenvolvedores de 
+\shape italic
+software
+\shape default
+, tempo adicional para dedicar-se aos assuntos próprios da computação e
+ assim agilizar o processo de desenvolvimento de SADs.
  Essa abordagem facilita a definição de SADs com menos intervenção por parte
  dos não especialistas do domínio, fazendo que a definição do conhecimento
  fique em termos conhecidos pelos especialistas e seja gerenciada por eles
@@ -250,8 +263,10 @@ key "Matthews2008149"
 \begin_layout Standard
 Para definir um meio computável de representação de conhecimento, foram
  analisados vários tipos de sistemas de organização de conhecimento ou 
+\shape italic
 \lang english
 Knowledge Organization System
+\shape default
 \lang brazilian
  (
 \lang english
@@ -283,8 +298,10 @@ Numa parceria com a Embrapa Meio Ambiente, foi desenvolvida uma ontologia
  Nas áreas de biologia e ecologia as ontologias são comuns, desta forma
  eles não tiveram dificuldade com o conceito.
  Eles usaram uma 
+\shape italic
 \lang english
 Domain Specific Language
+\shape default
 \lang brazilian
  (DSL) 
 \begin_inset CommandInset citation
@@ -304,12 +321,18 @@ key "fowler2010domain"
 \begin_layout Standard
 Além das motivações vinculadas com o domínio dos especialistas em sustentabilida
 de existe a motivação de desenvolver novas tecnologias.
- Uma contribuição tecnologia neste sentido na pesquisa foi o Framework Decisione
-r composto por ontologias e 
+ Uma contribuição tecnologia neste sentido na pesquisa foi o 
+\shape italic
+Framework Decisioner
+\shape default
+ composto por ontologias e 
 \lang english
 DSLs
 \lang brazilian
-, cujo propósito é facilitar a implementação de SADs, sendo este framework
+, cujo propósito é facilitar a implementação de SADs, sendo este 
+\shape italic
+framework
+\shape default
  instanciado para produzir o SAD SustenAgro.
 \end_layout
 
@@ -318,9 +341,12 @@ Objetivo
 \end_layout
 
 \begin_layout Standard
-Desenvolver um método e ferramenta web, baseados em ontologias, que permitam
- representar o conhecimento de especialistas do domínio para suportar a
- definição de SADs.
+Desenvolver um método e ferramenta 
+\shape italic
+web
+\shape default
+, baseados em ontologias, que permitam representar o conhecimento de especialist
+as do domínio para suportar a definição de SADs.
  
 \end_layout
 
@@ -367,10 +393,17 @@ As principais contribuições da pesquisa foram:
 \end_layout
 
 \begin_layout Itemize
-Método e framework Decisioner para definir SADs por parte dos especialistas
- do domínio, baseado do framework 
+Método e 
+\shape italic
 \lang english
-Grails
+Framework Decisioner
+\shape default
+\lang brazilian
+ para definir SADs por parte dos especialistas do domínio, baseado do 
+\shape italic
+\lang english
+Framework Grails
+\shape default
 \lang brazilian
 .
 \end_layout
@@ -378,7 +411,11 @@ Grails
 \begin_layout Itemize
 O SAD SustenAgro: sistema de apoio à decisão para suportar a avaliação da
  sustentabilidade em cana-de-açúcar, na região centro-sul do Brasil, instanciado
- por meio do Framework Decisioner.
+ por meio do 
+\shape italic
+Framework Decisioner
+\shape default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -393,16 +430,20 @@ idade da Embrapa.
 Ontologia sobre controles visuais para suportar a geração automática das
  interfaces gráficas do SAD SustenAgro.
  Ela permite associar tipos de dados aos 
+\shape italic
 \lang english
 web components
+\shape default
 \lang brazilian
  que constituem as interfaces dos SADs.
 \end_layout
 
 \begin_layout Itemize
 Uma DSL baseada na linguagem 
+\shape italic
 \lang english
 Groovy
+\shape default
 \lang brazilian
  que permite a definição da interface de usuário, do formato do dados a
  processar, das fórmulas do modelo e do formato do relatório final de cada
@@ -431,8 +472,12 @@ Revista Brasileira de Sistemas de Informação
 \end_layout
 
 \begin_layout Itemize
-Avaliações do Framework Decisioner, do método de geração de SADs e do Sistema
- SustenAgro satisfactorias para os especialistas do conhecimento.
+Avaliações do 
+\shape italic
+Framework Decisioner
+\shape default
+, do método de geração de SADs e do Sistema SustenAgro que satisfazerem
+ os objetivos da pesquisa.
 \end_layout
 
 \begin_layout Section
@@ -463,7 +508,7 @@ reference "chap:SemanticWebAndDSLs"
 
 \end_inset
 
-: Apresenta as Ontologias da web semântica e 
+: Apresenta as ontologias da web semântica e 
 \lang english
 DSLs
 \lang brazilian
@@ -479,8 +524,13 @@ reference "chap:Decisioner"
 
 \end_inset
 
-: Apresenta o protótipo do Framework Decisioner, que suporta a geração de
- Sistemas de Apoio à Decisão.
+: Apresenta o protótipo do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+, que suporta a geração de Sistemas de Apoio à Decisão.
  
 \end_layout
 
@@ -493,9 +543,18 @@ reference "chap:SustenAgro"
 \end_inset
 
 : Apresenta o SAD SustenAgro.
- Desenvolvido neste trabalho como caso de uso do Framework Decisioner.
- Ele permitiu o desenvolvimento da arquitetura do Decisioner e serviu para
- avaliar a funcionalidade do mesmo.
+ Desenvolvido neste trabalho como caso de uso do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
+ Ele permitiu o desenvolvimento da arquitetura do 
+\shape italic
+SAD SustenAgro
+\shape default
+ e serviu para avaliar a funcionalidade do mesmo.
 \end_layout
 
 \begin_layout Standard
