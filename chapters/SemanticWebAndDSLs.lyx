@@ -75,13 +75,24 @@
 \begin_body
 
 \begin_layout Standard
-Ontologias da web semântica e 
+Ontologias da 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ semântica e 
 \lang english
 DSLs
 \lang brazilian
  têm um papel fundamental na criação de um meio de descrição de conhecimento
- por parte dos especialistas e, portanto, suportar o design de SADs baseados
- em conhecimento.
+ por parte dos especialistas e, portanto, suportar o 
+\shape italic
+\lang english
+design
+\shape default
+\lang brazilian
+ de SADs baseados em conhecimento.
  
 \end_layout
 
@@ -100,11 +111,25 @@ Ontologias servem para representar o conhecimento de especialistas do domínio
 \end_layout
 
 \begin_layout Standard
-Neste capítulo, vamos apresentar e discutir as ontologias da web semântica
- e as DSLs.
- Descrevendo a teoria da Web Semântica: fundamentos, Ontologias, o 
+Neste capítulo, vamos apresentar e discutir as ontologias da 
+\shape italic
 \lang english
-Resource Description Framework (RDF
+web
+\shape default
+\lang brazilian
+ semântica e as DSLs.
+ Descrevendo a teoria da 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica: fundamentos, Ontologias, o 
+\shape italic
+\lang english
+Resource Description Framework
+\shape default
+ (RDF
 \lang brazilian
 
 \begin_inset CommandInset nomenclature
@@ -115,8 +140,10 @@ description "Resource Description Framework"
 \end_inset
 
 ) e a 
+\shape italic
 \lang english
 Web Ontology Language
+\shape default
 \lang brazilian
  (
 \lang english
@@ -132,8 +159,11 @@ description "Web Ontology Language"
 
 ).
  Finalmente serão abordadas as 
+\shape italic
 \lang english
-Domain Specific Languages (DSLs
+Domain Specific Languages
+\shape default
+ (DSLs
 \lang brazilian
 ) que são linguagens que permitem definir um meio de comunicação entre os
  especialistas e o sistema desenvolvido.
@@ -161,11 +191,16 @@ key "Souza:2004"
 \end_layout
 
 \begin_layout Standard
-Um exemplo da deficiência da web atual pode ser identificada na busca realizada
- pelos sistemas de recuperação de informação, que usam palavras-chave nas
- buscas, onde apenas a similaridade e o número de ocorrências de certas
- palavras no conteúdo de documentos são levados em consideração e não a
- semântica presente naquela informação.
+Um exemplo da deficiência da 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ atual pode ser identificada na busca realizada pelos sistemas de recuperação
+ de informação, que usam palavras-chave nas buscas, onde apenas a similaridade
+ e o número de ocorrências de certas palavras no conteúdo de documentos
+ são levados em consideração e não a semântica presente naquela informação.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -177,9 +212,12 @@ key "Souza:2004"
 \end_layout
 
 \begin_layout Standard
-A Web Semântica aparece como uma proposta para organizar o conhecimento
- da internet semanticamente em formatos entendíveis pelos humanos e máquinas
- 
+A 
+\shape italic
+Web
+\shape default
+ Semântica aparece como uma proposta para organizar o conhecimento da internet
+ semanticamente em formatos entendíveis pelos humanos e máquinas 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bernerslee2001"
@@ -194,13 +232,36 @@ key "bernerslee2001"
 \end_layout
 
 \begin_layout Standard
-A Web Semântica tem como finalidade estruturar os dados e informações disponívei
-s na Web, para que tenham significado e sejam computáveis por máquinas.
- Gerando um ambiente onde agentes de software e usuários possam trabalhar
- de maneira cooperativa.
- A Web Semântica é definida por um conjunto de padrões propostos pelo 
+A 
+\shape italic
+Web
+\shape default
+ Semântica tem como finalidade estruturar os dados e informações disponíveis
+ na 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+, para que tenham significado e sejam computáveis por máquinas.
+ Gerando um ambiente onde agentes de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ e usuários possam trabalhar de maneira cooperativa.
+ A 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica é definida por um conjunto de padrões propostos pelo 
+\shape italic
 \lang english
 World Wide Web Consortium
+\shape default
 \lang brazilian
  (W3C 
 \begin_inset CommandInset nomenclature
@@ -218,8 +279,13 @@ reference "fig:Semantic_Web_History"
 
 \end_inset
 
- apresenta alguns dos padrões que constituem a Web Semântica de maneira
- cronológica.
+ apresenta alguns dos padrões que constituem a 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica de maneira cronológica.
 \end_layout
 
 \begin_layout Standard
@@ -234,7 +300,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-História da Web Semântica 
+História da 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Semantic_Web_History"
@@ -285,16 +357,40 @@ key "bernerslee2001"
 
 \end_inset
 
- propuseram a Web Semântica, em 2001, como uma extensão da Web atual, na
- qual é possível vincular conceitos de maneira estruturada e padronizada.
+ propuseram a 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica, em 2001, como uma extensão da 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ atual, na qual é possível vincular conceitos de maneira estruturada e padroniza
+da.
  Permitindo a criação de conhecimento estruturado, computável por máquinas,
  que pode ser compartilhado entre humanos e máquinas.
- A finalidade é criar uma web universal dos conhecimentos da humanidade.
+ A finalidade é criar uma 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ universal dos conhecimentos da humanidade.
  
 \end_layout
 
 \begin_layout Standard
-A partir dessa visão conceitual sobre a Web, 
+A partir dessa visão conceitual sobre a 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "bernerslee2001"
@@ -303,8 +399,11 @@ key "bernerslee2001"
 
  propuseram uma arquitetura que organiza as representações do conhecimento
  por meio de camadas, conhecida como 
+\shape italic
 \lang english
 Semantic Web Cake
+\shape default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fensel2011semantic"
@@ -335,7 +434,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Arquitetura em camadas da Web Semântica
+Arquitetura em camadas da 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Web-Semantic-Architecture"
@@ -380,12 +485,16 @@ fdireta{fensel2011semantic}
 
 \begin_layout Standard
 A base dessa arquitetura é estabelecida pelos padrões 
+\shape italic
 \lang english
 Unicode
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
 Uniform Resource Identifier
+\shape default
 \lang brazilian
  (URI
 \begin_inset CommandInset nomenclature
@@ -401,8 +510,10 @@ description "Uniform Resource Identifier"
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Unicode
+\shape default
 \lang brazilian
  é um padrão que codifica os caracteres na maioria dos sistemas de escrita
  para representação de texto com fins de processamento computacional.
@@ -410,20 +521,26 @@ Unicode
 
 \begin_layout Description
 
+\shape italic
 \lang english
 URI
+\shape default
 \lang brazilian
  permite identificar os recursos disponíveis na Web por meio de uma 
+\shape italic
 \lang english
 'String'
+\shape default
 \lang brazilian
  única.
 \end_layout
 
 \begin_layout Description
 
+\shape italic
 \lang english
 XML
+\shape default
 \lang brazilian
 
 \begin_inset CommandInset nomenclature
@@ -434,8 +551,10 @@ description "Extensible Markup Language"
 \end_inset
 
  representa os dados de maneira sintática, por meio da definição de 
+\shape italic
 \lang english
 markups
+\shape default
 \lang brazilian
  que codificam documentos em formatos preestabelecidos.
  Ela permite que informações sejam legíveis tanto por humanos como por computado
@@ -444,18 +563,34 @@ res, suportando as camadas superiores na arquitetura.
 
 \begin_layout Description
 
+\shape italic
 \lang english
 RDF
+\shape default
 \lang brazilian
  é um modelo padrão para intercambiar dados na web.
  
+\shape italic
 \lang english
 RDF
+\shape default
 \lang brazilian
  tem características que permitem a integração de dados inclusive de esquemas
  diferentes, e suporta especialmente a evolução dos esquemas por meio do
  tempo sem requerer que mudanças nos consumidores de dados.
- RDF é uma recomendação do W3C
+ 
+\shape italic
+\lang english
+RDF
+\shape default
+\lang brazilian
+ é uma recomendação do 
+\shape italic
+\lang english
+W3C
+\shape default
+\lang brazilian
+
 \begin_inset Foot
 status open
 
@@ -480,8 +615,10 @@ https://www.w3.org/RDF/
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Ontology
+\shape default
 \lang brazilian
  estende a camada de descrição, fornecendo mais expressividade na definição
  de conceitos, de classificações, de relações e de inferência.
@@ -489,8 +626,10 @@ Ontology
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Logic
+\shape default
 \lang brazilian
  permite definir regras lógicas para deduzir e inferir novas informações
  que conseguem mudar a estrutura da ontologia de maneira dinâmica.
@@ -498,8 +637,10 @@ Logic
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Proof
+\shape default
 \lang brazilian
  fornece mecanismos para avaliar o nível de confiabilidade das fontes de
  recursos e informações.
@@ -507,27 +648,38 @@ Proof
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Trust
+\shape default
 \lang brazilian
  representa o conhecimento validado e confiável.
 \end_layout
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Digital-Signature
+\shape default
 \lang brazilian
  permite integrar métodos de segurança que garantam a segurança da informação.
 \end_layout
 
 \begin_layout Standard
-Uma das contribuições importantes da Web Semântica foi a formalização da
- representação de ontologias (próxima sessão).
+Uma das contribuições importantes da 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica foi a formalização da representação de ontologias (próxima sessão).
  No desenvolvimento desta pesquisa, foram usadas desde as camadas inferiores
  até o 
+\shape italic
 \lang english
 OWL
+\shape default
 \lang brazilian
 , permitindo definir ontologias que representam os domínios de conhecimento.
 \end_layout
@@ -569,17 +721,25 @@ key "allemang2011semantic"
 
 \end_inset
 
- definem as ontologias, no contexto da Web Semântica, como um esquema de
- representação que permite conceitualizar e estruturar conhecimento, permitindo
- a sua interpretação por computadores, com o objetivo de compartilhar conhecimen
-to entre humanos e computadores.
+ definem as ontologias, no contexto da 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica, como um esquema de representação que permite conceitualizar
+ e estruturar conhecimento, permitindo a interpretação por computadores,
+ com o objetivo de compartilhar conhecimento entre humanos e computadores.
 \end_layout
 
 \begin_layout Standard
 Uma ontologia é um sistema de organização e representação do conhecimento,
  do inglês 
+\shape italic
 \lang english
-Knowledge Organization System (KOS)
+Knowledge Organization System
+\shape default
+ (KOS)
 \lang brazilian
 , que é uma estrutura conceitual e computacional que permite representar
  o conhecimento, de qualquer domínio, por meio de entidades, classificações,
@@ -637,8 +797,8 @@ Axiomas
 \series bold
 Indivíduos
 \series default
-, ou instâncias das classes, são utilizados para representar elementos específic
-os, ou seja, os próprios dados, que juntamente com a definição de uma ontologia,
+ ou instâncias das classes, são utilizados para representar elementos específico
+s, ou seja, os próprios dados, que juntamente com a definição de uma ontologia,
  constituem a base de conhecimento 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -667,12 +827,16 @@ key "Patel-schneider05buildingthe"
 
 , a representação de uma ontologia é feita por meio de lógica de predicados
  e lógica descritiva, usando padrões adotados pela comunidade, como 
+\shape italic
 \lang english
 RDF
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
 OWL
+\shape default
 \lang brazilian
 .
  A Figura 
@@ -706,8 +870,10 @@ status open
 
 \begin_layout Plain Layout
 
+\shape italic
 \lang english
 Smart data continuum
+\shape default
 \lang brazilian
 : níveis de representação de dados na forma de conhecimento processável
  por máquinas.
@@ -758,8 +924,10 @@ fdireta{allemang2011semantic}
 O nível mais baixo de representação começa com os dados sem nenhum significado
  semântico, dependentes do contexto da aplicação.
  O segundo nível envolve a definição de esquemas 
+\shape italic
 \lang english
 XML
+\shape default
 \lang brazilian
  para conseguir independência dos dados da aplicação, os dados fluem entre
  aplicações em um único domínio mas não podem ser compartilhados fora do
@@ -781,8 +949,10 @@ key "sugumaran2011"
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 Resource Description Framework
+\shape default
 \lang brazilian
  (
 \lang english
@@ -793,13 +963,18 @@ RDF
 
 \begin_layout Standard
 O 
+\shape italic
 \lang english
-Resource Description Framework (RDF)
+Resource Description Framework
+\shape default
+ (RDF)
 \lang brazilian
  é uma família de especificações da W3C, que foi disponibilizada em 1999
  como parte do W3C's 
+\shape italic
 \lang english
 Semantic Web Effort
+\shape default
 \lang brazilian
 .
  Elas fornecem um estrutura comum que permite que dados sejam compartilhados
@@ -826,13 +1001,21 @@ http://www.w3.org/2001/sw/
 
 .
  O 
+\shape italic
 \lang english
 RDF
+\shape default
 \lang brazilian
  foi originalmente projetado como um modelo de metadados e também chegou
  a ser usado como um método de descrições conceituais, principalmente para
  descrever recursos web e formalmente é um formato de dados de tipo grafo
- direcionado e rotulado para representar informação na web
+ direcionado e rotulado para representar informação na 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+
 \begin_inset Foot
 status open
 
@@ -857,27 +1040,31 @@ https://www.w3.org/TR/rdf-sparql-query/
 
 \begin_layout Standard
 O 
+\shape italic
 \lang english
 RDF
+\shape default
 \lang brazilian
  é usado em várias áreas de aplicação, como 
-\emph on
+\shape italic
 \lang english
 resource discovery
-\emph default
+\shape default
 \lang brazilian
 , para melhorar as capacidades dos motores de busca, 
+\shape italic
 \emph on
 \lang english
 cataloging
+\shape default
 \emph default
 \lang brazilian
 , para descrever conteúdo e as relações de conteúdo disponibilizados em
  um sistema web particular, e descrição de 
-\emph on
+\shape italic
 \lang english
 intellectual property rights
-\emph default
+\shape default
 \lang brazilian
  de páginas web.
  Seu modelo básico de dados consiste em um padrão de três tipos de objetos,
@@ -902,8 +1089,11 @@ URIs
 \lang brazilian
 .
  Por exemplo, uma página web ou um elemento 
+\shape italic
 \lang english
-HyperText Markup Language (HTML 
+HyperText Markup Language
+\shape default
+ (HTML 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HTML"
@@ -947,19 +1137,25 @@ http://www.w3.org/TR/PR-rdf-syntax/
 
 \begin_layout Standard
 Com 
+\shape italic
 \lang english
 RDF
+\shape default
 \lang brazilian
  é possível explicitar relações entre dois objetos (usando-se uma Tripla
  
+\shape italic
 \lang english
 RDF
+\shape default
 \lang brazilian
 ), mas não é possível fazer modelagens especificas nem inferência.
  Para descrever detalhadamente o que um objeto representa e suas relações
  com outros objetos, são necessárias ontologias descritas no padrão 
+\shape italic
 \lang english
 OWL
+\shape default
 \lang brazilian
 .
  
@@ -967,8 +1163,11 @@ OWL
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
-SPARQL Protocol and RDF Query Language (SPARQL
+SPARQL Protocol and RDF Query Language
+\shape default
+ (SPARQL
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SPARQL"
@@ -994,8 +1193,10 @@ RDF
 RDF
 \lang brazilian
  via 
+\shape italic
 \lang english
-middleware
+middle-ware
+\shape default
 \lang brazilian
 .
  Atualmente é um padrão especificado pela 
@@ -1006,8 +1207,12 @@ W3C
 \end_layout
 
 \begin_layout Standard
-A versão de SPARQL 1.1, veio com novas características que permitem a atualização
- de dados em formato 
+A versão de 
+\lang english
+SPARQL
+\lang brazilian
+ 1.1, veio com novas características que permitem a atualização de dados
+ em formato 
 \lang english
 RDF
 \lang brazilian
@@ -1016,8 +1221,10 @@ RDF
 RDF
 \lang brazilian
  em um 
+\shape italic
 \lang english
-Graph Store
+graph store
+\shape default
 \lang brazilian
 
 \begin_inset Foot
@@ -1044,8 +1251,10 @@ https://www.w3.org/TR/sparql11-update/
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 Web Ontology Language
+\shape default
 \lang brazilian
  (
 \lang english
@@ -1056,10 +1265,13 @@ OWL
 
 \begin_layout Standard
 A 
+\shape italic
 \lang english
 Web Ontology Language
 \lang brazilian
- (
+ 
+\shape default
+(
 \lang english
 OWL
 \lang brazilian
@@ -1075,12 +1287,25 @@ key "mcguinness2004owl"
 
 .
  
+\shape italic
 \lang english
 OWL
+\shape default
 \lang brazilian
  é uma linguagem que permite que a semântica seja explicitamente associada
- ao conteúdo dos dados na web e formalmente especificada por meio de ontologias,
- compartilhadas na Internet.
+ ao conteúdo dos dados na 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ e formalmente especificada por meio de ontologias, compartilhadas na 
+\shape italic
+\lang english
+internet
+\shape default
+\lang brazilian
+.
  
 \end_layout
 
@@ -1109,8 +1334,10 @@ OWL 2
 sub-linguagens
 \lang brazilian
 ) aos perfis DL e 
+\shape italic
 \lang english
 Full
+\shape default
 \lang brazilian
  já existentes: 
 \lang english
@@ -1279,12 +1506,14 @@ EL O perfil
 OWL
 \lang brazilian
  2 EL é baseado na família EL++ de lógica descritiva (
+\shape italic
 \lang english
 Description
 \lang brazilian
  
 \lang english
 Logic
+\shape default
 \lang brazilian
 ).
  Esse perfil é particularmente útil em aplicações utilizando ontologias
@@ -1312,8 +1541,10 @@ DL-Lite
 \lang brazilian
  de lógica descritiva.
  Esse perfil foi criado para permitir o raciocínio (
+\shape italic
 \lang english
 reasoning
+\shape default
 \lang brazilian
 ) eficiente com grandes quantidades de dados estruturados de acordo com
  esquemas relativamente simples.
@@ -1368,7 +1599,11 @@ OWL
 \begin_layout Itemize
 
 \lang english
-GUI Framework:
+GUI 
+\shape italic
+Framework
+\shape default
+:
 \lang brazilian
  para suportar múltiplas vistas da ontologia e layouts configuráveis de
  componentes.
@@ -1384,48 +1619,64 @@ API:
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Modularization
+\shape default
 \lang brazilian
 : permite suportar a edição de múltiplas ontologias em um mesmo entorno.
 \end_layout
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Navigation
+\shape default
 \lang brazilian
 : fornece buscas globais e locais e hipervínculos nos editores.
 \end_layout
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Refactoring tools
+\shape default
 \lang brazilian
 : verificação de coerência das ontologias.
 \end_layout
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
-Reasoning:
+Reasoning
+\shape default
+:
 \lang brazilian
  compatibilidade com vários 
+\shape italic
 \lang english
 reasoner
+\shape default
 \lang brazilian
  para suportar a inferência.
 \end_layout
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Plug-ins
+\shape default
 \lang brazilian
 : arquitetura extensível que suporta diferentes tipos de 
+\shape italic
 \lang english
-plug-ins.
+plug-ins
+\shape default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1446,8 +1697,11 @@ status collapsed
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
-Triplestores 
+Triplestores
+\shape default
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Triplestore"
@@ -1459,11 +1713,19 @@ name "subsec:Triplestore"
 
 \begin_layout Standard
 Uma 
+\shape italic
 \lang english
 triplestore
+\shape default
 \lang brazilian
  é um tipo de banco de dados, baseado em grafos, para armazenar e recuperar
- fatos (assertions).
+ fatos (
+\shape italic
+\lang english
+assertions
+\shape default
+\lang brazilian
+).
  Esses fatos são representados na forma de triplas no padrão 
 \lang english
 RDF
@@ -1491,12 +1753,14 @@ key "rusher2003triple"
 
 \begin_layout Standard
 A 
+\shape italic
 \lang english
 triplestore
 \lang brazilian
  
 \lang english
 Blazegraph
+\shape default
 \lang brazilian
  
 \begin_inset Foot
@@ -1521,8 +1785,10 @@ https://www.blazegraph.com/
  é um dos mais completos bancos de dados baseados em grafos e com suporte
  SPARQL.
  Ela integra as características de uma 
+\shape italic
 \lang english
 triplestore
+\shape default
 \lang brazilian
 , fornece suporte nativo à 
 \lang english
@@ -1534,20 +1800,35 @@ SPARQL Protocol Endpoint
 \lang brazilian
 .
  Esse último, padroniza a comunicação com os clientes e a compatibilidade
- com os sistemas web, por meio de 
+ com os sistemas web, por meio de um
 \lang english
-um Endpoint
+ 
+\shape italic
+endpoint
+\shape default
 \lang brazilian
  (um endereço onde requisições em SPARQL podem ser feitas).
  
 \end_layout
 
 \begin_layout Standard
-O Blazegraph foi escolhido por ter código aberto (Licença GPL) e ser compatível
- com os padrões da Web Semântica.
+O 
+\shape italic
+\lang english
+Blazegraph
+\shape default
+\lang brazilian
+ foi escolhido por ter código aberto (Licença GPL) e ser compatível com
+ os padrões da 
+\lang english
+Web
+\lang brazilian
+ Semântica.
  Mas qualquer 
+\shape italic
 \lang english
 triplestore
+\shape default
 \lang brazilian
  que seja compatível com os mesmos padrões (SPARQL 1.1 e RDF) pode ser usada.
  As principais características dela são:
@@ -1558,11 +1839,23 @@ Banco de dado baseado em grafo de alta performance
 \end_layout
 
 \begin_layout Itemize
-Suporte Blueprints API e RDF/SPARQL
+Suporte 
+\shape italic
+\lang english
+Blueprints API
+\shape default
+\lang brazilian
+ e RDF/SPARQL
 \end_layout
 
 \begin_layout Itemize
-Clusters de replicação altamente disponíveis (HAJournalServer) 
+
+\shape italic
+\lang english
+Clusters
+\shape default
+\lang brazilian
+ de replicação altamente disponíveis (HAJournalServer) 
 \end_layout
 
 \begin_layout Itemize
@@ -1571,12 +1864,29 @@ Armazenamento de dados de uma única máquina até ~50B triples/quads (RWStore)
 \end_layout
 
 \begin_layout Itemize
-O armazenamento de dados em cluster é essencialmente ilimitado (BigdataFederatio
-n) 
+O armazenamento de dados em 
+\shape italic
+\lang english
+cluster
+\shape default
+\lang brazilian
+ é essencialmente ilimitado (BigdataFederation) 
 \end_layout
 
 \begin_layout Itemize
-REST API Com deployment embutida e / ou webapp (NanoSparqlServer) 
+REST API Com 
+\shape italic
+\lang english
+deployment
+\shape default
+\lang brazilian
+ embutida e / ou 
+\shape italic
+\lang english
+webapp
+\shape default
+\lang brazilian
+ (NanoSparqlServer) 
 \end_layout
 
 \begin_layout Itemize
@@ -1588,19 +1898,43 @@ RDFS+ Inferência e manutenção da verdade
 \end_layout
 
 \begin_layout Itemize
-Triples, quads, ou Reificação feita corretamente (RDR) support 
+
+\shape italic
+\lang english
+Triples
+\shape default
+\lang brazilian
+, 
+\shape italic
+\lang english
+quads
+\shape default
+\lang brazilian
+, ou Reificação feita corretamente (RDR) 
+\shape italic
+\lang english
+support
+\shape default
+\lang brazilian
+ 
 \end_layout
 
 \begin_layout Itemize
-Gerenciador de memória Java aproveita o JVM nativo heap (no GC) 
+Gerenciador de memória Java aproveita o JVM nativo 
+\shape italic
+\lang english
+heap
+\shape default
+\lang brazilian
+ (no GC) 
 \end_layout
 
 \begin_layout Itemize
-API centrada em vértices(RDF_GAS_API) 
+API centrada em vértices (RDF_GAS_API) 
 \end_layout
 
 \begin_layout Itemize
-Licença dupla: GPLv2 ou commercial 
+Licença dupla: GPLv2 ou comercial 
 \end_layout
 
 \begin_layout Itemize
@@ -1609,24 +1943,42 @@ Assinaturas de suporte ao desenvolvedor e produção
 
 \begin_layout Standard
 Para desenvolver os sistemas de software, presentes neste trabalho, foram
- usadas tecnologias da web semântica.
+ usadas tecnologias da 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ semântica.
  Primeiramente foram desenhadas as ontologias em formato 
 \lang english
 OWL,
 \lang brazilian
- na ferramenta Protégé, depois elas foram exportadas em RDF e, finalmente,
- integradas no framework Decisioner, que foi implementado usando a triplestore
- 
+ na ferramenta Protégé, depois elas foram exportadas em 
 \lang english
-Blazegraph
+RDF
 \lang brazilian
- .
+ e, finalmente, integradas no 
+\shape italic
+\lang english
+framework Decisioner
+\shape default
+\lang brazilian
+, que foi implementado usando a 
+\shape italic
+\lang english
+triplestore Blazegraph
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
-
+O 
+\shape italic
 \lang english
-O Blazegraph
+Blazegraph
+\shape default
 \lang brazilian
  permitiu instanciar as ontologias, em formato 
 \lang english
@@ -1638,7 +1990,13 @@ SPARQL.
 
 \lang brazilian
  Essas funcionalidades foram complementadas com ferramentas para edição
- da ontologia via web (Capítulo 
+ da ontologia via 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ (Capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Decisioner"
@@ -1652,7 +2010,7 @@ reference "chap:Decisioner"
 \begin_layout Standard
 Além das ontologias, foi necessário fornecer um meio de definição de conheciment
 o mais próximo à linguagem dos especialistas do domínio, para suportar a
- definição dos coiceitos do dominio nos SADs.
+ definição dos conceitos do domínio nos SADs.
  O melhor meio de definição de conhecimento identificado foi uma a definição
  de uma 
 \lang english
@@ -1676,8 +2034,14 @@ Linguagem de domínio específico
 \end_layout
 
 \begin_layout Standard
-Em desenvolvimento de software e engenharia de domínio, uma linguagem de
- domínio específico, em inglês 
+Em desenvolvimento de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ e engenharia de domínio, uma linguagem de domínio específico, em inglês
+ 
 \emph on
 \lang english
 Domain-Specific Language
@@ -1688,8 +2052,13 @@ Domain-Specific Language
  dedicada a um domínio particular de problema que usa expressões próprias
  dos especialistas daquele domínio.
  Um usuário, relacionado com um domínio específico, pode usar uma DSL sem
- ter experiência em desenvolvimento de software, pois a DSL está relacionada
- com seu domínio de trabalho.
+ ter experiência em desenvolvimento de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+, pois a DSL está relacionada com seu domínio de trabalho.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1732,29 +2101,49 @@ key "Ghosh:2010:DA:1965333"
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Domain-Specific Markup Languages
+\shape default
 \lang brazilian
 : são linguagens de um domínio particular com a particularidade de anotar
  os dados com etiquetas para que eles sejam sintaticamente distinguíveis.
  Um exemplo delas é a 
+\shape italic
 \lang english
-Hypertext Markup Language (HTML),
+Hypertext Markup Language
+\shape default
+ (HTML),
 \lang brazilian
- que permite anotar dados no domínio das páginas web.
+ que permite anotar dados no domínio das páginas 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
-Domain-Specific Modeling Languages (specification languages):
+Domain-Specific Modeling Languages
+\shape default
+ (
+\shape italic
+specification languages
+\shape default
+):
 \lang brazilian
  são linguagens que permitem especificar sistemas com o propósito de modelá-los.
  São compostas de uma estrutura consistente e de um conjunto de regras que
  permitem interpretar o significado dos componentes modelados.
  Uma linguagem desse tipo é a 
+\shape italic
 \lang english
 Unified Modeling Language
+\shape default
 \lang brazilian
  (
 \lang english
@@ -1773,8 +2162,11 @@ description "Unified Modeling Language "
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
-Domain-Specific Programming Languages:
+Domain-Specific Programming Languages
+\shape default
+:
 \lang brazilian
  são linguagens que permitem a programação em alto nível aplicada a um domínio
  especifico de conhecimento.
@@ -1784,8 +2176,14 @@ Domain-Specific Programming Languages:
 
 \begin_layout Standard
 Segundo o tipo de implementação, as DSLs podem ser dividas em 
+\shape italic
 \lang english
-external DSL e internal DSL
+external DSL
+\shape default
+ e 
+\shape italic
+internal DSL
+\shape default
 \lang brazilian
  
 \begin_inset CommandInset citation
@@ -1799,35 +2197,45 @@ key "fowler2010domain"
 
 \begin_layout Description
 
+\shape italic
 \lang english
 External
 \begin_inset space \space{}
 \end_inset
 
-DSL:
+DSL
+\shape default
+:
 \lang brazilian
  é uma linguagem de domínio especifico que é definida com uma sintaxe independen
 te de outras linguagens de programação, tendo como principal vantagem a
  flexibilidade.
  A desvantagem é que requer um desenvolvimento de um 
+\shape italic
 \lang english
-full
+full parser
+\shape default
 \lang brazilian
- parser para processá-la.
+ para processá-la.
 \end_layout
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Internal
 \begin_inset space \space{}
 \end_inset
 
-DSL:
+DSL
+\shape default
+:
 \lang brazilian
  é uma linguagem de domínio especifico escrita dentro de uma linguagem 
+\shape italic
 \lang english
 host
+\shape default
 \lang brazilian
  existente.
  A vantagem desse enfoque de definição de DSL é que o tempo e custo de desenvolv
@@ -1835,8 +2243,11 @@ imento é menor, em relação a uma DSL externa.
  Linguagens desse tipo são escritas sobre uma linguagem de propósito geral
  e, por isso, apresentam a desvantagem de depender das instruções e característi
 cas da linguagem 
+\shape italic
 \lang english
-host,
+host
+\shape default
+,
 \lang brazilian
  o que, em alguns casos, afeta a flexibilidade e expressividade da DSL que
  se quer definir.
@@ -1844,14 +2255,17 @@ host,
 
 \begin_layout Subsection*
 Linguagem 
+\shape italic
 \lang english
 Groovy
 \end_layout
 
 \begin_layout Standard
 
+\shape italic
 \lang english
 Groovy
+\shape default
 \lang brazilian
  é uma linguagem dinâmica para a máquina virtual Java (
 \lang english
@@ -1865,25 +2279,50 @@ key "koenig2007groovy"
 \end_inset
 
 .
- Ela tem uma sintaxe parecida com Java, suporte para programação funcional,
- produz 
+ Ela tem uma sintaxe parecida com 
+\shape italic
+\lang english
+Java
+\shape default
+\lang brazilian
+, suporte para programação funcional, produz 
+\shape italic
 \lang english
 JVM bytecodes
+\shape default
 \lang brazilian
- e interopera bem com código e bibliotecas Java.
+ e interopera bem com código e bibliotecas 
+\shape italic
+\lang english
+Java
+\shape default
+\lang brazilian
+.
  Traz características de linguagens como 
+\shape italic
 \lang english
 Python
+\shape default
 \lang brazilian
 , 
+\shape italic
 \lang english
 Ruby
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
 Smalltalk
+\shape default
 \lang brazilian
- para uma linguagem similar a Java 
+ para uma linguagem similar a 
+\shape italic
+\lang english
+Java
+\shape default
+\lang brazilian
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "koenig2007groovy"
@@ -1895,8 +2334,10 @@ key "koenig2007groovy"
 
 \begin_layout Standard
 O grande benefício que 
+\shape italic
 \lang english
 Groovy
+\shape default
 \lang brazilian
  traz para esta pesquisa é o suporte que a sua natureza dinâmica dá ao desenvolv
 imento de DSLs.
@@ -1906,13 +2347,22 @@ JVM
 \lang brazilian
  e usar bibliotecas Java já existentes.
  DSLs em 
+\shape italic
 \lang english
 Groovy
+\shape default
 \lang brazilian
- se integram facilmente à própria linguagem Groovy, de modo que não é aparente
- onde o código em 
+ se integram facilmente à própria linguagem 
+\shape italic
 \lang english
 Groovy
+\shape default
+\lang brazilian
+, de modo que não é aparente onde o código em 
+\shape italic
+\lang english
+Groovy
+\shape default
 \lang brazilian
  termina e a DSL começa 
 \begin_inset CommandInset citation
@@ -1923,10 +2373,22 @@ key "dearle2015groovy"
 
 .
  Isso permite que a DSL seja implementada como uma DSL interna, estendendo
- a linguagem Groovy (e simplificando a sua criação), mas mantenha uma sintaxe
- próxima à linguagem usada pelos especialistas de domínio.
+ a linguagem 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+ (e simplificando a sua criação), mas mantenha uma sintaxe próxima à linguagem
+ usada pelos especialistas de domínio.
  Como uma DSL interna, ela pode usar ferramentas já existentes para auxiliar
- a escrita de código em Groovy, como editores com 
+ a escrita de código em 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+, como editores com 
 \shape italic
 \lang english
 syntax highlighting
@@ -1942,12 +2404,22 @@ code completion
 \end_layout
 
 \begin_layout Standard
-Outra vantagem de Groovy é que ela é uma linguagem para a 
+Outra vantagem de 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+ é que ela é uma linguagem para a 
 \lang english
 JVM
 \lang brazilian
  e existem muitas bibliotecas, em Java, que dão suporte às tecnologias da
- Web Semântica.
+ 
+\shape italic
+Web
+\shape default
+ Semântica.
  Isso inclui bibliotecas como a 
 \lang english
 OWL API
@@ -1961,13 +2433,29 @@ OWL
 Jena
 \lang brazilian
 , para acesso a 
+\shape italic
 \lang english
 triplestores
+\shape default
 \lang brazilian
 , entre outras.
- Finalmente, os SADs a serem criados serão aplicativos web, Groovy tem um
- web framework completo e amadurecido, o Grails
+ Finalmente, os SADs a serem criados serão aplicativos 
+\shape italic
 \lang english
+web
+\shape default
+\lang brazilian
+, Groovy tem um 
+\shape italic
+\lang english
+web framework
+\shape default
+\lang brazilian
+ completo e amadurecido, o 
+\shape italic
+\lang english
+Grails
+\shape default
  
 \begin_inset Foot
 status collapsed
@@ -1997,11 +2485,40 @@ https://grails.org/
 \end_layout
 
 \begin_layout Standard
-Grails usa uma abordagem de convenção sobre configuração que usa opções
- default razoáveis.
- Ele se integra bem com a JVM e tem características como ORM integrado,
- DSLs, metaprogramação durante runtime e compile-time, e programação assíncrona
- 
+
+\shape italic
+\lang english
+Grails
+\shape default
+\lang brazilian
+ usa uma abordagem de convenção sobre configuração que usa opções 
+\shape italic
+\lang english
+default
+\shape default
+\lang brazilian
+ razoáveis.
+ Ele se integra bem com a 
+\lang english
+JVM
+\lang brazilian
+ e tem características como 
+\lang english
+ORM
+\lang brazilian
+ integrado, DSLs, meta programação durante 
+\shape italic
+\lang english
+runtime
+\shape default
+\lang brazilian
+ e 
+\shape italic
+\lang english
+compile-time
+\shape default
+\lang brazilian
+, e programação assíncrona 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "smith2009grails"
@@ -2016,7 +2533,13 @@ Uma DSL pode suportar a definição do comportamento de um SAD, fornecendo
  uma solução compatível com os termos usados pelos especialistas.
  Isso facilita que eles possam especificar o comportamento de um SAD com
  um alto grau de detalhamento, suficiente para diminuir ou evitar a necessidade
- de intervenção de desenvolvedores de software.
+ de intervenção de desenvolvedores de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+.
  Especialistas podem se tornar, na prática, programadores de seus próprios
  SADs.
 \end_layout
@@ -2024,10 +2547,19 @@ Uma DSL pode suportar a definição do comportamento de um SAD, fornecendo
 \begin_layout Standard
 Neste projeto, DSLs servem para customizar o comportamento dos SADs.
  Por isso, uma 
+\shape italic
 \lang english
-Domain-Specifc Programming Language 
+Domain-Specifc Programming Language
+\shape default
+ 
 \lang brazilian
-em Groovy foi desenvolvida.
+em 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+ foi desenvolvida.
  Ela faz uso da ontologia para organizar o conhecimento do domínio e definir
  o comportamento dos SADs.
  
@@ -2110,9 +2642,20 @@ te na geração de Web UI flexíveis e de SADs, confirmando a hipótese assumida
 \begin_layout Standard
 A partir do problema identificado e da revisão da literatura, foi concluído
  que o desenvolvimento de ontologias é um área de pesquisa (abrangida pela
- Web Semântica) que permite desenvolver sistemas web baseados em conhecimento,
- satisfazendo os requisitos de desenvolvimento do SAD SustenAgro (Capítulo
  
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica) que permite desenvolver sistemas 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ baseados em conhecimento, satisfazendo os requisitos de desenvolvimento
+ do SAD SustenAgro (Capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:SAD"
@@ -2132,10 +2675,22 @@ es, por parte dos especialistas do domínio, para formalizar ontologias.
 \end_layout
 
 \begin_layout Standard
-No próximo capítulo, será apresentado o Framework Decisioner.
+No próximo capítulo, será apresentado o 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  Ele faz uso das tecnologias, abordadas neste capítulo, para definir um
- framework que facilita a definição de conhecimento dos especialistas com
- a finalidade de gerar SADs.
+ 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+ que facilita a definição de conhecimento dos especialistas com a finalidade
+ de gerar SADs.
 \end_layout
 
 \end_body

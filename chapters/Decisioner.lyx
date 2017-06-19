@@ -83,27 +83,69 @@ reference "sec:SAD-SustenAgro"
 \end_inset
 
 ), do requisito de modelar o conhecimento por meio de ontologias (usando
- tecnologias da Web Semântica) e de definir uma DSL para facilitar a definição
- de comportamentos por parte dos especialistas, foi modelado e desenvolvido
- o protótipo Framework Decisioner que permite definir e gerar SADs baseados
- em conhecimento.
- O framework Decisioner é basicamente formado por ontologias, que representam
- conhecimento do domínio, e por uma DSL que permite definir comportamentos
- e estabelecer configurações gerais de um SAD.
+ tecnologias da 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+ Semântica) e de definir uma 
+\lang english
+DSL
+\lang brazilian
+ para facilitar a definição de comportamentos por parte dos especialistas,
+ foi modelado e desenvolvido o protótipo 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ que permite definir e gerar SADs baseados em conhecimento.
+ O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ é um sistema 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ formado por ontologias, que representam conhecimento do domínio, e por
+ uma 
+\lang english
+DSL
+\lang brazilian
+ que permite definir comportamentos e estabelecer configurações gerais de
+ um SAD.
 \end_layout
 
 \begin_layout Standard
 Satisfazer os requisitos do SAD SustenAgro requeridos pelos pesquisadores
- da Embrapa Meio Ambiente dirigiou o desenvolvimento desta pesquisa.
+ da Embrapa Meio Ambiente guiou o desenvolvimento desta pesquisa.
  Para chegar à arquitetura aqui apresentada, houve um trabalho colaborativo
  com os especialistas em sustentabilidade para chegar aos requisitos que
- eram gerais, que deveriam estar no framework, e os que eram específicos,
- que deveriam estar definidos na ontologia ou na DSL do SustenAgro.
+ eram gerais, que deveriam estar no 
+\lang english
+framework
+\lang brazilian
+, e os que eram específicos, que deveriam estar definidos na ontologia ou
+ na 
+\lang english
+DSL
+\lang brazilian
+ do SustenAgro.
  
 \end_layout
 
 \begin_layout Standard
-A seguir será apresentada a arquitetura do protótipo Decisioner.
+A seguir será apresentada a arquitetura do protótipo 
+\lang english
+Framework Decisioner
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Section
@@ -121,18 +163,25 @@ reference "chap:SAD"
 , são compostos por banco de dados, base de conhecimento, módulo de processament
 o da informação e módulo gerador de resultados.
  Em cada um desses módulos, está implícito o conhecimento dos especialistas,
- portanto a primeira característica definida do Decisioner foi a integração
- de ontologias.
+ portanto a primeira característica definida do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ foi a integração de ontologias.
  
 \end_layout
 
 \begin_layout Standard
 As ontologias permitem a definição do conhecimento dos especialistas em
  um componente independente.
- Ele é complementado pela DSL, que permite definir comportamento e característic
-as do SAD.
- O diagrama para a arquitetura desenvolvida para essa solução é apresentado
- na Figura 
+ Ele é complementado pela 
+\lang english
+DSL
+\lang brazilian
+, que permite definir comportamento e características do SAD.
+ O diagrama para a arquitetura desenvolvida é apresentado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Arquitectura-do-decisioner"
@@ -146,10 +195,33 @@ reference "fig:Arquitectura-do-decisioner"
 \end_layout
 
 \begin_layout Standard
-O Decisioner pode ser classificado como um framework.
- Já que é uma plataforma de software com design reutilizável e implementações
- reutilizáveis pelos clientes, que o especializam em um domínio particular
- 
+O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ pode ser classificado como um 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+.
+ Já que é uma plataforma de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ com 
+\shape italic
+\lang english
+design
+\shape default
+\lang brazilian
+ reutilizável e implementações reutilizáveis pelos clientes, que o especializam
+ em um domínio particular 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "RiehlePhdthesis"
@@ -160,8 +232,14 @@ key "RiehlePhdthesis"
 \end_layout
 
 \begin_layout Standard
-A arquitetura do framework Decisioner é composta pelos componentes gerais
- para a definição de SADs, apresentados na Figura 
+A arquitetura do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ é composta pelos componentes gerais para a definição de SADs, apresentados
+ na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Arquitectura-do-decisioner"
@@ -169,9 +247,24 @@ reference "fig:Arquitectura-do-decisioner"
 \end_inset
 
 .
- Usuários especialistas podem usar o framework por meio dos editores de
- ontologias e DSL.
- Usuários finais usam os SADs por meio da sua interface Web.
+ Usuários especialistas podem usar o 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+ por meio dos editores de ontologias e 
+\lang english
+DSL
+\lang brazilian
+.
+ Usuários finais usam os SADs por meio da sua interface 
+\shape italic
+\lang english
+Web
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -236,9 +329,11 @@ Os componentes dessa arquitetura são:
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 Domain ontology
 \series default
+\shape default
 \lang brazilian
 : representa os conceitos específicos dos especialistas que serão utilizados
  no SAD.
@@ -247,9 +342,11 @@ Domain ontology
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 Decisioner ontology
 \series default
+\shape default
 \lang brazilian
 : faz uma ligação entre os tipos de dados e as interfaces gráficas capazes
  de mostrar ou editar esses dados, fazendo um mapeamento entre os dois.
@@ -258,9 +355,11 @@ Decisioner ontology
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 Ontology Editor
 \series default
+\shape default
 \lang brazilian
 : componente que permite editar as ontologias em um formato mais fácil para
  o uso pelos especialistas.
@@ -269,9 +368,11 @@ Ontology Editor
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 Triplestore
 \series default
+\shape default
 \lang brazilian
 : sistema de armazenamento e recuperação da informação em formato de triplas
  
@@ -291,8 +392,11 @@ reference "subsec:Triplestore"
 RDF
 \lang brazilian
  e a consulta por meio da linguagem padrão 
+\shape italic
 \lang english
-SPARQL Protocol and RDF Query Language (SPARQL)
+SPARQL Protocol and RDF Query Language
+\shape default
+ (SPARQL)
 \lang brazilian
  
 \begin_inset CommandInset citation
@@ -308,31 +412,47 @@ key "prud2006sparql"
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 DSL code
 \series default
+\shape default
 \lang brazilian
-: representa uma instancia da DSL com as definições particulares para um
- SAD específico.
+: representa uma instancia da 
+\shape italic
+\lang english
+DSL
+\shape default
+\lang brazilian
+ com as definições particulares para um SAD específico.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 DSL Editor
 \series default
-: editor visual web da DSL com recursos como 
+\shape default
+: editor visual web da DSL com recursos como
+\shape italic
+ 
 \lang english
 code completion
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
 syntax coloring
+\shape default
 \lang brazilian
 .
- Permite a edição do codigo da 
+ Permite a edição do código da 
+\shape italic
 \lang english
 DSL
+\shape default
 \lang brazilian
  por parte dos especialistas do domínio.
 \end_layout
@@ -340,15 +460,19 @@ DSL
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 Web components
 \series default
+\shape default
 :
 \lang brazilian
  conjunto de elementos visuais que podem ser reusados nos SADs com a finalidade
  de modularizar e simplificar a geração de 
+\shape italic
 \lang english
 Web User Interfaces
+\shape default
 \lang brazilian
  (UI
 \begin_inset CommandInset nomenclature
@@ -364,39 +488,76 @@ description "User Interface"
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 DSL Interpreter
 \series default
+\shape default
 \lang brazilian
-: interpretador da DSL para processar as definições do SAD e criar um SAD
- específico.
- Ele usa a DSL, ontologias e componentes web para gerar automaticamente
- a interface e comportamento de um SAD específico.
+: interpretador da 
+\lang english
+DSL
+\lang brazilian
+ para processar as definições do SAD e criar um SAD específico.
+ Ele usa a 
+\lang english
+DSL
+\lang brazilian
+, ontologias e componentes 
+\lang english
+web
+\lang brazilian
+ para gerar automaticamente a interface e comportamento de um SAD específico.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
+\shape italic
 \lang english
 Web UI
 \series default
+\shape default
 \lang brazilian
 : interfaces visuais geradas pelo 
+\shape italic
 \lang english
-DSL Interpreter.
+DSL Interpreter
+\shape default
+.
 
 \lang brazilian
  Estão compostas dos 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
  que são usados pelos usuários finais na interação com o SAD.
 \end_layout
 
 \begin_layout Standard
-Essa arquitetura foi implementada em um protótipo Decisioner.
- Sempre que possível, na implementação do Decisioner, foram reutilizados
- componentes ou bibliotecas disponíveis publicamente na internet.
+Essa arquitetura foi implementada em um protótipo do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
+ Sempre que possível, na implementação do 
+\shape italic
+\lang english
+Decisioner
+\shape default
+\lang brazilian
+, foram reutilizados componentes ou bibliotecas disponíveis publicamente
+ na 
+\shape italic
+\lang english
+Internet
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Section
@@ -404,36 +565,85 @@ Metodologia
 \end_layout
 
 \begin_layout Standard
-Com a finalidade de desenvolver o protótipo do framework Decisioner, escolheu-se
- o SAD SustenAgro como um estudo de caso.
+Com a finalidade de desenvolver o protótipo do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+, escolheu-se o SAD SustenAgro como um estudo de caso.
  Ele permitiu a definição de uma metodologia de desenvolvimento para os
  componentes.
- Teria sido interessante instanciar o framework para um segundo SAD, para
- demonstrar melhor sua generalidade.
+ Teria sido interessante instanciar o 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+ para um segundo SAD, para demonstrar melhor a generalidade.
  Contudo, dada as limitações de tempo impostas a um trabalho de mestrado
- e ao tempo necessário ao desenvolvimento do framework, isso não foi possível.
+ e ao tempo necessário ao desenvolvimento do 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+, isso não foi possível.
  No decorrer deste texto, foram feitas algumas considerações sobre a generalidad
-e do framework.
+e do 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+.
  A metodologia adotada durante este processo, incluiu as seguintes etapas:
 \end_layout
 
 \begin_layout Enumerate
 Seleção da 
+\shape italic
 \lang english
 Triplestore
+\shape default
 \lang brazilian
 : foram avaliadas as 
+\shape italic
 \lang english
 triplestores
+\shape default
 \lang brazilian
  existentes com a finalidade de definir uma que se adaptasse aos requisitos
- do framework.
+ do 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Enumerate
-Seleção da linguagem de programação e framework web: foi realizada uma verificaç
-ão das tecnologias de desenvolvimento de sistemas web compatíveis com as
- tecnologias da web semântica e com a 
+Seleção da linguagem de programação e 
+\shape italic
+\lang english
+framework web
+\shape default
+\lang brazilian
+: foi realizada uma verificação das tecnologias de desenvolvimento de sistemas
+ 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ compatíveis com as tecnologias da 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ semântica e com a 
 \lang english
 DSL
 \lang brazilian
@@ -441,21 +651,31 @@ DSL
 \end_layout
 
 \begin_layout Enumerate
-Design da DSL: durante o processo de desenvolvimento do SAD SustenAgro,
- foram generalizados seus componentes, permitindo definir cada uma das caracterí
-sticas da DSL.
+
+\shape italic
+\lang english
+Design
+\shape default
+\lang brazilian
+ da DSL: durante o processo de desenvolvimento do SAD SustenAgro, foram
+ generalizados seus componentes, permitindo definir cada uma das características
+ da DSL.
  O processo foi iterativo, permitindo refinar a expressividade da linguagem
  com a ajuda de especialistas da Embrapa.
 \end_layout
 
 \begin_layout Enumerate
 Desenvolvimento do 
+\shape italic
 \lang english
 DSL editor
+\shape default
 \lang brazilian
 : implementação de uma 
+\shape italic
 \lang english
 web UI
+\shape default
 \lang brazilian
  que permite editar a DSL em formato textual, fornecendo aos especialistas
  um editor moderno.
@@ -464,12 +684,16 @@ web UI
 
 \begin_layout Enumerate
 Desenvolvimento do 
+\shape italic
 \lang english
 Ontology Editor
+\shape default
 \lang brazilian
 : implementação de uma 
+\shape italic
 \lang english
 web UI
+\shape default
 \lang brazilian
  com componentes específicos para suportar a edição das ontologias, por
  parte dos especialistas, em um formato textual.
@@ -477,59 +701,95 @@ web UI
 
 \begin_layout Enumerate
 Desenvolvimento do 
+\shape italic
 \lang english
 DSL Interpreter
+\shape default
 \lang brazilian
-: o interpretador da DSL do Decisioner.
- Esse componente tinha que ser atualizado a medida que o design da DSL mudava.
+: o interpretador da 
+\lang english
+DSL
+\lang brazilian
+ do Decisioner.
+ Esse componente tinha que ser atualizado a medida que o 
+\shape italic
+\lang english
+design
+\shape default
+\lang brazilian
+ da DSL mudava.
 \end_layout
 
 \begin_layout Enumerate
 Integração com 
+\shape italic
 \lang english
 web components
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
 web UI
 \lang brazilian
-s: 
+s
+\shape default
+: 
+\shape italic
 \lang english
 widgets
+\shape default
 \lang brazilian
  na forma de 
+\shape italic
 \lang english
 Web components
+\shape default
 \lang brazilian
  suportam a geração das 
+\shape italic
 \lang english
 Web UIs
+\shape default
 \lang brazilian
  que compõem os SADs.
  
+\shape italic
 \lang english
 Widgets
+\shape default
 \lang brazilian
  foram adicionadas para atender as necessidades do SustenAgro.
 \end_layout
 
 \begin_layout Standard
-A metodologia de desenvolvimento do Framework Decisioner foi guiada pelo
- desenvolvimento do SAD SustenAgro.
+A metodologia de desenvolvimento do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ foi guiada pelo desenvolvimento do SAD SustenAgro.
  Primeiramente foram desenvolvidas as ontologias, continuando com o desenvolvime
 nto do 
+\shape italic
 \lang english
 DSL Interpreter
+\shape default
 \lang brazilian
  e depois com a integração dos 
+\shape italic
 \lang english
 web components
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
-UI
+UIs
+\shape default
 \lang brazilian
-s.
+.
  Foram realizados vários ciclos de desenvolvimento para refinar as funcionalidad
 es.
  A Figura 
@@ -600,8 +860,13 @@ fautor
 \end_layout
 
 \begin_layout Standard
-A seguir, cada componente da arquitetura do Decisioner é discutido, começando
- pela ontologia Decisioner.
+A seguir, cada componente da arquitetura do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ é discutido, começando pela ontologia Decisioner.
 \end_layout
 
 \begin_layout Section

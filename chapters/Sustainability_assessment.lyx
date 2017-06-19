@@ -448,12 +448,31 @@ Método SustenAgro
 \end_layout
 
 \begin_layout Standard
-O método SustenAgro foi construído a partir de literatura científica pela
- equipe do projeto e foi validado por meio da técnica Delphi de consultas
- aos especialistas.
- O método foi desenvolvido dentro do projeto SustenAgro liderado pela pesquisado
-ra Dra.
- Katia Regina Evaristo de Jesus da Embrapa Meio Ambiente.
+O método SustenAgro foi construído a partir de indicadores de sustentabilidade
+ identificados pela equipe do projeto SustenAgro e consiste em uma formula
+ que quantifica os indicadores com a finalidade de suportar o processo de
+ avaliação da sustentabilidade.
+ 
+\end_layout
+
+\begin_layout Standard
+Ditos indicadores foram validados por meio da técnica Delphi de consultas
+ aos especialistas 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "wright2006"
+
+\end_inset
+
+, esta técnica realiza uma consulta remota aos especialistas e compreende
+ rodada de consultas a publico com perfil amplo para definir conceitos gerais
+ entre os especialistas.
+\end_layout
+
+\begin_layout Standard
+O método foi liderado pela pesquisadora Dra.
+ Katia Regina Evaristo de Jesus da Embrapa Meio Ambiente, e a especificação
+ dele é produção intelectual restrita da Embrapa Meio Ambiente.
 \end_layout
 
 \begin_layout Section
@@ -464,9 +483,14 @@ Conclusões
 O método de avaliação de sustentabilidade foi validado pelos especialistas
  e depois de várias iterações definiu-se uma versão estável, que foi usada
  no desenvolvimento do Sistema SustenAgro, dito método é mantido e atualizado
- pela Embrapa Meio Ambiente e os desenvolvedores de software garantem que
- ele seja aplicado corretamente mas não têm responsabilidade nenhuma pela
- eficácia da aplicação dele.
+ pela Embrapa Meio Ambiente e os desenvolvedores de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ garantem que ele seja aplicado corretamente mas não têm responsabilidade
+ nenhuma pela eficácia da aplicação dele.
 \end_layout
 
 \end_body

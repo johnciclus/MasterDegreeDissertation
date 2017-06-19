@@ -119,11 +119,17 @@ key "Tweedale2016"
 
 \end_inset
 
- define os SADs como sistemas software que visam melhorar a tomada de decisão
- individual ou grupal, combinando o conhecimento do(s) tomador(es) de decisão
- com dados relevantes de fontes confiáveis, nos quais são aplicados métodos
- e modelos matemáticos para suportar a análise, comparação e escolha de
- alternativas no processo de decisão.
+ define os SADs como sistemas 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ que visam melhorar a tomada de decisão individual ou grupal, combinando
+ o conhecimento do(s) tomador(es) de decisão com dados relevantes de fontes
+ confiáveis, nos quais são aplicados métodos e modelos matemáticos para
+ suportar a análise, comparação e escolha de alternativas no processo de
+ decisão.
 \end_layout
 
 \begin_layout Standard
@@ -169,8 +175,14 @@ Arquitetura para Sistemas de Apoio à Decisão
 \end_layout
 
 \begin_layout Standard
-A arquitetura de um software define a organização dele em termos de componentes,
- de interconexões e das interações com sistemas externos 
+A arquitetura de um 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ define a organização dele em termos de componentes, de interconexões e
+ das interações com sistemas externos 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "de1997software"
@@ -273,9 +285,13 @@ reference "fig:Componentes-SAD"
 \end_layout
 
 \begin_layout Description
+Entradas (
+\shape italic
 I
 \lang english
 nputs
+\shape default
+)
 \lang brazilian
  corresponde às entradas do sistema, composta dos dados que serão processados
  e dos modelos de conhecimento dos especialistas.
@@ -286,9 +302,13 @@ nputs
 \end_layout
 
 \begin_layout Description
-
+Processamento 
 \lang english
+(
+\shape italic
 Processing
+\shape default
+)
 \lang brazilian
  composto pelos modelos e métodos de organização e processamento dos dados,
  que têm restrições para avaliar as alternativas de resposta.
@@ -297,9 +317,13 @@ Processing
 \end_layout
 
 \begin_layout Description
-
+Saídas 
 \lang english
+(
+\shape italic
 Outputs
+\shape default
+)
 \lang brazilian
  são os resultados do processamento dos inputs e permitem comparar as alternativ
 as de decisão.
@@ -310,9 +334,15 @@ as de decisão.
 
 \begin_layout Standard
 Durante a evolução dos SAD, várias melhorias aconteceram, entre elas o desenvolv
-imento da Web permitiu integrar novas técnicas no processamento dos dados,
- tecnologias na representação visual de resultados e no uso colaborativo
- por parte dos usuários 
+imento da 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ permitiu integrar novas técnicas no processamento dos dados, tecnologias
+ na representação visual de resultados e no uso colaborativo por parte dos
+ usuários 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Shim2002"
@@ -343,19 +373,29 @@ key "power2002decision"
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Data-Driven DSS
+\shape default
 \lang brazilian
 : SADs especializados no processamento e gerenciamento de grandes quantidades
  de dados estruturados (principalmente dados históricos).
- Estes SADs podem estar on-line fornecendo funcionalidades de agregação
- de dados e cálculos simples de maneira remota.
+ Estes SADs podem estar 
+\shape italic
+\lang english
+on-line
+\shape default
+\lang brazilian
+ fornecendo funcionalidades de agregação de dados e cálculos simples de
+ maneira remota.
 \end_layout
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Model-Driven DSS
+\shape default
 \lang brazilian
 : SADs especializados em gerenciar modelos que representam aspectos de uma
  realidade, exemplos deles são ferramentas estatísticas e analíticas onde
@@ -367,8 +407,10 @@ Model-Driven DSS
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Knowledge-Driven DSS
+\shape default
 \lang brazilian
 : SADs especializados em resolução de problemas por meio de regras, fatos,
  procedimentos ou conhecimento do domínio que permite recomendar soluções
@@ -379,8 +421,10 @@ Knowledge-Driven DSS
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Document-Driven DSS
+\shape default
 \lang brazilian
 : SADs especializados em ajudar aos tomadores de decisão a obter, recuperar,
  classificar e gerenciar documentos não estruturados.
@@ -390,8 +434,10 @@ Document-Driven DSS
 
 \begin_layout Itemize
 
+\shape italic
 \lang english
 Communications-Driven
+\shape default
 \lang brazilian
 : SADs especializados suportar a comunicação, colaboração e decisão dentro
  de um grupo de pessoas.
@@ -401,12 +447,16 @@ Communications-Driven
 
 \begin_layout Standard
 Os 
+\shape italic
 \lang english
 Knowledge-Driven DSS
+\shape default
 \lang brazilian
  também denominados 
+\shape italic
 \lang english
 Rule Based Systems
+\shape default
 \lang brazilian
  
 \begin_inset CommandInset citation
@@ -422,8 +472,10 @@ key "Tweedale2016"
 
 \begin_layout Standard
 Um tipo de 
+\shape italic
 \lang english
 Knowledge-Driven DSS
+\shape default
 \lang brazilian
 , são os SADs baseados em ontologias que representam o conhecimento dos
  especialistas, permitindo definir, classificar, relacionar e inferir conhecimen
@@ -568,8 +620,14 @@ reference "fig:SustenAgro-arquitetura-inicial"
  apresenta a arquitetura inicial do SAD SustenAgro, definida a partir dos
  requisitos dos especialistas.
  Esta arquitetura corresponde a um sistema de informação tradicional, que
- requer a intervenção de desenvolvedores de software, para definir ou atualizar
- o conhecimento dos especialistas implícito no SAD.
+ requer a intervenção de desenvolvedores de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+, para definir ou atualizar o conhecimento dos especialistas implícito no
+ SAD.
 \end_layout
 
 \begin_layout Standard
@@ -633,8 +691,13 @@ Os especialistas em sustentabilidade definiram o SAD SustenAgro com as seguintes
 \end_layout
 
 \begin_layout Itemize
-Sistema web com banco de dados para armazenar e recuperar as informações
- do sistema.
+Sistema 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ com banco de dados para armazenar e recuperar as informações do sistema.
 \end_layout
 
 \begin_layout Itemize
@@ -659,8 +722,10 @@ Integração com sistemas de georreferenciamento.
 
 \begin_layout Itemize
 Desenvolvimento de 
+\shape italic
 \lang english
 widgets
+\shape default
 \lang brazilian
  (componentes visuais dos sistemas web) para mostrar resultados obtidos,
  especificamente a implementação da matriz de sustentabilidade e do semáforo
@@ -707,10 +772,15 @@ a a necessidade de fornecer métodos e ferramentas computacionais que organizem
 \end_layout
 
 \begin_layout Standard
-As seguintes ferramentas software foram analisadas e concluiu-se que têm
- em comum um método de avaliação que processa de maneira matemática um conjunto
- de dados e gera relatórios com resultados da avaliação, gráficos e recomendaçõe
-s.
+As seguintes ferramentas 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ foram analisadas e concluiu-se que têm em comum um método de avaliação
+ que processa de maneira matemática um conjunto de dados e gera relatórios
+ com resultados da avaliação, gráficos e recomendações.
  
 \end_layout
 
@@ -852,7 +922,13 @@ Uma característica importante nesses sistemas foi a existência de conceitos
 \begin_layout Standard
 Identificou-se que a implementação desse conhecimento gerava dificuldades
  de compreensão entre os especialistas do domínio e os desenvolvedores de
- software por serem de áreas diferentes.
+ 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ por serem de áreas diferentes.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -865,10 +941,15 @@ key "Evans:2003:DDT:861502"
 
 \begin_layout Standard
 Por conseguinte, afirmou-se a hipótese de usar um KOS para representar dito
- conhecimento, e baseando-se analisando o problema de pesquisa, foram selecciona
-das as ontologias como o modelo mais completo para representar o conhecimento
+ conhecimento, e baseando-se analisando o problema de pesquisa, foram selecionad
+as as ontologias como o modelo mais completo para representar o conhecimento
  do domínio dos especialistas na definição de SAD.
- Desta maneira foi evitado que o conhecimento ficara implícito no software
+ Desta maneira foi evitado que o conhecimento ficara implícito no 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
  como aconteceu no desenvolvimento dos SAD listados.
 \end_layout
 
@@ -876,14 +957,22 @@ das as ontologias como o modelo mais completo para representar o conhecimento
 O uso de uma ontologia permite representar e estruturar o conhecimento de
  avaliação da sustentabilidade em agricultura, por meio da definição e atualizaç
 ão de conceitos por parte dos especialistas, permitindo que eles mesmos
- descrevam o domínio sem precisar dos desenvolvedores.
+ descrevam o domínio sem precisar dos desenvolvedores de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+.
  Os especialistas do domínio têm familiaridade com os termos da ontologia
  e poderão especificar grande parte do conhecimento envolvido no SAD.
  Idealmente, essa definição deve ser detalhada o suficiente para que os
  desenvolvedores possam desenvolver a parte computacional do SAD sem necessidade
  de 
+\shape italic
 \lang english
 feedback
+\shape default
 \lang brazilian
  dos especialistas.
 \end_layout
@@ -898,10 +987,9 @@ Essa representação de conhecimento permite representar relaciones semânticas,
 \end_layout
 
 \begin_layout Standard
-Devido a este contexto, o SAD SustenAgro foi escolhido como projeto piloto
- para desenvolver a presente pesquisa, porque permite o desenvolvimento
- de um SAD baseado em conhecimento e que permite explorar alternativas na
- definição e geração dos SAD.
+Neste contexto, o SAD SustenAgro foi escolhido como projeto piloto para
+ desenvolver a presente pesquisa, porque permite avaliar alternativas na
+ definição e geração de SAD baseados em conhecimento.
 \end_layout
 
 \begin_layout Section
@@ -924,8 +1012,13 @@ Sobre o uso de ontologias em domínios similares ao SustenAgro, tem-se:
 O vocabulário
 \emph on
  
+\shape italic
+\emph default
 \lang english
-Agricultural Vocabulary (AGROVOC
+Agricultural Vocabulary
+\shape default
+\emph on
+ (AGROVOC
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "AGROVOC"
@@ -958,17 +1051,19 @@ http://aims.fao.org/agrovoc
 \end_inset
 
  que é um 
-\emph on
+\shape italic
 \lang english
 thesaurus
-\emph default
+\shape default
 \lang brazilian
  (sistema de referência de termos) fornece termos padronizados sobre alimentação
 , nutrição, agricultura, pesca, floresta e meio ambiente criados de maneira
  colaborativa e coordenados pela 
-\emph on
+\shape italic
 \lang english
 Food and Agricultural Organization
+\shape default
+\emph on
 \lang brazilian
  
 \begin_inset Foot
@@ -1010,8 +1105,10 @@ key "DCMIPro841"
 , dando um exemplo de padronização com os identificadores dos conceitos,
  reutilizando informações e integrando os conceitos com outros dados da
  
+\shape italic
 \lang english
 Linked Open Data
+\shape default
 \lang brazilian
  (
 \lang english
@@ -1037,27 +1134,29 @@ key "kraines2011system"
 
  desenvolveram uma ferramenta com o objetivo de criar um sistema de compartilham
 ento de conhecimento (
-\emph on
+\shape italic
 \lang english
 Knowledge Sharing System
-\emph default
+\shape default
 \lang brazilian
 ), para pesquisa em sustentabilidade, por meio de um processo de modelagem
  semântica.
  Uma ontologia, fundamentada em lógica descritiva, foi desenvolvida por
  meio do modelo de dados ISO 15926 para descrever três tipos de conceitualizaçõe
-s relacionadas à sustentábilidade: conhecimento situacional, métodos analíticos
+s relacionadas à sustentabilidade: conhecimento situacional, métodos analíticos
  e 
+\shape italic
 \lang english
 frameworks
+\shape default
 \lang brazilian
  de cenários.
  Os conhecimentos dos especialistas podem ser descritos por meio de afirmações
  semânticas (
-\emph on
+\shape italic
 \lang english
 semantic statements
-\emph default
+\shape default
 \lang brazilian
 ).
 \end_layout
@@ -1121,10 +1220,10 @@ key "AlkanOlsson:2009"
 
 .
  Nela foi desenvolvido um 
-\emph on
+\shape italic
 \lang english
 framework
-\emph default
+\shape default
 \lang brazilian
  de indicadores que relaciona, de uma maneira consistente, as dimensões
  ambiental, econômica e social do desenvolvimento sustentável.
@@ -1157,14 +1256,18 @@ key "brilhante:2006"
 \end_inset
 
  e consiste em um 
-\emph on
+\shape italic
+\lang english
 framework
-\emph default
+\shape default
+\lang brazilian
  (MOeMA-IS) para análise de aspectos de sustentabilidade do estado do Amazonas.
  Ele usa uma ontologia para descrição de indicadores de sustentabilidade
  (
+\shape italic
 \lang english
 ISD-Economics Ontology
+\shape default
 \lang brazilian
 ).
 \end_layout
@@ -1235,7 +1338,7 @@ Considerações finais
 
 \begin_layout Standard
 A partir da análise dos SADs desenvolvidos pela Embrapa Meio Ambiente e
- dos requisitos inciais do SAD SustenAgro, foi evidenciado é necessario
+ dos requisitos inciais do SAD SustenAgro, foi evidenciado é necessário
  um meio computável de definição de conhecimento por parte dos especialistas
  para organizar dito conhecimento e integrá-lo com os SADs.
 \end_layout
@@ -1253,7 +1356,13 @@ ar que as ontologias suportam vários tipos de SADs e domínios de conhecimento.
 Desta forma será abordada uma solução ao problema da inexistência de uma
  representação de conhecimento para definir SADs, que tenha um formato computáve
 l, entendível e acessível aos especialistas do domínio e desenvolvedores
- de software.
+ de 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+.
 \begin_inset Note Note
 status collapsed
 

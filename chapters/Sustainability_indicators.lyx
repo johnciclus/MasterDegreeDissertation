@@ -136,9 +136,24 @@ key "bossel1999indicators,van2005indicadores"
 \end_layout
 
 \begin_layout Standard
-A OECD 1 Organisation for Economic Co-operation and Development http://www.oecd.or
-g/brazil/ estabelece três requisitos para selecionar indicadores: relevância
- política e utilidade para usuários, solidez analítica e mensurabilidade.
+A OECD 1 
+\shape italic
+\lang english
+Organisation for Economic Co-operation and Development
+\shape default
+\lang brazilian
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.oecd.org/brazil/
+\end_layout
+
+\end_inset
+
+ estabelece três requisitos para selecionar indicadores: relevância política
+ e utilidade para usuários, solidez analítica e mensurabilidade.
  Alguns exemplos de indicadores levantados no desenvolvimento do método
  SustenAgro são:
 \end_layout
@@ -198,16 +213,17 @@ key "oliveira:2013"
 \end_inset
 
 , onde inicialmente foram identificados 62 indicadores de sustentabilidade
- no sistema de cana-de-açúcar, os quais foram analisados e caracterizados,
- gerando 39 indicadores como os mais relevantes 
+ no sistema de cana-de-açúcar, os quais foram analisados e caracterizados
 \begin_inset CommandInset citation
 LatexCommand citep
 key "BRUMATTI:2015"
 
 \end_inset
 
-, por meio de uma validação com porcentagem maior ou igual a 60% feita por
- uma comunidade de especialistas em sustentabilidade.
+, gerando 39 indicadores como os mais relevantes por meio de uma validação
+ com porcentagem maior ou igual a 60% feita por uma comunidade de especialistas
+ em sustentabilidade vinculados com o projeto SustenAgro da Embrapa Meio
+ Ambiente.
 \end_layout
 
 \begin_layout Section
@@ -218,13 +234,19 @@ Considerações finais
 Os dados e especificações fornecidos pela Embrapa Meio Ambiente e pela APTA
  conseguiram explicar o conceito de avaliação de sustentabilidade segundo
  a visão da Embrapa Meio Ambiente.
- A complexidade envolvida requereu identificar um tipo de KOS que permita
- representar cada uns dos conceitos necessários que compõem o processo de
- avaliação da sustentabilidade.
- O KOS precisa ser flexível e de fácil uso para conseguir se adaptar às
- mudanças do domínio, devido a que durante o processo de modelagem avalia
- a coerência dos dados, permitindo assim melhorar as especificações de dito
- domínio.
+ A complexidade envolvida requereu identificar um tipo de 
+\lang english
+KOS
+\lang brazilian
+ que permita representar cada uns dos conceitos necessários que compõem
+ o processo de avaliação da sustentabilidade.
+ O 
+\lang english
+KOS
+\lang brazilian
+ precisa ser flexível e de fácil uso para conseguir se adaptar às mudanças
+ do domínio, devido a que durante o processo de modelagem avalia a coerência
+ dos dados, permitindo assim melhorar as especificações de dito domínio.
 \end_layout
 
 \end_body
