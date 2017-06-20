@@ -804,6 +804,7 @@ reference "fig:Metodologia-do-Decisioner"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -882,7 +883,7 @@ name "sec:Ontologia-Decisioner"
 
 \begin_layout Standard
 Para desenvolver um protótipo de uma ontologia geral, que abstraísse os
- conceitos dos SADs, foram analisados os SADs desenvolvidos pela Embrapa
+ componentes dos SADs, foram analisados os SADs desenvolvidos pela Embrapa
  Meio Ambiente, descritos na Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -901,8 +902,11 @@ OWL
 \lang brazilian
 .
  Depois foi criado um novo formato, usando o 
+\shape italic
 \lang english
-YAML Ain't Markup Language (YAML 
+YAML Ain't Markup Language
+\shape default
+ (YAML 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "YAML"
@@ -917,8 +921,10 @@ description "YAML Ain't Markup Language\\\\"
 OWL
 \lang brazilian
 , para ser usado pelos especialistas no 
+\shape italic
 \lang english
 Ontology Editor
+\shape default
 \lang brazilian
 , explicado na Seção 
 \begin_inset CommandInset ref
@@ -1006,12 +1012,14 @@ reference "fig:Modelagem-do-SAD"
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Evaluation
 \begin_inset space \space{}
 \end_inset
 
 Object
+\shape default
 \lang brazilian
 : classe que representa os objetos que serão analisados em cada processo
  de avaliação.
@@ -1020,23 +1028,32 @@ Object
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Feature
+\shape default
 \lang brazilian
 : classe que representa as caraterísticas a avaliar em um 
+\shape italic
 \lang english
-Evaluation Object.
+Evaluation Object
+\shape default
+.
 
 \lang brazilian
  Elas serão quantificadas, analisadas e usadas no processo de geração de
  relatórios no processo de avaliação.
  As 
+\shape italic
 \lang english
 Features
+\shape default
 \lang brazilian
  têm associado um 
+\shape italic
 \lang english
 Value
+\shape default
 \lang brazilian
  que as quantifica.
  Existe a subclasse 
@@ -1046,8 +1063,10 @@ Weighted
 \shape default
 \lang brazilian
  que representa uma 
+\shape italic
 \lang english
 Feature
+\shape default
 \lang brazilian
  vinculada a um peso.
  Esse peso pode ser usado nas fórmulas para o cálculo dos modelos codificados
@@ -1056,23 +1075,32 @@ Feature
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Place
+\shape default
 \lang brazilian
 : classe que representa a localização física dos objetos modelados, permitindo
  referenciar geograficamente um 
+\shape italic
 \lang english
-Evaluation Object.
+Evaluation Object
+\shape default
+.
 \end_layout
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Analysis
+\shape default
 \lang brazilian
 : classe que representa uma avaliação associada a um 
+\shape italic
 \lang english
 Evaluation Object
+\shape default
 \lang brazilian
 .
  Suas instâncias têm propriedades, como nome e data da avaliação, e correspondem
@@ -1081,47 +1109,65 @@ Evaluation Object
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Value
+\shape default
 \lang brazilian
 : classe que representa os valores que são atribuídos a cada instância de
  
+\shape italic
 \lang english
-Feature.
+Feature
+\shape default
+.
 
 \lang brazilian
  As subclasses 
+\shape italic
 \lang english
 Real
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
 Categorical
+\shape default
 \lang brazilian
  representam tipos de valores.
 \end_layout
 
 \begin_layout Description
 
+\shape italic
 \lang english
 User
+\shape default
 \lang brazilian
 : classe que representa os usuários do sistema.
 \end_layout
 
 \begin_layout Description
 
+\shape italic
 \lang english
 Role
+\shape default
 \lang brazilian
 : classe que representa os papéis de usuário do sistema e suas permissões.
  Por padrão, estão instanciados os perfis 
+\shape italic
 \lang english
 User
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
-Admin.
+Admin
+\shape default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1131,8 +1177,10 @@ A partir dessas classes é possível organizar os conceitos específicos de
  conhecimentos, permitindo classificar e relacionar dados novos do sistema,
  ajudando desta maneira na automatização da geração dos SADs.
  Isso permite ao 
+\shape italic
 \lang english
 DSL Interpreter
+\shape default
 \lang brazilian
  mapear qualquer conceito novo, específico de um SAD em particular, a um
  desses conceitos conhecidos e saber o que deve ser feito com ele.
@@ -1152,7 +1200,13 @@ name "sec:Ontology-Editor"
 
 \begin_layout Standard
 Para suportar a edição das ontologias do domínio, por parte dos especialistas,
- foi implementado um editor web.
+ foi implementado um editor 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+.
  Ele permite editar a ontologia específica do SAD SustenAgro em um formato
  baseado em 
 \lang english
@@ -1173,12 +1227,15 @@ API
 RDF
 \lang brazilian
  para ser substituído na 
+\shape italic
 \lang english
 triplestore
 \lang brazilian
  
 \lang english
-Blazegraph,
+Blazegraph
+\shape default
+,
 \lang brazilian
  este processo é realizado a cada vez que o usuário salva a ontologia.
 \end_layout
@@ -1197,19 +1254,32 @@ reference "fig:Editor-de-ontologia"
 YAML
 \lang brazilian
 , um 
+\shape italic
 \lang english
-side panel,
+side panel
+\shape default
+,
 \lang brazilian
  que apresenta as classes, propriedades e indivíduos hierarquicamente (permitind
 o a referenciação dos elementos no código), um 
+\shape italic
 \lang english
 button restore
+\shape default
 \lang brazilian
  para restituir a ultima versão da ontologia e um 
+\shape italic
 \lang english
 button save
+\shape default
 \lang brazilian
- para salvar e carregar no Decisioner a ontologia em edição.
+ para salvar e carregar no 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ a ontologia em edição.
 \end_layout
 
 \begin_layout Standard
@@ -1243,10 +1313,18 @@ OWL
 \lang brazilian
 , mas expressivo o suficiente para as necessidades das ontologias.
  Ele ajuda os usuários a encontrar os elementos da ontologia (
+\shape italic
 \lang english
 side panel
+\shape default
 \lang brazilian
-) e permite a inserção da ontologia no Decisioner.
+) e permite a inserção da ontologia no 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  Apesar de ser possível aos especialistas desenvolver uma ontologia totalmente
  nova, usando o editor, seu objetivo é permitir que eles possam fazer modificaçõ
 es localizadas nas ontologias.
@@ -1320,30 +1398,47 @@ DSL do Framework Decisioner
 \end_layout
 
 \begin_layout Standard
-Para permitir que os especialistas definam o comportamento do framework
- Decisioner, foi definida uma DSL que permite definir as principais característi
-cas de um SAD.
- Tal DSL foi baseada na modelagem geral da arquitetura do 
+Para permitir que os especialistas definam o comportamento do 
+\shape italic
 \lang english
-Decisioner
+Framework Decisioner
+\shape default
+\lang brazilian
+, foi definida uma DSL que permite definir as principais características
+ de um SAD.
+ Tal DSL foi baseada na modelagem geral da arquitetura do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
 \lang brazilian
  e permite relacionar conceitos específicos dos especialistas, criar equações
- para os modelos usados, gerar a interface web para o usuário final, servindo
- de interface entre a ontologia do Decisioner e a ontologia de SustenAgro.
+ para os modelos usados, gerar a interface 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ para o usuário final, servindo de interface entre a ontologia do Decisioner
+ e a ontologia de SustenAgro.
 \end_layout
 
 \begin_layout Standard
 A DSL foi desenvolvida na linguagem 
+\shape italic
 \lang english
 Groovy
+\shape default
 \lang brazilian
 , porque ela suporta o desenvolvimento de 
 \lang english
 DSLs
 \lang brazilian
  que se comportam como extensões da linguagem 
+\shape italic
 \lang english
 Groovy
+\shape default
 \lang brazilian
 .
 \end_layout
@@ -1364,6 +1459,7 @@ As instruções definidas na DSL são:
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 Evaluation Object
 \end_layout
@@ -1386,9 +1482,14 @@ des como nome, tipo de produção, localização, etc.
 \end_layout
 
 \begin_layout Standard
-A instrução tem como argumentos a URI (ou label) da classe da ontologia
- do domínio, que será objeto de avaliação, e cada uma das propriedades relaciona
-das.
+A instrução tem como argumentos a URI (ou 
+\shape italic
+\lang english
+label
+\shape default
+\lang brazilian
+) da classe da ontologia do domínio, que será objeto de avaliação, e cada
+ uma das propriedades relacionadas.
  O código-fonte 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1398,18 +1499,30 @@ reference "lis:Definição-do-Evaluation"
 
  apresenta um exemplo que usa a classe 
 \shape italic
+\lang english
 ProductionUnit
 \shape default
+\lang brazilian
 , como classe dos objetos a serem avaliados e define as propriedades 
 \shape italic
+\lang english
 hasName
 \shape default
+\lang brazilian
 , para nome, e 
 \shape italic
+\lang english
 hasAgriculturalProductionSystem
 \shape default
+\lang brazilian
 , para tipo de produção.
- Podem ser usados os labels das propriedades, ao invés de suas URIs
+ Podem ser usados os 
+\shape italic
+\lang english
+labels
+\shape default
+\lang brazilian
+ das propriedades, ao invés de suas URIs
 \shape italic
 .
 \end_layout
@@ -1498,8 +1611,10 @@ type
 \shape default
 \lang brazilian
  faz com que os 
+\shape italic
 \lang english
 EvaluationObject
+\shape default
 \lang brazilian
  tenham que ser de subclasses da classe principal.
  Por exemplo, uma unidade produtiva pode ser uma plantação greenfield (mecanizad
@@ -1550,6 +1665,7 @@ widget
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 Feature
 \end_layout
@@ -1563,10 +1679,22 @@ Feature
 \lang brazilian
  define as características, do Evaluation Object, que serão usadas na sua
  avaliação.
- O DSL Interpreter vai gerar uma interface gráfica, onde o usuário final
- terá que preencher os dados sobre cada característica.
+ O 
+\shape italic
+\lang english
+DSL Interpreter
+\shape default
+\lang brazilian
+ vai gerar uma interface gráfica, onde o usuário final terá que preencher
+ os dados sobre cada característica.
  Cada característica tem um tipo associado a ela (na ontologia de domínio).
- A partir dele, é possível associar uma widget específica para edição.
+ A partir dele, é possível associar uma 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+ específica para edição.
  Por exemplo, a Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1574,8 +1702,14 @@ reference "fig:Widgets-geradas-da-DSL"
 
 \end_inset
 
- mostra a widget para uma característica que tem um tipo categórico (Controle
- biológico de pragas) com 2 possíveis valores (Sim e Não).
+ mostra a 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+ para uma característica que tem um tipo categórico (Controle biológico
+ de pragas) com 2 possíveis valores (Sim e Não).
  Os textos mostrados vêm da ontologia e fazem parte da descrição de cada
  elemento.
  É possível criar descrições em mais de um idioma.
@@ -1640,8 +1774,19 @@ fautor
 \end_layout
 
 \begin_layout Standard
-Quando o usuário final usa a widget, o valor escolhido é anotado, no Evaluation
- Object, usando a propriedade 
+Quando o usuário final usa a 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+, o valor escolhido é anotado, no 
+\shape italic
+\lang english
+Evaluation Object
+\shape default
+\lang brazilian
+, usando a propriedade 
 \shape italic
 \lang english
 has value
@@ -1650,7 +1795,7 @@ has value
 .
  Nas fórmulas, usadas para os cálculos do modelo usado, é possível acessar
  esses valores.
- Os usuários não precisam preencher a todas as características.
+ Os usuários não precisam preencher todas as características.
 \end_layout
 
 \begin_layout Standard
@@ -1701,8 +1846,13 @@ feature ':EnvironmentalIndicator', 'extraFeatures': true
 \end_layout
 
 \begin_layout Standard
-O comando tem como argumento uma URI (ou label) que vincula todas as subclasses
- da classe referenciada (Código-fonte 
+O comando tem como argumento uma URI (ou 
+\shape italic
+\lang english
+label
+\shape default
+\lang brazilian
+) que vincula todas as subclasses da classe referenciada (Código-fonte 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Definição-de-Features"
@@ -1728,6 +1878,7 @@ extraFeatures
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 Report
 \end_layout
@@ -1753,8 +1904,14 @@ reference "lis:Definição-da-lógica"
  dos especialistas de domínio.
  A DSL permite desde fórmulas simples, de uma linha, até o uso de bibliotecas
  complexas, chamadas usando a JVM.
- Como a DSL é uma extensão da linguagem Groovy, qualquer comando da linguagem
- pode ser usado nela, incluindo operações lógicas e aritméticas.
+ Como a DSL é uma extensão da linguagem 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+, qualquer comando da linguagem pode ser usado nela, incluindo operações
+ lógicas e aritméticas.
  Para facilitar o trabalho dos especialistas de domínio, recomenda-se encapsular
  qualquer algoritmo ou chamada de função mais complicados em um comando
  simples.
@@ -1784,8 +1941,13 @@ weightedSum(data.':EnvironmentalIndicator')
  calcula a média ponderada de todos os indicadores ambientais fornecidos
  pelo usuário final.
  Esse comando foi criado para simplificar o trabalho dos especialistas.
- Biblioteca de comandos, como essa, podem ser adicionadas ao Framework Decisione
-r ou criados a pedido dos especialistas.
+ Biblioteca de comandos, como essa, podem ser adicionadas ao 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ ou criados a pedido dos especialistas.
 \end_layout
 
 \begin_layout Standard
@@ -1901,15 +2063,43 @@ reference "fig:Matriz-de-sustentabilidade-widget"
 \end_inset
 
 ).
- Para executar esse comando, o DSL Interpreter simplesmente coloca a widget
- 
+ Para executar esse comando, o 
+\shape italic
+\lang english
+DSL Interpreter
+\shape default
+\lang brazilian
+ simplesmente coloca a widget 
 \shape italic
 suatainabilityMatrix
 \shape default
  na UI e passa os valores das variáveis, como atributos.
- A widget vai ser responsável por criar o gráfico.
- Essas widgets gráficas podem ser criadas como Web Components padrão (HTML
- 5) ou componentes do framework Grails (Seção 
+ A 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+ vai ser responsável por criar o gráfico.
+ Essas 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ gráficas podem ser criadas como 
+\shape italic
+\lang english
+web components
+\shape default
+\lang brazilian
+ padrão (HTML 5) ou componentes do 
+\shape italic
+\lang english
+Framework Grails
+\shape default
+\lang brazilian
+ (Seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Web-components"
@@ -1917,8 +2107,19 @@ reference "sec:Web-components"
 \end_inset
 
 ).
- O framework Decisioner vem com um conjunto de widgets predefinidos, mas
- novas podem ser adicionadas.
+ O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ vem com um conjunto de 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ predefinidos, mas novas podem ser adicionadas.
  
 \end_layout
 
@@ -2001,15 +2202,40 @@ ticas gerais dos SAD.
 \end_layout
 
 \begin_layout Standard
-Os elementos gráficos (widgets), seja os que representam as Features ou
- os usados nos relatórios, são implementados como 
+Os elementos gráficos (
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+), seja os que representam as Features ou os usados nos relatórios, são
+ implementados como 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
  HTML 5 ou Grails.
- Isso dá muita flexibilidade ao framework Decisioner.
- A qualquer tempo é possível se acrescentar novas widgets, para novos tipos
- de dados (Features) ou gráficos de relatórios.
+ Isso dá muita flexibilidade ao 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
+ A qualquer tempo é possível se acrescentar novas 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+, para novos tipos de dados (
+\shape italic
+\lang english
+features
+\shape default
+\lang brazilian
+) ou gráficos de relatórios.
  
 \end_layout
 
@@ -2018,25 +2244,43 @@ Editor da DSL
 \end_layout
 
 \begin_layout Standard
-Para suportar a edição da Decisioner DSL, foi implementado um editor textual
- web que permite aos especialistas de sustentabilidade editar e rodar o
- código da DSL.
+Para suportar a edição da 
+\shape italic
+\lang english
+Decisioner DSL
+\shape default
+\lang brazilian
+, foi implementado um editor textual web que permite aos especialistas de
+ sustentabilidade editar e rodar o código da DSL.
  Ele é composto por um editor de código para a DSL, um 
+\shape italic
 \lang english
 button restore
+\shape default
 \lang brazilian
- para carregar novamente a última versão válida da DSL e um 
+ para carregar novamente a última versão válida da DSL e um
+\shape italic
+ 
 \lang english
 button save
+\shape default
 \lang brazilian
- para salvar e carregar a DSL no DSL Interpreter.
+ para salvar e carregar a DSL no 
+\shape italic
+\lang english
+DSL Interpreter
+\shape default
+\lang brazilian
+.
  
 \end_layout
 
 \begin_layout Standard
 O Editor de código foi baseado no 
+\shape italic
 \lang english
 Ace Editor
+\shape default
 \lang brazilian
 
 \begin_inset Foot
@@ -2059,44 +2303,84 @@ ttps://ace.c9.io/
 \end_inset
 
 , que fornece 
+\shape italic
 \lang english
 syntax highlighting
+\shape default
 \lang brazilian
- para várias linguagens de programação, entre elas Groovy.
- Como a DSL foi baseada em Groovy, o editor foi configurado para reconhecer
- a sintaxe de Groovy.
+ para várias linguagens de programação, entre elas 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+.
+ Como a DSL foi baseada em 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+, o editor foi configurado para reconhecer a sintaxe de 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+.
  Também foi ativado o suporte para 
+\shape italic
 \lang english
 code completion
+\shape default
 \lang brazilian
  para fornecer uma experiência de uso mais amigável.
 \end_layout
 
 \begin_layout Standard
 A principal vantagem desse editor é a funcionalidade de salvar a ontologia
- e reconfigurar o SAD imediatamente, permitindo uma experiência em tempo
- real de redefinição do SAD.
+ e reconfigurar o 
+\lang english
+SAD
+\lang brazilian
+ imediatamente, permitindo uma experiência em tempo real de redefinição
+ do 
+\lang english
+SAD
+\lang brazilian
+.
  Se o usuário errar algo, ele pode simplesmente restaurar as configurações
  
+\shape italic
 \lang english
 default
+\shape default
 \lang brazilian
 .
 \end_layout
 
 \begin_layout Standard
 O editor da DSL tem compatibilidade com 
+\shape italic
+\lang english
+web components
+\shape default
+\lang brazilian
+, tanto os fornecidos pelas bibliotecas integradas no 
+\shape italic
+Framework Decisioner
+\shape default
+, como com os 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
-, tanto os fornecidos pelas bibliotecas integradas no Framework Decisioner,
- como com os 
+ do 
+\shape italic
 \lang english
-Web Components
-\lang brazilian
- do Framework 
-\lang english
-Grails
+Framework Grails
+\shape default
 \lang brazilian
  e, adicionalmente, podem ser definidos 
 \lang english
@@ -2189,10 +2473,13 @@ name "sec:Web-components"
 
 \begin_layout Standard
 
+\shape italic
 \lang english
 Web Component
 \lang brazilian
-s 
+s
+\shape default
+ 
 \begin_inset Foot
 status collapsed
 
@@ -2217,67 +2504,199 @@ https://www.webcomponents.org/introduction
 HTML
 \lang brazilian
  personalizadas, reutilizáveis e encapsuladas para o uso em páginas ou aplicaçõe
-s web.
- O Framework Grails também disponibiliza o uso de layout templates para
- implementar partes reusáveis de uma view (página HTML).
- Com essas duas tecnologias, é possível a criação de componentes (ou widgets)
- reusáveis da UI.
+s 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+.
+ O 
+\shape italic
+\lang english
+Framework Grails
+\shape default
+\lang brazilian
+ também disponibiliza o uso de 
+\shape italic
+\lang english
+layout templates
+\shape default
+\lang brazilian
+ para implementar partes reusáveis de uma 
+\shape italic
+\lang english
+view
+\shape default
+\lang brazilian
+ (página 
+\lang english
+HTML
+\lang brazilian
+).
+ Com essas duas tecnologias, é possível a criação de componentes (ou 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+) reusáveis da UI.
  
 \end_layout
 
 \begin_layout Standard
 Para suportar a geração de SADs de tipo avaliação, foi necessário disponibilizar
- vários tipos de widgets que permitissem visualizar e editar diferentes
- tipos de dados.
+ vários tipos de 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ que permitissem visualizar e editar diferentes tipos de dados.
  Para relacionar os 
+\shape italic
 \lang english
 web components
+\shape default
 \lang brazilian
  com o conhecimento dos especialistas, modelou-se na ontologia Decisioner,
  os 
+\shape italic
 \lang english
 data-types
+\shape default
 \lang brazilian
- que permitem relacionar os tipos de dados com widgets específicas (capazes
- de editá-los), usadas nas 
+ que permitem relacionar os tipos de dados com 
+\shape italic
+widgets
+\shape default
+ específicas (capazes de editá-los), usadas nas 
+\shape italic
 \lang english
 web UIs
+\shape default
 \lang brazilian
  dos SADs gerados.
- Os dados das Features dos SADs podem ser de vários tipos e, para cada tipo,
- existe uma widget apropriada para visualiza-o.
+ Os dados das 
+\shape italic
+\lang english
+features
+\shape default
+\lang brazilian
+ dos SADs podem ser de vários tipos e, para cada tipo, existe uma 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+ apropriada para visualiza-o.
  Por exemplo, para representar uma propriedade de tipo numérico discreto
  é possível usar uma widget visual tipo 
+\shape italic
 \lang english
 spinner
+\shape default
 \lang brazilian
 .
 \end_layout
 
 \begin_layout Standard
-Nos relatórios, os especialistas devem contar com widgets para apresentar
- seus resultados em vários formatos, como tabelas, mapas, matriz de sustentabili
-dade, etc.
- Essas widgets podem ser específicas para um tipo de SAD.
- Por isso, além do Framework Decisioner contar com uma biblioteca de widgets
- prontas, deve ser possível adicionar novas widgets facilmente.
- Ao usar padrões, como para Web Components, o framework permite a fácil
- inclusão de widgets novas.
- Não se espera que os especialistas de domínio criem essas widgets, mas
- sim que seja fácil para eles consegui-las de desenvolvedores independentes
- (que só precisam conhecer o padrão para Web Components e os requisitos
- da widget).
+Nos relatórios, os especialistas devem contar com 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ para apresentar seus resultados em vários formatos, como tabelas, mapas,
+ matriz de sustentabilidade, etc.
+ Essas 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ podem ser específicas para um tipo de SAD.
+ Por isso, além do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ contar com uma biblioteca de 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ prontas, deve ser possível adicionar novas 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ facilmente.
+ Ao usar padrões, como 
+\shape italic
+\lang english
+web components
+\shape default
+\lang brazilian
+, o 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ permite a fácil inclusão de 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ novas.
+ Não se espera que os especialistas de domínio criem essas 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+, mas sim que seja fácil para eles consegui-las de desenvolvedores independentes
+ (que só precisam conhecer o padrão para 
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+ e os requisitos da 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+).
  
 \end_layout
 
 \begin_layout Standard
-O Framework Decisioner tem uma biblioteca de 
+O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ tem uma biblioteca de 
+\shape italic
 \lang english
 web components
+\shape default
 \lang brazilian
- (widget) construída usando o
+ construída usando o
 \lang english
- web Framework Bootstrap 
+ 
+\shape italic
+web Framework Bootstrap
+\shape default
+ 
 \lang brazilian
 
 \begin_inset Foot
@@ -2299,17 +2718,33 @@ http://getbootstrap.com/
 
 \end_inset
 
-, que conta com diversos componentes básicos para a geração das Web UI.
+, que conta com diversos componentes básicos para a geração das 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+.
  A maioria deles foi definida usando as 
+\shape italic
 \lang english
 layout templates
+\shape default
 \lang brazilian
- do Framework 
+ do 
+\shape italic
 \lang english
-Grails
+Framework Grails
+\shape default
 \lang brazilian
 , por ser mais fácil de programar.
- Atualmente, apenas dois componentes usam Web Components.
+ Atualmente, apenas dois componentes usam 
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Section
@@ -2320,15 +2755,33 @@ Web UI
 
 \begin_layout Standard
 A 
+\shape italic
 \lang english
 Web UI
+\shape default
 \lang brazilian
- é uma interface web de usuário responsável por toda a interação com o usuário
- final.
+ é uma interface 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ de usuário responsável por toda a interação com o usuário final.
  Ela permite apresentar e editar as informações do SAD, gerar as análises
- e visualizar os resultados na web ou em relatórios impressos.
- O mais importante é que ela é gerada automaticamente pelo DSL Interpreter,
- usando a DSL e ontologias particulares a cada SAD.
+ e visualizar os resultados na 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ ou em relatórios impressos.
+ O mais importante é que ela é gerada automaticamente pelo 
+\shape italic
+\lang english
+DSL Interpreter
+\shape default
+\lang brazilian
+, usando a DSL e ontologias particulares a cada SAD.
  
 \end_layout
 
@@ -2340,13 +2793,52 @@ reference "fig:Web-UI"
 
 \end_inset
 
- apresenta uma Web UI que foi gerada automaticamente, a partir da ontologia
- e das definições na DSL do SAD SustenAgro.
+ apresenta uma 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+ que foi gerada automaticamente, a partir da ontologia e das definições
+ na DSL do SAD SustenAgro.
  Nela são apresentados vários tipos de 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
  que demostram o suporte a diferentes tipos de dados.
+\end_layout
+
+\begin_layout Standard
+Parte da 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+ é igual para todos os SADs, como formulários de 
+\shape italic
+\lang english
+login
+\shape default
+\lang brazilian
+.
+ O resto dela é gerado com a ajuda dos 
+\shape italic
+\lang english
+Web Components
+\shape default
+.
+
+\lang brazilian
+ Eles são relacionadas aos tipos de dados existentes no sistema, por meio
+ da ontologia Decisioner.
+ Por exemplo, dados podem ser dos tipos numérico contínuo, numérico discreto,
+ percentagem, booleano, categóricos ou alfanumérico.
+ Dada essa diversidade, os tipos de dados foram modelados em ontologias
+ com a finalidade de permitir a adaptação automática (ou semiautomática)
+ da interface às mudanças dos conceitos do domínio.
 \end_layout
 
 \begin_layout Standard
@@ -2415,26 +2907,13 @@ fautor
 \end_layout
 
 \begin_layout Standard
-Parte da Web UI é igual para todos os SADs, como formulários de login.
- O resto dela é gerado com a ajuda dos 
-\lang english
-Web Components.
-
-\lang brazilian
- Eles são relacionadas aos tipos de dados existentes no sistema, por meio
- da ontologia Decisioner.
- Por exemplo, dados podem ser dos tipos numérico contínuo, numérico discreto,
- percentagem, booleano, categóricos ou alfanumérico.
- Dada essa diversidade, os tipos de dados foram modelados em ontologias
- com a finalidade de permitir a adaptação automática (ou semiautomática)
- da interface às mudanças dos conceitos do domínio.
-\end_layout
-
-\begin_layout Standard
 Mudanças no layout geral podem ser feitas também por meio da edição das
  
+\shape italic
 \lang english
-Cascading Style Sheets (CSS 
+Cascading Style Sheets
+\shape default
+ (CSS 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CSS"
@@ -2444,12 +2923,35 @@ description "Cascading Style Sheets"
 
 )
 \lang brazilian
- do Decisioner.
+ do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  É esperado que, quando da instalação do sistema, técnicos de informática
  façam uma customização do sistema para adequá-lo aos padrões de apresentação
  da instituição.
- Eles também devem incluir qualquer Web Component (widget) necessário mas
- não disponível por default no Decisioner.
+ Eles também devem incluir qualquer 
+\shape italic
+\lang english
+Web Component (widget)
+\shape default
+\lang brazilian
+ necessário mas não disponível por 
+\shape italic
+\lang english
+default
+\shape default
+\lang brazilian
+ no 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  
 \end_layout
 
@@ -2460,7 +2962,19 @@ DSL Interpreter
 \end_layout
 
 \begin_layout Standard
-O DSL Interpreter é o principal modulo do framework Decisioner.
+O 
+\shape italic
+\lang english
+DSL Interpreter
+\shape default
+\lang brazilian
+ é o principal modulo do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  A sua principal funcionalidade é a interpretação das 
 \lang english
 DSLs
@@ -2468,24 +2982,39 @@ DSLs
 .
  Ele executa cada uma das instruções da DSL, vinculando dados e informação,
  das ontologias ou fornecidos pelos usuários finais, aos 
+\shape italic
 \lang english
 web components
+\shape default
 \lang brazilian
- com a finalidade de gerar as Web 
+ com a finalidade de gerar as 
+\shape italic
 \lang english
-UIs
+Web UIs
+\shape default
 \lang brazilian
 .
 \end_layout
 
 \begin_layout Standard
 Para interagir com os dados da ontologia e apresenta-los na linguagem dos
- especialistas, foi necessário criar, no DSL Interpreter, uma camada de
- consulta de dados na 
+ especialistas, foi necessário criar, no 
+\shape italic
+\lang english
+DSL Interpreter
+\shape default
+\lang brazilian
+, uma camada de consulta de dados na 
+\shape italic
 \lang english
 triplestore
+\shape default
 \lang brazilian
- para simplificar as consultas SPARQL (Figura 
+ para simplificar as consultas 
+\lang english
+SPARQL
+\lang brazilian
+ (Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Arquitetura-do-Decisioner-Core"
@@ -2493,22 +3022,32 @@ reference "fig:Arquitetura-do-Decisioner-Core"
 \end_inset
 
 ).
- Esta camada, Sparql Simplifier, foi desenvolvida como uma solução eficiente
- para a recuperação de informações semânticas de um domínio de conhecimento
- usando um formato simplificado.
+ Esta camada, 
+\shape italic
+\lang english
+Sparql Simplifier
+\shape default
+\lang brazilian
+, foi desenvolvida como uma solução eficiente para a recuperação de informações
+ semânticas de um domínio de conhecimento usando um formato simplificado.
  
 \end_layout
 
 \begin_layout Standard
 O componente 
+\shape italic
 \lang english
 DSL Interpreter
+\shape default
 \lang brazilian
  processa as instruções dos especialistas na linguagem Decisioner DSL.
  Foram utilizadas técnicas padrões para a criação de DSLs usando a linguagem
  
+\shape italic
 \lang english
 Groovy
+\shape default
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dearle2015groovy"
@@ -2525,26 +3064,37 @@ DSLs
 \end_layout
 
 \begin_layout Standard
-Finalmente, o DSL 
+Finalmente, o 
+\shape italic
 \lang english
-Interpreter
+DSL Interpreter
+\shape default
 \lang brazilian
  usa o 
+\shape italic
 \lang english
 UI Renderer
+\shape default
 \lang brazilian
- para renderizar dinamicamente as Web 
+ para renderizar dinamicamente as 
+\shape italic
 \lang english
-UIs
+Web UIs
+\shape default
 \lang brazilian
- usando os Web 
+ usando os 
+\shape italic
 \lang english
-Components.
+Web Components
+\shape default
+.
 
 \lang brazilian
  Esse processo é repetido toda vez que usuários solicitam uma 
+\shape italic
 \lang english
 View
+\shape default
 \lang brazilian
  de um SAD.
  A Figura 
@@ -2554,7 +3104,13 @@ reference "fig:Arquitetura-do-Decisioner-Core"
 
 \end_inset
 
- apresenta o DSL Interpreter e os outros módulos com os quais ele se conecta.
+ apresenta o 
+\shape italic
+\lang english
+DSL Interpreter 
+\shape default
+\lang brazilian
+e os outros módulos com os quais ele se conecta.
 \end_layout
 
 \begin_layout Standard
@@ -2569,7 +3125,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Arquitetura do DSL Interpreter.
+Arquitetura do 
+\shape italic
+\lang english
+DSL Interpreter
+\shape default
+\lang brazilian
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Arquitetura-do-Decisioner-Core"
@@ -2623,14 +3185,23 @@ reference "fig:Arquitetura-do-Decisioner-Core"
  também representa a parte computacional do método proposto nesta pesquisa
  para definir SADs.
  O método consiste em representar o conhecimento dos especialistas em ontologias
- da web semântica e complementar com uma DSL que descreve os conceitos de
- 
+ da 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ semântica e complementar com uma DSL que descreve os conceitos de 
+\shape italic
 \lang english
 evaluation object
+\shape default
 \lang brazilian
  com 
+\shape italic
 \lang english
 features
+\shape default
 \lang brazilian
 , método de avaliação e relatório de resultados, permitindo desta maneira
  definir o SAD por parte dos especialistas.
@@ -2641,25 +3212,47 @@ Considerações finais
 \end_layout
 
 \begin_layout Standard
-Neste capítulo foram apresentados os principais componentes do Framework
- Decisioner, existem características dele como o gerenciamento de usuários
- e segurança que foram desenvolvidos, mas não foram especificados porque
- não contribuíram de maneria relevante ao desenvolvimento da pesquisa.
+Neste capítulo foram apresentados os principais componentes do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+, existem características dele como o gerenciamento de usuários e segurança
+ que foram desenvolvidos, mas não foram especificados porque não contribuíram
+ de maneria relevante ao desenvolvimento da pesquisa.
 \end_layout
 
 \begin_layout Standard
-O desenvolvimento do Framework Decisioner foi realizado simultaneamente
- com o SAD SustenAgro, devido a que era necessário uma instancia para validar
- se as funcionalidades foram implementadas corretamente.
+O desenvolvimento do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ foi realizado simultaneamente com o SAD SustenAgro, devido a que era necessário
+ uma instancia para validar se as funcionalidades foram implementadas corretamen
+te.
  O processo teve dificuldades para separar os dois desenvolvimentos pois
  tinha componentes em comum, que a partir de um processo iterativo, foram
  organizando-se e permitindo separar os dois sistemas.
 \end_layout
 
 \begin_layout Standard
-Não foi possível instanciar outro sistema no Decisioner durante o desenvolviment
-o do mestrado, mas atualmente encontra-se em andamento a implementação do
- SAD Nano-Tec como segunda instanciação do Framework Decisioner.
+Não foi possível instanciar outro sistema no 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ durante o desenvolvimento do mestrado, mas atualmente encontra-se em andamento
+ a implementação do SAD Nano-Tec como segunda instanciação do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  O que permitirá generalizar ainda mais e servir como um caso de uso adicional
  para validar as hipóteses em outros domínios.
  Esta arquitetura foi validada por meio da instanciação do SAD SustenAgro,
@@ -2669,8 +3262,14 @@ o do mestrado, mas atualmente encontra-se em andamento a implementação do
 
 \begin_layout Standard
 No capítulo seguinte será apresentado o SAD SustenAgro, gerado como primeiro
- caso de uso deste Framework, e depois será apresentado o processo de avaliação
- que formaliza a avaliação deste sistema.
+ caso de uso deste 
+\shape italic
+\lang english
+Framework
+\shape default
+\lang brazilian
+, e depois será apresentado o processo de avaliação que formaliza a avaliação
+ deste sistema.
 \end_layout
 
 \end_body

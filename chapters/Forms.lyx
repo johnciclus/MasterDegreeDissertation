@@ -188,8 +188,14 @@ Ingressar no software SustenAgro em http://java.icmc.usp.br:1300/
 \end_layout
 
 \begin_layout Enumerate
-Dar click na opção de 'Inscrever-se' e ingressar no formulário de cadastro
- de novo usuário
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ na opção de 'Inscrever-se' e ingressar no formulário de cadastro de novo
+ usuário
 \end_layout
 
 \begin_layout Enumerate
@@ -210,7 +216,13 @@ Cadastrar uma unidade produtiva:
 \end_layout
 
 \begin_layout Enumerate
-Dar click no link de 'Avaliação'
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no link de 'Avaliação'
 \end_layout
 
 \begin_layout Enumerate
@@ -231,8 +243,13 @@ Preencher dados da avaliação:
 
 \begin_layout Standard
 Se a anterior tarefa foi realizada com sucesso, o sistema vai encaminhá-lo
- ao formulário de nova avaliação, em caso negativo pode dar click no botão
- 'Análises' e 'Nova Análise', para realizar:
+ ao formulário de nova avaliação, em caso negativo pode dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no botão 'Análises' e 'Nova Análise', para realizar:
 \end_layout
 
 \begin_layout Enumerate
@@ -257,8 +274,13 @@ Visualizar os resultados:
 
 \begin_layout Standard
 Se a anterior tarefa foi realizada com sucesso, o sistema vai encaminhá-lo
- a tela de 'Resultados da avaliação', em caso negativo pode dar click no
- botão 'Análises' e selecionar a análise cadastrada, para realizar:
+ a tela de 'Resultados da avaliação', em caso negativo pode dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no botão 'Análises' e selecionar a análise cadastrada, para realizar:
 \end_layout
 
 \begin_layout Enumerate
@@ -302,7 +324,13 @@ Solicitar a atualização por meio do botão 'Atualizar'
 \end_layout
 
 \begin_layout Section
-Formulário de avaliação do Framework Decisioner
+Formulário de avaliação do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Formulário-de-avaliação-Decisioner"
@@ -343,16 +371,45 @@ Cadastrar novo indicador
 \end_layout
 
 \begin_layout Enumerate
-Ingressar com login de administrador no software SustenAgro em http://java.icmc.us
-p.br:1300/
+Ingressar com 
+\shape italic
+\lang english
+login
+\shape default
+\lang brazilian
+ de administrador no 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ SustenAgro em http://java.icmc.usp.br:1300/
 \end_layout
 
 \begin_layout Enumerate
-Dar click no link 'Ontology'
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no link '
+\shape italic
+\lang english
+Ontology
+\shape default
+\lang brazilian
+'
 \end_layout
 
 \begin_layout Enumerate
-Clicar em Feature, Indicador, Indicador de Sustentabilidade e Dimensão Social
+Clicar em 
+\shape italic
+\lang english
+Feature
+\shape default
+\lang brazilian
+, Indicador, Indicador de Sustentabilidade e Dimensão Social
 \end_layout
 
 \begin_layout Standard
@@ -497,12 +554,29 @@ DeforestationIndicator:
 \end_layout
 
 \begin_layout Enumerate
-Dar click na opção “Save”
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ na opção “
+\shape italic
+\lang english
+Save
+\shape default
+\lang brazilian
+”
 \end_layout
 
 \begin_layout Enumerate
-Acrescentar a nova dimensão na DSL, clicando na Aba DSL e no link Main adicionar
- na linha 106 o seguinte código
+Acrescentar a nova dimensão na DSL, clicando na Aba DSL e no 
+\shape italic
+\lang english
+link Main
+\shape default
+\lang brazilian
+ adicionar na linha 106 o seguinte código
 \end_layout
 
 \begin_layout Enumerate
@@ -538,9 +612,21 @@ feature ':AgriculturalIndicator'
 \end_layout
 
 \begin_layout Enumerate
-Dar click na opção “Save” - Procurar o indicador cadastrado na interface
- de Usuário, na tela de Usuário na aba Avaliação selecionar uma Unidade
- Produtiva e ir em Nova Avaliação
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ na opção “
+\shape italic
+\lang english
+Save
+\shape default
+\lang brazilian
+” - Procurar o indicador cadastrado na interface de Usuário, na tela de
+ Usuário na aba Avaliação selecionar uma Unidade Produtiva e ir em Nova
+ Avaliação
 \end_layout
 
 \begin_layout Subsection*
@@ -552,21 +638,63 @@ Editar a fórmula de avaliação
 \end_layout
 
 \begin_layout Enumerate
-Dar click no link 'DSL'
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no 
+\shape italic
+\lang english
+link
+\shape default
+\lang brazilian
+ 'DSL'
 \end_layout
 
 \begin_layout Enumerate
-Procurar o comando Report e editar algum valor da fórmula
+Procurar o comando 
+\shape italic
+\lang english
+Report
+\shape default
+\lang brazilian
+ e editar algum valor da fórmula
 \end_layout
 
 \begin_layout Enumerate
-Dar click na opção “Save”
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ na opção “
+\shape italic
+\lang english
+Save
+\shape default
+\lang brazilian
+”
 \end_layout
 
 \begin_layout Enumerate
 Visualizar os índices de uma avaliação cadastrada no sistema por meio da
- aba Report, na tela de Usuário na aba Avaliação selecionar uma Unidade
- Produtiva, selecionar uma Avaliação e um Report ligado a ela.
+ aba 
+\shape italic
+\lang english
+Report
+\shape default
+\lang brazilian
+, na tela de Usuário na aba Avaliação selecionar uma Unidade Produtiva,
+ selecionar uma Avaliação e um 
+\shape italic
+\lang english
+Report
+\shape default
+\lang brazilian
+ ligado a ela.
 \end_layout
 
 \begin_layout Subsection*
@@ -574,29 +702,73 @@ Tarefa 3
 \end_layout
 
 \begin_layout Standard
-Editar os limiares das widgets matriz e semáforo de avaliação
+Editar os limiares das 
+\shape italic
+\lang english
+widgets
+\shape default
+\lang brazilian
+ matriz e semáforo de avaliação
 \end_layout
 
 \begin_layout Enumerate
-Dar click no link 'DSL'
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no link 
+\lang english
+'DSL'
 \end_layout
 
 \begin_layout Enumerate
-Procurar o comando sustainabilityMatrix e editar o valor de range_x
+Procurar o comando 
+\shape italic
+\lang english
+sustainabilityMatrix
+\shape default
+\lang brazilian
+ e editar o valor de range_x
 \end_layout
 
 \begin_layout Enumerate
-Procurar o comando sustainabilitySemaphore e editar o valor de range
+Procurar o comando 
+\shape italic
+\lang english
+sustainabilitySemaphore
+\shape default
+\lang brazilian
+ e editar o valor de range
 \end_layout
 
 \begin_layout Enumerate
-Dar click na opção “Save”
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ na opção “
+\shape italic
+\lang english
+Save
+\shape default
+\lang brazilian
+”
 \end_layout
 
 \begin_layout Enumerate
 Visualizar os índices de uma avaliação cadastrada no sistema, na tela de
  Usuário na aba Avaliação selecionar uma Unidade Produtiva, selecionar uma
- Avaliação e um Report ligado a ela
+ Avaliação e um 
+\shape italic
+\lang english
+Report
+\shape default
+\lang brazilian
+ ligado a ela
 \end_layout
 
 \begin_layout Subsection*
@@ -604,27 +776,84 @@ Tarefa 4
 \end_layout
 
 \begin_layout Standard
-Editar uma View
+Editar uma 
+\shape italic
+\lang english
+View
 \end_layout
 
 \begin_layout Enumerate
-Dar click no link 'Views'
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no 
+\shape italic
+\lang english
+link
+\shape default
+\lang brazilian
+ 
+\shape italic
+\lang english
+'Views'
 \end_layout
 
 \begin_layout Enumerate
-Selecionar uma a view de contact
+Selecionar uma a 
+\shape italic
+\lang english
+view
+\shape default
+\lang brazilian
+ de 
+\shape italic
+\lang english
+contact
 \end_layout
 
 \begin_layout Enumerate
-Editar o título da view por meio do comando pageHeader
+Editar o título da 
+\shape italic
+\lang english
+view
+\shape default
+\lang brazilian
+ por meio do comando 
+\shape italic
+\lang english
+pageHeader
 \end_layout
 
 \begin_layout Enumerate
-Dar click na opção “Save”
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ na opção “
+\shape italic
+\lang english
+Save
+\shape default
+\lang brazilian
+”
 \end_layout
 
 \begin_layout Enumerate
-Visualizar a view na interface do Usuário por meio do link Contact
+Visualizar a 
+\shape italic
+\lang english
+view
+\shape default
+\lang brazilian
+ na interface do Usuário por meio do link 
+\shape italic
+\lang english
+Contact
 \end_layout
 
 \begin_layout Subsection*
@@ -632,31 +861,88 @@ Tarefa 5
 \end_layout
 
 \begin_layout Standard
-Editar labels das internationalizations
+Editar 
+\shape italic
+\lang english
+labels
+\shape default
+\lang brazilian
+ das 
+\shape italic
+\lang english
+internationalizations
 \end_layout
 
 \begin_layout Enumerate
-Dar click no link 'Internationalization'
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ no link 
+\shape italic
+\lang english
+internationalization
 \end_layout
 
 \begin_layout Enumerate
-Seleccionar ingles
+Selecionar inglês
 \end_layout
 
 \begin_layout Enumerate
-Editar o texto de um label
+Editar o texto de um 
+\shape italic
+\lang english
+label
 \end_layout
 
 \begin_layout Enumerate
-Dar click na opção “Save”
+Dar 
+\shape italic
+\lang english
+click
+\shape default
+\lang brazilian
+ na opção “
+\shape italic
+\lang english
+Save
+\shape default
+\lang brazilian
+”
 \end_layout
 
 \begin_layout Enumerate
-Visualizar uma view que faça uso do label editado na interface do Usuário
+Visualizar uma 
+\shape italic
+\lang english
+view
+\shape default
+\lang brazilian
+ que faça uso do 
+\shape italic
+\lang english
+label
+\shape default
+\lang brazilian
+ editado na interface do Usuário
 \end_layout
 
 \begin_layout Section
-Formulário Delphi para Workshop SustenAgro
+Formulário 
+\shape italic
+\lang english
+Delphi
+\shape default
+\lang brazilian
+ para 
+\shape italic
+\lang english
+Workshop
+\shape default
+\lang brazilian
+ SustenAgro
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Formulario-Delphi-Workshop"

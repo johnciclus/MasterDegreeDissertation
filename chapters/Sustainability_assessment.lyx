@@ -156,8 +156,10 @@ key "ONU2012"
 \end_inset
 
 , após do relatório 
+\shape italic
 \lang english
 Brundtland
+\shape default
 \lang brazilian
  a ênfase do conceito desloca-se da integridade ambiental para o elemento
  humano, gerando um equilíbrio entre as dimensões econômica, social e ambiental
@@ -275,8 +277,13 @@ key "oliveira:2013"
 
 \begin_layout Standard
 No caso do sistema SustenAgro determinou-se pela equipe de especialistas
- em sustentabilidade fazer uma divisão segundo a proposta do Relatório Brundtlan
-d 
+ em sustentabilidade fazer uma divisão segundo a proposta do relatório 
+\shape italic
+\lang english
+Brundtland
+\shape default
+\lang brazilian
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "brundtland1987our"
@@ -354,7 +361,18 @@ name "fig:sustainability_spheres"
 \end_layout
 
 \begin_layout Plain Layout
-Fonte: http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
+Fonte: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.vanderbilt.edu/sustainvu/cms/files/sustainability_spheres.png
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -448,7 +466,7 @@ Método SustenAgro
 \end_layout
 
 \begin_layout Standard
-O método SustenAgro foi construído a partir de indicadores de sustentabilidade
+O método SustenAgro foi construído a partir dos indicadores de sustentabilidade
  identificados pela equipe do projeto SustenAgro e consiste em uma formula
  que quantifica os indicadores com a finalidade de suportar o processo de
  avaliação da sustentabilidade.
@@ -459,18 +477,18 @@ O método SustenAgro foi construído a partir de indicadores de sustentabilidade
 Ditos indicadores foram validados por meio da técnica Delphi de consultas
  aos especialistas 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "wright2006"
 
 \end_inset
 
-, esta técnica realiza uma consulta remota aos especialistas e compreende
- rodada de consultas a publico com perfil amplo para definir conceitos gerais
- entre os especialistas.
+, esta técnica realiza uma consulta remota e compreende rodada de consultas
+ ao publico com perfil amplo para definir conceitos gerais entre os especialista
+s.
 \end_layout
 
 \begin_layout Standard
-O método foi liderado pela pesquisadora Dra.
+O desenvolvimento do método foi liderado pela pesquisadora Dra.
  Katia Regina Evaristo de Jesus da Embrapa Meio Ambiente, e a especificação
  dele é produção intelectual restrita da Embrapa Meio Ambiente.
 \end_layout

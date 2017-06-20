@@ -134,8 +134,11 @@ A instalação dos Sistemas Decisioner e SustenAgro divide-se em dois processos,
 deploy
 \lang brazilian
  do arquivo 
+\shape italic
 \lang english
-Web Application Archive (WAR
+Web Application Archive
+\shape default
+ (WAR
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "WAR"
@@ -154,47 +157,51 @@ Configuração do servidor
 \end_layout
 
 \begin_layout Standard
-Esta fase do processo consiste em instalar as tecnologias Java, Apache 
+Esta fase do processo consiste em instalar as tecnologias 
+\shape italic
 \lang english
-Tomcat
+Java, Apache Tomcat, WkHtmltoPdf 
+\shape default
 \lang brazilian
-, 
-\lang english
-WkHtmltoPdf
-\lang brazilian
- e a 
+e a 
+\shape italic
 \lang english
 triplestore
 \lang brazilian
  
 \lang english
 Blazegraph
+\shape default
 \lang brazilian
 , em um servidor baseado em 
+\shape italic
 \lang english
 linux
+\shape default
 \lang brazilian
 .
  Atualmente o sistema foi configurado e testado em uma máquina virtual com
- Ubuntu 14.04, Java 
+ Ubuntu 14.04, 
+\shape italic
 \lang english
-OpenJDK
+Java OpenJDK
+\shape default
 \lang brazilian
- 8, Apache 
+ 8, 
+\shape italic
 \lang english
-Tomcat
-\lang brazilian
-, 
-\lang english
-WkHtmltoPdf
+Apache Tomcat, WkHtmltoPdf
+\shape default
 \lang brazilian
  0.12.3 e a 
+\shape italic
 \lang english
 triplestore
 \lang brazilian
  
 \lang english
 Blazegraph
+\shape default
 \lang brazilian
  2.1.0.
  A instalação destas tecnologias segue uma orientação padrão que será descrita
@@ -206,9 +213,15 @@ Instalação do Java
 \end_layout
 
 \begin_layout Standard
-Segundo a documentação de Java 
+Segundo a documentação de 
+\shape italic
+\lang english
+Java
+\lang brazilian
+ 
 \lang english
 OpenJDK
+\shape default
 \lang brazilian
 , a instalação é realizada pelo comando:
 \end_layout
@@ -260,22 +273,35 @@ sudo apt-get install openjdk-8-jre
 
 \begin_layout Subsection*
 Instalação do 
+\shape italic
 \lang english
 Apache Tomcat
 \end_layout
 
 \begin_layout Standard
 A instalação do 
+\shape italic
 \lang english
 Apache Tomcat
+\shape default
 \lang brazilian
- depende da instalação do Java 8, e o 
+ depende da instalação do 
+\shape italic
 \lang english
-Tomcat
+Java
+\shape default
+\lang brazilian
+ 8, e o 
+\shape italic
+\lang english
+Apache Tomcat
+\shape default
 \lang brazilian
  versão 7 para suportar a compatibilidade do 
+\shape italic
 \lang english
-War
+WAR
+\shape default
 \lang brazilian
  gerado, isto é documentado no site
 \begin_inset Foot
@@ -287,34 +313,49 @@ https://grails.org/wiki/Deployment
 
 \end_inset
 
- do framework 
+ do 
+\shape italic
 \lang english
-Grails
+Framework Grails
+\shape default
 \lang brazilian
 , que exige uma versão 7 de 
+\shape italic
 \lang english
 Apache Tomcat
+\shape default
 \lang brazilian
  para suportar o 
+\shape italic
 \lang english
 deploy
+\shape default
 \lang brazilian
  dos arquivos 
+\shape italic
 \lang english
 WAR
+\shape default
 \lang brazilian
 .
 \end_layout
 
 \begin_layout Standard
-O processo de instalação consiste em fazer download dos arquivos binários,
- extrair eles em 
+O processo de instalação consiste em fazer 
+\shape italic
+\lang english
+download
+\shape default
+\lang brazilian
+ dos arquivos binários, extrair eles em 
 \lang english
 /opt/tomcat/
 \lang brazilian
 , exportar as variáveis de entorno e executar o 
+\shape italic
 \lang english
 Web Server
+\shape default
 \lang brazilian
 , com código:
 \end_layout
@@ -384,18 +425,28 @@ sudo /opt/tomcat/bin/startup.sh
 
 \begin_layout Standard
 Configurar 
+\shape italic
 \lang english
 users
+\shape default
 \lang brazilian
  de 
+\shape italic
 \lang english
 Tomcat
+\shape default
 \lang brazilian
  em: 
 \lang english
 /opt/tomcat/conf/tomcat-users.xml 
 \lang brazilian
-e acrescentar os Rol e 
+e acrescentar os 
+\shape italic
+\lang english
+Role
+\shape default
+\lang brazilian
+ e 
 \lang english
 User
 \end_layout
@@ -496,7 +547,10 @@ export CATALINA_HOME=/opt/tomcat
 \end_layout
 
 \begin_layout Standard
-Finalmente executar o comando, e verificar a execução do programa na URL
+Finalmente executar o comando, e verificar a execução do programa na 
+\lang english
+URL
+\lang brazilian
  /manager do domínio do servidor
 \end_layout
 
@@ -543,16 +597,21 @@ WkHtmltoPdf
 
 \begin_layout Standard
 A tecnologia 
+\shape italic
 \lang english
 WkHtmltoPdf
+\shape default
 \lang brazilian
  permite converter páginas web em formato 
 \lang english
 HTML
 \lang brazilian
  a 
+\shape italic
 \lang english
-Portable Document Format (PDF
+Portable Document Format 
+\shape default
+(PDF
 \lang brazilian
 
 \begin_inset CommandInset nomenclature
@@ -564,8 +623,13 @@ description "Portable Document Format"
 
 ), suportando a funcionalidade de gerar os reportes em formato PDF.
  A instalação consiste em fazer download dos arquivos binários e a configuração
- de um X Server Virual para suportar o renderizado, os comandos são mostrados
- a continuação:
+ de um 
+\shape italic
+\lang english
+X Server Virtual
+\shape default
+\lang brazilian
+ para suportar o renderizado, os comandos são mostrados a continuação:
 \end_layout
 
 \begin_layout Standard
@@ -655,8 +719,11 @@ sudo apt-get install openssl build-essential xorg libssl-dev
 
 \begin_layout Standard
 Depois disto é criado um 
+\shape italic
 \lang english
-script wkhtmltopdf.sh
+script
+\shape default
+ wkhtmltopdf.sh
 \lang brazilian
  em 
 \lang english
@@ -719,19 +786,24 @@ PDF
 
 \begin_layout Subsubsection*
 Instalação da 
+\shape italic
 \lang english
 Triplestore Blazegraph
 \end_layout
 
 \begin_layout Standard
 A instalação do 
+\shape italic
 \lang english
 Blazegraph
+\shape default
 \lang brazilian
  consiste em fazer download do arquivo binário e executar com o arquivo
  de configuração RWStore2.properties o serviço de 
+\shape italic
 \lang english
 triplestore
+\shape default
 \lang brazilian
 .
 \end_layout
@@ -813,8 +885,10 @@ java -server -Xmx4g -Dbigdata.propertyFile=RWStore2.properties
 
 \begin_layout Section
 
+\shape italic
 \lang english
 Deploy
+\shape default
 \lang brazilian
  do arquivo 
 \lang english
@@ -823,28 +897,46 @@ WAR
 
 \begin_layout Standard
 O 
+\shape italic
 \lang english
 deploy
+\shape default
 \lang brazilian
  do sistema consiste em executar os serviços do 
+\shape italic
 \lang english
 Tomcat
+\shape default
 \lang brazilian
  7 e 
+\shape italic
 \lang english
 Triplestore
+\shape default
 \lang brazilian
 , e fazer 
+\shape italic
 \lang english
 upload
+\shape default
 \lang brazilian
- do arquivo SustenAgro-1.0.war ao servidor Apache Tomcat para fazer o 
+ do arquivo SustenAgro-1.0.war ao servidor 
+\shape italic
+\lang english
+Apache Tomcat
+\shape default
+\lang brazilian
+ para fazer o 
+\shape italic
 \lang english
 deploy
+\shape default
 \lang brazilian
  no 
+\shape italic
 \lang english
 path
+\shape default
 \lang brazilian
  
 \begin_inset Quotes eld
@@ -855,8 +947,10 @@ path
 \end_inset
 
 , e finalmente reiniciar o 
+\shape italic
 \lang english
-Tomcat
+Apache Tomcat
+\shape default
 \lang brazilian
 .
 \end_layout

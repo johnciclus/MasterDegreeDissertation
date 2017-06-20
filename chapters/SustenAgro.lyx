@@ -75,19 +75,42 @@
 \begin_body
 
 \begin_layout Standard
-O Framework Decisioner organiza e gerencia os componentes gerais dos SADs
- de avaliação.
+O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ organiza e gerencia os componentes gerais dos SADs de avaliação.
  Cada SAD tem particularidades que precisam ser definidas e ajustadas para
- configurar suas funcionalidades.
+ configurar as funcionalidades.
  As ontologias específicas do domínio e as DSL, explicadas nos capítulos
  anteriores fornecem o meio de definição dessas particularidades.
  
 \end_layout
 
 \begin_layout Standard
-O SAD SustenAgro foi usado como a primeira instanciação do Framework Decisioner.
+O SAD SustenAgro foi usado como a primeira instanciação do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  Ele é composto por uma ontologia de domínio, DSL e elementos gráficos de
- design (ícones, imgens de fundo, etc.) que permitem instanciá-lo no Decisioner.
+ 
+\shape italic
+\lang english
+design
+\shape default
+\lang brazilian
+ (ícones, imgens de fundo, etc.) que permitem instanciá-lo no 
+\shape italic
+\lang english
+Decisioner
+\shape default
+\lang brazilian
+.
  Sendo seu principal componente a ontologia do domínio de avaliação da sustentab
 ilidade da produção de cana-de-açucar na região centro-sul do Brasil.
 \end_layout
@@ -105,19 +128,52 @@ Arquitetura do SustenAgro
 
 \begin_layout Standard
 O SAD SustenAgro serviu de base para modelar e desenvolver os componentes
- que fazem parte do Framework Decisioner.
+ que fazem parte do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  Por isso, o processo real de desenvolvimento dele foi muito mais complicado
- que uma simples instanciação de um framework.
+ que uma simples instanciação de um 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+.
  Ele envolveu diversas iterações para determinar o que deveria ser implementado
- como parte do Framework Decisioner e como parte do SAD.
- Para simplificar o texto e facilitar o entendimento de como o Framework
- Decisioner é usado para instanciar um SAD, as diversas versões do framework
+ como parte do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ e como parte do SAD.
+ Para simplificar o texto e facilitar o entendimento de como o 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ é usado para instanciar um SAD, as diversas versões do 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
  não serão discutidas.
 \end_layout
 
 \begin_layout Standard
-A arquitetura de um SAD implementado usando o Framework Decisioner tem os
- seguintes componentes:
+A arquitetura de um SAD implementado usando o 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ tem os seguintes componentes:
 \end_layout
 
 \begin_layout Enumerate
@@ -133,14 +189,18 @@ Ontologia do domínio: ontologia que representa os conceitos do domínio.
 \begin_layout Enumerate
 DSL: programa descrevendo a configuração e comportamento do SAD.
  Ele especifica as 
+\shape italic
 \lang english
 features
+\shape default
 \lang brazilian
  do domínio a serem usadas, as fórmulas do modelo e o aspecto e estrutura
  do relatório a ser gerado.
  No caso do SustenAgro, as 
+\shape italic
 \lang english
 features
+\shape default
 \lang brazilian
  são os indicadores, as formulas calculam os índices de sustentabilidade
  e produtividade, e o relatório usa a Matriz e o Semáforo de Sustentabilidade.
@@ -148,25 +208,58 @@ features
 
 \begin_layout Enumerate
 
+\shape italic
 \lang english
 Web components
+\shape default
 \lang brazilian
 : o SustenAgro usa dois 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
- específicos (além das oferecidas pelo Decisioner): a Matriz de Sustentabilidade
+ específicos (além das fornecidas por padrão): a Matriz de Sustentabilidade
  e o Semáforo de Sustentabilidade.
- Ambas são implementadas usando a biblioteca Polymer da Google.
+ Ambas são implementadas usando a biblioteca 
+\shape italic
+\lang english
+Polymer
+\shape default
+\lang brazilian
+ da 
+\shape italic
+\lang english
+Google
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Enumerate
-Imagens e layout: Um conjunto de imagens e arquivos de layout (css) compõem
- o 
+Imagens e 
+\shape italic
+\lang english
+layout
+\shape default
+\lang brazilian
+: Um conjunto de imagens e arquivos de 
+\shape italic
+\lang english
+layout
+\shape default
+\lang brazilian
+ (
+\lang english
+css
+\lang brazilian
+) compõem o 
+\shape italic
 \lang english
 look-and-feel
+\shape default
 \lang brazilian
- específico do SAD, incluindo seu logo.
+ específico do SAD, incluindo o logo de cada SAD.
 \end_layout
 
 \begin_layout Section
@@ -201,7 +294,13 @@ O desenvolvimento da ontologia depende essencialmente da comunicação entre
 
 \begin_layout Standard
 Um dos meios, que permitiu uma melhor comunicação, foi o desenvolvimento
- de um mapa conceitual, por meio da ferramenta Cmap Tools
+ de um mapa conceitual, por meio da ferramenta 
+\shape italic
+\lang english
+Cmap Tools
+\shape default
+\lang brazilian
+
 \begin_inset Foot
 status collapsed
 
@@ -227,9 +326,8 @@ OWL,
 \begin_layout Standard
 Após realizada a modelagem, o especialista do domínio definiu perguntas
  de interesse, com as quais os modeladores (o autor e um colega de mestrado)
- definiram consultas que o sistema deveria responder segundo os resultados
- esperados, conseguindo validar e ajustar o modelo até ter um protótipo
- confiável.
+ definiram consultas que o sistema deveria responder, a partir dos resultados
+ resultantes foi validado e ajustado o modelo até ter um protótipo confiável.
 \end_layout
 
 \begin_layout Standard
@@ -303,14 +401,15 @@ fautor
 
 \begin_layout Standard
 Um aspecto importante das ontologias é que elas fornecem um formato que
- adapta-se às mudanças do domínio e permite separar o conhecimento dos outros
- componentes do sistema.
+ adapta-se às mudanças do domínio e permite separar o conhecimento dos especiali
+stas dos outros componentes do sistema.
 \end_layout
 
 \begin_layout Standard
-A metodologia, que direcionou o desenvolvimento do SAD SustenAgro, foi 
+A metodologia, que direcionou o desenvolvimento do SAD SustenAgro, foi a
+ 
 \lang english
-a SCRUM
+SCRUM
 \lang brazilian
  
 \begin_inset CommandInset citation
@@ -336,16 +435,22 @@ name "A-metodologia-de-UI"
 \end_inset
 
 A metodologia de desenvolvimento dos 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
  e das 
+\shape italic
 \lang english
 Web UI
+\shape default
 \lang brazilian
  tiveram um enfoque baseado em 
+\shape italic
 \lang english
 User Centered Design
+\shape default
 \lang brazilian
 .
  A avaliação foi realizada integradamente para validar os requisitos.
@@ -354,43 +459,62 @@ User Centered Design
 
 \begin_layout Standard
 O processo de design das 
+\shape italic
 \lang english
 web UI
+\shape default
 \lang brazilian
  incluiu as seguintes etapas de levantamento de requisitos:
 \end_layout
 
 \begin_layout Enumerate
 Descrição de 
+\shape italic
 \lang english
-User Stories:
+User Stories
+\shape default
+:
 \lang brazilian
  técnica de desenvolvimento ágil que permite descrever características do
- software desde a perspectiva do usuário.
+ 
+\shape italic
+\lang english
+software
+\shape default
+\lang brazilian
+ desde a perspectiva do usuário.
  Ela fornece uma identificação dos usuários, das funcionalidades e explica
- o porque uma dita funcionalidade é necessária.
+ o porque cada funcionalidade é necessária.
  
 \end_layout
 
 \begin_layout Enumerate
 Descrição de 
+\shape italic
 \lang english
-Scenarios:
+Scenarios
+\shape default
+:
 \lang brazilian
  técnica de desenvolvimento ágil que permite descrever detalhadamente as
  características das 
+\shape italic
 \lang english
 user stories
+\shape default
 \lang brazilian
 .
 \end_layout
 
 \begin_layout Enumerate
 Descrição de 
+\shape italic
 \lang english
 Storyboard
 \emph on
-s:
+s
+\shape default
+:
 \emph default
 \lang brazilian
  descreve cada uma das interações do usuário com o sistema em uma determinada
@@ -399,32 +523,49 @@ s:
 
 \begin_layout Enumerate
 Descrição de 
-\emph on
+\shape italic
 \lang english
-Mockups:
+Mockups
+\shape default
+\emph on
+:
 \emph default
 \lang brazilian
- design do esboço da interface gráfica do sistema.
+ 
+\shape italic
+\lang english
+design
+\shape default
+\lang brazilian
+ do esboço da interface gráfica do sistema.
  Eles foram analisados pelos especialistas da Embrapa, para avaliar se atendiam
  às funcionalidades básicas descritas no levantamento dos requisitos.
 \end_layout
 
 \begin_layout Enumerate
 Desenvolvimento de protótipo visual: A partir da validação dos 
+\shape italic
 \lang english
-Mockups,
+Mockups
+\shape default
+,
 \lang brazilian
  foi desenvolvido um protótipo da interface gráfica, com a finalidade de
- que os especialistas do domínio avaliassem se as interfaces cumpriam com
- os requisitos.
+ que os especialistas do domínio avaliassem se as interfaces cumprem os
+ requisitos.
 \end_layout
 
 \begin_layout Standard
 Cada uma dessas etapas de desenvolvimento, foram realizadas sempre em parceria
  com os especialistas do domínio.
  Isso foi importante para realizar o levantamento correto de requisitos
- tanto das web UI como das funcionalidades do SAD, identificadas a partir
- destas técnicas.
+ tanto das 
+\shape italic
+\lang english
+web UI
+\shape default
+\lang brazilian
+ como das funcionalidades do SAD, identificadas a partir destas técnicas.
  Todo esse processo foi necessário pois não existia uma definição especifica
  do que os especialistas precisavam.
 \end_layout
@@ -474,7 +615,7 @@ Deve-se destacar que a ontologia SustenAgro abrange um domínio bem específico;
  sustentabilidade de sistemas produtivos de cana-de-açúcar na região centro-sul
  do Brasil.
  Acreditamos que essa é uma característica deste tipo de SAD.
- Modelamentos desse tipo tendem a ser específicos.
+ Modelagens desse tipo tendem a ser específicos.
  No caso do SustenAgro, ele abrange apenas um só sistema produtivo em uma
  região específica.
 \end_layout
@@ -488,7 +629,7 @@ reference "fig:ontology-conceptual-map"
 \end_inset
 
  representa um mapa conceitual com os principais conceitos modelados no
- SustenAgro e como eles estão relacionados entre si.
+ SAD SustenAgro e como eles estão relacionados entre si.
  As etiquetas, em cada relação dos conceitos, permitem identificar a relação
  entre os dois conceitos.
 \end_layout
@@ -588,8 +729,10 @@ http://protege.stanford.edu/
 RDF
 \lang brazilian
 , para ser compatível com sistemas 
+\shape italic
 \lang english
 triple-stores
+\shape default
 \lang brazilian
  (Seção 
 \begin_inset CommandInset ref
@@ -611,19 +754,27 @@ key "allemang2011semantic"
 
 \begin_layout Standard
 
+\shape italic
 \lang english
 Triplestores
+\shape default
 \lang brazilian
  suportam a realização de consultas complexas para permitir a resposta a
  perguntas de interesse aos usuários do sistema.
  Essa caraterística permite a recuperação da informação com significado
  semântico, permitindo que os sistemas deem respostas às consultas complexas
  de interesse.
- Também o RDF suporta a integração de conhecimento externo existente em
- formatos da web semântica, como são vários sistemas de representação do
- conhecimento como dicionários, 
+ Também o 
+\lang english
+RDF
+\lang brazilian
+ suporta a integração de conhecimento externo existente em formatos da web
+ semântica, como são vários sistemas de representação do conhecimento como
+ dicionários, 
+\shape italic
 \lang english
 thesaurus
+\shape default
 \lang brazilian
  e redes semânticas, o que permite aumentar as possibilidades de desenvolvimento
  de novas funcionalidades
@@ -651,9 +802,14 @@ reference "fig:Modelagem-do-SAD"
 
 ).
  Ela inclui a ontologia Decisioner e define conceitos gerais dos SADs.
- Isso é obrigatório, pois o código do framework Decisioner entende os conceitos
- da ontologia SustenAgro apenas porque eles também são conceitos válidos
- derivados da ontologia Decisioner.
+ Isso é obrigatório, pois o código do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ entende os conceitos da ontologia SustenAgro apenas porque eles também
+ são conceitos válidos derivados da ontologia Decisioner.
  Exemplos de conceitos/classes modelados são: 
 \shape italic
 \lang english
@@ -703,9 +859,11 @@ Nas próximas seções, serão apresentadas as principais classes modeladas
 \end_layout
 
 \begin_layout Subsection*
-
+Classe
 \lang english
-Classe Production Unit
+ 
+\shape italic
+Production Unit
 \end_layout
 
 \begin_layout Standard
@@ -761,8 +919,10 @@ reference "fig:Modelagem-unidade-produtiva"
 \end_inset
 
  apresenta a modelagem da classe 
+\shape italic
 \lang english
 Production Unit
+\shape default
 \lang brazilian
 , feita na ferramenta Protégé.
 \end_layout
@@ -780,7 +940,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modelagem da classe de unidade produtiva (ProductionUnity).
+Modelagem da classe de unidade produtiva (
+\shape italic
+\lang english
+ProductionUnit
+\shape default
+\lang brazilian
+).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -825,19 +991,24 @@ fautor
 \end_layout
 
 \begin_layout Subsection*
-
+Subclasse 
+\shape italic
 \lang english
-Subclasses of Categorical
+Categorical
 \end_layout
 
 \begin_layout Standard
 A classe 
+\shape italic
 \lang english
 Categorical
+\shape default
 \lang brazilian
  representa os possíveis 
+\shape italic
 \lang english
 Value
+\shape default
 \lang brazilian
  discretos que um 
 \shape italic
@@ -847,18 +1018,40 @@ Indicator
 \lang brazilian
  pode ter na forma de categorias (por exemplo, Existe e Não Existe).
  Um 
+\shape italic
 \lang english
 Value
+\shape default
 \lang brazilian
- também pode ser Real ou Inteiro.
- A classe Categorical é definida na ontologia Decisioner, mas a SustenAgro
- cria diversas classes filhas para definir uma série de valores categóricos.
+ também pode ser 
+\shape italic
+\lang english
+Real
+\shape default
+\lang brazilian
+ ou 
+\shape italic
+\lang english
+Integer
+\shape default
+\lang brazilian
+.
+ A classe 
+\shape italic
+\lang english
+Categorical
+\shape default
+\lang brazilian
+ é definida na ontologia Decisioner, mas a SustenAgro cria diversas classes
+ filhas para definir uma série de valores categóricos.
 \end_layout
 
 \begin_layout Standard
 Cada subclasse de 
+\shape italic
 \lang english
 Categorical
+\shape default
 \lang brazilian
  é composta por um conjunto finito de elementos ou valores.
  Cada valor é modelado como indivíduo da classe, permitindo assim, restringir
@@ -900,10 +1093,18 @@ Yes/No
 \lang brazilian
  que representa os valores de sim e não e é composta pela lista de instâncias
  
+\shape italic
 \lang english
 Yes
+\shape default
 \lang brazilian
- e No.
+ e 
+\shape italic
+\lang english
+No
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -1008,9 +1209,11 @@ Value
 \end_layout
 
 \begin_layout Subsection*
-
+Classe 
+\shape italic
 \lang english
-Classe Microregion
+Microregion
+\shape default
 \lang brazilian
  
 \end_layout
@@ -1022,8 +1225,10 @@ Representam os locais onde são localizadas as unidades produtivas.
  Atualmente, a ontologia tem os 7 estados pertencentes ao centro-sul do
  Brasil e as 243 microrregiões dentro desses estados.
  Esses dados foram originalmente obtidos por consulta SPARQL à 
+\shape italic
 \lang english
 DBpedia
+\shape default
 \lang brazilian
  e integrados à ontologia.
 \end_layout
@@ -1103,9 +1308,10 @@ fautor
 \end_layout
 
 \begin_layout Subsection*
-
+Classe 
+\shape italic
 \lang english
-Classe Indicator
+Indicator
 \end_layout
 
 \begin_layout Standard
@@ -1146,12 +1352,16 @@ reference "fig:Modelagem-de-Indicador"
 \end_inset
 
  apresenta a hierarquia dos indicadores, que está subdividida em 
+\shape italic
 \lang english
 Efficiency Indicator
+\shape default
 \lang brazilian
  e 
+\shape italic
 \lang english
 Sustainability Indicator
+\shape default
 \lang brazilian
 .
  A propriedade 
@@ -1161,16 +1371,18 @@ has value
 \shape default
 \lang brazilian
  usa instâncias da classe 
-\emph on
+\shape italic
 \lang english
 Value
-\emph default
+\shape default
 \lang brazilian
  para quantificar a sustentabilidade.
  Instâncias de 
 \shape italic
+\lang english
 Value
 \shape default
+\lang brazilian
  representam as opções de resposta que os usuários têm para cada indicador
 \shape italic
 .
@@ -1320,8 +1532,10 @@ A dimensão de indicadores ambientais, é composta dos seguintes conceitos:
 
 \begin_layout Itemize
 Atributo solo (
+\shape italic
 \lang english
 Soil Attribute
+\shape default
 \lang brazilian
 ): indicadores que avaliam os aspectos referentes às características do
  solo.
@@ -1329,8 +1543,10 @@ Soil Attribute
 
 \begin_layout Itemize
 Atributo hídrico (
+\shape italic
 \lang english
 Hydric Attribute
+\shape default
 \lang brazilian
 ): indicadores que avaliam os aspectos referentes à disponibilidade e qualidade
  das fontes hídricas.
@@ -1338,8 +1554,10 @@ Hydric Attribute
 
 \begin_layout Itemize
 Atributo clima (
+\shape italic
 \lang english
 Weather Attribute
+\shape default
 \lang brazilian
 ): indicadores que avaliam os aspectos climáticos.
 \end_layout
@@ -1376,24 +1594,30 @@ A dimensão social está composta dos seguintes conceitos:
 
 \begin_layout Itemize
 Atributo emprego e renda (
+\shape italic
 \lang english
 Employment and Income Attribute
+\shape default
 \lang brazilian
 ): indicadores que avaliam os aspectos referentes à mão de obra.
 \end_layout
 
 \begin_layout Itemize
 Atributo saúde (
+\shape italic
 \lang english
 Health Attribute
+\shape default
 \lang brazilian
 ): indicadores que avaliam os aspectos de segurança dos trabalhadores.
 \end_layout
 
 \begin_layout Itemize
 Atributo treinamento (
+\shape italic
 \lang english
 Training Attribute
+\shape default
 \lang brazilian
 ): indicadores que avaliam os aspectos da capacitação dos trabalhadores.
 \end_layout
@@ -1407,24 +1631,45 @@ Esta dimensão está composta pelos seguintes conceitos:
 \end_layout
 
 \begin_layout Itemize
-Atributo industrial (Industrial Atribute): indicadores que avaliam os aspectos
- industriais.
+Atributo industrial (
+\shape italic
+\lang english
+Industrial Attribute
+\shape default
+\lang brazilian
+): indicadores que avaliam os aspectos industriais.
  
 \end_layout
 
 \begin_layout Itemize
-Atributo área recuperada (Recovered Area Atribute): indicadores que avaliam
- os aspectos da área produtiva e das técnicas produtivas.
+Atributo área recuperada (
+\shape italic
+\lang english
+Recovered Area Attribute
+\shape default
+\lang brazilian
+): indicadores que avaliam os aspectos da área produtiva e das técnicas
+ produtivas.
 \end_layout
 
 \begin_layout Itemize
-Atributo produtividade (Porductivity Atribute): indicadores que avaliam
- os aspectos dos produtos e dos processos produtivos.
+Atributo produtividade (
+\shape italic
+\lang english
+Productivity Attribute
+\shape default
+\lang brazilian
+): indicadores que avaliam os aspectos dos produtos e dos processos produtivos.
 \end_layout
 
 \begin_layout Itemize
-Atributo custo (Cost Atribute): indicadores que avaliam os aspectos dos
- custos da produção.
+Atributo custo (
+\shape italic
+\lang english
+Cost Attribute
+\shape default
+\lang brazilian
+): indicadores que avaliam os aspectos dos custos da produção.
  
 \end_layout
 
@@ -1520,7 +1765,13 @@ fautor
 As dimensões da sustentabilidade permitiram organizar os indicadores, levando
  essa organização desde os modelos de mapas conceituais, às ontologias,
  método de avaliação e, finalmente, até a representação dos resultados nas
- web UI dos SADs.
+ 
+\shape italic
+\lang english
+web UI
+\shape default
+\lang brazilian
+ dos SADs.
 \end_layout
 
 \begin_layout Section
@@ -1537,25 +1788,44 @@ name "sec:Web-UI"
 \end_layout
 
 \begin_layout Standard
-O design das interfaces gráficas e desenvolvimento dos web componentes foram
- realizados por meio da várias técnicas de levantamento de requisitos para
- especificar as funcionalidades que os especialistas precisavam do sistema
- SustenAgro.
+O 
+\shape italic
+\lang english
+design
+\shape default
+\lang brazilian
+ das interfaces gráficas e desenvolvimento dos 
+\shape italic
+\lang english
+web components
+\shape default
+\lang brazilian
+ foram realizados por meio da várias técnicas de levantamento de requisitos
+ para especificar as funcionalidades que os especialistas precisavam do
+ sistema SustenAgro.
  Foram usadas as seguintes técnicas: 
+\shape italic
 \lang english
 User Stories
+\shape default
 \lang brazilian
 , 
+\shape italic
 \lang english
 Scenarios
+\shape default
 \lang brazilian
 , 
+\shape italic
 \lang english
 Storyboard
+\shape default
 \lang brazilian
 , 
+\shape italic
 \lang english
 Mockups
+\shape default
 \lang brazilian
  e protótipo de interface gráfica.
 \end_layout
@@ -1566,8 +1836,13 @@ Na fase inicial, foram definidos os perfis de usuários do SAD SustenAgro,
 \end_layout
 
 \begin_layout Itemize
-Administrador: usuário com permissões para editar Ontologias, DSL e web
- UI.
+Administrador: usuário com permissões para editar Ontologias, DSL e 
+\shape italic
+\lang english
+web UI
+\shape default
+\lang brazilian
+.
  Ele é o responsável pela administração do SAD e tem todas as permissões
  do sistema.
 \end_layout
@@ -1583,7 +1858,6 @@ Especialista de domínio: especialista em sustentabilidade ou afins, com
 Usuário final: usuário padrão do sistema que tem permissões para realizar
  avaliações de sustentabilidade em cana-de-açúcar e de gerenciar os dados
  cadastrados por ele.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1593,11 +1867,18 @@ No SAD SustenAgro v1.0, foi removido o perfil especialista, ficando apenas
 \end_layout
 
 \begin_layout Standard
-As técnicas realizadas para desenvolver as web UI, são descritas a seguir.
+As técnicas realizadas para desenvolver as 
+\shape italic
+\lang english
+web UI
+\shape default
+\lang brazilian
+, são descritas a seguir.
 \end_layout
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 User Stories
 \end_layout
@@ -1618,8 +1899,10 @@ Na aplicação dessa técnica foram obtidas as seguintes histórias:
 O usuário poderá identificar e cadastrar a localização geográfica e a área
  da sua lavoura (definir região geográfica do IBGE, latitude e longitude
  - a partir do 
+\shape italic
 \lang english
 Google Maps
+\shape default
 \lang brazilian
 ).
  
@@ -1663,6 +1946,7 @@ O sistema deve fornecer um cronograma de avaliação, sendo recomendado realizar
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 Scenarios
 \end_layout
@@ -1683,14 +1967,22 @@ História de usuário #1:
  “O usuário poderá identificar e cadastrar a localização geográfica e a
  área da sua lavoura (definir região geográfica do IBGE, latitude e longitude
  - a partir do 
+\shape italic
 \lang english
 Google Maps
+\shape default
 \lang brazilian
 ).”
 \end_layout
 
 \begin_layout Enumerate
-O usuário ingressa na conta dele por meio do sistema web SustenAgro em 
+O usuário ingressa na conta dele por meio do sistema 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ SustenAgro em 
 \begin_inset Flex URL
 status open
 
@@ -1702,16 +1994,20 @@ http://sustenagro.embrapa.br
 \end_inset
 
 , e o sistema apresenta a tela “
+\shape italic
 \lang english
 Home
+\shape default
 \lang brazilian
 ” 
 \end_layout
 
 \begin_layout Enumerate
 O usuário seleciona a aba “unidades produtivas” e dá um 
+\shape italic
 \lang english
 click
+\shape default
 \lang brazilian
  em 
 \begin_inset Quotes eld
@@ -1723,10 +2019,9 @@ cadastrar unidade produtiva
 
 , o sistema apresenta a tela de cadastro de unidades produtivas, onde tem
  um mapa do 
+\shape italic
 \lang english
-Google Maps
-\lang brazilian
- 
+Google Maps.
 \end_layout
 
 \begin_layout Enumerate
@@ -1735,8 +2030,10 @@ O usuário seleciona no mapa um ponto que identificará a localização da unida
  que o sistema possa ter dados mais específicos para o processo de avaliação
  de sustentabilidade.
  Uma vez terminado, o usuário dá um 
+\shape italic
 \lang english
 click
+\shape default
 \lang brazilian
  no botão “próximo” e o sistema cadastra a informação preenchida.
  
@@ -1800,14 +2097,16 @@ O usuário poderá fazer a “História de usuário #2” ou entrar no sistema e
 
 \begin_layout Enumerate
 O usuário dá um 
+\shape italic
 \lang english
 click
+\shape default
 \lang brazilian
  na primeira aba e começa a preencher os dados dos indicadores ambientais,
  principalmente os limiares que identificam o estado do indicador.
  A interface também permite eliminar ou acrescentar indicadores específicos,
- por parte dos usuários (funcionalidade que é explicada na “Hstória de usuário
- #4”).
+ por parte dos usuários (funcionalidade que é explicada na “História de
+ usuário #4”).
  
 \end_layout
 
@@ -1838,8 +2137,10 @@ O usuário poderá fazer a “História de usuário #3” ou entrar no sistema e
 
 \begin_layout Enumerate
 O usuário dá um 
+\shape italic
 \lang english
 click
+\shape default
 \lang brazilian
  no botão “acrescentar indicador” e lhe é apresentada uma interface de entrada,
  onde ele deverá cadastrar o título, a descrição, os limiares, a medida
@@ -1902,8 +2203,10 @@ O usuário preenche alguns indicadores nos formulários do SustenAgro.
 \begin_layout Enumerate
 Esses dados serão salvos quando o usuário mudar de formulário ou quando
  der um 
+\shape italic
 \lang english
 click
+\shape default
 \lang brazilian
  no botão 
 \begin_inset Quotes eld
@@ -1985,14 +2288,17 @@ de.
 
 \begin_layout Subsection*
 
+\shape italic
 \lang english
 Storyboard
 \end_layout
 
 \begin_layout Standard
 
+\shape italic
 \lang english
 Storyboards
+\shape default
 \lang brazilian
  são similares aos cenários.
  Elas ilustram a interação necessária para atingir um objetivo sem utilizar
@@ -2005,8 +2311,10 @@ Essa representação permite uma visão holística da interação do usuário,
  com ênfase nos aspectos funcionais da interação e não nos aspectos da interface
  de usuário.
  A seguir, são apresentados os textos das 
+\shape italic
 \lang english
 storyboard
+\shape default
 \lang brazilian
  dos processos identificados:
 \end_layout
@@ -2038,8 +2346,11 @@ status open
 
 \shape italic
 \size small
+\lang english
+Storyboard
 \emph on
-StoryBoard definição da localização.
+\lang brazilian
+ definição da localização.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2093,8 +2404,10 @@ reference "fig:StoryBoard-2"
 
  apresenta o formulário de seleção da microrregião que faz parte da localização
  descrita no 
+\shape italic
 \lang english
 storyboard
+\shape default
 \lang brazilian
  anterior.
  Essa informação é importante para caracterizar a unidade produtiva.
@@ -2115,8 +2428,11 @@ status open
 
 \shape italic
 \size small
+\lang english
+Storyboard
 \emph on
-StoryBoard seleção da unidade produtiva.
+\lang brazilian
+ seleção da unidade produtiva.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2188,8 +2504,11 @@ status open
 
 \shape italic
 \size small
+\lang english
+Storyboard
 \emph on
-StoryBoard mostrando o preenchimento dos indicadores.
+\lang brazilian
+ mostrando o preenchimento dos indicadores.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:StoryBoard-3"
@@ -2259,11 +2578,11 @@ status open
 
 \shape italic
 \size small
-\emph on
-StoryBoard
+\lang english
+Storyboard
 \shape default
 \size default
-\emph default
+\lang brazilian
  sobre a avaliação de unidade produtiva
 \begin_inset CommandInset label
 LatexCommand label
@@ -2336,11 +2655,11 @@ status open
 
 \shape italic
 \size small
-\emph on
-StoryBoard
+\lang english
+Storyboard
 \shape default
 \size default
-\emph default
+\lang brazilian
  para cadastro de novo indicador.
 \begin_inset Note Note
 status open
@@ -2431,11 +2750,11 @@ status open
 
 \shape italic
 \size small
-\emph on
-StoryBoard
+\lang english
+Storyboard
 \shape default
 \size default
-\emph default
+\lang brazilian
  mostrando a apresentação de resultados
 \begin_inset CommandInset label
 LatexCommand label
@@ -2480,7 +2799,13 @@ fautor
 \end_layout
 
 \begin_layout Subsection*
-Mockups das Interfaces do SustenAgro
+
+\shape italic
+\lang english
+Mockups
+\shape default
+\lang brazilian
+ das Interfaces do SustenAgro
 \end_layout
 
 \begin_layout Standard
@@ -2488,21 +2813,37 @@ A partir das técnicas anteriores, foi possível identificar as tarefas que
  os usuários do sistema SustenAgro realizarão.
  O fluxo das tarefas e os dados de cada uma foram mudando ao longo do tempo,
  como resultado na aplicação de cada técnica, gerando varias definições
- das Web UI.
+ das 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+.
  Uma vez identificadas as caracterizaras essenciais da interface gráfica,
- procedeu-se a definição dos Mockups, que permitiram criar uma representação
- visual das interfaces do sistema.
+ procedeu-se a definição dos 
+\shape italic
+\lang english
+Mockups
+\shape default
+\lang brazilian
+, que permitiram criar uma representação visual das interfaces do sistema.
  
 \end_layout
 
 \begin_layout Standard
+\noindent
 O desenvolvimento dos 
+\shape italic
 \lang english
 Mockups
+\shape default
 \lang brazilian
  foi feito com a ferramenta 
+\shape italic
 \lang english
 Moqups
+\shape default
 \lang brazilian
  
 \begin_inset Foot
@@ -2555,7 +2896,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mockup da tela inicial do SustenAgro.
+
+\shape italic
+\lang english
+Mockup
+\shape default
+\lang brazilian
+ da tela inicial do SustenAgro.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Mockup_home"
@@ -2599,9 +2946,18 @@ fautor
 \end_layout
 
 \begin_layout Standard
-Os Mockups representam as 
+Os 
+\shape italic
 \lang english
-widgets,
+Mockups
+\shape default
+\lang brazilian
+ representam as 
+\shape italic
+\lang english
+widgets
+\shape default
+,
 \lang brazilian
  o que permitem avaliar a interface gráfica de uma maneira mais próxima
  à interface final e assim suportar a sua avaliação por parte dos especialistas
@@ -2635,7 +2991,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mockup da tela de indicadores do SustenAgro.
+
+\shape italic
+\lang english
+Mockup
+\shape default
+\lang brazilian
+ da tela de indicadores do SustenAgro.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Mockup_indicators"
@@ -2679,17 +3041,28 @@ fautor
 \end_layout
 
 \begin_layout Standard
-Na apresentação dos Mockups aos especialistas, foram identificadas várias
- mudanças para facilitar a navegabilidade da 
+Na apresentação dos 
+\shape italic
 \lang english
-Web UI.
+Mockups
+\shape default
+\lang brazilian
+ aos especialistas, foram identificadas várias mudanças para facilitar a
+ navegabilidade da 
+\shape italic
+\lang english
+Web UI
+\shape default
+.
 
 \lang brazilian
  Essas mudanças corresponderam à integração de tarefas e a melhora na apresentaç
 ão dos formulários e dos resultados de avaliação.
  Essas mudanças reestruturaram o 
+\shape italic
 \lang english
 look-and-feel
+\shape default
 \lang brazilian
  do SAD.
  
@@ -2711,16 +3084,38 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-A partir das melhoras identificadas nas avaliações dos Mockups, foram identifica
-das as características finais da Web UI, com as quais foi desenvolvido um
- protótipo funcional da Web UI do SustenAgro.
+A partir das melhoras identificadas nas avaliações dos 
+\shape italic
+\lang english
+Mockups
+\shape default
+\lang brazilian
+, foram identificadas as características finais da 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+, com as quais foi desenvolvido um protótipo funcional da 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+ do SustenAgro.
  Inicialmente, esse protótipo só permitia interagir com dados simulados.
 \end_layout
 
 \begin_layout Standard
-A Web UI do SAD SustenAgro foi integrada com cada uma das funcionalidades
- do SAD em cada ciclo de desenvolvimento, e, atualmente, está disponível
- nos servidores do laboratório Intermídia do ICMC\SpecialChar nobreakdash
+A 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+ do SAD SustenAgro foi integrada com cada uma das funcionalidades do SAD
+ em cada ciclo de desenvolvimento, e, atualmente, está disponível nos servidores
+ do laboratório Intermídia do ICMC\SpecialChar nobreakdash
 USP 
 \begin_inset Foot
 status open
@@ -3013,14 +3408,17 @@ fautor
 
 \begin_layout Section
 
+\shape italic
 \lang english
 Web Components
 \end_layout
 
 \begin_layout Standard
 Foram desenvolvidos dois 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
  específicos para o SustenAgro.
  Eles geram gráficos específicos do relatório solicitado pelos especialistas
@@ -3034,13 +3432,17 @@ Matriz de Sustentabilidade
 \begin_layout Standard
 Com a finalidade de suportar a geração de relatórios, no formato definido
  pelos especialistas do domínio, foi necessário implementar dois 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
  específicos.
  Um deles foi a 
+\shape italic
 \lang english
 widget
+\shape default
 \lang brazilian
  intitulada Matriz de Sustentabilidade.
  Ela é composta por dois eixos que correspondem ao índice de eficiência,
@@ -3062,8 +3464,11 @@ reference "fig:Matriz-de-sustentabilidade-widget"
 \end_inset
 
  mostra a implementação desse 
+\shape italic
 \lang english
-Web Component,
+Web Component
+\shape default
+,
 \lang brazilian
  mostrando resultados reais de uma avaliação.
 \end_layout
@@ -3131,8 +3536,10 @@ Semáforo da Sustentabilidade
 
 \begin_layout Standard
 O 
+\shape italic
 \lang english
 Web Component
+\shape default
 \lang brazilian
  do Semáforo da Sustentabilidade foi o segundo componente para geração de
  relatórios, no formato definido pelos especialistas do domínio, desenvolvido
@@ -3229,11 +3636,19 @@ DSL: code
 \end_layout
 
 \begin_layout Standard
-A implementação de uma DSL permite aos especialistas do domínio definir
- como são usados e apresentados os conceitos da ontologia, por meio de elementos
- da interface gráfica, como os índices de sustentabilidade serão calculados
- e quais os elementos presentes no relatório final.
- A DSL permite a criação de SADs facilmente adaptáveis às mudanças do domínio.
+A implementação de uma 
+\lang english
+DSL
+\lang brazilian
+ permite aos especialistas do domínio definir como são usados e apresentados
+ os conceitos da ontologia, por meio de elementos da interface gráfica,
+ como os índices de sustentabilidade serão calculados e quais os elementos
+ presentes no relatório final.
+ A 
+\lang english
+DSL
+\lang brazilian
+ permite a criação de SADs facilmente adaptáveis às mudanças do domínio.
  Os próprios especialistas podem modificá-la sem o auxílio de programadores.
 \end_layout
 
@@ -3253,7 +3668,13 @@ reference "lis:DSL-EvaluationObject"
 
 \end_inset
 
-, o Objeto de Avaliação é definido como uma instância da classe ProductionUnit.
+, o Objeto de Avaliação é definido como uma instância da classe 
+\shape italic
+\lang english
+ProductionUnit
+\shape default
+\lang brazilian
+.
  Essa classe foi definida pelos próprios especialistas na ontologia e tem
  como filhos as classes 
 \emph on
@@ -3272,8 +3693,10 @@ Power Plant
  quando criarem uma avaliação.
  Por exemplo, na propriedade 
 \shape italic
+\lang english
 hasName
 \shape default
+\lang brazilian
  os usuários devem preencher o nome da unidade de produção.
 \end_layout
 
@@ -3379,30 +3802,49 @@ Definir as características a serem avaliadas
 \end_layout
 
 \begin_layout Standard
-Agora os especialistas têm que escolher quais características (Features)
- dos Objetos de Avaliação serão usadas.
- No comando 
+Agora os especialistas têm que escolher quais características (
 \shape italic
-feature
-\shape default
-, são indicadas as classes das 
-\shape italic
+\lang english
 Features
 \shape default
+\lang brazilian
+) dos Objetos de Avaliação serão usadas.
+ No comando 
+\shape italic
+\lang english
+feature
+\shape default
+\lang brazilian
+, são indicadas as classes das 
+\shape italic
+\lang english
+Features
+\shape default
+\lang brazilian
  a serem usadas.
  Serão mostradas todas as 
 \shape italic
+\lang english
 features
 \shape default
+\lang brazilian
  das classes indicadas e de suas descendentes.
  Por exemplo, o comando 
 \shape italic
-feature ':ProductionEfficiencyFeature'
+\lang english
+feature
+\lang brazilian
+ ':
+\lang english
+ProductionEfficiencyFeature'
 \shape default
+\lang brazilian
  vai mostrar todas as 
 \shape italic
+\lang english
 Features
 \shape default
+\lang brazilian
  relacionadas com eficiência da produção.
  Na ontologia SustenAgro foram estabelecidas as famílias de 
 \shape italic
@@ -3410,21 +3852,71 @@ Features
 Features
 \shape default
 \lang brazilian
-: EnvironmentalIndicator, EconomicIndicator, SocialIndicator, ProductionEfficien
-cyFeature e TechnologicalEfficiencyFeature.
+: 
+\shape italic
+\lang english
+EnvironmentalIndicator
+\shape default
+\lang brazilian
+, 
+\shape italic
+\lang english
+EconomicIndicator
+\shape default
+\lang brazilian
+, 
+\shape italic
+\lang english
+SocialIndicator
+\shape default
+\lang brazilian
+, 
+\shape italic
+\lang english
+ProductionEfficiencyFeature
+\shape default
+\lang brazilian
+ e 
+\shape italic
+\lang english
+TechnologicalEfficiencyFeature
+\shape default
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
 O comando 
 \shape italic
+\lang english
 feature
 \shape default
+\lang brazilian
  também permite dizer se existirão novas 
 \shape italic
+\lang english
 Features
 \shape default
- criadas pelos usuários ('extraFeatures': true) e a apresentação condicional
- de grupos de Features.
+\lang brazilian
+ criadas pelos usuários (
+\shape italic
+\lang english
+'extraFeatures'
+\shape default
+\lang brazilian
+: 
+\shape italic
+\lang english
+true
+\shape default
+\lang brazilian
+) e a apresentação condicional de grupos de 
+\shape italic
+\lang english
+Features
+\shape default
+\lang brazilian
+.
  No exemplo do algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3432,7 +3924,13 @@ reference "lis:DSL-Definição-de-Features"
 
 \end_inset
 
-, são mostradas Features industriais apenas à usuários de usinas.
+, são mostradas 
+\shape italic
+\lang english
+Features
+\shape default
+\lang brazilian
+ industriais apenas à usuários de usinas.
 \end_layout
 
 \begin_layout Standard
@@ -3543,20 +4041,24 @@ Industrial'
 \end_layout
 
 \begin_layout Subsection*
-Definir o modelamento e a forma de apresentação dos resultados
+Definir a modelagem e a forma de apresentação dos resultados
 \end_layout
 
 \begin_layout Standard
 Finalmente, no comando 
 \shape italic
+\lang english
 data
 \shape default
+\lang brazilian
 , os especialistas definem o nome da variável que contém as respostas dos
  usuários e, no comando 
 \shape italic
+\lang english
 report
 \shape default
-, fazem o cálculo do modelamento e definem o que vai ser apresentado.
+\lang brazilian
+, fazem o cálculo da modelagem e definem o que vai ser apresentado.
  No algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3566,7 +4068,13 @@ reference "lis:SustenAgro-DSL"
 
 , é possível ver o cálculo dos índices de sustentabilidade e eficiência
  por meio das formulas do modelo usado pelo SustenAgro.
- É possível usar qualquer comando da linguagem Groovy ou biblioteca externa.
+ É possível usar qualquer comando da linguagem 
+\shape italic
+\lang english
+Groovy
+\shape default
+\lang brazilian
+ ou biblioteca externa.
  As variáveis guardam os valores de interesse que serão mostrados no relatório
  de avaliação.
  No caso do SustenAgro, a variável 
@@ -3577,23 +4085,70 @@ sustainability
 \lang brazilian
  guarda o índice de sustentabilidade e a variável 
 \shape italic
+\lang english
 efficiency
 \shape default
+\lang brazilian
  guarda o índice de eficiência do sistema.
 \end_layout
 
 \begin_layout Standard
-No relatório aparecerão a Matriz de Sustentabilidade (SustainabilityMatrix),
- o Semáforo de Sustentabilidade (SustainabilitySemaphore), o texto "Mapa
- da Microregião" e o mapa da microregião (onde a unidade produtiva se encontra).
- Cada uma dessas widget é instanciada na DSL e os valores de interesse são
- passados para os Web Components encarregados da apresentação.
- O framework Decisioner delega aos Web Components a tarefa de apresentação.
+No relatório aparecerão a Matriz de Sustentabilidade (
+\shape italic
+\lang english
+SustainabilityMatrix
+\shape default
+\lang brazilian
+), o Semáforo de Sustentabilidade (
+\shape italic
+\lang english
+SustainabilitySemaphore
+\shape default
+\lang brazilian
+), o texto "Mapa da Microrregião" e o mapa da microrregião (onde a unidade
+ produtiva se encontra).
+ Cada uma dessas 
+\shape italic
+\lang english
+widget
+\shape default
+\lang brazilian
+ é instanciada na DSL e os valores de interesse são passados para os 
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+ encarregados da apresentação.
+ O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ delega aos 
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+ a tarefa de apresentação.
 \end_layout
 
 \begin_layout Standard
-Usuários podem pedir a geração de relatórios em pdf, uma ferramenta de conversão
- de HTML para pdf é usada.
+Usuários podem pedir a geração de relatórios em 
+\shape italic
+\lang english
+pdf
+\shape default
+\lang brazilian
+, uma ferramenta de conversão de HTML para 
+\shape italic
+\lang english
+pdf
+\shape default
+\lang brazilian
+ é usada.
 \end_layout
 
 \begin_layout Standard
@@ -3802,12 +4357,34 @@ e em cana-de-açúcar no centro-sul do Brasil.
 \begin_layout Standard
 Além de satisfazer uma necessidade institucional, o SustenAgro é uma proposta
  de SAD baseado em conhecimento e vinculado às tecnologias da web semântica.
- O SustenAgro não foi apenas uma instanciação do framework Decisioner, ele
- definiu o próprio framework.
+ O SustenAgro não foi apenas uma instanciação do 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+, ele definiu o próprio 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+.
  Por meio do desenvolvimento do SustenAgro, foi possível determinar as caracterí
-sticas gerais desse tipo de SAD, e implementá-las no framework, e as característ
-icas específicas do Sustenagro, que foram implementadas usando a ontologia
- SustenAgro, os dois Web Components e a DSL.
+sticas gerais desse tipo de SAD, e implementá-las no 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+, e as características específicas do Sustenagro, que foram implementadas
+ usando a ontologia SustenAgro, os dois 
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+ e a DSL.
 \end_layout
 
 \begin_layout Standard

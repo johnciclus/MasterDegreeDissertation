@@ -213,9 +213,10 @@ key "oliveira:2013"
 \end_inset
 
 , onde inicialmente foram identificados 62 indicadores de sustentabilidade
- no sistema de cana-de-açúcar, os quais foram analisados e caracterizados
+ no sistema de cana-de-açúcar do centro-sul do Brasil.
+ Estes indicadores foram analisados e caracterizados na pesquisa da 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "BRUMATTI:2015"
 
 \end_inset

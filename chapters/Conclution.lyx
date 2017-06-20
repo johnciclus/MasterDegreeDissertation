@@ -77,30 +77,61 @@
 \begin_layout Standard
 As principais contribuições desta pesquisa foram o método e ferramenta de
  geração de SADs baseados em conhecimento usando ontologias e 
+\shape italic
 \lang english
 DSLs
+\shape default
 \lang brazilian
 , Esse método permite complementar o conhecimento descrito em uma ontologia
- com uma DSL, que define o comportamento e formato de um SAD.
+ com uma 
+\shape italic
+\lang english
+DSL
+\shape default
+\lang brazilian
+, que define o comportamento e formato de um SAD.
  
 \end_layout
 
 \begin_layout Standard
-Ontologia e DSL estão abertas a edição pelos especialistas de domínio.
+Ontologia e 
+\shape italic
+\lang english
+DSL
+\shape default
+\lang brazilian
+ estão abertas a edição pelos especialistas de domínio.
  Eles podem editá-las por meio de editores online (na própria ferramenta),
  e modificar aspectos fundamentais do SAD em tempo real.
  Essa característica permite um ciclo de desenvolvimento mais curto e uma
  participação ativa dos especialistas de domínio.
- Como o Framework Decisioner fornece uma aplicação semiacabada (como todo
- o framework) que os próprios especialistas de domínio podem modificar,
- isso tende a diminuir os custos associados a criação de SADs.
+ Como o 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ fornece uma aplicação semiacabada (como todo o 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+) que os próprios especialistas de domínio podem modificar, isso tende a
+ diminuir os custos associados a criação de SADs.
  
 \end_layout
 
 \begin_layout Standard
-O Framework Decisioner, o SAD SustenAgro e o método de definição de SADs
- proposto tiveram uma avaliação positiva por parte dos especialistas do
- domínio sustentabilidade e usuários finais da Embrapa e do projeto SustenAgro.
+O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+, o SAD SustenAgro e o método de definição de SADs proposto tiveram uma
+ avaliação positiva por parte dos especialistas do domínio sustentabilidade
+ e usuários finais da Embrapa e do projeto SustenAgro.
  Essas avaliações demostraram que as ferramentas e o método proposto solucionara
 m, para o caso do SustenAgro, os problemas identificados na pesquisa e que
  os objetivos específicos desta pesquisa foram satisfeitos.
@@ -110,9 +141,15 @@ m, para o caso do SustenAgro, os problemas identificados na pesquisa e que
 Deve-se ressaltar que, apesar dos bons resultados das avaliações e do entusiasmo
  dos especialistas da Embrapa (que nunca tiveram tantas facilidades para
  modificar o código de um projeto de SAD), ainda não é possível, para especialis
-tas de domínio, desenvolver um SAD, usando o Decisioner, a partir do zero.
- Mas os resultados mostraram que eles podem modificar muitos aspectos do
- sistema sem a ajuda de programadores.
+tas de domínio, desenvolver um SAD, usando o 
+\shape italic
+\lang english
+Decisioner
+\shape default
+\lang brazilian
+, a partir do zero.
+ Porem, os resultados mostraram que eles podem modificar muitos aspectos
+ do sistema sem a ajuda de programadores.
  O que é um avanço muito grande, se comparado com o que é possível fazer
  em métodos de desenvolvimento tradicionais.
  Outra importante contribuição foi a geração de uma versão funcional do
@@ -152,51 +189,130 @@ idade da Embrapa.
 Ontologia sobre tipos de dados e controles visuais para suportar a geração
  automática das interfaces gráficas dos SADs.
  Ela permite associar tipos de dados às 
+\shape italic
 \lang english
 widgets
+\shape default
 \lang brazilian
- (Web Components) necessárias para a geração automática das UI para os SAD.
+ (
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+) necessárias para a geração automática das 
+\shape italic
+\lang english
+UI
+\shape default
+\lang brazilian
+ para os SAD.
 \end_layout
 
 \begin_layout Enumerate
 DSL que permite definir o comportamento de um SAD, usando os conceitos das
  ontologias, e integrar 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
- para gerar as Web UIs.
+ para gerar as 
+\shape italic
+\lang english
+Web UIs
+\shape default
+\lang brazilian
+.
  Dentro dos elementos suportados, estão a definição dos objetos de avaliação,
  de indicadores, das fórmulas do método de avaliação e da definição do formato
  do relatório de cada análise.
 \end_layout
 
 \begin_layout Enumerate
-Método e framework Decisioner para definir SADs, baseados em ontologias
- e DSLs.
- O framework Decisioner possui uma arquitetura escalável para permitir sua
- aplicabilidade a outros tipos de SADs (além do SustenAgro).
+Método e 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ para definir SADs, baseados em ontologias e DSLs.
+ O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ possui uma arquitetura escalável para permitir sua aplicabilidade a outros
+ tipos de SADs (além do SustenAgro).
+ O código fonte deste 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+ esta publicado em: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/DilvanLab/Decisioner
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 O SAD SustenAgro: sistema para avaliação da sustentabilidade em cana-de-açúcar,
- que foi implementado usando o Framework Decisioner.
+ que foi implementado usando o 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+.
  O SAD SustenAgro permite a reconfiguração, em tempo de execução, dos conceitos
  do domínio, métodos de avaliação e componentes das interfaces gráficas,
  por meio do 
+\shape italic
 \lang english
 Framework Decisioner
+\shape default
 \lang brazilian
 .
 \end_layout
 
 \begin_layout Enumerate
-Resultados de avaliação do processo de design do SAD SustenAgro e do seu
- protótipo final.
- Eles comprovaram que é possível gerar um SAD, baseado no framework Decisioner,
- a partir de uma ontologia e DSL, e ter sua Web UI gerada automaticamente.
+Resultados de avaliação do processo de 
+\shape italic
+\lang english
+design
+\shape default
+\lang brazilian
+ do SAD SustenAgro e do seu protótipo final.
+ Validando que é possível gerar um SAD, baseado no 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+, a partir de uma ontologia e DSL, e ter sua 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+ gerada automaticamente.
  Eles também demonstram que especialistas de domínio são capazes de alterar
- a ontologia e DSL, sem a ajuda de programadores, e ver os resultados dessas
- modificações em tempo real.
+ a ontologia e 
+\lang english
+DSL
+\lang brazilian
+, sem a ajuda de programadores, e ver os resultados dessas modificações
+ em tempo real.
  Essa flexibilidade torna o desenvolvimento de SADs mais ágil com potencial
  de redução de seus custos finais.
 \end_layout
@@ -230,18 +346,24 @@ Dificuldades
 
 \begin_layout Standard
 Durante a realização desta pesquisa foram identificadas as seguintes dificuldade
-s identificadas durante a realização da pesquisa, foram as seguintes:
+s:
 \end_layout
 
 \begin_layout Standard
 A primeira delas refere-se à falta de dados e informações para modelar o
  domínio do conhecimento de avaliação em sustentabilidade.
  Depois de estabelecer meios de representação para modelar o conhecimento
- dos especialistas, descobriu-se que não existiam dados existentes na Embrapa
- Meio Ambiente que representassem instâncias dos conceitos definidos.
+ dos especialistas, descobriu-se que não existiam dados na Embrapa Meio
+ Ambiente que representassem instâncias dos conceitos definidos.
  Portanto foi necessário fazer a recoleta de dados por parte dos desenvolvedores
-, desenvolvendo formulários web e analisando as dados enviados, este processo
- dificultou o desenvolvimento do projeto.
+, desenvolvendo formulários 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+ e analisando as dados enviados, este processo dificultou o desenvolvimento
+ do projeto.
 \end_layout
 
 \begin_layout Standard
@@ -260,8 +382,12 @@ status collapsed
 
 \begin_layout Standard
 Outra dificuldade foi a falta de trabalhos de referência sobre a integração
- de ontologias e DSLs, o que levou a realização de alguns desenvolvimentos
- de maneira errada que consumiram tempo da pesquisa.
+ de ontologias e 
+\lang english
+DSL
+\lang brazilian
+, o que levou a realização de alguns desenvolvimentos de maneira errada
+ que consumiram tempo da pesquisa.
  
 \end_layout
 
@@ -274,14 +400,14 @@ A dificuldade mais importante enfrentada foi de carácter organizacional,
  A Embrapa não desenvolve apenas pesquisas, mas usa essas pesquisas em programas
  de extensão agrícola.
  Assim, aspectos como, por exemplo, registro de software, que no mundo acadêmico
- tem importância periférica, são muito mais importantes.
+ tem importância periférica, são muito mais importantes para eles.
  A Embrapa não permite que programas, desenvolvidos por ela ou em colaboração
  com ela, sejam disponibilizados para o público em geral antes do registro
  no Instituto Nacional da Propriedade Industrial (INPI).
  Como o SAD SustenAgro foi uma colaboração entre Embrapa e USP, a USP deve
  compartilhar esse registro com a Embrapa.
- Infelizmente, a burocracia da USP é muito demorada e esse registro está
- demorando muito mais que o necessário.
+ Infelizmente, a burocracia da USP é muito demorada e esse registro demora
+ mais do necessário.
  A Embrapa tem uma comunidade de produtores de cana, usinas e cooperativas
  do setor interessados em sustentabilidade.
  Apesar do SustenAgro ter sido avaliado por um número expressivo de profissionai
@@ -339,13 +465,22 @@ OWL
 
 \begin_layout Enumerate
 Geração do formato computável da ontologia e carregá-la automaticamente
- em um sistema web, para permitir o gerenciamento dela.
+ em um sistema 
+\shape italic
+\lang english
+web
+\shape default
+\lang brazilian
+, para permitir o gerenciamento dela.
 \end_layout
 
 \begin_layout Enumerate
 Instanciação da ontologia, por meio de serviços 
+\shape italic
 \lang english
-web,
+web
+\shape default
+,
 \lang brazilian
  com instâncias que representem dados reais do domínio para permitir o uso
  da ontologia e seus dados em outros sistemas.
@@ -357,21 +492,37 @@ stas, por fornecer uma abordagem mais gradual da modelagem.
 \end_layout
 
 \begin_layout Subsection*
-Editor web de ontologias em OWL
+Editor web de ontologias em 
+\lang english
+OWL
 \end_layout
 
 \begin_layout Standard
-O Framework Decisioner integra um editor de ontologias, baseado no formato
- 
+O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ integra um editor de ontologias, baseado no formato 
 \lang english
 YAML
 \lang brazilian
 .
  Ele dá suporte a edição de ontologias, em tempo de execução, por meio de
- uma Web UI.
+ uma 
+\shape italic
+\lang english
+Web UI
+\shape default
+\lang brazilian
+.
  Ele pode ser complementado com um editor visual de ontologias que permita
  a visualização e edição em forma de grafos.
- Um exemplo desse tipo de abordagem é o visualizador de ontologias WebVOWL
+ Um exemplo desse tipo de abordagem é o visualizador de ontologias 
+\lang english
+WebVOWL
+\lang brazilian
  
 \begin_inset Foot
 status collapsed
@@ -397,9 +548,12 @@ http://vowl.visualdataweb.org/webvowl.html
 \end_layout
 
 \begin_layout Standard
-O editor de ontologias em OWL integrará a metodologia de modelagem de conhecimen
-to, proposto anteriormente, e poderá ter um repositório online de conhecimento
- que permita a reuso.
+O editor de ontologias em 
+\lang english
+OWL
+\lang brazilian
+ integrará a metodologia de modelagem de conhecimento, proposto anteriormente,
+ e poderá ter um repositório online de conhecimento que permita a reuso.
 \end_layout
 
 \begin_layout Subsection*
@@ -408,17 +562,29 @@ Linguagem simplificada de consultas Sparql
 
 \begin_layout Standard
 O 
+\shape italic
 \lang english
 DSL Interpreter
+\shape default
 \lang brazilian
- tem um módulo que simplifica as consultas Sparql nas 
+ tem um módulo que simplifica as consultas 
+\lang english
+SPARQL
+\lang brazilian
+ nas 
+\shape italic
 \lang english
 triplestores
+\shape default
 \lang brazilian
 .
  Esse módulo é um protótipo que pode ser melhorado e generalizado para facilitar
  o armazenamento e recuperação de informações semânticas, por meio de uma
- linguagem mais simples que Sparql.
+ linguagem mais simples que 
+\lang english
+SPARQL
+\lang brazilian
+.
  
 \end_layout
 
@@ -436,17 +602,30 @@ Web UIs
 
 \begin_layout Standard
 As 
+\shape italic
 \lang english
 web UI
+\shape default
 \lang brazilian
  para os SADs possuem vários tipos de 
+\shape italic
 \lang english
 web components
+\shape default
 \lang brazilian
 .
- É possível modificar a aparência dessas web UIs, usando 
+ É possível modificar a aparência dessas 
+\shape italic
 \lang english
-Cascading Style Sheets (CSSs)
+web UIs
+\shape default
+\lang brazilian
+, usando 
+\shape italic
+\lang english
+Cascading Style Sheets
+\shape default
+ (CSSs)
 \lang brazilian
  e uma DSL interna de uso dos programadores.
  Mas esse tipo de modificação fica além do que especialistas podem fazer.
@@ -457,30 +636,54 @@ Cascading Style Sheets (CSSs)
 Para suportar a definição e modificação da organização e apresentação das
  UI, por parte dos especialistas, é necessária uma linguagem de gerenciamento
  das 
+\shape italic
 \lang english
 widgets
+\shape default
 \lang brazilian
  (elementos de uma 
+\shape italic
 \lang english
 UI
+\shape default
 \lang brazilian
 ) com suporte a edição gráfica.
 \end_layout
 
 \begin_layout Subsection*
-Instanciação de outros SAD usando o Framework Decisioner
+Instanciação de outros SAD usando o 
+\shape italic
+\lang english
+Framework Decisioner
 \end_layout
 
 \begin_layout Standard
-O Framework Decisioner foi criado para permitir a instanciação de uma classe
- de SADs que criam análises e recomendações para um cenário específico.
+O 
+\shape italic
+\lang english
+Framework Decisioner
+\shape default
+\lang brazilian
+ foi criado para permitir a instanciação de uma classe de SADs que criam
+ análises e recomendações para um cenário específico.
  Mas ele foi desenvolvido a partir do caso de uso de apenas um SAD desse
  tipo, o SustenAgro.
  Com a instanciação de outros SADs, para áreas diferentes de sustentabilidade,
- a generalidade do framework pode ser testada e, se necessário, mudanças
- implementadas.
+ a generalidade do 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+ pode ser testada e, se necessário, mudanças implementadas.
  Instruções e funcionalidades, que façam parte de outros SADs diferentes
- do SustenAgro, podem ser integradas ao framework para generalizar seu escopo.
+ do SustenAgro, podem ser integradas ao 
+\shape italic
+\lang english
+framework
+\shape default
+\lang brazilian
+ para generalizar seu escopo.
 \end_layout
 
 \begin_layout Subsection*
@@ -575,25 +778,47 @@ http://wiki.dbpedia.org/
 
 \begin_layout Subsection*
 Biblioteca de 
+\shape italic
 \lang english
 Web Components
 \end_layout
 
 \begin_layout Standard
-O Framework Decisioner conta com aproximadamente 60 
+O 
+\shape italic
 \lang english
-Web Components
+Framework Decisioner
+\shape default
+\lang brazilian
+ conta com aproximadamente 60 
+\shape italic
+\lang english
+web components
+\shape default
 \lang brazilian
 .
- Eles dão suporte na geração de UIs, as quais podem ser agrupadas em uma
- biblioteca, para permitir seu reuso e a definição de Web Componentes especializ
-ados, como os desenvolvidos para o SAD SustenAgro.
+ Eles dão suporte na geração de 
+\shape italic
+\lang english
+UIs
+\shape default
+\lang brazilian
+, as quais podem ser agrupadas em uma biblioteca, para permitir seu reuso
+ e a definição de 
+\shape italic
+\lang english
+Web Components
+\shape default
+\lang brazilian
+ especializados, como os desenvolvidos para o SAD SustenAgro.
 \end_layout
 
 \begin_layout Standard
 A biblioteca 
+\shape italic
 \lang english
 Polymer
+\shape default
 \lang brazilian
  
 \begin_inset Foot
@@ -617,10 +842,18 @@ http://wiki.dbpedia.org/
 \end_inset
 
  suporta a criação de 
+\shape italic
 \lang english
 Web Components
+\shape default
 \lang brazilian
- reusáveis para compor Web UIs.
+ reusáveis para compor 
+\shape italic
+\lang english
+Web UIs
+\shape default
+\lang brazilian
+.
  Dada as suas características recomenda-se a implementação dessa biblioteca
  com essa tecnologia.
  
