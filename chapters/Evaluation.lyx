@@ -254,7 +254,7 @@ Satisfação: os usuários conseguiram realizar as tarefas sem problemas e
 \end_layout
 
 \begin_layout Standard
-A avaliação demostro que as interfaces gráficas satisfizeram os requisitos,
+A avaliação demostrou que as interfaces gráficas satisfizeram os requisitos,
  cumprindo os três requisitos de usabilidade.
  Esta avaliação gerou várias recomendações para melhorar a interface gráfica
  de usuário, entre elas as mais relevantes estão: 
@@ -263,7 +263,7 @@ A avaliação demostro que as interfaces gráficas satisfizeram os requisitos,
 \begin_layout Itemize
 Integrar as tarefas de definir a localização, as principais características
  e a disponibilização da informação das unidades produtivas em um processo
- unificado inicial dentro do processo de avaliação, agrupando ditas tarefas
+ unificado inicial dentro do processo de avaliação, agrupando essas tarefas
  no processo denominado 
 \begin_inset Quotes eld
 \end_inset
@@ -307,7 +307,7 @@ UI
 \lang brazilian
 , foi continuado o desenvolvimento com a integração da ontologia SustenAgro
  e da DSL.
- Nesta fase, foi necessário realizar ajustes da interface ao integrar cada
+ Nessa fase, foi necessário realizar ajustes da interface ao integrar cada
  funcionalidade.
 \end_layout
 
@@ -500,35 +500,6 @@ A revisão dos resultados numéricos foi realizada a partir de vários cenários
 Os cenários avaliados foram casos extremos dos indicadores, processo denominado
  teste de mínimos e máximos, gerando resultados em forma de relatório para
  cada um dos cenários.
- 
-\end_layout
-
-\begin_layout Standard
-A Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Matriz-de-sustentabilidade-Minimos"
-
-\end_inset
-
- apresenta a Matriz de Sustentabilidade com o cenário de mínimos.
- Na matriz, o ponto preto identifica o resultado da avaliação.
- Ele ficou no primeiro quadrante tal como se esperava.
- Os resultados para testes de máximos também se comportaram como o esperado.
-\end_layout
-
-\begin_layout Standard
-Um dos aspectos mais importantes da ferramenta, é que ela permite que os
- próprios especialistas mudem, em tempo real, as fórmulas do método de avaliação
-, permitindo fazer ajustes finos no método.
- Por exemplo, durante a realização dos testes, foi descoberto um problema
- na fórmula do método SustenAgro original.
- Usando a DSL, algumas opções de correção foram tentadas e, rapidamente,
- foi possível redefinir a fórmula de avaliação.
- A possibilidade da interação direta e fácil dos especialistas, em tempo
- real, com o sistema permitiu demostrar agilmente possíveis cenários de
- resolução desse problema e aceitar, rapidamente, uma solução (proposta
- pelo autor).
 \end_layout
 
 \begin_layout Standard
@@ -584,6 +555,34 @@ fautor
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Matriz-de-sustentabilidade-Minimos"
+
+\end_inset
+
+ apresenta a Matriz de Sustentabilidade com o cenário de mínimos.
+ Na matriz, o ponto preto identifica o resultado da avaliação.
+ Ele ficou no primeiro quadrante tal como se esperava.
+ Os resultados para testes de máximos também se comportaram como o esperado.
+\end_layout
+
+\begin_layout Standard
+Um dos aspectos mais importantes da ferramenta, é que ela permite que os
+ próprios especialistas mudem, em tempo real, as fórmulas do método de avaliação
+, permitindo fazer ajustes finos no método.
+ Por exemplo, durante a realização dos testes, foi descoberto um problema
+ na fórmula do método SustenAgro original.
+ Usando a DSL, algumas opções de correção foram tentadas e, rapidamente,
+ foi possível redefinir a fórmula de avaliação.
+ A possibilidade da interação direta e fácil dos especialistas, em tempo
+ real, com o sistema permitiu demostrar agilmente possíveis cenários de
+ resolução desse problema e aceitar, rapidamente, uma solução (proposta
+ pelo autor).
 \end_layout
 
 \begin_layout Section

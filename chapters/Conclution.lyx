@@ -148,7 +148,7 @@ Decisioner
 \shape default
 \lang brazilian
 , a partir do zero.
- Porem, os resultados mostraram que eles podem modificar muitos aspectos
+ Porém, os resultados mostraram que eles podem modificar muitos aspectos
  do sistema sem a ajuda de programadores.
  O que é um avanço muito grande, se comparado com o que é possível fazer
  em métodos de desenvolvimento tradicionais.
@@ -251,7 +251,7 @@ Framework Decisioner
 framework
 \shape default
 \lang brazilian
- esta publicado em: 
+ está publicado em: 
 \begin_inset Flex URL
 status open
 
@@ -318,7 +318,15 @@ DSL
 \end_layout
 
 \begin_layout Enumerate
-Artigo 
+Artigo (co-autoria) “Sustainability assessment of sugarcane production systems:
+ SustenAgro Method” submetido ao periódico da Elsevier “Energy for sustainable
+ Development”.
+ ISSN: 0973-0826.
+ Submissão realizada no dia 23 de dezembro de 2016 (Artigo não foi aceito).
+\end_layout
+
+\begin_layout Enumerate
+Artigo (primeiro autor) 
 \begin_inset Quotes eld
 \end_inset
 

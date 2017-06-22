@@ -380,7 +380,7 @@ Data-Driven DSS
 \lang brazilian
 : SADs especializados no processamento e gerenciamento de grandes quantidades
  de dados estruturados (principalmente dados históricos).
- Estes SADs podem estar 
+ Esses SADs podem estar 
 \shape italic
 \lang english
 on-line
@@ -400,7 +400,7 @@ Model-Driven DSS
 : SADs especializados em gerenciar modelos que representam aspectos de uma
  realidade, exemplos deles são ferramentas estatísticas e analíticas onde
  é possível editar os modelos.
- Estes SADs usam dados e parâmetros fornecidos pelos tomadores de decisão
+ Esses SADs usam dados e parâmetros fornecidos pelos tomadores de decisão
  para suportar o processo de tomada de decisão, mas não são sistemas de
  dados intensivos.
 \end_layout
@@ -415,7 +415,7 @@ Knowledge-Driven DSS
 : SADs especializados em resolução de problemas por meio de regras, fatos,
  procedimentos ou conhecimento do domínio que permite recomendar soluções
  aos tomadores de decisão.
- Estes sistemas são caracterizados por conter conhecimento de um domínio
+ Esses sistemas são caracterizados por conter conhecimento de um domínio
  em particular.
 \end_layout
 
@@ -426,9 +426,9 @@ Knowledge-Driven DSS
 Document-Driven DSS
 \shape default
 \lang brazilian
-: SADs especializados em ajudar aos tomadores de decisão a obter, recuperar,
+: SADs especializados em ajudar os tomadores de decisão a obter, recuperar,
  classificar e gerenciar documentos não estruturados.
- Estes sistemas integram uma variedade de tecnologias de armazenamento e
+ Esses sistemas integram uma variedade de tecnologias de armazenamento e
  de processamento para fornecer a recuperação e analise de informações.
 \end_layout
 
@@ -441,7 +441,7 @@ Communications-Driven
 \lang brazilian
 : SADs especializados suportar a comunicação, colaboração e decisão dentro
  de um grupo de pessoas.
- Estes sistemas usam tecnologias de comunicação e modelos de processos de
+ Esses sistemas usam tecnologias de comunicação e modelos de processos de
  decisão para resolver problemas por duas ou mais pessoas.
 \end_layout
 
@@ -452,7 +452,7 @@ Os
 Knowledge-Driven DSS
 \shape default
 \lang brazilian
- também denominados 
+, também denominados 
 \shape italic
 \lang english
 Rule Based Systems
@@ -466,8 +466,8 @@ key "Tweedale2016"
 \end_inset
 
 , usam bases de conhecimento que geralmente integram regras para suportar
- a representação, organização e inferência de conhecimento, estes tipos
- de sistemas compõem o escopo da presente pesquisa.
+ a representação, organização e inferência de conhecimento.
+ Esses tipos de sistemas compõem o escopo da presente pesquisa.
 \end_layout
 
 \begin_layout Standard
